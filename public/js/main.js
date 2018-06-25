@@ -1,10 +1,10 @@
 //scrollmagic animations
-/*
 var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
     triggerElement: "#header",
-    triggerHook: "onLeave"
+    triggerHook: "onLeave",
+    offset: -1
 })
     .setPin("#header")
-    .addTo(controller);*/
+    .addTo(controller);
