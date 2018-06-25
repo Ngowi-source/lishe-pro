@@ -16,6 +16,7 @@
 //code
 body{
   overflow-x: hidden;
+  background: #fff;
 }
 #contentWrapper{
   display: grid;
@@ -89,14 +90,10 @@ body{
     color: $c5;
     font-size: larger;
     text-decoration: none;
-    -webkit-transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
-    -moz-transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
-    -ms-transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
-    -o-transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
-    transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
+    padding-right: 30px;
 
     &:hover{
-      text-decoration: underline;
+      opacity: 0.7;
     }
   }
 }
@@ -109,4 +106,5 @@ body{
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-image: url(/public/images/bg-large.jpeg);
 }
