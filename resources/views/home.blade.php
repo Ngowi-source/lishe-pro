@@ -9,6 +9,8 @@
     <div class="float-right nav-links">
         <a href="/diet-assessment">Diet Assessment</a>
         <a href="/tools">Tools</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
         <a href="/about-us">About Us</a>
     </div>
 @endsection

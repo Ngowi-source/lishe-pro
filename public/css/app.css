@@ -10417,6 +10417,10 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #contentWrapper {
   display: grid;
   grid-template-columns: 100vw;
@@ -10428,6 +10432,7 @@ a.text-dark:focus {
   background-color: #D9DCD8;
   padding-left: 5vw;
   padding-right: 5vw;
+  position: relative;
 }
 
 #content {
@@ -10457,8 +10462,40 @@ a.text-dark:focus {
   transform: translateY(-50%);
 }
 
+.logo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .logo a {
   font-size: xx-large;
   color: #8B281F;
+}
+
+.nav-links {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.nav-links a {
+  display: inline-block;
+  color: #8B281F;
+  font-size: larger;
+}
+
+#homeWrapper {
+  display: grid;
+  grid-template-rows: 100vh 100vh;
+  grid-template-columns: 100vw;
+}
+
+#homeIntro {
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 

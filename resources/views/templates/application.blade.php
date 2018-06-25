@@ -18,10 +18,10 @@
         <div id="content">@yield('content')</div>
 
         <div id="footer">
-            <span class="footer">
-                2018&copy;Lishe Pro Tanzania. All Rights Reserved
+            <div class="footer">
+                2018&copy;Lishe Pro Tanzania. All Rights Reserved<br />
                 Crafted by <a href="http://www.bryceandy.com">BryceAndy</a>
-            </span>
+            </div>
         </div>
     </div>
 
