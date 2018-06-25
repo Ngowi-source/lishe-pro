@@ -8,7 +8,7 @@
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
         <a href="/diet-assessment">Diet Assessment</a>
-        <a href="/tools" id="tools">Tools
+        <a href="/#" id="tools">Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
                 <a href="/exercise-calories-burned-calculator">Calories Burned Calculator</a>
