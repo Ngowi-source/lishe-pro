@@ -10526,6 +10526,10 @@ body {
   position: relative;
 }
 
+#tools:hover .submenu {
+  display: block;
+}
+
 .submenu {
   display: none;
   z-index: 5;
@@ -10544,9 +10548,5 @@ body {
 
 .submenu a:hover {
   opacity: 0.6;
-}
-
-.submenu:hover {
-  display: block;
 }
 

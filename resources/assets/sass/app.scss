@@ -116,6 +116,9 @@ body{
 #tools {
   position: relative;
 
+  &:hover .submenu{
+    display: block;
+  }
 }
 .submenu{
   display: none;
@@ -136,7 +139,4 @@ body{
     }
   }
 
-  &:hover{
-    display: block;
-  }
 }
