@@ -116,28 +116,27 @@ body{
 #tools {
   position: relative;
 
-  .submenu{
-      display: none;
-      z-index: 5;
-      background: #fff;
-      position: absolute;
-      top: 100%;
-      left: 0;
+}
+.submenu{
+  display: none;
+  z-index: 5;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
 
-      a{
-        color: $c5;
-        text-decoration: none;
-        display: block;
-        font-size: medium;
+  a{
+    color: $c5;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
 
-        &:hover{
-          opacity: 0.6;
-        }
-      }
-
-      &:hover{
-        display: block;
-      }
+    &:hover{
+      opacity: 0.6;
+    }
   }
 
+  &:hover{
+    display: block;
+  }
 }

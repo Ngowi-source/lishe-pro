@@ -10526,7 +10526,7 @@ body {
   position: relative;
 }
 
-#tools .submenu {
+.submenu {
   display: none;
   z-index: 5;
   background: #fff;
@@ -10535,18 +10535,18 @@ body {
   left: 0;
 }
 
-#tools .submenu a {
+.submenu a {
   color: #8B281F;
   text-decoration: none;
   display: block;
   font-size: medium;
 }
 
-#tools .submenu a:hover {
+.submenu a:hover {
   opacity: 0.6;
 }
 
-#tools .submenu:hover {
+.submenu:hover {
   display: block;
 }
 
