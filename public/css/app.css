@@ -10429,10 +10429,14 @@ body {
 
 #header {
   grid-area: 1/1/2/2;
-  background-color: #D9DCD8;
+  background: transparent;
   padding-left: 5vw;
   padding-right: 5vw;
   position: relative;
+}
+
+#header.scroll20 {
+  background: #D9DCD8;
 }
 
 #content {
@@ -10490,6 +10494,16 @@ body {
   display: inline-block;
   color: #8B281F;
   font-size: larger;
+  text-decoration: none;
+  -webkit-transition: text-decoration 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+  -webkit-transition: -webkit-text-decoration 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+  transition: -webkit-text-decoration 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+  transition: text-decoration 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+  transition: text-decoration 0.3s cubic-bezier(0.17, 0.61, 1, 0.29), -webkit-text-decoration 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 #homeWrapper {

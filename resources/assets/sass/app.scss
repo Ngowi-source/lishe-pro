@@ -24,10 +24,13 @@ body{
 }
 #header{
   grid-area: 1/1/2/2;
-  background-color: $c1;
+  background: transparent;
   padding-left: 5vw;
   padding-right: 5vw;
   position: relative;
+}
+#header.scroll20{
+  background: $c1;
 }
 #content{
   grid-area: 2/1/3/2;
@@ -60,7 +63,7 @@ body{
 .logo{
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 5vw;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -75,7 +78,7 @@ body{
 .nav-links{
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 5vw;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -85,6 +88,16 @@ body{
     display: inline-block;
     color: $c5;
     font-size: larger;
+    text-decoration: none;
+    -webkit-transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
+    -moz-transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
+    -ms-transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
+    -o-transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
+    transition: text-decoration 0.3s cubic-bezier(.17, .61, 1, .29);
+
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 #homeWrapper{

@@ -22,3 +22,19 @@
         </div>
     </div>
 @endsection
+
+@section('scripts')
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            window.onscroll = function(){
+                if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                    $("#header").addClass("scroll20");
+                } else{
+                    $("#header").removeClass("scroll20");
+                }
+            };
+
+        });
+    </script>
+@endsection
