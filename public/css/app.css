@@ -10527,7 +10527,7 @@ body {
 }
 
 #tools .submenu {
-  visibility: hidden;
+  display: none;
   z-index: 5;
   background: #fff;
   position: absolute;
@@ -10538,6 +10538,8 @@ body {
 #tools .submenu a {
   color: #8B281F;
   text-decoration: none;
+  display: block;
+  font-size: medium;
 }
 
 #tools .submenu a:hover {
@@ -10545,6 +10547,6 @@ body {
 }
 
 #tools .submenu:hover {
-  visibility: visible;
+  display: block;
 }
 

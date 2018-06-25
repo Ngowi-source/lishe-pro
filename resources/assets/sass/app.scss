@@ -117,7 +117,7 @@ body{
   position: relative;
 
   .submenu{
-      visibility: hidden;
+      display: none;
       z-index: 5;
       background: #fff;
       position: absolute;
@@ -127,14 +127,16 @@ body{
       a{
         color: $c5;
         text-decoration: none;
-        
+        display: block;
+        font-size: medium;
+
         &:hover{
           opacity: 0.6;
         }
       }
 
       &:hover{
-        visibility: visible;
+        display: block;
       }
   }
 
