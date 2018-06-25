@@ -7,7 +7,6 @@
 @section('header')
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
-        <a href="/diet-assessment">Diet Assessment</a>
         <a href="/#" id="tools">Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
@@ -15,6 +14,7 @@
                 <a href="/body-mass-index-calculator">Body Mass Index Calculator</a>
             </div>
         </a>
+        <a href="/diet-assessment">Diet Assessment</a>
         <a href="/login">Login</a>
         <a href="/register">Register</a>
         <a href="/about-us">About Us</a>
