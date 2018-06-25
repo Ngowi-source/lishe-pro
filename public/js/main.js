@@ -1,4 +1,5 @@
 //scrollmagic animations
+/*
 var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
@@ -6,4 +7,4 @@ new ScrollMagic.Scene({
     triggerHook: "onLeave"
 })
     .setPin("#header")
-    .addTo(controller);
+    .addTo(controller);*/
