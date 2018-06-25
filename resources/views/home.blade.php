@@ -5,8 +5,8 @@
 @endsection
 
 @section('header')
-    <span class="float-left logo"><a href="/">Lishe Pro</a></span>
-    <div class="float-right nav-links">
+    <span class="logo"><a href="/">Lishe Pro</a></span>
+    <div class="nav-links">
         <a href="/diet-assessment">Diet Assessment</a>
         <a href="/tools">Tools</a>
         <a href="/login">Login</a>

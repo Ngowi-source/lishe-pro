@@ -10449,6 +10449,7 @@ body {
 
 #footer a {
   color: #8B281F;
+  text-decoration: none;
 }
 
 #footer a:hover {
@@ -10458,13 +10459,15 @@ body {
 #footer .footer {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .logo {
   position: absolute;
   top: 50%;
+  left: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -10472,11 +10475,13 @@ body {
 .logo a {
   font-size: xx-large;
   color: #8B281F;
+  text-decoration: none;
 }
 
 .nav-links {
   position: absolute;
   top: 50%;
+  right: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
