@@ -7,7 +7,7 @@
 @section('header')
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
-        <a href="/#" id="tools">Tools
+        <a href="javascript:void(0)" id="tools">Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
                 <a href="/exercise-calories-burned-calculator">Calories Burned Calculator</a>
@@ -34,13 +34,18 @@
         $(document).ready(function(){
 
             window.onscroll = function(){
-                if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                if(document.body.scrollTop > 2 || document.documentElement.scrollTop > 2){
                     $("#header").addClass("scroll20");
                 } else{
                     $("#header").removeClass("scroll20");
                 }
             };
 
+            $("#tools").hover(function() {
+                $('.submenu').css('display', 'block');
+            }, function(){
+                $('.submenu').css('display', 'none');
+            });
         });
     </script>
 @endsection

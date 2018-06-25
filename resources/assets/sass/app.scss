@@ -32,6 +32,7 @@ body{
 }
 #header.scroll20{
   background: $c1;
+  position: fixed;
 }
 #content{
   grid-area: 2/1/3/2;
@@ -116,9 +117,6 @@ body{
 #tools {
   position: relative;
 
-  &:hover .submenu{
-    display: block;
-  }
 }
 .submenu{
   display: none;

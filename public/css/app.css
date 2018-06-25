@@ -10438,6 +10438,7 @@ body {
 
 #header.scroll20 {
   background: #D9DCD8;
+  position: fixed;
 }
 
 #content {
@@ -10524,10 +10525,6 @@ body {
 
 #tools {
   position: relative;
-}
-
-#tools:hover .submenu {
-  display: block;
 }
 
 .submenu {
