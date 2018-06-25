@@ -10433,7 +10433,7 @@ body {
   background: transparent;
   padding-left: 5vw;
   padding-right: 5vw;
-  position: fixed;
+  position: relative;
 }
 
 #header.scroll20 {
@@ -10520,5 +10520,31 @@ body {
   z-index: -1;
   height: 100%;
   width: 100%;
+}
+
+#tools {
+  position: relative;
+}
+
+#tools .submenu {
+  visibility: hidden;
+  z-index: 5;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+#tools .submenu a {
+  color: #8B281F;
+  text-decoration: none;
+}
+
+#tools .submenu a:hover {
+  opacity: 0.6;
+}
+
+#tools .submenu:hover {
+  visibility: visible;
 }
 
