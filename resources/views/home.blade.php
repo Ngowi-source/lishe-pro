@@ -18,7 +18,7 @@
 @section('content')
     <div id="homeWrapper">
         <div id="homeIntro">
-
+            <img src="{{'images/bg-large.jpeg'}}"/>
         </div>
     </div>
 @endsection

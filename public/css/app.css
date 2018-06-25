@@ -10433,7 +10433,7 @@ body {
   background: transparent;
   padding-left: 5vw;
   padding-right: 5vw;
-  position: relative;
+  position: fixed;
 }
 
 #header.scroll20 {
@@ -10510,8 +10510,15 @@ body {
 }
 
 #homeIntro {
-  background-position: center center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+#homeIntro img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
 }
 
