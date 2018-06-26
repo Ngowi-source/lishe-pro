@@ -10537,6 +10537,10 @@ body {
   padding: 20px 0 15px 30px;
 }
 
+.submenu.display {
+  display: block;
+}
+
 .submenu a {
   color: #8B281F;
   text-decoration: none;
@@ -10764,11 +10768,41 @@ body {
 #blog {
   grid-area: 4/1/5/2;
   color: #F29D4B;
-  padding: 5vw;
+  padding: 3.5vw;
 }
 
 #contact {
   grid-area: 5/1/6/2;
   background: #8B281F;
+  position: relative;
+}
+
+#contactUs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55vh;
+  padding: 3.5vh;
+  text-align: center;
+  color: #D9DCD8;
+}
+
+#contactUs .contactUs {
+  font-size: larger;
+  line-height: 2;
+}
+
+#contactUs .contactUs i {
+  color: #9BA747;
+  font-family: FontAwesome;
+}
+
+#contactMap {
+  position: absolute;
+  top: 55vh;
+  left: 0;
+  width: 100%;
+  height: 55vh;
 }
 

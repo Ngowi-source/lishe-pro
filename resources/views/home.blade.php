@@ -109,6 +109,21 @@
         </div>
         <div id="contact">
 
+            <div id="contactUs">
+
+                <h3>Contact Us</h3>
+                <span class="contactUs">
+                    Lishe Pro<br />
+                    Kijitonyama Mabatini, PLOT NO. 755, BLOCK 47<br />
+                    Dar Es Salaam.<br />
+                    <i class="far fa-envelope-open fa-3x"></i>&nbsp;info@lishepro.co.tz<br />
+                    <i class="fas fa-phone fa-3x"></i>&nbsp; +255 767 423 804
+                </span>
+            </div>
+            <div id="contactMap">
+
+            </div>
+
         </div>
     </div>
 @endsection
@@ -117,19 +132,23 @@
     <script type="text/javascript">
         $(document).ready(function(){
 
-            window.onscroll = function(){
-                if(document.body.scrollTop > 2 || document.documentElement.scrollTop > 2){
-                    /*$("#header").addClass("scroll20");*/
-                } else{
-                   /* $("#header").removeClass("scroll20");*/
-                }
-            };
-
-            $("#tools, .submenu, .submenu a").hover(function() {
-                $('.submenu').css('display', 'block');
-            }, function(){
-                $('.submenu').css('display', 'none');
+            $("#tools").click(function() {
+                $('.submenu').toggleClass('display');
             });
         });
+    </script>
+
+    <script>
+
+        var mymap = L.map('contactMap', {
+            center: [-6.781610, 39.234919],
+            scrollWheelZoom: false,
+            zoom: 17
+        });
+        var tiles = new L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap);
+
+        var marker = L.marker([-6.781610, 39.234919]).addTo(mymap);
+        marker.bindPopup("Lishe Pro").openPopup();
+
     </script>
 @endsection
