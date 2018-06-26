@@ -10643,7 +10643,7 @@ body {
   background: transparent;
 }
 
-#assessmentForm input[type='sex'] {
+#assessmentForm input[name='sex'] {
   display: inline-block;
 }
 
