@@ -14,7 +14,7 @@
                 <a href="/body-mass-index-calculator">Body Mass Index Calculator</a>
             </div>
         </a>
-        <a onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Diet Assessment</a>
+        <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Diet Assessment</a>
         <a href="/login">Login</a>
         <a href="/register">Register</a>
         <a href="/about-us">About Us</a>
@@ -39,8 +39,8 @@
                     <input name="age" type="number" />
 
                     <label for="sex">Sex</label>
-                    <input name="sex" type="radio" value="Female" />Female
-                    <input name="sex" type="radio" value="Male" />Male<br /><br />
+                    Female <input name="sex" type="radio" value="Female" />
+                    Male <input name="sex" type="radio" value="Male" /><br /><br />
 
                     <button type="submit">Start Now</button><br /> <br />
                 </form>

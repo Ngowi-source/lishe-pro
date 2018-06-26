@@ -10550,6 +10550,10 @@ body {
   color: #000;
 }
 
+#dal {
+  cursor: pointer;
+}
+
 #intro {
   position: absolute;
   top: 25vh;
@@ -10562,6 +10566,7 @@ body {
 }
 
 #introButton {
+  cursor: pointer;
   padding: 5px 10px 5px 10px;
   position: absolute;
   top: 70vh;
@@ -10592,7 +10597,7 @@ body {
   z-index: 6;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 #dietassessmentmodal .dietassessment {
