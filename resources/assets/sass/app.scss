@@ -100,7 +100,7 @@ body{
 }
 #homeWrapper{
   display: grid;
-  grid-template-rows: 100vh 60vh 110vh;
+  grid-template-rows: 100vh 60vh 110vh 60vh 110vh;
   grid-template-columns: 100vw;
 }
 #homeIntro{
@@ -343,4 +343,11 @@ body{
   i{
     font-family: FontAwesome;
   }
+}
+#blog{
+  grid-area: 4/1/5/2;
+}
+#contact{
+  grid-area: 5/1/6/2;
+  background: $c5;
 }

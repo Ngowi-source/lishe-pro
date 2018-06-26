@@ -16,6 +16,8 @@
                 <a href="/body-mass-index-calculator">Body Mass Index Calculator</a>
             </div>
         </a>
+        <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
+        <a href="/blog">Blog</a>
         <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Diet Assessment</a>
         <a href="/login">Login</a>
         <a href="/register">Register</a>
@@ -32,10 +34,10 @@
                 <h3 class="text-center">Free Diet Assessment Tool</h3>
                 <form method="POST" action="/diet-assessment">
                     <label for="height">Height</label>
-                    <input id="height" type="text" />
+                    <input id="height" type="number" placeholder="in centimeters..."/>
 
                     <label for="weight">Weight</label>
-                    <input id="weight" type="text" />
+                    <input id="weight" type="number" placeholder="in kilograms..."/>
 
                     <label for="age">Age</label>
                     <input id="age" type="number" /><br />
@@ -100,6 +102,12 @@
                 <i class="fas fa-male fa-5x"></i><br /><br />
                 <span class="iconfeatured">Diet Assessment & Body Mass Index</span>
             </div>
+        </div>
+        <div id="blog">
+
+        </div>
+        <div id="contact">
+
         </div>
     </div>
 @endsection
