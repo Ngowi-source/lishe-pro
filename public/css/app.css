@@ -10726,7 +10726,8 @@ body {
   left: 70vw;
 }
 
-#whatWeDo .iconfeatured {
+#whatWeDo .iconfeatured,
+#whatWeDo h1 {
   color: #D9DCD8;
 }
 
