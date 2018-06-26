@@ -32,16 +32,20 @@
                 <h3 class="text-center">Free Diet Assessment</h3>
                 <form method="POST" action="/diet-assessment">
                     <label for="height">Height</label>
-                    <input name="height" type="text" />
+                    <input id="height" type="text" />
 
                     <label for="weight">Weight</label>
-                    <input name="weight" type="text" />
+                    <input id="weight" type="text" />
 
                     <label for="age">Age</label>
-                    <input name="age" type="number" />
+                    <input id="age" type="number" />
 
-                    {{--<label for="sex">Sex</label>--}}
-                    Female&nbsp;<input name="sex" type="radio" value="Female" />&nbsp;Male&nbsp;<input name="sex" type="radio" value="Male" /><br /><br />
+                    <input type="radio" value="Female" id="female" />
+                    <label for="female"><span></span>Female</label>
+
+                    <input type="radio" value="Male" />
+                    <label for="male"><span></span>Male</label>
+                    <br /><br />
 
 
                     <button type="submit">Start Now</button><br /> <br />
