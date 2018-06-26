@@ -111,13 +111,13 @@
 
             <div id="contactUs">
 
-                <h3>Contact Us</h3>
+                <h3>Contact Us</h3><br />
                 <span class="contactUs">
                     Lishe Pro<br />
                     Kijitonyama Mabatini, PLOT NO. 755, BLOCK 47<br />
                     Dar Es Salaam.<br />
-                    <i class="far fa-envelope-open fa-3x"></i>&nbsp;info@lishepro.co.tz<br />
-                    <i class="fas fa-phone fa-3x"></i>&nbsp; +255 767 423 804
+                    <i class="far fa-envelope-open"></i>&nbsp;info@lishepro.co.tz<br />
+                    <i class="fas fa-phone"></i>&nbsp; +255 767 423 804
                 </span>
             </div>
             <div id="contactMap">

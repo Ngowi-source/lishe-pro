@@ -10506,7 +10506,7 @@ body {
 
 #homeWrapper {
   display: grid;
-  grid-template-rows: 100vh 60vh 110vh 60vh 110vh;
+  grid-template-rows: 100vh 60vh 110vh 60vh 120vh;
   grid-template-columns: 100vw;
 }
 
@@ -10801,8 +10801,8 @@ body {
 #contactMap {
   position: absolute;
   top: 55vh;
-  left: 0;
-  width: 100%;
-  height: 55vh;
+  left: 5vw;
+  width: 90%;
+  height: 65vh;
 }
 
