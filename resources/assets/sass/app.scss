@@ -125,17 +125,57 @@ body{
   position: absolute;
   top: 100%;
   left: 0;
-  padding: 10px 0 15px 25px;
+  padding: 20px 0 15px 30px;
 
   a{
     color: $c5;
     text-decoration: none;
     display: block;
-    font-size: small;
+    font-size: medium;
+    margin-top: 15px;
 
     &:hover{
-      opacity: 0.6;
+      opacity: 0.7;
+      color: #000;
     }
   }
 
+}
+#intro{
+  position: absolute;
+  top: 15vh;
+  color: #fff;
+  text-align: left;
+  font-size: larger;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#introButton{
+  position: absolute;
+  top: 75vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 3px;
+  border: 1px solid $c3;
+  color: #fff;
+  background: $c3;
+  font-size: larger;
+  -webkit-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
+  -moz-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
+  -ms-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
+  -o-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
+  transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
+
+  &:hover{
+    border: 1px solid $c2;
+    background: $c2;
+  }
 }

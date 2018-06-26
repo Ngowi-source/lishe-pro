@@ -25,6 +25,12 @@
     <div id="homeWrapper">
         <div id="homeIntro">
             <img src="{{'images/bg-large.jpeg'}}"/>
+            <div id="intro">
+                Better Health Through Nutrition Tools,<br />
+                Interactive Dietary Assessment and <br />
+                Expertise
+            </div>
+            <button id="introButton">Try Our Assessment Tool</button>
         </div>
     </div>
 @endsection
@@ -35,13 +41,13 @@
 
             window.onscroll = function(){
                 if(document.body.scrollTop > 2 || document.documentElement.scrollTop > 2){
-                    $("#header").addClass("scroll20");
+                    /*$("#header").addClass("scroll20");*/
                 } else{
-                    $("#header").removeClass("scroll20");
+                   /* $("#header").removeClass("scroll20");*/
                 }
             };
 
-            $("#tools").hover(function() {
+            $("#tools, .submenu").hover(function() {
                 $('.submenu').css('display', 'block');
             }, function(){
                 $('.submenu').css('display', 'none');
