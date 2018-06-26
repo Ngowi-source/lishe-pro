@@ -39,8 +39,8 @@
                     <input name="age" type="number" />
 
                     <label for="sex">Sex</label>
-                    Female <input name="sex" type="radio" value="Female" />
-                    Male <input name="sex" type="radio" value="Male" /><br /><br />
+                    Female <input name="sex" type="radio" value="Female" />&nbsp;Male <input name="sex" type="radio" value="Male" /><br /><br />
+
 
                     <button type="submit">Start Now</button><br /> <br />
                 </form>
