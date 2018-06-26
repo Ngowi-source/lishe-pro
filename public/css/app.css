@@ -10584,10 +10584,15 @@ body {
 
 #dietassessmentmodal {
   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
   z-index: 6;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 #dietassessmentmodal .dietassessment {
@@ -10605,11 +10610,13 @@ body {
   grid-area: 1/1/2/2;
   -ms-flex-item-align: center;
       align-self: center;
+  justify-self: end;
 }
 
 #x button {
-  font-size: xx-large;
+  font-size: 3.8rem;
   border: none;
+  background: transparent;
   color: #8B281F;
 }
 
@@ -10617,7 +10624,8 @@ body {
   grid-area: 2/1/3/2;
   border: 1px solid #9BA747;
   border-radius: 3px;
-  color: #D57030;
+  color: #8B281F;
+  padding: 5px 5px 5px 5px;
 }
 
 #assessmentForm input {
@@ -10626,5 +10634,24 @@ body {
   border-left: none;
   width: 100%;
   border-bottom: 1px solid #9BA747;
+}
+
+#assessmentForm button {
+  color: #8B281F;
+  background: #D9DCD8;
+  font-size: x-large;
+  border-radius: 3px;
+  border: none;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+#assessmentForm button:hover {
+  background: #9BA747;
+  color: #fff;
+}
+
+#assessmentForm h3 {
+  color: #D9DCD8;
 }
 
