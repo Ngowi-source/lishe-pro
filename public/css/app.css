@@ -10639,12 +10639,8 @@ body {
   border-right: none;
   border-left: none;
   width: 100%;
-  border-bottom: 1px solid #8B281F;
+  border-bottom: 1px solid #D9DCD8;
   background: transparent;
-}
-
-#assessmentForm input[name='sex'] {
-  display: inline-block;
 }
 
 #assessmentForm button {

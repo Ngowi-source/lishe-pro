@@ -38,7 +38,7 @@
                     <label for="age">Age</label>
                     <input name="age" type="number" />
 
-                    <label for="sex">Sex</label>
+                    {{--<label for="sex">Sex</label>--}}
                     Female&nbsp;<input name="sex" type="radio" value="Female" />&nbsp;Male&nbsp;<input name="sex" type="radio" value="Male" /><br /><br />
 
 
