@@ -100,7 +100,7 @@ body{
 }
 #homeWrapper{
   display: grid;
-  grid-template-rows: 100vh 50vh 50vh;
+  grid-template-rows: 100vh 60vh 60vh;
   grid-template-columns: 100vw;
 }
 #homeIntro{
@@ -296,11 +296,14 @@ body{
   color: $c5;
   padding: 10px 5vw 5vw 5vw;
   text-align: center;
+  .whoAreWe{
+    font-size: large;
+  }
 }
 #whatWeDo{
   grid-area: 3/1/4/2;
-  background: $c2;
-  color: $c4;
+  background: $c4;
+  color: $c2;
   padding: 10px 5vw 5vw 5vw;
   text-align: center;
 }

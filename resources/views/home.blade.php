@@ -70,9 +70,16 @@
         </div>
         <div id="whoAreWe">
             <h1>Why Lishe Pro?</h1>
+
+            <span class="whoAreWe">Lishe PRO is guided by top-notch professionals’ group with purpose to safely <br />
+            support those who are looking to improve their health through nutrition. <br />
+            We do this by using interactive dietary assessment tools, whole food supplements,<br />
+            and most importantly dietary changes. Our aim is to help as many people as <br />
+                possible be healthier and happier without the use of unnecessary drugs or surgery.</span>
+
         </div>
         <div id="whatWeDo">
-            <h2>Featured</h2>
+            <h1>Featured</h1>
         </div>
     </div>
 @endsection
