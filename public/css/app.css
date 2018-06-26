@@ -10550,7 +10550,8 @@ body {
   color: #000;
 }
 
-#dal {
+#dal,
+#tools {
   cursor: pointer;
 }
 

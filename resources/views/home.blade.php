@@ -10,7 +10,9 @@
         <a id="tools">Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
-                <a href="/exercise-calories-burned-calculator">Calories Burned Calculator</a>
+                <a href="/weight-loss-tracker">Weight Loss Tracker</a>
+                <a href="/diet-meal-planner">Diet Meal Planner</a>
+                <a href="/online-food-diary">Online Food Diary</a>
                 <a href="/body-mass-index-calculator">Body Mass Index Calculator</a>
             </div>
         </a>
