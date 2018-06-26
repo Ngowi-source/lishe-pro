@@ -10552,10 +10552,10 @@ body {
 
 #intro {
   position: absolute;
-  top: 15vh;
+  top: 25vh;
   color: #fff;
   text-align: left;
-  font-size: larger;
+  font-size: 1.8rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -10567,5 +10567,17 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  border-radius: 3px;
+  border: 1px solid #F29D4B;
+  color: #fff;
+  background: #F29D4B;
+  font-size: larger;
+  -webkit-transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+  transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+}
+
+#introButton:hover {
+  border: 1px solid #9BA747;
+  background: #9BA747;
 }
 
