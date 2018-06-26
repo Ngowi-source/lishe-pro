@@ -7,18 +7,48 @@
 @section('header')
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
-        <a href="javascript:void(0)" id="tools">Tools
+        <a id="tools">Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
                 <a href="/exercise-calories-burned-calculator">Calories Burned Calculator</a>
                 <a href="/body-mass-index-calculator">Body Mass Index Calculator</a>
             </div>
         </a>
-        <a href="/diet-assessment">Diet Assessment</a>
+        <a onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Diet Assessment</a>
         <a href="/login">Login</a>
         <a href="/register">Register</a>
         <a href="/about-us">About Us</a>
     </div>
+
+    <div id="dietassessmentmodal">
+
+        <div class="dietassessment">
+            <div id="x">
+                <button onclick="document.getElementById('dietassessmentmodal').style.display='none'">&times;</button>
+            </div>
+            <div id="assessmentForm">
+                <h3 class="text-center">Free Diet Assessment</h3>
+                <form method="POST" action="/diet-assessment">
+                    <label for="height">Height</label>
+                    <input name="height" type="text" />
+
+                    <label for="weight">Weight</label>
+                    <input name="weight" type="text" />
+
+                    <label for="age">Age</label>
+                    <input name="age" type="number" />
+
+                    <label for="sex">Sex</label>
+                    <input name="sex" type="radio" value="Female" />
+                    <input name="sex" type="radio" value="Male" /><br /><br />
+
+                    <button type="submit">Start Now</button><br /> <br />
+                </form>
+            </div>
+        </div>
+
+    </div>
+
 @endsection
 
 @section('content')
@@ -30,7 +60,7 @@
                 Interactive Dietary Assessment and <br />
                 Expertise
             </div>
-            <button id="introButton">Try Our Assessment Tool</button>
+            <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Diet Assessment Tool</button>
         </div>
     </div>
 @endsection
@@ -47,7 +77,7 @@
                 }
             };
 
-            $("#tools, .submenu").hover(function() {
+            $("#tools, .submenu, .submenu a").hover(function() {
                 $('.submenu').css('display', 'block');
             }, function(){
                 $('.submenu').css('display', 'none');
