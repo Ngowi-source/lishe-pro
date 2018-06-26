@@ -29,7 +29,7 @@
                 <button onclick="document.getElementById('dietassessmentmodal').style.display='none'">&times;</button>
             </div>
             <div id="assessmentForm">
-                <h3 class="text-center">Free Diet Assessment</h3>
+                <h3 class="text-center">Free Diet Assessment Tool</h3>
                 <form method="POST" action="/diet-assessment">
                     <label for="height">Height</label>
                     <input id="height" type="text" />
@@ -38,12 +38,12 @@
                     <input id="weight" type="text" />
 
                     <label for="age">Age</label>
-                    <input id="age" type="number" />
+                    <input id="age" type="number" /><br />
 
-                    <input type="radio" value="Female" id="female" />
+                    <input type="radio" value="Female" id="female" name="sex"/>
                     <label for="female"><span></span>Female</label>
 
-                    <input type="radio" value="Male" />
+                    <input type="radio" value="Male" name="sex"/>
                     <label for="male"><span></span>Male</label>
                     <br /><br />
 
