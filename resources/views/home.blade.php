@@ -68,6 +68,12 @@
             </div>
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Diet Assessment Tool</button>
         </div>
+        <div id="whoAreWe">
+            <h1>Why Lishe Pro?</h1>
+        </div>
+        <div id="whatWeDo">
+            <h2>Featured</h2>
+        </div>
     </div>
 @endsection
 
