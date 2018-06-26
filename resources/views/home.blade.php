@@ -80,6 +80,26 @@
         </div>
         <div id="whatWeDo">
             <h1>Featured</h1>
+            <div id="fcc">
+                <i class="fas fa-calculator fa-3x"></i><br />
+                Food Calorie Calculator
+            </div>
+            <div id="wlt">
+                <i class="fas fa-weight"></i><br />
+                Weight Loss Tracker
+            </div>
+            <div id="dmp">
+                <i class="fas fa-utensils fa-3x"></i><br />
+                Diet Meal Planner
+            </div>
+            <div id="ofd">
+                <i class="far fa-address-book fa-3x"></i><br />
+                Online Food Diary
+            </div>
+            <div id="bmi">
+                <i class="fas fa-male fa-3x"></i><br />
+                Diet Assessment & Body Mass Index
+            </div>
         </div>
     </div>
 @endsection
