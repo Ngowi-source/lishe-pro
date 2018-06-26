@@ -10623,7 +10623,7 @@ body {
   font-size: 3.8rem;
   border: none;
   background: transparent;
-  color: #8B281F;
+  color: #D57030;
   cursor: pointer;
 }
 
@@ -10645,8 +10645,8 @@ body {
 }
 
 #assessmentForm button {
-  color: #8B281F;
-  background: #D9DCD8;
+  color: #fff;
+  background: #D57030;
   font-size: 1.3rem;
   border-radius: 3px;
   border: none;
