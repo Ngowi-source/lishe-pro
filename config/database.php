@@ -1,6 +1,6 @@
 <?php
 
-$DATABASE_URL = parse_url('postgres://ftngbvjbfxvrqg:9ca53badd6303d172212873aa042e4559fb971554ede932616c026083cc4b260@ec2-54-83-3-101.compute-1.amazonaws.com:5432/d78j22605o924l');
+$DATABASE_URL = parse_url(getenv("DATABASE_URL"));
 
 return [
 
