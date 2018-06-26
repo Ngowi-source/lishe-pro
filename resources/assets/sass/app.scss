@@ -318,6 +318,9 @@ body{
   #dmp{
     left: 70vw;
   }
+  .iconfeatured{
+    color: $c1;
+  }
 }
 #fcc, #wlt, #dmp{
   position: absolute;
@@ -327,7 +330,6 @@ body{
   text-align: center;
 
   i{
-    color: $c1!important;
     font-family: FontAwesome;
   }
 }
@@ -339,7 +341,6 @@ body{
   text-align: center;
 
   i{
-    color: $c1!important;
     font-family: FontAwesome;
   }
 }

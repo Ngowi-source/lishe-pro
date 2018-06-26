@@ -81,24 +81,24 @@
         <div id="whatWeDo">
             <h1>Featured</h1>
             <div id="fcc">
-                <i class="fas fa-calculator fa-5x"></i><br />
-                Food Calorie Calculator
+                <i class="fas fa-calculator fa-5x"></i><br /><br />
+                <span class="iconfeatured">Food Calorie Calculator</span>
             </div>
             <div id="wlt">
-                <i class="fas fa-weight fa-5x"></i><br />
-                Weight Loss Tracker
+                <i class="fas fa-weight fa-5x"></i><br /><br />
+                <span class="iconfeatured">Weight Loss Tracker</span>
             </div>
             <div id="dmp">
-                <i class="fas fa-utensils fa-5x"></i><br />
-                Diet Meal Planner
+                <i class="fas fa-utensils fa-5x"></i><br /><br />
+                <span class="iconfeatured">Diet Meal Planner</span>
             </div>
             <div id="ofd">
-                <i class="far fa-address-book fa-5x"></i><br />
-                Online Food Diary
+                <i class="far fa-address-book fa-5x"></i><br /><br />
+                <span class="iconfeatured">Online Food Diary</span>
             </div>
             <div id="bmi">
-                <i class="fas fa-male fa-5x"></i><br />
-                Diet Assessment & Body Mass Index
+                <i class="fas fa-male fa-5x"></i><br /><br />
+                <span class="iconfeatured">Diet Assessment & Body Mass Index</span>
             </div>
         </div>
     </div>

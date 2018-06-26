@@ -10726,6 +10726,10 @@ body {
   left: 70vw;
 }
 
+#whatWeDo .iconfeatured {
+  color: #D9DCD8;
+}
+
 #fcc,
 #wlt,
 #dmp {
@@ -10739,7 +10743,6 @@ body {
 #fcc i,
 #wlt i,
 #dmp i {
-  color: #D9DCD8 !important;
   font-family: FontAwesome;
 }
 
@@ -10754,7 +10757,6 @@ body {
 
 #ofd i,
 #bmi i {
-  color: #D9DCD8 !important;
   font-family: FontAwesome;
 }
 
