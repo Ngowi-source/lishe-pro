@@ -10506,7 +10506,7 @@ body {
 
 #homeWrapper {
   display: grid;
-  grid-template-rows: 100vh 60vh 100vh;
+  grid-template-rows: 100vh 60vh 110vh;
   grid-template-columns: 100vw;
 }
 
@@ -10730,7 +10730,7 @@ body {
 #wlt,
 #dmp {
   position: absolute;
-  top: 20vh;
+  top: 25vh;
   width: 20vw;
   height: 30vh;
   text-align: center;
@@ -10739,14 +10739,14 @@ body {
 #fcc i,
 #wlt i,
 #dmp i {
-  color: #D9DCD8;
+  color: #D9DCD8 !important;
   font-family: FontAwesome;
 }
 
 #ofd,
 #bmi {
   position: absolute;
-  top: 55vh;
+  top: 60vh;
   width: 20vw;
   height: 30vh;
   text-align: center;
@@ -10754,7 +10754,7 @@ body {
 
 #ofd i,
 #bmi i {
-  color: #D9DCD8;
+  color: #D9DCD8 !important;
   font-family: FontAwesome;
 }
 
