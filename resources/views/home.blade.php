@@ -68,7 +68,7 @@
                 Interactive Dietary Assessment and <br />
                 Expertise
             </div>
-            <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Diet Assessment Tool</button>
+            <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Diet Assessment Tools</button>
         </div>
         <div id="whoAreWe">
             <h1>Why Lishe Pro?</h1>
@@ -104,6 +104,7 @@
             </div>
         </div>
         <div id="blog">
+            <h3>Latest Article From Our Blog</h3>
 
         </div>
         <div id="contact">
