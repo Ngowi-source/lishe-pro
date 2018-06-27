@@ -412,6 +412,7 @@ body{
   line-height: 2.2;
   height: 50vh;
   padding-right: 5vw;
+  color: $c5;
 
   h4{
     text-align: center;
@@ -456,7 +457,7 @@ body{
   }
 }
 .articleTime{
-  color: grey;
+  color: $c5;
   font-size: medium;
 }
 .articleBod{

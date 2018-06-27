@@ -10835,6 +10835,7 @@ body {
   line-height: 2.2;
   height: 50vh;
   padding-right: 5vw;
+  color: #8B281F;
 }
 
 #blogSide h4 {
@@ -10883,7 +10884,7 @@ body {
 }
 
 .articleTime {
-  color: grey;
+  color: #8B281F;
   font-size: medium;
 }
 

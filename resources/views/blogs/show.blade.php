@@ -47,8 +47,9 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $("#header").css({'background-color': '#D57030', 'color': '#D9DCD8'});
-            $(".nav-links a").css('color', '#D9DCD8');
+            $("#header").css('background-color', '#D57030');
+            $(".nav-links a, .logo a").css('color', '#D9DCD8');
+            $(".submenu a").css('color', 'grey');
         });
     </script>
 
