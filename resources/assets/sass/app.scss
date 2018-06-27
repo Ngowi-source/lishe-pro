@@ -413,7 +413,7 @@ body{
   height: 50vh;
   padding-right: 5vw;
   color: $c5;
-  
+
   a{
     color: $c2;
     text-decoration: none;
@@ -446,6 +446,9 @@ body{
       text-decoration: none;
       color: $c2;
     }
+  }
+  h2{
+    color: $c2;
   }
 }
 #createForm{

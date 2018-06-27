@@ -32,7 +32,7 @@
     <div id="blogWrapper">
 
         <div id="blogHead">
-            <h2>My New Article</h2>
+            <h2>Learn Something New</h2>
         </div>
         <div id="blogSide">
             <h4>Archives</h4>
@@ -44,7 +44,15 @@
 
             <a href="/blog/create"><button>Create New Article +</button></a>
         </div>
-        <div id="blogBod"></div>
+        <div id="blogBod">
+
+            <h2>{{$article->title}}</h2>
+            <span class="articleTime">{{$article->created_at->toFormattedDateString()}}</span><br /><br />
+
+            <span class="articleBod">{{$article->body}}</span><br />
+            <hr/>
+
+        </div>
 
     </div>
 

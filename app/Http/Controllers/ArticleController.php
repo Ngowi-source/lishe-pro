@@ -9,14 +9,14 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        $articles = Article::all();
+        $articles = Article::latest()->get();
 
         return view('blogs.index', compact('articles'));
     }
 
     public function show(Article $post)
     {
-        return view('blogs.show');
+        return view('blogs.show',compact('post'));
     }
 
     public function create()
