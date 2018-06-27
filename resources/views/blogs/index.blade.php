@@ -14,6 +14,7 @@
                 <a href="/diet-meal-planner">Diet Meal Planner</a>
                 <a href="/online-food-diary">Online Food Diary</a>
                 <a href="/body-mass-index-calculator">Body Mass Index Calculator</a>
+                <a href="/lishe-pro24">Lishe Pro-24</a>
             </div>
         </a>
         <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
@@ -29,7 +30,7 @@
     <div id="blogWrapper">
 
         <div id="blogHead">
-            <h2>Our Articles</h2>
+            <h2>Learn Something Today</h2>
         </div>
 
         <div id="blogSide">
@@ -61,7 +62,8 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $("#header").css('background-color', '#D9DCD8')
+            $("#header").css({'background-color': '#D57030', 'color': '#D9DCD8'});
+            $(".nav-links a").css('color', '#D9DCD8');
         });
     </script>
 

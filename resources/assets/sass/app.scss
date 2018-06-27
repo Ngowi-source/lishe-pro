@@ -394,6 +394,7 @@ body{
   grid-area: 1/1/2/3;
   align-self: center;
   position: relative;
+  color: $c5;
   
   h2{
     position: absolute;
@@ -455,7 +456,7 @@ body{
   }
 }
 .articleTime{
-  color: $c1;
+  color: grey;
   font-size: medium;
 }
 .articleBod{
