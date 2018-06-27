@@ -27,6 +27,17 @@
 
 @section('content')
 
+    <div id="blogWrapper">
+
+        <div id="blogHead">
+            <h2>Create New Article</h2>
+        </div>
+        <div id="blogSide">
+            <h4>Archives</h4>
+        </div>
+        <div id="blogBod"></div>
+
+    </div>
 
 @endsection
 

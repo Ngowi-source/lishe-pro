@@ -10817,7 +10817,8 @@ body {
 #blogHead {
   grid-area: 1/1/2/3;
   text-align: center;
-  color: #8B281F;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #blogSide {
@@ -10833,6 +10834,6 @@ body {
 #blogBod {
   grid-area: 2/1/3/2;
   height: auto;
-  padding: 5vw;
+  padding: 3vw;
 }
 

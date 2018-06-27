@@ -393,7 +393,7 @@ body{
 #blogHead{
   grid-area: 1/1/2/3;
   text-align: center;
-  color: $c5;
+  align-self: center;
 }
 #blogSide{
   grid-area: 2/2/3/3;
@@ -407,5 +407,5 @@ body{
 #blogBod{
   grid-area: 2/1/3/2;
   height: auto;
-  padding: 5vw;
+  padding: 3vw;
 }

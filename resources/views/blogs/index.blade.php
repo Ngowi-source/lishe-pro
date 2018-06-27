@@ -29,7 +29,7 @@
     <div id="blogWrapper">
 
         <div id="blogHead">
-            <h2>LishePro Articles</h2>
+            <h2>Our Articles</h2>
         </div>
         <div id="blogSide">
             <h4>Archives</h4>
@@ -37,6 +37,7 @@
         <div id="blogBod"></div>
 
     </div>
+
 @endsection
 
 @section('scripts')
