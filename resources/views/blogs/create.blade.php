@@ -34,8 +34,29 @@
         </div>
         <div id="blogSide">
             <h4>Archives</h4>
+            <a href="/">May 2018</a><br />
+            <a href="/">April 2018</a><br />
+            <a href="/">March 2018</a><br />
+            <a href="/">February 2018</a><br />
+            <a href="/">January 2018</a>
         </div>
-        <div id="blogBod"></div>
+        <div id="blogBod">
+
+            <form method="POST" action="/blog" id="createForm">
+                {{csrf_field()}}
+
+                <label for="title">Title of the article</label>
+                <input id="title" name="title" type="text" class="form-control" />
+
+                <label for="body">Body of the article</label>
+                <textarea id="body" name="body" type="text" class="form-control"></textarea>
+
+                <button type="submit" class="form-control">
+                    Post Article
+                </button>
+            </form>
+
+        </div>
 
     </div>
 

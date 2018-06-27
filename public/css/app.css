@@ -10816,9 +10816,16 @@ body {
 
 #blogHead {
   grid-area: 1/1/2/3;
-  text-align: center;
   -ms-flex-item-align: center;
       align-self: center;
+  position: relative;
+}
+
+#blogHead h2 {
+  position: absolute;
+  left: 35vw;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #blogSide {
@@ -10829,6 +10836,11 @@ body {
 
 #blogSide h4 {
   text-align: center;
+}
+
+#blogSide a {
+  color: #9BA747;
+  text-decoration: none;
 }
 
 #blogBod {

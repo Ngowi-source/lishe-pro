@@ -392,8 +392,18 @@ body{
 }
 #blogHead{
   grid-area: 1/1/2/3;
-  text-align: center;
   align-self: center;
+  position: relative;
+  
+  h2{
+    position: absolute;
+    left: 35vw;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 #blogSide{
   grid-area: 2/2/3/3;
@@ -402,6 +412,10 @@ body{
 
   h4{
     text-align: center;
+  }
+  a{
+    color: $c2;
+    text-decoration: none;
   }
 }
 #blogBod{

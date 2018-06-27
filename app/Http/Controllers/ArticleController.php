@@ -21,4 +21,9 @@ class ArticleController extends Controller
     {
         return view('blogs.create');
     }
+
+    public function store()
+    {
+
+    }
 }
