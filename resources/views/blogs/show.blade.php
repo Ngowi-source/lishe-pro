@@ -1,5 +1,9 @@
 @extends('templates.application')
 
+@section('stylesheets')
+    <link rel="stylesheet" href="{{'/css/app.css'}}">
+@endsection
+
 @section('title')
     Lishe Pro - Article
 @endsection
