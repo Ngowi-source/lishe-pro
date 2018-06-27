@@ -29,7 +29,7 @@
     <div id="blogWrapper">
 
         <div id="blogHead">
-            <h1>LishePro Articles</h1>
+            <h2>LishePro Articles</h2>
         </div>
         <div id="blogSide">
             <h4>Archives</h4>
