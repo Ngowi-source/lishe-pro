@@ -39,14 +39,16 @@
             <a href="/">April 2018</a><br />
             <a href="/">March 2018</a><br />
             <a href="/">February 2018</a><br />
-            <a href="/">January 2018</a>
+            <a href="/">January 2018</a><br /><br />
+
+            <a href="/blog/create"><button>Create New Article</button></a>
         </div>
 
         <div id="blogBod">
 
             @foreach($articles as $article)
                 <h3><a href="/blog/{{$article->id}}">{{$article->title}}</a></h3>
-                <span class="articleTime">{{$article->created_at->toFormattedDateString()}}</span> <br />
+                <span class="articleTime">{{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
                 <span class="articleBod">{{$article->body}}</span><br />
                 <hr/>
