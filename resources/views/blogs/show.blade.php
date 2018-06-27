@@ -44,4 +44,10 @@
 
 @section('scripts')
 
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#header").css('background-color', '#D9DCD8')
+        });
+    </script>
+
 @endsection

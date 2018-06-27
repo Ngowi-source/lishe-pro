@@ -53,7 +53,7 @@
                 <input id="title" name="title" type="text" class="form-control" />
 
                 <label for="body">Body of the article</label>
-                <textarea id="body" name="body" type="text" class="form-control"></textarea>
+                <textarea id="body" name="body" type="text" class="form-control"></textarea><br />
 
                 <button type="submit" class="form-control">
                     Post Article
@@ -67,5 +67,11 @@
 @endsection
 
 @section('scripts')
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#header").css('background-color', '#D9DCD8')
+        });
+    </script>
 
 @endsection
