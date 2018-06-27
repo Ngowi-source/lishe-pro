@@ -1,13 +1,12 @@
 @extends('templates.application')
 
 @section('title')
-    Lishe Pro - Article
+    Lishe Pro - New Article
 @endsection
 
 @section('header')
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
-
         <a id="tools">Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
@@ -27,6 +26,7 @@
 @endsection
 
 @section('content')
+
 
 @endsection
 

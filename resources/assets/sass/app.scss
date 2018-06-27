@@ -136,14 +136,14 @@ body{
     display: block;
     font-size: medium;
     margin-top: 15px;
-
-    &:hover{
-      opacity: 0.7;
-      color: #000;
-      background: $c1;
-    }
   }
 
+}
+.submenu a:hover{
+  opacity: 0.7;
+  color: $c2;
+  background: $c1;
+  cursor: pointer;
 }
 #dal, #tools{
   cursor: pointer;
@@ -384,4 +384,25 @@ body{
   left: 5vw;
   width: 90%;
   height: 65vh;
+}
+#blogWrapper{
+  display: grid;
+  grid-template-rows: 15vh minmax(70vh, auto);
+  grid-template-columns: 70vw 30vw;
+}
+#blogHead{
+  grid-area: 1/1/2/3;
+  align-self: center;
+  justify-self: center;
+  color: $c5;
+}
+#blogSide{
+  grid-area: 2/2/3/3;
+  height: 50vh;
+  padding-right: 5vw;
+}
+#blogBod{
+  grid-area: 2/2/3/3;
+  height: auto;
+  padding: 5vw;
 }

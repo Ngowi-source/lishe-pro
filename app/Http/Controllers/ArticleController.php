@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Article;
 
 class ArticleController extends Controller
 {
@@ -11,8 +12,13 @@ class ArticleController extends Controller
         return view('blogs.index');
     }
 
-    public function show()
+    public function show(Article $post)
     {
         return view('blogs.show');
+    }
+
+    public function create()
+    {
+        return view('blogs.create');
     }
 }

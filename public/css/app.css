@@ -10551,8 +10551,9 @@ body {
 
 .submenu a:hover {
   opacity: 0.7;
-  color: #000;
+  color: #9BA747;
   background: #D9DCD8;
+  cursor: pointer;
 }
 
 #dal,
