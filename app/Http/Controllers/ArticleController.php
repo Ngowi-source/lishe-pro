@@ -10,4 +10,9 @@ class ArticleController extends Controller
     {
         return view('blogs.index');
     }
+
+    public function show()
+    {
+        return view('blogs.show');
+    }
 }
