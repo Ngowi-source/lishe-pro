@@ -10848,16 +10848,17 @@ body {
 }
 
 #blogSide a button {
+  font-size: larger;
+  color: #fff;
   border: none;
   border-radius: 3px;
-  background: #D57030;
+  background: #8B281F;
   -webkit-transition: background 0.25s ease-out;
   transition: background 0.25s ease-out;
 }
 
 #blogSide a button:hover {
-  background: #9BA747;
-  color: #fff;
+  background: #D57030;
 }
 
 #blogBod {

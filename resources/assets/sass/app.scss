@@ -423,9 +423,11 @@ body{
   }
 }
 #blogSide a button{
+  font-size: larger;
+  color: #fff;
   border: none;
   border-radius: 3px;
-  background: $c4;
+  background: $c5;
   -webkit-transition: background 0.25s ease-out;
   -moz-transition: background 0.25s ease-out;
   -ms-transition: background 0.25s ease-out;
@@ -433,8 +435,7 @@ body{
   transition: background 0.25s ease-out;
 
   &:hover{
-    background: $c2;
-    color: #fff;
+    background: $c4;
   }
 }
 #blogBod{
