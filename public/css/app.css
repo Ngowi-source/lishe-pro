@@ -10547,6 +10547,7 @@ body {
   display: block;
   font-size: medium;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .submenu a:hover {

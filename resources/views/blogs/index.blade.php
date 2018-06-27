@@ -41,7 +41,7 @@
             <a href="/">February 2018</a><br />
             <a href="/">January 2018</a><br /><br />
 
-            <a href="/blog/create"><button>Create New Article +</button></a>
+            <a href="/article/create"><button>Create New Article +</button></a>
         </div>
 
         <div id="blogBod">
