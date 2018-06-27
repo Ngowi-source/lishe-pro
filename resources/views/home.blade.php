@@ -32,13 +32,15 @@
             </div>
             <div id="assessmentForm">
 
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{$error}}</li>
-                        @endforeach
-                    </ul>
-                </div>
+                @if(count($errors))
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
                 <h3 class="text-center">Free Diet Assessment Tool</h3>
                 <form method="POST" action="/diet-assessment">
