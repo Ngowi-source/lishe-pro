@@ -27,8 +27,8 @@ class ArticleController extends Controller
     public function store()
     {
         $this->validate(request(), [
-            'title'=> 'required|max25',
-            'body'=> 'required|min35'
+            'title'=> 'required|max:25',
+            'body'=> 'required|min:35'
         ]);
 
         Article::create([
