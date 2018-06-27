@@ -46,19 +46,28 @@
         </div>
         <div id="blogBod">
 
-            <form method="POST" action="/blog" id="createForm">
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            </div>
+
+            <form method="POST" action="/articles" id="createForm">
                 {{csrf_field()}}
 
                 <label for="title">Title of the article</label>
-                <input id="title" name="title" type="text" class="form-control" />
+                <input id="title" name="title" type="text" class="form-control" required/>
 
                 <label for="body">Body of the article</label>
-                <textarea id="body" name="body" type="text" class="form-control"></textarea><br />
+                <textarea id="body" name="body" type="text" class="form-control" required></textarea><br />
 
                 <button type="submit" class="form-control">
                     Post Article
                 </button>
             </form>
+
 
         </div>
 

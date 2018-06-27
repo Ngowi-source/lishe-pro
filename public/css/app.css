@@ -10849,6 +10849,7 @@ body {
   grid-area: 2/1/3/2;
   height: auto;
   padding: 3vw;
+  text-align: left;
 }
 
 #createForm {
@@ -10873,5 +10874,14 @@ body {
 
 #createForm button:hover {
   background: #9BA747;
+}
+
+.articleTime {
+  color: #D9DCD8;
+  font-size: medium;
+}
+
+.articleBod {
+  font-size: large;
 }
 

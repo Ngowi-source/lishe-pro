@@ -9,7 +9,9 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        return view('blogs.index');
+        $articles = Article::all();
+
+        return view('blogs.index', compact('articles'));
     }
 
     public function show(Article $post)
@@ -24,6 +26,16 @@ class ArticleController extends Controller
 
     public function store()
     {
+        $this->validate(request(), [
+            'title'=> 'required|max25',
+            'body'=> 'required|min35'
+        ]);
 
+        Article::create([
+            'title' => request('title'),
+            'body' => request('body')
+        ]);
+
+        return redirect('/blog');
     }
 }

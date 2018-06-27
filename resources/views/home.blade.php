@@ -31,16 +31,27 @@
                 <button onclick="document.getElementById('dietassessmentmodal').style.display='none'">&times;</button>
             </div>
             <div id="assessmentForm">
+
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+
                 <h3 class="text-center">Free Diet Assessment Tool</h3>
                 <form method="POST" action="/diet-assessment">
+                    {{csrf_field()}}
+
                     <label for="height">Height</label>
-                    <input id="height" type="number" placeholder="in centimeters..."/>
+                    <input id="height" type="number" placeholder="in centimeters..." required/>
 
                     <label for="weight">Weight</label>
-                    <input id="weight" type="number" placeholder="in kilograms..."/>
+                    <input id="weight" type="number" placeholder="in kilograms..." required/>
 
                     <label for="age">Age</label>
-                    <input id="age" type="number" /><br />
+                    <input id="age" type="number" required/><br />
 
                     <input type="radio" value="Female" id="female" name="sex"/>
                     <label for="female"><span></span>Female</label>
@@ -129,14 +140,6 @@
 @endsection
 
 @section('scripts')
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-            $("#tools").click(function() {
-                $('.submenu').toggleClass('display');
-            });
-        });
-    </script>
 
     <script>
 

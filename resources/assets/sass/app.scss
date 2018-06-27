@@ -424,6 +424,7 @@ body{
   grid-area: 2/1/3/2;
   height: auto;
   padding: 3vw;
+  text-align: left;
 }
 #createForm{
   font-size: larger;
@@ -445,4 +446,11 @@ body{
       background: $c2;
     }
   }
+}
+.articleTime{
+  color: $c1;
+  font-size: medium;
+}
+.articleBod{
+  font-size: large;
 }

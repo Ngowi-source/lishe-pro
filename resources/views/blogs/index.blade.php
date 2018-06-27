@@ -31,6 +31,7 @@
         <div id="blogHead">
             <h2>Our Articles</h2>
         </div>
+
         <div id="blogSide">
             <h4>Archives</h4>
             <a href="/">May 2018</a><br />
@@ -39,7 +40,18 @@
             <a href="/">February 2018</a><br />
             <a href="/">January 2018</a>
         </div>
-        <div id="blogBod"></div>
+
+        <div id="blogBod">
+
+            @foreach($articles as $article)
+                <h3>{{$article->title}}</h3>
+                <span class="articleTime">{{$article->created_at}}</span> <br />
+
+                <span class="articleBod">{{$article->body}}</span><br />
+                <hr/>
+            @endforeach
+
+        </div>
 
     </div>
 
