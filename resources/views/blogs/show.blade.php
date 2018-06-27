@@ -46,10 +46,10 @@
         </div>
         <div id="blogBod">
 
-            <h2>{{$article->title}}</h2>
-            <span class="articleTime">{{$article->created_at->toFormattedDateString()}}</span><br /><br />
+            <h2>{{$post->title}}</h2>
+            <span class="articleTime">{{$post->created_at->toFormattedDateString()}}</span><br /><br />
 
-            <span class="articleBod">{{$article->body}}</span><br />
+            <span class="articleBod">{{$post->body}}</span><br />
             <hr/>
 
         </div>
