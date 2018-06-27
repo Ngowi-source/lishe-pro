@@ -10819,6 +10819,7 @@ body {
   -ms-flex-item-align: center;
       align-self: center;
   position: relative;
+  color: #8B281F;
 }
 
 #blogHead h2 {
@@ -10882,7 +10883,7 @@ body {
 }
 
 .articleTime {
-  color: #D9DCD8;
+  color: grey;
   font-size: medium;
 }
 
