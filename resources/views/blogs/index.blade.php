@@ -44,8 +44,8 @@
         <div id="blogBod">
 
             @foreach($articles as $article)
-                <h3>{{$article->title}}</h3>
-                <span class="articleTime">{{$article->created_at}}</span> <br />
+                <h3><a href="/blog/{{$article->id}}">{{$article->title}}</a></h3>
+                <span class="articleTime">{{$article->created_at->toFormattedDateString()}}</span> <br />
 
                 <span class="articleBod">{{$article->body}}</span><br />
                 <hr/>

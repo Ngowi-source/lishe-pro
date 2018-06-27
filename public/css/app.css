@@ -10852,6 +10852,11 @@ body {
   text-align: left;
 }
 
+#blogBod h3 a {
+  text-decoration: none;
+  color: #9BA747;
+}
+
 #createForm {
   font-size: larger;
 }

@@ -425,6 +425,13 @@ body{
   height: auto;
   padding: 3vw;
   text-align: left;
+
+  h3{
+    a{
+      text-decoration: none;
+      color: $c2;
+    }
+  }
 }
 #createForm{
   font-size: larger;
