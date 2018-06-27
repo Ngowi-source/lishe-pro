@@ -426,7 +426,12 @@ body{
   padding: 3vw;
 }
 #createForm{
+  font-size: larger;
   textarea{
     height: 30vh;
+  }
+  button{
+    border: none;
+    background: $c5;
   }
 }

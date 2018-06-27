@@ -10851,7 +10851,16 @@ body {
   padding: 3vw;
 }
 
+#createForm {
+  font-size: larger;
+}
+
 #createForm textarea {
   height: 30vh;
+}
+
+#createForm button {
+  border: none;
+  background: #8B281F;
 }
 
