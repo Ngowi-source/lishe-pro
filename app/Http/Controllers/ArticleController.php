@@ -10,7 +10,7 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        $articles = Article::latest()->paginate(3);
+        $articles = Article::latest()->simplePaginate(3);
 
         return view('blogs.index', compact('articles'));
     }
