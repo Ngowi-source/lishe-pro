@@ -23,7 +23,7 @@
         @if(Auth::check())
 
             <a href="/logout">Logout</a>
-            <a href="/account/{{Auth::id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
+            <a href="/account/{{Auth::user()[0]->id}}"><i class="far fa-user"></i> {{Auth::user()[0]->name}}</a>
             @else
                 <a href="/login">Login</a>
                 <a href="/register">Register</a>
