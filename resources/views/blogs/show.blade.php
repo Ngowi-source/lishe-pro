@@ -87,7 +87,7 @@
                         <h4>Say something about this article:</h4>
                         <label for="newcomment"></label>
 
-                        <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment"></textarea>
+                        <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea>
                         <br />
                         <button type="submit" name="send" class="float-right">Add Comment</button>
 
@@ -109,7 +109,7 @@
                         <h4>Say something about this article</h4>
                         <label for="newcomment"></label>
 
-                        <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment"></textarea>
+                        <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea>
                         <br />
                         <button type="submit" name="send" class="float-right">Add Comment</button>
 
@@ -128,7 +128,7 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $("#header").css('background-color', '#D57030');
+            $("#header").css('background', 'linear-gradient(#D57030, #9BA747)');
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
         });

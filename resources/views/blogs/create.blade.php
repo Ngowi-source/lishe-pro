@@ -82,9 +82,11 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $("#header").css('background-color', '#D57030');
+
+            $("#header").css('background', 'linear-gradient(#D57030, #9BA747)');
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
+            
         });
     </script>
 
