@@ -20,11 +20,6 @@ class ArticleController extends Controller
         return view('blogs.show',compact('post'));
     }
 
-    public function __construct()
-    {
-        $this->middleware('auth')->except(['index', 'show']);
-    }
-
     public function create()
     {
         return view('blogs.create');
@@ -55,5 +50,10 @@ class ArticleController extends Controller
         ]);
 
         return back();
+    }
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
     }
 }
