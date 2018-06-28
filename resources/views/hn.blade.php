@@ -1,3 +1,2 @@
-@if(1)
+<?php
     var_dump(Auth::user());
-@endif
