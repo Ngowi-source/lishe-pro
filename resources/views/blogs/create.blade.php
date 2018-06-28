@@ -23,9 +23,14 @@
         </a>
         <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
         <a href="/blog">Blog</a>
+        @if(Auth::check())
 
-        <a href="/logout">Logout</a>
-        <a href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
+            <a href="/logout">Logout</a>
+            <a href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
+        @else
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        @endif
     </div>
 
 @endsection
