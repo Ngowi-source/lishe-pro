@@ -72,7 +72,7 @@
                         <hr />
                     @endforeach
                     </ul>
-                
+
                     @if(count($errors))
                         <div class="alert alert-danger">
                             <ul>
@@ -82,7 +82,7 @@
                             </ul>
                         </div>
                     @endif
-                    <form action="/commenting" method="POST" id="addComment">
+                    <form action="/blog/{{$post->id}}/comment" method="POST" id="addComment">
                         {{csrf_field()}}
                         <h4>Say something about this article:</h4>
                         <label for="newcomment"></label>
@@ -104,7 +104,7 @@
                             </ul>
                         </div>
                     @endif
-                    <form action="/commenting" method="POST" id="addComment">
+                    <form action="/blog/{{$post->id}}/comment" method="POST" id="addComment">
                         {{csrf_field()}}
                         <h4>Say something about this article</h4>
                         <label for="newcomment"></label>
