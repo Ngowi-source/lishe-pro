@@ -42,6 +42,6 @@ class SessionController extends Controller
                 return redirect('/');
             }
         }*/
-        return redirect()->home();
+        return redirect('/');
     }
 }
