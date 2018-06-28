@@ -87,7 +87,7 @@
                         <h4>Say something about this article:</h4>
                         <label for="newcomment"></label>
 
-                        <textarea id="newcomment" type="text" class="form-control" name="comment" placeholder="Your comment"></textarea>
+                        <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment"></textarea>
                         <br />
                         <button type="submit" name="send" class="float-right">Add Comment</button>
 
@@ -109,7 +109,7 @@
                         <h4>Say something about this article</h4>
                         <label for="newcomment"></label>
 
-                        <textarea id="newcomment" type="text" class="form-control" name="comment" placeholder="Your comment"></textarea>
+                        <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment"></textarea>
                         <br />
                         <button type="submit" name="send" class="float-right">Add Comment</button>
 
