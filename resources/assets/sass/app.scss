@@ -525,10 +525,51 @@ body{
 .grey{
   color: grey;
 }
-.pagination{
-  li{
-    a{
-      color: $c5;
+#registerWrapper, #loginWrapper {
+  height: auto;
+  width: 100vw;
+  position: relative;
+
+  h1, h4 {
+    color: $c5;
+  }
+}
+#registerForm, #loginForm{
+  width: 60vw;
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+
+  input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 1px solid $c2;
+  }
+  button[type='submit']{
+    background: $c4;
+    color: #fff;
+    border: none;
+    font-size: larger;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transition: all 0.2s cubic-bezier(.17, .61, 1, .29);
+
+    &:hover{
+      background: #fff;
+      color: $c2;
+      border: 1px solid $c2;
     }
+  }
+  .form-control:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .btn{
+    display: inline-block;
   }
 }

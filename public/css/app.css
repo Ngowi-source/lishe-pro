@@ -10955,7 +10955,67 @@ body {
   color: grey;
 }
 
-.pagination li a {
+#registerWrapper,
+#loginWrapper {
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+
+#registerWrapper h1,
+#registerWrapper h4,
+#loginWrapper h1,
+#loginWrapper h4 {
   color: #8B281F;
+}
+
+#registerForm,
+#loginForm {
+  width: 60vw;
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+#registerForm input,
+#loginForm input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  border-bottom: 1px solid #9BA747;
+}
+
+#registerForm button[type='submit'],
+#loginForm button[type='submit'] {
+  background: #D57030;
+  color: #fff;
+  border: none;
+  font-size: larger;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -webkit-transition: all 0.2s cubic-bezier(0.17, 0.61, 1, 0.29);
+  transition: all 0.2s cubic-bezier(0.17, 0.61, 1, 0.29);
+}
+
+#registerForm button[type='submit']:hover,
+#loginForm button[type='submit']:hover {
+  background: #fff;
+  color: #9BA747;
+  border: 1px solid #9BA747;
+}
+
+#registerForm .form-control:focus,
+#loginForm .form-control:focus {
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#registerForm .btn,
+#loginForm .btn {
+  display: inline-block;
 }
 
