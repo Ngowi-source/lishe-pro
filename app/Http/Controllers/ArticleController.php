@@ -8,10 +8,10 @@ use App\Comments;
 
 class ArticleController extends Controller
 {
-    public function __construct()
+    /*public function __construct()
     {
         $this->middleware('auth')->except(['index', 'show']);
-    }
+    }*/
 
     public function index()
     {
