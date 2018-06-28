@@ -10551,6 +10551,10 @@ body {
   cursor: pointer;
 }
 
+.submenu a i {
+  font-family: FontAwesome;
+}
+
 .submenu a:hover {
   opacity: 0.7;
   color: #9BA747;

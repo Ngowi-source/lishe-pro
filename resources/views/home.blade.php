@@ -20,9 +20,14 @@
         <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
         <a href="/blog">Blog</a>
         <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Diet Assessment</a>
-        <a href="/login">Login</a>
-        <a href="/register">Register</a>
-        <a href="/about-us">About Us</a>
+        @if(Auth::check())
+
+            <a href="/logout">Logout</a>
+            <a href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
+            @else
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            @endif
     </div>
 
     <div id="dietassessmentmodal">

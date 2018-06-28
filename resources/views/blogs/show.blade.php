@@ -24,9 +24,14 @@
         </a>
         <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
         <a href="/blog">Blog</a>
-        <a href="/login">Login</a>
-        <a href="/register">Register</a>
-        <a href="/about-us">About Us</a>
+        @if(Auth::check())
+
+            <a href="/logout">Logout</a>
+            <a href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
+        @else
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        @endif
     </div>
 
 @endsection
@@ -51,9 +56,9 @@
         <div id="blogBod">
 
             <h2>{{$post->title}}</h2>
-            <span class="articleTime">{{$post->created_at->toFormattedDateString()}}</span><br /><br />
+            <span class="articleTime"><b>{{$post->user->name}}</b> on {{$post->created_at->toFormattedDateString()}}</span><br /><br />
 
-            <span class="articleBod">{{$post->body}}</span><br />
+            <span class="articleBod">{{$post->body}}</span><br /><br />
             <hr/>
 
             <h3 class="text-center">Comments</h3>
@@ -66,7 +71,8 @@
                     @foreach($post->comments as $comment)
 
                         <li class="list-group-item">
-                            <span class=" grey text-right"><i>{{$comment->created_at->diffForHumans()}}</i></span><br />
+                            <span class="grey"><i>{{$comment->created_at->diffForHumans()}}</i></span><br />
+                            <b class="text-left">{{$post->user->name}}</b> :<br />
                             {{$comment->body}}
                         </li>
                         <hr />

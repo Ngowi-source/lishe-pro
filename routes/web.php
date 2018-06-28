@@ -20,7 +20,9 @@ Route::get('/article/create', 'ArticleController@create');
 Route::post('/articles', 'ArticleController@store');
 
 Route::get('/login', 'SessionController@show');
-Route::post('/login', 'SessionController@login');
+Route::post('/login', 'SessionController@create');
+
+Route::post('/logout', 'SessionController@destroy');
 
 Route::get('/register', 'RegistrationController@show');
 Route::post('/register', 'RegistrationController@create');

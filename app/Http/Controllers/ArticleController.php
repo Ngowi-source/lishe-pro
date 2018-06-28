@@ -20,6 +20,11 @@ class ArticleController extends Controller
         return view('blogs.show',compact('post'));
     }
 
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
     public function create()
     {
         return view('blogs.create');
@@ -32,10 +37,7 @@ class ArticleController extends Controller
             'body'=> 'required|min:35'
         ]);
 
-        Article::create([
-            'title' => request('title'),
-            'body' => request('body')
-        ]);
+        Article::create(['title', 'body', 'user_id'=> auth()->user()->id ]);
 
         return redirect('/blog');
     }
@@ -48,7 +50,8 @@ class ArticleController extends Controller
 
         Comments::create([
             'article_id' => $post->id,
-            'body' => request('body')
+            'body' => request('body'),
+            'user_id'=> auth()->user()->id
         ]);
 
         return back();

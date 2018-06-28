@@ -23,9 +23,9 @@
         </a>
         <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
         <a href="/blog">Blog</a>
-        <a href="/login">Login</a>
-        <a href="/register">Register</a>
-        <a href="/about-us">About Us</a>
+
+        <a href="/logout">Logout</a>
+        <a href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
     </div>
 
 @endsection

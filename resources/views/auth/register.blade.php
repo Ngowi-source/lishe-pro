@@ -19,7 +19,6 @@
         </a>
         <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
         <a href="/login">Login</a>
-        <a href="/about-us">About Us</a>
     </div>
 
 @endsection
@@ -30,7 +29,7 @@
 
         <h1 class="text-center">Registration</h1>
 
-        <form method="POST" action="{{ route('register') }}" id="registerForm" >
+        <form method="POST" action="/register" id="registerForm" >
             @csrf
 
             <label for="name">Name</label>
