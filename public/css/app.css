@@ -10774,6 +10774,18 @@ body {
   padding: 3.5vw;
 }
 
+#blog h2 {
+  color: #9BA747;
+}
+
+#blog h4 {
+  text-align: right;
+}
+
+#blog h4 a {
+  color: #8B281F;
+}
+
 #contact {
   grid-area: 5/1/6/2;
   background: #8B281F;
@@ -10849,13 +10861,13 @@ body {
   color: #fff;
   border: none;
   border-radius: 3px;
-  background: #8B281F;
+  background: #D57030;
   -webkit-transition: background 0.25s ease-out;
   transition: background 0.25s ease-out;
 }
 
 #blogSide a button:hover {
-  background: #D57030;
+  background: #8B281F;
 }
 
 #blogBod {

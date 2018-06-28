@@ -353,6 +353,16 @@ body{
   grid-area: 4/1/5/2;
   color: $c5;
   padding: 3.5vw;
+
+  h2{
+    color: $c2;
+  }
+  h4{
+    text-align: right;
+    a{
+      color: $c5;
+    }
+  }
 }
 #contact{
   grid-area: 5/1/6/2;
@@ -425,7 +435,7 @@ body{
   color: #fff;
   border: none;
   border-radius: 3px;
-  background: $c5;
+  background: $c4;
   -webkit-transition: background 0.25s ease-out;
   -moz-transition: background 0.25s ease-out;
   -ms-transition: background 0.25s ease-out;
@@ -433,7 +443,7 @@ body{
   transition: background 0.25s ease-out;
 
   &:hover{
-    background: $c4;
+    background: $c5;
   }
 }
 #blogBod{

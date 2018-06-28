@@ -120,6 +120,12 @@
         <div id="blog">
             <h3>Latest Article From Our Blog</h3>
 
+            <h2><a href="/blog/{{$articles[0]->id}}">{{$articles[0]->title}}</a></h2>
+            <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}}</span><br /><br />
+
+            <span class="articleBod">{{$articles[0]->body}}</span><br /><br />
+
+            <h4><a href="/blog">More Articles >></a></h4>
         </div>
         <div id="contact">
 
