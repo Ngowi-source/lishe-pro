@@ -65,7 +65,7 @@
                     <ul class="list-group">
                     @foreach($post->comments as $comment)
 
-                            <i class="float-right">{{$comment->created_at->diffForHumans()}}</i>
+                            <span class=" grey float-right"><i>{{$comment->created_at->diffForHumans()}}</i></span>
                         <li class="list-group-item">
                             {{$comment->body}}
                         </li>
@@ -76,8 +76,8 @@
                     <form action="/commenting" method="POST" id="addComment">
                         {{csrf_field()}}
                         <h4>Say something about this article:</h4>
+                        <label for="newcomment"></label>
 
-                        <label for="newcomment">Comment</label>
                         <input id="newcomment" type="text" class="form-control" name="comment"/>
                         <br />
                         <button type="submit" name="send" class="float-right">Reply</button>

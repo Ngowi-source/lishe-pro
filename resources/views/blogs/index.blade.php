@@ -51,7 +51,7 @@
                 <span class="articleTime">{{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
                 <span class="articleBod">{{$article->body}}</span><br /><br />
-                <span class="articleTime"><a href="/blog/{{$article->id}}">{{count($article->comments)}} comments</a></span>
+                <span class="articleTime"><a href="/blog/{{$article->id}}"><i>{{count($article->comments)}} comments</i></a></span>
                 <hr/>
             @endforeach
 
