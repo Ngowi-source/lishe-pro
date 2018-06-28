@@ -23,7 +23,7 @@ Route::post('/articles', 'ArticleController@store');
 Route::get('/login', 'SessionController@show');
 Route::post('/login', 'SessionController@create');
 
-Route::post('/logout', 'SessionController@destroy');
+Route::get('/logout', 'SessionController@destroy');
 
 Route::get('/register', 'RegistrationController@show');
 Route::post('/register', 'RegistrationController@create');

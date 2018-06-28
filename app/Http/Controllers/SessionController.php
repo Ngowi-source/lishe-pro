@@ -12,6 +12,11 @@ class SessionController extends Controller
         return view('auth.login');
     }
 
+    public function __construct()
+    {
+        $this->middleware('guest')->except('destroy');
+    }
+
     public function destroy()
     {
         auth()->logout();
@@ -22,7 +27,7 @@ class SessionController extends Controller
     public function create()
     {
 
-        if(!(auth()->attempt(request(['email', 'password']))))
+        if(!auth()->attempt(request(['email', 'password'])))
         {
             return back()->withErrors([
                 'message'=> 'Your login credentials are incorrect'
