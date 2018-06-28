@@ -75,49 +75,55 @@
 
                     <div class="card">
 
-                        @if(count($errors))
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach($errors->all() as $error)
-                                        <li>{{$error}}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                        <form action="/commenting" method="POST" id="addComment">
-                            {{csrf_field()}}
-                            <h4>Say something about this article:</h4>
-                            <label for="newcomment"></label>
+                        <div class="card-block">
+                            @if(count($errors))
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach($errors->all() as $error)
+                                            <li>{{$error}}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            <form action="/commenting" method="POST" id="addComment">
+                                {{csrf_field()}}
+                                <h4>Say something about this article:</h4>
+                                <label for="newcomment"></label>
 
-                            <textarea id="newcomment" type="text" class="form-control" name="comment" placeholder="Your comment"></textarea>
-                            <br />
-                            <button type="submit" name="send" class="float-right">Add Comment</button>
+                                <textarea id="newcomment" type="text" class="form-control" name="comment" placeholder="Your comment"></textarea>
+                                <br />
+                                <button type="submit" name="send" class="float-right">Add Comment</button>
 
-                        </form>
+                            </form>
+                        </div>
+
                     </div>
                 @else
 
                     <div class="card">
 
-                        @if(count($errors))
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach($errors->all() as $error)
-                                        <li>{{$error}}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                        <form action="/commenting" method="POST" id="addComment">
-                            {{csrf_field()}}
-                            <h4>Say something about this article</h4>
-                            <label for="newcomment"></label>
+                        <div class="card-block">
+                            @if(count($errors))
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach($errors->all() as $error)
+                                            <li>{{$error}}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            <form action="/commenting" method="POST" id="addComment">
+                                {{csrf_field()}}
+                                <h4>Say something about this article</h4>
+                                <label for="newcomment"></label>
 
-                            <textarea id="newcomment" type="text" class="form-control" name="comment" placeholder="Your comment"></textarea>
-                            <br />
-                            <button type="submit" name="send" class="float-right">Add Comment</button>
+                                <textarea id="newcomment" type="text" class="form-control" name="comment" placeholder="Your comment"></textarea>
+                                <br />
+                                <button type="submit" name="send" class="float-right">Add Comment</button>
 
-                        </form>
+                            </form>
+                        </div>
+                        
                     </div>
                 @endif
 
