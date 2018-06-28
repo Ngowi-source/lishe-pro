@@ -51,6 +51,7 @@
                 <span class="articleTime">{{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
                 <span class="articleBod">{{$article->body}}</span><br />
+                <span class="articleTime">{{count($article->comments)}} comments</span>
                 <hr/>
             @endforeach
 

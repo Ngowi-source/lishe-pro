@@ -455,14 +455,6 @@ body{
   h4{
     color: $c4;
   }
-  #addComment{
-    button{
-      background: $c4;
-      color: #fff;
-      border-radius: 3px;
-      border: none;
-    }
-  }
 }
 #createForm{
   font-size: larger;
@@ -495,4 +487,12 @@ body{
 #comments{
   border: 1px solid $c4;
   border-radius: 3px;
+}
+#addComment {
+  button {
+    background: $c4;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+  }
 }

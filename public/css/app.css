@@ -10882,13 +10882,6 @@ body {
   color: #D57030;
 }
 
-#blogBod #addComment button {
-  background: #D57030;
-  color: #fff;
-  border-radius: 3px;
-  border: none;
-}
-
 #createForm {
   font-size: larger;
 }
@@ -10925,5 +10918,12 @@ body {
 #comments {
   border: 1px solid #D57030;
   border-radius: 3px;
+}
+
+#addComment button {
+  background: #D57030;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
 }
 

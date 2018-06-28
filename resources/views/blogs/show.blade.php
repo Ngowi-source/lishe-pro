@@ -75,20 +75,19 @@
 
                         <label for="newcomment">Comment</label>
                         <input id="newcomment" type="text" class="form-control" name="comment"/>
-
+                        <br />
                         <button type="submit" name="send" class="float-right">Reply</button>
 
                     </form>
                 @else
 
-                    No Comments
                     <form action="/commenting" method="POST" id="addComment">
                         {{csrf_field()}}
                         <h4>Say something about this article:</h4>
 
                         <label for="newcomment">Comment</label>
                         <input id="newcomment" type="text" class="form-control" name="comment"/>
-
+                        <br />
                         <button type="submit" name="send" class="float-right">Reply</button>
 
                     </form>
