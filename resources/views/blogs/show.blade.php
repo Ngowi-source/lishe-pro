@@ -56,6 +56,45 @@
             <span class="articleBod">{{$post->body}}</span><br />
             <hr/>
 
+            <h3 class="text-center">Comments</h3>
+
+            <div id="comments">
+
+                @if(count($post->comments))
+
+                    @foreach($post->comments as $comment)
+
+                        <div id="userComment">
+                            {{$comment->body}}
+                        </div>
+                        <hr />
+                    @endforeach
+                    <form action="/commenting" method="POST" id="addComment">
+                        {{csrf_field()}}
+                        <h4>Say something about this article:</h4>
+
+                        <label for="newcomment">Comment</label>
+                        <input id="newcomment" type="text" class="form-control" name="comment"/>
+
+                        <button type="submit" name="send" class="float-right">Reply</button>
+
+                    </form>
+                @else
+
+                    No Comments
+                    <form action="/commenting" method="POST" id="addComment">
+                        {{csrf_field()}}
+                        <h4>Say something about this article:</h4>
+
+                        <label for="newcomment">Comment</label>
+                        <input id="newcomment" type="text" class="form-control" name="comment"/>
+
+                        <button type="submit" name="send" class="float-right">Reply</button>
+
+                    </form>
+                @endif
+
+            </div>
         </div>
 
     </div>

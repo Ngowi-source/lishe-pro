@@ -443,6 +443,7 @@ body{
   text-align: left;
 
   h3{
+    color: $c5;
     a{
       text-decoration: none;
       color: $c2;
@@ -450,6 +451,17 @@ body{
   }
   h2{
     color: $c2;
+  }
+  h4{
+    color: $c4;
+  }
+  #addComment{
+    button{
+      background: $c4;
+      color: #fff;
+      border-radius: 3px;
+      border: none;
+    }
   }
 }
 #createForm{
@@ -479,4 +491,8 @@ body{
 }
 .articleBod{
   font-size: large;
+}
+#comments{
+  border: 1px solid $c4;
+  border-radius: 3px;
 }
