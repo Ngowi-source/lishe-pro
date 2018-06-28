@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Auth;
 
 class SessionController extends Controller
 {
@@ -27,7 +28,7 @@ class SessionController extends Controller
     public function create()
     {
 
-        if(!auth()->attempt(request(['email', 'password']))) {
+        if(!Auth::attempt(request(['email', 'password']))) {
             return back()->withErrors([
                 'message' => 'Your login credentials are incorrect'
             ]);
