@@ -484,12 +484,9 @@ body{
 .articleBod{
   font-size: large;
 }
-#comments{
-  border: 1px solid $c4;
-  border-radius: 3px;
-}
 #addComment {
   button {
+    font-size: larger;
     background: $c4;
     color: #fff;
     border-radius: 3px;

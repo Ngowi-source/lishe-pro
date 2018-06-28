@@ -62,13 +62,17 @@
 
                 @if(count($post->comments))
 
+                    <ul class="list-group">
                     @foreach($post->comments as $comment)
 
-                        <div id="userComment">
+                            <i class="float-right">{{$comment->created_at->diffForHumans()}}</i>
+                        <li class="list-group-item">
                             {{$comment->body}}
-                        </div>
+                        </li>
                         <hr />
                     @endforeach
+                    </ul>
+
                     <form action="/commenting" method="POST" id="addComment">
                         {{csrf_field()}}
                         <h4>Say something about this article:</h4>
@@ -83,9 +87,9 @@
 
                     <form action="/commenting" method="POST" id="addComment">
                         {{csrf_field()}}
-                        <h4>Say something about this article:</h4>
+                        <h4>Say something about this article</h4>
+                        <label for="newcomment"></label>
 
-                        <label for="newcomment">Comment</label>
                         <input id="newcomment" type="text" class="form-control" name="comment"/>
                         <br />
                         <button type="submit" name="send" class="float-right">Reply</button>

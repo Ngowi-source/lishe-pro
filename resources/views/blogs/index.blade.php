@@ -50,8 +50,8 @@
                 <h3><a href="/blog/{{$article->id}}">{{$article->title}}</a></h3>
                 <span class="articleTime">{{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
-                <span class="articleBod">{{$article->body}}</span><br />
-                <span class="articleTime">{{count($article->comments)}} comments</span>
+                <span class="articleBod">{{$article->body}}</span><br /><br />
+                <span class="articleTime"><a href="/blog/{{$article->id}}">{{count($article->comments)}} comments</a></span>
                 <hr/>
             @endforeach
 

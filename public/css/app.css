@@ -10915,12 +10915,8 @@ body {
   font-size: large;
 }
 
-#comments {
-  border: 1px solid #D57030;
-  border-radius: 3px;
-}
-
 #addComment button {
+  font-size: larger;
   background: #D57030;
   color: #fff;
   border-radius: 3px;
