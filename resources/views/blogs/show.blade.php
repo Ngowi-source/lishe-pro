@@ -65,8 +65,8 @@
                     <ul class="list-group">
                     @foreach($post->comments as $comment)
 
-                            <span class=" grey text-right"><i>{{$comment->created_at->diffForHumans()}}</i></span>
                         <li class="list-group-item">
+                            <span class=" grey text-right"><i>{{$comment->created_at->diffForHumans()}}</i></span><br />
                             {{$comment->body}}
                         </li>
                         <hr />
@@ -80,7 +80,7 @@
 
                         <input id="newcomment" type="text" class="form-control" name="comment"/>
                         <br />
-                        <button type="submit" name="send" class="float-right">Reply</button>
+                        <button type="submit" name="send" class="float-right">Post Reply</button>
 
                     </form>
                 @else
@@ -92,7 +92,7 @@
 
                         <input id="newcomment" type="text" class="form-control" name="comment"/>
                         <br />
-                        <button type="submit" name="send" class="float-right">Reply</button>
+                        <button type="submit" name="send" class="float-right">Post Reply</button>
 
                     </form>
                 @endif
