@@ -27,18 +27,12 @@ class SessionController extends Controller
     public function create()
     {
 
-        if(!auth()->attempt(request(['email', 'password'])))
-        {
+        if(!auth()->attempt(request(['email', 'password']))) {
             return back()->withErrors([
-                'message'=> 'Your login credentials are incorrect'
+                'message' => 'Your login credentials are incorrect'
             ]);
-        }else
-        {
-            return redirect('/');
         }
-       /* else
-        {
-
+        /*
             if(!session()->has('url.intended'))
             {
                 return redirect(URL::previous());
@@ -48,5 +42,6 @@ class SessionController extends Controller
                 return redirect('/');
             }
         }*/
+        return redirect()->home();
     }
 }

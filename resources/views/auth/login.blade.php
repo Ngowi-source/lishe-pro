@@ -32,25 +32,25 @@
         <form method="POST" action="/login" id="loginForm" >
             @csrf
 
+            @if(count($errors))
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <label for="email">E-Mail Address</label>
 
             <input id="email" type="email" placeholder="Something like: example@mymail.com" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
-            @if ($errors->has('email'))
-                <span class="invalid-feedback">
-                                <strong>{{ $errors->first('email') }}</strong>
-                            </span>
-            @endif
 
             <label for="password">Password</label>
 
             <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
-            @if ($errors->has('password'))
-                <span class="invalid-feedback">
-                                <strong>{{ $errors->first('password') }}</strong>
-                            </span>
-            @endif
 
             <label>
                 <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>&nbsp;Remember Me
