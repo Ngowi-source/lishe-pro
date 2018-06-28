@@ -10774,6 +10774,10 @@ body {
   padding: 3.5vw;
 }
 
+#blog h3 {
+  text-align: center;
+}
+
 #blog h2 a {
   color: #9BA747;
   text-decoration: none;
