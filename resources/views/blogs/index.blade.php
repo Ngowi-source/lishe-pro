@@ -62,6 +62,7 @@
                 <li><a href="#">4</a></li>
                 <li><a href="#">5</a></li>
             </ul>--}}
+            {{$articles->links()}}
         </div>
 
     </div>
