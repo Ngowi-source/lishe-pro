@@ -1,4 +1,4 @@
 <?php
-    echo Auth::user()->name;
-    echo Auth::user()->id;
+    var_dump(Auth::user()->name);
+    var_dump(Auth::user()->id);
 
