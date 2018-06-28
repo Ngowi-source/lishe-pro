@@ -52,9 +52,16 @@
 
                 <span class="articleBod">{{$article->body}}</span><br /><br />
                 <span class="articleTime"><a href="/blog/{{$article->id}}"><i>{{count($article->comments)}} comments</i></a></span>
-                <hr/>
+                <hr/> <br />
             @endforeach
 
+            <ul class="pagination pagination-lg">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
         </div>
 
     </div>

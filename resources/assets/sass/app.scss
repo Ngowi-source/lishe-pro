@@ -131,6 +131,7 @@ body{
     display: block;
   }
   a{
+    z-index: 6;
     color: $c5;
     text-decoration: none;
     display: block;
@@ -143,7 +144,6 @@ body{
 .submenu a:hover{
   opacity: 0.7;
   color: $c2;
-  background: $c1;
   cursor: pointer;
 }
 #dal, #tools{
@@ -524,4 +524,11 @@ body{
 }
 .grey{
   color: grey;
+}
+.pagination{
+  li{
+    a{
+      color: $c5;
+    }
+  }
 }
