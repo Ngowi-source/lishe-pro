@@ -118,7 +118,7 @@
             </div>
         </div>
         <div id="blog">
-            <h3>Latest Article From Our Blog</h3>
+            <h3>Latest Article From Our Blog</h3><br />
 
             <h2><a href="/blog/{{$articles[0]->id}}">{{$articles[0]->title}}</a></h2>
             <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}}</span><br /><br />

@@ -10774,8 +10774,9 @@ body {
   padding: 3.5vw;
 }
 
-#blog h2 {
+#blog h2 a {
   color: #9BA747;
+  text-decoration: none;
 }
 
 #blog h4 {
@@ -10783,7 +10784,8 @@ body {
 }
 
 #blog h4 a {
-  color: #8B281F;
+  color: #9BA747;
+  text-decoration: none;
 }
 
 #contact {
