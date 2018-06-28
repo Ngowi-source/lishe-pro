@@ -1,3 +1,3 @@
 @if(1)
-    dd(Auth::user());
+    var_dump(Auth::user());
 @endif
