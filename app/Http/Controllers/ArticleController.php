@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article;
+use App\Comments;
 
 class ArticleController extends Controller
 {
@@ -37,5 +38,19 @@ class ArticleController extends Controller
         ]);
 
         return redirect('/blog');
+    }
+
+    public function comment(Article $post)
+    {
+        $this->validate(request(), [
+            'body'=> 'required|min:2'
+        ]);
+
+        Comments::create([
+            'article_id' => $post->id,
+            'body' => request('body')
+        ]);
+
+        return back();
     }
 }

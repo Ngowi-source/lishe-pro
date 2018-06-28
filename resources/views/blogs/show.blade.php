@@ -73,28 +73,52 @@
                     @endforeach
                     </ul>
 
-                    <form action="/commenting" method="POST" id="addComment">
-                        {{csrf_field()}}
-                        <h4>Say something about this article:</h4>
-                        <label for="newcomment"></label>
+                    <div class="card">
 
-                        <input id="newcomment" type="text" class="form-control" name="comment"/>
-                        <br />
-                        <button type="submit" name="send" class="float-right">Post Reply</button>
+                        @if(count($errors))
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                        <li>{{$error}}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form action="/commenting" method="POST" id="addComment">
+                            {{csrf_field()}}
+                            <h4>Say something about this article:</h4>
+                            <label for="newcomment"></label>
 
-                    </form>
+                            <textarea id="newcomment" type="text" class="form-control" name="comment" placeholder="Your comment"></textarea>
+                            <br />
+                            <button type="submit" name="send" class="float-right">Add Comment</button>
+
+                        </form>
+                    </div>
                 @else
 
-                    <form action="/commenting" method="POST" id="addComment">
-                        {{csrf_field()}}
-                        <h4>Say something about this article</h4>
-                        <label for="newcomment"></label>
+                    <div class="card">
 
-                        <input id="newcomment" type="text" class="form-control" name="comment"/>
-                        <br />
-                        <button type="submit" name="send" class="float-right">Post Reply</button>
+                        @if(count($errors))
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach($errors->all() as $error)
+                                        <li>{{$error}}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form action="/commenting" method="POST" id="addComment">
+                            {{csrf_field()}}
+                            <h4>Say something about this article</h4>
+                            <label for="newcomment"></label>
 
-                    </form>
+                            <textarea id="newcomment" type="text" class="form-control" name="comment" placeholder="Your comment"></textarea>
+                            <br />
+                            <button type="submit" name="send" class="float-right">Add Comment</button>
+
+                        </form>
+                    </div>
                 @endif
 
             </div>
