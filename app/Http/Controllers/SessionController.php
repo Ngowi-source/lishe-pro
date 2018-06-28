@@ -27,8 +27,11 @@ class SessionController extends Controller
             return back()->withErrors([
                 'message'=> 'Your login credentials are incorrect'
             ]);
+        }else
+        {
+            return redirect('/');
         }
-        else
+       /* else
         {
 
             if(!session()->has('url.intended'))
@@ -39,6 +42,6 @@ class SessionController extends Controller
             {
                 return redirect('/');
             }
-        }
+        }*/
     }
 }
