@@ -480,6 +480,9 @@ body{
 .articleTime{
   color: $c5;
   font-size: medium;
+  a{
+    color: grey;
+  }
 }
 .articleBod{
   font-size: large;

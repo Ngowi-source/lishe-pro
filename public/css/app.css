@@ -10911,6 +10911,10 @@ body {
   font-size: medium;
 }
 
+.articleTime a {
+  color: grey;
+}
+
 .articleBod {
   font-size: large;
 }
