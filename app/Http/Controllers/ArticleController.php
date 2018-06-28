@@ -8,6 +8,11 @@ use App\Comments;
 
 class ArticleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
     public function index()
     {
         $articles = Article::latest()->simplePaginate(3);
@@ -52,8 +57,4 @@ class ArticleController extends Controller
         return back();
     }
 
-    public function __construct()
-    {
-        $this->middleware('auth')->except(['index', 'show']);
-    }
 }
