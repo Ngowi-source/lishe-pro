@@ -37,7 +37,11 @@ class ArticleController extends Controller
             'body'=> 'required|min:35'
         ]);
 
-        Article::create(['title'=>request('title'), 'body'=>request('body'), 'user_id'=> auth()->user()->id ]);
+        Article::create([
+            'title'=>request('title'),
+            'body'=>request('body'),
+            'user_id'=> auth()->id
+        ]);
 
         return redirect('/blog');
     }
