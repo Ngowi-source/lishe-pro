@@ -20,14 +20,14 @@
         <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
         <a href="/blog">Blog</a>
         <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Diet Assessment</a>
-        {{--@if(Auth::check())
+        @if(Auth::check())
 
             <a href="/logout">Logout</a>
             <a href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
-        @else--}}
+        @else
             <a href="/login">Login</a>
             <a href="/register">Register</a>
-        {{--@endif--}}
+        @endif
     </div>
 
     <div id="dietassessmentmodal">
@@ -125,14 +125,14 @@
         <div id="blog">
             <h3>Latest Article From Our Blog</h3><br />
 
-            <h2><a href="/blog/{{$articles[0]->id}}">{{$articles[0]->title}}</a></h2>
+           {{-- <h2><a href="/blog/{{$articles[0]->id}}">{{$articles[0]->title}}</a></h2>
             <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}}</span><br /><br />
 
             <span class="articleBod">{{$articles[0]->body}}</span><br />
             <span class="articleTime"><i>{{count($articles[0]->comments)}} comments</i></span>
             <br /><br />
 
-            <h4><a href="/blog">More Articles >></a></h4>
+            <h4><a href="/blog">More Articles >></a></h4>--}}
         </div>
         <div id="contact">
 
