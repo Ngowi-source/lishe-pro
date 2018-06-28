@@ -70,7 +70,7 @@
                 <i class="fab fa-google-plus-g" aria-hidden="true"></i>&nbsp;Google Plus <span class="account">Account</span>
             </button><br /><br />
 
-            <a class="btn btn-link" href="{{ route('auth.reset') }}">
+            <a class="btn btn-link" href="/reset">
                 Forgot Your Password?
             </a>
 
