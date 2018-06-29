@@ -55,7 +55,7 @@
                 <h3><a href="/blog/{{$article->id}}">{{$article->title}}</a></h3>
                 <span class="articleTime"><b >{{$article->user->firstname}} {{$article->user->lastname}}</b> on {{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
-                <span class="articleBod">@if(strlen($article->body)>400){{substr($article->body,0,400)}}... <span class="readMore"><a href="/blog/{{$articles->id}}"><i>Read More</i></a></span> @else{{$articles->body}}@endif</span><br />
+                <span class="articleBod">@if(strlen($article->body)>400){{substr($article->body,0,400)}}... <span class="readMore"><a href="/blog/{{$article->id}}"><i>Read More</i></a></span> @else{{$articles->body}}@endif</span><br />
                 <span class="articleTime"><a href="/blog/{{$article->id}}"><i>{{count($article->comments)}} comments</i></a></span>
                 <hr/> <br />
             @endforeach
