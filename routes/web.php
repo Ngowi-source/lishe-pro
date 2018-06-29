@@ -19,7 +19,7 @@ Route::post('/blog/{post}/comment', 'ArticleController@comment');
 Route::get('/article/create', 'ArticleController@create');
 Route::post('/articles', 'ArticleController@store');
 
-Route::get('/login', 'SessionController@show');
+Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');
 
 Route::get('/logout', 'SessionController@destroy');
