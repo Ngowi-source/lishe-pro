@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Auth;
 
 class SessionController extends Controller
 {
+    use AuthenticatesUsers;
+
     public function __construct()
     {
         $this->middleware('guest')->except('destroy');
@@ -25,16 +28,28 @@ class SessionController extends Controller
         return redirect('/');
     }
 
-    public function create()
+    public function create(Request $request)
     {
+        $this->validate($request, [
+            'email'           => 'required|email',
+            'password'           => 'required|confirmed',
+        ]);
 
-        if(!auth()->attempt(['email'=>request('email'), 'password'=>request('password')])) {
+            $userdata = array(
+                'email' => request('email'),
+                'password' => request('password')
+            );
 
-            return back()->withErrors([
-                'message' => 'Your login credentials are incorrect'
-            ]);
-        }
 
-        return redirect('/');
+            if (Auth::attempt($userdata)) 
+            {
+                return redirect('/');
+            } else
+                {
+                return back()->withErrors([
+                    'message' => 'Your login credentials are incorrect'
+                ]);
+            }
+
     }
 }
