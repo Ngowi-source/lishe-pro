@@ -44,12 +44,12 @@
 
             <label for="email">E-Mail Address</label>
 
-            <input id="email" type="email" placeholder="example@mymail.com" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+            <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
 
             <label for="password">Password</label>
 
-            <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+            <input id="password" type="password" class="form-control" name="password" required>
 
 
             <label>

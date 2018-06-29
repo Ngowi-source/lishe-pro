@@ -6,13 +6,6 @@
 
 @section('header')
 
-    @if(session()->has('regsuccess'))
-        <div class="alert alert-success">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong>{{session('regsuccess')}}</strong>
-        </div>
-    @endif
-
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
         <a id="tools">Tools
@@ -87,6 +80,13 @@
 @endsection
 
 @section('content')
+    @if(session()->has('regsuccess'))
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong>{{session('regsuccess')}}</strong>
+        </div>
+    @endif
+
     <div id="homeWrapper">
         <div id="homeIntro">
             <img src="{{'images/bg-large.jpeg'}}"/>
@@ -133,14 +133,17 @@
         <div id="blog">
             <h3>Latest Article From Our Blog</h3><br />
 
-           {{-- <h2><a href="/blog/{{$articles[0]->id}}">{{$articles[0]->title}}</a></h2>
-            <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}}</span><br /><br />
+            @if(count($articles))
+                <h2><a href="/blog/{{$articles[0]->id}}">{{$articles[0]->title}}</a></h2>
+                <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}}</span><br /><br />
 
-            <span class="articleBod">{{$articles[0]->body}}</span><br />
-            <span class="articleTime"><i>{{count($articles[0]->comments)}} comments</i></span>
-            <br /><br />
+                <span class="articleBod">{{$articles[0]->body}}</span><br />
+                <span class="articleTime"><i>{{count($articles[0]->comments)}} comments</i></span>
+                <br /><br />
 
-            <h4><a href="/blog">More Articles >></a></h4>--}}
+                <h4><a href="/blog">More Articles >></a></h4>
+            @endif
+
         </div>
         <div id="contact">
 
