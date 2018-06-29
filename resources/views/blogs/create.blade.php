@@ -75,7 +75,6 @@
                 <button type="submit" class="form-control">
                     Post Article
                 </button>
-                <b>{{var_dump(Auth::user()->id)}}</b>
             </form>
 
 

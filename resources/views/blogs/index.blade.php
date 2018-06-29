@@ -53,7 +53,7 @@
 
             @foreach($articles as $article)
                 <h3><a href="/blog/{{$article->id}}">{{$article->title}}</a></h3>
-                <span class="articleTime"><b >{{$post->user->name}}</b> on {{$article->created_at->toFormattedDateString()}}</span><br /><br />
+                <span class="articleTime"><b >{{$article->post()->user->name}}</b> on {{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
                 <span class="articleBod">{{$article->body}}</span><br />
                 <span class="articleTime"><a href="/blog/{{$article->id}}"><i>{{count($article->comments)}} comments</i></a></span>
