@@ -130,6 +130,9 @@ body{
   &.display{
     display: block;
   }
+  .topname{
+    color: #000!important;
+  }
   a{
     z-index: 6;
     color: $c5;

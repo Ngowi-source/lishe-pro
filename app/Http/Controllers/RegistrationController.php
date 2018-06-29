@@ -31,6 +31,6 @@ class RegistrationController extends Controller
 
         auth()->login($user);
 
-        return redirect('/')->with(['message'=> 'Welcome to LishePro, you are logged in!']);
+        return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro!']);
     }
 }

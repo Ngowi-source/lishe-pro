@@ -5,6 +5,14 @@
 @endsection
 
 @section('header')
+
+    @if(session()->has('regsuccess'))
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong>{{session('regsuccess')}}</strong>
+        </div>
+    @endif
+
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
         <a id="tools">Tools
@@ -23,7 +31,7 @@
         @if(Auth::check())
 
             <a href="/logout">Logout</a>
-            <a href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
+            <a class="topname" href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0))}}.</a>
         @else
             <a href="/login">Login</a>
             <a href="/register">Register</a>

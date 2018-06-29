@@ -26,7 +26,7 @@
         @if(Auth::check())
 
             <a href="/logout">Logout</a>
-            <a href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->name}}</a>
+            <a class="topname" href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0))}}.</a>
         @else
             <a href="/login">Login</a>
             <a href="/register">Register</a>

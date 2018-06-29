@@ -10541,6 +10541,10 @@ body {
   display: block;
 }
 
+.submenu .topname {
+  color: #000 !important;
+}
+
 .submenu a {
   z-index: 6;
   color: #8B281F;

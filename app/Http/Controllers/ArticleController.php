@@ -31,17 +31,18 @@ class ArticleController extends Controller
         return view('blogs.create');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        $this->validate(request(), [
+        $this->validate($request, [
             'title'=> 'required|max:25',
             'body'=> 'required|min:35'
         ]);
 
+        $userid = Auth::user()->id;
         Article::create([
-            'title'=>request('title'),
-            'body'=>request('body'),
-            'user_id'=> Auth::user()->id
+            'title'=> $request->title,
+            'body'=> $request->body,
+            'user_id'=> $userid,
         ]);
 
         return redirect('/blog');
@@ -53,10 +54,11 @@ class ArticleController extends Controller
             'body'=> 'required|min:2'
         ]);
 
+        $userid = Auth::user()->id;
         Comments::create([
             'article_id' => $post->id,
             'body' => request('body'),
-            'user_id'=> auth()->user()->id
+            'user_id'=> $userid,
         ]);
 
         return back();
