@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Article;
 use App\Comments;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
@@ -40,7 +41,7 @@ class ArticleController extends Controller
         Article::create([
             'title'=>request('title'),
             'body'=>request('body'),
-            'user_id'=> auth()->id
+            'user_id'=> Auth::user()->id
         ]);
 
         return redirect('/blog');
