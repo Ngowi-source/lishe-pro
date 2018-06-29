@@ -137,7 +137,7 @@
                 <h2><a href="/blog/{{$articles[0]->id}}">{{$articles[0]->title}}</a></h2>
                 <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}}</span><br /><br />
 
-                <span class="articleBod">@if(strlen($articles[0])>400){{substr($articles[0]->body,0,400)}}@else{{$articles[0]->body}}@endif</span><br />
+                <span class="articleBod">@if(strlen($articles[0])>400){{substr($articles[0]->body,0,400)}}."..." @else{{$articles[0]->body}}@endif</span><br />
                 <span class="articleTime"><i>{{count($articles[0]->comments)}} comments</i></span>
                 <br /><br />
 
