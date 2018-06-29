@@ -28,7 +28,7 @@ class SessionController extends Controller
     public function create()
     {
 
-        if(!Auth::attempt(['email'=>request('email'), 'password'=>request('password')])) {
+        if(!auth()->attempt(['email'=>request('email'), 'password'=>request('password')])) {
 
             return back()->withErrors([
                 'message' => 'Your login credentials are incorrect'
