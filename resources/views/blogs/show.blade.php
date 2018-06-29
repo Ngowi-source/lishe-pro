@@ -56,7 +56,7 @@
         <div id="blogBod">
 
             <h2>{{$post->title}}</h2>
-            <span class="articleTime"><b>{{$post->user->name}}</b> on {{$post->created_at->toFormattedDateString()}}</span><br /><br />
+            <span class="articleTime"><b>{{$post->user->firstname}} {{$post->user->lastname}}</b> on {{$post->created_at->toFormattedDateString()}}</span><br /><br />
 
             <span class="articleBod">{{$post->body}}</span><br /><br />
             <hr/>
@@ -72,7 +72,7 @@
 
                         <li class="list-group-item">
                             <span class="grey"><i>{{$comment->created_at->diffForHumans()}}</i></span><br />
-                            <b class="text-left">{{$post->user->name}}</b> :<br />
+                            <b class="text-left">{{$post->user->firstname}} {{$post->user->lastname}}</b> :<br />
                             {{$comment->body}}
                         </li>
                         <hr />
