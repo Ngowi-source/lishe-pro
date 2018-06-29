@@ -31,25 +31,19 @@ class SessionController extends Controller
     public function create(Request $request)
     {
         $this->validate($request, [
-            'email'           => 'required|email',
-            'password'           => 'required|confirmed',
+            'email' => 'required|email',
+            'password' => 'required'
         ]);
 
-            $userdata = array(
-                'email' => request('email'),
-                'password' => request('password')
-            );
-
-
-            if (Auth::attempt($userdata)) 
+        if (Auth::attempt(['email'=> $request->email, 'password'=> $request->password]))
+        {
+            return redirect('/');
+        } else
             {
-                return redirect('/');
-            } else
-                {
-                return back()->withErrors([
-                    'message' => 'Your login credentials are incorrect'
-                ]);
-            }
+            return back()->withErrors([
+                'message' => 'Your login credentials are incorrect'
+            ]);
+        }
 
     }
 }

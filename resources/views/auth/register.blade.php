@@ -42,28 +42,21 @@
                 </div>
             @endif
 
-            <label for="name">Name</label>
+            <label for="firstname">First Name</label>
+            <input id="firstname" type="text" class="form-control" name="firstname" value="{{ old('firstname') }}" required autofocus>
 
-            <input id="name" type="text" placeholder="Example: John F. Kennedy" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
+            <label for="lastname">Last Name</label>
+            <input id="lastname" type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" required >
 
             <label for="email">E-Mail Address</label>
-
-            <input id="email" type="email" placeholder="Something like: example@mymail.com" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+            <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required>
 
 
             <label for="password">Password</label>
+            <input id="password" type="password" class="form-control" name="password" required>
 
-            <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-            @if ($errors->has('password'))
-                <span class="invalid-feedback">
-                                <strong>{{ $errors->first('password') }}</strong>
-                            </span>
-            @endif
 
             <label for="password-confirm">Confirm Password</label>
-
             <input id="password-confirm" class="form-control" type="password" name="password_confirmation" required><br /><br />
 
             <button type="submit" class="btn">

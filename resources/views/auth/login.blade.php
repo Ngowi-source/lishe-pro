@@ -44,7 +44,7 @@
 
             <label for="email">E-Mail Address</label>
 
-            <input id="email" type="email" placeholder="Something like: example@mymail.com" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+            <input id="email" type="email" placeholder="example@mymail.com" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
 
             <label for="password">Password</label>

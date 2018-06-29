@@ -17,18 +17,20 @@ class RegistrationController extends Controller
         return view('auth.register');
     }
 
-    public function create()
+    public function create(Request $request)
     {
-        $this->validate(request(), [
-            'name'=> 'required',
+        $this->validate($request, [
+            'firstname'=> 'required',
+            'lastname'=> 'required',
             'email'=> 'required|email',
-            'password'=> 'required|confirmed'
+            'password'=> 'required|confirmed',
         ]);
 
-        $user = User::create(['name'=>request('name'), 'email'=>request('email'), 'password'=>bcrypt('password')]);
+        $request['password'] = bcrypt($request->password);
+        $user = User::create(['firstname'=>$request->firstname, 'lastname'=>$request->lastname, 'email'=>$request->email, 'password'=>$request->password, 'status'=> 0]);
 
         auth()->login($user);
 
-        return redirect('/');
+        return redirect('/')->with(['message'=> 'Welcome to LishePro, you are logged in!']);
     }
 }
