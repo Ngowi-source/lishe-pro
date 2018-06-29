@@ -21,7 +21,7 @@
         @if(Auth::check())
 
             <a href="/logout">Logout</a>
-            <a class="topname" href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0))}}.</a>
+            <a class="topname" href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0, 1))}}.</a>
         @else
             <a href="/login">Login</a>
             <a href="/register">Register</a>
@@ -53,7 +53,7 @@
 
             @foreach($articles as $article)
                 <h3><a href="/blog/{{$article->id}}">{{$article->title}}</a></h3>
-                <span class="articleTime"><b >{{$article->post()->user->name}}</b> on {{$article->created_at->toFormattedDateString()}}</span><br /><br />
+                <span class="articleTime"><b >{{$article->user->name}}</b> on {{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
                 <span class="articleBod">{{$article->body}}</span><br />
                 <span class="articleTime"><a href="/blog/{{$article->id}}"><i>{{count($article->comments)}} comments</i></a></span>
