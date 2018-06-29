@@ -8,14 +8,14 @@ use Illuminate\Support\Facades\Auth;
 
 class SessionController extends Controller
 {
-    public function show()
-    {
-        return view('auth.login');
-    }
-
     public function __construct()
     {
         $this->middleware('guest')->except('destroy');
+    }
+
+    public function show()
+    {
+        return view('auth.login');
     }
 
     public function destroy()
@@ -34,16 +34,7 @@ class SessionController extends Controller
                 'message' => 'Your login credentials are incorrect'
             ]);
         }
-        /*
-            if(!session()->has('url.intended'))
-            {
-                return redirect(URL::previous());
-            }
-            else
-            {
-                return redirect('/');
-            }
-        }*/
+
         return redirect('/');
     }
 }
