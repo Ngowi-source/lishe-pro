@@ -36,13 +36,13 @@ class ArticleController extends Controller
         $this->validate($request, [
             'title'=> 'required|max:25',
             'body'=> 'required|min:35',
-            'user_id'=> 'integer',
+            'userid'=> 'integer',
         ]);
 
         Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
-            'user_id'=> $request->user_id,
+            'user_id'=> $request->userid,
         ]);
 
         return redirect('/blog');
@@ -52,13 +52,13 @@ class ArticleController extends Controller
     {
         $this->validate(request(), [
             'body'=> 'required|min:2',
-            'user_id'=> 'integer'
+            'userid'=> 'integer'
         ]);
 
         Comments::create([
             'article_id' => $post->id,
             'body' => request('body'),
-            'user_id'=> request('user_id'),
+            'user_id'=> request('userid'),
         ]);
 
         return back();
