@@ -11031,3 +11031,7 @@ body {
   color: #9BA747;
 }
 
+input[name='userid'] {
+  display: none;
+}
+

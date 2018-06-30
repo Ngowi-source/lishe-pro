@@ -583,3 +583,6 @@ body{
 .readMore{
   color: $c2;
 }
+input[name='userid']{
+  display: none;
+}

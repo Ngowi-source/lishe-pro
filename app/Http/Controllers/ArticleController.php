@@ -12,7 +12,7 @@ class ArticleController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth')->except(['index', 'show', 'comment']);
+        $this->middleware('auth')->except(['index', 'show', ]);
     }
 
     public function index()
@@ -43,7 +43,7 @@ class ArticleController extends Controller
         Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
-            'user_id'=> Auth::user()->id,
+            'user_id'=> $request->userid,
         ]);
 
         return redirect('/blog');
