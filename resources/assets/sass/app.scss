@@ -121,7 +121,7 @@ body{
 .submenu{
   display: none;
   z-index: 100;
-  background: #fff;
+  background: $c1;
   position: absolute;
   top: 100%;
   left: 0;
@@ -133,25 +133,25 @@ body{
   .topname{
     color: #000!important;
   }
-  a{
-    z-index: 6;
-    color: $c5;
-    text-decoration: none;
-    display: block;
-    font-size: medium;
-    margin-top: 15px;
-    cursor: pointer;
-
-    i{
-      font-family: FontAwesome;
-    }
-  }
 
 }
-.submenu a:hover{
-  opacity: 0.7;
-  color: $c2;
+.submenu a{
+  z-index: 6;
+  color: $c5;
+  text-decoration: none;
+  display: block;
+  font-size: medium;
+  margin-top: 15px;
   cursor: pointer;
+
+  i{
+    font-family: FontAwesome;
+  }
+  &:hover{
+    opacity: 0.7;
+    color: $c2;
+    cursor: pointer!important;
+  }
 }
 #dal, #tools{
   cursor: pointer;

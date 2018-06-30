@@ -10530,7 +10530,7 @@ body {
 .submenu {
   display: none;
   z-index: 100;
-  background: #fff;
+  background: #D9DCD8;
   position: absolute;
   top: 100%;
   left: 0;
@@ -10562,7 +10562,7 @@ body {
 .submenu a:hover {
   opacity: 0.7;
   color: #9BA747;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 #dal,
