@@ -12,7 +12,7 @@
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
 
-        <a id="tools">Tools
+        <a id="tools">Dietary Assessment Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
                 <a href="/weight-loss-tracker">Weight Loss Tracker</a>
@@ -22,7 +22,6 @@
                 <a href="/lishe-pro24">Lishe Pro-24</a>
             </div>
         </a>
-        <a href="/lishe-pro-well-and-Recipes">Lishe PRO-Well and Recipes</a>
         <a href="/blog">Blog</a>
         @if(Auth::check())
 

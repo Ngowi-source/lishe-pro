@@ -10529,7 +10529,7 @@ body {
 
 .submenu {
   display: none;
-  z-index: 5;
+  z-index: 100;
   background: #fff;
   position: absolute;
   top: 100%;
