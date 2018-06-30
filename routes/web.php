@@ -16,12 +16,9 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/blog', 'ArticleController@index');
 Route::get('/blog/{post}', 'ArticleController@show');
 
-Route::group(['middleware' => 'web'], function () {
-    // auth routes
-    Route::post('/blog/{post}/comment', 'ArticleController@comment');
-    Route::get('/article/create', 'ArticleController@create');
-    Route::post('/articles', 'ArticleController@store');
-});
+Route::post('/blog/{post}/comment', 'ArticleController@comment');
+Route::get('/article/create', 'ArticleController@create');
+Route::post('/articles', 'ArticleController@store');
 
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');
