@@ -59,7 +59,7 @@ class ArticleController extends Controller
         Comments::create([
             'article_id' => $post->id,
             'body' => request('body'),
-            'user_id'=> Auth::user()->id,
+            'user_id'=> request('userid'),
         ]);
 
         return back();
