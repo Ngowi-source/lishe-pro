@@ -61,7 +61,7 @@
                 </div>
             @endif
 
-            <form method="POST" action="/articles" id="createForm">
+            <form method="POST" action="/article/create" id="createForm">
                 {{csrf_field()}}
 
                 <label for="title">Title of the article</label>
