@@ -18,7 +18,7 @@ Route::get('/blog/{post}', 'ArticleController@show');
 
 Route::post('/blog/{post}/comment', 'ArticleController@comment');
 Route::get('/article/create', 'ArticleController@create');
-Route::post('/article/create', 'ArticleController@store');
+Route::post('/articles', 'ArticleController@store');
 
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');

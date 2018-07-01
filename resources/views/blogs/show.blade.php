@@ -96,7 +96,7 @@
 
                         <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea>
 
-                        <input type="number" name="userid" value="{{Auth::user()->id}}" />
+                        <input type="number" name="userid" value="{{Auth::id()}}" />
                         <br />
                         <button type="submit" name="send" class="float-right">Add Comment</button>
 

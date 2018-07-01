@@ -61,7 +61,7 @@
                 </div>
             @endif
 
-            <form method="POST" action="/article/create" id="createForm">
+            <form method="POST" action="/articles" id="createForm">
                 {{csrf_field()}}
 
                 <label for="title">Title of the article</label>
@@ -70,7 +70,7 @@
                 <label for="body">Body of the article</label>
                 <textarea id="body" name="body" type="text" class="form-control" required></textarea><br />
 
-                <input type="number" name="userid" value="{{Auth::user()->id}}" />
+                <input type="number" name="userid" value="{{Auth::id()}}" />
                 <button type="submit" class="form-control">
                     Post Article
                 </button>
