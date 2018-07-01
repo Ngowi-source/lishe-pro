@@ -50,7 +50,7 @@
             <a href="/">February 2018</a><br />
             <a href="/">January 2018</a><br /><br />
 
-            @if((Auth::check()) && (Auth::user()->id = 1))
+            @if((Auth::check()) && (Auth::user()->id == 1))
                 <a href="/article/create"><button>Create New Article +</button></a>
             @endif
         </div>
