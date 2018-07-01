@@ -29,8 +29,7 @@ class ArticleController extends Controller
 
     public function create()
     {
-        $id = Auth::user()->id;
-        return view('blogs.create')->with('id', $id);
+        return view('blogs.create');
     }
 
     public function store(Request $request)
