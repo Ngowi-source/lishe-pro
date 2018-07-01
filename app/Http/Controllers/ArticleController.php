@@ -29,7 +29,8 @@ class ArticleController extends Controller
 
     public function create()
     {
-        return view('blogs.create');
+        $id = Auth::user()->id;
+        return view('blogs.create')->with('id', $id);
     }
 
     public function store(Request $request)
@@ -43,7 +44,7 @@ class ArticleController extends Controller
         Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
-            'user_id'=> Auth::user()->id,
+            'user_id'=> $request->userid,
         ]);
 
         return redirect('/blog');
