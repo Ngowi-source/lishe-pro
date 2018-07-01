@@ -43,7 +43,7 @@ class ArticleController extends Controller
         Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
-            'user_id'=> \auth()->user()->getAuthIdentifier(),
+            'user_id'=> Auth::user()->id,
         ]);
 
         return redirect('/blog');
@@ -59,7 +59,7 @@ class ArticleController extends Controller
         Comments::create([
             'article_id' => $post->id,
             'body' => request('body'),
-            'user_id'=> \auth()->user()->getAuthIdentifier(),
+            'user_id'=> Auth::user()->id,
         ]);
 
         return back();

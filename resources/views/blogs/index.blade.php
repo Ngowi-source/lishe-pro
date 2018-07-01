@@ -45,7 +45,9 @@
             <a href="/">February 2018</a><br />
             <a href="/">January 2018</a><br /><br />
 
-            <a href="/article/create"><button>Create New Article +</button></a>
+            @if((Auth::check()) && (Auth::user()->id = 1))
+                <a href="/article/create"><button>Create New Article +</button></a>
+            @endif
         </div>
 
         <div id="blogBod">
