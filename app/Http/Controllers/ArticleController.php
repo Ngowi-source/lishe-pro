@@ -32,7 +32,7 @@ class ArticleController extends Controller
 
         $articles = $articles->simplePaginate(3);
 
-        $archives = Article::selectRaw('year(created_at) yr, monthname(created_at) mnth, count(*) published')->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
+        $archives = Article::select('year(created_at) as yr, monthname(created_at) as mnth, count(*) as published')->groupBy('yr', 'mnth')->orderBy('min(created_at) desc')->get()->toArray();
 
         return view('blogs.index', compact('articles', 'archives'));
     }
