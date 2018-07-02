@@ -34,7 +34,7 @@ class ArticleController extends Controller
 
         $archives = Article::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
 
-        return view('blogs.index', compact('articles', 'archives'));
+        return view('blogs.index', compact('articles'/*, 'archives'*/));
     }
 
     public function show(Article $post)
