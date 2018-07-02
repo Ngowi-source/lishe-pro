@@ -7,7 +7,6 @@ use App\Article;
 use App\Comments;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\DB;
 
 class ArticleController extends Controller
 {
@@ -33,9 +32,9 @@ class ArticleController extends Controller
 
         $articles = $articles->simplePaginate(3);
 
-        $archives = DB::select('SELECT year(created_at) AS year, monthname(created_at) AS month, count(*) AS published FROM articles GROUP year, month ORDER MIN created_at DESC ')->get()->toArray();
+        /*$archives = Article::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();*/
 
-        return view('blogs.index', compact('articles', 'archives'));
+        return view('blogs.index', compact('articles'/*, 'archives'*/));
     }
 
     public function show(Article $post)
