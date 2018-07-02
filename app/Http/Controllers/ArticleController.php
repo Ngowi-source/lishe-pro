@@ -42,7 +42,7 @@ class ArticleController extends Controller
         Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
-            'user_id'=> auth()->id()
+            'user_id'=> Auth::id()
         ]);
 
         return redirect('/blog');
