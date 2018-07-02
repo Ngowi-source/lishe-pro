@@ -16,9 +16,9 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/blog', 'ArticleController@index');
 Route::get('/blog/{post}', 'ArticleController@show');
 
-Route::post('/blog/{post}/comment', 'ArticleController@comment');
-Route::get('/article/create', 'ArticleController@create');
-Route::post('/articles', 'ArticleController@store');
+Route::post('/blog/{post}/comment', 'ArticleController@comment')->middleware('auth');
+Route::get('/article/create', 'ArticleController@create')->middleware('auth');
+Route::post('/articles', 'ArticleController@store')->middleware('auth');
 
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');

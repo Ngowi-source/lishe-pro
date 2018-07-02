@@ -81,7 +81,7 @@
     @if(session()->has('regsuccess'))
         <div class="alert alert-success alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong>{{session('regsuccess')}}</strong>
+            <strong class="text-center">{{session('regsuccess')}}</strong>&nbsp; A link is sent to your email, click it to activate your account
         </div>
     @endif
 
