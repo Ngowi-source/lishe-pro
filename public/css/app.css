@@ -11039,3 +11039,7 @@ input[name='userid'] {
   font-size: large;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
