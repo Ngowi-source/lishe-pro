@@ -70,7 +70,6 @@
                 <label for="body">Body of the article</label>
                 <textarea id="body" name="body" type="text" class="form-control" required></textarea><br />
 
-                <input type="number" name="userid" value="{{Auth::id()}}" />
                 <button type="submit" class="form-control">
                     Post Article
                 </button>
