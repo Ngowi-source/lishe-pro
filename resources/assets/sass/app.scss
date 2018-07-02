@@ -580,9 +580,12 @@ body{
     display: inline-block;
   }
 }
-.readMore{
-  color: $c2;
+.readMore a{
+  color: $c4!important;
 }
 input[name='userid']{
   display: none;
+}
+.large{
+  font-size: large;
 }

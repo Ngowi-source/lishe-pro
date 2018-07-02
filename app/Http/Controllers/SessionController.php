@@ -25,7 +25,7 @@ class SessionController extends Controller
     {
         auth()->logout();
 
-        return redirect('/');
+        return redirect('/')->with(['outsuccess'=> 'You have been logged out!']);
     }
 
     public function create(Request $request)

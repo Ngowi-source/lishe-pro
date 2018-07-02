@@ -11027,11 +11027,15 @@ body {
   display: inline-block;
 }
 
-.readMore {
-  color: #9BA747;
+.readMore a {
+  color: #D57030 !important;
 }
 
 input[name='userid'] {
   display: none;
+}
+
+.large {
+  font-size: large;
 }
 

@@ -6,6 +6,20 @@
 
 @section('header')
 
+    @if(session()->has('regsuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('regsuccess')}}</strong>&nbsp; A link is sent to your email, click it to activate your account
+        </div>
+    @endif
+
+    @if(session()->has('outsuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('outsuccess')}}</strong>&nbsp;
+        </div>
+    @endif
+
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
         <a id="tools">Dietary Assessment Tools
@@ -78,12 +92,6 @@
 @endsection
 
 @section('content')
-    @if(session()->has('regsuccess'))
-        <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('regsuccess')}}</strong>&nbsp; A link is sent to your email, click it to activate your account
-        </div>
-    @endif
 
     <div id="homeWrapper">
         <div id="homeIntro">

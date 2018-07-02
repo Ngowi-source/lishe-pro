@@ -50,9 +50,9 @@
             <a href="/">February 2018</a><br />
             <a href="/">January 2018</a><br /><br />
 
-            @if((Auth::check()) && (Auth::user()->id == 1))
+            {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
                 <a href="/article/create"><button>Create New Article +</button></a>
-            @endif
+            {{--@endif--}}
         </div>
         <div id="blogBod">
 
@@ -72,9 +72,9 @@
                     @foreach($post->comments as $comment)
 
                         <li class="list-group-item">
-                            <span class="grey"><i>{{$comment->created_at->diffForHumans()}}</i></span><br />
-                            <b class="text-left">{{$post->user->firstname}} {{$post->user->lastname}}</b> :<br />
-                            {{$comment->body}}
+                            <b class="text-left">{{$comment->user->firstname}} {{$comment->user->lastname}}</b>&nbsp;<span class="grey"><i>{{$comment->created_at->diffForHumans()}}</i></span><br /><br />
+
+                            <span class="large">{{$comment->body}}</span>
                         </li>
                         <hr />
                     @endforeach
