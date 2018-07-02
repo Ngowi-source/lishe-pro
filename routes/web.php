@@ -16,10 +16,11 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/blog', 'ArticleController@index');
 Route::get('/blog/{post}', 'ArticleController@show');
 
-Route::post('/blog/{post}/comment', 'ArticleController@comment');
-Route::get('/article/create', 'ArticleController@create');
-Route::post('/articles', 'ArticleController@store');
-
+Route::group(['middleware' => 'web'], function () {
+    Route::post('/blog/{post}/comment', 'ArticleController@comment');
+    Route::get('/article/create', 'ArticleController@create');
+    Route::post('/articles', 'ArticleController@store');
+});
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');
 

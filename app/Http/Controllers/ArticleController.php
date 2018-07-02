@@ -9,16 +9,10 @@ use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
-    protected $userId;
 
     public function __construct()
     {
-        $this->middleware(function ($request, $next) {
-
-            $this->userId = Auth::id();
-
-            return $next($request);
-        })->except(['index', 'show', ]);
+        $this->middleware('auth')->except(['index', 'show', ]);
     }
 
     public function index()
@@ -48,7 +42,7 @@ class ArticleController extends Controller
         Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
-            'user_id'=> $this->userId
+            'user_id'=> Auth::id()
         ]);
 
         return redirect('/blog');
