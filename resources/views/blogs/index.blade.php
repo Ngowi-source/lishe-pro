@@ -44,9 +44,9 @@
             {{--@endif--}}<br /><br />
 
             <h4>Archives</h4>
-            @foreach($archives as $stat)
-                <a href="/?month={{$stat['mnth']}}&year={{$stat['yr']}}">{{$stat['mnth'].' '.$stat['yr']}}</a><br />
-            @endforeach
+            {{--@foreach($archives as $stat)
+                <a href="/?month={{$stat['month']}}&year={{$stat['year']}}">{{$stat['month'].' '.$stat['year']}}</a><br />
+            @endforeach--}}
 
         </div>
 
