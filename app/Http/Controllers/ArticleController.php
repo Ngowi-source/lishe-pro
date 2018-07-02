@@ -32,7 +32,7 @@ class ArticleController extends Controller
 
         $articles = $articles->simplePaginate(3);
 
-        $archives = Article::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')
+        $archives = Article::selectRaw('year(created_at) as year, monthname(created_at) as month, count(*) as published')
         ->groupBy('year', 'month')
         ->orderByRaw('min(created_at) desc')
         ->get()
