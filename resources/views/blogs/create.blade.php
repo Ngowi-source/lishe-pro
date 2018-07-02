@@ -42,12 +42,12 @@
             <h2>Create New Article</h2>
         </div>
         <div id="blogSide">
+
             <h4>Archives</h4>
-            <a href="/">May 2018</a><br />
-            <a href="/">April 2018</a><br />
-            <a href="/">March 2018</a><br />
-            <a href="/">February 2018</a><br />
-            <a href="/">January 2018</a>
+            @foreach($archives as $stat)
+                <a href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}">{{$stat['month'].' '.$stat['year']}}</a><br />
+            @endforeach
+
         </div>
         <div id="blogBod">
 

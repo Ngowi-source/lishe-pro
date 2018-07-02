@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Comments;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 class ArticleController extends Controller
 {
@@ -17,9 +18,30 @@ class ArticleController extends Controller
 
     public function index()
     {
-        $articles = Article::latest()->simplePaginate(3);
+        $articles = Article::latest();
 
-        return view('blogs.index', compact('articles'));
+        if($month = request('month'))
+        {
+            $articles->whereMonth('created_at', Carbon::parse($month)->month);
+        }
+
+        if($year = request('year'))
+        {
+            $articles->whereYear('created_at', Carbon::parse($year)->year);
+        }
+
+        $articles = $articles->simplePaginate(3);
+
+        $archives = Article::selectRaw('year(created_at) year, monthname(created_at) month, count(*) published')
+        ->groupBy('year', 'month')
+        ->orderByRaw('min(created_at) desc')
+        ->get()
+        ->toArray();
+
+        return view('blogs.index')->with([
+            'articles' => $articles,
+            'archives' => $archives,
+        ]);
     }
 
     public function show(Article $post)
@@ -42,7 +64,7 @@ class ArticleController extends Controller
         Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
-            'user_id'=> 4
+            'user_id'=> Auth::id()
         ]);
 
         return redirect('/blog');

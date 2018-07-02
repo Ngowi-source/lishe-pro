@@ -43,16 +43,16 @@
             <h2>Learn Something New</h2>
         </div>
         <div id="blogSide">
-            <h4>Archives</h4>
-            <a href="/">May 2018</a><br />
-            <a href="/">April 2018</a><br />
-            <a href="/">March 2018</a><br />
-            <a href="/">February 2018</a><br />
-            <a href="/">January 2018</a><br /><br />
 
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
-                <a href="/article/create"><button>Create New Article +</button></a>
-            {{--@endif--}}
+            <a href="/article/create"><button>Create New Article +</button></a>
+            {{--@endif--}}<br /><br />
+
+            <h4>Archives</h4>
+            @foreach($archives as $stat)
+                <a href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}">{{$stat['month'].' '.$stat['year']}}</a><br />
+            @endforeach
+
         </div>
         <div id="blogBod">
 
