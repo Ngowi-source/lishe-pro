@@ -19,4 +19,17 @@ class Article extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function scopeFilter($query, $filters)
+    {
+        if($month = $filters['month'])
+        {
+            $query->whereMonth('created_at', $month);
+        }
+
+        if($year = $filters['year'])
+        {
+            $query->whereYear('created_at', $year);
+        }
+    }
 }

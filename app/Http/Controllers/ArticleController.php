@@ -18,33 +18,36 @@ class ArticleController extends Controller
 
     public function index()
     {
-        $articles = Article::latest();
+        $articles = Article::latest()->filter(request(['month', 'year']))->simplePaginate(3);
+        /*$articles = Article::latest();
 
         if($month = request('month'))
         {
-            $articles->whereMonth('created_at', Carbon::parse($month)->month);
+            $articles->whereMonth('created_at', $month);
         }
 
         if($year = request('year'))
         {
-            $articles->whereYear('created_at', Carbon::parse($year)->year);
+            $articles->whereYear('created_at', $year);
         }
 
-        $articles = $articles->simplePaginate(3);
+        $articles = $articles->simplePaginate(3);*/
 
-        $archives = Article::selectRaw("extract(year from created_at) as year, extract(month from created_at) as month, count(*) as published")->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
+        $archives = Article::selectRaw("extract(year from created_at) as year, to_char(min(created_at), 'month') as monthname, extract(month from created_at) as month, count(*) as published")->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
 
         return view('blogs.index', compact('articles', 'archives'));
     }
 
     public function show(Article $post)
     {
-        return view('blogs.show',compact('post'));
+        $archives = Article::selectRaw("extract(year from created_at) as year, to_char(min(created_at), 'month') as monthname, extract(month from created_at) as month, count(*) as published")->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
+        return view('blogs.show',compact('post', 'archives'));
     }
 
     public function create()
     {
-        return view('blogs.create');
+        $archives = Article::selectRaw("extract(year from created_at) as year, to_char(min(created_at), 'month') as monthname, extract(month from created_at) as month, count(*) as published")->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
+        return view('blogs.create', compact('archives'));
     }
 
     public function store(Request $request)
