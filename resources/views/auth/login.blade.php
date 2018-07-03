@@ -61,12 +61,12 @@
 
             <h4 class="text-center">or login using<br />your social accounts</h4>
 
-            <button class="btn btn-primary">
-                <i class="fab fa-facebook-f" aria-hidden="true"></i>&nbsp;Facebook <span class="account">Account</span>
+            <button class="btn btn-primary socials">
+                <i class="fab fa-facebook-f fa-3x" aria-hidden="true"></i>&nbsp;{{--Facebook <span class="account">Account--}}</span>
             </button>
 
-            <button class="btn btn-danger float-right">
-                <i class="fab fa-google-plus-g" aria-hidden="true"></i>&nbsp;Google Plus <span class="account">Account</span>
+            <button class="btn btn-danger float-right socials">
+                <i class="fab fa-google-plus-g fa-3x" aria-hidden="true"></i>&nbsp;{{--Google Plus <span class="account">Account--}}</span>
             </button><br /><br />
 
             <a class="btn btn-link" href="/reset">

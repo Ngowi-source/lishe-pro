@@ -21,7 +21,7 @@ body{
 #contentWrapper{
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 15vh minmax(85vh, auto) 20vh;
+  grid-template-rows: 15vh minmax(85vh, max-content) 20vh;
 }
 #header{
   grid-area: 1/1/2/2;
@@ -136,12 +136,13 @@ body{
 
 }
 .submenu a{
-  z-index: 6;
+  z-index: 100;
   color: $c5;
   text-decoration: none;
   display: block;
   font-size: medium;
   margin-top: 15px;
+  overflow: visible;
 
   i{
     font-family: FontAwesome;
@@ -590,4 +591,7 @@ input[name='userid']{
 }
 .text-center{
   text-align: center!important;
+}
+.socials{
+  broder-radius: 50%;
 }

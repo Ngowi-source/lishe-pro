@@ -10425,7 +10425,8 @@ body {
 #contentWrapper {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 15vh minmax(85vh, auto) 20vh;
+  grid-template-rows: 15vh minmax(85vh, -webkit-max-content) 20vh;
+  grid-template-rows: 15vh minmax(85vh, max-content) 20vh;
 }
 
 #header {
@@ -10546,12 +10547,13 @@ body {
 }
 
 .submenu a {
-  z-index: 6;
+  z-index: 100;
   color: #8B281F;
   text-decoration: none;
   display: block;
   font-size: medium;
   margin-top: 15px;
+  overflow: visible;
 }
 
 .submenu a i {
@@ -11040,5 +11042,9 @@ input[name='userid'] {
 
 .text-center {
   text-align: center !important;
+}
+
+.socials {
+  broder-radius: 50%;
 }
 
