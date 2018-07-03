@@ -153,8 +153,16 @@ body{
     cursor: pointer!important;
   }
 }
-#dal, #tools{
+#dal, #tools, .dropdown{
   cursor: pointer;
+}
+.dropdown div{
+  padding: 10px;
+
+  a{
+    cursor: pointer;
+    z-index: 9999999999999999999999;
+  }
 }
 #intro{
   position: absolute;
@@ -596,5 +604,5 @@ input[name='userid']{
   text-align: center!important;
 }
 .socials{
-  font-size: larger;
+  font-size: large;
 }

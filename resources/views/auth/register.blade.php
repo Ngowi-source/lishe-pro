@@ -70,7 +70,7 @@
 
             <button class="btn btn-danger float-left socials">
                 <i class="fab fa-google-plus-g fa-3x" aria-hidden="true"></i>&nbsp;{{--Google Plus <span class="account">Account--}}</span>
-            </button>
+            </button>&nbsp;&nbsp;
 
         </form>
     </div>

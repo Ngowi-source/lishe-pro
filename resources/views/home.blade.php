@@ -23,7 +23,7 @@
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
         <a class="dropdown dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dietary Assessment Tools
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <div aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="/food-calorie-counter">Food Calorie Counter</a>
                 <a class="dropdown-item" href="/weight-loss-tracker">Weight Loss Tracker</a>
                 <a class="dropdown-item" href="/diet-meal-planner">Diet Meal Planner</a>

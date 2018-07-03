@@ -10567,8 +10567,18 @@ body {
 }
 
 #dal,
-#tools {
+#tools,
+.dropdown {
   cursor: pointer;
+}
+
+.dropdown div {
+  padding: 10px;
+}
+
+.dropdown div a {
+  cursor: pointer;
+  z-index: 9999999999999999999999;
 }
 
 #intro {
@@ -11048,6 +11058,6 @@ input[name='userid'] {
 }
 
 .socials {
-  font-size: larger;
+  font-size: large;
 }
 
