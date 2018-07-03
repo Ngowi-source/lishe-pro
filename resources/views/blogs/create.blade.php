@@ -2,8 +2,8 @@
 
 @section('stylesheets')
     <link rel="stylesheet" href="{{'/css/app.css'}}">
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=p9gwfh55jelclqug2wg6knu5lbdjzbrar12wvh1z8ixkuiya"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>
+    {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=p9gwfh55jelclqug2wg6knu5lbdjzbrar12wvh1z8ixkuiya"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>--}}
 @endsection
 
 @section('title')
