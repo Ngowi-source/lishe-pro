@@ -153,16 +153,8 @@ body{
     cursor: pointer!important;
   }
 }
-#dal, #tools, .dropdown{
+#dal, #tools{
   cursor: pointer;
-}
-.dropdown div{
-  padding: 10px;
-
-  a{
-    cursor: pointer;
-    z-index: 9999999999999999999999;
-  }
 }
 #intro{
   position: absolute;
