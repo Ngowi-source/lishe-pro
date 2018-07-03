@@ -65,14 +65,17 @@
                 <form method="POST" action="/diet-assessment">
                     {{csrf_field()}}
 
+                    <label for="name">Name</label>
+                    <input id="name" type="text" autofocus/><br />
+
                     <label for="height">Height</label>
-                    <input id="height" type="number" placeholder="in centimeters..." required/>
+                    <input id="height" type="number" placeholder="in centimeters..." required/><br />
 
                     <label for="weight">Weight</label>
-                    <input id="weight" type="number" placeholder="in kilograms..." required/>
+                    <input id="weight" type="number" placeholder="in kilograms..." required/><br />
 
                     <label for="age">Age</label>
-                    <input id="age" type="number" required/><br />
+                    <input id="age" type="number" required/><br /><br />
 
                     <input type="radio" value="Female" id="female" name="sex"/>
                     <label for="female"><span></span>Female</label>

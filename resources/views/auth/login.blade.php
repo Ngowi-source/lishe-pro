@@ -43,12 +43,12 @@
 
             <label for="email" class="large">E-Mail Address</label>
 
-            <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+            <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required autofocus><br />
 
 
             <label for="password" class="large">Password</label>
 
-            <input id="password" type="password" class="form-control" name="password" required>
+            <input id="password" type="password" class="form-control" name="password" required><br />
 
 
             <label class="large">
@@ -59,7 +59,7 @@
                 Lets Go
             </button><br /><br />
 
-            <h4 class="text-center">or login using</h4>
+            <h4 class="text-center">or login using<br />your social accounts</h4>
 
             <button class="btn btn-primary">
                 <i class="fab fa-facebook-f" aria-hidden="true"></i>&nbsp;Facebook <span class="account">Account</span>
