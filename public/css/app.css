@@ -10431,6 +10431,7 @@ body {
 
 #header {
   grid-area: 1/1/2/2;
+  z-index: 200;
   background: transparent;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -10567,18 +10568,8 @@ body {
 }
 
 #dal,
-#tools,
-.dropdown {
+#tools {
   cursor: pointer;
-}
-
-.dropdown div {
-  padding: 10px;
-}
-
-.dropdown div a {
-  cursor: pointer;
-  z-index: 9999999999999999999999;
 }
 
 #intro {
@@ -11059,5 +11050,10 @@ input[name='userid'] {
 
 .socials {
   font-size: large;
+}
+
+.twitter {
+  background: skyblue;
+  color: #fff;
 }
 
