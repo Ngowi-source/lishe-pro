@@ -21,7 +21,7 @@ body{
 #contentWrapper{
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 15vh minmax(85vh, max-content) 20vh;
+  grid-template-rows: 15vh minmax(95vh, max-content) 20vh;
 }
 #header{
   grid-area: 1/1/2/2;
@@ -259,6 +259,9 @@ body{
     }
   }
   button{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: #fff;
     background: $c4;
     font-size: 1.3rem;
@@ -593,5 +596,5 @@ input[name='userid']{
   text-align: center!important;
 }
 .socials{
-  broder-radius: 50%;
+  font-size: larger;
 }

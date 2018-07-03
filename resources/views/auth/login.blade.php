@@ -63,9 +63,9 @@
 
             <button class="btn btn-primary socials">
                 <i class="fab fa-facebook-f fa-3x" aria-hidden="true"></i>&nbsp;{{--Facebook <span class="account">Account--}}</span>
-            </button>
+            </button>&nbsp;
 
-            <button class="btn btn-danger float-right socials">
+            <button class="btn btn-danger float-left socials">
                 <i class="fab fa-google-plus-g fa-3x" aria-hidden="true"></i>&nbsp;{{--Google Plus <span class="account">Account--}}</span>
             </button><br /><br />
 
