@@ -17,6 +17,7 @@
                 <a href="/lishe-pro24">Lishe Pro-24</a>
             </div>
         </a>
+        <a href="/blog">Blog</a>
         <a href="/register">Register</a>
     </div>
 
