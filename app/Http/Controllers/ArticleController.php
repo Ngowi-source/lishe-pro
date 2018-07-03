@@ -20,7 +20,7 @@ class ArticleController extends Controller
     {
         $articles = Article::latest();
 
-        /*if($month = request('month'))
+        if($month = request('month'))
         {
             $articles->whereMonth('created_at', Carbon::parse($month)->month);
         }
@@ -28,7 +28,7 @@ class ArticleController extends Controller
         if($year = request('year'))
         {
             $articles->whereYear('created_at', Carbon::parse($year)->year);
-        }*/
+        }
 
         $articles = $articles->simplePaginate(3);
 
