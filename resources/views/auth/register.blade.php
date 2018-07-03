@@ -65,11 +65,11 @@
             <h4 class="text-center">or register using<br />your social accounts</h4>
 
             <button class="btn btn-primary socials">
-                <i class="fab fa-facebook-f fa-3x" aria-hidden="true"></i>&nbsp;{{--Facebook <span class="account">Account--}}</span>
+                <i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>&nbsp;{{--Facebook <span class="account">Account--}}</span>
             </button>&nbsp;
 
             <button class="btn btn-danger float-left socials">
-                <i class="fab fa-google-plus-g fa-3x" aria-hidden="true"></i>&nbsp;{{--Google Plus <span class="account">Account--}}</span>
+                <i class="fab fa-google-plus-g fa-2x" aria-hidden="true"></i>&nbsp;{{--Google Plus <span class="account">Account--}}</span>
             </button>&nbsp;&nbsp;
 
         </form>
