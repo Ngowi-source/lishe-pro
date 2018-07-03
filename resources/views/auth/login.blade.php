@@ -41,21 +41,21 @@
                 </div>
             @endif
 
-            <label for="email">E-Mail Address</label>
+            <label for="email" class="large">E-Mail Address</label>
 
             <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
 
-            <label for="password">Password</label>
+            <label for="password" class="large">Password</label>
 
             <input id="password" type="password" class="form-control" name="password" required>
 
 
-            <label>
+            <label class="large">
                 <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>&nbsp;Remember Me
             </label><br /><br />
 
-            <button type="submit" class="btn">
+            <button type="submit" class="btn large">
                 Lets Go
             </button><br /><br />
 

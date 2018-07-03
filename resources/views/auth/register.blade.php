@@ -41,24 +41,24 @@
                 </div>
             @endif
 
-            <label for="firstname">First Name</label>
+            <label for="firstname" class="large">First Name</label>
             <input id="firstname" type="text" class="form-control" name="firstname" value="{{ old('firstname') }}" required autofocus>
 
-            <label for="lastname">Last Name</label>
+            <label for="lastname" class="large">Last Name</label>
             <input id="lastname" type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" required >
 
-            <label for="email">E-Mail Address</label>
+            <label for="email" class="large">E-Mail Address</label>
             <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required>
 
 
-            <label for="password">Password</label>
+            <label for="password" class="large">Password</label>
             <input id="password" type="password" class="form-control" name="password" required>
 
 
-            <label for="password-confirm">Confirm Password</label>
+            <label for="password-confirm" class="large">Confirm Password</label>
             <input id="password-confirm" class="form-control" type="password" name="password_confirmation" required><br /><br />
 
-            <button type="submit" class="btn">
+            <button type="submit" class="btn large">
                 Join Us
             </button><br /><br />
 
