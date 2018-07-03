@@ -10425,8 +10425,8 @@ body {
 #contentWrapper {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 15vh minmax(95vh, -webkit-max-content) 20vh;
-  grid-template-rows: 15vh minmax(95vh, max-content) 20vh;
+  grid-template-rows: 15vh minmax(105vh, -webkit-max-content) 20vh;
+  grid-template-rows: 15vh minmax(105vh, max-content) 20vh;
 }
 
 #header {
