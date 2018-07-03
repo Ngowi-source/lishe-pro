@@ -20,7 +20,7 @@ class Article extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function scopeFilter($query, $filters)
+    /*public function scopeFilter($query, $filters)
     {
         if($month = $filters['month'])
         {
@@ -31,5 +31,5 @@ class Article extends Model
         {
             $query->whereYear('created_at', $year);
         }
-    }
+    }*/
 }
