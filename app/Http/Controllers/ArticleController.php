@@ -33,20 +33,20 @@ class ArticleController extends Controller
 
         $articles = $articles->simplePaginate(3);
 
-        $archives = Article::selectRaw("extract(year from created_at) as year, to_char(min(created_at), 'month') as monthname, extract(month from created_at) as month, count(*) as published")->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
+        $archives = Article::archives();
 
         return view('blogs.index', compact('articles', 'archives'));
     }
 
     public function show(Article $post)
     {
-        $archives = Article::selectRaw("extract(year from created_at) as year, to_char(min(created_at), 'month') as monthname, extract(month from created_at) as month, count(*) as published")->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
+        $archives = Article::archives();
         return view('blogs.show',compact('post', 'archives'));
     }
 
     public function create()
     {
-        $archives = Article::selectRaw("extract(year from created_at) as year, to_char(min(created_at), 'month') as monthname, extract(month from created_at) as month, count(*) as published")->groupBy('year', 'month')->orderByRaw('min(created_at) desc')->get()->toArray();
+        $archives = Article::archives();
         return view('blogs.create', compact('archives'));
     }
 
