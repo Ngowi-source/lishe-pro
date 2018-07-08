@@ -82,7 +82,7 @@
 
                     <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea>
                     <br />
-                    <button type="submit" name="send" class="float-right">Add Comment</button>
+                    <button type="submit" name="send" class="float-right form-control">Add Comment</button>
 
                 </form><br />
 
@@ -96,7 +96,7 @@
 
                             <span class="large">{{$comment->body}}</span><br />
 
-                            <span class="right"><i class="fas fa-reply"></i></span>
+                            <span class="right reply"><i class="fas fa-reply"></i></span>
 
                         </li>
 
