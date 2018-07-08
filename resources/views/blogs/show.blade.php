@@ -109,7 +109,7 @@
                             <button type="submit" name="send" class="float-right">Reply</button>
                         </form><br />
 
-                        @if(count($comment->replies))
+                        @if(count($comment->replies) > 0)
 
                                 <ul class="list-group">
                                     @foreach($comment->replies as $reply)

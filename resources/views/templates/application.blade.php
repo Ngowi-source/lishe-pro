@@ -51,6 +51,10 @@
             $("#tools").click(function() {
                 $('.submenu').toggleClass('display');
             });
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
         });
     </script>
 
