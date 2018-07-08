@@ -145,11 +145,11 @@
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
 
-            $(".reply").click(function(){
+           /* $(".reply").click(function(){
                 $id = $(this).data("id");
 
                 $("#reply_"+$id).css('display', 'block');
-            });
+            });*/
         });
     </script>
 

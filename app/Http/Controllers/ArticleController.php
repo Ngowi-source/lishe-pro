@@ -81,4 +81,19 @@ class ArticleController extends Controller
         return back();
     }
 
+    public function reply(Article $post)
+    {
+        $this->validate(request(), [
+            'body'=> 'required|min:2'
+        ]);
+
+        Reply::create([
+            'comment_id' => $post->id,
+            'body' => request('body'),
+            'user_id'=> Auth::id()
+        ]);
+
+        return back();
+    }
+
 }
