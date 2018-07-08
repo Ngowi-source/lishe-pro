@@ -54,7 +54,7 @@ class ArticleController extends Controller
     {
         $this->validate($request, [
             'title'=> 'required|max:25',
-            'body'=> 'required|min:35'
+            'body'=> 'required'
         ]);
 
         Article::create([

@@ -1,9 +1,13 @@
 @extends('templates.application')
 
 @section('stylesheets')
+
+    {{--<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>--}}
     <link rel="stylesheet" href="{{'/css/app.css'}}">
     {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=p9gwfh55jelclqug2wg6knu5lbdjzbrar12wvh1z8ixkuiya"></script>
     <script>tinymce.init({ selector:'textarea' });</script>--}}
+
 @endsection
 
 @section('title')
@@ -70,7 +74,7 @@
                 <input id="title" name="title" type="text" class="form-control" required/>
 
                 <label for="body">Body of the article</label>
-                <textarea id="body" name="body" type="text" class="form-control" required></textarea><br />
+                <textarea id="body" name="body" class="form-control" required></textarea><br />
 
                 <button type="submit" class="form-control">
                     Post Article
@@ -92,6 +96,8 @@
             $("#header").css('background', 'linear-gradient(#D57030, #9BA747)');
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
+
+            /*$('#body').summernote();*/
 
         });
     </script>
