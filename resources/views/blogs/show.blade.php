@@ -82,9 +82,9 @@
 
                     <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea>
                     <br />
-                    <button type="submit" name="send" class="float-right form-control">Add Comment</button>
+                    <button type="submit" name="send" class="float-right">Add Comment</button>
 
-                </form><br />
+                </form><br /><br />
 
                 @if(count($post->comments))
 
