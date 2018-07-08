@@ -66,6 +66,26 @@
 
             <div id="comments">
 
+                @if(count($errors))
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <form action="/blog/{{$post->id}}/comment" method="POST" id="addComment">
+                    {{csrf_field()}}
+                    <h4>Say something about this article</h4>
+                    <label for="newcomment"></label>
+
+                    <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea>
+                    <br />
+                    <button type="submit" name="send" class="float-right">Add Comment</button>
+
+                </form>
+
                 @if(count($post->comments))
 
                     <ul class="list-group">
@@ -74,55 +94,24 @@
                         <li class="list-group-item">
                             <b class="text-left">{{$comment->user->firstname}} {{$comment->user->lastname}}</b>&nbsp;<span class="grey"><i>{{$comment->created_at->diffForHumans()}}</i></span><br /><br />
 
-                            <span class="large">{{$comment->body}}</span>
+                            <span class="large">{{$comment->body}}</span><br />
+
+                            <span class="text-right"><i class="fas fa-reply"></i></span>
+
                         </li>
+
+                        <form id="reply_{{$comment->id}}" class="commentReplyForm" method="POST" action="/blog/{{$post->id}}/reply">
+                            <label for="newreply" ></label>
+
+                            <textarea id="newreply" type="text" class="form-control" name="body" placeholder="Your reply" required></textarea>
+                            <br />
+                        </form>
                         <hr />
                     @endforeach
                     </ul>
 
-                    @if(count($errors))
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                    <li>{{$error}}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-                    <form action="/blog/{{$post->id}}/comment" method="POST" id="addComment">
-                        {{csrf_field()}}
-                        <h4>Say something about this article:</h4>
-                        <label for="newcomment"></label>
-
-                        <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea><br /><br />
-
-                        <button type="submit" name="send" class="float-right">Add Comment</button>
-
-                    </form>
-
-                @else
-
-                    @if(count($errors))
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                    <li>{{$error}}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-                    <form action="/blog/{{$post->id}}/comment" method="POST" id="addComment">
-                        {{csrf_field()}}
-                        <h4>Say something about this article</h4>
-                        <label for="newcomment"></label>
-
-                        <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea>
-                        <br />
-                        <button type="submit" name="send" class="float-right">Add Comment</button>
-
-                    </form>
-
                 @endif
+
 
             </div>
         </div>

@@ -20,8 +20,8 @@ class Comments extends Model
         return $this->belongsTo(User::class);
     }
 
-    /*public function comment()
+    public function replies()
     {
-        return $this->hasMany($this);
-    }*/
+        return $this->hasMany(Reply::class);
+    }
 }
