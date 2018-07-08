@@ -13,7 +13,7 @@ class Reply extends Model
 
     public function comment()
     {
-        return $this->belongsTo(Comments::class);
+        return $this->belongsTo(Comment::class);
     }
 
     public function user()

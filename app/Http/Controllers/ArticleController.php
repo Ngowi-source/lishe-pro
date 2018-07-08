@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article;
-use App\Comments;
+use App\Comment;
+use App\Reply;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
@@ -72,7 +73,7 @@ class ArticleController extends Controller
             'body'=> 'required|min:2'
         ]);
 
-        Comments::create([
+        Comment::create([
             'article_id' => $post->id,
             'body' => request('body'),
             'user_id'=> Auth::id()
