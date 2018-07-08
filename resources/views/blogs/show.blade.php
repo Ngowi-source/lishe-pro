@@ -96,7 +96,7 @@
 
                             <span class="large">{{$comment->body}}</span><br />
 
-                            <span class="right reply"><i class="fas fa-reply"></i></span>
+                            <span class="right reply" data-toggle="tooltip" title="Reply" data-id="{{$comment->id}}"><i class="fas fa-reply"></i></span>
 
                         </li>
 
@@ -105,7 +105,23 @@
 
                             <textarea id="newreply" type="text" class="form-control" name="body" placeholder="Your reply" required></textarea>
                             <br />
-                        </form>
+
+                            <button type="submit" name="send" class="float-right">Reply</button>
+                        </form><br />
+
+                        @if(count($comment->replies))
+
+                                <ul class="list-group">
+                                    @foreach($comment->replies as $reply)
+
+                                        <li class="list-group-item">
+                                            <b class="text-left">{{$reply->user->firstname}} {{$reply->user->lastname}}</b>&nbsp;<span class="grey"><i>{{$reply->created_at->diffForHumans()}}</i></span><br /><br />
+
+                                            {{$reply->body}}<br />
+                                        </li>
+                                    @endforeach
+                                </ul>
+                        @endif
                         <hr />
                     @endforeach
                     </ul>
@@ -124,9 +140,16 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
+
             $("#header").css('background', 'linear-gradient(#D57030, #9BA747)');
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
+
+            $(".reply").click(function(){
+                $id = $(this).data("id");
+
+                $("#reply_"+$id).css('display', 'block');
+            });
         });
     </script>
 

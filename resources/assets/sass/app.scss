@@ -606,6 +606,9 @@ input[name='userid']{
 .commentReplyForm{
   display: none;
 }
+.reply{
+  cursor: pointer;
+}
 .right{
   text-align: right!important;
   float: right!important;
