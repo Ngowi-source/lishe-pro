@@ -11057,3 +11057,12 @@ input[name='userid'] {
   color: #fff;
 }
 
+.commentReplyForm {
+  display: none;
+}
+
+.right {
+  text-align: right !important;
+  float: right !important;
+}
+

@@ -84,7 +84,7 @@
                     <br />
                     <button type="submit" name="send" class="float-right">Add Comment</button>
 
-                </form>
+                </form><br />
 
                 @if(count($post->comments))
 
@@ -96,7 +96,7 @@
 
                             <span class="large">{{$comment->body}}</span><br />
 
-                            <span class="text-right"><i class="fas fa-reply"></i></span>
+                            <span class="right"><i class="fas fa-reply"></i></span>
 
                         </li>
 
