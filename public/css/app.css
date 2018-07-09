@@ -11072,5 +11072,6 @@ input[name='userid'] {
 
 .replies li {
   width: 75%;
+  float: right;
 }
 

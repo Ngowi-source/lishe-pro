@@ -100,21 +100,12 @@
 
                         </li>
 
-                        <form id="reply_{{$comment->id}}" class="commentReplyForm" method="POST" action="/blog/{{$post->id}}/reply">
-                            <label for="newreply" ></label>
-
-                            <textarea id="newreply" type="text" class="form-control" name="body" placeholder="Your reply" required></textarea>
-                            <br />
-
-                            <button type="submit" name="send" class="float-right">Reply</button><br />
-                        </form>
-
                         @if(count($comment->replies))
 
                                 <ul class="list-group replies">
                                     @foreach($comment->replies as $reply)
 
-                                        <li class="list-group-item right">
+                                        <li class="list-group-item">
                                             <b class="text-left">{{$reply->user->firstname}} {{$reply->user->lastname}}</b>&nbsp;<span class="grey right"><i>{{$reply->created_at->diffForHumans()}}</i></span><br /><br />
 
                                             {{$reply->body}}<br />
@@ -122,6 +113,16 @@
                                     @endforeach
                                 </ul>
                         @endif
+
+                            <form id="reply_{{$comment->id}}" class="commentReplyForm" method="POST" action="/blog/{{$post->id}}/reply">
+                                <label for="newreply" ></label>
+
+                                <textarea id="newreply" type="text" class="form-control" name="body" placeholder="Your reply" required></textarea>
+                                <br />
+
+                                <button type="submit" name="send" class="float-right">Reply</button><br />
+                            </form>
+
                         <hr />
                     @endforeach
                     </ul>
