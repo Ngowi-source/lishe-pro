@@ -75,7 +75,11 @@
 
             <button class="btn twitter socials">
                 <i class="fab fa-twitter fa-2x"></i>&nbsp;{{--Twitter <span class="account">Account--}}</span>
-            </button>&nbsp;
+            </button>&nbsp;<br /><br />
+
+            <a class="float-left" href="/login">
+                Already have an account ?
+            </a>
 
 
         </form>
