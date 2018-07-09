@@ -10449,8 +10449,8 @@ body {
 
 #footer {
   grid-area: 3/1/4/2;
-  background-color: #D9DCD8;
-  color: #8B281F;
+  background-color: #D57030;
+  color: #D9DCD8;
   text-align: center;
   position: relative;
 }
@@ -10897,7 +10897,7 @@ body {
 }
 
 #blogBod .list-group-item {
-  background-color: #F29D4B;
+  background-color: #D9DCD8;
 }
 
 #blogBod h3 {
@@ -11077,6 +11077,7 @@ input[name='userid'] {
 
 .reply {
   cursor: pointer;
+  color: #D57030;
 }
 
 .right {
@@ -11085,7 +11086,8 @@ input[name='userid'] {
 }
 
 .replies li {
-  width: 75%;
-  margin-right: 0;
+  width: 80%;
+  margin-right: 0 !important;
+  float: right !important;
 }
 

@@ -95,7 +95,7 @@
                     <h4>Say something about this article</h4>
                     <label for="newcomment"></label>
 
-                    <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Your comment" required></textarea>
+                    <textarea id="newcomment" type="text" class="form-control" name="body" placeholder="Login or register to comment" required></textarea>
                     <br />
                     <button type="submit" name="send" class="float-right">Add Comment</button>
 

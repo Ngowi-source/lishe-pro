@@ -40,8 +40,8 @@ body{
 }
 #footer{
   grid-area: 3/1/4/2;
-  background-color: $c1;
-  color: $c5;
+  background-color: $c4;
+  color: $c1;
   text-align: center;
   position: relative;
 
@@ -471,7 +471,7 @@ body{
   text-align: left;
 
   .list-group-item{
-    background-color: $c3;
+    background-color: $c1;
   }
 
   h3{
@@ -618,6 +618,7 @@ input[name='userid']{
 }
 .reply{
   cursor: pointer;
+  color: $c4;
 }
 .right{
   text-align: right!important;
@@ -625,7 +626,8 @@ input[name='userid']{
 }
 .replies{
   li{
-    width: 75%;
-    margin-right: 0;
+    width: 80%;
+    margin-right: 0!important;
+    float: right!important;
   }
 }
