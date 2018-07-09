@@ -189,5 +189,14 @@
         var marker = L.marker([-6.781610, 39.234919]).addTo(mymap);
         marker.bindPopup("Lishe Pro").openPopup();
 
+        $(document).ready(function(){
+
+            $("#footer").css({
+                'background-color': '#D9DCD8',
+                'color' : '#8B281F'
+            });
+
+        });
+
     </script>
 @endsection
