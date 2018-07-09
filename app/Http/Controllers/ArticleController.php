@@ -64,7 +64,7 @@ class ArticleController extends Controller
             'user_id'=> Auth::id()
         ]);
 
-        return redirect('/blog');
+        return redirect('/blog')->with(['articlesuccess'=> 'Your article is posted!']);
     }
 
     public function comment(Article $post)
@@ -79,7 +79,7 @@ class ArticleController extends Controller
             'user_id'=> Auth::id()
         ]);
 
-        return back();
+        return back()->with(['commentsuccess'=> 'Your comment is added!']);
     }
 
     public function reply(Article $post)
@@ -95,7 +95,7 @@ class ArticleController extends Controller
             'user_id'=> Auth::id()
         ]);
 
-        return back();
+        return back()->with(['replysuccess'=> 'Your reply is sent!']);
     }
 
 }

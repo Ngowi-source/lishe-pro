@@ -9,6 +9,21 @@
 @endsection
 
 @section('header')
+
+    @if(session()->has('commentsuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('commentsuccess')}}</strong>&nbsp;
+        </div>
+    @endif
+
+    @if(session()->has('replysuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('replysuccess')}}</strong>&nbsp;
+        </div>
+    @endif
+
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
 
@@ -116,7 +131,7 @@
 
                             <form id="reply_{{$comment->id}}" class="commentReplyForm" method="POST" action="/blog/{{$post->id}}/reply">
                                 {{csrf_field()}}
-                                
+
                                 <label for="newreply" ></label>
 
                                 <textarea id="newreply" type="text" class="form-control" name="body" placeholder="Your reply" required></textarea>

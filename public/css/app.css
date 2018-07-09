@@ -10950,7 +10950,9 @@ body {
   font-size: large;
 }
 
-#addComment button {
+#addComment button,
+.commentReplyForm button {
+  padding: 5px 10px 5px 10px;
   font-size: larger;
   background: #D57030;
   color: #fff;
@@ -10960,7 +10962,8 @@ body {
   transition: background 0.2s ease-out;
 }
 
-#addComment button:hover {
+#addComment button:hover,
+.commentReplyForm button:hover {
   background: #9BA747;
 }
 

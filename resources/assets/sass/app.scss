@@ -515,8 +515,9 @@ body{
 .articleBod{
   font-size: large;
 }
-#addComment {
+#addComment, .commentReplyForm {
   button {
+    padding: 5px 10px 5px 10px;
     font-size: larger;
     background: $c4;
     color: #fff;

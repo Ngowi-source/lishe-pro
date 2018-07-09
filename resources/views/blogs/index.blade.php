@@ -5,6 +5,14 @@
 @endsection
 
 @section('header')
+
+    @if(session()->has('articlesuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('articlesuccess')}}</strong>&nbsp;
+        </div>
+    @endif
+
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
         <a id="tools">Dietary Assessment Tools
