@@ -106,7 +106,7 @@
                                     @foreach($comment->replies as $reply)
 
                                         <li class="list-group-item">
-                                            <b class="text-left">{{$reply->user->firstname}} {{$reply->user->lastname}}</b>&nbsp;<span class="grey right"><i>{{$reply->created_at->diffForHumans()}}</i></span><br /><br />
+                                            <b class="text-left">{{$reply->user->firstname}} {{$reply->user->lastname}}</b>&nbsp;&nbsp;<span class="grey"><i>replied</i></span>&nbsp;<span class="grey right"><i>{{$reply->created_at->diffForHumans()}}</i></span><br /><br />
 
                                             {{$reply->body}}<br />
                                         </li>
