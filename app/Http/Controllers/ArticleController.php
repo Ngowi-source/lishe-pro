@@ -85,11 +85,12 @@ class ArticleController extends Controller
     public function reply(Article $post)
     {
         $this->validate(request(), [
-            'body'=> 'required|min:2'
+            'body'=> 'required|min:2',
+            'cid'=> 'integer'
         ]);
 
         Reply::create([
-            'comment_id' => $post->id,
+            'comment_id' => request('cid'),
             'body' => request('body'),
             'user_id'=> Auth::id()
         ]);

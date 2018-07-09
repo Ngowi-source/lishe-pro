@@ -120,6 +120,8 @@
                                 <textarea id="newreply" type="text" class="form-control" name="body" placeholder="Your reply" required></textarea>
                                 <br />
 
+                                <input type="hidden" value="{{$comment->id}}" name="cid" />
+
                                 <button type="submit" name="send" class="float-right">Reply</button><br />
                             </form>
 
