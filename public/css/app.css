@@ -11070,3 +11070,7 @@ input[name='userid'] {
   float: right !important;
 }
 
+.replies li {
+  width: 75%;
+}
+

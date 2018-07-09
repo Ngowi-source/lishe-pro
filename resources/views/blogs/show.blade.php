@@ -92,7 +92,7 @@
                     @foreach($post->comments as $comment)
 
                         <li class="list-group-item">
-                            <b class="text-left">{{$comment->user->firstname}} {{$comment->user->lastname}}</b>&nbsp;<span class="grey"><i>{{$comment->created_at->diffForHumans()}}</i></span><br /><br />
+                            <b class="text-left">{{$comment->user->firstname}} {{$comment->user->lastname}}</b>&nbsp;<span class="grey right"><i>{{$comment->created_at->diffForHumans()}}</i></span><br /><br />
 
                             <span class="large">{{$comment->body}}</span><br />
 
@@ -106,16 +106,16 @@
                             <textarea id="newreply" type="text" class="form-control" name="body" placeholder="Your reply" required></textarea>
                             <br />
 
-                            <button type="submit" name="send" class="float-right">Reply</button>
-                        </form><br />
+                            <button type="submit" name="send" class="float-right">Reply</button><br />
+                        </form>
 
                         @if(count($comment->replies))
 
-                                <ul class="list-group">
+                                <ul class="list-group replies">
                                     @foreach($comment->replies as $reply)
 
-                                        <li class="list-group-item">
-                                            <b class="text-left">{{$reply->user->firstname}} {{$reply->user->lastname}}</b>&nbsp;<span class="grey"><i>{{$reply->created_at->diffForHumans()}}</i></span><br /><br />
+                                        <li class="list-group-item right">
+                                            <b class="text-left">{{$reply->user->firstname}} {{$reply->user->lastname}}</b>&nbsp;<span class="grey right"><i>{{$reply->created_at->diffForHumans()}}</i></span><br /><br />
 
                                             {{$reply->body}}<br />
                                         </li>
@@ -145,11 +145,11 @@
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
 
-           /* $(".reply").click(function(){
+            $(".reply").click(function(){
                 $id = $(this).data("id");
 
                 $("#reply_"+$id).css('display', 'block');
-            });*/
+            });
         });
     </script>
 
