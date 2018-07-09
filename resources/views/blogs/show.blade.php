@@ -115,6 +115,8 @@
                         @endif
 
                             <form id="reply_{{$comment->id}}" class="commentReplyForm" method="POST" action="/blog/{{$post->id}}/reply">
+                                {{csrf_field()}}
+                                
                                 <label for="newreply" ></label>
 
                                 <textarea id="newreply" type="text" class="form-control" name="body" placeholder="Your reply" required></textarea>
