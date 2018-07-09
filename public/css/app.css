@@ -10985,6 +10985,12 @@ body {
   color: #8B281F;
 }
 
+#registerWrapper a,
+#loginWrapper a {
+  display: inline-block;
+  font-size: medium;
+}
+
 #registerForm,
 #loginForm {
   width: 60vw;

@@ -7,7 +7,6 @@ use App\Article;
 use App\Comment;
 use App\Reply;
 use Illuminate\Support\Facades\Auth;
-use Carbon\Carbon;
 
 class ArticleController extends Controller
 {

@@ -60,7 +60,7 @@
                 Lets Go
             </button><br /><br />
 
-            <h4 class="text-center">or login using<br />your social accounts</h4>
+            <h4 class="text-left">or login using</h4>
 
             <button class="btn btn-danger float-left socials">
                 <i class="fab fa-google-plus-g fa-2x" aria-hidden="true"></i>&nbsp;{{--Google Plus <span class="account">Account--}}</span>
@@ -76,8 +76,12 @@
             </button>&nbsp;
             <br /><br />
 
-            <a class="btn btn-link" href="/reset">
+            <a class="float-left" href="/reset">
                 Forgot Your Password?
+            </a>
+
+            <a class="float-right" href="/register">
+                Don't have an account?
             </a>
 
         </form>
