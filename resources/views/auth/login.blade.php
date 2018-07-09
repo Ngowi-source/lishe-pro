@@ -77,11 +77,11 @@
             <br /><br />
 
             <a class="float-left" href="/reset">
-                Forgot Your Password?
+                Forgot Your Password ?
             </a>
 
             <a class="float-right" href="/register">
-                Don't have an account?
+                Don't have an account yet ?
             </a>
 
         </form>

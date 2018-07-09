@@ -10988,7 +10988,8 @@ body {
 #registerWrapper a,
 #loginWrapper a {
   display: inline-block;
-  font-size: medium;
+  font-size: large;
+  color: #D57030;
 }
 
 #registerForm,

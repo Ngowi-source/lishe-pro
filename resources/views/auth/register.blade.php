@@ -63,7 +63,7 @@
                 Join Us
             </button><br /><br />
 
-            <h4 class="text-center">or register using<br />your social accounts</h4>
+            <h4 class="text-center">or register using</h4>
 
             <button class="btn btn-danger float-left socials">
                 <i class="fab fa-google-plus-g fa-2x" aria-hidden="true"></i>&nbsp;{{--Google Plus <span class="account">Account--}}</span>

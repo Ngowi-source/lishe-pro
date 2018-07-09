@@ -547,7 +547,8 @@ body{
   }
   a{
     display: inline-block;
-    font-size: medium;
+    font-size: large;
+    color: $c4;
   }
 }
 #registerForm, #loginForm{
