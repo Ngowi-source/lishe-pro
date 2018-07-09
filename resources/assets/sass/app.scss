@@ -470,6 +470,10 @@ body{
   padding: 3vw;
   text-align: left;
 
+  .list-group-item{
+    background-color: $c3;
+  }
+
   h3{
     color: $c5;
     a{
@@ -519,7 +523,7 @@ body{
   button {
     padding: 5px 10px 5px 10px;
     font-size: larger;
-    background: $c4;
+    background: $c2;
     color: #fff;
     border-radius: 3px;
     border: none;
@@ -530,7 +534,7 @@ body{
     transition: background 0.2s ease-out ;
 
     &:hover{
-      background: $c2;
+      background: $c4;
     }
   }
 }

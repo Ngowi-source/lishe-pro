@@ -10896,6 +10896,10 @@ body {
   text-align: left;
 }
 
+#blogBod .list-group-item {
+  background-color: #F29D4B;
+}
+
 #blogBod h3 {
   color: #8B281F;
 }
@@ -10954,7 +10958,7 @@ body {
 .commentReplyForm button {
   padding: 5px 10px 5px 10px;
   font-size: larger;
-  background: #D57030;
+  background: #9BA747;
   color: #fff;
   border-radius: 3px;
   border: none;
@@ -10964,7 +10968,7 @@ body {
 
 #addComment button:hover,
 .commentReplyForm button:hover {
-  background: #9BA747;
+  background: #D57030;
 }
 
 .grey {
