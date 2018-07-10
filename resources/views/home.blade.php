@@ -107,7 +107,7 @@
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
         </div>
         <div id="whoAreWe">
-            <h1>Why Lishe Pro?</h1>
+            <h1>Why Lishe Pro?</h1><br />
 
             <span class="whoAreWe">Lishe PRO is guided by top-notch professionals’ group with purpose to safely <br />
             support those who are looking to improve their health through nutrition. <br />
@@ -117,7 +117,7 @@
 
         </div>
         <div id="whatWeDo">
-            <h1>Featured</h1>
+            <h1>Featured</h1><br />
             <div id="fcc">
                 <i class="fas fa-calculator fa-5x"></i><br /><br />
                 <span class="iconfeatured">Food Calorie Calculator</span>
