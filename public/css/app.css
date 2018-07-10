@@ -10752,6 +10752,10 @@ body {
   color: #D9DCD8;
 }
 
+#whatWeDo .iconfeatured {
+  font-size: x-large;
+}
+
 #fcc,
 #wlt,
 #dmp {

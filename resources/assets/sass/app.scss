@@ -337,6 +337,9 @@ body{
   .iconfeatured, h1{
     color: $c1;
   }
+  .iconfeatured{
+    font-size: x-large;
+  }
 }
 #fcc, #wlt, #dmp{
   position: absolute;
