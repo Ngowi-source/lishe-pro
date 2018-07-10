@@ -25,7 +25,7 @@
 
         <div id="footer">
             <div class="footer">
-                2018&copy;Lishe Pro Tanzania. All Rights Reserved<br />
+                2018&copy;Lishe Pro Tanzania. All Rights Reserved<br /><br />
                 Crafted by <a href="http://www.bryceandy.com">BryceAndy</a>
             </div>
         </div>

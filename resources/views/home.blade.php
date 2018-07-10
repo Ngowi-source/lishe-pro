@@ -140,7 +140,7 @@
             </div>
         </div>
         <div id="blog">
-            <h3>Latest Article From Our Blog</h3><br />
+            <h3>Latest Articles From Our Blog</h3><br />
 
             @if(count($articles))
                 <div class="card">
