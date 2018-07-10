@@ -10793,7 +10793,7 @@ body {
 }
 
 #blog h2 a {
-  color: #9BA747;
+  color: #D57030;
   text-decoration: none;
 }
 
@@ -10802,7 +10802,7 @@ body {
 }
 
 #blog h4 a {
-  color: #9BA747;
+  color: #D57030;
   text-decoration: none;
 }
 
@@ -10953,6 +10953,11 @@ body {
 
 .articleBod {
   font-size: large;
+}
+
+#blog .card {
+  width: 40vw;
+  display: inline-block;
 }
 
 #addComment button,

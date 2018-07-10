@@ -370,14 +370,14 @@ body{
   }
   h2{
     a{
-      color: $c2;
+      color: $c4;
       text-decoration: none;
     }
   }
   h4{
     text-align: right;
     a{
-      color: $c2;
+      color: $c4;
       text-decoration: none;
     }
   }
@@ -518,6 +518,12 @@ body{
 }
 .articleBod{
   font-size: large;
+}
+#blog{
+  .card{
+    width: 40vw;
+    display: inline-block;
+  }
 }
 #addComment, .commentReplyForm {
   button {
