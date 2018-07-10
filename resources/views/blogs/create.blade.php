@@ -74,7 +74,17 @@
                 <textarea id="body" name="body" class="form-control" required></textarea><br />
 
                 <script>
-                    ClassicEditor.create( document.querySelector( '#body' ) );
+                    ClassicEditor
+                        .create( document.querySelector( '#body' ), {
+                            toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
+                            heading: {
+                                options: [
+                                    { modelElement: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                                    { modelElement: 'heading1', viewElement: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                                    { modelElement: 'heading2', viewElement: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+                                ]
+                            }
+                        } );
                 </script>
 
                 <button type="submit" class="form-control">

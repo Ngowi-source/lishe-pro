@@ -10926,6 +10926,11 @@ body {
   font-size: larger;
 }
 
+#createForm textarea {
+  height: 30vh;
+  font-size: large !important;
+}
+
 #createForm button {
   border: none;
   background: #8B281F;

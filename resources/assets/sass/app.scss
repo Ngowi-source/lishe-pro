@@ -493,6 +493,10 @@ body{
 }
 #createForm{
   font-size: larger;
+  textarea{
+    height: 30vh;
+    font-size: large!important;
+  }
   button{
     border: none;
     background: $c5;
