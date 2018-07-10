@@ -99,7 +99,20 @@
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
 
-            $('#body').summernote();
+            $('#body').summernote(
+                {
+                    height: 350,
+                    toolbar: [
+                        // [groupName, [list of button]]
+                        ['style', ['bold', 'italic', 'underline', 'clear']],
+                        ['font', ['strikethrough', 'superscript', 'subscript']],
+                        ['fontsize', ['fontsize']],
+                        ['color', ['color']],
+                        ['para', ['ul', 'ol', 'paragraph']],
+                        ['height', ['height']]
+                    ]
+                }
+            );
 
         });
     </script>
