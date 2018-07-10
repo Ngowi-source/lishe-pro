@@ -2,11 +2,13 @@
 
 @section('stylesheets')
 
-    {{--<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>--}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
     <link rel="stylesheet" href="{{'/css/app.css'}}">
-    {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=p9gwfh55jelclqug2wg6knu5lbdjzbrar12wvh1z8ixkuiya"></script>
-    <script>tinymce.init({ selector:'textarea' });</script>--}}
 
 @endsection
 
@@ -97,7 +99,7 @@
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
 
-            /*$('#body').summernote();*/
+            $('#body').summernote();
 
         });
     </script>
