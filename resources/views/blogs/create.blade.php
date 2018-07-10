@@ -2,12 +2,7 @@
 
 @section('stylesheets')
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
     <link rel="stylesheet" href="{{'/css/app.css'}}">
 
 @endsection
@@ -75,8 +70,12 @@
                 <label for="title">Title of the article</label>
                 <input id="title" name="title" type="text" class="form-control" required/>
 
-                <label for="summernote">Body of the article</label>
-                <textarea id="summernote" name="body" class="form-control" required></textarea><br />
+                <label for="body">Body of the article</label>
+                <textarea id="body" name="body" class="form-control" required></textarea><br />
+
+                <script>
+                    ClassicEditor.create( document.querySelector( '#body' ) );
+                </script>
 
                 <button type="submit" class="form-control">
                     Post Article
@@ -95,11 +94,6 @@
     <script type="text/javascript">
         $(document).ready(function(){
 
-            $('#summernote').summernote({
-                placeholder: 'Hello bootstrap 4',
-                tabsize: 2,
-                height: window.innerHeight * 0.3
-            });
             $("#header").css('background', 'linear-gradient(#D57030, #9BA747)');
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
