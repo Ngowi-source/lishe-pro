@@ -48,8 +48,10 @@
     <script type="text/javascript">
         $(document).ready(function(){
 
-            $("#tools").click(function() {
-                $('.submenu').toggleClass('display');
+            $("#tools").hover(function() {
+                $('.submenu').addClass('display');
+            }, function(){
+                $('.submenu').removeClass('display');
             });
 
             $(function () {

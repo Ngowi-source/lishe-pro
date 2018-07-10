@@ -26,7 +26,7 @@ body{
 #header{
   grid-area: 1/1/2/2;
   z-index: 200;
-  background: transparent;
+  background: #fff;
   padding-left: 5vw;
   padding-right: 5vw;
   position: relative;
@@ -117,12 +117,11 @@ body{
 }
 #tools {
   position: relative;
-
 }
 .submenu{
   display: none;
   z-index: 100;
-  background: $c1;
+  background: #fff;
   position: absolute;
   top: 100%;
   left: 0;
@@ -156,13 +155,14 @@ body{
 }
 #dal, #tools{
   cursor: pointer;
+  color: $c5;
 }
 #intro{
   position: absolute;
   top: 25vh;
   color: #fff;
   text-align: left;
-  font-size: 1.8rem;
+  font-size: xx-large;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -384,7 +384,7 @@ body{
 }
 #contact{
   grid-area: 5/1/6/2;
-  background: $c5;
+  background: $c2;
   position: relative;
 }
 #contactUs{
