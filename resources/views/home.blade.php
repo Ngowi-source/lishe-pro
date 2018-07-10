@@ -151,7 +151,7 @@
                         <span class="articleBod">@if(strlen($articles[0])>100){{substr($articles[0]->body,0,100)}}... <span class="readMore"><a href="/blog/{{$articles[0]->id}}"><i>Read More</i></a></span> @else{{$articles[0]->body}}@endif</span><br />
                         <span class="articleTime"><i>{{count($articles[0]->comments)}} comments</i></span>
                     </div>
-                </div>
+                </div>&nbsp;
 
                 @if(count($articles)>1)
                     <div class="card">
@@ -162,7 +162,7 @@
                             <span class="articleBod">@if(strlen($articles[1])>100){{substr($articles[1]->body,0,100)}}... <span class="readMore"><a href="/blog/{{$articles[1]->id}}"><i>Read More</i></a></span> @else{{$articles[1]->body}}@endif</span><br />
                             <span class="articleTime"><i>{{count($articles[1]->comments)}} comments</i></span>
                         </div>
-                    </div>
+                    </div>&nbsp;
                 @endif
 
                 @if(count($articles)>2)
