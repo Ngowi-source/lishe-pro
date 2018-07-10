@@ -75,8 +75,8 @@
                 <label for="title">Title of the article</label>
                 <input id="title" name="title" type="text" class="form-control" required/>
 
-                <label for="body">Body of the article</label>
-                <textarea id="body" name="body" class="form-control" required></textarea><br />
+                <label for="summernote">Body of the article</label>
+                <textarea id="summernote" name="body" class="form-control" required></textarea><br />
 
                 <button type="submit" class="form-control">
                     Post Article
@@ -95,24 +95,14 @@
     <script type="text/javascript">
         $(document).ready(function(){
 
+            $('#summernote').summernote({
+                placeholder: 'Hello bootstrap 4',
+                tabsize: 2,
+                height: 0.3*window.innerHeight
+            });
             $("#header").css('background', 'linear-gradient(#D57030, #9BA747)');
             $(".nav-links a, .logo a").css('color', '#D9DCD8');
             $(".submenu a").css('color', 'grey');
-
-            $('#body').summernote(
-                {
-                    height: 350,
-                    toolbar: [
-                        // [groupName, [list of button]]
-                        ['style', ['bold', 'italic', 'underline', 'clear']],
-                        ['font', ['strikethrough', 'superscript', 'subscript']],
-                        ['fontsize', ['fontsize']],
-                        ['color', ['color']],
-                        ['para', ['ul', 'ol', 'paragraph']],
-                        ['height', ['height']]
-                    ]
-                }
-            );
 
         });
     </script>
