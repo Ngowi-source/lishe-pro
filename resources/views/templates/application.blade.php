@@ -48,7 +48,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
 
-            $("#tools").hover(function() {
+            $("#tools, .submenu").hover(function() {
                 $('.submenu').addClass('display');
             }, function(){
                 $('.submenu').removeClass('display');
