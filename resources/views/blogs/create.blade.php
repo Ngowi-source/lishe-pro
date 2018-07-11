@@ -75,7 +75,35 @@
 
                 <script>
                     ClassicEditor
-                        .create( document.querySelector( '#body' ) );
+                        .create( document.querySelector( '#body' ), {
+                            toolbar: [ 'fontFamily', 'fontSize' ],
+                            plugins: [ Underline, Strikethrough, Font, FontFamily, FontSize ],
+                            image: {
+                                toolbar: [ 'underline', 'strikethrough'  ]
+                            },
+                            fontFamily: {
+                                options: [
+                                    'default',
+                                    'Arial, Helvetica, sans-serif',
+                                    'Courier New, Courier, monospace',
+                                    'Georgia, serif',
+                                    'Lucida Sans Unicode, Lucida Grande, sans-serif',
+                                    'Tahoma, Geneva, sans-serif',
+                                    'Times New Roman, Times, serif',
+                                    'Trebuchet MS, Helvetica, sans-serif',
+                                    'Verdana, Geneva, sans-serif'
+                                ]
+                            },
+                            fontSize: {
+                                options: [
+                                    'tiny',
+                                    'small',
+                                    'default',
+                                    'big',
+                                    'huge'
+                                ]
+                            }
+                        } );
                 </script>
 
                 <button type="submit" class="form-control">
