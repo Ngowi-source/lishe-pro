@@ -10923,15 +10923,14 @@ body {
 }
 
 #createForm {
-  font-size: larger;
+  font-size: large;
 }
 
 #createForm textarea {
   height: 30vh;
-  font-size: large !important;
 }
 
-#createForm button {
+#createForm #createButton {
   border: none;
   background: #8B281F;
   color: #fff;
@@ -10943,7 +10942,7 @@ body {
   -o-transition: background 0.3s ease-out;
 }
 
-#createForm button:hover {
+#createForm #createButton:hover {
   background: #9BA747;
 }
 

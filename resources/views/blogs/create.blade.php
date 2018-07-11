@@ -106,7 +106,7 @@
                         } );
                 </script>
 
-                <button type="submit" class="form-control">
+                <button type="submit" class="form-control" id="createButton">
                     Post Article
                 </button>
             </form>
