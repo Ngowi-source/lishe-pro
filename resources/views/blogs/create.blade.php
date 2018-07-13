@@ -75,7 +75,7 @@
 
                 <script>
                     ClassicEditor
-                        .create( document.querySelector( '#body' )/*, {
+                        .create( document.querySelector( '#body' ), {
                             toolbar: [ 'fontFamily', 'fontSize' ],
                             plugins: [ Underline, Strikethrough, Font, FontFamily, FontSize ],
                             image: {
@@ -103,7 +103,7 @@
                                     'huge'
                                 ]
                             }
-                        }*/ );
+                        } );
                 </script>
 
                 <button type="submit" class="form-control" id="createButton">
