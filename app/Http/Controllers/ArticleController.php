@@ -40,8 +40,10 @@ class ArticleController extends Controller
 
     public function show(Article $post)
     {
+        $posted = Article::where('title', '=', str_replace('-', ' ', $post))->first();
+
         $archives = Article::archives();
-        return view('blogs.show',compact('post', 'archives'));
+        return view('blogs.show',compact('posted', 'archives'));
     }
 
     public function create()
@@ -68,12 +70,14 @@ class ArticleController extends Controller
 
     public function comment(Article $post)
     {
+        $posted = Article::where('title', '=', str_replace('-', ' ', $post))->first();
+
         $this->validate(request(), [
             'body'=> 'required|min:2'
         ]);
 
         Comment::create([
-            'article_id' => $post->id,
+            'article_id' => $posted->id,
             'body' => request('body'),
             'user_id'=> Auth::id()
         ]);
@@ -83,6 +87,8 @@ class ArticleController extends Controller
 
     public function reply(Article $post)
     {
+        $posted = Article::where('title', '=', str_replace('-', ' ', $post))->first();
+
         $this->validate(request(), [
             'body'=> 'required|min:2',
             'cid'=> 'integer'

@@ -71,10 +71,10 @@
         </div>
         <div id="blogBod">
 
-            <h2>{{$post->title}}</h2>
-            <span class="articleTime"><b>{{$post->user->firstname}} {{$post->user->lastname}}</b> on {{$post->created_at->toFormattedDateString()}}</span><br /><br />
+            <h2>{{$posted->title}}</h2>
+            <span class="articleTime"><b>{{$posted->user->firstname}} {{$posted->user->lastname}}</b> on {{$posted->created_at->toFormattedDateString()}}</span><br /><br />
 
-            <span class="articleBod">{{$post->body}}</span><br /><br />
+            <span class="articleBod">{{$posted->body}}</span><br /><br />
             <hr/>
 
             <h3 class="text-center">Comments</h3>
@@ -90,7 +90,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="/blog/{{$post->id}}/comment" method="POST" id="addComment">
+                <form action="/blog/{{str_replace(' ','-',$posted->title)}}/comment" method="POST" id="addComment">
                     {{csrf_field()}}
                     <h4>Say something about this article</h4>
                     <label for="newcomment"></label>
@@ -101,10 +101,10 @@
 
                 </form><br /><br />
 
-                @if(count($post->comments))
+                @if(count($posted->comments))
 
                     <ul class="list-group">
-                    @foreach($post->comments as $comment)
+                    @foreach($posted->comments as $comment)
 
                         <li class="list-group-item">
                             <b class="text-left">{{$comment->user->firstname}} {{$comment->user->lastname}}</b>&nbsp;<span class="grey right"><i>{{$comment->created_at->diffForHumans()}}</i></span><br /><br />
@@ -129,7 +129,7 @@
                                 </ul>
                         @endif
 
-                            <form id="reply_{{$comment->id}}" class="commentReplyForm" method="POST" action="/blog/{{$post->id}}/reply">
+                            <form id="reply_{{$comment->id}}" class="commentReplyForm" method="POST" action="/blog/{{str_replace(' ','-',$posted->title)}}/reply">
                                 {{csrf_field()}}
 
                                 <label for="newreply" ></label>

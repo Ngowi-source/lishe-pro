@@ -145,10 +145,10 @@
             @if(count($articles))
                 <div class="card">
                     <div class="card-body">
-                        <h2><a href="/blog/{{$articles[0]->id}}">{{$articles[0]->title}}</a></h2>
+                        <h2><a href="/blog/{{str_replace(' ','-',$articles[0]->title)}}">{{$articles[0]->title}}</a></h2>
                         <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}} by <b>{{$articles[0]->user->firstname}} {{$articles[0]->user->lastname}}</b> </span><br /><br />
 
-                        <span class="articleBod">@if(strlen($articles[0])>125){{substr($articles[0]->body,0,125)}}... <span class="readMore"><a href="/blog/{{$articles[0]->id}}"><i>Read More</i></a></span> @else{{$articles[0]->body}}@endif</span><br />
+                        <span class="articleBod">@if(strlen($articles[0])>125){{substr($articles[0]->body,0,125)}}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[0]->title)}}"><i>Read More</i></a></span> @else{{$articles[0]->body}}@endif</span><br />
                         <span class="articleTime"><i>{{count($articles[0]->comments)}} comments</i></span>
                     </div>
                 </div>&nbsp;
@@ -156,10 +156,10 @@
                 @if(count($articles)>1)
                     <div class="card">
                         <div class="card-body">
-                            <h2><a href="/blog/{{$articles[1]->id}}">{{$articles[1]->title}}</a></h2>
+                            <h2><a href="/blog/{{str_replace(' ','-',$articles[1]->title)}}">{{$articles[1]->title}}</a></h2>
                             <span class="articleTime">{{$articles[1]->created_at->toFormattedDateString()}} by <b>{{$articles[1]->user->firstname}} {{$articles[1]->user->lastname}}</b> </span><br /><br />
 
-                            <span class="articleBod">@if(strlen($articles[1])>125){{substr($articles[1]->body,0,125)}}... <span class="readMore"><a href="/blog/{{$articles[1]->id}}"><i>Read More</i></a></span> @else{{$articles[1]->body}}@endif</span><br />
+                            <span class="articleBod">@if(strlen($articles[1])>125){{substr($articles[1]->body,0,125)}}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[1]->title)}}"><i>Read More</i></a></span> @else{{$articles[1]->body}}@endif</span><br />
                             <span class="articleTime"><i>{{count($articles[1]->comments)}} comments</i></span>
                         </div>
                     </div>&nbsp;
@@ -168,10 +168,10 @@
                 @if(count($articles)>2)
                     <div class="card">
                         <div class="card-body">
-                            <h2><a href="/blog/{{$articles[2]->id}}">{{$articles[2]->title}}</a></h2>
+                            <h2><a href="/blog/{{str_replace(' ','-',$articles[2]->title)}}">{{$articles[2]->title}}</a></h2>
                             <span class="articleTime">{{$articles[2]->created_at->toFormattedDateString()}} by <b>{{$articles[2]->user->firstname}} {{$articles[2]->user->lastname}}</b> </span><br /><br />
 
-                            <span class="articleBod">@if(strlen($articles[2])>125){{substr($articles[2]->body,0,125)}}... <span class="readMore"><a href="/blog/{{$articles[2]->id}}"><i>Read More</i></a></span> @else{{$articles[2]->body}}@endif</span><br />
+                            <span class="articleBod">@if(strlen($articles[2])>125){{substr($articles[2]->body,0,125)}}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[2]->title)}}"><i>Read More</i></a></span> @else{{$articles[2]->body}}@endif</span><br />
                             <span class="articleTime"><i>{{count($articles[2]->comments)}} comments</i></span>
                         </div>
                     </div>
