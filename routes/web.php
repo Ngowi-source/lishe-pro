@@ -17,8 +17,8 @@ Route::get('/blog', 'ArticleController@index');
 Route::get('/blog/{post}', 'ArticleController@show');
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::post('/blog/{post}/comment', 'ArticleController@comment');
-    Route::post('/blog/{post}/reply', 'ArticleController@reply');
+    Route::post('/blog/{title}/comment', 'ArticleController@comment');
+    Route::post('/blog/{title}/reply', 'ArticleController@reply');
     Route::get('/article/create', 'ArticleController@create');
     Route::post('/articles', 'ArticleController@store');
 });
