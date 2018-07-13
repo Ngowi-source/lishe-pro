@@ -71,7 +71,7 @@
         </div>
         <div id="blogBod">
 
-            {{$posted}}
+            {{var_dump($posted)}}
             {{--<h2>{{$posted->title}}</h2>
             <span class="articleTime"><b>{{$posted->user->firstname}} {{$posted->user->lastname}}</b> on {{$posted->created_at->toFormattedDateString()}}</span><br /><br />
 
