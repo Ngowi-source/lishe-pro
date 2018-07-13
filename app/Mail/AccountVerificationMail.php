@@ -29,8 +29,7 @@ class AccountVerificationMail extends Mailable
      */
     public function build()
     {
-        return $this->from('hello@bryceandy.com')
-            ->view('mails.accVer')
+        return $this->view('mails.accVer')
             ->text('mails.accVer_plain');
     }
 }
