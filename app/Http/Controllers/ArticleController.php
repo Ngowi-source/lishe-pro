@@ -38,7 +38,7 @@ class ArticleController extends Controller
         return view('blogs.index', compact('articles', 'archives'));
     }
 
-    public function show(Article $title)
+    public function show($title)
     {
         $posted = Article::where('title', '=', str_replace('-', ' ', $title))->first();
 
@@ -68,7 +68,7 @@ class ArticleController extends Controller
         return redirect('/blog')->with(['articlesuccess'=> 'Your article is posted!']);
     }
 
-    public function comment(Article $title)
+    public function comment($title)
     {
         $posted = Article::where('title', '=', str_replace('-', ' ', $title))->first();
 
@@ -85,9 +85,8 @@ class ArticleController extends Controller
         return back()->with(['commentsuccess'=> 'Your comment is added!']);
     }
 
-    public function reply(Article $title)
+    public function reply()
     {
-        /*$posted = Article::where('title', '=', str_replace('-', ' ', $title))->first();*/
 
         $this->validate(request(), [
             'body'=> 'required|min:2',
