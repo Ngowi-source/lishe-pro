@@ -20,6 +20,10 @@ class Article extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function getRouteKeyName() {
+        return 'title';
+    }
+
     public static function archives()
     {
         return static::selectRaw("extract(year from created_at) as year, to_char(min(created_at), 'month') as monthname, extract(month from created_at) as month, count(*) as published")
