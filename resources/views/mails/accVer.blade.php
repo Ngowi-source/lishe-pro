@@ -9,11 +9,11 @@
 </head>
 <body>
 
-Hello <b>{{ $accountVer->receiver }}</b>,
+Hello <b>{{ $user->firstname }}</b>,
 
 You have recently created an account with Lishe Pro, please click on the link below to verify your account.
 
-<a href="https://lishe-pro.herokuapp.com/verify/{{ $accountVer->email }}">Verify Account</a>
+<a href="https://lishe-pro.herokuapp.com/verify/{{ $user->email }}">Verify Account</a>
 
 If you were not involved in this event please ignore this email. Do not reply to this email as messages are automatically
 sent.

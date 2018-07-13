@@ -6,20 +6,21 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use App\User;
 
 class AccountVerificationMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $accountVer;
+    public $user;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($accountVer)
+    public function __construct(User $user)
     {
-        $this->accountVer = $accountVer;
+        $this->user = $user;
     }
 
     /**
@@ -29,7 +30,8 @@ class AccountVerificationMail extends Mailable
      */
     public function build()
     {
-        return $this->view('mails.accVer')
+        return $this->from('hello@example.com')
+            ->view('mails.accVer')
             ->text('mails.accVer_plain');
     }
 }
