@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\AccountVerificationMail;
 
 class RegistrationController extends Controller
 {
@@ -31,6 +33,14 @@ class RegistrationController extends Controller
 
         auth()->login($user);
 
-        return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro!']);
+        $accountVerifier = new \stdClass();
+        $accountVerifier->sender = 'Lishe Pro';
+        $accountVerifier->receiver = $request->firstname.' '.$request->lastname;
+        $accountVerifier->email = $request->email;
+
+        Mail::to($request->email)->send(new AccountVerificationMail($accountVerifier));
+
+        return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro! Please click a link sent in your email to verify your account']);
     }
+
 }
