@@ -33,9 +33,9 @@ class RegistrationController extends Controller
 
         auth()->login($user);
 
-        Mail::to($user)->send(new AccountVerificationMail($user));
+        Mail::to($request->email)->send(new AccountVerificationMail($user));
 
-        return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro! Please click a link sent in your email to verify your account']);
+        return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro!']);
     }
 
 }
