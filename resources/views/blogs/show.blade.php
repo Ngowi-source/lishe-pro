@@ -71,7 +71,8 @@
         </div>
         <div id="blogBod">
 
-            <h2>{{$posted->title}}</h2>
+            {{$posted}}
+            {{--<h2>{{$posted->title}}</h2>
             <span class="articleTime"><b>{{$posted->user->firstname}} {{$posted->user->lastname}}</b> on {{$posted->created_at->toFormattedDateString()}}</span><br /><br />
 
             <span class="articleBod">{{$posted->body}}</span><br /><br />
@@ -149,7 +150,7 @@
                 @endif
 
 
-            </div>
+            </div>--}}
         </div>
 
     </div>
