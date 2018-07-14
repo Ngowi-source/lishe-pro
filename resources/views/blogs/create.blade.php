@@ -75,7 +75,7 @@
 
                 <script>
 
-                    CKEDITOR.replace( 'body', {
+                    CKEDITOR.replace( 'body'/*, {
 
                         extraPlugins: 'easyimage',
                         removePlugins: 'image',
@@ -130,7 +130,7 @@
                             'EasyImageAlt'
                         ]
 
-                    } );
+                    }*/ );
 
                 </script>
 
