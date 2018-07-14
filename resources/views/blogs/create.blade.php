@@ -2,7 +2,7 @@
 
 @section('stylesheets')
 
-    <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
     <link rel="stylesheet" href="{{'/css/app.css'}}">
 
 @endsection
@@ -70,40 +70,68 @@
                 <label for="title">Title of the article</label>
                 <input id="title" name="title" type="text" class="form-control" required/>
 
-                <label for="body">Body of the article</label>
-                <textarea id="body" name="body" class="form-control" required></textarea><br />
+                <label for="bodyid">Body of the article</label>
+                <textarea id="bodyid" name="body" class="form-control" required></textarea><br />
 
                 <script>
-                    ClassicEditor
-                        .create( document.querySelector( '#bodyNada' )/*, {
-                            toolbar: [ 'fontFamily', 'fontSize' ],
-                            plugins: [ Underline, Strikethrough, Font, FontFamily, FontSize ],
-                            image: {
-                                toolbar: [ 'underline', 'strikethrough'  ]
+
+                    CKEDITOR.replace( 'body', {
+
+                        extraPlugins: 'easyimage',
+                        removePlugins: 'image',
+                        removeDialogTabs: 'link:advanced',
+                        toolbar: [
+                            { name: 'document', items: [ 'Undo', 'Redo' ] },
+                            { name: 'styles', items: [ 'Format' ] },
+                            { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
+                            { name: 'paragraph', items: [ 'NumberedList', 'BulletedList' ] },
+                            { name: 'links', items: [ 'Link', 'Unlink' ] },
+                            { name: 'insert', items: [ 'EasyImageUpload' ] }
+                        ],
+                        cloudServices_uploadUrl: 'https://33333.cke-cs.com/easyimage/upload/',
+                        // Note: this is a token endpoint to be used for CKEditor 4 samples only. Images uploaded using this token may be deleted automatically at any moment.
+                        // To create your own token URL please visit https://ckeditor.com/ckeditor-cloud-services/.
+                        cloudServices_tokenUrl: 'https://33333.cke-cs.com/token/dev/ijrDsqFix838Gh3wGO3F77FSW94BwcLXprJ4APSp3XQ26xsUHTi0jcb1hoBt',
+                        easyimage_styles: {
+                            gradient1: {
+                                group: 'easyimage-gradients',
+                                attributes: {
+                                    'class': 'easyimage-gradient-1'
+                                },
+                                label: 'Blue Gradient',
+                                icon: 'https://sdk.ckeditor.com/https://sdk.ckeditor.com/samples/assets/easyimage/icons/gradient1.png',
+                                iconHiDpi: 'https://sdk.ckeditor.com/https://sdk.ckeditor.com/samples/assets/easyimage/icons/hidpi/gradient1.png'
                             },
-                            fontFamily: {
-                                options: [
-                                    'default',
-                                    'Arial, Helvetica, sans-serif',
-                                    'Courier New, Courier, monospace',
-                                    'Georgia, serif',
-                                    'Lucida Sans Unicode, Lucida Grande, sans-serif',
-                                    'Tahoma, Geneva, sans-serif',
-                                    'Times New Roman, Times, serif',
-                                    'Trebuchet MS, Helvetica, sans-serif',
-                                    'Verdana, Geneva, sans-serif'
-                                ]
+                            gradient2: {
+                                group: 'easyimage-gradients',
+                                attributes: {
+                                    'class': 'easyimage-gradient-2'
+                                },
+                                label: 'Pink Gradient',
+                                icon: 'https://sdk.ckeditor.com/https://sdk.ckeditor.com/samples/assets/easyimage/icons/gradient2.png',
+                                iconHiDpi: 'https://sdk.ckeditor.com/https://sdk.ckeditor.com/samples/assets/easyimage/icons/hidpi/gradient2.png'
                             },
-                            fontSize: {
-                                options: [
-                                    'tiny',
-                                    'small',
-                                    'default',
-                                    'big',
-                                    'huge'
-                                ]
+                            noGradient: {
+                                group: 'easyimage-gradients',
+                                attributes: {
+                                    'class': 'easyimage-no-gradient'
+                                },
+                                label: 'No Gradient',
+                                icon: 'https://sdk.ckeditor.com/https://sdk.ckeditor.com/samples/assets/easyimage/icons/nogradient.png',
+                                iconHiDpi: 'https://sdk.ckeditor.com/https://sdk.ckeditor.com/samples/assets/easyimage/icons/hidpi/nogradient.png'
                             }
-                        }*/ );
+                        },
+                        easyimage_toolbar: [
+                            'EasyImageFull',
+                            'EasyImageSide',
+                            'EasyImageGradient1',
+                            'EasyImageGradient2',
+                            'EasyImageNoGradient',
+                            'EasyImageAlt'
+                        ]
+
+                    } );
+
                 </script>
 
                 <button type="submit" class="form-control" id="createButton">
