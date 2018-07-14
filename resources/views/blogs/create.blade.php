@@ -79,7 +79,9 @@
 
                         extraPlugins: 'easyimage',
                         removePlugins: 'image',
-                        removeDialogTabs: 'link:advanced'/*,
+                        removeDialogTabs: 'link:advanced'
+                    } );
+                    /*,
                         toolbar: [
                             { name: 'document', items: [ 'Undo', 'Redo' ] },
                             { name: 'styles', items: [ 'Format' ] },
@@ -130,7 +132,7 @@
                             'EasyImageAlt'
                         ]
 
-                    */} );
+                    */
 
                 </script>
 
