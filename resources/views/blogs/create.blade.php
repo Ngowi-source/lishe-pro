@@ -76,7 +76,7 @@
                 <script>
 
                     ClassicEditor
-                        .create( document.querySelector( '#editor' ) );
+                        .create( document.querySelector( '#bodyid' ) );
 
                 </script>
 
