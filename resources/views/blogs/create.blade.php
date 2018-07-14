@@ -67,20 +67,20 @@
             <form method="POST" action="/articles" id="createForm">
                 {{csrf_field()}}
 
-                <label for="title">Title of the article</label>
-                <input id="title" name="title" type="text" class="form-control" required/>
+                <label for="title">Title</label>
+                <input id="title" name="title" type="text" class="form-control" required/><br />
 
-                <label for="bodyid">Body of the article</label>
+                <label for="bodyid">Body</label>
                 <textarea id="bodyid" name="body" class="form-control" required></textarea><br />
 
                 <script>
 
-                    CKEDITOR.replace( 'body', {
+                    CKEDITOR.replace( 'body'/*, {
 
                         extraPlugins: 'easyimage',
                         removePlugins: 'image',
                         removeDialogTabs: 'link:advanced'
-                    } );
+                    }*/ );
                     /*,
                         toolbar: [
                             { name: 'document', items: [ 'Undo', 'Redo' ] },
