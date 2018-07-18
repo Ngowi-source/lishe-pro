@@ -71,7 +71,7 @@
                 <input id="title" name="title" type="text" class="form-control" required/><br />
 
                 <label for="bodyid">Body</label>
-                <textarea id="bodyid" name="body" class="form-control" required></textarea><br />
+                <textarea id="bodyid" name="body" class="form-control" ></textarea><br />
 
                 <script>
 
@@ -102,6 +102,7 @@
             $(".submenu a").css('color', 'grey');
 
         });
+
     </script>
 
 @endsection
