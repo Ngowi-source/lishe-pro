@@ -91,6 +91,7 @@
 
         var editor_config = {
             selector:'textarea',
+            menubar: false,
             plugins: 'lists image link',
             toolbar: 'formatselect | bold italic strikethrough | link image | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat',
             path_absolute: "/",
