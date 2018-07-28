@@ -29,3 +29,7 @@ Route::get('/logout', 'SessionController@destroy');
 
 Route::get('/register', 'RegistrationController@show');
 Route::post('/register', 'RegistrationController@create');
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
