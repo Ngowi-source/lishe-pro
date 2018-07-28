@@ -4,7 +4,12 @@
 
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
     {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=your_API_key"></script>--}}
-    <script>tinymce.init({ selector:'textarea' });</script>
+    <script>tinymce.init({
+            selector:'textarea',
+            plugins: 'lists table image link',
+            toolbar: 'lists table image link'
+        });
+    </script>
     <link rel="stylesheet" href="{{'/css/app.css'}}">
 
 @endsection
