@@ -2,7 +2,9 @@
 
 @section('stylesheets')
 
-    <script src="https://cdn.ckeditor.com/ckeditor5/10.1.0/classic/ckeditor.js"></script>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=your_API_key"></script>--}}
+    <script>tinymce.init({ selector:'textarea' });</script>
     <link rel="stylesheet" href="{{'/css/app.css'}}">
 
 @endsection
@@ -75,8 +77,7 @@
 
                 <script>
 
-                    ClassicEditor
-                        .create( document.querySelector( '#bodyid' ) );
+
 
                 </script>
 
