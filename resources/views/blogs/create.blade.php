@@ -93,7 +93,7 @@
             selector:'textarea',
             plugins: 'lists image link',
             toolbar: 'formatselect | bold italic strikethrough | link image | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat',
-            path_absolute: "{{URL::to('/')}}/",
+            path_absolute: "/",
             relative_urls: false,
             file_browser_callback: function(field_name, url, type, win){
                 var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
