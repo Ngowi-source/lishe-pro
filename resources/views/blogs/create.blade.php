@@ -2,14 +2,6 @@
 
 @section('stylesheets')
 
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-    {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=your_API_key"></script>--}}
-    <script>tinymce.init({
-            selector:'textarea',
-            plugins: 'lists table image link',
-            toolbar: 'lists table image link'
-        });
-    </script>
     <link rel="stylesheet" href="{{'/css/app.css'}}">
 
 @endsection
@@ -80,12 +72,6 @@
                 <label for="bodyid">Body</label>
                 <textarea id="bodyid" name="body" class="form-control" ></textarea><br />
 
-                <script>
-
-
-
-                </script>
-
                 <button type="submit" class="form-control" id="createButton">
                     Post Article
                 </button>
@@ -99,6 +85,41 @@
 @endsection
 
 @section('scripts')
+
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js{{--?apiKey=your_API_key--}}"></script>
+    <script>
+
+        var editor_config = {
+            selector:'textarea',
+            plugins: 'lists image link',
+            toolbar: 'formatselect | bold italic strikethrough | link image | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat',
+            path_absolute: "{{URL::to('/')}}/",
+            relative_urls: false,
+            file_browser_callback: function(field_name, url, type, win){
+                var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+                var y = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+
+                var cmsURL = editor_config.path_absolute + 'laravel-filemanager?field_name=' + field_name ;
+                if (type == 'image'){
+                    cmsURL = cmsURL + "&type=Images";
+                } else {
+                    cmsURL = cmsURL + "&type=Files";
+                }
+
+                tinyMCE.activeEditor.windowManager.open({
+                    file: cmsURL,
+                    title: 'Filemanager',
+                    width: x*0.8,
+                    height: y*0.8,
+                    resizable: "yes",
+                    close_previous: "no"
+                });
+            }
+        };
+
+        tinymce.init(editor_config);
+
+    </script>
 
     <script type="text/javascript">
         $(document).ready(function(){

@@ -74,7 +74,7 @@
             <h2>{{$posted->title}}</h2>
             <span class="articleTime"><b>{{$posted->user->firstname}} {{$posted->user->lastname}}</b> on {{$posted->created_at->toFormattedDateString()}}</span><br /><br />
 
-            <span class="articleBod">{{$posted->body}}</span><br /><br />
+            <span class="articleBod">{{html_entity_decode($posted->body)}}</span><br /><br />
             <hr/>
 
             <h3 class="text-center">Comments</h3>
