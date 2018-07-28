@@ -10897,7 +10897,9 @@ body {
 #blogBod {
   grid-area: 2/1/3/2;
   height: auto;
-  padding: 3vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 3vw;
   text-align: left;
 }
 
