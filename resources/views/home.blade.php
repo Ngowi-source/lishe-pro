@@ -148,7 +148,7 @@
                         <h2><a href="/blog/{{str_replace(' ','-',$articles[0]->title)}}">{{$articles[0]->title}}</a></h2>
                         <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}} by <b>{{$articles[0]->user->firstname}} {{$articles[0]->user->lastname}}</b> </span><br /><br />
 
-                        <span class="articleBod">@if(strlen($articles[0])>125) {{html_entity_decode(substr($articles[0]->body,0,125))}}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[0]->title)}}"><i>Read More</i></a></span> @else{{html_entity_decode($articles[0]->body)}}@endif</span><br />
+                        <span class="articleBod">@if(strlen($articles[0])>125) {{html_entity_decode(substr($articles[0]->body,0,125), ENT_COMPAT, 'UTF-8')}}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[0]->title)}}"><i>Read More</i></a></span> @else{{html_entity_decode($articles[0]->body, ENT_COMPAT, 'UTF-8')}}@endif</span><br />
                         <span class="articleTime"><i>{{count($articles[0]->comments)}} comments</i></span>
                     </div>
                 </div>&nbsp;
