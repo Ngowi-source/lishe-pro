@@ -10508,7 +10508,7 @@ body {
 
 #homeWrapper {
   display: grid;
-  grid-template-rows: 100vh 60vh 110vh 60vh 130vh;
+  grid-template-rows: 100vh 60vh 110vh 70vh 130vh;
   grid-template-columns: 100vw;
 }
 
