@@ -10,20 +10,6 @@
 
 @section('header')
 
-    @if(session()->has('commentsuccess'))
-        <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('commentsuccess')}}</strong>&nbsp;
-        </div>
-    @endif
-
-    @if(session()->has('replysuccess'))
-        <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('replysuccess')}}</strong>&nbsp;
-        </div>
-    @endif
-
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
 
@@ -52,6 +38,20 @@
 
 @section('content')
 
+    @if(session()->has('commentsuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('commentsuccess')}}</strong>&nbsp;
+        </div>
+    @endif
+
+    @if(session()->has('replysuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('replysuccess')}}</strong>&nbsp;
+        </div>
+    @endif
+
     <div id="blogWrapper">
 
         <div id="blogHead">
@@ -77,7 +77,7 @@
             <span class="articleBod">{!! $posted->body !!}</span><br /><br />
             <hr/>
 
-            <h3 class="text-center">Comments</h3>
+            {{--<h3 class="text-center">Comments</h3>--}}
 
             <div id="comments">
 
