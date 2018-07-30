@@ -4,7 +4,7 @@ $(function() {
     setInterval(function() {
         var animationName = 'animated bounce';
         var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        $('#introButton').addClass(animationName).one(animationend, function() {
+        $('').addClass(animationName).one(animationend, function() {
             $(this).removeClass(animationName);
         });
     }, 5000);
