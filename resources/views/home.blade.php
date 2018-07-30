@@ -170,7 +170,7 @@
 
             <div id="contactUs">
 
-                <h2>Contact Us</h2><br />
+                <h2>Talk to Us</h2><br />
                 <span class="contactUs">
                     Lishe Pro<br />
                     Kijitonyama Mabatini, PLOT NO. 755, BLOCK 47<br />
