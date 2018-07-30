@@ -19,7 +19,7 @@ new ScrollMagic.Scene({
     offset: -150,
     reverse: false
 })
-    .setTween(TweenMax.from("#whoAreWe h1", 1, {x: -600, autoAlpha: 0.0, ease: Power1.easeIn}))
+    .setTween(TweenMax.from("#whoAreWe h1", 1, {x: -450, autoAlpha: 0.0, ease: Power1.easeIn}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
