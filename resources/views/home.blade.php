@@ -160,7 +160,7 @@
 
             <br /><br />
 
-            <h4><a href="/blog">More Articles ></a></h4>
+            <h6><a href="/blog">More Articles ></a></h6>
 
         </div>
         <div id="contact">
