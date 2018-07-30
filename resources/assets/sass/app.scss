@@ -120,6 +120,7 @@ body{
     bottom: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
 }
 #tools {
@@ -193,6 +194,7 @@ body{
   color: #fff;
   background: $c3;
   font-size: x-large;
+  z-index: 3;
   -webkit-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
   -moz-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
   -ms-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
