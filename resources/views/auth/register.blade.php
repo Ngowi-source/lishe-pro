@@ -70,16 +70,16 @@
             <h4 class="text-center">or using</h4>
             <br />
             <button class="btn gplus socials">
-                <i class="fab fa-google-plus-g fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Google Plus <span class="account">Account</span>
+                <i class="fab fa-google-plus-g " aria-hidden="true"></i>&nbsp;&nbsp;Google Plus <span class="account">Account</span>
             </button><br /><br />
 
 
             <button class="btn fbook socials">
-                <i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Facebook <span class="account">Account</span>
+                <i class="fab fa-facebook-f " aria-hidden="true"></i>&nbsp;&nbsp;Facebook <span class="account">Account</span>
             </button><br /><br />
 
             <button class="btn twitter socials">
-                <i class="fab fa-twitter fa-2x"></i>&nbsp;&nbsp;Twitter <span class="account">Account</span>
+                <i class="fab fa-twitter "></i>&nbsp;&nbsp;Twitter <span class="account">Account</span>
             </button>
             <br /><br />
 
