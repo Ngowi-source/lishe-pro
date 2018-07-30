@@ -110,7 +110,7 @@
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon fill="#8B281F" stroke="#8B281F" points="0,100 100,100 100,0 80,55 80,75 "/>
+                <polygon fill="#8B281F" stroke="#8B281F" points="0,100 100,100 100,70 "/>
             </svg>
         </div>
         <div id="whoAreWe">
