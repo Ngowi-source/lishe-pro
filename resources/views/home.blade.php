@@ -6,20 +6,6 @@
 
 @section('header')
 
-    @if(session()->has('regsuccess'))
-        <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('regsuccess')}}</strong>&nbsp; A link is sent to your email, click it to activate your account
-        </div>
-    @endif
-
-    @if(session()->has('outsuccess'))
-        <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('outsuccess')}}</strong>&nbsp;
-        </div>
-    @endif
-
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
         <a id="tools">Dietary Assessment Tools
@@ -96,6 +82,20 @@
 
 @section('content')
 
+    @if(session()->has('regsuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('regsuccess')}}</strong>&nbsp; A link is sent to your email, click it to activate your account
+        </div>
+    @endif
+
+    @if(session()->has('outsuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('outsuccess')}}</strong>&nbsp;
+        </div>
+    @endif
+
     <div id="homeWrapper">
         <div id="homeIntro">
             <img src="{{'images/bg-large.jpeg'}}"/>
@@ -142,45 +142,25 @@
         <div id="blog">
             <h3>Latest Articles From Our Blog</h3><br />
 
-            @if(count($articles))
-                <div class="card">
-                    <div class="card-body">
-                        <h2><a href="/blog/{{str_replace(' ','-',$articles[0]->title)}}">{{$articles[0]->title}}</a></h2>
-                        <span class="articleTime">{{$articles[0]->created_at->toFormattedDateString()}} by <b>{{$articles[0]->user->firstname}} {{$articles[0]->user->lastname}}</b> </span><br /><br />
+            @for ($i = 0; $i<3; $i++)
 
-                        <span class="articleBod">@if(strlen($articles[0])>130) {!! substr($articles[0]->body,0,130) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[0]->title)}}"><i>Read More</i></a></span> @else{!! $articles[0]->body !!}@endif</span><br />
-                        <span class="articleTime"><i>{{count($articles[0]->comments)}} comments</i></span>
-                    </div>
-                </div>&nbsp;
-
-                @if(count($articles)>1)
+                @if(count($articles) > $i)
                     <div class="card">
                         <div class="card-body">
-                            <h2><a href="/blog/{{str_replace(' ','-',$articles[1]->title)}}">{{$articles[1]->title}}</a></h2>
-                            <span class="articleTime">{{$articles[1]->created_at->toFormattedDateString()}} by <b>{{$articles[1]->user->firstname}} {{$articles[1]->user->lastname}}</b> </span><br /><br />
+                            <h2><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}">{{$articles[$i]->title}}</a></h2>
+                            <span class="articleTime">{{$articles[$i]->created_at->toFormattedDateString()}} by <b>{{$articles[$i]->user->firstname}} {{$articles[$i]->user->lastname}}</b> </span><br /><br />
 
-                            <span class="articleBod">@if(strlen($articles[1])>125){!! substr($articles[1]->body,0,125) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[1]->title)}}"><i>Read More</i></a></span> @else{!! $articles[1]->body !!}@endif</span><br />
-                            <span class="articleTime"><i>{{count($articles[1]->comments)}} comments</i></span>
-                        </div>
-                    </div>&nbsp;
-                @endif
-
-                @if(count($articles)>2)
-                    <div class="card">
-                        <div class="card-body">
-                            <h2><a href="/blog/{{str_replace(' ','-',$articles[2]->title)}}">{{$articles[2]->title}}</a></h2>
-                            <span class="articleTime">{{$articles[2]->created_at->toFormattedDateString()}} by <b>{{$articles[2]->user->firstname}} {{$articles[2]->user->lastname}}</b> </span><br /><br />
-
-                            <span class="articleBod">@if(strlen($articles[2])>125){!! substr($articles[2]->body,0,125) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[2]->title)}}"><i>Read More</i></a></span> @else{!! $articles[2]->body !!}@endif</span><br />
-                            <span class="articleTime"><i>{{count($articles[2]->comments)}} comments</i></span>
+                            <span class="articleBod">@if(strlen($articles[$i])>125) {!! substr($articles[$i]->body,0,125) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}"><i>Read More</i></a></span> @else{!! $articles[$i]->body !!}@endif</span><br />
+                            <span class="articleTime"><i>{{count($articles[$i]->comments)}} comments</i></span>
                         </div>
                     </div>
                 @endif
 
-                <br /><br />
+            @endfor
 
-                <h4><a href="/blog">More Articles >></a></h4>
-            @endif
+            <br /><br />
+
+            <h4><a href="/blog">More Articles ></a></h4>
 
         </div>
         <div id="contact">

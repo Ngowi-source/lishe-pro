@@ -59,6 +59,20 @@
         </div>
         <div id="blogSide">
 
+            <div class="card w-25 border-dark">
+
+                <img class="card-img-top" src="https://c5.rgstatic.net/m/437738464651637/images/template/default/profile/profile_default_l.jpg" alt="Sauli Epimack">
+                <div class="card-body">
+                    <h5 class="card-title">Sauli Epimack MSc</h5>
+                    <p class="card-text">
+                        Research Scientist<br />
+                        Ifakara Health Institute
+                    </p>
+                </div>
+            </div>
+
+            <br /><br />
+
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
             <a href="/article/create"><button>Create New Article +</button></a>
             {{--@endif--}}<br /><br />

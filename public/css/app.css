@@ -10870,7 +10870,7 @@ body {
   grid-area: 2/2/3/3;
   justify-self: center;
   line-height: 2.2;
-  height: 50vh;
+  height: auto;
   padding-right: 5vw;
   color: #8B281F;
 }
