@@ -145,12 +145,12 @@
             @for ($i = 0; $i<3; $i++)
 
                 @if(count($articles) > $i)
-                    <div class="card">
+                    <div class="card border-success">
                         <div class="card-body">
                             <h2><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}">{{$articles[$i]->title}}</a></h2>
                             <span class="articleTime">{{$articles[$i]->created_at->toFormattedDateString()}} by <b>{{$articles[$i]->user->firstname}} {{$articles[$i]->user->lastname}}</b> </span><br /><br />
 
-                            <span class="articleBod">@if(strlen($articles[$i])>125) {!! substr($articles[$i]->body,0,125) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}"><i>Read More</i></a></span> @else{!! $articles[$i]->body !!}@endif</span><br />
+                            <span class="articleBod">@if(strlen(str_replace('/<p><img(.*)></', '/', $articles[$i]))>125) {!! substr(str_replace('/<p><img(.*)></', '/', $articles[$i]->body),0,125) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}"><i>Read More</i></a></span> @else{!! str_replace('/<p><img(.*)></', '/', $articles[$i]->body) !!}@endif</span><br />
                             <span class="articleTime"><i>{{count($articles[$i]->comments)}} comments</i></span>
                         </div>
                     </div>

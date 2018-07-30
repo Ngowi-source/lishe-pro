@@ -63,7 +63,7 @@
 
                 <img class="card-img-top" src="https://c5.rgstatic.net/m/437738464651637/images/template/default/profile/profile_default_l.jpg" alt="Sauli Epimack">
                 <div class="card-body">
-                    <h5 class="card-title">Sauli John, Epimack MSc</h5>
+                    <h5 class="card-title">Sauli John Epimack, MS</h5>
                     <p class="card-text">
                         Research Scientist<br />
                         <span class="text-muted">Ifakara Health Institute</span>
