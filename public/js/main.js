@@ -34,41 +34,46 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
     triggerElement: "#wlt",
     triggerHook: "onCenter",
+    offset: -250,
     reverse: false
 })
-    .setTween(TweenMax.from("#wlt", 0.6, {y: 350, autoAlpha: 0.0, ease: Power3.easeIn}))
+    .setTween(TweenMax.from("#wlt", 0.6, {y: 350, autoAlpha: 0.0, ease: Power4.easeIn}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#dmp",
     triggerHook: "onCenter",
+    offset: -250,
     reverse: false
 })
-    .setTween(TweenMax.from("#dmp", 0.6, {y: 350, autoAlpha: 0.0, ease: Power3.easeIn}))
+    .setTween(TweenMax.from("#dmp", 0.6, {y: 350, autoAlpha: 0.0, ease: Power4.easeIn}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#ofd",
     triggerHook: "onCenter",
+    offset: -250,
     reverse: false
 })
-    .setTween(TweenMax.from("#ofd", 0.6, {y: 350, autoAlpha: 0.0, ease: Power3.easeOut}))
+    .setTween(TweenMax.from("#ofd", 0.6, {y: 350, autoAlpha: 0.0, ease: Power4.easeOut}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#bmi",
     triggerHook: "onCenter",
+    offset: -250,
     reverse: false
 })
-    .setTween(TweenMax.from("#bmi", 0.6, {y: 350, autoAlpha: 0.0, ease: Power3.easeOut}))
+    .setTween(TweenMax.from("#bmi", 0.6, {y: 350, autoAlpha: 0.0, ease: Power4.easeOut}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#fcc",
     triggerHook: "onCenter",
+    offset: -250,
     reverse: false
 })
-    .setTween(TweenMax.from("#fcc", 0.6, {y: 350, autoAlpha: 0.0, ease: Power3.easeOut}))
+    .setTween(TweenMax.from("#fcc", 0.6, {y: 350, autoAlpha: 0.0, ease: Power4.easeOut}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
