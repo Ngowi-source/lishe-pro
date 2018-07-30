@@ -32,6 +32,15 @@ new ScrollMagic.Scene({
     .addTo(controller);
 
 new ScrollMagic.Scene({
+    triggerElement: "#fcc",
+    triggerHook: "onCenter",
+    offset: -400,
+    reverse: false
+})
+    .setTween(TweenMax.from("#fcc", 0.6, {y: 350, autoAlpha: 0.0, ease: Power4.easeOut}))
+    .addTo(controller);
+
+new ScrollMagic.Scene({
     triggerElement: "#wlt",
     triggerHook: "onCenter",
     offset: -400,
@@ -68,18 +77,9 @@ new ScrollMagic.Scene({
     .addTo(controller);
 
 new ScrollMagic.Scene({
-    triggerElement: "#fcc",
-    triggerHook: "onCenter",
-    offset: -400,
-    reverse: false
-})
-    .setTween(TweenMax.from("#fcc", 0.6, {y: 350, autoAlpha: 0.0, ease: Power4.easeOut}))
-    .addTo(controller);
-
-new ScrollMagic.Scene({
     triggerElement: "#blog .card",
     triggerHook: "onEnter",
     reverse: false
 })
-    .setTween(TweenMax.from("#blog .card", 0.8, {x: 400, scale: 0.6, autoAlpha: 0.0, ease: Power4.easeOut}))
+    .setTween(TweenMax.from("#blog .card", 0.8, {x: 400, scale: 0.6, autoAlpha: 0.0, ease: Power3.easeOut}))
     .addTo(controller);
