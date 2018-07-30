@@ -10993,7 +10993,7 @@ body {
 
 #registerWrapper,
 #loginWrapper {
-  height: auto;
+  height: 135vh;
   width: 100vw;
   position: relative;
 }
