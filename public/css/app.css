@@ -10901,10 +10901,9 @@ body {
   padding-right: 3vw;
   padding-bottom: 3vw;
   text-align: left;
-}
-
-#blogBod .list-group-item {
-  background-color: #D9DCD8;
+  /*.list-group-item{
+    background-color: $c1;
+  }*/
 }
 
 #blogBod h3 {

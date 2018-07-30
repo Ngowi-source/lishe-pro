@@ -74,8 +74,8 @@
 
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
             <a href="/article/create"><button>Create New Article +</button></a>
-            {{--@endif--}}
             <br /><br />
+            {{--@endif--}}
 
             <h4>Archives</h4>
             @foreach($archives as $stat)
