@@ -18,7 +18,7 @@ new ScrollMagic.Scene({
     triggerHook: "onEnter",
     reverse: false
 })
-    .setTween(TweenMax.from("#whoAreWe h1", 0.7, {x: -600, autoAlpha: 0.0, ease: Power0.easeIn}))
+    .setTween(TweenMax.from("#whoAreWe h1", 1, {x: -600, autoAlpha: 0.0, ease: Power0.easeIn}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -26,47 +26,47 @@ new ScrollMagic.Scene({
     triggerHook: "onEnter",
     reverse: false
 })
-    .setTween(TweenMax.from(".whoAreWe", 0.8, {y: -400, autoAlpha: 0.0, ease: Power0.easeIn}))
+    .setTween(TweenMax.from(".whoAreWe", 1.2, {y: -400, autoAlpha: 0.0, ease: Power0.easeIn}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#wlt",
-    triggerHook: "onEnter",
+    triggerHook: "onCenter",
     reverse: false
 })
-    .setTween(TweenMax.from("#wlt .fas", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeIn}))
+    .setTween(TweenMax.from("#wlt", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeIn}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#dmp",
-    triggerHook: "onEnter",
+    triggerHook: "onCenter",
     reverse: false
 })
-    .setTween(TweenMax.from("#dmp .fas", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeIn}))
+    .setTween(TweenMax.from("#dmp", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeIn}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#ofd",
-    triggerHook: "onEnter",
+    triggerHook: "onCenter",
     reverse: false
 })
-    .setTween(TweenMax.from("#ofd .far", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeOut}))
+    .setTween(TweenMax.from("#ofd", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeOut}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#bmi",
-    triggerHook: "onEnter",
+    triggerHook: "onCenter",
     reverse: false
 })
-    .setTween(TweenMax.from("#bmi .fas", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeOut}))
+    .setTween(TweenMax.from("#bmi", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeOut}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#fcc",
-    triggerHook: "onEnter",
+    triggerHook: "onCenter",
     reverse: false
 })
-    .setTween(TweenMax.from("#fcc fas", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeOut}))
+    .setTween(TweenMax.from("#fcc", 0.6, {y: -350, autoAlpha: 0.0, ease: Power4.easeOut}))
     .addTo(controller);
 
 new ScrollMagic.Scene({
