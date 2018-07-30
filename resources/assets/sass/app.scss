@@ -620,10 +620,20 @@ input[name='userid']{
 }
 .socials{
   font-size: large;
+  width: 50%;
+  background-color: #fff;
+}
+.fbook{
+  color: blue;
+  border-color: blue;
+}
+.gplus{
+  color: red;
+  border-color: red;
 }
 .twitter{
-  background: skyblue;
-  color: #fff;
+  border-color: skyblue;
+  color: skyblue;
 }
 .commentReplyForm{
   display: none;

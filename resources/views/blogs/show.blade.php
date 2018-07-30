@@ -73,7 +73,7 @@
             <br />
 
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
-            <a href="/article/create"><button>Create New Article <i class="fas fa-plus"></i></button></a>
+            <a href="/article/create"><button>New Article&nbsp; <i class="fas fa-plus"></i>&nbsp;</button></a>
             <br /><br />
             {{--@endif--}}
 
