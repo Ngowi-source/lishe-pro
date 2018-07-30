@@ -29,44 +29,49 @@
 
         <h1 class="text-center">Registration</h1>
 
-        <form method="POST" action="/register" id="registerForm" >
-            @csrf
+        <div class="col-6">
+            <form method="POST" action="/register" id="registerForm" >
+                @csrf
 
-            @if(count($errors))
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{$error}}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+                @if(count($errors))
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-            <label for="firstname" class="large">First Name</label>
-            <input id="firstname" type="text" class="form-control" name="firstname" value="{{ old('firstname') }}" required autofocus><br />
+                <label for="firstname" class="large">First Name</label>
+                <input id="firstname" type="text" class="form-control" name="firstname" value="{{ old('firstname') }}" required autofocus><br />
 
-            <label for="lastname" class="large">Last Name</label>
-            <input id="lastname" type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" required ><br />
+                <label for="lastname" class="large">Last Name</label>
+                <input id="lastname" type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" required ><br />
 
-            <label for="email" class="large">E-Mail Address</label>
-            <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required><br />
-
-
-            <label for="password" class="large">Password</label>
-            <input id="password" type="password" class="form-control" name="password" required><br />
+                <label for="email" class="large">E-Mail Address</label>
+                <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required><br />
 
 
-            <label for="password-confirm" class="large">Confirm Password</label>
-            <input id="password-confirm" class="form-control" type="password" name="password_confirmation" required><br /><br />
+                <label for="password" class="large">Password</label>
+                <input id="password" type="password" class="form-control" name="password" required><br />
 
-            <button type="submit" class="btn large">
-                Join Us
-            </button><br />
 
-            <a class="float-left" href="/login">
-                Already have an account ?
-            </a><br /><br />
+                <label for="password-confirm" class="large">Confirm Password</label>
+                <input id="password-confirm" class="form-control" type="password" name="password_confirmation" required><br /><br />
 
+                <button type="submit" class="btn large">
+                    Join Us
+                </button><br />
+
+                <a class="float-left" href="/login">
+                    Already have an account ?
+                </a><br /><br />
+
+            </form>
+        </div>
+
+        <div class="col-6">
             <h4 class="text-center">or using</h4>
             <br />
 
@@ -83,8 +88,8 @@
                 <i class="fab fa-twitter "></i>&nbsp;&nbsp;Twitter <span class="account">Account</span>
             </button>
             <br /><br />
+        </div>
 
-        </form>
     </div>
 
 @endsection

@@ -29,46 +29,51 @@
 
         <h1 class="text-center">Log In</h1>
 
-        <form method="POST" action="/login" id="loginForm" >
-            @csrf
+        <div class="col-6">
+            <form method="POST" action="/login" id="loginForm" >
+                @csrf
 
-            @if(count($errors))
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{$error}}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+                @if(count($errors))
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-            <label for="email" class="large">E-Mail Address</label>
+                <label for="email" class="large">E-Mail Address</label>
 
-            <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required autofocus><br />
-
-
-            <label for="password" class="large">Password</label>
-
-            <input id="password" type="password" class="form-control" name="password" required><br />
+                <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required autofocus><br />
 
 
-            <label class="large">
-                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>&nbsp;Remember Me
-            </label><br />
+                <label for="password" class="large">Password</label>
 
-            <button type="submit" class="btn large">
-                Log In
-            </button><br />
+                <input id="password" type="password" class="form-control" name="password" required><br />
 
-            <a class="float-left" href="/reset">
-                Forgot Your Password ?
-            </a>
 
-            <a class="float-right" href="/register">
-                Don't have an account yet ?
-            </a>
-            <br /><br />
+                <label class="large">
+                    <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>&nbsp;Remember Me
+                </label><br />
 
+                <button type="submit" class="btn large">
+                    Log In
+                </button><br />
+
+                <a class="float-left" href="/reset">
+                    Forgot Your Password ?
+                </a>
+
+                <a class="float-right" href="/register">
+                    Don't have an account yet ?
+                </a>
+                <br /><br />
+
+            </form>
+        </div>
+
+        <div class="col-6">
             <h4 class="text-center">or using</h4>
             <br />
 
@@ -85,8 +90,8 @@
                 <i class="fab fa-twitter "></i>&nbsp;&nbsp;Twitter <span class="account">Account</span>
             </button>&nbsp;
             <br /><br />
+        </div>
 
-        </form>
     </div>
 
 @endsection
