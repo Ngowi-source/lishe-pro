@@ -108,6 +108,10 @@
                 Expertise
             </div>
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" stroke="white" points="0,100 100,100 100,0 80,55 80,75 "/>
+            </svg>
         </div>
         <div id="whoAreWe">
             <h1>Why Lishe Pro?</h1><br />
