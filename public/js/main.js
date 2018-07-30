@@ -4,7 +4,7 @@ $(function() {
     setInterval(function() {
         var animationName = 'animated bounce';
         var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        $('').addClass(animationName).one(animationend, function() {
+        $('#introButton').addClass(animationName).one(animationend, function() {
             $(this).removeClass(animationName);
         });
     }, 5000);
@@ -81,5 +81,5 @@ new ScrollMagic.Scene({
     triggerHook: "onEnter",
     reverse: false
 })
-    .setTween(TweenMax.from("#blog .card", 0.8, {x: 400, scale: 0.6, autoAlpha: 0.0, ease: Power3.easeOut}))
+    .setTween(TweenMax.from("#blog .card", 0.8, {x: 400, scale: 0.6, autoAlpha: 0.0, ease: Power2.easeOut}))
     .addTo(controller);

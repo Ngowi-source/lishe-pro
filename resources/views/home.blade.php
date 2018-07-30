@@ -107,7 +107,7 @@
                 Interactive Dietary Assessment and <br />
                 Expertise
             </div>
-            <button id="introButton" class= "animated bounce" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
+            <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <path fill="white" stroke="white" stroke-width="0" d="M0,0 C30,-5 30,35 10,40 L10,100 L0,100 Z"></path>
