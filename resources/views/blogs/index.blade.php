@@ -48,7 +48,7 @@
         <div id="blogSide">
 
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
-            <a href="/article/create"><button>Create New Article +</button></a>
+            <a href="/article/create"><button>Create New Article <i class="fas fa-plus"></i></button></a>
             {{--@endif--}}<br /><br />
 
             <h4>Archives</h4>
