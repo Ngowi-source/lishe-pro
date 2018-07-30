@@ -11012,9 +11012,15 @@ body {
   color: #D57030;
 }
 
+#registerWrapper .col-6,
+#loginWrapper .col-6 {
+  display: inline-block;
+}
+
 #registerForm,
 #loginForm {
   width: 40vw;
+  margin-left: 5vw;
 }
 
 #registerForm input,

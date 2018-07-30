@@ -62,7 +62,7 @@
 
                 <button type="submit" class="btn large">
                     Join Us
-                </button><br />
+                </button><br /><br />
 
                 <a class="float-left" href="/login">
                     Already have an account ?

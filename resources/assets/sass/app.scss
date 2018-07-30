@@ -566,10 +566,13 @@ body{
     font-size: large;
     color: $c4;
   }
+  .col-6{
+    display: inline-block;
+  }
 }
 #registerForm, #loginForm{
   width: 40vw;
-
+  margin-left: 5vw;
   input{
     border-top: none;
     border-right: none;

@@ -59,7 +59,7 @@
 
                 <button type="submit" class="btn large">
                     Log In
-                </button><br />
+                </button><br /><br />
 
                 <a class="float-left" href="/reset">
                     Forgot Your Password ?
