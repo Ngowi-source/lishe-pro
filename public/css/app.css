@@ -11067,11 +11067,6 @@ body {
   -webkit-transform: translateX(-50%);
 }
 
-#registerForm .btn:hover,
-#loginForm .btn:hover {
-  opacity: 0.6;
-}
-
 .readMore a {
   color: #D57030 !important;
 }
@@ -11094,6 +11089,10 @@ input[name='userid'] {
   width: 50%;
   background-color: #fff;
   margin-left: 25%;
+}
+
+.socials:hover {
+  opacity: 0.6;
 }
 
 .fbook {
@@ -11130,4 +11129,6 @@ input[name='userid'] {
   margin-right: 0 !important;
   float: right !important;
 }
+
+/*media queries*/
 

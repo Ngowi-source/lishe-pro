@@ -607,9 +607,6 @@ body{
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 
-    &:hover{
-      opacity: 0.6;
-    }
   }
 }
 .readMore a{
@@ -630,6 +627,10 @@ input[name='userid']{
   width: 50%;
   background-color: #fff;
   margin-left: 25%;
+
+  &:hover{
+    opacity: 0.6;
+  }
 }
 .fbook{
   color: blue;
@@ -661,3 +662,5 @@ input[name='userid']{
     float: right!important;
   }
 }
+
+/*media queries*/

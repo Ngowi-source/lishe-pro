@@ -27,6 +27,9 @@
             <a href="/login">Login</a>
             <a href="/register">Register</a>
         @endif
+        @if((Auth::check()) /*&& (Auth::user()->id == 4)*/)
+            <a href="/admin-management">Administer</a>
+        @endif
     </div>
 
     <div id="dietassessmentmodal">

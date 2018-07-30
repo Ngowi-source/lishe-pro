@@ -66,7 +66,7 @@
                 </a>
 
                 <a class="float-right" href="/register">
-                    Don't have an account yet ?
+                    Don't have an account ?
                 </a>
                 <br /><br />
 
