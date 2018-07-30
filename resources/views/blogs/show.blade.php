@@ -59,23 +59,23 @@
         </div>
         <div id="blogSide">
 
-            <div class="card w-100 border-dark">
+            <div class="card w-100 border-danger">
 
                 <img class="card-img-top" src="https://c5.rgstatic.net/m/437738464651637/images/template/default/profile/profile_default_l.jpg" alt="Sauli Epimack">
                 <div class="card-body">
                     <h5 class="card-title">Sauli Epimack MSc</h5>
                     <p class="card-text">
                         Research Scientist<br />
-                        Ifakara Health Institute
+                        <span class="text-muted">Ifakara Health Institute</span>
                     </p>
                 </div>
             </div>
-
-            <br /><br />
+            <br />
 
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
             <a href="/article/create"><button>Create New Article +</button></a>
-            {{--@endif--}}<br /><br />
+            {{--@endif--}}
+            <br />
 
             <h4>Archives</h4>
             @foreach($archives as $stat)
