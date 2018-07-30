@@ -30,6 +30,11 @@ Route::get('/logout', 'SessionController@destroy');
 Route::get('/register', 'RegistrationController@show');
 Route::post('/register', 'RegistrationController@create');
 
+Route::get('/reset', function(){
+    return view('auth.reset');
+});
+Route::post('/reset', 'RecoveryController@mailUser');
+
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });

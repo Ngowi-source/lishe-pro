@@ -25,6 +25,13 @@
 
 @section('content')
 
+    @if(session()->has('mailsuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            {{session('mailsuccess')}}
+        </div>
+    @endif
+
     <div id="loginWrapper">
 
         <h1 class="text-center">Log In</h1>
