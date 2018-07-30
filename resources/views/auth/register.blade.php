@@ -65,10 +65,11 @@
 
             <a class="float-left" href="/login">
                 Already have an account ?
-            </a><br />
+            </a><br /><br />
 
             <h4 class="text-center">or using</h4>
             <br />
+
             <button class="btn gplus socials">
                 <i class="fab fa-google-plus-g " aria-hidden="true"></i>&nbsp;&nbsp;Google Plus <span class="account">Account</span>
             </button><br /><br />

@@ -11064,6 +11064,11 @@ body {
   -webkit-transform: translateX(-50%);
 }
 
+#registerForm .btn:hover,
+#loginForm .btn:hover {
+  opacity: 0.6;
+}
+
 .readMore a {
   color: #D57030 !important;
 }
