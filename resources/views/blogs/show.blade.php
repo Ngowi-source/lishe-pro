@@ -59,7 +59,7 @@
         </div>
         <div id="blogSide">
 
-            <div class="card w-75 border-dark">
+            <div class="card w-100 border-dark">
 
                 <img class="card-img-top" src="https://c5.rgstatic.net/m/437738464651637/images/template/default/profile/profile_default_l.jpg" alt="Sauli Epimack">
                 <div class="card-body">
