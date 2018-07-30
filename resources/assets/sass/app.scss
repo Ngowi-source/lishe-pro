@@ -568,11 +568,7 @@ body{
   }
 }
 #registerForm, #loginForm{
-  width: 60vw;
-  position: absolute;
-  left: 50vw;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
+  width: 40vw;
 
   input{
     border-top: none;

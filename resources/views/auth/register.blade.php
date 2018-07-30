@@ -71,7 +71,7 @@
             </form>
         </div>
 
-        <div class="col-6">
+        <div class="col-6 float-right">
             <h4 class="text-center">or using</h4>
             <br />
 
