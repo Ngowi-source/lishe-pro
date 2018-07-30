@@ -377,7 +377,7 @@ body{
       text-decoration: none;
     }
   }
-  h4{
+  h4, h6{
     text-align: right;
     a{
       color: $c4;
@@ -485,7 +485,7 @@ body{
   h2{
     color: $c2;
   }
-  h6{
+  h6 a{
     color: $c4;
   }
 }

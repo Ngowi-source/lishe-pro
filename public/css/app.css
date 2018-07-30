@@ -10801,11 +10801,13 @@ body {
   text-decoration: none;
 }
 
-#blog h4 {
+#blog h4,
+#blog h6 {
   text-align: right;
 }
 
-#blog h4 a {
+#blog h4 a,
+#blog h6 a {
   color: #D57030;
   text-decoration: none;
 }
@@ -10916,7 +10918,7 @@ body {
   color: #9BA747;
 }
 
-#blogBod h6 {
+#blogBod h6 a {
   color: #D57030;
 }
 
