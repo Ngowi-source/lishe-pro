@@ -11059,6 +11059,9 @@ body {
 #registerForm .btn,
 #loginForm .btn {
   display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 .readMore a {
@@ -11079,7 +11082,7 @@ input[name='userid'] {
 }
 
 .socials {
-  font-size: large;
+  font-size: medium;
   width: 50%;
   background-color: #fff;
 }
