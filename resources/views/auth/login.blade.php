@@ -67,7 +67,7 @@
             <a class="float-right" href="/register">
                 Don't have an account yet ?
             </a>
-            <br />
+            <br /><br />
 
             <h4 class="text-center">or using</h4>
             <br />
