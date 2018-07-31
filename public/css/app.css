@@ -10558,7 +10558,7 @@ body {
 
 .submenu a {
   z-index: 100;
-  color: #8B281F;
+  color: #8B281F !important;
   text-decoration: none;
   display: block;
   font-size: medium;
@@ -10606,9 +10606,9 @@ body {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);*/
   border-radius: 3px;
-  border: 1px solid #8B281F;
+  border: 1px solid #9BA747;
   color: #fff;
-  background: #8B281F;
+  background: #9BA747;
   font-size: x-large;
   z-index: 3;
   -webkit-transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
@@ -10616,8 +10616,8 @@ body {
 }
 
 #introButton:hover {
-  border: 1px solid #9BA747;
-  background: #9BA747;
+  border: 1px solid #8B281F;
+  background: #8B281F;
 }
 
 #dietassessmentmodal {
