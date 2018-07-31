@@ -80,7 +80,7 @@
             </button><br /><br />
 
 
-            <button class="btn fbook socials">
+            <button class="btn fbook socials" onclick="window.location.href='https://lishep.herokuapp.com/auth/redirect/facebook'">
                 <i class="fab fa-facebook-f " aria-hidden="true"></i>&nbsp;&nbsp;Facebook <span class="account">Account</span>
             </button><br /><br />
 

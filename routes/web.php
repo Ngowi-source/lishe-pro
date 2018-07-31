@@ -35,6 +35,9 @@ Route::get('/reset', function(){
 });
 Route::post('/reset', 'RecoveryController@mailUser');
 
+Route::get('auth/callback/facebook', 'SocialAuthController@callbackfb');
+Route::get('auth/redirect/{social}', 'SocialAuthController@redirect');
+
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
