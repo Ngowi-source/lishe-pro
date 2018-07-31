@@ -49,7 +49,7 @@
                 <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required autofocus><br /><br />
 
                 <button type="submit" class="btn large">
-                    Send
+                    Reset Password
                 </button><br /><br />
 
             </form>

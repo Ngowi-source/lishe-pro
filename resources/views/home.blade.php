@@ -110,13 +110,13 @@
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path fill="white" stroke="white" stroke-width="0" d="M0,0 C30,-5 30,35 10,40 L10,100 L0,100 Z"></path>
+                <path fill="white" stroke="white" stroke-width="0" d="M0,0 C30,-5 30,35 10,40 L10,75 L0,75 Z"></path>
             </svg>
         </div>
         <div id="whoAreWe">
             <h1>Why Lishe Pro?</h1><br />
 
-            <span class="whoAreWe">Lishe PRO is guided by top-notch professionals’ group with purpose to safely <br />
+            <span class="whoAreWe">Lishe Pro is guided by top-notch professionals’ group with purpose to safely <br />
             support those who are looking to improve their health through nutrition. <br />
             We do this by using interactive dietary assessment tools, whole food supplements,<br />
             and most importantly dietary changes. Our aim is to help as many people as <br />
