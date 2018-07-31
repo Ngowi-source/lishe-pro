@@ -101,7 +101,7 @@
 
     <div id="homeWrapper">
         <div id="homeIntro">
-            <img src="{{'images/bg-large.jpeg'}}"/>
+            <img src="{{'images/bg2-large.jpeg'}}"/>
             <div id="intro">
                 Better Health Through Nutrition Tools,<br />
                 Interactive Dietary Assessment and <br />
