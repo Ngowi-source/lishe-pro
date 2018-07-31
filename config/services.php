@@ -36,8 +36,8 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => env('FACEBOOK_CLIENT_ID'),
-        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+        'client_id' => env('FACEBOOK_CLIENT_ID', '352237828646922'),
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET', '44f69779fd413501960754290e40ad2e'),
         'redirect' => 'https://lishep.herokuapp.com/auth/callback/facebook',
     ],
 
