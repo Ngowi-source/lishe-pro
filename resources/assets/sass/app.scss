@@ -133,6 +133,9 @@ body{
   top: 100%;
   left: 0;
   padding: 20px 0 15px 30px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
 
   &.display{
     display: block;
@@ -309,7 +312,9 @@ body{
     vertical-align:middle;
     background:$c1;
     cursor:pointer;
-    border-radius: 50%
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
   }
 
   input[type="radio"]:checked + label span {
@@ -465,6 +470,8 @@ body{
   color: #fff;
   border: none;
   border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   background: $c4;
   -webkit-transition: background 0.25s ease-out;
   -moz-transition: background 0.25s ease-out;
@@ -546,6 +553,8 @@ body{
     background: $c2;
     color: #fff;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border: none;
     -webkit-transition: background 0.2s ease-out;
     -moz-transition: background 0.2s ease-out ;
