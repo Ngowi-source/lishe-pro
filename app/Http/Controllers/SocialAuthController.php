@@ -17,25 +17,23 @@ class SocialAuthController extends Controller
         return Socialite::with($social)->redirect();
     }
 
-    public function callbackfb(Provider $provider)
+    public function callbackfb(/*Provider $provider*/)
     {
-        $providerUser = $provider->user();
-        $providerName = class_basename($provider);
+        /*$providerUser = $provider->user();
+        $providerName = class_basename($provider);*/
 
-        $account = Social::whereProvider($providerName)
-            ->whereProviderUserId($providerUser->getId())
-            ->first();
+        $auth_user = Socialite::driver('facebook')->user();
+        $account = User::whereEmail($auth_user->email)->first();
 
         if ($account) {
-            $user = $account->user;
+            $user = $account;
         }else
         {
-            $account = new Social([
+            /*$account = new Social([
                 'provider_user_id' => $providerUser->getId(),
                 'provider' => $providerName
-            ]);
+            ]);*/
 
-            $auth_user = Socialite::driver('facebook')->user();
             $fn = strtok($auth_user->name, " ");
             $ln = str_replace($fn, '', $auth_user->name);
 
@@ -49,8 +47,8 @@ class SocialAuthController extends Controller
                 ]
             );
 
-            $account->user()->associate($user);
-            $account->save();
+            /*$account->user()->associate($user);
+            $account->save();*/
         }
 
 
