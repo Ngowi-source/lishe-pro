@@ -59,7 +59,7 @@ class SocialAuthController extends Controller
 
     public function callbackgp()
     {
-        $auth_user = Socialite::driver('gplus')->user();
+        $auth_user = Socialite::driver('google')->user();
 
         $account = User::whereEmail($auth_user->email)->first();
 
