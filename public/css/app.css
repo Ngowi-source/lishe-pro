@@ -10429,6 +10429,11 @@ body {
   grid-template-rows: 15vh minmax(105vh, max-content) 20vh;
 }
 
+.alert {
+  height: 40px;
+  line-height: 40px;
+}
+
 #header {
   grid-area: 1/1/2/2;
   z-index: 200;

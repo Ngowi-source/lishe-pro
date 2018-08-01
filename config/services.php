@@ -47,10 +47,10 @@ return [
         'redirect' => 'http://lishep.herokuapp.com/auth/callback/twitter',
     ],
 
-    'google' => [
-        'client_id' => env('GOOGLE_CLIENT_ID'),
-        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => 'http://lishep.herokuapp.com/auth/callback/google',
+    'gplus' => [
+        'client_id' => env('GP_CLIENT_ID', '1041036215480-vj9vs3hblrhpcjm4hnpbo3qr058qegiv.apps.googleusercontent.com'),
+        'client_secret' => env('GP_CLIENT_SECRET', '0D264_AK4JoFgXBN51F_TYwX'),
+        'redirect' => 'https://lishep.herokuapp.com/auth/callback/gplus',
     ],
 
 ];

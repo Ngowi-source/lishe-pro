@@ -27,7 +27,8 @@ class SocialAuthController extends Controller
 
         if ($account) {
             $user = $account;
-        }else
+        }
+        else
         {
             /*$account = new Social([
                 'provider_user_id' => $providerUser->getId(),
@@ -49,6 +50,38 @@ class SocialAuthController extends Controller
 
             /*$account->user()->associate($user);
             $account->save();*/
+        }
+
+
+        Auth::login($user, true);
+        return redirect()->to('/');
+    }
+
+    public function callbackgp()
+    {
+        $auth_user = Socialite::driver('gplus')->user();
+
+        $account = User::whereEmail($auth_user->email)->first();
+
+        if ($account) {
+            $user = $account;
+        }
+        else
+        {
+
+            $fn = strtok($auth_user->name, " ");
+            $ln = str_replace($fn, '', $auth_user->name);
+
+            $user = User::create(
+                [
+                    'email' => $auth_user->email,
+                    'oautoken' => $auth_user->token,
+                    'firstname'  =>  $fn,
+                    'lastname' => $ln,
+                    'status' => 1
+                ]
+            );
+
         }
 
 
