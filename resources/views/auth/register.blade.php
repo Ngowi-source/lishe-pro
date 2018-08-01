@@ -75,7 +75,7 @@
             <h4 class="text-center">or using</h4>
             <br />
 
-            <button class="btn gplus socials">
+            <button class="btn gplus socials" onclick="window.location.href='https://lishep.herokuapp.com/auth/redirect/gplus'">
                 <i class="fab fa-google-plus-g " aria-hidden="true"></i>&nbsp;&nbsp;Google Plus <span class="account">Account</span>
             </button><br /><br />
 
