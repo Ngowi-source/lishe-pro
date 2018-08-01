@@ -40,7 +40,7 @@ class SocialAuthController extends Controller
             $user = User::create(
                 [
                     'email' => $auth_user->email,
-                    'token' => $auth_user->token,
+                    'oautoken' => $auth_user->token,
                     'firstname'  =>  $fn,
                     'lastname' => $ln,
                     'status' => 1
