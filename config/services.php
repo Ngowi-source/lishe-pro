@@ -42,9 +42,9 @@ return [
     ],
 
     'twitter' => [
-        'client_id' => env('TWITTER_CLIENT_ID'),
-        'client_secret' => env('TWITTER_CLIENT_SECRET'),
-        'redirect' => 'http://lishep.herokuapp.com/auth/callback/twitter',
+        'client_id' => env('TWITTER_CLIENT_ID', ''),
+        'client_secret' => env('TWITTER_CLIENT_SECRET', ''),
+        'redirect' => 'https://lishep.herokuapp.com/auth/callback/twitter',
     ],
 
     'google' => [
