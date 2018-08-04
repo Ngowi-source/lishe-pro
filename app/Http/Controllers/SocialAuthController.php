@@ -27,7 +27,7 @@ class SocialAuthController extends Controller
 
         if ($userEmailExists && !($account || $accountId))
         {
-            return redirect()->to('/')->with(['socialerror'=> 'The email for this social account has already been registered with another user!']);
+            return redirect()->to('/login')->with(['socialerror'=> 'The email for this social account has already been registered with another user!']);
         }
         elseif ($account && $accountId) {
             $user = $account;
