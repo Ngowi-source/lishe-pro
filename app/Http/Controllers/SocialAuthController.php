@@ -23,12 +23,18 @@ class SocialAuthController extends Controller
 
         $accountId = User::whereProviderId($auth_user->id)->first();
         $account = User::whereProvider($social)->first();
+        $userEmailExists = User::whereEmail($auth_user->email)->first();
 
-        if ($account && $accountId) {
-            $user = $account;
-        }
-        else
+        if ($userEmailExists && !($account || $accountId))
         {
+            return redirect()->to('/')->with(['socialerror'=> 'The email for this social account has already been registered with another user!']);
+        }
+        elseif ($account && $accountId) {
+            $user = $account;
+            Auth::login($user, true);
+            return redirect()->to('/');
+        }
+        else {
 
             $fn = strtok($auth_user->name, " ");
             $ln = str_replace($fn, '', $auth_user->name);
@@ -38,14 +44,15 @@ class SocialAuthController extends Controller
                     'provider' => $social,
                     'provider_id' => $auth_user->id,
                     'email' => $auth_user->email,
-                    'firstname'  =>  $fn,
+                    'firstname' => $fn,
                     'lastname' => $ln,
                     'status' => 1
                 ]
             );
 
+            Auth::login($user, true);
+            return redirect()->to('/');
         }
-        Auth::login($user, true);
-        return redirect()->to('/');
+
     }
 }
