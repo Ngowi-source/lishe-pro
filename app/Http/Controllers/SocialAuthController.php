@@ -21,9 +21,10 @@ class SocialAuthController extends Controller
     {
         $auth_user = Socialite::with($social)->user();
 
-        $account = User::whereEmail($auth_user->email)->first();
+        $accountId = User::whereProviderId($auth_user->id)->first();
+        $account = User::whereProvider($social)->first();
 
-        if ($account) {
+        if ($account && $accountId) {
             $user = $account;
         }
         else
@@ -34,8 +35,9 @@ class SocialAuthController extends Controller
 
             $user = User::create(
                 [
+                    'provider' => $social,
+                    'provider_id' => $auth_user->id,
                     'email' => $auth_user->email,
-                    'oautoken' => $auth_user->token,
                     'firstname'  =>  $fn,
                     'lastname' => $ln,
                     'status' => 1
@@ -43,7 +45,6 @@ class SocialAuthController extends Controller
             );
 
         }
-
         Auth::login($user, true);
         return redirect()->to('/');
     }

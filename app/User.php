@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'email', 'password', 'status', 'oautoken',
+        'firstname', 'lastname', 'email', 'password', 'status', 'provider', 'provider_id',
     ];
 
     /**
@@ -37,8 +37,4 @@ class User extends Authenticatable
         return $this->hasMany(User::class);
     }
 
-    public function profile()
-    {
-        return $this->hasOne('App\SocialProfile');
-    }
 }
