@@ -29,13 +29,23 @@ class RegistrationController extends Controller
         ]);
 
         $request['password'] = bcrypt($request->password);
-        $user = User::create(['firstname'=>$request->firstname, 'lastname'=>$request->lastname, 'email'=>$request->email, 'password'=>$request->password, 'status'=> 0]);
 
-        auth()->login($user);
+        $userEmailExists = User::whereEmail($request->email)->first();
 
-        /*Mail::to($request->email)->send(new AccountVerificationMail($user));*/
+        if ($userEmailExists)
+        {
+            return redirect()->to('/register')->with(['socialerror'=> 'The email for this social account has already been registered with another user!']);
+        }
+        else
+        {
+            $user = User::create(['firstname'=>$request->firstname, 'lastname'=>$request->lastname, 'email'=>$request->email, 'password'=>$request->password, 'status'=> 0]);
 
-        return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro!']);
+            auth()->login($user);
+
+            /*Mail::to($request->email)->send(new AccountVerificationMail($user));*/
+
+            return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro!']);
+        }
     }
 
 }

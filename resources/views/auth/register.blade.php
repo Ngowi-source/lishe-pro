@@ -25,6 +25,13 @@
 
 @section('content')
 
+    @if(session()->has('socialerror'))
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            {{session('socialerror')}}&nbsp;<strong>Please </strong>login or register with a different account.
+        </div>
+    @endif
+
     <div id="registerWrapper">
 
         <h1 class="text-center">Registration</h1>
