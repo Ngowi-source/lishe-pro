@@ -22,6 +22,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/article/create', 'ArticleController@create');
     Route::post('/articles', 'ArticleController@store');
 });
+
+Route::get('/privacy', function(){
+    return view ('privacy');
+});
+
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');
 
