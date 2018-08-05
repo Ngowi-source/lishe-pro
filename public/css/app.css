@@ -11175,6 +11175,11 @@ input[name='userid'] {
   display: none;
 }
 
+#listUsers i,
+#listArticles i {
+  color: #e1e1e1;
+}
+
 .listArticles,
 .listUsers {
   color: #fff;

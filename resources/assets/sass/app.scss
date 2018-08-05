@@ -694,6 +694,10 @@ input[name='userid']{
 }
 #listUsers, #listArticles{
   display: none;
+
+  i{
+    color: #e1e1e1;
+  }
 }
 .listArticles, .listUsers{
   color: #fff;

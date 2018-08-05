@@ -42,7 +42,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
-                                    <strong>{{$user->firstname}}</strong> | {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif <br />
+                                    <strong><a href="/user/{{$user->id}}">{{$user->firstname}}</a></strong> {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif <a href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>
@@ -58,15 +58,11 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($articles as $article)
-                                    <strong>{{$article->user->firstname}}</strong> | {{$article->title}} <br />
+                                    <strong><a href="/user/{{$article->user_id}}">{{$article->user->firstname}}</a></strong> <a href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a> <a href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col">
-                    <h2 class="text-center">Tools</h2>
                 </div>
 
             </div>
