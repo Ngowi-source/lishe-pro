@@ -21,12 +21,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/blog/{title}/reply', 'ArticleController@reply');
     Route::get('/article/create', 'ArticleController@create');
     Route::post('/articles', 'ArticleController@store');
+    Route::get('/admin-management', 'AdminController@index');
 });
 
 Route::get('/privacy', function(){
     return view ('privacy');
 });
-Route::get('/admin-management', 'AdminController@index');
 
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');

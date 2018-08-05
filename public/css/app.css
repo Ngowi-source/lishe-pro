@@ -11177,10 +11177,11 @@ input[name='userid'] {
 
 .listArticles,
 .listUsers {
-  color: inherit;
+  color: #fff;
   border: 1px solid #8B281F;
   background: #8B281F;
   border-radius: 3px;
+  font-size: large;
 }
 
 .listArticles:hover,

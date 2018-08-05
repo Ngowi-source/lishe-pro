@@ -34,15 +34,15 @@
             <div class="row">
 
                 <div class="col">
-                    <h2>Users</h2>
+                    <h2 class="text-center">Users</h2>
                     <br />
 
-                    <button class="listUsers" onclick="document.getElementById('listUsers').style.display='block'">List Users</button><br />
+                    <button class="listUsers" onclick="document.getElementById('listUsers').style.display='block'">List Users</button><br /><br />
                     <div id="listUsers">
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
-                                    {{$user->email}} | {{$user->firstname}} |
+                                    <strong>{{$user->firstname}}</strong> | {{$user->email}} <br />
                                 @endforeach
                             </div>
                         </div>
@@ -50,15 +50,15 @@
                 </div>
 
                 <div class="col">
-                    <h2>Articles</h2>
+                    <h2 class="text-center">Articles</h2>
                     <br />
 
-                    <button class="listArticles" onclick="document.getElementById('listArticles').style.display='block'">List Articles</button><br />
+                    <button class="listArticles" onclick="document.getElementById('listArticles').style.display='block'">List Articles</button><br /><br />
                     <div id="listArticles">
                         <div class="card">
                             <div class="card-body">
                                 @foreach($articles as $article)
-                                    {{$article->user->firstname}} | {{$article->title}} |
+                                    <strong>{{$article->user->firstname}}</strong> | {{$article->title}} <br />
                                 @endforeach
                             </div>
                         </div>
@@ -66,11 +66,11 @@
                 </div>
 
                 <div class="col">
-                    <h2>Tools</h2>
+                    <h2 class="text-center">Tools</h2>
                 </div>
 
                 <div class="col">
-                    <h2>Products</h2>
+                    <h2 class="text-center">Products</h2>
                 </div>
 
             </div>

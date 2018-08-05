@@ -696,10 +696,11 @@ input[name='userid']{
   display: none;
 }
 .listArticles, .listUsers{
-  color: inherit;
+  color: #fff;
   border: 1px solid $c5;
   background: $c5;
   border-radius: 3px;
+  font-size: large;
 
   &:hover{
     opacity: 0.65;

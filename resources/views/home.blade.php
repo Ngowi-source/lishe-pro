@@ -99,6 +99,13 @@
         </div>
     @endif
 
+    @if(session()->has('adminerror'))
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">Disallowed...</strong>&nbsp;{{session('adminerror')}}
+        </div>
+    @endif
+
     <div id="homeWrapper">
         <div id="homeIntro">
             <img src="{{'images/bg2-large.jpeg'}}"/>

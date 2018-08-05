@@ -13,6 +13,13 @@ class AdminController extends Controller
         $users = User::all();
         $articles = Article::all();
 
+        if(Auth::user()->id > 20)
+        {
+            return redirect()->to('/')->with([
+                'adminerror' => 'You are not authorized as an administrator!'
+            ]);
+        }
+
         return view ('admin')->with([
             'users' => $users,
             'articles' => $articles,
