@@ -28,7 +28,7 @@
 
     <div id="loginWrapper">
 
-        <h1 class="text-center">Administration Panel</h1>
+        <h1 class="text-center">Administration Panel</h1><br />
 
         <div class="container">
             <div class="row">
@@ -37,8 +37,8 @@
                     <h2 class="text-center">Users</h2>
                     <br />
 
-                    <button class="listUsers" onclick="document.getElementById('listUsers').style.display='block'">List Users</button><br /><br />
-                    <div id="listUsers">
+                    <button class="listUsers text-center" onclick="document.getElementById('listUsers').style.display='block'">List Users</button><br /><br />
+                    <div id="listUsers" class="text-center">
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
@@ -53,8 +53,8 @@
                     <h2 class="text-center">Articles</h2>
                     <br />
 
-                    <button class="listArticles" onclick="document.getElementById('listArticles').style.display='block'">List Articles</button><br /><br />
-                    <div id="listArticles">
+                    <button class="listArticles text-center" onclick="document.getElementById('listArticles').style.display='block'">List Articles</button><br /><br />
+                    <div id="listArticles" class="text-center">
                         <div class="card">
                             <div class="card-body">
                                 @foreach($articles as $article)
