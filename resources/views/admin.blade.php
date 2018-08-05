@@ -37,8 +37,8 @@
                     <h2 class="text-center">Users</h2>
                     <br />
 
-                    <button class="listUsers text-center" onclick="document.getElementById('listUsers').style.display='block'">List Users</button><br /><br />
-                    <div id="listUsers" class="text-center">
+                    <button class="listUsers" onclick="document.getElementById('listUsers').style.display='block'">List Users</button><br /><br />
+                    <div id="listUsers">
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
@@ -53,8 +53,8 @@
                     <h2 class="text-center">Articles</h2>
                     <br />
 
-                    <button class="listArticles text-center" onclick="document.getElementById('listArticles').style.display='block'">List Articles</button><br /><br />
-                    <div id="listArticles" class="text-center">
+                    <button class="listArticles" onclick="document.getElementById('listArticles').style.display='block'">List Articles</button><br /><br />
+                    <div id="listArticles">
                         <div class="card">
                             <div class="card-body">
                                 @foreach($articles as $article)
