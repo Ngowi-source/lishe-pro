@@ -42,7 +42,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
-                                    <strong>{{$user->firstname}}</strong> | {{$user->email}} <br />
+                                    <strong>{{$user->firstname}}</strong> | {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif <br />
                                 @endforeach
                             </div>
                         </div>
