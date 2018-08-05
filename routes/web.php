@@ -30,6 +30,10 @@ Route::get('/privacy', function(){
     return view ('privacy');
 });
 
+Route::get('/terms-of-service', function(){
+    return view ('terms');
+});
+
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');
 

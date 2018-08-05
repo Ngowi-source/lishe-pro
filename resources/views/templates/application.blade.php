@@ -26,7 +26,9 @@
         <div id="content">@yield('content')</div>
 
         <div id="footer">
-            <div class="text-center privacy"><a href="/privacy">Privacy Policy</a></div><br /><br />
+            <div class="text-center privacy container">
+                <a href="/privacy">Privacy Policy</a>&nbsp;|&nbsp;<a href="/terms-of-service">Terms of Service</a>
+            </div><br /><br />
             <div class="footer">
                 2018 &copy;Lishe Pro Tanzania. All Rights Reserved<br /><br />
                 Crafted by <a href="http://www.bryceandy.com">BryceAndy</a>
