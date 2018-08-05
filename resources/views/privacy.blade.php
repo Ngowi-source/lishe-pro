@@ -44,12 +44,12 @@
             The information collected will only be used for login and registration purposes and nothing more. In no way
             will Lishe Pro publish, use the content posted by the user, or make a post on behalf of the users. Lishe Pro
             will not keep track of any other detail of the user other than collection the basic profile information
-            aforementioned.<br />
+            aforementioned.<br /><br />
 
             <h3>Modification to This Privacy Policy</h3>
 
             Lishe Pro reserves the right to change this Privacy Policy at any time by posting revisions on this Web
-            page. Such changes will be effective upon posting.
+            page. Such changes will be effective upon posting.<br /><br />
         </div>
 
     </div>
