@@ -22,6 +22,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/article/create', 'ArticleController@create');
     Route::post('/articles', 'ArticleController@store');
     Route::get('/admin-management', 'AdminController@index');
+    Route::get('/delete/user/{id}', 'AdminController@userdel');
+    Route::get('/delete/article/{id}', 'AdminController@postdel');
 });
 
 Route::get('/privacy', function(){

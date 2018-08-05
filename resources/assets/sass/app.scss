@@ -695,6 +695,10 @@ input[name='userid']{
 #listUsers, #listArticles{
   display: none;
 
+  a{
+    text-decoration: none;
+  }
+
   .deleteIcon{
     color: #e1e1e1;
   }

@@ -14,7 +14,7 @@ class AdminController extends Controller
         $users = User::all();
         $articles = Article::all();
 
-        if(Auth::user()->id > 20)
+        if(Auth::user()->id > 5)
         {
             return redirect()->to('/')->with([
                 'adminerror' => 'You are not authorized as an administrator!'
@@ -25,5 +25,39 @@ class AdminController extends Controller
             'users' => $users,
             'articles' => $articles,
         ]);
+    }
+
+    public function userdel($id)
+    {
+        $res = User::whereId($id)->delete();
+        if($res)
+        {
+            return back()->with([
+                'userdel' => 'User deleted successfully!'
+            ]);
+        }
+        else
+        {
+            return back()->with([
+                'userfail' => 'User could not be deleted!'
+            ]);
+        }
+    }
+
+    public function postdel($id)
+    {
+        $res = Article::whereId($id)->delete();
+        if($res)
+        {
+            return back()->with([
+                'postdel' => 'Article deleted successfully!'
+            ]);
+        }
+        else
+        {
+            return back()->with([
+                'postfail' => 'Article could not be deleted!'
+            ]);
+        }
     }
 }

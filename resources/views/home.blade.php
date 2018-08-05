@@ -27,7 +27,7 @@
             <a href="/login">Login</a>
             <a href="/register">Register</a>
         @endif
-        @if((Auth::check()) /*&& (Auth::user()->id == 4)*/)
+        @if((Auth::check()) && (Auth::user()->id < 6))
             <a href="/admin-management">Administer</a>
         @endif
     </div>

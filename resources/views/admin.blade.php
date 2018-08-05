@@ -26,6 +26,33 @@
 
 @section('content')
 
+    @if(session()->has('userdel'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            {{session('userdel')}}
+        </div>
+    @endif
+
+    @if(session()->has('userfail'))
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('userfail')}}</strong>
+        </div>
+    @endif
+
+    @if(session()->has('postdel'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            {{session('postdel')}}
+    @endif
+
+    @if(session()->has('postfail'))
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <strong class="text-center">{{session('postfail')}}</strong>&nbsp;
+        </div>
+    @endif
+
     <div id="loginWrapper">
 
         <h1 class="text-center">Administration Panel</h1><br />
@@ -42,7 +69,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
-                                    <strong><a href="/user/{{$user->id}}">{{$user->firstname}}</a></strong>  {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif &nbsp;<a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
+                                    <strong><a href="/user/{{$user->id}}">{{$user->firstname}}</a></strong>  {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif &nbsp; <a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>
@@ -58,7 +85,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($articles as $article)
-                                    <strong><a href="/user/{{$article->user_id}}">{{$article->user->firstname}}</a></strong> &nbsp;<a class="article" href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a> &nbsp;<a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
+                                    <strong><a href="/user/{{$article->user_id}}">{{$article->user->firstname}}</a></strong> &nbsp;<a class="article" href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a> &nbsp; <a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>
