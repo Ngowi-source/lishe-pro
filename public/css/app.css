@@ -11046,8 +11046,8 @@ body {
   display: inline-block;
 }
 
-#registerWrapper .privacy,
-#loginWrapper .privacy {
+#registerWrapper .privacy a,
+#loginWrapper .privacy a {
   color: #9BA747;
   text-decoration: none;
 }
