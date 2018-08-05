@@ -700,16 +700,15 @@ input[name='userid']{
   }
 
   .deleteIcon{
-    color: #e1e1e1;
+    color: $c5;
   }
   .article{
     color: $c2;
   }
 }
 .listArticles, .listUsers{
-  color: #fff;
+  color: $c5;
   border: 1px solid $c5;
-  background: $c5;
   border-radius: 3px;
   font-size: large;
   width: 100%;

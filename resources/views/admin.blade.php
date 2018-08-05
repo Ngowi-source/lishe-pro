@@ -60,7 +60,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col">
+                <div class="col-lg-6 col-md-12">
                     <h2 class="text-center">Users</h2>
                     <br />
 
@@ -76,7 +76,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-6 col-md-12">
                     <h2 class="text-center">Articles</h2>
                     <br />
 
