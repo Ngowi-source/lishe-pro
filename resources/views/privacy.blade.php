@@ -33,7 +33,7 @@
         <div class="col-12">
             Lishe Pro respects the privacy rights of our users and is strongly committed to protecting your privacy.
             This Privacy Policy applies to this website, information collected and provided to Lishe Pro when you
-            are registered to Lishe-Pro.co.tz or at third-party websites and applications.<br />
+            are registered to Lishe-Pro.co.tz or at third-party websites and applications.<br /><br />
 
             <h3>Collection and Use of Your Personal Information</h3>
 
@@ -44,7 +44,7 @@
             The information collected will only be used for login and registration purposes and nothing more. In no way
             will Lishe Pro publish, use the content posted by the user, or make a post on behalf of the users. Lishe Pro
             will not keep track of any other detail of the user other than collection the basic profile information
-            aforementioned.
+            aforementioned.<br />
 
             <h3>Modification to This Privacy Policy</h3>
 

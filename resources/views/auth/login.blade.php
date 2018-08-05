@@ -106,7 +106,7 @@
             <br /><br />
         </div>
 
-        <span class="text-center"><a href="/privacy">Privacy Policy</a></span>
+        <div class="text-center"><a href="/privacy">Privacy Policy</a></div><br />
 
     </div>
 
