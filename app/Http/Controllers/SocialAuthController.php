@@ -21,15 +21,14 @@ class SocialAuthController extends Controller
     {
         $auth_user = Socialite::with($social)->user();
 
-        $accountId = User::whereProviderId($auth_user->id)->first();
-        $account = User::whereProvider($social)->first();
+        $account = User::whereProvider($social)->whereProviderId($auth_user->id)->first();
         $userEmailExists = User::whereEmail($auth_user->email)->first();
 
-        if ($userEmailExists && !($account || $accountId))
+        if ($userEmailExists && !$account)
         {
             return redirect()->to('/login')->with(['socialerror'=> 'The email for this social account has already been registered with another user!']);
         }
-        elseif ($account && $accountId) {
+        elseif ($account) {
             $user = $account;
             Auth::login($user, true);
             return redirect()->to('/');
