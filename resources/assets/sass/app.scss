@@ -695,8 +695,11 @@ input[name='userid']{
 #listUsers, #listArticles{
   display: none;
 
-  i{
+  a i{
     color: #e1e1e1;
+  }
+  .article{
+    color: $c2;
   }
 }
 .listArticles, .listUsers{
@@ -705,6 +708,7 @@ input[name='userid']{
   background: $c5;
   border-radius: 3px;
   font-size: large;
+  width: 100%;
 
   &:hover{
     opacity: 0.65;

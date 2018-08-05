@@ -11175,9 +11175,14 @@ input[name='userid'] {
   display: none;
 }
 
-#listUsers i,
-#listArticles i {
+#listUsers a i,
+#listArticles a i {
   color: #e1e1e1;
+}
+
+#listUsers .article,
+#listArticles .article {
+  color: #9BA747;
 }
 
 .listArticles,
@@ -11187,6 +11192,7 @@ input[name='userid'] {
   background: #8B281F;
   border-radius: 3px;
   font-size: large;
+  width: 100%;
 }
 
 .listArticles:hover,
