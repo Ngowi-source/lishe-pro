@@ -11046,6 +11046,17 @@ body {
   display: inline-block;
 }
 
+#registerWrapper .privacy,
+#loginWrapper .privacy {
+  color: #9BA747;
+  text-decoration: none;
+}
+
+#registerWrapper .Links,
+#loginWrapper .Links {
+  text-decoration: none;
+}
+
 #registerForm,
 #loginForm {
   width: 40vw;

@@ -75,11 +75,11 @@
                     Log In
                 </button><br /><br />
 
-                <a class="float-left" href="/reset">
+                <a class="float-left Links" href="/reset">
                     Forgot Your Password ?
                 </a>
 
-                <a class="float-right" href="/register">
+                <a class="float-right Links" href="/register">
                     Don't have an account ?
                 </a>
                 <br /><br />
@@ -106,7 +106,7 @@
             <br /><br />
         </div>
 
-        <div class="text-center"><a href="/privacy">Privacy Policy</a></div><br />
+        <div class="text-center privacy"><a href="/privacy">Privacy Policy</a></div><br />
 
     </div>
 

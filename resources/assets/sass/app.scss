@@ -592,6 +592,13 @@ body{
   .col-6{
     display: inline-block;
   }
+  .privacy{
+    color: $c2;
+    text-decoration: none;
+  }
+  .Links{
+    text-decoration: none;
+  }
 }
 #registerForm, #loginForm{
   width: 40vw;

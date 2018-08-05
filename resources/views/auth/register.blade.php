@@ -71,7 +71,7 @@
                     Join Us
                 </button><br /><br />
 
-                <a class="float-left" href="/login">
+                <a class="float-left Links" href="/login">
                     Already have an account ?
                 </a><br /><br />
 
@@ -97,7 +97,7 @@
             <br /><br />
         </div>
 
-        <div class="text-center"><a href="/privacy">Privacy Policy</a></div><br />
+        <div class="text-center privacy"><a href="/privacy">Privacy Policy</a></div><br />
 
     </div>
 
