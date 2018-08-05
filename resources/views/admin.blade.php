@@ -69,10 +69,6 @@
                     <h2 class="text-center">Tools</h2>
                 </div>
 
-                <div class="col">
-                    <h2 class="text-center">Products</h2>
-                </div>
-
             </div>
         </div>
 
