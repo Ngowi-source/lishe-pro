@@ -67,6 +67,10 @@ body{
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+  .privacy a{
+    color: $c2;
+    text-decoration: none;
+  }
 }
 .logo{
   position: absolute;
@@ -592,10 +596,7 @@ body{
   .col-6{
     display: inline-block;
   }
-  .privacy a{
-    color: $c2;
-    text-decoration: none;
-  }
+
   .Links{
     text-decoration: none;
   }

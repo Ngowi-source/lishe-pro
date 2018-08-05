@@ -60,7 +60,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-md-12">
+                <div class="col col-lg-6 col-md-12">
                     <h2 class="text-center">Users</h2>
                     <br />
 
@@ -69,14 +69,14 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
-                                    <strong><a href="/user/{{$user->id}}">{{$user->firstname}}</a></strong>  {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif &nbsp; <a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
+                                    <strong><a href="/user/{{$user->id}}">{{$user->firstname}} {{$user->lastname}}</a></strong>  {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif &nbsp; <a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12">
+                <div class="col col-lg-6 col-md-12">
                     <h2 class="text-center">Articles</h2>
                     <br />
 
@@ -85,7 +85,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($articles as $article)
-                                    <strong><a href="/user/{{$article->user_id}}">{{$article->user->firstname}}</a></strong> &nbsp;<a class="article" href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a> &nbsp; <a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
+                                    {{$article->created_at}} &nbsp;<strong><a href="/user/{{$article->user_id}}">{{$article->user->firstname}} {{$article->user->lastname}}</a></strong> &nbsp;<a class="article" href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a> &nbsp; <a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>

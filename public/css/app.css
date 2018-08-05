@@ -10479,6 +10479,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
+#footer .privacy a {
+  color: #9BA747;
+  text-decoration: none;
+}
+
 .logo {
   position: absolute;
   top: 50%;
@@ -11044,12 +11049,6 @@ body {
 #registerWrapper .col-6,
 #loginWrapper .col-6 {
   display: inline-block;
-}
-
-#registerWrapper .privacy a,
-#loginWrapper .privacy a {
-  color: #9BA747;
-  text-decoration: none;
 }
 
 #registerWrapper .Links,

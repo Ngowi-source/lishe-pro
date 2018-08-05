@@ -106,8 +106,6 @@
             <br /><br />
         </div>
 
-        <div class="text-center privacy"><a href="/privacy">Privacy Policy</a></div><br />
-
     </div>
 
 @endsection
