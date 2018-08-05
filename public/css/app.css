@@ -11170,5 +11170,23 @@ input[name='userid'] {
   float: right !important;
 }
 
+#listUsers,
+#listArticles {
+  display: none;
+}
+
+.listArticles,
+.listUsers {
+  color: inherit;
+  border: 1px solid #8B281F;
+  background: #8B281F;
+  border-radius: 3px;
+}
+
+.listArticles:hover,
+.listUsers:hover {
+  opacity: 0.65;
+}
+
 /*media queries*/
 

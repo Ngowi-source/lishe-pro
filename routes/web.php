@@ -26,6 +26,7 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/privacy', function(){
     return view ('privacy');
 });
+Route::get('/admin-management', 'AdminController@index');
 
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');
