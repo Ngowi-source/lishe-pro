@@ -58,7 +58,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($articles as $article)
-                                    {{$article->user()->firstname}} | {{$article->title}} |
+                                    {{$article->user->firstname}} | {{$article->title}} |
                                 @endforeach
                             </div>
                         </div>
