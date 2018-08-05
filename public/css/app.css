@@ -10480,7 +10480,7 @@ body {
 }
 
 #footer .privacy a {
-  color: #9BA747;
+  color: #8B281F;
   text-decoration: none;
 }
 
@@ -11054,6 +11054,7 @@ body {
 #registerWrapper .Links,
 #loginWrapper .Links {
   text-decoration: none;
+  color: #8B281F;
 }
 
 #registerForm,
