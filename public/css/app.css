@@ -11175,8 +11175,8 @@ input[name='userid'] {
   display: none;
 }
 
-#listUsers a i,
-#listArticles a i {
+#listUsers .deleteIcon,
+#listArticles .deleteIcon {
   color: #e1e1e1;
 }
 
