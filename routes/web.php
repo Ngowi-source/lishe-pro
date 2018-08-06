@@ -44,10 +44,10 @@ Route::post('/register', 'RegistrationController@create');
 
 Route::get('/verify/{code}', 'SessionController@verify');
 
-Route::get('/reset', function(){
+Route::get('/forgot', function(){
     return view('auth.reset');
 });
-Route::post('/reset', 'RecoveryController@mailUser');
+Route::post('/forgot', 'RecoveryController@mailUser');
 Route::get('/pass-reset/{code}', 'RecoveryController@index');
 Route::post('/pass-reset/{code}', 'RecoveryController@reset');
 

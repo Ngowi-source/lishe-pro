@@ -89,7 +89,7 @@
                     Log In
                 </button><br /><br />
 
-                <a class="float-left Links" href="/reset">
+                <a class="float-left Links" href="/forgot">
                     Forgot Your Password ?
                 </a>
 
