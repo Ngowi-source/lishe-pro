@@ -55,6 +55,8 @@ class RecoveryController extends Controller
 
         try
         {
+            $request['password'] = bcrypt($request->password);
+
             User::whereId($id)->update(['passord' => $request->password]);
 
             return redirect()->to('/login')->with([
