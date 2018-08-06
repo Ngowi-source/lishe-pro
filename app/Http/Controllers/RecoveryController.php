@@ -14,10 +14,11 @@ class RecoveryController extends Controller
         $this->validate($request, [
             'email' => 'required|email'
         ]);
-        $user = User::where('email', '=', $request['email'])->exists();
+        $account = User::where('email', '=', $request['email'])->exists();
 
-        if($user)
+        if($account)
         {
+            $user = User::whereEmail($request['email'])->first();
             try
             {
                 Mail::to($user)->send(new PasswordRecoveryMail($user));
