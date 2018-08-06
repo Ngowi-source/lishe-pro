@@ -1,7 +1,7 @@
 @extends('templates.application')
 
 @section('title')
-    Lishe Pro - Forgot Password
+    Lishe Pro - Reset Password
 @endsection
 
 @section('header')
@@ -28,7 +28,11 @@
 
     <div id="loginWrapper">
 
-        <h1 class="text-center">Forgot Your Password ?</h1>
+        <h1 class="text-center">Reset Your Password ?</h1><br />
+
+        <p>
+            Welcome back <strong>{{$user->firstname}} {{$user->lastname}}</strong>
+        </p><br /><br />
 
         <div class="col-9 center">
             <form method="POST" action="/reset" id="loginForm" >
@@ -44,12 +48,15 @@
                     </div>
                 @endif
 
-                <label for="email" class="large">E-Mail Address</label>
+                <label for="password" class="large">New Password</label>
+                <input id="password" type="password" class="form-control" name="password" required><br />
 
-                <input id="email" type="email" placeholder="example@mymail.com" class="form-control" name="email" value="{{ old('email') }}" required autofocus><br /><br />
+
+                <label for="password-confirm" class="large">Confirm Password</label>
+                <input id="password-confirm" class="form-control" type="password" name="password_confirmation" required><br /><br />
 
                 <button type="submit" class="btn large">
-                    Recover Account
+                    Reset Password
                 </button><br /><br />
 
             </form>

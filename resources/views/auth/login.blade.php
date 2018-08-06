@@ -25,6 +25,13 @@
 
 @section('content')
 
+    @if(session()->has('updatesuccess'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            {{session('updatesuccess')}}
+        </div>
+    @endif
+
     @if(session()->has('mailsuccess'))
         <div class="alert alert-success alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
