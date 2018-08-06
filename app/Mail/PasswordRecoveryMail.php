@@ -33,6 +33,6 @@ class PasswordRecoveryMail extends Mailable
         return $this->from('bryzolildinho@gmail.com', 'Lishe Pro')
             ->subject('Account Recovery')
             ->view('mails.passRec')
-            ->text('mails.passRec_plain');
+            /*->text('mails.passRec_plain')*/;
     }
 }
