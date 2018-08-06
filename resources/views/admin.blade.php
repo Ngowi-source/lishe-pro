@@ -44,6 +44,7 @@
         <div class="alert alert-success alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             {{session('postdel')}}
+        </div>
     @endif
 
     @if(session()->has('postfail'))
@@ -69,7 +70,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
-                                    <strong><a href="/user/{{$user->id}}">{{$user->firstname}} {{$user->lastname}}</a></strong>  {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif &nbsp; <a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
+                                    <strong><a href="/user/{{$user->id}}">{{$user->firstname}} {{$user->lastname}}</a></strong>  {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif &nbsp; <a class="deleteIcon" href="/delete/user/{{base64_encode($user->id)}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>
@@ -85,7 +86,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($articles as $article)
-                                    {{$article->created_at}} &nbsp;<strong><a href="/user/{{$article->user_id}}">{{$article->user->firstname}} {{$article->user->lastname}}</a></strong> &nbsp;<a class="article" href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a> &nbsp; <a class="deleteIcon" href="/delete/user/{{$user->id}}"><i class="far fa-trash-alt"></i></a><br />
+                                    {{$article->created_at}} &nbsp;<strong><a href="/user/{{$article->user_id}}">{{$article->user->firstname}} {{$article->user->lastname}}</a></strong> &nbsp;<a class="article" href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a> &nbsp; <a class="deleteIcon" href="/delete/user/{{base64_encode($user->id)}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>

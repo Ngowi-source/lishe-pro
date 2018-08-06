@@ -42,6 +42,8 @@ Route::get('/logout', 'SessionController@destroy');
 Route::get('/register', 'RegistrationController@show');
 Route::post('/register', 'RegistrationController@create');
 
+Route::get('/verify/{code}', 'SessionController@verify');
+
 Route::get('/reset', function(){
     return view('auth.reset');
 });

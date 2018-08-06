@@ -29,7 +29,9 @@ class AdminController extends Controller
 
     public function userdel($id)
     {
-        $res = User::whereId($id)->delete();
+        $idd = base64_decode($id);
+
+        $res = User::whereId($idd)->delete();
         if($res)
         {
             return back()->with([
@@ -46,7 +48,9 @@ class AdminController extends Controller
 
     public function postdel($id)
     {
-        $res = Article::whereId($id)->delete();
+        $idd = base64_decode($id);
+
+        $res = Article::whereId($idd)->delete();
         if($res)
         {
             return back()->with([

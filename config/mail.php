@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'mail@lishepro.co.tz'),
+        'name' => env('MAIL_FROM_NAME', 'Lishe Pro'),
     ],
 
     /*

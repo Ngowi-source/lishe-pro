@@ -32,6 +32,13 @@
         </div>
     @endif
 
+    @if(session()->has('verified'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            {{session('verified')}}
+        </div>
+    @endif
+
     @if(session()->has('socialerror'))
         <div class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>

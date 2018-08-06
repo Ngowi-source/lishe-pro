@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
@@ -13,7 +14,7 @@ class SessionController extends Controller
 
     public function __construct()
     {
-        $this->middleware('guest')->except('destroy');
+        $this->middleware('guest')->except('destroy', 'verify');
     }
 
     public function show()
@@ -45,5 +46,18 @@ class SessionController extends Controller
             ]);
         }
 
+    }
+
+    public function verify($code)
+    {
+        $id = base64_decode($code);
+        $valid = User::whereId($id)->update(['status' => true]);
+
+        if($valid)
+        {
+            return redirect()->to('/login')->with([
+                'verified' => 'Your account has been verified. Now login!'
+            ]);
+        }
     }
 }
