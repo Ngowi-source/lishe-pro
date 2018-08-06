@@ -31,7 +31,7 @@
         <h1 class="text-center">Forgot Your Password ?</h1>
 
         <div class="col-9 center">
-            <form method="POST" action="/reset" id="loginForm" >
+            <form method="POST" action="/forgot" id="loginForm" >
                 @csrf
 
                 @if(count($errors))
