@@ -45,7 +45,7 @@ Route::post('/register', 'RegistrationController@create');
 Route::get('/verify/{code}', 'SessionController@verify');
 
 Route::get('/forgot', function(){
-    return view('auth.reset');
+    return view('auth.forgot');
 });
 Route::post('/forgot', 'RecoveryController@mailUser');
 Route::get('/pass-reset/{code}', 'RecoveryController@index');
