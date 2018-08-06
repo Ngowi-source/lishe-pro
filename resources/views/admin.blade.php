@@ -70,7 +70,7 @@
                         <div class="card">
                             <div class="card-body">
                                 @foreach($users as $user)
-                                    <strong><a href="/user/{{$user->id}}">{{$user->firstname}} {{$user->lastname}}</a></strong>  {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif &nbsp; <a class="deleteIcon" href="/delete/user/{{base64_encode($user->id)}}"><i class="far fa-trash-alt"></i></a><br />
+                                    @if($user->status)Verified @else NV @endif &nbsp;<strong><a href="/user/{{$user->id}}">{{$user->firstname}} {{$user->lastname}}</a></strong>  {{$user->email}} @if($user->provider != null) | {{$user->provider}} @endif &nbsp; <a class="deleteIcon" href="/delete/user/{{base64_encode($user->id)}}"><i class="far fa-trash-alt"></i></a><br />
                                 @endforeach
                             </div>
                         </div>
