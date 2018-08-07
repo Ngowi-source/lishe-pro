@@ -45,13 +45,13 @@ class RegistrationController extends Controller
             try
             {
                 Mail::to($user)->send(new AccountVerificationMail($user));
+                return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro!']);
             }
             catch(\Throwable $e)
             {
                 return $e->getMessage();
             }
 
-            return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro!']);
         }
     }
 

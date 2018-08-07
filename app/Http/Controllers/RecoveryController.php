@@ -22,13 +22,13 @@ class RecoveryController extends Controller
             try
             {
                 Mail::to($user)->send(new PasswordRecoveryMail($user));
+                return redirect('/login')->with(['mailsuccess'=> 'Check your email for a password reset link!']);
             }
             catch(\Throwable $e)
             {
                 return $e->getMessage();
             }
 
-            return redirect('/login')->with(['mailsuccess'=> 'Check your email for a password reset link!']);
         }
         else
         {
@@ -43,7 +43,7 @@ class RecoveryController extends Controller
         $id = base64_decode($code);
         $user = User::whereId($id)->first();
 
-        return view('auth.newPass')->with(['user' => $user]);
+        return view('auth.reset')->with(['user' => $user]);
     }
 
     public function reset($code, Request $request)
