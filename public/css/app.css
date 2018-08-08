@@ -10879,7 +10879,7 @@ body {
 
 #blogWrapper {
   display: grid;
-  grid-template-rows: 15vh minmax(70vh, auto);
+  grid-template-rows: 3vh minmax(70vh, auto);
   grid-template-columns: 70vw 30vw;
 }
 
@@ -11207,6 +11207,10 @@ input[name='userid'] {
 .listArticles:hover,
 .listUsers:hover {
   opacity: 0.65;
+}
+
+.addthis_inline_share_toolbox_wkp7 {
+  padding-left: 3vw;
 }
 
 /*media queries*/

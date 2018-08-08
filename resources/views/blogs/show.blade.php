@@ -53,7 +53,7 @@
     @endif
 
 
-    <div><br /><br />
+    <div><br />
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <div class="addthis_inline_share_toolbox_wkp7"></div>
@@ -64,7 +64,7 @@
     <div id="blogWrapper">
 
         <div id="blogHead">
-            <h2>Learn Something New</h2>
+            {{--<h2>Learn Something New</h2>--}}
         </div>
         <div id="blogSide">
 
