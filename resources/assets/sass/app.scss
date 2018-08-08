@@ -762,7 +762,7 @@ input[name='userid']{
   .nav-links.showMenu{
     height: 100vh;
     width: 100vw;
-    background: $c5;
+    background: $c1;
     position: fixed;
     right: 0;
     padding-top: 5vh;
@@ -770,7 +770,7 @@ input[name='userid']{
     a{
       display: block;
       font-size: 2.5rem;
-      color: $c1!important;
+      color: $c5!important;
       margin-left: 5vw;
     }
 
@@ -778,10 +778,16 @@ input[name='userid']{
       margin-left: 85vw;
 
       .menubar{
-        background-color: $c1;
+        background-color: $c5;
       }
     }
-    
+    .submenu{
+      top: 20vh;
+      left: 30vw;
+      a{
+        font-size: large!important;
+      }
+    }
   }
 
 }
