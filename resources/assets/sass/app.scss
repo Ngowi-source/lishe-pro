@@ -108,6 +108,18 @@ body{
     }
   }
 }
+.menu{
+  display: none;
+  width: 5vh;
+  height: 7vh;
+  padding: 1vh;
+
+  .menubar{
+    width: 3vh;
+    height: 1vh;
+    background-color: $c5;
+  }
+}
 #homeWrapper{
   display: grid;
   grid-template-rows: 100vh 60vh 110vh 70vh 130vh;
@@ -129,6 +141,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: 1;
+    display: none;
   }
 }
 #tools {
@@ -205,7 +218,7 @@ body{
   border: 1px solid $c2;
   color: #fff;
   background: $c2;
-  font-size: x-large;
+  font-size: 1.25rem;
   z-index: 3;
   -webkit-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
   -moz-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
@@ -728,3 +741,32 @@ input[name='userid']{
   padding-left: 3vw;
 }
 /*media queries*/
+
+@media screen and (max-width:1040px){
+  #intro{
+    top: 15vh;
+  }
+}
+@media screen and (max-width: 800px){
+  .nav-links{
+    a{
+      display: none;
+    }
+    &.showMenu{
+      height: 100vh;
+      width: 100vw;
+      background: $c5;
+
+      a{
+        display: block;
+        font-size: xx-large;
+        color: $c1;
+      }
+    }
+  }
+  .menu{
+    display: block;
+  }
+}
+
+/*end of media queries*/

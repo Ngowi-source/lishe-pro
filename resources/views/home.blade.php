@@ -8,6 +8,13 @@
 
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
+
+        <div class="menu">
+            <div class="menubar"></div>
+            <div class="menubar"></div>
+            <div class="menubar"></div>
+        </div>
+
         <a id="tools">Dietary Assessment Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
@@ -109,10 +116,8 @@
     <div id="homeWrapper">
         <div id="homeIntro">
             <img src="{{'images/bg2-large.jpeg'}}"/>
-            <div id="intro">
-                Better Health Through Nutrition Tools,<br />
-                Interactive Dietary Assessment and <br />
-                Expertise
+            <div id="intro" class="col-8 col-md-8 col-lg-6">
+                Better Health Through Nutrition Tools, Interactive Dietary Assessment and Expertise
             </div>
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
 

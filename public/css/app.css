@@ -10518,6 +10518,19 @@ body {
   opacity: 0.7;
 }
 
+.menu {
+  display: none;
+  width: 5vh;
+  height: 7vh;
+  padding: 1vh;
+}
+
+.menu .menubar {
+  width: 3vh;
+  height: 1vh;
+  background-color: #8B281F;
+}
+
 #homeWrapper {
   display: grid;
   grid-template-rows: 100vh 60vh 110vh 70vh 130vh;
@@ -10543,6 +10556,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  display: none;
 }
 
 #tools {
@@ -10623,7 +10637,7 @@ body {
   border: 1px solid #9BA747;
   color: #fff;
   background: #9BA747;
-  font-size: x-large;
+  font-size: 1.25rem;
   z-index: 3;
   -webkit-transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
   transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
@@ -11214,4 +11228,34 @@ input[name='userid'] {
 }
 
 /*media queries*/
+
+@media screen and (max-width: 1040px) {
+  #intro {
+    top: 15vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-links a {
+    display: none;
+  }
+
+  .nav-links.showMenu {
+    height: 100vh;
+    width: 100vw;
+    background: #8B281F;
+  }
+
+  .nav-links.showMenu a {
+    display: block;
+    font-size: xx-large;
+    color: #D9DCD8;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+/*end of media queries*/
 
