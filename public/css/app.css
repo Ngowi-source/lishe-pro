@@ -10996,6 +10996,11 @@ body {
   font-size: large;
 }
 
+.articleBod img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
 #blog .card {
   width: 30vw;
   display: inline-block;

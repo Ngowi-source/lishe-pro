@@ -548,6 +548,11 @@ body{
 }
 .articleBod{
   font-size: large;
+
+  img {
+    max-width:100%!important;
+    height:auto!important;
+  }
 }
 #blog{
   .card{
