@@ -53,8 +53,12 @@
     @endif
 
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <div class="addthis_inline_share_toolbox_wkp7"></div>
+    <div><br /><br />
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_inline_share_toolbox_wkp7"></div>
+
+    </div>
 
 
     <div id="blogWrapper">
