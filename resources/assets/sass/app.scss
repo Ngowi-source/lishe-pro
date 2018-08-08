@@ -110,13 +110,14 @@ body{
 }
 .menu{
   display: none;
-  width: 5vh;
-  height: 7vh;
-  padding: 1vh;
+  width: 10vh;
+  height: 14vh;
+  padding: 2vh;
+  line-height: 2vh;
 
   .menubar{
-    width: 3vh;
-    height: 1vh;
+    width: 6vh;
+    height: 2vh;
     background-color: $c5;
   }
 }
@@ -752,20 +753,26 @@ input[name='userid']{
     a{
       display: none;
     }
-    &.showMenu{
-      height: 100vh;
-      width: 100vw;
-      background: $c5;
+  }
+  .nav-links.showMenu{
+    height: 100vh;
+    width: 100vw;
+    background: $c5;
+    position: fixed;
 
-      a{
-        display: block;
-        font-size: xx-large;
-        color: $c1;
-      }
+    a{
+      display: block;
+      font-size: xx-large;
+      color: $c1;
     }
   }
   .menu{
     display: block;
+  }
+  .menu.showMenu{
+    .menubar{
+      background-color: $c1;
+    }
   }
 }
 

@@ -10,8 +10,8 @@
     <div class="nav-links">
 
         <div class="menu">
-            <div class="menubar"></div>
-            <div class="menubar"></div>
+            <div class="menubar"></div><br />
+            <div class="menubar"></div><br />
             <div class="menubar"></div>
         </div>
 

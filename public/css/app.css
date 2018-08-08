@@ -10520,14 +10520,15 @@ body {
 
 .menu {
   display: none;
-  width: 5vh;
-  height: 7vh;
-  padding: 1vh;
+  width: 10vh;
+  height: 14vh;
+  padding: 2vh;
+  line-height: 2vh;
 }
 
 .menu .menubar {
-  width: 3vh;
-  height: 1vh;
+  width: 6vh;
+  height: 2vh;
   background-color: #8B281F;
 }
 
@@ -11244,6 +11245,7 @@ input[name='userid'] {
     height: 100vh;
     width: 100vw;
     background: #8B281F;
+    position: fixed;
   }
 
   .nav-links.showMenu a {
@@ -11254,6 +11256,10 @@ input[name='userid'] {
 
   .menu {
     display: block;
+  }
+
+  .menu.showMenu .menubar {
+    background-color: #D9DCD8;
   }
 }
 
