@@ -11243,25 +11243,31 @@ input[name='userid'] {
     display: none;
   }
 
+  .menu {
+    display: block;
+  }
+
   .nav-links.showMenu {
     height: 100vh;
     width: 100vw;
     background: #8B281F;
     position: fixed;
     right: 0;
+    padding-top: 5vh;
   }
 
   .nav-links.showMenu a {
     display: block;
-    font-size: xx-large;
-    color: #D9DCD8;
+    font-size: 2.5rem;
+    color: #D9DCD8 !important;
+    margin-left: 5vw;
   }
 
-  .menu {
-    display: block;
+  .nav-links.showMenu .menu {
+    margin-left: 85vw;
   }
 
-  .menu.showMenu .menubar {
+  .nav-links.showMenu .menu .menubar {
     background-color: #D9DCD8;
   }
 }

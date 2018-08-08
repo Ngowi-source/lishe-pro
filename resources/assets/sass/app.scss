@@ -756,27 +756,34 @@ input[name='userid']{
       display: none;
     }
   }
+  .menu{
+    display: block;
+  }
   .nav-links.showMenu{
     height: 100vh;
     width: 100vw;
     background: $c5;
     position: fixed;
     right: 0;
+    padding-top: 5vh;
 
     a{
       display: block;
-      font-size: xx-large;
-      color: $c1;
+      font-size: 2.5rem;
+      color: $c1!important;
+      margin-left: 5vw;
     }
-  }
-  .menu{
-    display: block;
-  }
-  .menu.showMenu{
-    .menubar{
-      background-color: $c1;
+
+    .menu{
+      margin-left: 85vw;
+
+      .menubar{
+        background-color: $c1;
+      }
     }
+    
   }
+
 }
 @media screen and (max-width: 630px){
   #introButton{
