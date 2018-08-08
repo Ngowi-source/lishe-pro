@@ -10521,15 +10521,17 @@ body {
 .menu {
   display: none;
   width: 10vh;
-  height: 14vh;
-  padding: 2vh;
-  line-height: 2vh;
+  height: 5.6vh;
+  padding: .8vh 2vh .8vh 2vh;
+  line-height: .8vh;
+  cursor: pointer;
 }
 
 .menu .menubar {
   width: 6vh;
-  height: 2vh;
+  height: .8vh;
   background-color: #8B281F;
+  border-radius: 1px;
 }
 
 #homeWrapper {
@@ -11246,6 +11248,7 @@ input[name='userid'] {
     width: 100vw;
     background: #8B281F;
     position: fixed;
+    right: 0;
   }
 
   .nav-links.showMenu a {
@@ -11260,6 +11263,28 @@ input[name='userid'] {
 
   .menu.showMenu .menubar {
     background-color: #D9DCD8;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #introButton {
+    top: 65vh;
+    left: 30%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #intro {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  #introButton {
+    font-size: 1rem;
+    width: 50%;
+    left: 25%;
   }
 }
 
