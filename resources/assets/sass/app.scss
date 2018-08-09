@@ -126,7 +126,7 @@ body{
 }
 #homeWrapper{
   display: grid;
-  grid-template-rows: 100vh 60vh 110vh 70vh 130vh;
+  grid-template-rows: 100vh auto 110vh 70vh 130vh;
   grid-template-columns: 100vw;
 }
 #homeIntro{
@@ -210,9 +210,6 @@ body{
   .intro{
     color: $c3;
   }
-  .light{
-    font-weight: 100;
-  }
 }
 #introButton{
   cursor: pointer;
@@ -221,7 +218,6 @@ body{
   top: 70vh;
   width: auto;
   max-width: 50%;
-  max-height: 7vh;
   left: 25%;
   /*-webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -362,6 +358,7 @@ body{
   color: $c5;
   padding: 5vw;
   text-align: center;
+  height: auto;
   .whoAreWe{
     font-size: larger;
     line-height: 2;
@@ -784,7 +781,7 @@ input[name='userid']{
       margin-left: 85vw;
 
       .menubar{
-        &:nth-child(2){opacity: 0; visibility: hidden;}
+        .ndChild{opacity: 0; visibility: hidden;}
         &:nth-child(1){
           -webkit-transform: rotate(315deg);
           -moz-transform: rotate(315deg);
@@ -808,12 +805,13 @@ input[name='userid']{
           -ms-transform-origin: 50% 50%;
           -o-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
+          margin-top: -0.9rem;
         }
       }
     }
     .submenu{
       top: 20vh;
-      left: 30vw;
+      left: 5vw;
       padding: 15px 0 15px 15px;
       a{
         font-size: large!important;

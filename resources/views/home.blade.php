@@ -11,7 +11,7 @@
 
         <div class="menu">
             <div class="menubar"></div><br />
-            <div class="menubar"></div><br />
+            <div class="menubar ndChild"></div><br />
             <div class="menubar"></div>
         </div>
 
@@ -117,7 +117,7 @@
         <div id="homeIntro">
             <img src="{{'images/bg2-large.jpeg'}}"/>
             <div id="intro" class="col-8 col-md-8 col-lg-6">
-                Better <span class="intro">Health</span> Through Nutrition <span class="intro"><i>Tools</i></span>, Interactive Dietary <span class="intro light">Assessment</span> and Expertise
+                Better <span class="intro">Health</span> Through Nutrition <span class="intro"><i>Tools</i></span>, Interactive Dietary Assessment and Expertise
             </div>
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
 
@@ -128,11 +128,9 @@
         <div id="whoAreWe">
             <h1>Why Lishe Pro?</h1><br />
 
-            <span class="whoAreWe">Lishe Pro is guided by top-notch professionals’ group with purpose to safely <br />
-            support those who are looking to improve their health through nutrition. <br />
-            We do this by using interactive dietary assessment tools, whole food supplements,<br />
-            and most importantly dietary changes. Our aim is to help as many people as <br />
-                possible be healthier and happier without the use of unnecessary drugs or surgery.</span>
+            <span class="whoAreWe col-10 col-md-6 col-lg-4">
+                Lishe Pro is guided by top-notch professionals’ group with purpose to safely support those who are looking to improve their health through nutrition. We do this by using interactive dietary assessment tools, whole food supplements, and most importantly dietary changes. Our aim is to help as many people as possible be healthier and happier without the use of unnecessary drugs or surgery.
+            </span>
 
         </div>
         <div id="whatWeDo">

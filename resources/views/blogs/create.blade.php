@@ -13,6 +13,13 @@
 @section('header')
     <span class="logo"><a href="/">Lishe Pro</a></span>
     <div class="nav-links">
+
+        <div class="menu">
+            <div class="menubar"></div><br />
+            <div class="menubar ndChild"></div><br />
+            <div class="menubar"></div>
+        </div>
+
         <a id="tools">Dietary Assessment Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
