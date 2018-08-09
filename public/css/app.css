@@ -10438,8 +10438,7 @@ body {
 #header {
   grid-area: 1/1/2/2;
   z-index: 200;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D57030), to(#9BA747));
-  background: linear-gradient(#D57030, #9BA747);
+  background: #D9DCD8;
   padding-left: 5vw;
   padding-right: 5vw;
   position: relative;
@@ -10629,13 +10628,17 @@ body {
   color: #8B281F;
 }
 
+#intro .light {
+  font-weight: 100;
+}
+
 #introButton {
   cursor: pointer;
   padding: 5px 10px 5px 10px;
   position: absolute;
   top: 70vh;
   width: 30%;
-  left: 35%;
+  left: 25%;
   /*-webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -11290,7 +11293,6 @@ input[name='userid'] {
 @media screen and (max-width: 630px) {
   #introButton {
     top: 65vh;
-    left: 30%;
     width: 40%;
   }
 }
@@ -11305,7 +11307,6 @@ input[name='userid'] {
   #introButton {
     font-size: 1rem;
     width: 50%;
-    left: 25%;
   }
 }
 
