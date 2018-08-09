@@ -59,6 +59,10 @@
                 $('.submenu').removeClass('display');
             });
 
+            $("#tools").click(function(){
+                $(".submenu").toggleClass('display');
+            });
+
             $(".menu").click(function(){
                 $(".nav-links").toggleClass('showMenu');
             });
