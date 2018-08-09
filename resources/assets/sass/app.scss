@@ -194,16 +194,21 @@ body{
 }
 #intro{
   position: absolute;
-  top: 25vh;
-  color: #fff;
+  top: 0;
+  color: $c1;
   text-align: left;
-  font-size: xx-large;
+  font-size: 3rem;
+  font-weight: bolder;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+
+  .intro{
+    color: $c5;
+  }
 }
 #introButton{
   cursor: pointer;
@@ -745,9 +750,10 @@ input[name='userid']{
 }
 /*media queries*/
 
-@media screen and (max-width:1040px){
+@media screen and (max-width:720px){
   #intro{
-    top: 15vh;
+    top: 5vh;
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 800px){
@@ -798,9 +804,9 @@ input[name='userid']{
     width: 40%;
   }
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 610px){
   #intro{
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
 }
 @media screen and (max-width: 475px){
