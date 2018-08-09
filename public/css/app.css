@@ -10642,10 +10642,10 @@ body {
   content: "";
   position: absolute;
   width: 80%;
-  height: 0.5rem;
-  bottom: -15%;
+  height: 0.25rem;
+  bottom: -10%;
   left: 10%;
-  border-bottom: 0.5rem solid #F29D4B;
+  border-bottom: 0.25rem solid #F29D4B;
 }
 
 #introButton {
@@ -10750,6 +10750,7 @@ body {
   margin-left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+  width: 50vw;
   -webkit-transition: background 0.3s ease-in;
   transition: background 0.3s ease-in;
 }
@@ -10787,7 +10788,8 @@ body {
 #whoAreWe {
   grid-area: 2/1/3/2;
   color: #8B281F;
-  padding: 5vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
   text-align: center;
   height: auto;
 }
@@ -11259,6 +11261,12 @@ input[name='userid'] {
 /*media queries*/
 
 @media screen and (max-width: 800px) {
+  .iconfeatured {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .nav-links a {
     display: none;
   }
@@ -11280,7 +11288,7 @@ input[name='userid'] {
     display: block;
     font-size: 2.5rem;
     color: #8B281F !important;
-    margin-left: 5vw;
+    margin-left: 10vw;
   }
 
   .nav-links.showMenu .menu {
@@ -11323,17 +11331,33 @@ input[name='userid'] {
     top: 5vh;
     font-size: 2.5rem;
   }
+
+  .dietassessment {
+    grid-template-columns: 65vw;
+  }
+
+  #assessmentForm button {
+    width: 65vw;
+  }
 }
 
 @media screen and (max-width: 630px) {
   #introButton {
     top: 65vh;
   }
+
+  .iconfeatured {
+    font-size: medium;
+  }
 }
 
 @media screen and (max-width: 610px) {
   #intro {
     font-size: 2.2rem;
+  }
+
+  .contactUs {
+    font-size: 1.3rem;
   }
 }
 
@@ -11343,9 +11367,48 @@ input[name='userid'] {
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 480px) {
   #introButton {
     font-size: 1rem;
+  }
+
+  #intro {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #fcc,
+  #wlt,
+  #dmp,
+  #ofd,
+  #bmi {
+    height: 20vh;
+    width: 30vw;
+  }
+
+  #wlt,
+  #ofd {
+    left: 60vw;
+  }
+
+  #dmp,
+  #bmi {
+    left: 10vw;
+  }
+
+  #fcc,
+  #wlt {
+    top: 25vh;
+  }
+
+  #dmp,
+  #ofd {
+    top: 50vh;
+  }
+
+  #bmi {
+    top: 75vh;
   }
 }
 
