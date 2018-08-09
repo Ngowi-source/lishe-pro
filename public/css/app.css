@@ -10537,7 +10537,7 @@ body {
 
 #homeWrapper {
   display: grid;
-  grid-template-rows: 100vh auto 110vh 70vh 130vh;
+  grid-template-rows: 100vh auto 110vh auto 130vh;
   grid-template-columns: 100vw;
 }
 
@@ -10788,8 +10788,7 @@ body {
 #whoAreWe {
   grid-area: 2/1/3/2;
   color: #8B281F;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
+  padding: 10vw;
   text-align: center;
   height: auto;
 }
@@ -10865,6 +10864,7 @@ body {
   grid-area: 4/1/5/2;
   color: #8B281F;
   padding: 3.5vw;
+  height: auto;
 }
 
 #blog h3 {
@@ -11357,7 +11357,7 @@ input[name='userid'] {
   }
 
   .contactUs {
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
   }
 }
 
@@ -11389,12 +11389,12 @@ input[name='userid'] {
 
   #wlt,
   #ofd {
-    left: 60vw;
+    left: 60vw !important;
   }
 
   #dmp,
   #bmi {
-    left: 10vw;
+    left: 10vw !important;
   }
 
   #fcc,
@@ -11409,6 +11409,10 @@ input[name='userid'] {
 
   #bmi {
     top: 75vh;
+  }
+
+  .iconfeatured {
+    font-size: small;
   }
 }
 
