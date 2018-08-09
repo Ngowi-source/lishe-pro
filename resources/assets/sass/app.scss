@@ -121,7 +121,7 @@ body{
   cursor: pointer;
 
   .menubar{
-    width: 6vh;
+    width: 4.5vh;
     height: .6vh;
     background-color: $c5;
     border-radius: 1px;
@@ -775,6 +775,34 @@ input[name='userid']{
   padding-left: 3vw;
 }
 /*media queries*/
+@media screen and (max-width: 958px){
+  #blog{
+    h2{ font-size: 1.4rem;}
+    .card-body{
+      .articleTime{
+        font-size: small;
+      }
+      .articleBod{
+        font-size: medium;
+      }
+    }
+  }
+}
+@media screen and (max-width: 907px){
+  #blog{
+    .card{
+      display: block;
+      border: none!important;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin-left: 50vw;
+      width: 40vw;
+    }
+  }
+}
 @media screen and (max-width: 800px){
   .iconfeatured{
     font-size: large;
@@ -874,6 +902,11 @@ input[name='userid']{
   .contactUs{
     font-size: 1.3rem!important;
   }
+  #blog{
+    .card{
+      width: 60vw!important;
+    }
+  }
 }
 @media screen and (max-width: 533px){
   .tools{
@@ -889,6 +922,11 @@ input[name='userid']{
   }
   #footer{
     font-size: small!important;
+  }
+  #blog{
+    .card{
+      width: 80vw;
+    }
   }
 }
 @media screen and (max-width: 450px){

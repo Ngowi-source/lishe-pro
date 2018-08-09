@@ -10531,7 +10531,7 @@ body {
 }
 
 .menu .menubar {
-  width: 6vh;
+  width: 4.5vh;
   height: .6vh;
   background-color: #8B281F;
   border-radius: 1px;
@@ -11264,6 +11264,31 @@ input[name='userid'] {
 
 /*media queries*/
 
+@media screen and (max-width: 958px) {
+  #blog h2 {
+    font-size: 1.4rem;
+  }
+
+  #blog .card-body .articleTime {
+    font-size: small;
+  }
+
+  #blog .card-body .articleBod {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 907px) {
+  #blog .card {
+    display: block;
+    border: none !important;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-left: 50vw;
+    width: 40vw;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .iconfeatured {
     font-size: large;
@@ -11363,6 +11388,10 @@ input[name='userid'] {
   .contactUs {
     font-size: 1.3rem !important;
   }
+
+  #blog .card {
+    width: 60vw !important;
+  }
 }
 
 @media screen and (max-width: 533px) {
@@ -11382,6 +11411,10 @@ input[name='userid'] {
 
   #footer {
     font-size: small !important;
+  }
+
+  #blog .card {
+    width: 80vw;
   }
 }
 

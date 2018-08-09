@@ -30,7 +30,7 @@
                 <a href="/privacy">Privacy Policy</a>&nbsp;|&nbsp;<a href="/terms-of-service">Terms of Service</a>
             </div><br /><br />
             <div class="footer">
-                <span class="footblock">2018 &copy;Lishe Pro Tanzania. All Rights Reserved</span>
+                <span class="footblock">2018 &copy;Lishe Pro Tanzania</span>
                 <span class="footblock">Crafted by <a href="http://www.bryceandy.com">BryceAndy</a></span>
             </div>
         </div>
