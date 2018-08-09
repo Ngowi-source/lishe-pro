@@ -10461,6 +10461,10 @@ body {
   position: relative;
 }
 
+#footer .footblock {
+  display: block;
+}
+
 #footer a {
   color: #8B281F;
   text-decoration: none;
@@ -10918,7 +10922,7 @@ body {
   position: absolute;
   top: 55vh;
   left: 5vw;
-  width: 90%;
+  width: 85vw;
   height: 65vh;
 }
 
@@ -11375,6 +11379,10 @@ input[name='userid'] {
   #intro {
     font-size: 1.8rem;
   }
+
+  #footer {
+    font-size: small !important;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -11412,7 +11420,7 @@ input[name='userid'] {
   }
 
   .iconfeatured {
-    font-size: small;
+    font-size: small !important;
   }
 }
 
