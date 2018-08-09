@@ -210,6 +210,19 @@ body{
   .intro{
     color: $c3;
   }
+  .introline{
+    position: relative;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.8rem;
+      bottom: 0;
+      left: 0;
+      border-bottom: 0.8rem solid $c3;
+    }
+  }
 }
 #introButton{
   cursor: pointer;
@@ -779,9 +792,9 @@ input[name='userid']{
 
     .menu{
       margin-left: 85vw;
+      .ndChild{opacity: 0; visibility: hidden;}
 
       .menubar{
-        .ndChild{opacity: 0; visibility: hidden;}
         &:nth-child(1){
           -webkit-transform: rotate(315deg);
           -moz-transform: rotate(315deg);

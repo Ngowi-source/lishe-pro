@@ -10630,6 +10630,20 @@ body {
   color: #F29D4B;
 }
 
+#intro .introline {
+  position: relative;
+}
+
+#intro .introline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.8rem;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.8rem solid #F29D4B;
+}
+
 #introButton {
   cursor: pointer;
   padding: 5px 10px 5px 10px;
@@ -11269,7 +11283,7 @@ input[name='userid'] {
     margin-left: 85vw;
   }
 
-  .nav-links.showMenu .menu .menubar .ndChild {
+  .nav-links.showMenu .menu .ndChild {
     opacity: 0;
     visibility: hidden;
   }
