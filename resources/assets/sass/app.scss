@@ -219,10 +219,10 @@ body{
     &:before{
       content: "";
       position: absolute;
-      width: 100%;
+      width: 80%;
       height: 0.5rem;
-      bottom: -20%;
-      left: 0;
+      bottom: -15%;
+      left: 10%;
       border-bottom: 0.5rem solid $c3;
     }
   }
