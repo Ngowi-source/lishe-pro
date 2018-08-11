@@ -57,7 +57,7 @@
                     </div>
                 @endif
 
-                <h3 class="text-center">Free Diet Assessment Tool</h3>
+                <h3 class="text-center">Free Diet Assesser</h3>
                 <form method="POST" action="/diet-assessment">
                     {{csrf_field()}}
 
