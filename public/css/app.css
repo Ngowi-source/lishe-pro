@@ -11339,7 +11339,7 @@ input[name='userid'] {
     background: #D9DCD8;
     position: fixed;
     right: 0;
-    padding-top: 5vh;
+    padding-top: 15vh;
   }
 
   .nav-links.showMenu a {

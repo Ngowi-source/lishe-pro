@@ -115,7 +115,7 @@
 
     <div id="homeWrapper">
         <div id="homeIntro">
-            <img src="{{--{{'images/bg2-large.jpeg'}}--}}https://www.pexels.com/photo/assorted-sliced-fruits-1128678/"/>
+            <img src="{{--{{'images/bg2-large.jpeg'}}--}}https://s3-ap-south-1.amazonaws.com/blogmindler/bloglive/wp-content/uploads/2017/07/06142023/How-to-Become-Dietician-770x385.png"/>
             <div id="intro" class="col-8 col-md-8 col-lg-6">
                 Better <span class="introline">Health</span> Through <span class="intro"><i>Nutrition </i></span><span class="intro2"><i>Tools</i></span>, Interactive Dietary <span class="intro">Assessment</span> and Expertise
             </div>
