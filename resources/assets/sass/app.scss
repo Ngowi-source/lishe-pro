@@ -18,6 +18,18 @@ html, body{
   overflow-x: hidden;
   background: #fff;
 }
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background: $c1;
+}
+::-webkit-scrollbar-button{
+  display: none;
+}
 #contentWrapper{
   display: grid;
   grid-template-columns: 100vw;

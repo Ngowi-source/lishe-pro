@@ -10423,6 +10423,22 @@ body {
   background: #fff;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9DCD8;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 #contentWrapper {
   display: grid;
   grid-template-columns: 100vw;
