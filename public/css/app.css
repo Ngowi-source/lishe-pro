@@ -10417,10 +10417,7 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-html {
-  width: 100vw;
-}
-
+html,
 body {
   overflow-x: hidden;
   background: #fff;
