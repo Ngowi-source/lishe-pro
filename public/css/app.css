@@ -11298,9 +11298,10 @@ input[name='userid'] {
 
   .artNumb.numb {
     display: inline-block !important;
-    color: #9BA747;
+    color: #fff;
     font-size: 4rem;
     font-weight: 900;
+    text-shadow: -1px 0 #9BA747, 0 1px #9BA747, 1px 0 #9BA747, 0 -1px #9BA747;
   }
 }
 

@@ -811,9 +811,10 @@ input[name='userid']{
   }
   .artNumb.numb{
     display: inline-block!important;
-    color: $c2;
+    color: #fff;
     font-size: 4rem;
     font-weight: 900;
+    text-shadow: -1px 0 $c2, 0 1px $c2, 1px 0 $c2, 0 -1px $c2;
   }
 }
 @media screen and (max-width: 800px){
