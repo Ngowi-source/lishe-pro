@@ -10881,7 +10881,7 @@ body {
 
 #blog h3 {
   text-align: center;
-  color: #9BA747;
+  color: #8B281F;
 }
 
 #blog h2 a {
@@ -11290,7 +11290,6 @@ input[name='userid'] {
 @media screen and (max-width: 907px) {
   #blog .card {
     display: block;
-    border: none !important;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     margin-left: 50vw;

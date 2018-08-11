@@ -446,7 +446,7 @@ body{
   }
   h3{
     text-align: center;
-    color: $c2;
+    color: $c5;
   }
   h2{
     a{
@@ -799,7 +799,6 @@ input[name='userid']{
   #blog{
     .card{
       display: block;
-      border: none!important;
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
