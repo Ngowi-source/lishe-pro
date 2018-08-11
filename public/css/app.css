@@ -10650,10 +10650,10 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 0.3rem;
-  bottom: -10%;
+  height: 0.35rem;
+  bottom: -7%;
   left: 0;
-  border-bottom: 0.3rem solid #9BA747;
+  border-bottom: 0.35rem solid #9BA747;
 }
 
 #introButton {
@@ -10875,16 +10875,13 @@ body {
   height: auto;
 }
 
-#blog .numb {
-  display: inline-block;
-}
-
 #blog .artNumb {
   display: none;
 }
 
 #blog h3 {
   text-align: center;
+  color: #9BA747;
 }
 
 #blog h2 a {
@@ -11300,10 +11297,11 @@ input[name='userid'] {
     width: 70vw !important;
   }
 
-  .artNumb {
-    display: block;
+  .artNumb.numb {
+    display: inline-block;
     color: #9BA747;
-    font-size: xx-large;
+    font-size: 4rem;
+    font-weight: 900;
   }
 }
 

@@ -227,10 +227,10 @@ body{
       content: "";
       position: absolute;
       width: 100%;
-      height: 0.3rem;
-      bottom: -10%;
+      height: 0.35rem;
+      bottom: -7%;
       left: 0;
-      border-bottom: 0.3rem solid $c2;
+      border-bottom: 0.35rem solid $c2;
     }
   }
 }
@@ -441,14 +441,12 @@ body{
   padding: 3.5vw;
   height: auto;
 
-  .numb{
-    display: inline-block;
-  }
   .artNumb{
     display: none;
   }
   h3{
     text-align: center;
+    color: $c2;
   }
   h2{
     a{
@@ -812,10 +810,11 @@ input[name='userid']{
 
     }
   }
-  .artNumb{
-    display: block;
+  .artNumb.numb{
+    display: inline-block;
     color: $c2;
-    font-size: xx-large;
+    font-size: 4rem;
+    font-weight: 900;
   }
 }
 @media screen and (max-width: 800px){
