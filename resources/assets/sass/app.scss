@@ -496,7 +496,7 @@ body{
 }
 #blogWrapper{
   display: grid;
-  grid-template-rows: 3vh minmax(70vh, auto);
+  grid-template-rows: 15vh minmax(70vh, auto);
   grid-template-columns: 70vw 30vw;
 }
 #blogHead{
@@ -811,7 +811,7 @@ input[name='userid']{
     }
   }
   .artNumb.numb{
-    display: inline-block;
+    display: inline-block!important;
     color: $c2;
     font-size: 4rem;
     font-weight: 900;
@@ -880,8 +880,8 @@ input[name='userid']{
     }
     .submenu{
       top: 20vh;
-      left: 5vw;
-      padding: 15px 0 15px 15px;
+      left: 30vw;
+      padding: 15px 0 15px 0;
       a{
         font-size: large!important;
       }
