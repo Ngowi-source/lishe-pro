@@ -78,8 +78,7 @@
 
                     <input type="radio" value="Male" id="male" name="sex"/>
                     <label for="male"><span></span>Male</label>
-                    <br /><br />
-
+                    <br />
 
                     <button type="submit">Start Now</button><br /> <br />
                 </form>

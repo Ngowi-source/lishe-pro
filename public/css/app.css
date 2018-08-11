@@ -11390,11 +11390,11 @@ input[name='userid'] {
   }
 
   .dietassessment {
-    grid-template-columns: 65vw;
+    grid-template-columns: 70vw !important;
   }
 
   #assessmentForm button {
-    width: 65vw;
+    width: 65vw !important;
   }
 }
 

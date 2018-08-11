@@ -904,10 +904,10 @@ input[name='userid']{
     font-size: 2.5rem;
   }
   .dietassessment{
-    grid-template-columns: 65vw;
+    grid-template-columns: 70vw!important;
   }
   #assessmentForm button{
-    width: 65vw;
+    width: 65vw!important;
   }
 }
 @media screen and (max-width: 630px){
