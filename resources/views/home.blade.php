@@ -117,7 +117,7 @@
         <div id="homeIntro">
             <img src="{{'images/bg2-large.jpeg'}}"/>
             <div id="intro" class="col-8 col-md-8 col-lg-6">
-                Better <span class="introline">Health</span> Through <span class="intro2"><i>Nutrition Tools</i></span>, Interactive Dietary <span class="intro">Assessment</span> and Expertise
+                Better <span class="introline">Health</span> Through <span class="intro2"><i>Nutrition </i></span><span class="intro2"><i>Tools</i></span>, Interactive Dietary <span class="intro">Assessment</span> and Expertise
             </div>
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
 
@@ -162,7 +162,8 @@
             @for ($i = 0; $i<3; $i++)
 
                 @if(count($articles) > $i)
-                    <div class="card border-success">
+                    <div class="artNumb numb">0{{$i}}</div>
+                    <div class="card border-success numb">
                         <div class="card-body">
                             <h2><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}">{{$articles[$i]->title}}</a></h2>
                             <span class="articleTime">{{$articles[$i]->created_at->toFormattedDateString()}} by <b>{{$articles[$i]->user->firstname}} {{$articles[$i]->user->lastname}}</b> </span><br /><br />
@@ -214,15 +215,6 @@
 
         var marker = L.marker([-6.781610, 39.234919]).addTo(mymap);
         marker.bindPopup("Lishe Pro").openPopup();
-
-        $(document).ready(function(){
-
-            $("#footer").css({
-                'background-color': '#D9DCD8',
-                'color' : '#8B281F'
-            });
-
-        });
 
     </script>
 @endsection

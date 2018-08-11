@@ -14,6 +14,9 @@
 }
 
 //code
+html{
+  width: 100vw;
+}
 body{
   overflow-x: hidden;
   background: #fff;
@@ -45,8 +48,8 @@ body{
 }
 #footer{
   grid-area: 3/1/4/2;
-  background-color: $c4;
-  color: $c1;
+  background-color: $c1;
+  color: $c5;
   text-align: center;
   position: relative;
 
@@ -223,11 +226,11 @@ body{
     &:before{
       content: "";
       position: absolute;
-      width: 80%;
-      height: 0.25rem;
+      width: 100%;
+      height: 0.3rem;
       bottom: -10%;
-      left: 10%;
-      border-bottom: 0.25rem solid $c3;
+      left: 0;
+      border-bottom: 0.3rem solid $c2;
     }
   }
 }
@@ -438,6 +441,12 @@ body{
   padding: 3.5vw;
   height: auto;
 
+  .numb{
+    display: inline-block;
+  }
+  .artNumb{
+    display: none;
+  }
   h3{
     text-align: center;
   }
@@ -484,7 +493,7 @@ body{
   position: absolute;
   top: 55vh;
   left: 5vw;
-  width: 85vw;
+  width: 90vw;
   height: 65vh;
 }
 #blogWrapper{
@@ -552,7 +561,7 @@ body{
   text-align: left;
 
   h3{
-    color: $c5;
+    color: $c2;
     a{
       text-decoration: none;
       color: $c2;
@@ -799,8 +808,14 @@ input[name='userid']{
       -o-transform: translateX(-50%);
       transform: translateX(-50%);
       margin-left: 50vw;
-      width: 40vw;
+      width: 70vw!important;
+
     }
+  }
+  .artNumb{
+    display: block;
+    color: $c2;
+    font-size: xx-large;
   }
 }
 @media screen and (max-width: 800px){
@@ -892,7 +907,7 @@ input[name='userid']{
     top: 65vh;
   }
   .iconfeatured{
-    font-size: medium;
+    font-size: medium!important;
   }
 }
 @media screen and (max-width: 610px){
@@ -901,11 +916,6 @@ input[name='userid']{
   }
   .contactUs{
     font-size: 1.3rem!important;
-  }
-  #blog{
-    .card{
-      width: 60vw!important;
-    }
   }
 }
 @media screen and (max-width: 533px){

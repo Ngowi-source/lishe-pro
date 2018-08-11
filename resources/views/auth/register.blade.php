@@ -112,7 +112,7 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $(".nav-links a, .logo a").css('color', '#D9DCD8');
+
         });
     </script>
 

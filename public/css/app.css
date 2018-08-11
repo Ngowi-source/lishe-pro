@@ -10417,6 +10417,10 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+html {
+  width: 100vw;
+}
+
 body {
   overflow-x: hidden;
   background: #fff;
@@ -10455,8 +10459,8 @@ body {
 
 #footer {
   grid-area: 3/1/4/2;
-  background-color: #D57030;
-  color: #D9DCD8;
+  background-color: #D9DCD8;
+  color: #8B281F;
   text-align: center;
   position: relative;
 }
@@ -10645,11 +10649,11 @@ body {
 #intro .introline:before {
   content: "";
   position: absolute;
-  width: 80%;
-  height: 0.25rem;
+  width: 100%;
+  height: 0.3rem;
   bottom: -10%;
-  left: 10%;
-  border-bottom: 0.25rem solid #F29D4B;
+  left: 0;
+  border-bottom: 0.3rem solid #9BA747;
 }
 
 #introButton {
@@ -10871,6 +10875,14 @@ body {
   height: auto;
 }
 
+#blog .numb {
+  display: inline-block;
+}
+
+#blog .artNumb {
+  display: none;
+}
+
 #blog h3 {
   text-align: center;
 }
@@ -10922,7 +10934,7 @@ body {
   position: absolute;
   top: 55vh;
   left: 5vw;
-  width: 85vw;
+  width: 90vw;
   height: 65vh;
 }
 
@@ -10992,7 +11004,7 @@ body {
 }
 
 #blogBod h3 {
-  color: #8B281F;
+  color: #9BA747;
 }
 
 #blogBod h3 a {
@@ -11285,7 +11297,13 @@ input[name='userid'] {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     margin-left: 50vw;
-    width: 40vw;
+    width: 70vw !important;
+  }
+
+  .artNumb {
+    display: block;
+    color: #9BA747;
+    font-size: xx-large;
   }
 }
 
@@ -11376,7 +11394,7 @@ input[name='userid'] {
   }
 
   .iconfeatured {
-    font-size: medium;
+    font-size: medium !important;
   }
 }
 
@@ -11387,10 +11405,6 @@ input[name='userid'] {
 
   .contactUs {
     font-size: 1.3rem !important;
-  }
-
-  #blog .card {
-    width: 60vw !important;
   }
 }
 
