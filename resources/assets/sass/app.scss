@@ -124,18 +124,18 @@ body{
       opacity: 0.7;
     }
   }
-  .login{
-    border: 1px solid $c5;
-    border-radius: 3px;
-    padding: 0.5vw 3vw 0.5vw 3vw;
-  }
-  .register{
-    border: 1px solid $c5;
-    border-radius: 3px;
-    padding: 0.5vw 3vw 0.5vw 3vw;
-    color: #fff!important;
-    background-color: $c5;
-  }
+}
+.login{
+  border: 1px solid $c5;
+  border-radius: 3px;
+  padding: 0.5vw 3vw 0.5vw 3vw;
+}
+.register{
+  border: 1px solid $c5;
+  border-radius: 3px;
+  padding: 0.5vw 3vw 0.5vw 3vw;
+  color: #fff!important;
+  background-color: $c5;
 }
 .menu{
   display: none;

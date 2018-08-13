@@ -10538,13 +10538,13 @@ body {
   opacity: 0.7;
 }
 
-.nav-links .login {
+.login {
   border: 1px solid #8B281F;
   border-radius: 3px;
   padding: 0.5vw 3vw 0.5vw 3vw;
 }
 
-.nav-links .register {
+.register {
   border: 1px solid #8B281F;
   border-radius: 3px;
   padding: 0.5vw 3vw 0.5vw 3vw;
