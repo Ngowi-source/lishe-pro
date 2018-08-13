@@ -25,8 +25,8 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
-        <a href="/login">Login</a>
-        <a href="/register">Register</a>
+        <a href="/login" class="login">Login</a>
+        <a href="/register" class="register">Register</a>
     </div>
 
 @endsection

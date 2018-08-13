@@ -10515,6 +10515,7 @@ body {
   font-size: xx-large;
   color: #8B281F;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .nav-links {
@@ -10535,6 +10536,20 @@ body {
 
 .nav-links a:hover {
   opacity: 0.7;
+}
+
+.nav-links .login {
+  border: 1px solid #8B281F;
+  border-radius: 3px;
+  padding: 0.5vw 3vw 0.5vw 3vw;
+}
+
+.nav-links .register {
+  border: 1px solid #8B281F;
+  border-radius: 3px;
+  padding: 0.5vw 3vw 0.5vw 3vw;
+  color: #fff !important;
+  background-color: #8B281F;
 }
 
 .menu {
@@ -10570,8 +10585,11 @@ body {
   top: 0;
   right: 0;
   z-index: -1;
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: block;
 }
 
 #homeIntro svg {

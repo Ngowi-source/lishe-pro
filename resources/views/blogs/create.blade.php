@@ -36,8 +36,8 @@
             <a href="/logout">Logout</a>
             <a class="topname" href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0, 1))}}.</a>
         @else
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
+            <a href="/login" class="login">Login</a>
+            <a href="/register" class="register">Register</a>
         @endif
     </div>
 

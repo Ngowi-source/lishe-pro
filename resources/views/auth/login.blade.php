@@ -25,7 +25,7 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
-        <a href="/register">Register</a>
+        <a href="/register" class="register">Register</a>
     </div>
 
 @endsection

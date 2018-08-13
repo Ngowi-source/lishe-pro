@@ -25,7 +25,7 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
-        <a href="/login">Logout</a>
+        <a href="/logout">Logout</a>
         <a class="topname" href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0, 1))}}.</a>
     </div>
 
