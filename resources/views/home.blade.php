@@ -114,7 +114,7 @@
 
     <div id="homeWrapper">
         <div id="homeIntro">
-            <img src="{{'images/orange.jpg'}}"/>
+            <img src="{{'images/avos.jpg'}}"/>
             <div id="intro" class="col-8 col-md-8 col-lg-6">
                 Better <span class="introline">Health</span> Through <span class="intro"><i>Nutrition </i></span><span class="intro2"><i>Tools</i></span>, Interactive Dietary <span class="intro">Assessment</span> and Expertise
             </div>
@@ -127,7 +127,7 @@
         <div id="whoAreWe">
             <h1>Why Lishe Pro?</h1><br />
 
-            <span class="whoAreWe text-center col-10 col-md-6 col-lg-4">
+            <span class="whoAreWe text-center col-sm-10 col-md-6 col-lg-4">
                 Lishe Pro is guided by top-notch professionals’ group with purpose to safely support those who are looking to improve their health through nutrition. We do this by using interactive dietary assessment tools, whole food supplements, and most importantly dietary changes. Our aim is to help as many people as possible be healthier and happier without the use of unnecessary drugs or surgery.
             </span>
 
