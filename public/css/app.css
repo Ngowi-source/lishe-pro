@@ -10668,7 +10668,7 @@ body {
 }
 
 #intro .intro2 {
-  color: #9BA747;
+  color: #D57030;
 }
 
 #intro .introline {
@@ -10700,7 +10700,7 @@ body {
   transform: translateX(-50%);*/
   border-radius: 3px;
   border: 1px solid #8B281F;
-  color: #D57030;
+  color: #D9DCD8;
   background: #8B281F;
   font-size: 1.25rem;
   z-index: 3;
@@ -10709,7 +10709,7 @@ body {
 }
 
 #introButton:hover {
-  background: inherit;
+  color: #F29D4B;
 }
 
 #dietassessmentmodal {
@@ -11344,6 +11344,7 @@ input[name='userid'] {
   .register {
     border: none;
     color: #8B281F !important;
+    background-color: inherit;
   }
 
   .nav-links a {
