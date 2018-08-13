@@ -10541,13 +10541,13 @@ body {
 .login {
   border: 1px solid #8B281F;
   border-radius: 3px;
-  padding: 0.5vw 3vw 0.5vw 3vw;
+  padding: 0.3vw 2vw 0.3vw 2vw;
 }
 
 .register {
   border: 1px solid #8B281F;
   border-radius: 3px;
-  padding: 0.5vw 3vw 0.5vw 3vw;
+  padding: 0.3vw 2vw 0.3vw 2vw;
   color: #fff !important;
   background-color: #8B281F;
 }
@@ -10586,9 +10586,8 @@ body {
   right: 0;
   z-index: -1;
   max-height: 100%;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  width: auto;
   display: block;
 }
 
@@ -11342,6 +11341,12 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 800px) {
+  .login,
+  .register {
+    border: none;
+    color: #8B281F !important;
+  }
+
   .nav-links a {
     display: none;
   }
