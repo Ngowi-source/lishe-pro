@@ -58,8 +58,8 @@
             <a class="sideInline" href="/article/create"><button>New Article&nbsp; <i class="fas fa-plus"></i>&nbsp;</button></a>
             {{--@endif--}}<br class="sideDel"/><br class="sideDel"/>
 
-            <h4 class="archToggle sideInline sideBlock">Archives</h4>
-            <div class="archLinks sideBlock">
+            <h4 class="archToggle sideInline">Archives</h4>
+            <div class="archLinks">
                 @foreach($archives as $stat)
                     <a class="archLink" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
                 @endforeach
