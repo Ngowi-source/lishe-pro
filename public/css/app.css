@@ -10690,8 +10690,8 @@ body {
   padding: 5px 10px 5px 10px;
   position: absolute;
   top: 70vh;
-  width: 40%;
-  left: 30%;
+  width: 35%;
+  left: 32.5%;
   /*-webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -11329,6 +11329,20 @@ input[name='userid'] {
     font-size: 4rem;
     font-weight: 900;
     text-shadow: -1px 0 #9BA747, 0 1px #9BA747, 1px 0 #9BA747, 0 -1px #9BA747;
+  }
+}
+
+@media screen and (max-wdth: 834px) {
+  #introButton {
+    width: 50%;
+    left: 25%;
+  }
+}
+
+@media screen and (min-wdth: 835px) and (max-width: 1000px) {
+  #introButton {
+    width: 40%;
+    left: 30%;
   }
 }
 
