@@ -11441,27 +11441,39 @@ input[name='userid'] {
     grid-area: 2/1/3/2;
     height: 10vh;
     justify-self: end;
-    line-height: 1.8;
+    line-height: 0;
   }
 
   #blogWrapper #blogSide .sideInline {
     display: inline-block;
   }
 
+  #blogWrapper #blogSide .sideBlock {
+    display: block;
+  }
+
   #blogWrapper #blogSide .archLinks {
     display: none;
     z-index: 50;
     overflow: visible;
-    background: #F29D4B;
+    background: #8B281F;
     border-radius: 3px;
   }
 
   #blogWrapper #blogSide .archLinks.display {
     display: block;
+    padding-left: 1vw;
+  }
+
+  #blogWrapper #blogSide .archLinks.display .archLink {
+    color: #D9DCD8 !important;
   }
 
   #blogWrapper #blogSide .archToggle {
     cursor: pointer;
+    border: 1px solid #8B281F;
+    border-radius: 3px;
+    padding: 1vw;
   }
 
   #blogWrapper #blogBod {

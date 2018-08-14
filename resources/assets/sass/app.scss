@@ -948,23 +948,37 @@ input[name='userid']{
       grid-area: 2/1/3/2;
       height: 10vh;
       justify-self: end;
-      line-height: 1.8;
+      line-height: 0;
 
       .sideInline{
         display: inline-block;
+      }
+      .sideBlock{
+        display: block;
       }
       .archLinks{
         display: none;
         z-index: 50;
         overflow: visible;
-        background: $c3;
+        background: $c5;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
         border-radius: 3px;
       }
       .archLinks.display{
         display: block;
+        padding-left: 1vw;
+        .archLink{
+          color: $c1!important;
+        }
       }
       .archToggle{
         cursor: pointer;
+        border: 1px solid $c5;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 1vw;
       }
     }
     #blogBod{
