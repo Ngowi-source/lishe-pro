@@ -11448,13 +11448,15 @@ input[name='userid'] {
     display: inline-block;
   }
 
-  #blogWrapper #blogSide .archLink {
+  #blogWrapper #blogSide .archLinks {
     display: none;
     z-index: 50;
     overflow: visible;
+    background: #F29D4B;
+    border-radius: 3px;
   }
 
-  #blogWrapper #blogSide .archLink.display {
+  #blogWrapper #blogSide .archLinks.display {
     display: block;
   }
 

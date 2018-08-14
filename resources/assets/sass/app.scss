@@ -953,12 +953,14 @@ input[name='userid']{
       .sideInline{
         display: inline-block;
       }
-      .archLink{
+      .archLinks{
         display: none;
         z-index: 50;
         overflow: visible;
+        background: $c3;
+        border-radius: 3px;
       }
-      .archLink.display{
+      .archLinks.display{
         display: block;
       }
       .archToggle{
