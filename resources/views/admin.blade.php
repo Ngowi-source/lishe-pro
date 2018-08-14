@@ -14,7 +14,7 @@
             <div class="menubar"></div>
         </div>
 
-        <a id="tools">Dietary Assessment Tools
+        <a id="tools"><span class="tools">Dietary Assessment </span>Tools
             <div class="submenu">
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
                 <a href="/weight-loss-tracker">Weight Loss Tracker</a>
