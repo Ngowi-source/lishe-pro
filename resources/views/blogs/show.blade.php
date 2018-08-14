@@ -70,11 +70,23 @@
     <div id="showWrapper">
 
         <div id="blogHead">
-            {{--<h2>Learn Something New</h2>--}}
+
+        </div>
+        <div id="blogHeadSide">
+            {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
+            <a class="sideInline" href="/article/create"><button>New Article&nbsp; <i class="fas fa-plus"></i>&nbsp;</button></a>
+            {{--@endif--}}<br class="sideDel"/><br class="sideDel"/>
+
+            <h4 class="archToggle sideInline">Archives</h4>
+            <div class="archLinks">
+                @foreach($archives as $stat)
+                    <a class="archLink" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
+                @endforeach
+            </div>
         </div>
         <div id="blogSide">
 
-            <div class="card w-100 border-success">
+            <div class="card w-100 border-success writer">
 
                 <img class="card-img-top" src="https://c5.rgstatic.net/m/437738464651637/images/template/default/profile/profile_default_l.jpg" alt="Sauli Epimack">
                 <div class="card-body">
@@ -85,7 +97,7 @@
                     </p>
                 </div>
             </div>
-            <br />
+            <br class="sideDel"/>
 
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
             <a href="/article/create"><button>New Article&nbsp; <i class="fas fa-plus"></i>&nbsp;</button></a>
@@ -104,6 +116,16 @@
             <span class="articleTime"><b>{{$posted->user->firstname}} {{$posted->user->lastname}}</b> on {{$posted->created_at->toFormattedDateString()}}</span><br /><br />
 
             <span class="articleBod">{!! $posted->body !!}</span><br /><br />
+
+            <div class="card w-50" id="blogWriter">
+                <div class="card-body">
+                    <h5 class="card-title">Sauli Epimack John, MS</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Research Scientist</h6>
+                    <p class="card-text">Sauli is a researcher st the Ifakara University College of Health and Allied Sciences.</p>
+                </div>
+            </div>
+
+            <br />
             <hr/>
 
             {{--<h3 class="text-center">Comments</h3>--}}
