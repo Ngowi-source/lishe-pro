@@ -11514,6 +11514,37 @@ input[name='userid'] {
     padding-right: 5vw;
   }
 
+  #showWrapper #blogHeadSide {
+    display: block;
+    padding-right: 5vw;
+  }
+
+  #showWrapper #blogHeadSide a {
+    color: #9BA747;
+    text-decoration: none;
+  }
+
+  #showWrapper #blogHeadSide a button {
+    font-size: larger;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background: #D57030;
+    -webkit-transition: background 0.25s ease-out;
+    transition: background 0.25s ease-out;
+  }
+
+  #showWrapper #blogHeadSide a button:hover {
+    background: #8B281F;
+  }
+
+  #showWrapper #blogHeadSide a button i {
+    font-family: FontAwesome;
+    color: #fff;
+  }
+
   #showWrapper #blogHeadSide .sideInline {
     display: inline-block;
   }
@@ -11546,6 +11577,10 @@ input[name='userid'] {
   #showWrapper #blogWriter {
     display: block;
     border: none;
+  }
+
+  #showWrapper #blogWriter .card-body h5 {
+    color: #8B281F;
   }
 }
 

@@ -1015,6 +1015,35 @@ input[name='userid']{
       padding-right: 5vw;
     }
     #blogHeadSide{
+      display: block;
+      padding-right: 5vw;
+
+      a{
+        color: $c2;
+        text-decoration: none;
+      }
+      a button{
+        font-size: larger;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        background: $c4;
+        -webkit-transition: background 0.25s ease-out;
+        -moz-transition: background 0.25s ease-out;
+        -ms-transition: background 0.25s ease-out;
+        -o-transition: background 0.25s ease-out;
+        transition: background 0.25s ease-out;
+
+        &:hover{
+          background: $c5;
+        }
+        i{
+          font-family: FontAwesome;
+          color: #fff;
+        }
+      }
       .sideInline{
         display: inline-block;
       }
@@ -1047,6 +1076,10 @@ input[name='userid']{
     #blogWriter{
       display: block;
       border: none;
+
+      .card-body h5{
+        color: $c5;
+      }
     }
   }
 }

@@ -217,6 +217,12 @@
 
                 $("#reply_"+$id).css('display', 'block');
             });
+
+            $(".archToggle, .archLinks").hover(function(){
+                $('.archLinks').addClass('display');
+            }, function(){
+                $('.archLinks').removeClass('display');
+            });
         });
     </script>
 
