@@ -55,13 +55,15 @@
         <div id="blogSide">
 
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
-            <a href="/article/create"><button>New Article&nbsp; <i class="fas fa-plus"></i>&nbsp;</button></a>
-            {{--@endif--}}<br /><br />
+            <a class="sideInline" href="/article/create"><button>New Article&nbsp; <i class="fas fa-plus"></i>&nbsp;</button></a>
+            {{--@endif--}}<br class="sideDel"/><br class="sideDel"/>
 
-            <h4>Archives</h4>
-            @foreach($archives as $stat)
-                <a href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
-            @endforeach
+            <div class="sideInline">
+                <h4 class="archToggle">Archives</h4>
+                @foreach($archives as $stat)
+                    <a class="archLink" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
+                @endforeach
+            </div>
 
         </div>
 
@@ -87,7 +89,9 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-
+            $(".archToggle").click(function(){
+                $(".archLink").fadeToggle;
+            });
         });
     </script>
 
