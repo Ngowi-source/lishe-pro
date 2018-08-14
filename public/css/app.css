@@ -10963,7 +10963,7 @@ body {
 }
 
 #blogWrapper,
-showWrapper {
+#showWrapper {
   display: grid;
   grid-template-rows: 15vh minmax(70vh, auto);
   grid-template-columns: 70vw 30vw;

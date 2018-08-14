@@ -516,7 +516,7 @@ body{
   width: 90vw;
   height: 65vh;
 }
-#blogWrapper, showWrapper{
+#blogWrapper, #showWrapper{
   display: grid;
   grid-template-rows: 15vh minmax(70vh, auto);
   grid-template-columns: 70vw 30vw;
