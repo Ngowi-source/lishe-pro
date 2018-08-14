@@ -117,7 +117,7 @@
 
             <span class="articleBod">{!! $posted->body !!}</span><br /><br />
 
-            <div class="card w-50" id="blogWriter">
+            <div class="card w-75" id="blogWriter">
                 <div class="card-body">
                     <h5 class="card-title">Sauli Epimack John, MS</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Research Scientist</h6>
