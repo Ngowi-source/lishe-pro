@@ -1133,6 +1133,9 @@ input[name='userid']{
   }
   #showWrapper{
     grid-template-columns: 20vw 80vw;
+    #blogBod h1{
+      font-size: 1.8rem;
+    }
   }
 }
 @media screen and (max-width: 480px){
