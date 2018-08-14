@@ -1017,6 +1017,7 @@ input[name='userid']{
     #blogHeadSide{
       display: block;
       padding-right: 5vw;
+      line-height: 2.2;
 
       a{
         color: $c2;
@@ -1126,9 +1127,12 @@ input[name='userid']{
         font-size: small!important;
       }
     }
-    #blogSide a button, .archToggle{
+    #blogSide a button, .archToggle, #blogHeadSide a button{
       font-size: small;
     }
+  }
+  #showWrapper{
+    grid-template-columns: 20vw 80vw;
   }
 }
 @media screen and (max-width: 480px){

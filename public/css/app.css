@@ -11517,6 +11517,7 @@ input[name='userid'] {
   #showWrapper #blogHeadSide {
     display: block;
     padding-right: 5vw;
+    line-height: 2.2;
   }
 
   #showWrapper #blogHeadSide a {
@@ -11635,9 +11636,15 @@ input[name='userid'] {
 
   #blogWrapper #blogSide a button,
   #blogWrapper .archToggle,
+  #blogWrapper #blogHeadSide a button,
   #showWrapper #blogSide a button,
-  #showWrapper .archToggle {
+  #showWrapper .archToggle,
+  #showWrapper #blogHeadSide a button {
     font-size: small;
+  }
+
+  #showWrapper {
+    grid-template-columns: 20vw 80vw;
   }
 }
 
