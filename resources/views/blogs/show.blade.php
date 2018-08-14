@@ -67,7 +67,7 @@
     </div>
 
 
-    <div id="blogWrapper">
+    <div id="showWrapper">
 
         <div id="blogHead">
             {{--<h2>Learn Something New</h2>--}}

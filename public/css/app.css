@@ -10962,7 +10962,8 @@ body {
   height: 65vh;
 }
 
-#blogWrapper {
+#blogWrapper,
+showWrapper {
   display: grid;
   grid-template-rows: 15vh minmax(70vh, auto);
   grid-template-columns: 70vw 30vw;
@@ -11458,6 +11459,7 @@ input[name='userid'] {
   #blogWrapper #blogSide .archLinks.display {
     display: block;
     padding-left: 1vw;
+    margin-top: -0.95vw;
   }
 
   #blogWrapper #blogSide .archLinks.display .archLink {
@@ -11515,11 +11517,24 @@ input[name='userid'] {
   .contactUs {
     font-size: 1.3rem !important;
   }
+
+  #blogWrapper #blogHead h2 {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 533px) {
   .tools {
     display: none;
+  }
+
+  #blogWrapper #blogBod .articleBod {
+    font-size: small !important;
+  }
+
+  #blogWrapper #blogSide a button,
+  #blogWrapper .archToggle {
+    font-size: small;
   }
 }
 
@@ -11577,6 +11592,17 @@ input[name='userid'] {
 
   .iconfeatured {
     font-size: small !important;
+  }
+}
+
+@media screen and (max-width: 343px) {
+  #blogWrapper {
+    grid-template-rows: 10vh 10vh minmax(70vh, auto);
+  }
+
+  #blogWrapper #blogHead h2 {
+    -ms-flex-item-align: start;
+        align-self: start;
   }
 }
 
