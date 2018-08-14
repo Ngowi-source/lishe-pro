@@ -160,7 +160,7 @@
                         <li class="list-group-item">
                             <b class="text-left">{{$comment->user->firstname}} {{$comment->user->lastname}}</b>&nbsp;<span class="grey right"><i>{{$comment->created_at->diffForHumans()}}</i></span><br /><br />
 
-                            <span class="large">{{$comment->body}}</span><br />
+                            <span class="medium">{{$comment->body}}</span><br />
 
                             <span class="right reply" data-toggle="tooltip" title="Reply" data-id="{{$comment->id}}"><i class="fas fa-reply"></i></span>
 
