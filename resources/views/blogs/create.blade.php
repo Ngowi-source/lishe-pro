@@ -52,10 +52,12 @@
         </div>
         <div id="blogSide">
 
-            <h4>Archives</h4>
-            @foreach($archives as $stat)
-                <a href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
-            @endforeach
+            <h4 class="archToggle sideInline">Archives</h4>
+            <div class="archLinks">
+                @foreach($archives as $stat)
+                    <a class="archLink" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
+                @endforeach
+            </div>
 
         </div>
         <div id="blogBod">
