@@ -54,7 +54,7 @@
     @endif
 
     @if(session()->has('socialerror'))
-        <div class="alert alert-danger alert-dismissible">
+        <div class="alert alertr alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             {{session('socialerror')}}&nbsp;<strong>Please </strong>login or <a href="/register">register</a> with a different account.
         </div>

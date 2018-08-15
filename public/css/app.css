@@ -11343,8 +11343,8 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 930px) {
-  .alert {
-    height: 100px;
+  .alertr {
+    height: 100px !important;
   }
 }
 
@@ -11710,8 +11710,8 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 520px) {
-  .alert {
-    height: 140px;
+  .alertr {
+    height: 140px !important;
   }
 }
 
@@ -11773,8 +11773,8 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 378px) {
-  .alert {
-    height: 180px;
+  .alertr {
+    height: 180px !important;
   }
 }
 
