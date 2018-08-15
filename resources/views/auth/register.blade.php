@@ -43,7 +43,7 @@
 
         <h1 class="text-center">Registration</h1>
 
-        <div class="col-6">
+        <div class="col-6 col-sm-10 col-xs-10">
             <form method="POST" action="/register" id="registerForm" >
                 @csrf
 
@@ -85,7 +85,11 @@
             </form>
         </div>
 
-        <div class="col-6 float-right">
+        <div class="br">
+            <br /><hr /><br />
+        </div>
+
+        <div class="col-6 float-right col-sm-10 col-xs-10">
             <h4 class="text-center">or using</h4>
             <br />
 

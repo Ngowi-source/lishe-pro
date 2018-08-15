@@ -11135,6 +11135,11 @@ body {
   padding-top: 3vh;
 }
 
+#registerWrapper .br,
+#loginWrapper .br {
+  display: none;
+}
+
 #registerWrapper h1,
 #registerWrapper h4,
 #loginWrapper h1,
@@ -11313,6 +11318,12 @@ input[name='userid'] {
 
 /*media queries*/
 
+@media screen and (max-width: 1015px) {
+  #loginForm .Links.float-right {
+    float: left !important;
+  }
+}
+
 @media screen and (max-width: 958px) {
   #blog h2 {
     font-size: 1.4rem;
@@ -11349,6 +11360,22 @@ input[name='userid'] {
   #blogWrapper #blogBod .articleBod,
   #showWrapper #blogBod .articleBod {
     font-size: medium;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #loginWrapper .col-6,
+  #registerWrapper .col-6 {
+    display: block;
+    float: unset !important;
+    margin-left: 50vw;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  #loginWrapper .br,
+  #registerWrapper .br {
+    display: block;
   }
 }
 

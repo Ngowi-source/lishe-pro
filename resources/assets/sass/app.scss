@@ -677,6 +677,9 @@ body{
   position: relative;
   padding-top: 3vh;
 
+  .br{
+    display: none;
+  }
   h1, h4 {
     color: $c5;
   }
@@ -815,6 +818,13 @@ input[name='userid']{
   padding-left: 3vw;
 }
 /*media queries*/
+@media screen and (max-width: 1015px){
+  #loginForm{
+    .Links.float-right{
+      float: left!important;
+    }
+  }
+}
 @media screen and (max-width: 958px){
   #blog{
     h2{ font-size: 1.4rem;}
@@ -856,6 +866,24 @@ input[name='userid']{
       .articleBod{
         font-size: medium;
       }
+    }
+  }
+}
+@media screen and (max-width: 860px){
+
+  #loginWrapper .col-6, #registerWrapper .col-6{
+    display: block;
+    float: unset!important;
+    margin-left: 50vw;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  #loginWrapper, #registerWrapper{
+    .br{
+      display: block;
     }
   }
 }
