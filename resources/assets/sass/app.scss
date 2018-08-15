@@ -883,10 +883,14 @@ input[name='userid']{
     width: 80vw!important;
     max-width: 80vw!important;
   }
-  #loginWrapper, #registerWrapper{
+  #loginForm, #registerForm{
     width: 90%!important;
     margin-left: 5%!important;
-    
+  }
+  #loginWrapper, #registerWrapper{
+    width: 90%!important;
+    margin-left: 0!important;
+
     .br{
       display: block;
     }

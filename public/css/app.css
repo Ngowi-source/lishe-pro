@@ -11375,10 +11375,16 @@ input[name='userid'] {
     max-width: 80vw !important;
   }
 
+  #loginForm,
+  #registerForm {
+    width: 90% !important;
+    margin-left: 5% !important;
+  }
+
   #loginWrapper,
   #registerWrapper {
     width: 90% !important;
-    margin-left: 5% !important;
+    margin-left: 0 !important;
   }
 
   #loginWrapper .br,
