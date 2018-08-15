@@ -31,7 +31,7 @@ class SocialAuthController extends Controller
         elseif ($account) {
             $user = $account;
             Auth::login($user, true);
-            return redirect()->to('/');
+            return redirect()->to('/')->with(['loginsuccess'=> 'Welcome ']);
         }
         else {
 
@@ -50,7 +50,7 @@ class SocialAuthController extends Controller
             );
 
             Auth::login($user, true);
-            return redirect()->to('/');
+            return redirect()->to('/')->with(['loginsuccess'=> 'Welcome ']);
         }
 
     }
