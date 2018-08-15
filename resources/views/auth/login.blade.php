@@ -64,7 +64,7 @@
 
         <h1 class="text-center">Log In</h1>
 
-        <div class="col-6 col-sm-10 col-xs-10">
+        <div class="col-6">
             <form method="POST" action="/login" id="loginForm" >
                 @csrf
 
@@ -112,7 +112,7 @@
             <br /><hr /><br />
         </div>
 
-        <div class="col-6 float-right col-sm-10 col-xs-10">
+        <div class="col-6 float-right">
             <h4 class="text-center">or using</h4>
             <br />
 

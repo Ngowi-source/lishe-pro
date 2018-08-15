@@ -11319,7 +11319,7 @@ input[name='userid'] {
 /*media queries*/
 
 @media screen and (max-width: 1015px) {
-  #loginForm .Links.float-right {
+  #loginForm .float-right {
     float: left !important;
   }
 }
@@ -11371,6 +11371,7 @@ input[name='userid'] {
     margin-left: 50vw;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    width: 70vw !important;
   }
 
   #loginWrapper .br,

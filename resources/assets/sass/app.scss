@@ -820,7 +820,7 @@ input[name='userid']{
 /*media queries*/
 @media screen and (max-width: 1015px){
   #loginForm{
-    .Links.float-right{
+    .float-right{
       float: left!important;
     }
   }
@@ -880,6 +880,7 @@ input[name='userid']{
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
+    width: 70vw!important;
   }
   #loginWrapper, #registerWrapper{
     .br{
