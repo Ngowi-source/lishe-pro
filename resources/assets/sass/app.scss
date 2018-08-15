@@ -39,6 +39,10 @@ body{
   height: 60px;
   line-height: 40px;
   text-align: center;
+
+  a{
+    text-decoration: none;
+  }
 }
 #header{
   grid-area: 1/1/2/2;
@@ -838,6 +842,11 @@ input[name='userid']{
     }
   }
 }
+@media screen and (max-width: 930px){
+  .alert{
+    height: 100px;
+  }
+}
 @media screen and (max-width: 907px){
   #blog{
     .card{
@@ -1179,6 +1188,11 @@ input[name='userid']{
     }
   }
 }
+@media screen and (max-width: 520px){
+  .alert{
+    height: 140px;
+  }
+}
 @media screen and (max-width: 480px){
   #introButton{
     font-size: 1rem;
@@ -1204,6 +1218,11 @@ input[name='userid']{
   #bmi{ top: 75vh;}
   .iconfeatured{
     font-size: small!important;
+  }
+}
+@media screen and (max-width: 378px){
+  .alert{
+    height: 180px;
   }
 }
 @media screen and (max-width: 343px){

@@ -10451,6 +10451,10 @@ body {
   text-align: center;
 }
 
+.alert a {
+  text-decoration: none;
+}
+
 #header {
   grid-area: 1/1/2/2;
   z-index: 200;
@@ -11338,6 +11342,12 @@ input[name='userid'] {
   }
 }
 
+@media screen and (max-width: 930px) {
+  .alert {
+    height: 100px;
+  }
+}
+
 @media screen and (max-width: 907px) {
   #blog .card {
     display: block;
@@ -11699,6 +11709,12 @@ input[name='userid'] {
   }
 }
 
+@media screen and (max-width: 520px) {
+  .alert {
+    height: 140px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #introButton {
     font-size: 1rem;
@@ -11753,6 +11769,12 @@ input[name='userid'] {
 
   .iconfeatured {
     font-size: small !important;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .alert {
+    height: 180px;
   }
 }
 
