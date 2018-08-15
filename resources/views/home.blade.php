@@ -104,7 +104,7 @@
             <span class="text-center">{{session('loginsuccess')}} {{Auth::user()->firstname}}</span>&nbsp;
         </div>
     @endif
-    
+
     @if(session()->has('outsuccess'))
         <div class="alert alert-success alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
