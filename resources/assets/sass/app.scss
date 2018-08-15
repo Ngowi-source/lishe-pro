@@ -880,11 +880,19 @@ input[name='userid']{
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 70vw!important;
+    width: 80vw!important;
+    max-width: 80vw!important;
   }
   #loginWrapper, #registerWrapper{
+    width: 90%!important;
+    margin-left: 5%!important;
+    
     .br{
       display: block;
+    }
+    .socials{
+      margin-left: 0!important;
+      width: 100%!important;
     }
   }
 }

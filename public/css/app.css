@@ -11371,12 +11371,25 @@ input[name='userid'] {
     margin-left: 50vw;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    width: 70vw !important;
+    width: 80vw !important;
+    max-width: 80vw !important;
+  }
+
+  #loginWrapper,
+  #registerWrapper {
+    width: 90% !important;
+    margin-left: 5% !important;
   }
 
   #loginWrapper .br,
   #registerWrapper .br {
     display: block;
+  }
+
+  #loginWrapper .socials,
+  #registerWrapper .socials {
+    margin-left: 0 !important;
+    width: 100% !important;
   }
 }
 
