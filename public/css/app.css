@@ -10689,6 +10689,10 @@ body {
   border-bottom: 0.35rem solid #9BA747;
 }
 
+#intro .introl2 {
+  color: #9BA747;
+}
+
 #introButton {
   cursor: pointer;
   padding: 5px 10px 5px 10px;
