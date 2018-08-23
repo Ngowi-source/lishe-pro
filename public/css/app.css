@@ -11320,6 +11320,10 @@ input[name='userid'] {
   padding-left: 3vw;
 }
 
+.largep {
+  display: none;
+}
+
 /*media queries*/
 
 @media screen and (max-width: 1015px) {
@@ -11639,6 +11643,14 @@ input[name='userid'] {
 
   #showWrapper #blogWriter .card-body h5 {
     color: #8B281F;
+  }
+
+  .largep {
+    display: block;
+  }
+
+  .small {
+    display: none;
   }
 }
 

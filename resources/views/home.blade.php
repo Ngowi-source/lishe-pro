@@ -121,7 +121,9 @@
 
     <div id="homeWrapper">
         <div id="homeIntro">
-            <img src="{{'images/diet.jpg'}}"/>
+            <img class="smallp" src="{{'images/bgsmall.jpg'}}"/>
+            <img class="largep" src="{{'images/bglarge.jpeg'}}"/>
+
             <div id="intro" class="col-8 col-md-8 col-lg-6">
                 Better <span class="introline">Health</span> Through <span class="intro"><i>Nutrition </i></span><span class="intro2"><i>Tools</i></span>, Interactive Dietary <span class="intro">Assessment</span> and Expertise
             </div>
