@@ -11647,9 +11647,10 @@ input[name='userid'] {
 
   .largep {
     display: block;
+    min-height: 85% !important;
   }
 
-  .small {
+  .smallp {
     display: none;
   }
 }
