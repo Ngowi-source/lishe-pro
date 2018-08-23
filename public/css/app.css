@@ -11324,6 +11324,10 @@ input[name='userid'] {
   padding-left: 3vw;
 }
 
+.largep {
+  display: none;
+}
+
 /*media queries*/
 
 @media screen and (max-width: 1015px) {
@@ -11645,8 +11649,13 @@ input[name='userid'] {
     color: #8B281F;
   }
 
-  .smallp {
+  .largep {
+    display: block;
     min-height: 85% !important;
+  }
+
+  .smallp {
+    display: none;
   }
 }
 
