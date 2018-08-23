@@ -10516,12 +10516,12 @@ body {
 }
 
 .logo a {
-  font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
+  font-family: "Pacifico";
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1), 7px 7px 0px rgba(0, 0, 0, 0.05);
-  /*font-size: xx-large;*/
+  font-size: xx-large;
   color: #8B281F;
   text-decoration: none;
-  /*font-weight: 600;*/
+  font-weight: 600;
 }
 
 .nav-links {
@@ -10692,7 +10692,7 @@ body {
 }
 
 #intro .introl2 {
-  color: #D57030;
+  color: #9BA747;
 }
 
 #introButton {
