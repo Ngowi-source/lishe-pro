@@ -49,7 +49,7 @@
     <div id="blogWrapper">
 
         <div id="blogHead">
-            <h2>Learn Something Today</h2>
+            <h2>Blog Posts</h2>
         </div>
 
         <div id="blogSide">

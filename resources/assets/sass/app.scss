@@ -102,10 +102,12 @@ body{
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   a{
-    font-size: xx-large;
+    font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+    /*font-size: xx-large;*/
     color: $c5;
     text-decoration: none;
-    font-weight: 600;
+    /*font-weight: 600;*/
   }
 }
 .nav-links{
@@ -262,7 +264,7 @@ body{
     }
   }
   .introl2{
-    color: $c2;
+    color: $c4;
   }
 }
 #introButton{
