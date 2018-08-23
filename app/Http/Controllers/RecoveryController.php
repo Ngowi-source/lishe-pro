@@ -64,7 +64,7 @@ class RecoveryController extends Controller
 
             User::whereId($id)->update(['passord' => $request->password]);
 
-            return redirect()->to('/login')->with([
+            return redirect('/login')->with([
                 'updatesuccess' => 'Your password has been reset, please login!'
             ]);
         }

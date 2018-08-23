@@ -55,8 +55,8 @@ class SessionController extends Controller
 
         if($valid)
         {
-            return redirect()->to('/login')->with([
-                'verified' => 'Your account has been verified. Now login!'
+            return redirect('/login')->with([
+                'verified' => 'Your account has been verified!'
             ]);
         }
     }
