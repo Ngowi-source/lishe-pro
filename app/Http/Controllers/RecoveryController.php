@@ -21,7 +21,11 @@ class RecoveryController extends Controller
             $user = User::whereEmail($request['email'])->first();
             try
             {
-                Mail::to($user)->send(new PasswordRecoveryMail($user));
+                $objUser = new \stdClass();
+                $objUser->firstname = $request->firstname;
+                $objUser->id = $user->id;
+
+                Mail::to($request->email)->send(new PasswordRecoveryMail($objUser));
                 return redirect('/login')->with(['mailsuccess'=> 'Check your email for a password reset link!']);
             }
             catch(\Throwable $e)

@@ -33,28 +33,28 @@
 @section('content')
 
     @if(session()->has('updatesuccess'))
-        <div class="alert alert-success alert-dismissible">
+        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             {{session('updatesuccess')}}
         </div>
     @endif
 
     @if(session()->has('mailsuccess'))
-        <div class="alert alert-success alert-dismissible">
+        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             {{session('mailsuccess')}}
         </div>
     @endif
 
     @if(session()->has('verified'))
-        <div class="alert alert-success alert-dismissible">
+        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             {{session('verified')}}
         </div>
     @endif
 
     @if(session()->has('socialerror'))
-        <div class="alert alertr alert-danger alert-dismissible">
+        <div class="alert alertr alert-danger alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             {{session('socialerror')}}&nbsp;<strong>Please </strong>login or <a href="/register">register</a> with a different account.
         </div>

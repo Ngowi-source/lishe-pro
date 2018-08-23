@@ -18,7 +18,7 @@ class AccountVerificationMail extends Mailable
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct($user)
     {
         $this->user = $user;
     }
@@ -30,7 +30,7 @@ class AccountVerificationMail extends Mailable
      */
     public function build()
     {
-        return $this->from('mail@lishepro.co.tz', 'Lishe Pro')
+        return $this->from('account@lishepro.co.tz', 'Lishe Pro')
             ->subject('Verify Account')
             ->view('mails.accVer')
             ->text('mails.accVer_plain');

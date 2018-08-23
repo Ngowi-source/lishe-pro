@@ -45,14 +45,14 @@
 @section('content')
 
     @if(session()->has('commentsuccess'))
-        <div class="alert alert-success alert-dismissible">
+        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <strong class="text-center">{{session('commentsuccess')}}</strong>&nbsp;
         </div>
     @endif
 
     @if(session()->has('replysuccess'))
-        <div class="alert alert-success alert-dismissible">
+        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <strong class="text-center">{{session('replysuccess')}}</strong>&nbsp;
         </div>

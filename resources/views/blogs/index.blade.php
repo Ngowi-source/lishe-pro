@@ -40,7 +40,7 @@
 @section('content')
 
     @if(session()->has('articlesuccess'))
-        <div class="alert alert-success alert-dismissible">
+        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <strong class="text-center">{{session('articlesuccess')}}</strong>&nbsp;
         </div>
