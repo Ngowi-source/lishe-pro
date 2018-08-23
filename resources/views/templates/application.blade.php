@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{'css/app.css'}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
 
     <script src="{{'js/main.js'}}"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
