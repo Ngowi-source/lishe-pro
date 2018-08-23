@@ -39,6 +39,16 @@
         </div>
     @endif
 
+    @if(count($errors))
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <div id="registerWrapper">
 
         <h1 class="text-center">Registration</h1>
@@ -46,16 +56,6 @@
         <div class="col-6">
             <form method="POST" action="/register" id="registerForm" >
                 @csrf
-
-                @if(count($errors))
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach($errors->all() as $error)
-                                <li>{{$error}}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
 
                 <label for="firstname" class="large">First Name</label>
                 <input id="firstname" type="text" class="form-control" name="firstname" value="{{ old('firstname') }}" required autofocus><br />
