@@ -824,9 +824,6 @@ input[name='userid']{
 .addthis_inline_share_toolbox_wkp7{
   padding-left: 3vw;
 }
-.largep{
-  display: none;
-}
 /*media queries*/
 @media screen and (max-width: 1015px){
   #loginForm{
@@ -1139,12 +1136,8 @@ input[name='userid']{
       }
     }
   }
-  .largep{
-    display: block;
-    min-height: 85%!important;
-  }
   .smallp{
-    display: none;
+    min-height: 85%!important;
   }
 }
 @media screen and (max-width:720px){
