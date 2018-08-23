@@ -92,7 +92,7 @@
 @section('content')
 
     @if(session()->has('regsuccess'))
-        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
+        <div class="alert alertr alert-success alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <strong class="text-center">{{session('regsuccess')}}</strong>&nbsp; A link is sent to your email, click it to activate your account
         </div>
