@@ -11711,7 +11711,7 @@ input[name='userid'] {
 
 @media screen and (max-width: 520px) {
   .alertr {
-    height: 140px !important;
+    height: 120px !important;
   }
 }
 
@@ -11774,7 +11774,8 @@ input[name='userid'] {
 
 @media screen and (max-width: 378px) {
   .alertr {
-    height: 180px !important;
+    height: 140px !important;
+    line-height: 30px !important;
   }
 }
 
