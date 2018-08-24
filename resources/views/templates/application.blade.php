@@ -25,7 +25,7 @@
         <div id="header">
             @yield('header')
             <svg class="head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon fill="#8B281F" stroke="#8B281F" points="0,100 20,100 30,0 0,0 "/>
+                <polygon fill="#8B281F" stroke="#8B281F" points="0,100 40,100 50,0 0,0 "/>
             </svg>
         </div>
 
