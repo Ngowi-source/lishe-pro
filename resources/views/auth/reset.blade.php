@@ -37,7 +37,7 @@
 
         <h1 class="text-center">Reset Your Password ?</h1><br />
 
-        <p>
+        <p class="col-9 center">
             Welcome back <strong>{{$user->firstname}} {{$user->lastname}}</strong>
         </p><br /><br />
 

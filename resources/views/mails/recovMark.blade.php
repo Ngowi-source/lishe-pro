@@ -1,5 +1,5 @@
 @component('mail::message')
-# Hi {{ $user->firstname }}
+Hi #{{ $user->firstname }}
 
 You have requested to recover your account on {{ config('app.name') }}
 
