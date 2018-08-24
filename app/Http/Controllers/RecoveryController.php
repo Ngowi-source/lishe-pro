@@ -52,13 +52,14 @@ class RecoveryController extends Controller
 
     public function reset(Request $request)
     {
-        $this->validate($request, [
-            'password' => 'required|password',
-            'invisible' => 'integer'
-        ]);
 
         try
         {
+            $this->validate($request, [
+                'password' => 'required|password',
+                'invisible' => 'required'
+            ]);
+
             $newPass = bcrypt($request->password);
 
             User::whereId($request->invisible)->update(['password' => $newPass]);
