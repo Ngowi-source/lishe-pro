@@ -34,6 +34,6 @@ class PasswordRecoveryMail extends Mailable
             ->subject('Account Recovery')
             ->view('mails.passRec')
             ->text('mails.passRec_plain')
-            ->markdown('mails.recovMark');
+            /*->markdown('mails.recovMark')*/;
     }
 }
