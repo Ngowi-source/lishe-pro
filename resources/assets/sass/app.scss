@@ -102,12 +102,13 @@ body{
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   a{
-    font-family: Georgia;
+    font-family: "Ubuntu";
     text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
     font-size: xx-large;
     color: $c5;
     text-decoration: none;
     font-weight: 600;
+    word-spacing: 2px;
   }
 }
 .nav-links{
