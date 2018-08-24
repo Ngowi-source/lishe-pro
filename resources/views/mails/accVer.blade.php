@@ -1,6 +1,6 @@
 
 
-Hello <b>{{ $user->firstname }}</b>,<br /><br />
+Welcome <b>{{ $user->firstname }}</b>,<br /><br />
 
 You have recently created an account with <span style="color: #9BA747;"><i>Lishe Pro</i></span>, please click on the link below to verify your account.<br />
 
@@ -10,5 +10,5 @@ If you were not involved in this event please ignore this email. Do not reply to
 sent.<br /><br />
 
 Regards,<br />
-Lishe Pro Team.
+Lishe Pro.
 

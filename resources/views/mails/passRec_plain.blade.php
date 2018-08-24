@@ -1,4 +1,4 @@
-Hello {{ $user->firstname }},
+Hi {{ $user->firstname }},
 
 You have requested to recover your account with Lishe Pro, please click on the link below to change your password.
 

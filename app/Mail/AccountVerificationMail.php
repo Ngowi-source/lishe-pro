@@ -33,6 +33,7 @@ class AccountVerificationMail extends Mailable
         return $this->from('account@lishepro.co.tz', 'Lishe Pro')
             ->subject('Verify Account')
             ->view('mails.accVer')
-            ->text('mails.accVer_plain');
+            ->text('mails.accVer_plain')
+            ->markdown('mails.verMark');
     }
 }
