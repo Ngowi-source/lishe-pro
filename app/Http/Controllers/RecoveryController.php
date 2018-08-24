@@ -22,7 +22,7 @@ class RecoveryController extends Controller
             try
             {
                 $objUser = new \stdClass();
-                $objUser->firstname = $request->firstname;
+                $objUser->firstname = $user->firstname;
                 $objUser->id = $user->id;
 
                 Mail::to($request->email)->send(new PasswordRecoveryMail($objUser));
