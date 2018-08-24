@@ -1,5 +1,5 @@
 @component('mail::message')
-    Welcome #{{ $user->firstname }}
+    Welcome <b>{{ $user->firstname }},</b>
 
     Thank you for registering!
 
