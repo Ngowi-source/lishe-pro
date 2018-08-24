@@ -33,6 +33,16 @@
 
 @section('content')
 
+    @if(count($errors))
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <div id="loginWrapper">
 
         <h1 class="text-center">Reset Your Password ?</h1><br />
@@ -44,16 +54,6 @@
         <div class="col-9 center">
             <form method="POST" action="/reset" id="loginForm" >
                 @csrf
-
-                @if(count($errors))
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach($errors->all() as $error)
-                                <li>{{$error}}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
 
                 <label for="password" class="large">New Password</label>
                 <input id="password" type="password" class="form-control" name="password" required><br />
