@@ -56,7 +56,7 @@ class RecoveryController extends Controller
         try
         {
             $this->validate($request, [
-                'password' => 'required|password',
+                'password' => 'required|confirmed',
                 'invisible' => 'required'
             ]);
 
