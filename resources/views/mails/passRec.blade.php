@@ -1,6 +1,6 @@
 
 
-<b>Hi {{ $user->firstname }}</b>,<br /><br />
+Hi<b> {{ $user->firstname }}</b>,<br /><br />
 
 You have requested to recover your account with <span style="color: #9BA747;"><i>Lishe Pro</i></span>, please click on the link below to change your password.<br /><br />
 

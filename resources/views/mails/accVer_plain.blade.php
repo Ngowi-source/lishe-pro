@@ -1,5 +1,3 @@
-
-
 Welcome {{ $user->firstname }},
 
 You have recently created an account with Lishe Pro, please click on the link below to verify your account.

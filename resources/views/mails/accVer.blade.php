@@ -1,5 +1,3 @@
-
-
 Welcome <b>{{ $user->firstname }}</b>,<br /><br />
 
 You have recently created an account with <span style="color: #9BA747;"><i>Lishe Pro</i></span>, please click on the link below to verify your account.<br /><br />
