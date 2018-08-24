@@ -11463,6 +11463,10 @@ input[name='userid'] {
     color: #8B281F !important;
   }
 
+  .logo {
+    left: 1vw !important;
+  }
+
   .nav-links a {
     display: none;
   }

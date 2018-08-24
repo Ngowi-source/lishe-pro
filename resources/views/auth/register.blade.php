@@ -5,7 +5,7 @@
 @endsection
 
 @section('header')
-    <span class="logo"><a href="/">Lishe Pro</a></span>
+    <span class="logo"><a href="/">Lishe <span class="pro">Pro</span></a></span>
     <div class="nav-links">
 
         <div class="menu">
