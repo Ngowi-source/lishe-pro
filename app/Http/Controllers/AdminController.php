@@ -16,7 +16,7 @@ class AdminController extends Controller
 
         if(Auth::user()->id > 5)
         {
-            return redirect()->to('/')->with([
+            return redirect('/')->with([
                 'adminerror' => 'You are not authorized as an administrator!'
             ]);
         }

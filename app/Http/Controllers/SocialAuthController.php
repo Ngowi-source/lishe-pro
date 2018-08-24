@@ -26,12 +26,12 @@ class SocialAuthController extends Controller
 
         if ($userEmailExists && !$account)
         {
-            return redirect()->to('/login')->with(['socialerror'=> 'The email for this social account has already been registered with another user!']);
+            return redirect('/login')->with(['socialerror'=> 'The email for this social account has already been registered with another user!']);
         }
         elseif ($account) {
             $user = $account;
             Auth::login($user, true);
-            return redirect()->to('/')->with(['loginsuccess'=> 'Welcome ']);
+            return redirect('/')->with(['loginsuccess'=> 'Welcome ']);
         }
         else {
 
@@ -50,7 +50,7 @@ class SocialAuthController extends Controller
             );
 
             Auth::login($user, true);
-            return redirect()->to('/')->with(['loginsuccess'=> 'Welcome ']);
+            return redirect('/')->with(['loginsuccess'=> 'Welcome ']);
         }
 
     }

@@ -34,7 +34,7 @@ class RegistrationController extends Controller
 
         if ($userEmailExists)
         {
-            return redirect()->to('/register')->with(['socialerror'=> 'The email for this account has already been registered with another user!']);
+            return redirect('/register')->with(['socialerror'=> 'The email for this account has already been registered with another user!']);
         }
         else
         {
