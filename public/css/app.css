@@ -11459,6 +11459,10 @@ input[name='userid'] {
     background-color: inherit;
   }
 
+  .pro {
+    color: #8B281F !important;
+  }
+
   .nav-links a {
     display: none;
   }
