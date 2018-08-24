@@ -2,7 +2,7 @@
 
 <b>Hi {{ $user->firstname }}</b>,<br /><br />
 
-You have requested to recover your account with <span style="color: #9BA747;"><i>Lishe Pro</i></span>, please click on the link below to change your password.<br />
+You have requested to recover your account with <span style="color: #9BA747;"><i>Lishe Pro</i></span>, please click on the link below to change your password.<br /><br />
 
 <a style="text-decoration: none; color: #8B281F;" href="https://lishep.herokuapp.com/pass-reset/{{ base64_encode($user->id) }}">Reset Password</a><br /><br />
 

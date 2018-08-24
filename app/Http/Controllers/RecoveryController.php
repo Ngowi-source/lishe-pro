@@ -42,12 +42,12 @@ class RecoveryController extends Controller
         }
     }
 
-    public function index($code)
+    public function index(/*$code*/)
     {
-        $id = base64_decode($code);
-        $user = User::whereId($id)->first();
+        /*$id = base64_decode($code);
+        $user = User::whereId($id)->first();*/
 
-        return view('auth.reset')->with(['user' => $user]);
+        return view('auth.reset')/*->with(['user' => $user])*/;
     }
 
     public function reset($code, Request $request)
