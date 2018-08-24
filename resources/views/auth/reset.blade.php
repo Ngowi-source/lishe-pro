@@ -1,4 +1,4 @@
-@extends('templates.application')
+@extends('templates.app2')
 
 @section('title')
     Lishe Pro - Reset Password
