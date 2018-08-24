@@ -5,7 +5,7 @@ You have requested to recover your account on {{ config('app.name') }}
 
 please click on the link below to change your password.
 
-@component('mail::button', ['url' => 'https://lishep.herokuapp.com/reset/{{ base64_encode($user->id) }}'])
+@component('mail::button', ['url' => "https://lishep.herokuapp.com/reset/{{ base64_encode($user->id) }}"])
 Recover My Account
 @endcomponent
 
