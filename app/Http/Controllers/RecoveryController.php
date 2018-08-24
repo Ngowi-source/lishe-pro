@@ -60,9 +60,9 @@ class RecoveryController extends Controller
 
         try
         {
-            $request['password'] = bcrypt($request->password);
+            $newPass = bcrypt($request->password);
 
-            User::whereId($id)->update(['passord' => $request->password]);
+            User::whereId($id)->update(['passord' => $newPass]);
 
             return redirect('/login')->with([
                 'updatesuccess' => 'Your password has been reset, please login!'
