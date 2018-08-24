@@ -50,19 +50,18 @@ class RecoveryController extends Controller
         return view('auth.reset')->with(['user' => $user]);
     }
 
-    public function reset($code, Request $request)
+    public function reset(Request $request)
     {
-        $id = base64_decode($code);
-
         $this->validate($request, [
-            'password' => 'required|password'
+            'password' => 'required|password',
+            'invisible' => 'integer'
         ]);
 
         try
         {
             $newPass = bcrypt($request->password);
 
-            User::whereId($id)->update(['passord' => $newPass]);
+            User::whereId($request['invisible'])->update(['password' => $newPass]);
 
             return redirect('/login')->with([
                 'updatesuccess' => 'Your password has been reset, please login!'

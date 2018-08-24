@@ -49,7 +49,7 @@ Route::get('/forgot', function(){
 });
 Route::post('/forgot', 'RecoveryController@mailUser');
 Route::get('/reset/{code}', 'RecoveryController@index');
-Route::post('/reset/{code}', 'RecoveryController@reset');
+Route::post('/reset', 'RecoveryController@reset');
 
 Route::get('auth/callback/{social}', 'SocialAuthController@callback');
 Route::get('auth/redirect/{social}', 'SocialAuthController@redirect');

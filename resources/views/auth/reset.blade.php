@@ -62,6 +62,8 @@
                 <label for="password-confirm" class="large">Confirm Password</label>
                 <input id="password-confirm" class="form-control" type="password" name="password_confirmation" required><br /><br />
 
+                <input name="invisible" type="hidden" value="{{$user->id}}" />
+
                 <button type="submit" class="btn large">
                     Reset Password
                 </button><br /><br />
