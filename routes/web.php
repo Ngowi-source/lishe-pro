@@ -48,8 +48,8 @@ Route::get('/forgot', function(){
     return view('auth.forgot');
 });
 Route::post('/forgot', 'RecoveryController@mailUser');
-Route::get('/pass-reset/{code}', 'RecoveryController@index');
-Route::post('/pass-reset/{code}', 'RecoveryController@reset');
+Route::get('/reset/{code}', 'RecoveryController@index');
+Route::post('/reset/{code}', 'RecoveryController@reset');
 
 Route::get('auth/callback/{social}', 'SocialAuthController@callback');
 Route::get('auth/redirect/{social}', 'SocialAuthController@redirect');
