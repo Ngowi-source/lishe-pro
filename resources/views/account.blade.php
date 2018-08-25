@@ -42,8 +42,8 @@
 
     <div class="row">
         <div class="col-9">
-
-            <h1 class="text-center detailsTitle">Account Details</h1>
+            <br />
+            <h1 style="margin-left: 5vw;" class="text-center detailsTitle">Account Details</h1>
 
             <ul class="userList">
                 <li class="large">Name: <span class="details">{{$user->firstname}} {{$user->lastname}}</span></li>
@@ -51,7 +51,7 @@
                 <li class="large">Verified: <span class="details">@if($user->status) Verified @else Not verified @endif</span></li>
                 <li class="large">Number of articles: <span class="details">{{count($user->article()->get())}}</span></li>
             </ul>
-
+            <br />
             <button style="margin-left: 5vw; border-radius: 3px;" class="createButton" onclick="window.location.href='https://lishep.herokuapp.com/delete-account/{{$user->id}}'">Delete Account</button>
 
         </div>
