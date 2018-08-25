@@ -49,8 +49,8 @@
                 <li class="large">Name: <span class="details">{{$user->firstname}} {{$user->lastname}}</span></li>
                 <li class="large">Email Address: <span class="details">{{$user->email}}</span></li>
                 <li class="large">Verified: <span class="details">@if($user->status) Verified @else Not verified @endif</span></li>
-                <li class="large">Number of articles: <span class="details">{{count($user->article())}}</span></li>
-                <li class="large">Number of comments: <span class="details">{{count($user->article()->comments())}}</span></li>
+                <li class="large">Number of articles: <span class="details">{{count($user->article()->get())}}</span></li>
+                <li class="large">Number of comments: <span class="details">{{count($user->article()->comments()->get())}}</span></li>
             </ul>
 
             <button class="createButton" onclick="window.location.href='https://lishep.herokuapp.com/delete-account/{{$user->id}}'">Delete Account</button>
