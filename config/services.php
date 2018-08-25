@@ -36,20 +36,20 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => env('FACEBOOK_CLIENT_ID', '352237828646922'),
-        'client_secret' => env('FACEBOOK_CLIENT_SECRET', '44f69779fd413501960754290e40ad2e'),
+        'client_id' => env('FACEBOOK_CLIENT_ID'),
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
         'redirect' => 'https://lishep.herokuapp.com/auth/callback/facebook',
     ],
 
     'twitter' => [
-        'client_id' => env('TWITTER_CLIENT_ID', '38Ofghzs2iy76eTsnUmR5YjvC'),
-        'client_secret' => env('TWITTER_CLIENT_SECRET', 'BntZxIL8cKTrFfkvNWoF7H3gZwngD8iVU3OVrb7dt83gde7yvL '),
+        'client_id' => env('TWITTER_CLIENT_ID'),
+        'client_secret' => env('TWITTER_CLIENT_SECRET'),
         'redirect' => 'https://lishep.herokuapp.com/auth/callback/twitter',
     ],
 
     'google' => [
-        'client_id' => env('GP_CLIENT_ID', '1041036215480-vj9vs3hblrhpcjm4hnpbo3qr058qegiv.apps.googleusercontent.com'),
-        'client_secret' => env('GP_CLIENT_SECRET', '0D264_AK4JoFgXBN51F_TYwX'),
+        'client_id' => env('GP_CLIENT_ID'),
+        'client_secret' => env('GP_CLIENT_SECRET'),
         'redirect' => 'https://lishep.herokuapp.com/auth/callback/google',
     ],
 
