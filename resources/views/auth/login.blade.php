@@ -125,7 +125,7 @@
                 <i class="fab fa-facebook-f " aria-hidden="true"></i>&nbsp;&nbsp;Facebook <span class="account">Account</span>
             </button><br /><br />
 
-            <button class="btn twitter socials">
+            <button class="btn twitter socials" onclick="window.location.href='https://lishep.herokuapp.com/auth/redirect/twitter'">
                 <i class="fab fa-twitter "></i>&nbsp;&nbsp;Twitter <span class="account">Account</span>
             </button>&nbsp;
             <br /><br />
