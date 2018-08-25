@@ -42,8 +42,8 @@ return [
     ],
 
     'twitter' => [
-        'client_id' => env('TWITTER_CLIENT_ID', ''),
-        'client_secret' => env('TWITTER_CLIENT_SECRET', ''),
+        'client_id' => env('TWITTER_CLIENT_ID', '38Ofghzs2iy76eTsnUmR5YjvC'),
+        'client_secret' => env('TWITTER_CLIENT_SECRET', 'BntZxIL8cKTrFfkvNWoF7H3gZwngD8iVU3OVrb7dt83gde7yvL '),
         'redirect' => 'https://lishep.herokuapp.com/auth/callback/twitter',
     ],
 
