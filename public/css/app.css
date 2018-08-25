@@ -10671,7 +10671,7 @@ body {
 
 #intro {
   position: absolute;
-  top: 0;
+  top: 5vh;
   color: #D9DCD8;
   text-align: left;
   font-size: 3rem;
@@ -10679,10 +10679,6 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-}
-
-#intro .intro {
-  color: #F29D4B;
 }
 
 #intro .intro2 {
@@ -11696,18 +11692,25 @@ input[name='userid'] {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 757px) {
   #intro {
-    top: 5vh;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
   }
+}
 
+@media screen and (max-width: 720px) {
   .dietassessment {
     grid-template-columns: 70vw !important;
   }
 
   #assessmentForm button {
     width: 65vw !important;
+  }
+}
+
+@media screen and (min-width: 657px) {
+  #intro {
+    font-size: 2.8rem;
   }
 }
 
@@ -11723,7 +11726,7 @@ input[name='userid'] {
 
 @media screen and (max-width: 610px) {
   #intro {
-    font-size: 2.2rem;
+    font-size: 2.45rem;
   }
 
   .contactUs {
@@ -11775,7 +11778,7 @@ input[name='userid'] {
   }
 
   #intro {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   #footer {

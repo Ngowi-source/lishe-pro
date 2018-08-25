@@ -132,7 +132,7 @@
             <img class="largep" src="{{'images/bglarge.jpeg'}}"/>
 
             <div id="intro" class="col-10 col-md-10 col-lg-8">
-                Better <span class="introline">Health</span> Through <span class="intro"><i>Nutrition </i></span><span class="intro2"><i>Tools</i></span>, Interactive Dietary <span class="introl2">Assessment</span> and Expertise
+                Better <span class="introline">Health</span> Through <span class="intro2"><i>Nutrition Tools</i></span>, Interactive Dietary <span class="intro2">Assessment</span> and <span class="introl2">Expertise</span>
             </div>
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
 
