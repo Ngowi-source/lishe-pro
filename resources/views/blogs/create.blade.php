@@ -81,7 +81,7 @@
                 <label for="bodyid">Body</label>
                 <textarea id="bodyid" name="body" class="form-control" ></textarea><br />
 
-                <button type="submit" class="form-control" id="createButton">
+                <button type="submit" class="form-control createButton" id="createButton">
                     Post Article
                 </button>
             </form>

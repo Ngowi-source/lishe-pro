@@ -11087,7 +11087,8 @@ body {
   height: 30vh;
 }
 
-#createForm #createButton {
+.createButton,
+#createButton {
   border: none;
   background: #8B281F;
   color: #fff;
@@ -11099,7 +11100,8 @@ body {
   -o-transition: background 0.3s ease-out;
 }
 
-#createForm #createButton:hover {
+.createButton:hover,
+#createButton:hover {
   background: #9BA747;
 }
 
@@ -11342,6 +11344,18 @@ input[name='userid'] {
   display: none;
 }
 
+.detailsTitle {
+  color: #D57030;
+}
+
+.userList li {
+  list-style-type: none;
+}
+
+.userList li .details {
+  color: #9BA747;
+}
+
 /*media queries*/
 
 @media screen and (max-width: 1015px) {
@@ -11542,6 +11556,7 @@ input[name='userid'] {
     grid-area: 2/1/3/2;
     height: 10vh;
     justify-self: end;
+    padding-top: 2.5vh;
   }
 
   #blogWrapper #blogSide .sideInline {
@@ -11716,7 +11731,7 @@ input[name='userid'] {
   }
 
   #blogWrapper #blogHead h2 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -11736,7 +11751,7 @@ input[name='userid'] {
   #showWrapper #blogSide a button,
   #showWrapper .archToggle,
   #showWrapper #blogHeadSide a button {
-    font-size: small;
+    font-size: medium;
   }
 
   #showWrapper {

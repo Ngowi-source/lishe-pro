@@ -105,6 +105,13 @@
         </div>
     @endif
 
+    @if(session()->has('userdel'))
+        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
+            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
+            <span class="text-center">{{session('userdel')}}</span>&nbsp;
+        </div>
+    @endif
+
     @if(session()->has('outsuccess'))
         <div class="alert alert-success alert-dismissible alert-icon-left border-0">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
