@@ -10590,8 +10590,9 @@ body {
 
 #homeWrapper {
   display: grid;
-  grid-template-rows: 100vh auto 110vh auto 130vh;
+  grid-template-rows: 95vh auto 110vh auto 130vh;
   grid-template-columns: 100vw;
+  background: #D9DCD8;
 }
 
 #homeIntro {
@@ -10606,16 +10607,28 @@ body {
   max-height: 100%;
   width: 100%;
   height: auto;
-  display: block;
+  display: none;
 }
 
-#homeIntro svg {
+#homeIntro .intro {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
-  display: none;
+}
+
+#homeIntro .intro #intro1,
+#homeIntro .intro .and {
+  fill: #D9DCD8;
+  stroke: #D57030;
+}
+
+#homeIntro .intro #intro2,
+#homeIntro .intro #intro3,
+#homeIntro .intro #intro4 {
+  fill: #9BA747;
 }
 
 #tools {
@@ -10669,39 +10682,40 @@ body {
   color: #8B281F;
 }
 
-#intro {
+/*#intro{
   position: absolute;
   top: 5vh;
-  color: #D9DCD8;
+  color: $c1;
   text-align: left;
   font-size: 3rem;
   font-weight: bolder;
   left: 50%;
   -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
   transform: translateX(-50%);
-}
 
-#intro .intro2 {
-  color: #D57030;
-}
+  .intro2{
+    color: $c4;
+  }
+  .introline{
+    position: relative;
 
-#intro .introline {
-  position: relative;
-}
-
-#intro .introline:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.35rem;
-  bottom: -7%;
-  left: 0;
-  border-bottom: 0.35rem solid #9BA747;
-}
-
-#intro .introl2 {
-  color: #9BA747;
-}
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.35rem;
+      bottom: -7%;
+      left: 0;
+      border-bottom: 0.35rem solid $c2;
+    }
+  }
+  .introl2{
+    color: $c2;
+  }
+}*/
 
 #introButton {
   cursor: pointer;
@@ -11682,14 +11696,13 @@ input[name='userid'] {
     color: #8B281F;
   }
 
-  .largep {
+  /*.largep{
     display: block;
-    min-height: 85% !important;
+    min-height: 85%!important;
   }
-
-  .smallp {
+  .smallp{
     display: none;
-  }
+  }*/
 }
 
 @media screen and (min-width: 757px) {

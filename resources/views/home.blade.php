@@ -128,17 +128,29 @@
 
     <div id="homeWrapper">
         <div id="homeIntro">
-            <img class="smallp" src="{{'images/bgsmall.jpg'}}"/>
-            <img class="largep" src="{{'images/bglarge.jpeg'}}"/>
 
-            <div id="intro" class="col-10 col-md-10 col-lg-8">
-                Better <span class="introline">Health</span> Through <span class="intro2"><i>Nutrition Tools</i></span>, Interactive Dietary <span class="intro2">Assessment</span> and <span class="introl2">Expertise</span>
-            </div>
+            <svg class="intro" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                <text x="25" y="25" id="intro1">
+                    BETTER HEALTH THROUGH
+                </text>
+                <text x="25" y="45" id="intro2" >
+                    NUTRITION TOOLS,
+                </text>
+                <text x="25" y="60" id="intro3" >
+                    Interactive Dietary Assessment
+                </text>
+                <text x="25" y="75" id="and" >
+                    and
+                </text>
+                <text x="35" y="75" class="intro4" >
+                    EXPERTISE
+                </text>
+
+            </svg>
+
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path fill="white" stroke="white" stroke-width="0" d="M0,0 C30,-10 30,37 10,40 L10,80 L0,80 Z"></path>
-            </svg>
         </div>
         <div id="whoAreWe">
             <h1>Why Lishe Pro?</h1><br />

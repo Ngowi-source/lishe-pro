@@ -174,8 +174,9 @@ body{
 }
 #homeWrapper{
   display: grid;
-  grid-template-rows: 100vh auto 110vh auto 130vh;
+  grid-template-rows: 95vh auto 110vh auto 130vh;
   grid-template-columns: 100vw;
+  background: $c1;
 }
 #homeIntro{
   position: relative;
@@ -187,15 +188,23 @@ body{
     max-height: 100%;
     width: 100%;
     height: auto;
-    display: block;
+    display: none;
   }
-  svg{
+  .intro{
     position: absolute;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-    display: none;
+
+    #intro1, .and{
+      fill: $c1;
+      stroke: $c4;
+    }
+    #intro2, #intro3, #intro4{
+      fill: $c2;
+    }
   }
 }
 #tools {
@@ -243,7 +252,7 @@ body{
   cursor: pointer;
   color: $c5;
 }
-#intro{
+/*#intro{
   position: absolute;
   top: 5vh;
   color: $c1;
@@ -276,7 +285,7 @@ body{
   .introl2{
     color: $c2;
   }
-}
+}*/
 #introButton{
   cursor: pointer;
   padding: 5px 10px 5px 10px;
@@ -1168,13 +1177,13 @@ input[name='userid']{
       }
     }
   }
-  .largep{
+  /*.largep{
     display: block;
     min-height: 85%!important;
   }
   .smallp{
     display: none;
-  }
+  }*/
 }
 @media screen and (min-width: 757px){
   #intro{
