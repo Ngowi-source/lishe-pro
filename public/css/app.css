@@ -10623,15 +10623,18 @@ body {
 #homeIntro .intro .and {
   fill: #D9DCD8;
   stroke: #D57030;
-  stroke-width: 1px;
+  stroke-width: 0.25px;
   stroke-linejoin: round;
+  font-size: x-small;
 }
 
 #homeIntro .intro #intro2,
 #homeIntro .intro #intro3,
 #homeIntro .intro #intro4 {
-  fill: #9BA747;
+  stroke: #9BA747;
   font-size: x-small;
+  stroke-width: 0.75px;
+  stroke-linejoin: round;
 }
 
 #tools {
