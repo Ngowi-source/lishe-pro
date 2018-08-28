@@ -131,19 +131,19 @@
 
             <svg class="intro" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-                <text x="25" y="25" id="intro1">
+                <text x="5" y="25" id="intro1">
                     BETTER HEALTH THROUGH
                 </text>
-                <text x="25" y="45" id="intro2" >
+                <text x="5" y="45" id="intro2" >
                     NUTRITION TOOLS,
                 </text>
-                <text x="25" y="60" id="intro3" >
+                <text x="5" y="60" id="intro3" >
                     Interactive Dietary Assessment
                 </text>
-                <text x="25" y="75" id="and" >
+                <text x="5" y="75" class="and" >
                     and
                 </text>
-                <text x="35" y="75" class="intro4" >
+                <text x="25" y="75" id="intro4" >
                     EXPERTISE
                 </text>
 

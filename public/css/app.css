@@ -10623,6 +10623,8 @@ body {
 #homeIntro .intro .and {
   fill: #D9DCD8;
   stroke: #D57030;
+  stroke-width: 2px;
+  stroke-linejoin: bevel;
 }
 
 #homeIntro .intro #intro2,

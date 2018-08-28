@@ -201,6 +201,8 @@ body{
     #intro1, .and{
       fill: $c1;
       stroke: $c4;
+      stroke-width: 2px;
+      stroke-linejoin: bevel;
     }
     #intro2, #intro3, #intro4{
       fill: $c2;
