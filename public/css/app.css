@@ -10624,8 +10624,7 @@ body {
   fill: #D9DCD8;
   stroke: #D57030;
   stroke-width: 1px;
-  stroke-linejoin: bevel;
-  font-size: x-small;
+  stroke-linejoin: round;
 }
 
 #homeIntro .intro #intro2,
