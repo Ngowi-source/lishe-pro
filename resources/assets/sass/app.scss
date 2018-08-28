@@ -201,11 +201,13 @@ body{
     #intro1, .and{
       fill: $c1;
       stroke: $c4;
-      stroke-width: 2px;
+      stroke-width: 1px;
       stroke-linejoin: bevel;
+      font-size: x-small;
     }
     #intro2, #intro3, #intro4{
       fill: $c2;
+      font-size: x-small;
     }
   }
 }
