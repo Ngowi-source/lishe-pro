@@ -168,15 +168,16 @@ body{
   .ndChild{
     width: 4.5vh!important;
   }
-  .fthChild{
-    width: 1.8vh!important;
-  }
   .menubar{
     width: 6vh;
     height: .6vh;
     background-color: $c5;
     border-radius: 1px;
     transition: all 1.5s;
+
+    &:last-child{
+      width: 1.8vh!important;
+    }
   }
 }
 #homeWrapper{
@@ -998,9 +999,9 @@ input[name='userid']{
     }
 
     .menu{
-      margin-top: -40px;
+      margin-top: -20px;
       margin-left: 85vw;
-      .ndChild, .fthChild {opacity: 0; visibility: hidden;}
+      .ndChild, .menubar:last-child {opacity: 0; visibility: hidden;}
 
       .menubar{
         &:nth-child(1){
@@ -1015,7 +1016,7 @@ input[name='userid']{
           -o-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
         }
-        &:nth-child(3){
+        &.rdChild{
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
           -ms-transform: rotate(45deg);

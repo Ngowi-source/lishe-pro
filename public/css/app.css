@@ -10584,10 +10584,6 @@ body {
   width: 4.5vh !important;
 }
 
-.menu .fthChild {
-  width: 1.8vh !important;
-}
-
 .menu .menubar {
   width: 6vh;
   height: .6vh;
@@ -10595,6 +10591,10 @@ body {
   border-radius: 1px;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
+}
+
+.menu .menubar:last-child {
+  width: 1.8vh !important;
 }
 
 #homeWrapper {
@@ -11523,12 +11523,12 @@ input[name='userid'] {
   }
 
   .nav-links.showMenu .menu {
-    margin-top: -40px;
+    margin-top: -20px;
     margin-left: 85vw;
   }
 
   .nav-links.showMenu .menu .ndChild,
-  .nav-links.showMenu .menu .fthChild {
+  .nav-links.showMenu .menu .menubar:last-child {
     opacity: 0;
     visibility: hidden;
   }
@@ -11540,7 +11540,7 @@ input[name='userid'] {
     transform-origin: 50% 50%;
   }
 
-  .nav-links.showMenu .menu .menubar:nth-child(3) {
+  .nav-links.showMenu .menu .menubar.rdChild {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform-origin: 50% 50%;
