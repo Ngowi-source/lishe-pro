@@ -1253,8 +1253,8 @@ input[name='userid']{
   }
 }
 @media screen and (max-width: 480px){
-  .intro{
-    top: -12%;
+  #homeIntro .intro{
+    top: -12%!important;
   }
   #introButton{
     font-size: 1rem;
