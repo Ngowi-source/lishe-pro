@@ -839,6 +839,11 @@ input[name='userid']{
   }
 }
 /*media queries*/
+@media screen and (min-width: 1110px){
+  .whoAreWe{
+    font-size: x-large!important;
+  }
+}
 @media screen and (max-width: 1015px){
   #loginForm{
     .float-right{
@@ -945,7 +950,7 @@ input[name='userid']{
   }
   .register:hover{
     background: $c1;
-    color: $c5;
+    color: $c5!important;
   }
 }
 @media screen and (max-width: 800px){
