@@ -153,7 +153,7 @@ body{
   border: 1px solid $c5;
   border-radius: 3px;
   padding: 0.3vw 2vw 0.3vw 2vw;
-  color: #fff!important;
+  color: $c1;
   background-color: $c5;
 }
 .menu{
@@ -266,11 +266,11 @@ body{
   overflow: hidden;
 
   &::after{
-    -webkit-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
-    -moz-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
-    -ms-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
-    -o-transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
-    transition: all 0.3s cubic-bezier(.17, .61, 1, .29);
+    -webkit-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    -moz-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    -ms-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    -o-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
     height: 100%;
     left: -35%;
     top: 0;

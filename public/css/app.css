@@ -10566,7 +10566,7 @@ body {
   border: 1px solid #8B281F;
   border-radius: 3px;
   padding: 0.3vw 2vw 0.3vw 2vw;
-  color: #fff !important;
+  color: #D9DCD8;
   background-color: #8B281F;
 }
 
@@ -10695,8 +10695,8 @@ body {
 }
 
 #introButton::after {
-  -webkit-transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
-  transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+  -webkit-transition: all 0.15s cubic-bezier(0.17, 0.61, 1, 0.29);
+  transition: all 0.15s cubic-bezier(0.17, 0.61, 1, 0.29);
   height: 100%;
   left: -35%;
   top: 0;
