@@ -157,6 +157,7 @@ body{
   background-color: $c5;
 }
 .menu{
+  margin-top: 20px;
   display: none;
   width: 10vh;
   height: 5.6vh;
@@ -176,20 +177,11 @@ body{
   display: grid;
   grid-template-rows: 95vh auto 110vh auto 130vh;
   grid-template-columns: 100vw;
-  background: $c1;
 }
 #homeIntro{
   position: relative;
-  img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    max-height: 100%;
-    width: 100%;
-    height: auto;
-    display: none;
-  }
+  background: #001;
+
   .intro{
     position: absolute;
     top: 0;
@@ -968,8 +960,6 @@ input[name='userid']{
   .iconfeatured{
     font-size: large;
   }
-}
-@media screen and (max-width: 800px){
   .login, .register{
     border: none;
     color: $c5!important;
@@ -1005,6 +995,7 @@ input[name='userid']{
     }
 
     .menu{
+      margin-top: -40px;
       margin-left: 85vw;
       .ndChild{opacity: 0; visibility: hidden;}
 

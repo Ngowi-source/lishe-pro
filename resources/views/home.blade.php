@@ -132,7 +132,7 @@
             <svg class="intro" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                 <text x="0" y="15" id="intro1" width="60%">
-                    BETTER HEALTH THROUGH
+                    BETTER HEALTH BY
                 </text>
                 <text x="0" y="30" id="intro2" width="70%">
                     NUTRITION TOOLS,

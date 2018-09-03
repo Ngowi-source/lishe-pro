@@ -10571,6 +10571,7 @@ body {
 }
 
 .menu {
+  margin-top: 20px;
   display: none;
   width: 10vh;
   height: 5.6vh;
@@ -10592,22 +10593,11 @@ body {
   display: grid;
   grid-template-rows: 95vh auto 110vh auto 130vh;
   grid-template-columns: 100vw;
-  background: #D9DCD8;
 }
 
 #homeIntro {
   position: relative;
-}
-
-#homeIntro img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  max-height: 100%;
-  width: 100%;
-  height: auto;
-  display: none;
+  background: #001;
 }
 
 #homeIntro .intro {
@@ -11479,9 +11469,7 @@ input[name='userid'] {
   .iconfeatured {
     font-size: large;
   }
-}
 
-@media screen and (max-width: 800px) {
   .login,
   .register {
     border: none;
@@ -11522,6 +11510,7 @@ input[name='userid'] {
   }
 
   .nav-links.showMenu .menu {
+    margin-top: -40px;
     margin-left: 85vw;
   }
 
