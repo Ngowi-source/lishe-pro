@@ -12,7 +12,8 @@
         <div class="menu">
             <div class="menubar"></div><br />
             <div class="menubar ndChild"></div><br />
-            <div class="menubar"></div>
+            <div class="menubar"></div><br />
+            <div class="menubar fthChild"></div>
         </div>
 
         <a id="tools"><span class="tools">Dietary Assessment </span>Tools
@@ -156,7 +157,7 @@
             <h1>Why Lishe Pro?</h1><br />
 
             <span class="whoAreWe text-center col-sm-10 col-md-6 col-lg-4">
-                Lishe Pro is guided by top-notch professionals’ group with purpose to safely support those who are looking to improve their health through nutrition. We do this by using interactive dietary assessment tools, whole food supplements, and most importantly dietary changes. Our aim is to help as many people as possible be healthier and happier without the use of unnecessary drugs or surgery.
+                Lishe Pro is guided by top-notch professionals’ group with the purpose to safely support those who are looking to improve their health through nutrition. We do this by using interactive dietary assessment tools, whole food supplements, and most importantly dietary changes. Our aim is to help as many people as possible be healthier and happier without the use of unnecessary drugs or surgery.
             </span>
 
         </div>

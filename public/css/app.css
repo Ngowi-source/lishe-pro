@@ -10580,8 +10580,16 @@ body {
   cursor: pointer;
 }
 
+.menu .ndChild {
+  width: 4.5vh !important;
+}
+
+.menu .fthChild {
+  width: 1.8vh !important;
+}
+
 .menu .menubar {
-  width: 4.5vh;
+  width: 6vh;
   height: .6vh;
   background-color: #8B281F;
   border-radius: 1px;
@@ -11519,7 +11527,8 @@ input[name='userid'] {
     margin-left: 85vw;
   }
 
-  .nav-links.showMenu .menu .ndChild {
+  .nav-links.showMenu .menu .ndChild,
+  .nav-links.showMenu .menu .fthChild {
     opacity: 0;
     visibility: hidden;
   }
