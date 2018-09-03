@@ -10597,13 +10597,13 @@ body {
 
 #homeIntro {
   position: relative;
-  background: #001;
+  background: #D9DCD8;
 }
 
 #homeIntro .intro {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 1%;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -10678,65 +10678,52 @@ body {
   color: #8B281F;
 }
 
-/*#intro{
-  position: absolute;
-  top: 5vh;
-  color: $c1;
-  text-align: left;
-  font-size: 3rem;
-  font-weight: bolder;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-
-  .intro2{
-    color: $c4;
-  }
-  .introline{
-    position: relative;
-
-    &:before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 0.35rem;
-      bottom: -7%;
-      left: 0;
-      border-bottom: 0.35rem solid $c2;
-    }
-  }
-  .introl2{
-    color: $c2;
-  }
-}*/
-
 #introButton {
   cursor: pointer;
   padding: 5px 10px 5px 10px;
-  position: absolute;
+  position: relative;
   top: 70vh;
   width: 35%;
   left: 32.5%;
-  /*-webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);*/
   border-radius: 3px;
   border: 1px solid #8B281F;
   color: #D9DCD8;
   background: #8B281F;
   font-size: 1.25rem;
   z-index: 3;
+  overflow: hidden;
+}
+
+#introButton::after {
   -webkit-transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
   transition: all 0.3s cubic-bezier(0.17, 0.61, 1, 0.29);
+  height: 100%;
+  left: -35%;
+  top: 0;
+  -webkit-transform: skew(50deg);
+          transform: skew(50deg);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  width: 0;
+}
+
+#introButton::after,
+#introButton::before {
+  background: #D9DCD8;
+  content: '';
+  position: absolute;
+  z-index: -1;
 }
 
 #introButton:hover {
-  color: #F29D4B;
+  color: #8B281F;
+}
+
+#introButton:hover:after {
+  height: 100%;
+  width: 135%;
 }
 
 #dietassessmentmodal {
@@ -11462,6 +11449,18 @@ input[name='userid'] {
   #introButton {
     width: 40%;
     left: 30%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .login:hover {
+    background: #8B281F;
+    color: #D9DCD8;
+  }
+
+  .register:hover {
+    background: #D9DCD8;
+    color: #8B281F;
   }
 }
 
