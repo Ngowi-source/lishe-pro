@@ -10838,7 +10838,7 @@ body {
 #whoAreWe {
   grid-area: 2/1/3/2;
   color: #8B281F;
-  padding: 5vw;
+  padding: 10vw 5vw 10vw 5vw;
   text-align: center;
   height: auto;
 }
