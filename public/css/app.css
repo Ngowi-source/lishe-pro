@@ -11540,7 +11540,7 @@ input[name='userid'] {
     transform-origin: 50% 50%;
   }
 
-  .nav-links.showMenu .menu .menubar:last-child {
+  .nav-links.showMenu .menu .menubar:nth-child(3) {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform-origin: 50% 50%;

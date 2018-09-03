@@ -1015,7 +1015,7 @@ input[name='userid']{
           -o-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
         }
-        &:last-child{
+        &:nth-child(3){
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
