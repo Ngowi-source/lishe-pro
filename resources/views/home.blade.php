@@ -259,6 +259,27 @@
         particlesJS.load('homeIntro', '/particles.json', function(){
             console.log('Particles Loaded');
         });
+
+        particlesJS.load('homeIntro', '/particles2.json', function(){
+            console.log('Particles2 Loaded');
+        });
+
+        particlesJS.load('homeIntro', '/particles3.json', function(){
+            console.log('Particles3 Loaded');
+        });
+
+        particlesJS.load('homeIntro', '/particles4.json', function(){
+            console.log('Particles4 Loaded');
+        });
+
+        particlesJS.load('homeIntro', '/particles5.json', function(){
+            console.log('Particles5 Loaded');
+        });
+
+        particlesJS.load('homeIntro', '/particles6.json', function(){
+            console.log('Particles6 Loaded');
+        });
+
     </script>
 
 @endsection

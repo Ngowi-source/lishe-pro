@@ -6,7 +6,7 @@
     "shape": {
       "type": "image",
       "image": {
-          "src": "/apple.png"
+        "src": "/banana.png"
       },
     "opacity":{
       "value": 1,
