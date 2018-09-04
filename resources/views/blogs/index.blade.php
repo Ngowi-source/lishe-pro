@@ -92,7 +92,7 @@
                 <hr/> <br />
             @endforeach
 
-            {{$articles->links()}}
+            {{--{{$articles->links()}}--}}
         </div>
 
     </div>
