@@ -6,7 +6,9 @@
     "shape": {
       "type": "image",
       "image": {
-          "src": ["/banana.png", "/bell-pepper.png", "/onion.png", "/avocado.png", "/grape.png", "/broccoli.png"]
+          "src": {
+            "value": ["/banana.png", "/bell-pepper.png", "/onion.png", "/avocado.png", "/grape.png", "/broccoli.png"]
+          }
       }
     },
     "opacity":{
