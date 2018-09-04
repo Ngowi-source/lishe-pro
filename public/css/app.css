@@ -10606,6 +10606,7 @@ body {
 #homeIntro {
   position: relative;
   background: #D9DCD8;
+  overflow: hidden;
 }
 
 #homeIntro .intro {

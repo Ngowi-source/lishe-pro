@@ -188,6 +188,7 @@ body{
 #homeIntro{
   position: relative;
   background: $c1;
+  overflow: hidden;
 
   .intro{
     position: absolute;
