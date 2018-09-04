@@ -1,13 +1,16 @@
 {
   "particles": {
+    "number": {
+      "value": 18
+    },
     "shape": {
-      "type": {
+      "type": "image",
 		"image": {
-			"src": "/banana.svg",
+			"src": ["/banana.svg", "/grape.svg", "/broccoli.svg", "/avocado.svg", "/onion.svg", "/bell-pepper.svg"],
 			"width": 50,
 			"height": 50
 		}
-	  }
+
     },
     "opacity":{
       "value": 0.7,
