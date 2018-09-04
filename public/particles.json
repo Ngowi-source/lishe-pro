@@ -6,7 +6,9 @@
     "shape": {
       "type": "image",
       "image": {
-          "src": "/apple.png"
+          "src": "/apple.png",
+          "width": 50,
+          "height": 50
       },
       "color": "#9BA747"
     },
