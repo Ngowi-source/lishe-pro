@@ -61,9 +61,9 @@
 
             <h4 class="archToggle sideInline">Archives</h4>
             <div class="archLinks">
-                @foreach($archives as $stat)
+                {{--@foreach($archives as $stat)
                     <a class="archLink" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
-                @endforeach
+                @endforeach--}}
             </div>
 
 
@@ -77,22 +77,22 @@
 
                 <span class="articleBod">
 
-                    @if(strlen(preg_replace('/<p><img(.*)>/', '', $article->body))>400)
+                    {{--@if(strlen(preg_replace('/<p><img(.*)>/', '', $article->body))>400)
                         {!! substr(preg_replace('/<p><img(.*)>/', '', $article->body),0,400) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
                     @else
                         {!! preg_replace('/<p><img(.*)>/', '', $articles->body) !!}
-                    @endif
+                    @endif--}}
 
-                    {{--@while(preg_match('/<p><img(.*)>/', $articles->body, $images))
-                            <img {{ $images[0] }} > <br /> <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
-                    @endwhile--}}
+                    @if(preg_match('/<p><img(.*)>/', $articles->body, $images))
+                            <p><img {{ $images[0] }} > <br /> <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
+                    @endif
 
                 </span><br />
                 <span class="articleTime"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>{{count($article->comments)}} comments</i></a></span>
                 <hr/> <br />
             @endforeach
 
-            {{$articles->links()}}
+            {{--{{$articles->links()}}--}}
         </div>
 
     </div>
