@@ -255,7 +255,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
     <script>
-        particlesJS.load('homeIntro', '/particles.json', function(){
+        particlesJS.load('whatWeDo', '/particles.json', function(){
             console.log('Loaded correctly');
         });
     </script>
