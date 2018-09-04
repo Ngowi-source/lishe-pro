@@ -83,7 +83,7 @@
                         {!! preg_replace('/<p><img(.*)>/', '', $articles->body) !!}
                     @endif--}}
 
-                    @if(preg_match('/<p><img(.*)>/', $articles->body, $images))
+                    @if(preg_match('/<p><img(.*)>/', $article->body, $images))
                             <p><img {{ $images[0] }} > <br /> <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
                     @endif
 
