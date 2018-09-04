@@ -135,8 +135,7 @@
                 <defs>
                     <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
                         <stop offset="0%" stop-color="#9ba747" stop-opacity="0.5" />
-                        <stop offset="50%" stop-color="#d57030" stop-opacity="0.5" />
-                        <stop offset="100%" stop-color="#8b281f" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#d57030" stop-opacity="1" />
                     </linearGradient>
                 </defs>
 
