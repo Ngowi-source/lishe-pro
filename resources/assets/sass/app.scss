@@ -846,6 +846,9 @@ input[name='userid']{
     color: $c2;
   }
 }
+.pagination li a{
+  color: $c2;
+}
 /*media queries*/
 @media screen and (min-width: 1110px){
   .whoAreWe{

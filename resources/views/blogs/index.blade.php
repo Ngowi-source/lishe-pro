@@ -75,7 +75,19 @@
                 <h3><a href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a></h3>
                 <span class="articleTime"><b >{{$article->user->firstname}} {{$article->user->lastname}}</b> on {{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
-                <span class="articleBod">@if(strlen(preg_replace('/<p><img(.*)>/', '', $article->body))>400){!! substr(preg_replace('/<p><img(.*)>/', '', $article->body),0,400) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span> @else{!! preg_replace('/<p><img(.*)>/', '', $articles->body) !!}@endif</span><br />
+                <span class="articleBod">
+
+                    {{--@if(strlen(preg_replace('/<p><img(.*)>/', '', $article->body))>400)
+                        {!! substr(preg_replace('/<p><img(.*)>/', '', $article->body),0,400) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
+                    @else
+                        {!! preg_replace('/<p><img(.*)>/', '', $articles->body) !!}
+                    @endif--}}
+
+                    @if(preg_match('/<p><img(.*)>/', $articles->body, $image))
+                            <img {{ $image[0]}} /> <br /> <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
+                    @endif
+
+                </span><br />
                 <span class="articleTime"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>{{count($article->comments)}} comments</i></a></span>
                 <hr/> <br />
             @endforeach

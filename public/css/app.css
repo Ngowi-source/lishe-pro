@@ -11358,6 +11358,10 @@ input[name='userid'] {
   color: #9BA747;
 }
 
+.pagination li a {
+  color: #9BA747;
+}
+
 /*media queries*/
 
 @media screen and (min-width: 1110px) {
