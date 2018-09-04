@@ -77,14 +77,9 @@
 
                 <span class="articleBod">
 
-                    {{--@if(strlen(preg_replace('/<p><img(.*)>/', '', $article->body))>400)
-                        {!! substr(preg_replace('/<p><img(.*)>/', '', $article->body),0,400) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
-                    @else
-                        {!! preg_replace('/<p><img(.*)>/', '', $articles->body) !!}
-                    @endif--}}
-
                     @if(preg_match('/<p><img(.*)>/', $article->body, $images))
-                            {{--<p><img--}} {!! $images[0] !!} <br /> <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
+                        {!! $images[0] !!}
+                        <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
                     @endif
 
                 </span><br />
