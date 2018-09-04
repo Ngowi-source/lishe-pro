@@ -1,0 +1,32 @@
+{
+  "particles": {
+    "shape": {
+      "type": {
+		"image": {
+			"src": ["/avocado.svg", "/banana.svg", "/bell-pepper.svg", "/onion.svg", "/grape.svg", "/broccoli.svg"],
+			"width": 50,
+			"height": 50
+		}
+	  }
+    },
+    "opacity":{
+      "value": 0.7,
+      "anim": {
+        "enable": true,
+        "speed": 1
+      }
+    },
+    "color": {
+        "value": ["#9BA747", "#F29D4B"]
+    }
+  },
+  "interactivity":{
+    "events":{
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": false
+    }
+  }
+}
