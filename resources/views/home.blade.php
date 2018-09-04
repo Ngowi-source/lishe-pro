@@ -143,16 +143,16 @@
                 <text x="0" y="15" id="intro1" width="60%" >
                     BETTER HEALTH BY
                 </text>
-                <text x="0" y="30" id="intro2" width="70%" stroke="url(#linear)" >
+                <text x="0" y="30" id="intro2" width="70%" stroke="url(#linear)" fill="url(#linear)" >
                     NUTRITION TOOLS,
                 </text>
-                <text x="0" y="45" id="intro3" width="80%" stroke="url(#linear)" >
+                <text x="0" y="45" id="intro3" width="80%" stroke="url(#linear)" fill="url(#linear)" >
                     Dietary Assessment
                 </text>
                 <text x="0" y="60" class="and" >
                     and
                 </text>
-                <text x="25" y="60" id="intro4" stroke="url(#linear)" >
+                <text x="25" y="60" id="intro4" stroke="url(#linear)" fill="url(#linear)" >
                     EXPERTISE
                 </text>
 
