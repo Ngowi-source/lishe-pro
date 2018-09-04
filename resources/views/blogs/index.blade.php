@@ -61,9 +61,9 @@
 
             <h4 class="archToggle sideInline">Archives</h4>
             <div class="archLinks">
-                {{--@foreach($archives as $stat)
+                @foreach($archives as $stat)
                     <a class="archLink" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
-                @endforeach--}}
+                @endforeach
             </div>
 
 
@@ -84,7 +84,7 @@
                     @endif--}}
 
                     @if(preg_match('/<p><img(.*)>/', $article->body, $images))
-                            <p><img {{ $images[0] }} > <br /> <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
+                            <p><img {{!! $images[0] !!}} > <br /> <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
                     @endif
 
                 </span><br />
@@ -92,7 +92,7 @@
                 <hr/> <br />
             @endforeach
 
-            {{--{{$articles->links()}}--}}
+            {{$articles->links()}}
         </div>
 
     </div>
