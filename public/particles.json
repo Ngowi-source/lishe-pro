@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 120
+      "value": 20
     },
     "shape": {
       "type": "image",
@@ -19,12 +19,12 @@
     },
     "move": {
       "enable": true,
-      "speed": 8,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
-      "bounce": false,
+      "bounce": true,
       "attract": {
         "enable": false,
         "rotateX": 600,
