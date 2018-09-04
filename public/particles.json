@@ -1,28 +1,14 @@
 {
   "particles": {
     "number": {
-      "value": 18
+      "value": 120
     },
     "shape": {
-      "type": ["image", "image2", "image3", "image4", "image5", "image6"],
+      "type": "image",
       "image": {
-          "src": "/banana.png"
+          "src": "/apple.svg"
       },
-      "image2": {
-        "src": "/bell-pepper.png"
-      },
-      "image3": {
-        "src": "/avocado.png"
-      },
-      "image4": {
-        "src": "/onion.png"
-      },
-      "image5": {
-        "src": "/broccoli.png"
-      },
-      "image6": {
-        "src": "/grape.png"
-      }
+      "color": "#9BA747"
     },
     "opacity":{
       "value": 1,
@@ -31,8 +17,22 @@
         "speed": 1
       }
     },
-    "color": {
-        "value": ["#9BA747", "#F29D4B"]
+    "move": {
+      "enable": true,
+      "speed": 8,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    },
+    "line_linked": {
+      "enable": false
     }
   },
   "interactivity":{
