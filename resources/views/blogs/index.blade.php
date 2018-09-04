@@ -77,15 +77,15 @@
 
                 <span class="articleBod">
 
-                    {{--@if(strlen(preg_replace('/<p><img(.*)>/', '', $article->body))>400)
+                    @if(strlen(preg_replace('/<p><img(.*)>/', '', $article->body))>400)
                         {!! substr(preg_replace('/<p><img(.*)>/', '', $article->body),0,400) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
                     @else
                         {!! preg_replace('/<p><img(.*)>/', '', $articles->body) !!}
-                    @endif--}}
+                    @endif
 
-                    @while(preg_match('/<p><img(.*)>/', $articles->body, $images))
+                    {{--@while(preg_match('/<p><img(.*)>/', $articles->body, $images))
                             <img {{ $images[0] }} > <br /> <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
-                    @endwhile
+                    @endwhile--}}
 
                 </span><br />
                 <span class="articleTime"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>{{count($article->comments)}} comments</i></a></span>
