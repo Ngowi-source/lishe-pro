@@ -4,11 +4,24 @@
       "value": 18
     },
     "shape": {
-      "type": "image",
+      "type": ["image", "image2", "image3", "image4", "image5", "image6"],
       "image": {
-          "src": {
-            "value": ["/banana.png", "/bell-pepper.png", "/onion.png", "/avocado.png", "/grape.png", "/broccoli.png"]
-          }
+          "src": "/banana.png"
+      },
+      "image2": {
+        "src": "/bell-pepper.png"
+      },
+      "image3": {
+        "src": "/avocado.png"
+      },
+      "image4": {
+        "src": "/onion.png"
+      },
+      "image5": {
+        "src": "/broccoli.png"
+      },
+      "image6": {
+        "src": "/grape.png"
       }
     },
     "opacity":{
