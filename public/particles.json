@@ -6,13 +6,11 @@
     "shape": {
       "type": "image",
       "image": {
-          "src": "/banana.svg",
-          "width": 50,
-          "height": 50
+          "src": "/banana.svg"
       }
     },
     "opacity":{
-      "value": 0.7,
+      "value": 1,
       "anim": {
         "enable": true,
         "speed": 1
