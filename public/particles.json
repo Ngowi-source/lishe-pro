@@ -3,7 +3,7 @@
     "shape": {
       "type": {
 		"image": {
-			"src": ["/avocado.svg", "/banana.svg", "/bell-pepper.svg", "/onion.svg", "/grape.svg", "/broccoli.svg"],
+			"src": "banana.svg",
 			"width": 50,
 			"height": 50
 		}
