@@ -534,7 +534,7 @@ body{
 }
 #blogWrapper{
   display: grid;
-  grid-template-rows: 15vh minmax(70vh, auto);
+  grid-template-rows: 12vh minmax(70vh, auto);
   grid-template-columns: 70vw 30vw;
 }
 #showWrapper{
@@ -1043,7 +1043,7 @@ input[name='userid']{
   }
   #blogWrapper{
     grid-template-columns: 100vw;
-    grid-template-rows: 15vh 10vh minmax(70vh, auto);
+    grid-template-rows: 10vh 10vh minmax(70vh, auto);
 
     #blogHead{
       grid-area: 1/1/2/2;
@@ -1290,7 +1290,6 @@ input[name='userid']{
 }
 @media screen and (max-width: 343px){
   #blogWrapper{
-    grid-template-rows: 10vh 10vh minmax(70vh, auto);
 
     #blogHead h2{
       align-self: start;

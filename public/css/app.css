@@ -10988,7 +10988,7 @@ body {
 
 #blogWrapper {
   display: grid;
-  grid-template-rows: 15vh minmax(70vh, auto);
+  grid-template-rows: 12vh minmax(70vh, auto);
   grid-template-columns: 70vw 30vw;
 }
 
@@ -11561,7 +11561,7 @@ input[name='userid'] {
 
   #blogWrapper {
     grid-template-columns: 100vw;
-    grid-template-rows: 15vh 10vh minmax(70vh, auto);
+    grid-template-rows: 10vh 10vh minmax(70vh, auto);
   }
 
   #blogWrapper #blogHead {
@@ -11864,10 +11864,6 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 343px) {
-  #blogWrapper {
-    grid-template-rows: 10vh 10vh minmax(70vh, auto);
-  }
-
   #blogWrapper #blogHead h2 {
     -ms-flex-item-align: start;
         align-self: start;

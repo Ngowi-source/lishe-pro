@@ -56,7 +56,7 @@
         <div id="blogSide">
 
             {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
-            <a class="sideInline" href="/article/create"><button>New Article&nbsp; <i class="fas fa-plus"></i>&nbsp;</button></a>
+            <a class="sideInline" href="/article/create"><button> New Article&nbsp;</button></a>
             {{--@endif--}}<br class="sideDel"/><br class="sideDel"/>
 
             <h4 class="archToggle sideInline">Archives</h4>
