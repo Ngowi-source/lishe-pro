@@ -10619,7 +10619,7 @@ body {
 
 #homeIntro .intro #intro1,
 #homeIntro .intro .and {
-  fill: #D9DCD8;
+  fill: #D57030;
   stroke: #D57030;
   stroke-width: 0.25px;
   stroke-linejoin: round;
@@ -10629,9 +10629,10 @@ body {
 #homeIntro .intro #intro2,
 #homeIntro .intro #intro3,
 #homeIntro .intro #intro4 {
-  stroke: #9BA747;
+  stroke: #D9DCD8;
+  font-weight: 900;
   font-size: x-small;
-  stroke-width: 0.75px;
+  stroke-width: 1px;
   stroke-linejoin: round;
 }
 
@@ -11490,10 +11491,6 @@ input[name='userid'] {
     background-color: inherit;
   }
 
-  .pro {
-    color: #8B281F !important;
-  }
-
   .logo {
     left: 1vw !important;
   }
@@ -11704,14 +11701,6 @@ input[name='userid'] {
   #showWrapper #blogWriter .card-body h5 {
     color: #8B281F;
   }
-
-  /*.largep{
-    display: block;
-    min-height: 85%!important;
-  }
-  .smallp{
-    display: none;
-  }*/
 }
 
 @media screen and (min-width: 757px) {
@@ -11747,6 +11736,10 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 610px) {
+  .pro {
+    color: #8B281F !important;
+  }
+
   #intro {
     font-size: 2.45rem;
   }

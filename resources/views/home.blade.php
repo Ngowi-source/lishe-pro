@@ -132,19 +132,27 @@
 
             <svg class="intro" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-                <text x="0" y="15" id="intro1" width="60%">
+                <defs>
+                    <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#9ba747" stop-opacity="0.5" />
+                        <stop offset="50%" stop-color="#d57030" stop-opacity="0.5" />
+                        <stop offset="100%" stop-color="#8b281f" stop-opacity="1" />
+                    </linearGradient>
+                </defs>
+
+                <text x="0" y="15" id="intro1" width="60%" >
                     BETTER HEALTH BY
                 </text>
-                <text x="0" y="30" id="intro2" width="70%">
+                <text x="0" y="30" id="intro2" width="70%" fill="url(#linear)" >
                     NUTRITION TOOLS,
                 </text>
-                <text x="0" y="45" id="intro3" width="80%" >
+                <text x="0" y="45" id="intro3" width="80%" fill="url(#linear)" >
                     Dietary Assessment
                 </text>
                 <text x="0" y="60" class="and" >
                     and
                 </text>
-                <text x="25" y="60" id="intro4" >
+                <text x="25" y="60" id="intro4" fill="url(#linear)" >
                     EXPERTISE
                 </text>
 
