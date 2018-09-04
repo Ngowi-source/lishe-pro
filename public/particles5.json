@@ -8,7 +8,7 @@
       "image": {
         "src": "/carrot.png"
       },
-      "opacity":{
+      "opacity": {
         "value": 1,
         "anim": {
           "enable": true,
@@ -33,8 +33,8 @@
         "enable": false
       }
     },
-    "interactivity":{
-      "events":{
+    "interactivity": {
+      "events": {
         "onclick": {
           "enable": true,
           "mode": "repulse"
@@ -43,3 +43,4 @@
       }
     }
   }
+}
