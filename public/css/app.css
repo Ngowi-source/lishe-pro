@@ -11123,6 +11123,17 @@ body {
 .articleBod img {
   max-width: 100% !important;
   height: auto !important;
+  width: 100%;
+}
+
+.index img {
+  opacity: 0.5;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.index img:hover {
+  opacity: 1;
 }
 
 #blog .card {
@@ -11243,6 +11254,7 @@ body {
 
 .readMore a {
   color: #D57030 !important;
+  text-decoration: none;
 }
 
 input[name='userid'] {

@@ -75,7 +75,7 @@
                 <h3><a href="/blog/{{str_replace(' ','-',$article->title)}}">{{$article->title}}</a></h3>
                 <span class="articleTime"><b >{{$article->user->firstname}} {{$article->user->lastname}}</b> on {{$article->created_at->toFormattedDateString()}}</span><br /><br />
 
-                <span class="articleBod">
+                <span class="articleBod index">
 
                     @if(preg_match('/<p><img(.*)>/', $article->body, $images))
                         {!! $images[0] !!}
@@ -83,7 +83,20 @@
                     @endif
 
                 </span><br />
-                <span class="articleTime"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>{{count($article->comments)}} comments</i></a></span>
+                <span class="articleTime">
+                    <i>
+                        @if(count($article->comments)>1)
+                            {{count($article->comments)}} comments
+
+                        @elseif(count($article->comments)==1)
+                            {{count($article->comments)}} comment
+
+                        @else
+                            No comments
+                        @endif
+
+                    </i>
+                </span>
                 <hr/> <br />
             @endforeach
 

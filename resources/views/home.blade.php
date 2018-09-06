@@ -204,7 +204,17 @@
                             <span class="articleTime">{{$articles[$i]->created_at->toFormattedDateString()}} by <b>{{$articles[$i]->user->firstname}} {{$articles[$i]->user->lastname}}</b> </span><br /><br />
 
                             <span class="articleBod">@if(strlen(preg_replace('/<p><img(.*)>/', '', $articles[$i]))>115) {!! substr(preg_replace('/<p><img(.*)>/', '', $articles[$i]->body),0,115) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}"><i>Read More</i></a></span> @else{!! preg_replace('/<p><img(.*)>/', '', $articles[$i]->body) !!}@endif</span><br />
-                            <span class="articleTime"><i>{{count($articles[$i]->comments)}} comments</i></span>
+                            <span class="articleTime">
+                                <i>
+                                    @if(count($articles[$i]->comments)>1)
+                                        {{count($articles[$i]->comments)}} comments
+                                    @elseif(count($articles[$i]->comments)==1)
+                                        {{count($articles[$i]->comments)}} comment
+                                    @else
+                                        No comments
+                                    @endif
+                                </i>
+                            </span>
                         </div>
                     </div>
                 @endif
