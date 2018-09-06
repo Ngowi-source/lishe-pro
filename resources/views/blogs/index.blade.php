@@ -78,7 +78,7 @@
                 <span class="articleBod index">
 
                     @if(preg_match('/<p><img(.*)>/', $article->body, $images))
-                        {!! $images[0] !!}
+                        <a href="/blog/{{str_replace(' ','-',$article->title)}}">{!! $images[0] !!}</a>
                         <span class="readMore"><a href="/blog/{{str_replace(' ','-',$article->title)}}"><i>Read More</i></a></span>
                     @endif
 

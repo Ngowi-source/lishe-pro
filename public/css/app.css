@@ -11120,21 +11120,23 @@ body {
   font-size: large;
 }
 
+.articleBod a img,
 .articleBod img {
   max-width: 100% !important;
   height: auto !important;
   width: 100%;
 }
 
-.index img {
+.index a img {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
-  border: 20px solid #F29D4B;
+  border: 15px solid #D57030;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
-.index img:hover {
+.index a img:hover {
   opacity: 0.5;
 }
 
