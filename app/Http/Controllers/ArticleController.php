@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\NewComment;
+use App\User;
 use Illuminate\Http\Request;
 use App\Article;
 use App\Comment;
@@ -76,11 +78,16 @@ class ArticleController extends Controller
             'body'=> 'required|min:2'
         ]);
 
-        Comment::create([
+        $comment = Comment::create([
             'article_id' => $posted->id,
             'body' => request('body'),
             'user_id'=> Auth::id()
         ]);
+
+        $comenteeId = $posted->user_id;
+        $comentee = User::where('id', '=', $comenteeId);
+
+        $comentee->notify(new NewComment($comment));
 
         return back()->with(['commentsuccess'=> 'Your comment is added!']);
     }

@@ -11130,10 +11130,11 @@ body {
 .index a img {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
-  border: 15px solid #D57030;
+  border: 15px solid #F29D4B;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .index a img:hover {
