@@ -213,10 +213,10 @@ body{
     }
   }
 }
-#tools {
+#tools, #nots {
   position: relative;
 }
-.submenu{
+.submenu, .notifications{
   display: none;
   z-index: 100;
   background: #fff;
@@ -231,12 +231,9 @@ body{
   &.display{
     display: block;
   }
-  .topname{
-    color: #000!important;
-  }
 
 }
-.submenu a{
+.submenu a, .notifications a{
   z-index: 100;
   color: $c5!important;
   text-decoration: none;
@@ -254,7 +251,7 @@ body{
     cursor: pointer!important;
   }
 }
-#dal, #tools{
+#dal, #tools, #nots{
   cursor: pointer;
   color: $c5;
 }

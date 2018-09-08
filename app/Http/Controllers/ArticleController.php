@@ -114,7 +114,7 @@ class ArticleController extends Controller
 
         if($replyeeId != Auth::id())
         {
-            User::whereId($replyeeId)->first()->notify(new NewComment($reply));
+            User::whereId($replyeeId)->first()->notify(new NewReply($reply));
         }
 
         return back()->with(['replysuccess'=> 'Your reply is sent!']);

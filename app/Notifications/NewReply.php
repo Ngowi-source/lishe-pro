@@ -58,6 +58,7 @@ class NewReply extends Notification
         return [
             'reply_id' => $this->reply->id,
             'replier_id' => $this->reply->user_id,
+            'reply' => $this->reply->body
         ];
     }
 }

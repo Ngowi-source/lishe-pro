@@ -29,8 +29,29 @@
         <a href="/blog">Blog</a>
         @if(Auth::check())
 
+            <a id="nots"><i class="notsIcon far fa-bell"></i>
+                <div class="notifications">
+                    @if(count(Auth::user()->unreadNotifications))
+                        @foreach(Auth::user()->unreadNotifications as $notification)
+                            @if(preg_match('/(.*)NewComment/', $notification->type, $match))
+
+                                <a href="/blog/{{str_replace(' ','-',\App\Comment::whereId($notification->data[0])->article()->title)}}">You have a new comment: {{substr($notification->data[2], 0, 4)}}...</a>
+                            @elseif(preg_match('/(.*)NewReply/', $notification->type, $match))
+
+                                <a href="/blog/{{str_replace(' ','-',\App\Reply::whereId($notification->data[0])->comment()->article()->title)}}">You have a new comment: {{substr($notification->data[2], 0, 4)}}...</a>
+
+                            @endif
+                        @endforeach
+                    @else
+                        <a>You have no notifications</a>
+                    @endif
+                </div>
+            </a>
             <a href="/logout">Logout</a>
-            <a class="topname" href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0,1))}}.</a>
+            <a class="topname" href="/account/{{Auth::user()->id}}">
+                <i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0,1))}}.
+            </a>
+
         @else
             <a href="/login" class="login">Login</a>
             <a href="/register" class="register">Register</a>

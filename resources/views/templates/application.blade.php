@@ -65,8 +65,18 @@
                 $('.submenu').removeClass('display');
             });
 
+            $("#nots, .notifications").hover(function() {
+                $('.notifications').addClass('display');
+            }, function(){
+                $('.notifications').removeClass('display');
+            });
+
             $("#tools").click(function(){
                 $(".submenu").toggleClass('display');
+            });
+
+            $("#nots").click(function(){
+                $(".notifications").toggleClass('display');
             });
 
             $(".menu").click(function(){
