@@ -86,9 +86,8 @@ class ArticleController extends Controller
         ]);
 
         $comenteeId = $posted->user_id;
-        $commentee = User::where('id', '=', $comenteeId);
 
-        User::find(1)->notify(new NewComment($comment));
+        User::whereId($comenteeId)->notify(new NewComment($comment));
 
         return back()->with(['commentsuccess'=> 'Your comment is added!']);
     }

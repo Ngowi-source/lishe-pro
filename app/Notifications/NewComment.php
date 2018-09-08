@@ -57,8 +57,9 @@ class NewComment extends Notification
     {
         return [
             'comment_id' => $this->comment->id,
-            'commenter_id' => $this->comment->user_id
+            'commenter_id' => $this->comment->user_id,
+            'comment' => $this->comment->body
         ];
     }
-    
+
 }
