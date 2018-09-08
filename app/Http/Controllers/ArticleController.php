@@ -8,13 +8,11 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Comment;
 use App\Reply;
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Notification;
 
 class ArticleController extends Controller
 {
-
-    use Notifiable;
 
     public function __construct()
     {
@@ -88,9 +86,10 @@ class ArticleController extends Controller
         ]);
 
         $comenteeId = $posted->user_id;
-        $comentee = User::where('id', '=', $comenteeId);
+        $commentee = User::where('id', '=', $comenteeId);
 
-        $comentee->notify(new NewComment($comment));
+        /*$commentee->notify(new NewComment($comment));*/
+        Notification::send($commentee, new NewComment($comment));
 
         return back()->with(['commentsuccess'=> 'Your comment is added!']);
     }
