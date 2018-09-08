@@ -30,7 +30,7 @@ class NewComment extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        return ['database'];
     }
 
     /**
@@ -54,6 +54,11 @@ class NewComment extends Notification
      * @return array
      */
     public function toArray($notifiable)
+    {
+        return [];
+    }
+
+    public function toDatabase($notifiable)
     {
         return [
             'comment_id' => $this->comment->id,
