@@ -10660,6 +10660,10 @@ body {
   display: block;
 }
 
+.notifications {
+  left: 30% !important;
+}
+
 .submenu a,
 .notifications a {
   z-index: 100;
@@ -11391,6 +11395,10 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 1015px) {
+  .tools {
+    display: none;
+  }
+
   #loginForm .float-right {
     float: left !important;
   }
@@ -11569,14 +11577,15 @@ input[name='userid'] {
     margin-top: -0.9rem;
   }
 
+  .nav-links.showMenu .submenu a {
+    font-size: large !important;
+  }
+
+  .nav-links.showMenu .notifications,
   .nav-links.showMenu .submenu {
     top: 20vh;
     left: 30vw;
     padding: 15px 0 15px 0;
-  }
-
-  .nav-links.showMenu .submenu a {
-    font-size: large !important;
   }
 
   #blogWrapper {
@@ -11778,10 +11787,6 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 533px) {
-  .tools {
-    display: none;
-  }
-
   #blogWrapper #blogBod .articleBod,
   #showWrapper #blogBod .articleBod {
     font-size: small !important;

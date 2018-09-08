@@ -233,6 +233,9 @@ body{
   }
 
 }
+.notifications{
+  left: 30%!important;
+}
 .submenu a, .notifications a{
   z-index: 100;
   color: $c5!important;
@@ -874,6 +877,9 @@ input[name='userid']{
   }
 }
 @media screen and (max-width: 1015px){
+  .tools{
+    display: none;
+  }
   #loginForm{
     .float-right{
       float: left!important;
@@ -1051,12 +1057,14 @@ input[name='userid']{
       }
     }
     .submenu{
-      top: 20vh;
-      left: 30vw;
-      padding: 15px 0 15px 0;
       a{
         font-size: large!important;
       }
+    }
+    .notifications, .submenu{
+      top: 20vh;
+      left: 30vw;
+      padding: 15px 0 15px 0;
     }
   }
   #blogWrapper{
@@ -1242,9 +1250,6 @@ input[name='userid']{
   }
 }
 @media screen and (max-width: 533px){
-  .tools{
-    display: none;
-  }
   #blogWrapper, #showWrapper{
     #blogBod{
       .articleBod{
