@@ -8,10 +8,13 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Comment;
 use App\Reply;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
+
+    use Notifiable;
 
     public function __construct()
     {
