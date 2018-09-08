@@ -100,11 +100,16 @@ class ArticleController extends Controller
             'cid'=> 'integer'
         ]);
 
-        Reply::create([
+        $reply = Reply::create([
             'comment_id' => request('cid'),
             'body' => request('body'),
             'user_id'=> Auth::id()
         ]);
+
+        $commented = Comment::whereId(request('cid'));
+        $replyeeId = $commented->user_id;
+
+        User::whereId($replyeeId)->first()->notify(new NewComment($reply));
 
         return back()->with(['replysuccess'=> 'Your reply is sent!']);
     }

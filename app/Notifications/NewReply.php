@@ -7,19 +7,19 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class NewComment extends Notification
+class NewReply extends Notification
 {
     use Queueable;
 
-    public $comment;
+    public $reply;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct($comment)
+    public function __construct($reply)
     {
-        $this->comment = $comment;
+        $this->reply = $reply;
     }
 
     /**
@@ -56,9 +56,8 @@ class NewComment extends Notification
     public function toArray($notifiable)
     {
         return [
-            'comment_id' => $this->comment->id,
-            'commenter_id' => $this->comment->user_id,
+            'reply_id' => $this->reply->id,
+            'replier_id' => $this->reply->user_id,
         ];
     }
-
 }
