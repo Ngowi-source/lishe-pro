@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\NewReply;
 use App\Notifications\NewComment;
 use App\User;
 use Illuminate\Http\Request;
