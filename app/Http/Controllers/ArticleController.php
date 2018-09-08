@@ -106,7 +106,7 @@ class ArticleController extends Controller
             'user_id'=> Auth::id()
         ]);
 
-        $commented = Comment::whereId(request('cid'));
+        $commented = Comment::whereId(request('cid'))->first();
         $replyeeId = $commented->user_id;
 
         User::whereId($replyeeId)->first()->notify(new NewComment($reply));
