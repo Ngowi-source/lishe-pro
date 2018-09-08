@@ -87,7 +87,10 @@ class ArticleController extends Controller
 
         $comenteeId = $posted->user_id;
 
-        User::whereId($comenteeId)->first()->notify(new NewComment($comment));
+        if($comenteeId != Auth::id())
+        {
+            User::whereId($comenteeId)->first()->notify(new NewComment($comment));
+        }
 
         return back()->with(['commentsuccess'=> 'Your comment is added!']);
     }
@@ -109,7 +112,10 @@ class ArticleController extends Controller
         $commented = Comment::whereId(request('cid'))->first();
         $replyeeId = $commented->user_id;
 
-        User::whereId($replyeeId)->first()->notify(new NewComment($reply));
+        if($replyeeId != Auth::id())
+        {
+            User::whereId($replyeeId)->first()->notify(new NewComment($reply));
+        }
 
         return back()->with(['replysuccess'=> 'Your reply is sent!']);
     }
