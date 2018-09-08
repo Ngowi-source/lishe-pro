@@ -2,7 +2,6 @@
 
 namespace App\Notifications;
 
-use App\Comment;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -18,7 +17,7 @@ class NewComment extends Notification
      *
      * @return void
      */
-    public function __construct(Comment $comment)
+    public function __construct($comment)
     {
         $this->comment = $comment;
     }
@@ -31,7 +30,7 @@ class NewComment extends Notification
      */
     public function via($notifiable)
     {
-        return ['database'];
+        return ['mail'];
     }
 
     /**
