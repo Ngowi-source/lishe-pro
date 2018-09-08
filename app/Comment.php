@@ -2,13 +2,10 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    use Notifiable;
-
     protected $fillable = ['article_id', 'body', 'user_id'];
 
     protected $table = 'comments';

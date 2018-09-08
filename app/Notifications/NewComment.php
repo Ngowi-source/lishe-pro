@@ -55,14 +55,10 @@ class NewComment extends Notification
      */
     public function toArray($notifiable)
     {
-        return [];
-    }
-
-    public function toDatabase($notifiable)
-    {
         return [
             'comment_id' => $this->comment->id,
             'commenter_id' => $this->comment->user_id
         ];
     }
+    
 }
