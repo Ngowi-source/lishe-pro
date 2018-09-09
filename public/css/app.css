@@ -10664,6 +10664,10 @@ body {
   left: 30% !important;
 }
 
+.notifications a {
+  font-size: small !important;
+}
+
 .submenu a,
 .notifications a {
   z-index: 100;
@@ -11586,6 +11590,10 @@ input[name='userid'] {
     top: 20vh;
     left: 30vw;
     padding: 15px 0 15px 0;
+  }
+
+  .nav-links.showMenu .notifications a {
+    font-size: small !important;
   }
 
   #blogWrapper {

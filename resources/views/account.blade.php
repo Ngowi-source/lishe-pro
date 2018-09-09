@@ -25,8 +25,36 @@
                 <a href="/lishe-pro24">Lishe Pro-24</a>
             </div>
         </a>
+        <a href="/blog">Blog</a>
+        <a id="nots"><i class="notsIcon far fa-bell"></i>
+            <div class="notifications">
+                @if(count(Auth::user()->unreadNotifications))
+                    @foreach(Auth::user()->unreadNotifications as $notification)
+                        @if(preg_match('/(.*)NewComment/', $notification->type, $match))
+
+                            <a href="/blog/{{str_replace(' ','-',\App\Comment::whereId($notification->data['comment_id'])->first()->article->title)}}">You have a new comment: {{substr($notification->data['comment'], 0, 4)}}...</a>
+
+                        @endif
+                        @if(preg_match('/(.*)NewReply/', $notification->type, $match))
+
+                            <a href="/blog/{{str_replace(' ','-',\App\Comment::whereId(\App\Reply::whereId($notification->data['reply_id'])->first()->comment_id)->first()->article->title)}}">You have a reply: {{substr($notification->data['reply'], 0, 4)}}...</a>
+
+                        @endif
+                    @endforeach
+                @else
+                    <a>You have no notifications</a>
+                @endif
+            </div>
+        </a>
+
         <a href="/logout">Logout</a>
-        <a class="topname" href="/account/{{Auth::user()->id}}"><i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0, 1))}}.</a>
+        <a class="topname" href="/account/{{Auth::user()->id}}">
+            <i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0,1))}}.
+        </a>
+
+        @if((Auth::check()) && (Auth::user()->id < 6))
+            <a href="/admin-management">Administer</a>
+        @endif
 
     </div>
 
