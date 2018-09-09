@@ -223,7 +223,7 @@ body{
   position: absolute;
   top: 100%;
   left: 0;
-  padding: 20px 0 15px 30px;
+  padding: 20px 1% 15px 1%;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1067,7 +1067,7 @@ input[name='userid']{
     .notifications, .submenu{
       top: 20vh;
       left: 30vw;
-      padding: 15px 0 15px 0;
+      padding: 15px 1% 15px 1%;
     }
     .notifications{
       a{
