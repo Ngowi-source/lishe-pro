@@ -1006,6 +1006,10 @@ input[name='userid']{
   }
 }
 @media screen and (max-width: 800px){
+  #nots sup{
+    font-size: small!important;
+    top: -2.3em!important;
+  }
   .iconfeatured{
     font-size: large;
   }
