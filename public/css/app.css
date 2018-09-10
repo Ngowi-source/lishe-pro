@@ -10674,14 +10674,14 @@ body {
 }
 
 #nots sup {
-  color: #D9DCD8;
-  background: #8B281F;
+  color: #8B281F;
+  background: #D9DCD8;
   border: 1px solid #8B281F;
   border-radius: 100%;
   padding: 3px;
   padding-top: 0;
   font-size: x-small !important;
-  top: -50% !important;
+  top: -60% !important;
 }
 
 .submenu a,
