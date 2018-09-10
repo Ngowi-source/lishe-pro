@@ -243,6 +243,12 @@ body{
     border-radius: 3px!important;
   }
 }
+.notsIcon sup{
+  color: $c1;
+  background: $c5;
+  border: 1px solid $c5;
+  border-radius: 50%;
+}
 .submenu a, .notifications a{
   z-index: 100;
   color: $c5!important;

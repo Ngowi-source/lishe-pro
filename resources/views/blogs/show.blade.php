@@ -33,7 +33,7 @@
         <a href="/blog">Blog</a>
 
         @if(Auth::check())
-            <a id="nots"><i class="notsIcon far fa-bell"></i>
+            <a id="nots"><i class="notsIcon far fa-bell"></i><sup>@if(count(Auth::user()->unreadNotifications)){{count(Auth::user()->unreadNotifications)}}@endif</sup>
                 <div class="notifications">
                     @if(count(Auth::user()->unreadNotifications))
                         @foreach(Auth::user()->unreadNotifications as $notification)

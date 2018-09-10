@@ -10673,6 +10673,13 @@ body {
   border-radius: 3px !important;
 }
 
+.notsIcon sup {
+  color: #D9DCD8;
+  background: #8B281F;
+  border: 1px solid #8B281F;
+  border-radius: 50%;
+}
+
 .submenu a,
 .notifications a {
   z-index: 100;
