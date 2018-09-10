@@ -32,40 +32,31 @@
     <div id="content">@yield('content')</div>
 
     @section('userNavigation')
-        @if(Auth::check())
 
-            <a id="nots"><i class="notsIcon far fa-bell"></i>
-                <div class="notifications">
-                    @if(count(Auth::user()->unreadNotifications))
-                        @foreach(Auth::user()->unreadNotifications as $notification)
-                            @if(preg_match('/(.*)NewComment/', $notification->type, $match))
+        <a id="nots"><i class="notsIcon far fa-bell"></i>
+            <div class="notifications">
+                @if(count(Auth::user()->unreadNotifications))
+                    @foreach(Auth::user()->unreadNotifications as $notification)
+                        @if(preg_match('/(.*)NewComment/', $notification->type, $match))
 
-                                <a class="list-group_item" href="/blog/{{$notification->data['comment_link']}}">{{$notification->data['commenter']}} commented: {{substr($notification->data['comment'], 0, 7)}}...</a>
+                            <a class="list-group_item" href="/blog/{{$notification->data['comment_link']}}">{{$notification->data['commenter']}} commented: {{substr($notification->data['comment'], 0, 7)}}...</a>
 
-                            @endif
-                            @if(preg_match('/(.*)NewReply/', $notification->type, $match))
+                        @endif
+                        @if(preg_match('/(.*)NewReply/', $notification->type, $match))
 
-                                <a class="list-group-item" href="/blog/{{$notification->data['reply_link']}}">{{$notification->data['replier']}} replied: {{substr($notification->data['reply'], 0, 7)}}...</a>
+                            <a class="list-group-item" href="/blog/{{$notification->data['reply_link']}}">{{$notification->data['replier']}} replied: {{substr($notification->data['reply'], 0, 7)}}...</a>
 
-                            @endif
-                        @endforeach
-                    @else
-                        <a>You have no notifications</a>
-                    @endif
-                </div>
-            </a>
-            <a href="/logout">Logout</a>
-            <a class="topname" href="/account/{{Auth::user()->id}}">
-                <i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0,1))}}.
-            </a>
-
-        @else
-            <a href="/login" class="login">Login</a>
-            <a href="/register" class="register">Register</a>
-        @endif
-        @if((Auth::check()) && (Auth::user()->id < 6))
-            <a href="/admin-management">Administer</a>
-        @endif
+                        @endif
+                    @endforeach
+                @else
+                    <a>You have no notifications</a>
+                @endif
+            </div>
+        </a>
+        <a href="/logout">Logout</a>
+        <a class="topname" href="/account/{{Auth::user()->id}}">
+            <i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0,1))}}.
+        </a>
 
     @endsection
 

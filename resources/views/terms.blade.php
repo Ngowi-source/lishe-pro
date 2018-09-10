@@ -26,9 +26,21 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
+
         @section('userNavigation')
-            @parent
+
+            @if(Auth::check())
+                @parent
+            @else
+                <a href="/login" class="login">Login</a>
+                <a href="/register" class="register">Register</a>
+            @endif
+            @if((Auth::check()) && (Auth::user()->id < 6))
+                <a href="/admin-management">Administer</a>
+            @endif
+
         @endsection
+
     </div>
 
 @endsection
