@@ -2,6 +2,8 @@
 
 namespace App\Notifications;
 
+use App\Comment;
+use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -55,9 +57,12 @@ class NewComment extends Notification
      */
     public function toArray($notifiable)
     {
+        $link = str_replace(' ','-',Comment::whereId($this->comment->id)->first()->article->title);
+        $user = User::whereId($this->comment->user_id)->first()->firstname;
+
         return [
-            'comment_id' => $this->comment->id,
-            'commenter_id' => $this->comment->user_id,
+            'comment_link' => $link,
+            'commenter' => $user,
             'comment' => $this->comment->body
         ];
     }

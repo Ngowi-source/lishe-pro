@@ -10,7 +10,6 @@ use App\Article;
 use App\Comment;
 use App\Reply;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Notification;
 
 class ArticleController extends Controller
 {
@@ -74,20 +73,23 @@ class ArticleController extends Controller
 
     public function comment($title)
     {
+        //article object fetched
         $posted = Article::where('title', '=', str_replace('-', ' ', $title))->first();
 
+        //validate comment input
         $this->validate(request(), [
             'body'=> 'required|min:2'
         ]);
 
+        //create comment object and reply
         $comment = Comment::create([
             'article_id' => $posted->id,
             'body' => request('body'),
             'user_id'=> Auth::id()
         ]);
 
+        //notify the owner of the article about a new comment
         $comenteeId = $posted->user_id;
-
         if($comenteeId != Auth::id())
         {
             User::whereId($comenteeId)->first()->notify(new NewComment($comment));
@@ -98,24 +100,36 @@ class ArticleController extends Controller
 
     public function reply()
     {
-
+        //validate reply input
         $this->validate(request(), [
             'body'=> 'required|min:2',
             'cid'=> 'integer'
         ]);
 
+        //create reply object and send reply
         $reply = Reply::create([
             'comment_id' => request('cid'),
             'body' => request('body'),
             'user_id'=> Auth::id()
         ]);
 
+        //send a notification to the owner of the comment
         $commented = Comment::whereId(request('cid'))->first();
         $replyeeId = $commented->user_id;
 
         if($replyeeId != Auth::id())
         {
             User::whereId($replyeeId)->first()->notify(new NewReply($reply));
+        }
+
+        //send a notification to other users who replied to the same comment
+        $replied = Reply::whereCommentId(request('cid'))->get();
+        foreach ($replied as $rep)
+        {
+            if($rep->user_id != Auth::id())
+            {
+                User::whereId($rep->user_id)->first()->notify(new NewReply($reply));
+            }
         }
 
         return back()->with(['replysuccess'=> 'Your reply is sent!']);

@@ -2,6 +2,9 @@
 
 namespace App\Notifications;
 
+use App\Comment;
+use App\Reply;
+use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -55,9 +58,12 @@ class NewReply extends Notification
      */
     public function toArray($notifiable)
     {
+        $reply_link = str_replace(' ','-',Comment::whereId(Reply::whereId($this->reply->id)->first()->comment_id)->first()->article->title);
+        $user = User::whereId($this->reply->user_id)->first()->firstname;
+
         return [
-            'reply_id' => $this->reply->id,
-            'replier_id' => $this->reply->user_id,
+            'reply_link' => $reply_link,
+            'replier' => $user,
             'reply' => $this->reply->body
         ];
     }

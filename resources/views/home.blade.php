@@ -35,12 +35,12 @@
                         @foreach(Auth::user()->unreadNotifications as $notification)
                             @if(preg_match('/(.*)NewComment/', $notification->type, $match))
 
-                                <a class="list-group_item" href="/blog/{{str_replace(' ','-',\App\Comment::whereId($notification->data['comment_id'])->first()->article->title)}}">You have a new comment: {{substr($notification->data['comment'], 0, 4)}}...</a>
+                                <a class="list-group_item" href="/blog/{{$notification->data['comment_link']}}">{{$notification->data['commenter']}} commented: {{substr($notification->data['comment'], 0, 7)}}...</a>
 
                             @endif
                             @if(preg_match('/(.*)NewReply/', $notification->type, $match))
 
-                                <a class="list-group-item" href="/blog/{{str_replace(' ','-',\App\Comment::whereId(\App\Reply::whereId($notification->data['reply_id'])->first()->comment_id)->first()->article->title)}}">You have a reply: {{substr($notification->data['reply'], 0, 4)}}...</a>
+                                <a class="list-group-item" href="/blog/{{$notification->data['reply_link']}}">{{$notification->data['replier']}} replied: {{substr($notification->data['reply'], 0, 7)}}...</a>
 
                             @endif
                         @endforeach
