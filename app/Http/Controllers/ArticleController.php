@@ -21,7 +21,7 @@ class ArticleController extends Controller
 
     public function index()
     {
-        /*$articles = Article::latest()->filter(request(['month', 'year']))->simplePaginate(3);*/
+        /*$articles = Article::latest()->filter(request(['month', 'year']))->simplePaginate(4);*/
         $articles = Article::latest();
 
         if($month = request('month'))
@@ -34,7 +34,7 @@ class ArticleController extends Controller
             $articles->whereYear('created_at', $year);
         }
 
-        $articles = $articles->simplePaginate(3);
+        $articles = $articles->simplePaginate(4);
 
         $archives = Article::archives();
 
