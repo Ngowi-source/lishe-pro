@@ -118,35 +118,40 @@
 @section('content')
 
     @if(session()->has('regsuccess'))
-        <div class="alert alertr alertwlcm alert-success alert-dismissible alert-icon-left border-0">
+        <div class="alert alertr alertwlcm alert-success alert-dismissible alert-icon-left">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <strong class="text-center">{{session('regsuccess')}}</strong>&nbsp; A link is sent to your email, click it to activate your account
         </div>
     @endif
 
     @if(session()->has('loginsuccess'))
-        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
+        {{--<div class="alert alert-success alert-dismissible alert-icon-left ">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <span class="text-center">{{session('loginsuccess')}} {{Auth::user()->firstname}}</span>&nbsp;
-        </div>
+        </div>--}}
+        <script>
+            new Noty({
+                text: '{{session('loginsuccess')}} {{Auth::user()->firstname}}',
+            }).show();
+        </script>
     @endif
 
     @if(session()->has('userdel'))
-        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
+        <div class="alert alert-success alert-dismissible alert-icon-left">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <span class="text-center">{{session('userdel')}}</span>&nbsp;
         </div>
     @endif
 
     @if(session()->has('outsuccess'))
-        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
+        <div class="alert alert-success alert-dismissible alert-icon-left">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <strong class="text-center">{{session('outsuccess')}}</strong>&nbsp;
         </div>
     @endif
 
     @if(session()->has('adminerror'))
-        <div class="alert alert-danger alert-dismissible alert-icon-left border-0">
+        <div class="alert alert-danger alert-dismissible alert-icon-left">
             <button type="button" class="close" data-dismiss="alert">&Cross;</button>
             <strong class="text-center">Disallowed...</strong>&nbsp;{{session('adminerror')}}
         </div>
