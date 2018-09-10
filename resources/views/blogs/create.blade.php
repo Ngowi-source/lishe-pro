@@ -36,6 +36,8 @@
         @if(Auth::check())
             <a id="nots"><i class="notsIcon far fa-bell"></i><sup>@if(count(Auth::user()->unreadNotifications)){{count(Auth::user()->unreadNotifications)}}@endif</sup>
                 <div class="notifications">
+                    <span class="large text-center">Notifications</span>
+
                     @if(count(Auth::user()->unreadNotifications))
                         @foreach(Auth::user()->unreadNotifications as $notification)
                             @if(preg_match('/(.*)NewComment/', $notification->type, $match))
