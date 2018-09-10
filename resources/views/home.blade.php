@@ -31,16 +31,17 @@
         @if(Auth::check())
             <a id="nots"><i class="notsIcon far fa-bell"></i><sup>@if(count(Auth::user()->unreadNotifications)){{count(Auth::user()->unreadNotifications)}}@endif</sup>
                 <div class="notifications">
+                    Notifications
                     @if(count(Auth::user()->unreadNotifications))
                         @foreach(Auth::user()->unreadNotifications as $notification)
                             @if(preg_match('/(.*)NewComment/', $notification->type, $match))
 
-                                <a class="list-group-item alert-dismissable" href="/blog/{{$notification->data['comment_link']}}?nots={{$notification->id}}">{{$notification->data['commenter']}} commented: {{substr($notification->data['comment'], 0, 7)}}...</a>
+                                <a class="list-group-item" href="/blog/{{$notification->data['comment_link']}}?nots={{$notification->id}}">{{$notification->data['commenter']}} commented: {{substr($notification->data['comment'], 0, 7)}}...</a>
 
                             @endif
                             @if(preg_match('/(.*)NewReply/', $notification->type, $match))
 
-                                <a class="list-group-item alert-dismissable" href="/blog/{{$notification->data['reply_link']}}?nots={{$notification->id}}">{{$notification->data['replier']}} replied: {{substr($notification->data['reply'], 0, 7)}}...</a>
+                                <a class="list-group-item" href="/blog/{{$notification->data['reply_link']}}?nots={{$notification->id}}">{{$notification->data['replier']}} replied: {{substr($notification->data['reply'], 0, 7)}}...</a>
 
                             @endif
                         @endforeach
