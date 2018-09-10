@@ -31,12 +31,6 @@
 
         <div id="content">@yield('content')</div>
 
-        @section('userNavigation')
-
-
-
-        @endsection
-
         <div id="footer">
             <div class="text-center privacy"><br />
                 <a href="/privacy">Privacy Policy</a>&nbsp;|&nbsp;<a href="/terms-of-service">Terms of Service</a>

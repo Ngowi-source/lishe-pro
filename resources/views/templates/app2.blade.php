@@ -31,35 +31,6 @@
 
     <div id="content">@yield('content')</div>
 
-    @section('userNavigation')
-
-        <a id="nots"><i class="notsIcon far fa-bell"></i>
-            <div class="notifications">
-                @if(count(Auth::user()->unreadNotifications))
-                    @foreach(Auth::user()->unreadNotifications as $notification)
-                        @if(preg_match('/(.*)NewComment/', $notification->type, $match))
-
-                            <a class="list-group_item" href="/blog/{{$notification->data['comment_link']}}">{{$notification->data['commenter']}} commented: {{substr($notification->data['comment'], 0, 7)}}...</a>
-
-                        @endif
-                        @if(preg_match('/(.*)NewReply/', $notification->type, $match))
-
-                            <a class="list-group-item" href="/blog/{{$notification->data['reply_link']}}">{{$notification->data['replier']}} replied: {{substr($notification->data['reply'], 0, 7)}}...</a>
-
-                        @endif
-                    @endforeach
-                @else
-                    <a>You have no notifications</a>
-                @endif
-            </div>
-        </a>
-        <a href="/logout">Logout</a>
-        <a class="topname" href="/account/{{Auth::user()->id}}">
-            <i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0,1))}}.
-        </a>
-
-    @endsection
-
     <div id="footer">
         <div class="text-center privacy"><br />
             <a href="/privacy">Privacy Policy</a>&nbsp;|&nbsp;<a href="/terms-of-service">Terms of Service</a>
