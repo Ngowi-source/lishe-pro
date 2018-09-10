@@ -238,6 +238,10 @@ body{
   a{
     font-size: small!important;
   }
+  .list-group-item{
+    border: 1px solid $c2!important;
+    border-radius: 3px!important;
+  }
 }
 .submenu a, .notifications a{
   z-index: 100;

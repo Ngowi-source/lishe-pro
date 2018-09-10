@@ -10668,6 +10668,11 @@ body {
   font-size: small !important;
 }
 
+.notifications .list-group-item {
+  border: 1px solid #9BA747 !important;
+  border-radius: 3px !important;
+}
+
 .submenu a,
 .notifications a {
   z-index: 100;
