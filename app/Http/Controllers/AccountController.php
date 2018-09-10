@@ -9,6 +9,7 @@ class AccountController extends Controller
 {
     public function index($id)
     {
+        //give user object
         $user = User::whereId($id)->first();
 
         return view('account', compact('user'));
@@ -16,6 +17,7 @@ class AccountController extends Controller
 
     public function userdel($id)
     {
+        //delete user
         $res = User::whereId($id)->delete();
         if($res)
         {

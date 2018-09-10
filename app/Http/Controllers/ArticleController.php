@@ -22,21 +22,25 @@ class ArticleController extends Controller
 
     public function index()
     {
-        /*$articles = Article::latest()->filter(request(['month', 'year']))->simplePaginate(4);*/
+        //$articles = Article::latest()->filter(request(['month', 'year']))->simplePaginate(4);
         $articles = Article::latest();
 
+        //fetch articles by month
         if($month = request('month'))
         {
             $articles->whereMonth('created_at', $month);
         }
 
+        //fetch articles by year
         if($year = request('year'))
         {
             $articles->whereYear('created_at', $year);
         }
 
+        //bootstrap paginate all fetched articles
         $articles = $articles->simplePaginate(4);
 
+        //fetch archives on the archives method from the Article model
         $archives = Article::archives();
 
         return view('blogs.index', compact('articles', 'archives'));
@@ -44,8 +48,10 @@ class ArticleController extends Controller
 
     public function show($title)
     {
+        //get article object
         $posted = Article::where('title', '=', str_replace('-', ' ', $title))->first();
 
+        //delete notificationif found on the query string
         if(isset($_GET['nots']))
         {
             DB::table('notifications')->where('id', '=', $_GET['nots'])->delete();
@@ -63,11 +69,13 @@ class ArticleController extends Controller
 
     public function store(Request $request)
     {
+        //validate input
         $this->validate($request, [
             'title'=> 'required|max:50',
             'body'=> 'required'
         ]);
 
+        //insert new article
         Article::create([
             'title'=> $request->title,
             'body'=> $request->body,

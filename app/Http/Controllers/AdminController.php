@@ -14,6 +14,7 @@ class AdminController extends Controller
         $users = User::all();
         $articles = Article::all();
 
+        //restrict page view to admin only
         if(Auth::user()->id > 5)
         {
             return redirect('/')->with([
@@ -31,6 +32,7 @@ class AdminController extends Controller
     {
         $idd = base64_decode($id);
 
+        //deleting users
         $res = User::whereId($idd)->delete();
         if($res)
         {
@@ -50,6 +52,7 @@ class AdminController extends Controller
     {
         $idd = base64_decode($id);
 
+        //deleting posts
         $res = Article::whereId($idd)->delete();
         if($res)
         {

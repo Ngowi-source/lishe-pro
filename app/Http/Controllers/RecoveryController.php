@@ -11,11 +11,13 @@ class RecoveryController extends Controller
 {
     public function mailUser(Request $request)
     {
+        //validate input
         $this->validate($request, [
             'email' => 'required|email'
         ]);
         $account = User::where('email', '=', $request['email'])->exists();
 
+        //if theres a user with the email, send a password reset email
         if($account)
         {
             $user = User::whereEmail($request['email'])->first();
@@ -44,6 +46,7 @@ class RecoveryController extends Controller
 
     public function index($code)
     {
+        //present user details in password reset page
         $id = base64_decode($code);
         $user = User::whereId($id)->first();
 
@@ -55,11 +58,13 @@ class RecoveryController extends Controller
 
         try
         {
+            //validate reset input
             $this->validate($request, [
                 'password' => 'required|confirmed',
                 'invisible' => 'required'
             ]);
 
+            //update password
             $newPass = bcrypt($request->password);
 
             User::whereId($request->invisible)->update(['password' => $newPass]);
