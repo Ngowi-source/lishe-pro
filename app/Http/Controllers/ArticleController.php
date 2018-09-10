@@ -10,6 +10,7 @@ use App\Article;
 use App\Comment;
 use App\Reply;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class ArticleController extends Controller
 {
@@ -44,6 +45,11 @@ class ArticleController extends Controller
     public function show($title)
     {
         $posted = Article::where('title', '=', str_replace('-', ' ', $title))->first();
+
+        if(isset($_GET['nots']))
+        {
+            DB::table('notifications')->where('id', '=', $_GET['nots'])->delete();
+        }
 
         $archives = Article::archives();
         return view('blogs.show',compact('posted', 'archives'));
