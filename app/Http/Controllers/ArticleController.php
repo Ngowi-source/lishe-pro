@@ -126,7 +126,7 @@ class ArticleController extends Controller
         $replied = Reply::whereCommentId(request('cid'))->get();
         foreach ($replied as $rep)
         {
-            if($rep->user_id != Auth::id())
+            if($rep->user_id != Auth::id() && $rep->user_id != $replyeeId)
             {
                 User::whereId($rep->user_id)->first()->notify(new NewReply($reply));
             }
