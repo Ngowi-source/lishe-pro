@@ -121,7 +121,7 @@
             new Noty({
                 text: '<strong>{{session('regsuccess')}}</strong>. A link is sent to your email, click it to activate your account',
                 type: 'success',
-                theme: 'relax',
+                theme: 'mint',
                 closeWith: ['click', 'button'],
                 animation: {
                     open: 'animated bounceInRight', // Animate.css class names
