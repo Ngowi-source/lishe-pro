@@ -31,7 +31,6 @@
         @if(Auth::check())
             <a id="nots"><i class="notsIcon far fa-bell"></i><sup>@if(count(Auth::user()->unreadNotifications)){{count(Auth::user()->unreadNotifications)}}@endif</sup>
                 <div class="notifications">
-                    <span class="large text-center">Notifications</span>
 
                     @if(count(Auth::user()->unreadNotifications))
                         @foreach(Auth::user()->unreadNotifications as $notification)
@@ -118,43 +117,78 @@
 @section('content')
 
     @if(session()->has('regsuccess'))
-        <div class="alert alertr alertwlcm alert-success alert-dismissible alert-icon-left">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('regsuccess')}}</strong>&nbsp; A link is sent to your email, click it to activate your account
-        </div>
+        <script>
+            new Noty({
+                text: '<strong>{{session('regsuccess')}}</strong>. A link is sent to your email, click it to activate your account',
+                type: 'success',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     @if(session()->has('loginsuccess'))
-        {{--<div class="alert alert-success alert-dismissible alert-icon-left ">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <span class="text-center">{{session('loginsuccess')}} {{Auth::user()->firstname}}</span>&nbsp;
-        </div>--}}
         <script>
             new Noty({
                 text: '{{session('loginsuccess')}} {{Auth::user()->firstname}}',
+                type: 'info',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
             }).show();
         </script>
     @endif
 
     @if(session()->has('userdel'))
-        <div class="alert alert-success alert-dismissible alert-icon-left">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <span class="text-center">{{session('userdel')}}</span>&nbsp;
-        </div>
+        <script>
+            new Noty({
+                text: '{{session('userdel')}}',
+                type: 'success',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     @if(session()->has('outsuccess'))
-        <div class="alert alert-success alert-dismissible alert-icon-left">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('outsuccess')}}</strong>&nbsp;
-        </div>
+        <script>
+            new Noty({
+                text: '{{session('outsuccess')}}',
+                type: 'success',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     @if(session()->has('adminerror'))
-        <div class="alert alert-danger alert-dismissible alert-icon-left">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">Disallowed...</strong>&nbsp;{{session('adminerror')}}
-        </div>
+        <script>
+            new Noty({
+                text: '<strong>Disallowed...</strong>{{session('adminerror')}}',
+                type: 'error',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     <div id="homeWrapper">

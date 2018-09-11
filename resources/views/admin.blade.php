@@ -30,7 +30,6 @@
         @if(Auth::check())
             <a id="nots"><i class="notsIcon far fa-bell"></i><sup>@if(count(Auth::user()->unreadNotifications)){{count(Auth::user()->unreadNotifications)}}@endif</sup>
                 <div class="notifications">
-                    <span class="large text-center">Notifications</span>
 
                     @if(count(Auth::user()->unreadNotifications))
                         @foreach(Auth::user()->unreadNotifications as $notification)
@@ -69,31 +68,63 @@
 @section('content')
 
     @if(session()->has('userdel'))
-        <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            {{session('userdel')}}
-        </div>
+        <script>
+            new Noty({
+                text: '{{session('userdel')}}',
+                type: 'success',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     @if(session()->has('userfail'))
-        <div class="alert alert-danger alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('userfail')}}</strong>
-        </div>
+        <script>
+            new Noty({
+                text: '<strong>{{session('userfail')}}</strong>',
+                type: 'error',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     @if(session()->has('postdel'))
-        <div class="alert alert-success alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            {{session('postdel')}}
-        </div>
+        <script>
+            new Noty({
+                text: '{{session('postdel')}}',
+                type: 'success',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     @if(session()->has('postfail'))
-        <div class="alert alert-danger alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('postfail')}}</strong>&nbsp;
-        </div>
+        <script>
+            new Noty({
+                text: '<strong>{{session('postfail')}}</strong>',
+                type: 'error',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     <div id="loginWrapper">

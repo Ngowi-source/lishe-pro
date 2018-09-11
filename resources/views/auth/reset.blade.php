@@ -49,7 +49,18 @@
         <h1 class="text-center">Reset Your Password ?</h1><br />
 
         <p class="col-9 center">
-            Welcome back <strong>{{$user->firstname}} {{$user->lastname}}</strong>
+            <script>
+                new Noty({
+                    text: 'Welcome back <strong>{{$user->firstname}} {{$user->lastname}}</strong>',
+                    type: 'info',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight', // Animate.css class names
+                        close: 'animated bounceOutRight' // Animate.css class names
+                    }
+                }).show();
+            </script>
         </p><br /><br />
 
         <div class="col-9 center">

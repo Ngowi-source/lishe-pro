@@ -35,7 +35,6 @@
         @if(Auth::check())
             <a id="nots"><i class="notsIcon far fa-bell"></i><sup>@if(count(Auth::user()->unreadNotifications)){{count(Auth::user()->unreadNotifications)}}@endif</sup>
                 <div class="notifications">
-                    <span class="large text-center">Notifications</span>
 
                     @if(count(Auth::user()->unreadNotifications))
                         @foreach(Auth::user()->unreadNotifications as $notification)
@@ -74,17 +73,33 @@
 @section('content')
 
     @if(session()->has('commentsuccess'))
-        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('commentsuccess')}}</strong>&nbsp;
-        </div>
+        <script>
+            new Noty({
+                text: '<strong>{{session('commentsuccess')}}</strong>',
+                type: 'success',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     @if(session()->has('replysuccess'))
-        <div class="alert alert-success alert-dismissible alert-icon-left border-0">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            <strong class="text-center">{{session('replysuccess')}}</strong>&nbsp;
-        </div>
+        <script>
+            new Noty({
+                text: '<strong>{{session('replysuccess')}}</strong>',
+                type: 'success',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
 

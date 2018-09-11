@@ -30,7 +30,6 @@
         @if(Auth::check())
             <a id="nots"><i class="notsIcon far fa-bell"></i><sup>@if(count(Auth::user()->unreadNotifications)){{count(Auth::user()->unreadNotifications)}}@endif</sup>
                 <div class="notifications">
-                    <span class="large text-center">Notifications</span>
 
                     @if(count(Auth::user()->unreadNotifications))
                         @foreach(Auth::user()->unreadNotifications as $notification)
@@ -69,10 +68,18 @@
 @section('content')
 
     @if(session()->has('userfail'))
-        <div class="alert alert-danger alert-dismissible alert-icon-left border-0">
-            <button type="button" class="close" data-dismiss="alert">&Cross;</button>
-            {{session('userfail')}}
-        </div>
+        <script>
+            new Noty({
+                text: '{{session('userfail')}}',
+                type: 'error',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight' // Animate.css class names
+                }
+            }).show();
+        </script>
     @endif
 
     <div class="row">

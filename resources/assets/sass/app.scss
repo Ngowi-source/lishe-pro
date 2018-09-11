@@ -40,15 +40,6 @@ body{
   grid-template-columns: 100vw;
   grid-template-rows: 15vh minmax(105vh, max-content) 20vh;
 }
-.alert{
-  height: 60px;
-  line-height: 40px;
-  text-align: center;
-
-  a{
-    text-decoration: none;
-  }
-}
 #header{
   grid-area: 1/1/2/2;
   z-index: 200;
@@ -920,11 +911,6 @@ input[name='userid']{
     }
   }
 }
-@media screen and (max-width: 930px){
-  .alertr{
-    height: 100px!important;
-  }
-}
 @media screen and (max-width: 907px){
   #blog{
     .card{
@@ -1297,11 +1283,6 @@ input[name='userid']{
     }
   }
 }
-@media screen and (max-width: 520px){
-  .alertr{
-    height: 120px!important;
-  }
-}
 @media screen and (max-width: 480px){
   #homeIntro .intro{
     top: -12%!important;
@@ -1330,15 +1311,6 @@ input[name='userid']{
   #bmi{ top: 75vh;}
   .iconfeatured{
     font-size: small!important;
-  }
-}
-@media screen and (max-width: 378px){
-  .alertr{
-    height: 140px!important;
-    line-height: 30px!important;
-  }
-  .alertr.alertwlcm{
-    height: 80px!important;
   }
 }
 @media screen and (max-width: 343px){
