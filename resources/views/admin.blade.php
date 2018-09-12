@@ -28,7 +28,7 @@
         <a href="/blog">Blog</a>
 
         @if(Auth::check())
-            <a id="nots"><i class="notsIcon far fa-bell"></i><sup>@if(count(Auth::user()->unreadNotifications)){{count(Auth::user()->unreadNotifications)}}@endif</sup>
+            <a id="nots"><i class="notsIcon far fa-bell"></i>@if(count(Auth::user()->unreadNotifications))<sup>{{count(Auth::user()->unreadNotifications)}}</sup>@endif
                 <div class="notifications">
 
                     @if(count(Auth::user()->unreadNotifications))
@@ -76,7 +76,7 @@
                 closeWith: ['click', 'button'],
                 animation: {
                     open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight' // Animate.css class names
+                    close: 'animated bounceOutRight'
                 }
             }).show();
         </script>
@@ -90,8 +90,8 @@
                 theme: 'relax',
                 closeWith: ['click', 'button'],
                 animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight' // Animate.css class names
+                    open: 'animated bounceInRight',
+                    close: 'animated bounceOutRight'
                 }
             }).show();
         </script>
@@ -105,8 +105,8 @@
                 theme: 'relax',
                 closeWith: ['click', 'button'],
                 animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight' // Animate.css class names
+                    open: 'animated bounceInRight',
+                    close: 'animated bounceOutRight'
                 }
             }).show();
         </script>
@@ -120,8 +120,8 @@
                 theme: 'relax',
                 closeWith: ['click', 'button'],
                 animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight' // Animate.css class names
+                    open: 'animated bounceInRight',
+                    close: 'animated bounceOutRight'
                 }
             }).show();
         </script>

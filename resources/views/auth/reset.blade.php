@@ -57,7 +57,7 @@
                     closeWith: ['click', 'button'],
                     animation: {
                         open: 'animated bounceInRight', // Animate.css class names
-                        close: 'animated bounceOutRight' // Animate.css class names
+                        close: 'animated bounceOutRight'
                     }
                 }).show();
             </script>

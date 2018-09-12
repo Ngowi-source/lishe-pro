@@ -41,7 +41,7 @@
                 theme: 'relax',
                 closeWith: ['click', 'button'],
                 animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
+                    open: 'animated bounceInRight',
                     close: 'animated bounceOutRight' // Animate.css class names
                 }
             }).show();
