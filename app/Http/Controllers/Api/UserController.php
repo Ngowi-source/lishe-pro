@@ -8,9 +8,9 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-    public function index($id)
+    public function index($uid)
     {
-        $user = User::find($id);
+        $user = User::find($uid);
 
         return $user;
     }
