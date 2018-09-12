@@ -147,11 +147,17 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
+
             $(".archToggle, .archLinks").hover(function(){
                 $('.archLinks').addClass('display');
             }, function(){
                 $('.archLinks').removeClass('display');
             });
+
+            $(".archToggle").click(function(){
+                $('.archLinks').toggleClass('display');
+            });
+
         });
     </script>
 

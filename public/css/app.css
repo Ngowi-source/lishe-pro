@@ -11638,6 +11638,7 @@ input[name='userid'] {
 
   #blogWrapper #blogSide .archLinks.display {
     display: block;
+    z-index: 50;
     padding-left: 1vw;
     margin-top: -0.95vw;
   }
