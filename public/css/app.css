@@ -11730,6 +11730,7 @@ input[name='userid'] {
     display: block;
     padding-left: 1vw;
     margin-top: -0.95vw;
+    z-index: 50;
   }
 
   #showWrapper #blogHeadSide .archLinks.display .archLink {
