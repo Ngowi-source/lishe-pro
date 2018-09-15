@@ -11,13 +11,14 @@ class UserController extends Controller
 {
     public function show($uid)
     {
-        $user = User::findOrFail($uid);
+        $user = User::find($uid);
 
-        if(!$user)
+        if($user)
         {
-            return response()->json(null,404);
+            return new UserRsource($user);
         }
-        return new UserRsource($user);
+
+        return response()->json('no such user',404);
     }
 
     public function index()
