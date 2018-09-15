@@ -8,6 +8,7 @@ use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
@@ -79,7 +80,7 @@ class AuthController extends Controller
         }
         else
         {
-            if(hash()->check($request->password, $user->password))
+            if(Hash::check($request->password, $user->password))
             {
                 $http = new Client();
                 $response = $http->post(url('oauth/token'), [
@@ -94,6 +95,13 @@ class AuthController extends Controller
                 ]);
 
                 return response(['data' =>json_decode((string) $response->getBody(), true)]);
+            }
+            else
+            {
+                return response([
+                    'status' => 'error',
+                    'message' => 'Email and or Password do not match'
+                ]);
             }
         }
     }
