@@ -105,4 +105,10 @@ class AuthController extends Controller
             }
         }
     }
+
+    public function logout()
+    {
+        //revoke access token
+
+    }
 }

@@ -20,7 +20,7 @@ class User extends JsonResource
             'email' => $this->email,
             'provider' => $this->provider,
             'verified' => $this->status,
-            'user_since' => $this->created_at,
+            'user_since' => (string)$this->created_at->format('m/d/Y'),
             'number_of_articles' => count(Article::whereUserId($this->id)->get())
         ];
     }
