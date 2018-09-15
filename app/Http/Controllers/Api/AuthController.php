@@ -68,9 +68,9 @@ class AuthController extends Controller
             'password'=> 'required',
         ]);
 
-        $userEmailExists = User::whereEmail($request->email)->first();
+        $user = User::whereEmail($request->email)->first();
 
-        if (!$userEmailExists)
+        if (!$user)
         {
             return response([
                 'status' => 'error',
@@ -79,7 +79,7 @@ class AuthController extends Controller
         }
         else
         {
-            if(Auth::attempt(['email'=> $request->email, 'password'=> $request->password]))
+            if(hash()->check($request->password, $user->password))
             {
                 $http = new Client();
                 $response = $http->post(url('oauth/token'), [
