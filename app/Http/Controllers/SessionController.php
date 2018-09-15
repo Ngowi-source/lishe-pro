@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Auth;
 
@@ -19,6 +21,7 @@ class SessionController extends Controller
 
     public function show()
     {
+        Session::put('url.intended',URL::previous());
         return view('auth.login');
     }
 
@@ -38,7 +41,7 @@ class SessionController extends Controller
 
         if (Auth::attempt(['email'=> $request->email, 'password'=> $request->password]))
         {
-            return redirect('/')->with(['loginsuccess'=> 'Welcome ']);
+            return Redirect::to(Session::get('url.intended'))->with(['loginsuccess'=> 'Welcome ']);
         } else
             {
             return back()->withErrors([

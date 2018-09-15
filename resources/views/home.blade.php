@@ -131,21 +131,6 @@
         </script>
     @endif
 
-    @if(session()->has('loginsuccess'))
-        <script>
-            new Noty({
-                text: '{{session('loginsuccess')}} {{Auth::user()->firstname}}',
-                type: 'info',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
     @if(session()->has('userdel'))
         <script>
             new Noty({

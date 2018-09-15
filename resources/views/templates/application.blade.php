@@ -35,7 +35,25 @@
             </svg>
         </div>
 
-        <div id="content">@yield('content')</div>
+        <div id="content">
+
+            @if(session()->has('loginsuccess'))
+                <script>
+                    new Noty({
+                        text: '{{session('loginsuccess')}} {{Auth::user()->firstname}}',
+                        type: 'info',
+                        theme: 'relax',
+                        closeWith: ['click', 'button'],
+                        animation: {
+                            open: 'animated bounceInRight',
+                            close: 'animated bounceOutRight'
+                        }
+                    }).show();
+                </script>
+            @endif
+
+            @yield('content')
+        </div>
 
         <div id="footer">
             <div class="text-center privacy"><br />
