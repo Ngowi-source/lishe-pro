@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function show($uid)
     {
-        $user = User::find($uid);
+        $user = User::findOrFail($uid);
 
         if(!$user)
         {
