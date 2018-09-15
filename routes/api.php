@@ -16,3 +16,7 @@
 Route::middleware('auth:api')->get('user/{uid}', 'Api\UserController@show');
 
 Route::middleware('auth:api')->get('users', 'Api\UserController@index');
+
+Route::middleware('auth:api')->delete('user/{uid}', 'Api\UserController@delete');
+
+Route::middleware('auth:api')->post('users', 'Api\UserController@create');
