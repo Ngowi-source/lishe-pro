@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +12,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
 
-Route::middleware('auth:api')->get('user/{uid}', 'Api\UserController@index');
+Route::middleware('auth:api')->get('user/{uid}', 'Api\UserController@show');
+
+Route::middleware('auth:api')->get('users', 'Api\UserController@index');

@@ -9,10 +9,15 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-    public function index($uid)
+    public function show($uid)
     {
         $user = User::find($uid);
-
         return new UserRsource($user);
+    }
+
+    public function index()
+    {
+        $user = User::all();
+        return UserRsource::collection($user);
     }
 }
