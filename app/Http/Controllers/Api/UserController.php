@@ -39,18 +39,4 @@ class UserController extends Controller
         }
     }
 
-    public function create(Request $request)
-    {
-        $user = User::create($request->all());
-
-        if($user)
-        {
-            $data = new UserRsource($user);
-            return response()->json( $data, 200);
-        }
-        else
-        {
-            return response()->json('user not created', 400);
-        }
-    }
 }
