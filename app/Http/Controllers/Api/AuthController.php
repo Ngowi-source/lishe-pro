@@ -42,10 +42,10 @@ class AuthController extends Controller
             $objUser->id = $user->id;
             Mail::to($request->email)->send(new AccountVerificationMail( $objUser));
 
-            //give a token and log in
+            //give a token
             $http = new Client();
 
-            $response = $http->post('http://lishep.herokuapp.com/oauth/token', [
+            $response = $http->post(url('oauth/token'), [
                 'form_params' => [
                     'grant_type' => 'password',
                     'client_id' => 1,
@@ -57,12 +57,44 @@ class AuthController extends Controller
             ]);
 
             return response(['data' =>json_decode((string) $response->getBody(), true)]);
-            
+
         }
     }
 
     public function login(Request $request)
     {
+        $request->validate([
+            'email'=> 'required|email',
+            'password'=> 'required',
+        ]);
 
+        $userEmailExists = User::whereEmail($request->email)->first();
+
+        if (!$userEmailExists)
+        {
+            return response([
+                'status' => 'error',
+                'message' => 'User not found'
+            ]);
+        }
+        else
+        {
+            if(Auth::attempt(['email'=> $request->email, 'password'=> $request->password]))
+            {
+                $http = new Client();
+                $response = $http->post(url('oauth/token'), [
+                    'form_params' => [
+                        'grant_type' => 'password',
+                        'client_id' => 1,
+                        'client_secret' => 'Z54g5QkhgieViyzQx1TzmNPmza7kvyncYAo2asGg',
+                        'username' => $request->email,
+                        'password' => $request->password,
+                        'scope' => '',
+                    ],
+                ]);
+
+                return response(['data' =>json_decode((string) $response->getBody(), true)]);
+            }
+        }
     }
 }
