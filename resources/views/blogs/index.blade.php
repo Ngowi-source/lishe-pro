@@ -121,7 +121,7 @@
                 <hr/> <br />
             @endforeach
 
-            {{$articles->links()}}
+            {{htmlentities($articles->links(), ENT_QUOTES, "UTF-8")}}
         </div>
 
     </div>
