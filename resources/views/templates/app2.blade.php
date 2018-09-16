@@ -51,6 +51,246 @@
             </script>
         @endif
 
+        @if(session()->has('regsuccess'))
+            <script>
+                new Noty({
+                    text: '<strong>{{session('regsuccess')}}</strong>. A link is sent to your email, click it to activate your account',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight', // Animate.css class names
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('accdel'))
+            <script>
+                new Noty({
+                    text: '{{session('accdel')}}',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('accfail'))
+            <script>
+                new Noty({
+                    text: '{{session('accfail')}}',
+                    type: 'error',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight', // Animate.css class names
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('outsuccess'))
+            <script>
+                new Noty({
+                    text: '{{session('outsuccess')}}',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('adminerror'))
+            <script>
+                new Noty({
+                    text: '<strong>Disallowed...</strong>{{session('adminerror')}}',
+                    type: 'error',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('userdel'))
+            <script>
+                new Noty({
+                    text: '{{session('userdel')}}',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight', // Animate.css class names
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('userfail'))
+            <script>
+                new Noty({
+                    text: '<strong>{{session('userfail')}}</strong>',
+                    type: 'error',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('postdel'))
+            <script>
+                new Noty({
+                    text: '{{session('postdel')}}',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('postfail'))
+            <script>
+                new Noty({
+                    text: '<strong>{{session('postfail')}}</strong>',
+                    type: 'error',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('commentsuccess'))
+            <script>
+                new Noty({
+                    text: '<strong>{{session('commentsuccess')}}</strong>',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight', // Animate.css class names
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('replysuccess'))
+            <script>
+                new Noty({
+                    text: '<strong>{{session('replysuccess')}}</strong>',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('articlesuccess'))
+            <script>
+                new Noty({
+                    text: '{{session('articlesuccess')}}',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight', // Animate.css class names
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('socialerror'))
+            <script>
+                new Noty({
+                    text: '{{session('socialerror')}} <strong>Please </strong>login or register with a different account.',
+                    type: 'error',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight' // Animate.css class names
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('updatesuccess'))
+            <script>
+                new Noty({
+                    text: '{{session('updatesuccess')}}',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight', // Animate.css class names
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('mailsuccess'))
+            <script>
+                new Noty({
+                    text: '{{session('mailsuccess')}}',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
+        @if(session()->has('verified'))
+            <script>
+                new Noty({
+                    text: '{{session('verified')}}',
+                    type: 'success',
+                    theme: 'relax',
+                    closeWith: ['click', 'button'],
+                    animation: {
+                        open: 'animated bounceInRight',
+                        close: 'animated bounceOutRight'
+                    }
+                }).show();
+            </script>
+        @endif
+
         @yield('content')
     </div>
 

@@ -22,13 +22,13 @@ class AccountController extends Controller
         if($res)
         {
             return redirect('/')->with([
-                'userdel' => 'User deleted successfully!'
+                'accdel' => 'Account deleted successfully!'
             ]);
         }
         else
         {
             return back()->with([
-                'userfail' => 'Account could not be deleted!'
+                'accfail' => 'Account could not be deleted!'
             ]);
         }
     }

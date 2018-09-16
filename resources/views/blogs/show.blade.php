@@ -62,46 +62,15 @@
             <a href="/login" class="login">Login</a>
             <a href="/register" class="register">Register</a>
         @endif
-        @if((Auth::check()) && (Auth::user()->id < 6))
+        @can('isAdmin')
             <a href="/admin-management">Administer</a>
-        @endif
+        @endcan
 
     </div>
 
 @endsection
 
 @section('content')
-
-    @if(session()->has('commentsuccess'))
-        <script>
-            new Noty({
-                text: '<strong>{{session('commentsuccess')}}</strong>',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('replysuccess'))
-        <script>
-            new Noty({
-                text: '<strong>{{session('replysuccess')}}</strong>',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
 
     <div><br />
 
@@ -110,16 +79,15 @@
 
     </div>
 
-
     <div id="showWrapper">
 
         <div id="blogHead">
 
         </div>
         <div id="blogHeadSide">
-            {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
+            @can('isAdmin')
             <a class="sideInline" href="/article/create"><button> New Article </button></a>
-            {{--@endif--}}<br class="sideDel"/><br class="sideDel"/>
+            @endcan<br class="sideDel"/><br class="sideDel"/>
 
             <h4 class="archToggle sideInline">Archives</h4>
             <div class="archLinks">

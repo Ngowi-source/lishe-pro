@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Notifications\NewReply;
 use App\Notifications\NewComment;
 use App\User;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\Request;
 use App\Article;
 use App\Comment;
@@ -63,6 +64,11 @@ class ArticleController extends Controller
 
     public function create()
     {
+        if(!Gate::allows('isAdmin'))
+        {
+            abort(404, 'Sorry, you are not authorized!');
+        }
+
         $archives = Article::archives();
         return view('blogs.create', compact('archives'));
     }

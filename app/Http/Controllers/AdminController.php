@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Article;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Gate;
 
 class AdminController extends Controller
 {
@@ -15,7 +16,7 @@ class AdminController extends Controller
         $articles = Article::all();
 
         //restrict page view to admin only
-        if(Auth::user()->id > 5)
+        if(!Gate::allows('isAdmin'))
         {
             return redirect('/')->with([
                 'adminerror' => 'You are not authorized as an administrator!'

@@ -33,66 +33,6 @@
 
 @section('content')
 
-    @if(session()->has('updatesuccess'))
-        <script>
-            new Noty({
-                text: '{{session('updatesuccess')}}',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('mailsuccess'))
-        <script>
-            new Noty({
-                text: '{{session('mailsuccess')}}',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('verified'))
-        <script>
-            new Noty({
-                text: '{{session('verified')}}',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('socialerror'))
-        <script>
-            new Noty({
-                text: '{{session('socialerror')}}&nbsp;<strong>Please </strong>login or register with a different account.',
-                type: 'error',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
     @if(count($errors))
         <div class="alert alert-danger">
             <ul>

@@ -57,9 +57,9 @@
             <a href="/login" class="login">Login</a>
             <a href="/register" class="register">Register</a>
         @endif
-        @if((Auth::check()) && (Auth::user()->id < 6))
+        @can('isAdmin')
             <a href="/admin-management">Administer</a>
-        @endif
+        @endcan
 
     </div>
 

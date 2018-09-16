@@ -58,30 +58,15 @@
             <a href="/login" class="login">Login</a>
             <a href="/register" class="register">Register</a>
         @endif
-        @if((Auth::check()) && (Auth::user()->id < 6))
+        @can('isAdmin')
             <a href="/admin-management">Administer</a>
-        @endif
+        @endcan
 
     </div>
 
 @endsection
 
 @section('content')
-
-    @if(session()->has('articlesuccess'))
-        <script>
-            new Noty({
-                text: '{{session('articlesuccess')}}',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
 
     <div id="blogWrapper">
 
@@ -91,9 +76,9 @@
 
         <div id="blogSide">
 
-            {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
+            @can('isAdmin')
             <a class="sideInline" href="/article/create"><button> New Article&nbsp;</button></a>
-            {{--@endif--}}<br class="sideDel"/><br class="sideDel"/>
+            @endcan<br class="sideDel"/><br class="sideDel"/>
 
             <h4 class="archToggle sideInline">Archives</h4>
             <div class="archLinks">

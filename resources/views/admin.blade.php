@@ -57,75 +57,15 @@
             <a href="/login" class="login">Login</a>
             <a href="/register" class="register">Register</a>
         @endif
-        @if((Auth::check()) && (Auth::user()->id < 6))
+        @can('isAdmin')
             <a href="/admin-management">Administer</a>
-        @endif
+        @endcan
 
     </div>
 
 @endsection
 
 @section('content')
-
-    @if(session()->has('userdel'))
-        <script>
-            new Noty({
-                text: '{{session('userdel')}}',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('userfail'))
-        <script>
-            new Noty({
-                text: '<strong>{{session('userfail')}}</strong>',
-                type: 'error',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('postdel'))
-        <script>
-            new Noty({
-                text: '{{session('postdel')}}',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('postfail'))
-        <script>
-            new Noty({
-                text: '<strong>{{session('postfail')}}</strong>',
-                type: 'error',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
 
     <div id="loginWrapper">
 

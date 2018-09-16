@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AccountVerificationMail;
 
@@ -16,6 +18,7 @@ class RegistrationController extends Controller
 
     public function show()
     {
+        Session::put('url.intended',URL::previous());
         return view('auth.register');
     }
 
@@ -49,7 +52,7 @@ class RegistrationController extends Controller
             try
             {
                 Mail::to($request->email)->send(new AccountVerificationMail( $objUser));
-                return redirect('/')->with(['regsuccess'=> 'Welcome to LishePro!']);
+                return Redirect::to(Session::get('url.intended'))->with(['regsuccess'=> 'Welcome to LishePro!']);
             }
             catch(\Throwable $e)
             {

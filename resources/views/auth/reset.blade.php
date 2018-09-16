@@ -48,20 +48,19 @@
 
         <h1 class="text-center">Reset Your Password ?</h1><br />
 
-        <p class="col-9 center">
-            <script>
-                new Noty({
-                    text: 'Welcome back <strong>{{$user->firstname}} {{$user->lastname}}</strong>',
-                    type: 'info',
-                    theme: 'relax',
-                    closeWith: ['click', 'button'],
-                    animation: {
-                        open: 'animated bounceInRight', // Animate.css class names
-                        close: 'animated bounceOutRight'
-                    }
-                }).show();
-            </script>
-        </p><br /><br />
+        <script>
+            new Noty({
+                text: 'Welcome back <strong>{{$user->firstname}} {{$user->lastname}}</strong>',
+                type: 'info',
+                theme: 'relax',
+                closeWith: ['click', 'button'],
+                animation: {
+                    open: 'animated bounceInRight', // Animate.css class names
+                    close: 'animated bounceOutRight'
+                }
+            }).show();
+        </script>
+        <br /><br />
 
         <div class="col-9 center">
             <form method="POST" action="/reset" id="loginForm" >

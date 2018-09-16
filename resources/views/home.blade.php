@@ -58,9 +58,9 @@
             <a href="/login" class="login">Login</a>
             <a href="/register" class="register">Register</a>
         @endif
-        @if((Auth::check()) && (Auth::user()->id < 6))
+        @can('isAdmin')
             <a href="/admin-management">Administer</a>
-        @endif
+        @endcan
 
     </div>
 
@@ -115,66 +115,6 @@
 @endsection
 
 @section('content')
-
-    @if(session()->has('regsuccess'))
-        <script>
-            new Noty({
-                text: '<strong>{{session('regsuccess')}}</strong>. A link is sent to your email, click it to activate your account',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight', // Animate.css class names
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('userdel'))
-        <script>
-            new Noty({
-                text: '{{session('userdel')}}',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('outsuccess'))
-        <script>
-            new Noty({
-                text: '{{session('outsuccess')}}',
-                type: 'success',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
-
-    @if(session()->has('adminerror'))
-        <script>
-            new Noty({
-                text: '<strong>Disallowed...</strong>{{session('adminerror')}}',
-                type: 'error',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight'
-                }
-            }).show();
-        </script>
-    @endif
 
     <div id="homeWrapper">
         <div id="homeIntro">

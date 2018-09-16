@@ -33,21 +33,6 @@
 
 @section('content')
 
-    @if(session()->has('socialerror'))
-        <script>
-            new Noty({
-                text: '{{session('socialerror')}} <strong>Please </strong>login or register with a different account.',
-                type: 'error',
-                theme: 'relax',
-                closeWith: ['click', 'button'],
-                animation: {
-                    open: 'animated bounceInRight',
-                    close: 'animated bounceOutRight' // Animate.css class names
-                }
-            }).show();
-        </script>
-    @endif
-
     @if(count($errors))
         <div class="alert alert-danger">
             <ul>
