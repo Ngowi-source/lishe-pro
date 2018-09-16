@@ -39,7 +39,7 @@ class ArticleController extends Controller
         }
 
         //bootstrap paginate all fetched articles
-        $articles = $articles->simplePaginate(4);
+        $articles = $articles->paginate(4);
 
         //fetch archives on the archives method from the Article model
         $archives = Article::archives();
