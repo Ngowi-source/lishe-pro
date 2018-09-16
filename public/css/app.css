@@ -11391,17 +11391,13 @@ input[name='userid'] {
   color: #9BA747;
 }
 
-.page-item:hover {
-  background-color: #D57030 !important;
-}
-
 .page-item .page-link {
   border: 1px solid #9BA747 !important;
   color: #9BA747;
 }
 
 .page-item .page-link:hover {
-  color: #D9DCD8 !important;
+  color: #D57030 !important;
 }
 
 /*media queries*/

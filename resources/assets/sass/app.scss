@@ -879,15 +879,13 @@ input[name='userid']{
   }
 }
 .page-item {
-  &:hover{
-    background-color: $c4!important;
-  }
+
   .page-link {
     border: 1px solid $c2 !important;
     color: $c2;
 
     &:hover{
-      color: $c1!important;
+      color: $c4!important;
     }
   }
 }
