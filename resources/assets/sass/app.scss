@@ -878,448 +878,460 @@ input[name='userid']{
     color: $c2;
   }
 }
-.pagination li a{
-  color: $c2;
-}
-/*media queries*/
-@media screen and (min-width: 1110px){
-  .whoAreWe{
-    font-size: x-large!important;
+.page-item {
+  &:hover{
+    background-color: $c4!important;
   }
-}
-@media screen and (max-width: 1015px){
-  .tools{
-    display: none;
-  }
-  #loginForm{
-    .float-right{
-      float: left!important;
+  .page-link {
+    border: 1px solid $c2 !important;
+    color: $c2;
+
+    &:hover{
+      color: $c1!important;
     }
   }
 }
-@media screen and (max-width: 958px){
-  #blog{
-    h2{ font-size: 1.4rem;}
-    .card-body{
-      .articleTime{
-        font-size: small;
-      }
-      .articleBod{
-        font-size: medium;
+
+  /*media queries*/
+  @media screen and (min-width: 1110px){
+    .whoAreWe{
+      font-size: x-large!important;
+    }
+  }
+  @media screen and (max-width: 1015px){
+    .tools{
+      display: none;
+    }
+    #loginForm{
+      .float-right{
+        float: left!important;
       }
     }
   }
-}
-@media screen and (max-width: 907px){
-  #blog{
-    .card{
+  @media screen and (max-width: 958px){
+    #blog{
+      h2{ font-size: 1.4rem;}
+      .card-body{
+        .articleTime{
+          font-size: small;
+        }
+        .articleBod{
+          font-size: medium;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 907px){
+    #blog{
+      .card{
+        display: block;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-left: 50vw;
+        width: 70vw!important;
+
+      }
+    }
+    .artNumb.numb{
+      display: inline-block!important;
+      color: #fff;
+      font-size: 4rem;
+      font-weight: 900;
+      text-shadow: -1px 0 $c2, 0 1px $c2, 1px 0 $c2, 0 -1px $c2;
+    }
+  }
+  @media screen and (max-width: 900px){
+    #blogWrapper, #showWrapper{
+      #blogBod{
+        .articleBod{
+          font-size: medium;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 860px){
+
+    #loginWrapper .col-6, #registerWrapper .col-6{
       display: block;
+      float: unset!important;
+      margin-left: 50vw;
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
       transform: translateX(-50%);
-      margin-left: 50vw;
-      width: 70vw!important;
+      width: 80vw!important;
+      max-width: 80vw!important;
+    }
+    #loginForm, #registerForm{
+      width: 90%!important;
+      margin-left: 5%!important;
+    }
+    #loginWrapper, #registerWrapper{
+      width: 90%!important;
+      margin-left: 0!important;
 
+      .br{
+        display: block;
+      }
+      .socials{
+        margin-left: 0!important;
+        width: 100%!important;
+      }
     }
   }
-  .artNumb.numb{
-    display: inline-block!important;
-    color: #fff;
-    font-size: 4rem;
-    font-weight: 900;
-    text-shadow: -1px 0 $c2, 0 1px $c2, 1px 0 $c2, 0 -1px $c2;
+  @media screen and (max-width: 834px){
+    #introButton{
+      width: 50%;
+      left: 25%;
+    }
   }
-}
-@media screen and (max-width: 900px){
-  #blogWrapper, #showWrapper{
-    #blogBod{
-      .articleBod{
+  @media screen and (min-width: 835px) and (max-width: 1000px){
+    #introButton{
+      width: 40%;
+      left: 30%;
+    }
+  }
+  @media screen and (min-width: 800px){
+    .login:hover{
+      background: $c5;
+      color: $c1;
+    }
+    .register:hover{
+      background: $c1;
+      color: $c5!important;
+    }
+  }
+  @media screen and (max-width: 800px){
+    #nots sup{
+      font-size: small!important;
+      top: -2.3em!important;
+    }
+    .iconfeatured{
+      font-size: large;
+    }
+    .login, .register{
+      border: none;
+      color: $c5!important;
+      background-color: inherit;
+    }
+    .logo{
+      left: 1vw!important;
+    }
+    .nav-links{
+      a{
+        display: none;
+      }
+    }
+    .menu{
+      display: block;
+    }
+    .nav-links.showMenu{
+      height: 100vh;
+      width: 100vw;
+      background: $c1;
+      position: fixed;
+      right: 0;
+      padding-top: 15vh;
+
+      a{
+        display: block;
+        font-size: 2.5rem;
+        color: $c5!important;
+        margin-left: 10vw;
+      }
+
+      .menu{
+        margin-top: -20px;
+        margin-left: 85vw;
+        .ndChild, .menubar:last-child {opacity: 0; visibility: hidden;}
+
+        .menubar{
+          &:nth-child(1){
+            -webkit-transform: rotate(315deg);
+            -moz-transform: rotate(315deg);
+            -ms-transform: rotate(315deg);
+            -o-transform: rotate(315deg);
+            transform: rotate(315deg);
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+            -o-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+          }
+          &.rdChild{
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+            -o-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            margin-top: -0.9rem;
+          }
+        }
+      }
+      .submenu{
+        a{
+          font-size: large!important;
+        }
+      }
+      .notifications, .submenu{
+        top: 20vh;
+        left: 30vw;
+        padding: 15px 1% 15px 1%;
+      }
+      .notifications{
+        a{
+          font-size: small!important;
+        }
+      }
+    }
+    #blogWrapper{
+      grid-template-columns: 100vw;
+      grid-template-rows: 10vh 10vh minmax(70vh, auto);
+
+      #blogHead{
+        grid-area: 1/1/2/2;
+
+        h2{
+          left: 50vw;
+        }
+      }
+      #blogSide{
+        grid-area: 2/1/3/2;
+        height: 10vh;
+        justify-self: end;
+        padding-top: 2.5vh;
+
+        .sideInline{
+          display: inline-block;
+        }
+        .archLinks{
+          display: none;
+          z-index: 50;
+          overflow: visible;
+          background: $c5;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+        }
+        .archLinks.display{
+          display: block;
+          z-index: 50;
+          padding-left: 1vw;
+          margin-top: -0.95vw;
+          .archLink{
+            color: $c1!important;
+          }
+        }
+        .archToggle{
+          cursor: pointer;
+          border: 1px solid $c5;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          padding: 1vw;
+        }
+      }
+      #blogBod{
+        grid-area: 3/1/4/2;
+        padding-left: 5vw;
+        padding-right: 5vw;
+      }
+    }
+    .sideDel{
+      display: none;
+    }
+    #showWrapper{
+      grid-template-columns: 50vw 50vw;
+
+      #blogSide {
+        display: none;
+        .writer{
+          display: none;
+        }
+      }
+      #blogBod{
+        grid-area: 2/1/3/3;
+        padding-left: 5vw;
+        padding-right: 5vw;
+      }
+      #blogHeadSide{
+        display: block;
+        padding-right: 5vw;
+        line-height: 2.2;
+
+        a{
+          color: $c2;
+          text-decoration: none;
+        }
+        a button{
+          font-size: larger;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          background: $c4;
+          -webkit-transition: background 0.25s ease-out;
+          -moz-transition: background 0.25s ease-out;
+          -ms-transition: background 0.25s ease-out;
+          -o-transition: background 0.25s ease-out;
+          transition: background 0.25s ease-out;
+
+          &:hover{
+            background: $c5;
+          }
+          i{
+            font-family: FontAwesome;
+            color: #fff;
+          }
+        }
+        .sideInline{
+          display: inline-block;
+        }
+        .archLinks{
+          display: none;
+          z-index: 50;
+          overflow: visible;
+          background: $c5;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+        }
+        .archLinks.display{
+          display: block;
+          padding-left: 1vw;
+          margin-top: -0.95vw;
+          z-index: 50;
+          .archLink{
+            color: $c1!important;
+          }
+        }
+        .archToggle{
+          cursor: pointer;
+          border: 1px solid $c5;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          padding: 1vw;
+        }
+      }
+      #blogWriter{
+        display: block;
+        border: none;
+
+        .card-body h5{
+          color: $c5;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 757px){
+    #intro{
+      font-size: 3.2rem;
+    }
+  }
+  @media screen and (max-width:720px){
+
+    .dietassessment{
+      grid-template-columns: 70vw!important;
+    }
+    #assessmentForm button{
+      width: 65vw!important;
+    }
+  }
+  @media screen and (min-width: 657px){
+    #intro{
+      font-size: 2.8rem;
+    }
+  }
+  @media screen and (max-width: 630px){
+    #introButton{
+      top: 65vh;
+    }
+    .iconfeatured{
+      font-size: medium!important;
+    }
+  }
+  @media screen and (max-width: 610px){
+    .pro{
+      color: $c5!important;
+    }
+    #intro{
+      font-size: 2.45rem;
+    }
+    .contactUs{
+      font-size: 1.3rem!important;
+    }
+    #blogWrapper{
+      #blogHead h2{
+        font-size: 1.6rem;
+      }
+    }
+  }
+  @media screen and (max-width: 533px){
+    #blogWrapper, #showWrapper{
+      #blogBod{
+        .articleBod{
+          font-size: small!important;
+        }
+      }
+      #blogSide a button, .archToggle, #blogHeadSide a button{
         font-size: medium;
       }
     }
+    #showWrapper{
+      grid-template-columns: 20vw 80vw;
+      #blogBod h1{
+        font-size: 1.8rem;
+      }
+    }
   }
-}
-@media screen and (max-width: 860px){
+  @media screen and (max-width: 480px){
+    #homeIntro .intro{
+      top: -12%!important;
+    }
+    #introButton{
+      font-size: 1rem;
+    }
+    #intro{
+      font-size: 2rem;
+    }
+    #footer{
+      font-size: small!important;
+    }
+    #blog{
+      .card{
+        width: 80vw;
+      }
+    }
+  }
+  @media screen and (max-width: 450px){
+    #fcc, #wlt, #dmp, #ofd, #bmi{  height: 20vh; width: 30vw; }
+    #wlt, #ofd{ left: 60vw!important;}
+    #dmp, #bmi{ left: 10vw!important;}
+    #fcc, #wlt{  top: 25vh;}
+    #dmp, #ofd{ top: 50vh;}
+    #bmi{ top: 75vh;}
+    .iconfeatured{
+      font-size: small!important;
+    }
+  }
+  @media screen and (max-width: 343px){
+    #blogWrapper{
 
-  #loginWrapper .col-6, #registerWrapper .col-6{
-    display: block;
-    float: unset!important;
-    margin-left: 50vw;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 80vw!important;
-    max-width: 80vw!important;
+      #blogHead h2{
+        align-self: start;
+      }
+    }
   }
-  #loginForm, #registerForm{
-    width: 90%!important;
-    margin-left: 5%!important;
-  }
-  #loginWrapper, #registerWrapper{
-    width: 90%!important;
-    margin-left: 0!important;
 
-    .br{
-      display: block;
-    }
-    .socials{
-      margin-left: 0!important;
-      width: 100%!important;
-    }
-  }
-}
-@media screen and (max-width: 834px){
-  #introButton{
-    width: 50%;
-    left: 25%;
-  }
-}
-@media screen and (min-width: 835px) and (max-width: 1000px){
-  #introButton{
-    width: 40%;
-    left: 30%;
-  }
-}
-@media screen and (min-width: 800px){
-  .login:hover{
-    background: $c5;
-    color: $c1;
-  }
-  .register:hover{
-    background: $c1;
-    color: $c5!important;
-  }
-}
-@media screen and (max-width: 800px){
-  #nots sup{
-    font-size: small!important;
-    top: -2.3em!important;
-  }
-  .iconfeatured{
-    font-size: large;
-  }
-  .login, .register{
-    border: none;
-    color: $c5!important;
-    background-color: inherit;
-  }
-  .logo{
-    left: 1vw!important;
-  }
-  .nav-links{
-    a{
-      display: none;
-    }
-  }
-  .menu{
-    display: block;
-  }
-  .nav-links.showMenu{
-    height: 100vh;
-    width: 100vw;
-    background: $c1;
-    position: fixed;
-    right: 0;
-    padding-top: 15vh;
-
-    a{
-      display: block;
-      font-size: 2.5rem;
-      color: $c5!important;
-      margin-left: 10vw;
-    }
-
-    .menu{
-      margin-top: -20px;
-      margin-left: 85vw;
-      .ndChild, .menubar:last-child {opacity: 0; visibility: hidden;}
-
-      .menubar{
-        &:nth-child(1){
-          -webkit-transform: rotate(315deg);
-          -moz-transform: rotate(315deg);
-          -ms-transform: rotate(315deg);
-          -o-transform: rotate(315deg);
-          transform: rotate(315deg);
-          -webkit-transform-origin: 50% 50%;
-          -moz-transform-origin: 50% 50%;
-          -ms-transform-origin: 50% 50%;
-          -o-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-        }
-        &.rdChild{
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg);
-          -webkit-transform-origin: 50% 50%;
-          -moz-transform-origin: 50% 50%;
-          -ms-transform-origin: 50% 50%;
-          -o-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-          margin-top: -0.9rem;
-        }
-      }
-    }
-    .submenu{
-      a{
-        font-size: large!important;
-      }
-    }
-    .notifications, .submenu{
-      top: 20vh;
-      left: 30vw;
-      padding: 15px 1% 15px 1%;
-    }
-    .notifications{
-      a{
-        font-size: small!important;
-      }
-    }
-  }
-  #blogWrapper{
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vh 10vh minmax(70vh, auto);
-
-    #blogHead{
-      grid-area: 1/1/2/2;
-
-      h2{
-        left: 50vw;
-      }
-    }
-    #blogSide{
-      grid-area: 2/1/3/2;
-      height: 10vh;
-      justify-self: end;
-      padding-top: 2.5vh;
-
-      .sideInline{
-        display: inline-block;
-      }
-      .archLinks{
-        display: none;
-        z-index: 50;
-        overflow: visible;
-        background: $c5;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-      }
-      .archLinks.display{
-        display: block;
-        z-index: 50;
-        padding-left: 1vw;
-        margin-top: -0.95vw;
-        .archLink{
-          color: $c1!important;
-        }
-      }
-      .archToggle{
-        cursor: pointer;
-        border: 1px solid $c5;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        padding: 1vw;
-      }
-    }
-    #blogBod{
-      grid-area: 3/1/4/2;
-      padding-left: 5vw;
-      padding-right: 5vw;
-    }
-  }
-  .sideDel{
-    display: none;
-  }
-  #showWrapper{
-    grid-template-columns: 50vw 50vw;
-
-    #blogSide {
-      display: none;
-      .writer{
-        display: none;
-      }
-    }
-    #blogBod{
-      grid-area: 2/1/3/3;
-      padding-left: 5vw;
-      padding-right: 5vw;
-    }
-    #blogHeadSide{
-      display: block;
-      padding-right: 5vw;
-      line-height: 2.2;
-
-      a{
-        color: $c2;
-        text-decoration: none;
-      }
-      a button{
-        font-size: larger;
-        color: #fff;
-        border: none;
-        border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        background: $c4;
-        -webkit-transition: background 0.25s ease-out;
-        -moz-transition: background 0.25s ease-out;
-        -ms-transition: background 0.25s ease-out;
-        -o-transition: background 0.25s ease-out;
-        transition: background 0.25s ease-out;
-
-        &:hover{
-          background: $c5;
-        }
-        i{
-          font-family: FontAwesome;
-          color: #fff;
-        }
-      }
-      .sideInline{
-        display: inline-block;
-      }
-      .archLinks{
-        display: none;
-        z-index: 50;
-        overflow: visible;
-        background: $c5;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-      }
-      .archLinks.display{
-        display: block;
-        padding-left: 1vw;
-        margin-top: -0.95vw;
-        z-index: 50;
-        .archLink{
-          color: $c1!important;
-        }
-      }
-      .archToggle{
-        cursor: pointer;
-        border: 1px solid $c5;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        padding: 1vw;
-      }
-    }
-    #blogWriter{
-      display: block;
-      border: none;
-
-      .card-body h5{
-        color: $c5;
-      }
-    }
-  }
-}
-@media screen and (min-width: 757px){
-  #intro{
-    font-size: 3.2rem;
-  }
-}
-@media screen and (max-width:720px){
-
-  .dietassessment{
-    grid-template-columns: 70vw!important;
-  }
-  #assessmentForm button{
-    width: 65vw!important;
-  }
-}
-@media screen and (min-width: 657px){
-  #intro{
-    font-size: 2.8rem;
-  }
-}
-@media screen and (max-width: 630px){
-  #introButton{
-    top: 65vh;
-  }
-  .iconfeatured{
-    font-size: medium!important;
-  }
-}
-@media screen and (max-width: 610px){
-  .pro{
-    color: $c5!important;
-  }
-  #intro{
-    font-size: 2.45rem;
-  }
-  .contactUs{
-    font-size: 1.3rem!important;
-  }
-  #blogWrapper{
-    #blogHead h2{
-      font-size: 1.6rem;
-    }
-  }
-}
-@media screen and (max-width: 533px){
-  #blogWrapper, #showWrapper{
-    #blogBod{
-      .articleBod{
-        font-size: small!important;
-      }
-    }
-    #blogSide a button, .archToggle, #blogHeadSide a button{
-      font-size: medium;
-    }
-  }
-  #showWrapper{
-    grid-template-columns: 20vw 80vw;
-    #blogBod h1{
-      font-size: 1.8rem;
-    }
-  }
-}
-@media screen and (max-width: 480px){
-  #homeIntro .intro{
-    top: -12%!important;
-  }
-  #introButton{
-    font-size: 1rem;
-  }
-  #intro{
-    font-size: 2rem;
-  }
-  #footer{
-    font-size: small!important;
-  }
-  #blog{
-    .card{
-      width: 80vw;
-    }
-  }
-}
-@media screen and (max-width: 450px){
-  #fcc, #wlt, #dmp, #ofd, #bmi{  height: 20vh; width: 30vw; }
-  #wlt, #ofd{ left: 60vw!important;}
-  #dmp, #bmi{ left: 10vw!important;}
-  #fcc, #wlt{  top: 25vh;}
-  #dmp, #ofd{ top: 50vh;}
-  #bmi{ top: 75vh;}
-  .iconfeatured{
-    font-size: small!important;
-  }
-}
-@media screen and (max-width: 343px){
-  #blogWrapper{
-
-    #blogHead h2{
-      align-self: start;
-    }
-  }
-}
 /*end of media queries*/
