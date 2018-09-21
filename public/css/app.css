@@ -11649,7 +11649,6 @@ input[name='userid'] {
   }
 
   #blogWrapper #blogSide .archToggle {
-    color: #8B281F;
     cursor: pointer;
     border: 1px solid #8B281F;
     border-radius: 3px;
@@ -11741,6 +11740,7 @@ input[name='userid'] {
 
   #showWrapper #blogHeadSide .archToggle {
     cursor: pointer;
+    color: #8B281F !important;
     border: 1px solid #8B281F;
     border-radius: 3px;
     padding: 1vw;

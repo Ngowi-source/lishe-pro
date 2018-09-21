@@ -1130,7 +1130,6 @@ input[name='userid']{
           }
         }
         .archToggle{
-          color: $c5;
           cursor: pointer;
           border: 1px solid $c5;
           -webkit-border-radius: 3px;
@@ -1216,6 +1215,7 @@ input[name='userid']{
         }
         .archToggle{
           cursor: pointer;
+          color: $c5!important;
           border: 1px solid $c5;
           -webkit-border-radius: 3px;
           -moz-border-radius: 3px;
