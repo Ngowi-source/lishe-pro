@@ -111,10 +111,10 @@
             </div>
             <br class="sideDel"/>
 
-            {{--@if((Auth::check()) && (Auth::user()->id == 4))--}}
+            @can('isAdmin')
             <a href="/article/create"><button>New Article&nbsp; <i class="fas fa-plus"></i>&nbsp;</button></a>
             <br /><br />
-            {{--@endif--}}
+            @endcan
 
             <h4>Archives</h4>
             @foreach($archives as $stat)

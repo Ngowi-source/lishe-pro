@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\Notified;
 use App\Notifications\NewReply;
 use App\Notifications\NewComment;
 use App\User;
@@ -112,7 +113,11 @@ class ArticleController extends Controller
         $comenteeId = $posted->user_id;
         if($comenteeId != Auth::id())
         {
-            User::whereId($comenteeId)->first()->notify(new NewComment($comment));
+            //notified
+            $notif = User::whereId($comenteeId)->first()->notify(new NewComment($comment));
+
+            //fire notification event
+            event(new Notified($notif));
         }
 
         return back()->with(['commentsuccess'=> 'Your comment is added!']);
@@ -139,7 +144,11 @@ class ArticleController extends Controller
 
         if($replyeeId != Auth::id())
         {
-            User::whereId($replyeeId)->first()->notify(new NewReply($reply));
+            //notify
+            $notif = User::whereId($replyeeId)->first()->notify(new NewReply($reply));
+
+            //fire notification event
+            event(new Notified($notif));
         }
 
         //send a notification to other users who replied to the same comment
@@ -148,7 +157,11 @@ class ArticleController extends Controller
         {
             if($rep->user_id != Auth::id() && $rep->user_id != $replyeeId)
             {
-                User::whereId($rep->user_id)->first()->notify(new NewReply($reply));
+                //notify
+               $notif = User::whereId($rep->user_id)->first()->notify(new NewReply($reply));
+
+                //fire notification event
+                event(new Notified($notif));
             }
         }
 
