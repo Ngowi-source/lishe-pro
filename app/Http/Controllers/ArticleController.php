@@ -40,14 +40,13 @@ class ArticleController extends Controller
             $articles->whereYear('created_at', $year);
         }
 
-        //bootstrap paginate all fetched articles
-        $articles = $articles->paginate(4);
-
         //articles collection based on tags
         if($tag)
         {
             $articles = $tag->articles->load('tags');
         }
+        //bootstrap paginate all fetched articles
+        $articles = $articles->paginate(4);
 
         //fetch archives on the archives method from the Article model
         $archives = Article::archives();
