@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Events\Notified;
 use App\Notifications\NewReply;
 use App\Notifications\NewComment;
+use App\Tag;
 use App\User;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Http\Request;
@@ -22,11 +23,16 @@ class ArticleController extends Controller
         $this->middleware('auth')->except(['index', 'show', ]);
     }
 
-    public function index()
+    public function index(Tag $tag=null)
     {
         //$articles = Article::latest()->filter(request(['month', 'year']))->simplePaginate(4);
         $articles = Article::latest();
 
+        //articles collection based on tags
+        if($tag)
+        {
+            $articles = $tag->articles->latest()->load('tags');
+        }
         //fetch articles by month
         if($month = request('month'))
         {
