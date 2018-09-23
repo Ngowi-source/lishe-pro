@@ -28,11 +28,6 @@ class ArticleController extends Controller
         //$articles = Article::latest()->filter(request(['month', 'year']))->simplePaginate(4);
         $articles = Article::latest();
 
-        //articles collection based on tags
-        if($tag)
-        {
-            $articles = $tag->articles->load('tags');
-        }
         //fetch articles by month
         if($month = request('month'))
         {
@@ -47,6 +42,12 @@ class ArticleController extends Controller
 
         //bootstrap paginate all fetched articles
         $articles = $articles->paginate(4);
+
+        //articles collection based on tags
+        if($tag)
+        {
+            $articles = $tag->articles->load('tags');
+        }
 
         //fetch archives on the archives method from the Article model
         $archives = Article::archives();
