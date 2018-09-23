@@ -43,7 +43,7 @@ class ArticleController extends Controller
         //articles collection based on tags
         if($tag)
         {
-            $articles = $tag->articles->load('tags');
+            $articles = $tag->articles->load('tags')->get();
         }
         //bootstrap paginate all fetched articles
         $articles = $articles->paginate(4);
