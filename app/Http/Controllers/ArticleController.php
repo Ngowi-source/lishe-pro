@@ -51,7 +51,7 @@ class ArticleController extends Controller
     public function show($title)
     {
         //get article object
-        $posted = Article::where('title', '=', str_replace('-', ' ', $title))->first();
+        $posted = Article::with('tags')->where('title', '=', str_replace('-', ' ', $title))->first();
 
         //delete notificationif found on the query string
         if(isset($_GET['nots']))
@@ -65,6 +65,7 @@ class ArticleController extends Controller
 
     public function create()
     {
+        //limit access with the admin gate
         if(!Gate::allows('isAdmin'))
         {
             abort(404, 'Sorry, you are not authorized!');

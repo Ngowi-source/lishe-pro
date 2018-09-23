@@ -167,6 +167,11 @@
             }, function(){
                 $('.archLinks').removeClass('display');
             });
+
+            $(".archToggle").click(function(){
+                $('.archLinks').toggleClass('display');
+            });
+
         });
 
     </script>
