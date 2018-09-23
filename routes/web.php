@@ -32,7 +32,6 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/privacy', function(){
     return view ('privacy');
 });
-
 Route::get('/terms-of-service', function(){
     return view ('terms');
 });
