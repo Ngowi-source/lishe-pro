@@ -14,7 +14,7 @@
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/blog', 'ArticleController@index');
-Route::get('/blog/tags/{tag}', 'ArticleController@index');
+Route::get('/tags/{tag}', 'ArticleController@index');
 Route::get('/blog/{title}', 'ArticleController@show');
 
 Route::group(['middleware' => 'auth'], function () {
