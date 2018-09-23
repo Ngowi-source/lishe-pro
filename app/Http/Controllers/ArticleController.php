@@ -31,7 +31,7 @@ class ArticleController extends Controller
         //articles collection based on tags
         if($tag)
         {
-            $articles = $tag->articles->latest()->load('tags');
+            $articles = $tag->articles->load('tags');
         }
         //fetch articles by month
         if($month = request('month'))
