@@ -87,15 +87,23 @@ class ArticleController extends Controller
         //validate input
         $this->validate($request, [
             'title'=> 'required|max:50',
-            'body'=> 'required'
+            'body'=> 'required',
+            'tags'=> 'required'
         ]);
 
         //insert new article
-        Article::create([
+        $article = Article::create([
             'title'=> $request->title,
             'body'=> $request->body,
             'user_id'=> Auth::id()
         ]);
+
+        //map article to all tags
+        foreach($request->tags as $tag)
+        {
+            $tagObj = Tag::whereName($tag);
+            $article->tags()->attach($tagObj);
+        }
 
         return redirect('/blog')->with(['articlesuccess'=> 'Your article is posted!']);
     }

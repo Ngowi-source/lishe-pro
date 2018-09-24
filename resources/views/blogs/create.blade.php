@@ -109,6 +109,15 @@
                 <label for="bodyid">Body</label>
                 <textarea id="bodyid" name="body" class="form-control" ></textarea><br />
 
+                <label for="tags">Tags</label>
+                <select id="tags" name="tags" class="form-control" multiple="multiple">
+
+                    @foreach(\App\Tag::all()->pluck('name') as $name)
+                        <option value="{{$name}}">{{$name}}</option>
+                    @endforeach
+
+                </select><br />
+
                 <button type="submit" class="form-control createButton" id="createButton">
                     Post Article
                 </button>
