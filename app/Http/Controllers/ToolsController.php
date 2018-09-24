@@ -14,7 +14,6 @@ class ToolsController extends Controller
     public function bmiresults(Request $request)
     {
         $this->validate($request, [
-            'name' => 'optional',
             'height' => 'required|integer',
             'weight' => 'required|integer',
             'age' => 'required|integer',
