@@ -97,12 +97,12 @@ class ArticleController extends Controller
             'body'=> $request->body,
             'user_id'=> Auth::id()
         ]);
-
+        
         //map article to all tags
         foreach($request->tags as $tag)
         {
-            $tagObj = Tag::whereName($tag);
-            $article->tags()->attach($tagObj);
+            $tagObj = Tag::whereName($tag)->get();
+            $article->tags()->attach($tagObj->id);
         }
 
         return redirect('/blog')->with(['articlesuccess'=> 'Your article is posted!']);
