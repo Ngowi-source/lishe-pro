@@ -1164,16 +1164,16 @@ input[name='userid']{
         h6{
           color: $c2;
         }
-        li{
+        .tag{
           list-style-type: none;
           display: inline;
-          color: $c1;
           border: 1px solid $c5;
-          padding: 2px;
+          padding: 4px;
           border-radius: 290486px;
           background: $c5;
           a{
             text-decoration: none;
+            color: $c1;
           }
         }
       }

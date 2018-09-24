@@ -11687,18 +11687,18 @@ input[name='userid'] {
     color: #9BA747;
   }
 
-  #showWrapper #blogBod li {
+  #showWrapper #blogBod .tag {
     list-style-type: none;
     display: inline;
-    color: #D9DCD8;
     border: 1px solid #8B281F;
-    padding: 2px;
+    padding: 4px;
     border-radius: 290486px;
     background: #8B281F;
   }
 
-  #showWrapper #blogBod li a {
+  #showWrapper #blogBod .tag a {
     text-decoration: none;
+    color: #D9DCD8;
   }
 
   #showWrapper #blogHeadSide {
