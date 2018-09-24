@@ -21,7 +21,9 @@ class ToolsController extends Controller
             'sex' => 'required|in:Female,Male'
         ]);
 
-        return view('tools.bmi', compact('request'));
+        $details = $request;
+
+        return view('tools.bmi', compact('details'));
     }
 
 }
