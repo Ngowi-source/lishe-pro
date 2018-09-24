@@ -11426,9 +11426,7 @@ input[name='userid'] {
 }
 
 #BMResults .bmr {
-  font-size: large;
-  -webkit-text-decoration: dotted;
-          text-decoration: dotted;
+  font-size: x-large;
 }
 
 #BMRForm {
