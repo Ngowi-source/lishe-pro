@@ -893,7 +893,7 @@ input[name='userid']{
 
 #bmrWrapper{
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto minmax(80vh, auto);
   grid-template-columns: 100vw;
   background-color: $c5;
 }
@@ -906,8 +906,10 @@ input[name='userid']{
     color: $c2;
   }
   .results{
-    border: 1px solid $c3;
-    background-color: $c3;
+    border: 1px solid $c2;
+    background-color: $c2;
+    font-size: x-large;
+    border-radius: 3px;
   }
   .bmr{
     font-size: large;

@@ -11403,7 +11403,7 @@ input[name='userid'] {
 
 #bmrWrapper {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto minmax(80vh, auto);
   grid-template-columns: 100vw;
   background-color: #8B281F;
 }
@@ -11419,8 +11419,10 @@ input[name='userid'] {
 }
 
 #BMResults .results {
-  border: 1px solid #F29D4B;
-  background-color: #F29D4B;
+  border: 1px solid #9BA747;
+  background-color: #9BA747;
+  font-size: x-large;
+  border-radius: 3px;
 }
 
 #BMResults .bmr {
