@@ -14,7 +14,7 @@ class ToolsController extends Controller
     public function bmiresults(Request $request)
     {
         $this->validate($request, [
-            'name' => 'optional',
+            'name' => 'required',
             'height' => 'required|integer',
             'weight' => 'required|integer',
             'age' => 'required|integer',
@@ -28,6 +28,7 @@ class ToolsController extends Controller
             'age'=>$request->age.' years',
             'gender'=>$request->sex
         ];
+        $details = \GuzzleHttp\json_encode($details);
 
         return view('tools.bmi', compact('details'));
     }
