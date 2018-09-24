@@ -1,7 +1,7 @@
 @extends('templates.application')
 
 @section('title')
-    Lishe Pro | My Account
+    Lishe Pro - BMR Calculator
 @endsection
 
 @section('header')
@@ -67,20 +67,64 @@
 
 @section('content')
 
-    <div class="row">
-        <div class="col-9">
-            <br />
-            <h1 style="margin-left: 5vw;" class="text-center detailsTitle">Account Details</h1>
+    <div id="bmrWrapper">
+        <div id="BMResults">
 
-            <ul class="userList">
-                <li class="large">Name: <span class="details">{{$user->firstname}} {{$user->lastname}}</span></li>
-                <li class="large">Email Address: <span class="details">{{$user->email}}</span></li>
-                <li class="large">Verified: <span class="details">@if($user->status) Verified @else Not verified @endif</span></li>
-                <li class="large">Number of articles: <span class="details">{{count($user->article()->get())}}</span></li>
-            </ul>
-            <br />
-            <button style="margin-left: 5vw; border-radius: 3px;" class="createButton" onclick="window.location.href='https://lishep.herokuapp.com/delete-account/{{$user->id}}'">Delete Account</button>
+            @if($bmr)
 
+                <h3 class="text-center">Calculation Results</h3><br />
+                <span class="results float-left">The amount of calories required to maintain your current weight is: </span><span class="bmr">{{$bmr}}</span><br />
+
+                <span class="results float-left">If you are sedentary (i.e <i>little /no exercise</i>): </span><span class="bmr">{{(int)($bmr *1.2)}}</span><br />
+
+                <span class="results float-left">If you are lightly active (i.e <i>light exercise/sports, 1-3days/week</i>): </span><span class="bmr">{{(int)($bmr *1.375)}}</span><br />
+
+                <span class="results float-left">If you are moderately active (i.e <i>moderate exercise/sports, 3-5days/week</i>): </span><span class="bmr">{{(int)($bmr *1.55)}}</span><br />
+
+                <span class="results float-left">If you are very active (i.e <i>hard exercise/sports, 6-7days/week</i>): </span><span class="bmr">{{(int)($bmr *1.725)}}</span><br />
+
+                <span class="results float-left">If you are extra active (i.e <i>very hard daily exercise/sports,& physical job/2X training</i>): </span><span class="bmr">{{(int)($bmr *1.9)}}</span><br />
+
+            @endif
+        </div>
+
+        <div id="BMRForm">
+
+            @if(count($errors))
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <h3 class="text-center">Calculate Your Daily Caloric Needs</h3>
+            <form method="POST" action="/BMR-calculator">
+                {{csrf_field()}}
+
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" /><br /><br />
+
+                <label for="height">Height</label>
+                <input id="height" name="height" type="number" placeholder="in centimeters..." required/><br /><br />
+
+                <label for="weight">Weight</label>
+                <input id="weight" name="weight" type="number" placeholder="in kilograms..." required/><br /><br />
+
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" required/><br /><br />
+
+                <input type="radio" value="Female" id="female" name="sex"/>
+                <label for="female"><span></span>Female</label>
+
+                <input type="radio" value="Male" id="male" name="sex"/>
+                <label for="male"><span></span>Male</label>
+                <br />
+
+                <button type="submit">Start Now</button><br /> <br />
+            </form>
         </div>
     </div>
 

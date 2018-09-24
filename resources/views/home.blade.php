@@ -22,7 +22,7 @@
                 <a href="/weight-loss-tracker">Weight Loss Tracker</a>
                 <a href="/diet-meal-planner">Diet Meal Planner</a>
                 <a href="/online-food-diary">Online Food Diary</a>
-                <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Body Mass Index Calculator</a>
+                <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">BMR Calculator</a>
                 <a href="/lishe-pro24">Lishe Pro-24</a>
             </div>
         </a>
@@ -83,7 +83,7 @@
                 @endif
 
                 <h3 class="text-center">Free Diet Assesser</h3>
-                <form method="POST" action="/body-mass-index-calculator">
+                <form method="POST" action="/BMR-calculator">
                     {{csrf_field()}}
 
                     <label for="name">Name</label>

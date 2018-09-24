@@ -21,7 +21,7 @@
                 <a href="/weight-loss-tracker">Weight Loss Tracker</a>
                 <a href="/diet-meal-planner">Diet Meal Planner</a>
                 <a href="/online-food-diary">Online Food Diary</a>
-                <a href="/body-mass-index-calculator">Body Mass Index Calculator</a>
+                <a href="/BMR-calculator">BMR Calculator</a>
                 <a href="/lishe-pro24">Lishe Pro-24</a>
             </div>
         </a>

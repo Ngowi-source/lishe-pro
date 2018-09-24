@@ -11401,6 +11401,110 @@ input[name='userid'] {
   color: #D57030 !important;
 }
 
+#bmrWrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 100vw;
+  background-color: #8B281F;
+}
+
+#BMResults {
+  grid-area: 1/1/2/2;
+  padding: 5vh;
+  color: #D9DCD8;
+}
+
+#BMResults h3 {
+  color: #9BA747;
+}
+
+#BMResults .results {
+  border: 1px solid #F29D4B;
+  background-color: #F29D4B;
+}
+
+#BMResults .bmr {
+  font-size: large;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+
+#BMRForm {
+  grid-area: 2/1/3/2;
+  padding: 5vh;
+  position: relative;
+}
+
+#BMRForm form {
+  position: absolute;
+  margin-left: 50vw;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#BMRForm input {
+  color: #D9DCD8;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  border-bottom: 1px solid #D57030;
+  background: transparent;
+}
+
+#BMRForm input:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#BMRForm button {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  background: #D57030;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  border: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 50vw;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+#BMRForm button:hover {
+  background: #9BA747;
+  color: #fff;
+}
+
+#BMRForm h3 {
+  color: #D9DCD8;
+}
+
+#BMRForm input[type="radio"] {
+  display: none;
+}
+
+#BMRForm input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: #D9DCD8;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+#BMRForm input[type="radio"]:checked + label span {
+  background: #D57030;
+}
+
 /*media queries*/
 
 @media screen and (min-width: 1110px) {
