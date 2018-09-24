@@ -131,7 +131,7 @@
 
             <h6><i class="fas fa-tags"></i> Tags</h6>
             @foreach($posted->tags as $tag)
-                <li><a href="/tags/{{$tag}}"> {{$tag}} </a></li>
+                <li><a href="/tags/{{$tag->name}}"> {{$tag->name}} </a></li>
             @endforeach
 
             <br><br />
