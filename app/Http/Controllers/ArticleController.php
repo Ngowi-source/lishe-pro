@@ -97,11 +97,11 @@ class ArticleController extends Controller
             'body'=> $request->body,
             'user_id'=> Auth::id()
         ]);
-        
+
         //map article to all tags
         foreach($request->tags as $tag)
         {
-            $tagObj = Tag::whereName($tag)->get();
+            $tagObj = Tag::whereName($tag)->first();
             $article->tags()->attach($tagObj->id);
         }
 
