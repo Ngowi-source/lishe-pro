@@ -59,3 +59,6 @@ Route::get('auth/redirect/{social}', 'SocialAuthController@redirect');
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
+
+Route::get('/body-mass-index-calculator', 'ToolsController@bmi');
+Route::post('/body-mass-index-calculator', 'ToolsController@bmiresults');

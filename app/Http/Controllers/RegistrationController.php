@@ -19,12 +19,14 @@ class RegistrationController extends Controller
 
     public function show()
     {
+        //get the register page together with the previous URL
         Session::put('url.intended',URL::previous());
         return view('auth.register');
     }
 
     public function create(Request $request)
     {
+        //validate input
         $this->validate($request, [
             'firstname'=> 'required',
             'lastname'=> 'required',
@@ -36,16 +38,19 @@ class RegistrationController extends Controller
 
         $userEmailExists = User::whereEmail($request->email)->first();
 
+        //chack if the registered user email is already existing
         if ($userEmailExists)
         {
             return redirect('/register')->with(['socialerror'=> 'The email for this account has already been registered with another user!']);
         }
         else
         {
+            //if it doesn't exist, create a new user
             $user = User::create(['firstname'=>$request->firstname, 'lastname'=>$request->lastname, 'email'=>$request->email, 'password'=>$request->password, 'status'=> 0]);
 
             auth()->login($user);
 
+            //send an account verification email
             $objUser = new \stdClass();
             $objUser->firstname = $request->firstname;
             $objUser->id = $user->id;

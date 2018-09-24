@@ -83,20 +83,20 @@
                 @endif
 
                 <h3 class="text-center">Free Diet Assesser</h3>
-                <form method="POST" action="/diet-assessment">
+                <form method="POST" action="/body-mass-index-calculator">
                     {{csrf_field()}}
 
                     <label for="name">Name</label>
                     <input id="name" type="text" /><br /><br />
 
                     <label for="height">Height</label>
-                    <input id="height" type="number" placeholder="in centimeters..." required/><br /><br />
+                    <input id="height" name="height" type="number" placeholder="in centimeters..." required/><br /><br />
 
                     <label for="weight">Weight</label>
-                    <input id="weight" type="number" placeholder="in kilograms..." required/><br /><br />
+                    <input id="weight" name="weight" type="number" placeholder="in kilograms..." required/><br /><br />
 
                     <label for="age">Age</label>
-                    <input id="age" type="number" required/><br /><br />
+                    <input id="age" name="age" type="number" required/><br /><br />
 
                     <input type="radio" value="Female" id="female" name="sex"/>
                     <label for="female"><span></span>Female</label>

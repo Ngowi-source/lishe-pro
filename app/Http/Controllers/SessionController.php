@@ -16,11 +16,13 @@ class SessionController extends Controller
 
     public function __construct()
     {
+        //protect all methods with auth middleware except destroy and verify
         $this->middleware('guest')->except('destroy', 'verify');
     }
 
     public function show()
     {
+        //return login page with the previous URL
         Session::put('url.intended',URL::previous());
         return view('auth.login');
     }
@@ -34,6 +36,7 @@ class SessionController extends Controller
 
     public function create(Request $request)
     {
+        //validate input
         $this->validate($request, [
             'email' => 'required|email',
             'password' => 'required'
@@ -41,9 +44,11 @@ class SessionController extends Controller
 
         if (Auth::attempt(['email'=> $request->email, 'password'=> $request->password]))
         {
+            //after loggin in redirect to the intended URL
             return Redirect::to(Session::get('url.intended'))->with(['loginsuccess'=> 'Welcome ']);
-        } else
-            {
+        }
+        else
+        {
             return back()->withErrors([
                 'message' => 'Your login credentials are incorrect'
             ]);
