@@ -130,9 +130,10 @@
             <span class="articleBod">{!! $posted->body !!}</span><br />
 
             <h6>Tags</h6>
-            @foreach($posted->pivot['tag_id'] as $id)
-                <li> {{\App\Tag::whereId($id)->get()->name}} </li>
+            @foreach($posted->tags as $tag)
+                <li> {{$tag}} </li>
             @endforeach
+            {{$posted}}
 
             <br><br />
 
