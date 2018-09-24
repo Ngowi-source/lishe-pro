@@ -11617,6 +11617,11 @@ input[name='userid'] {
 }
 
 @media screen and (min-width: 800px) {
+  #bmrWrapper .bmr,
+  #bmrWrapper .results {
+    font-size: larger !important;
+  }
+
   .login:hover {
     background: #8B281F;
     color: #D9DCD8;
