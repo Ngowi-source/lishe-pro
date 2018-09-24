@@ -1,1 +1,1 @@
-{{$details}}
+{{ print_r($details, true) }}
