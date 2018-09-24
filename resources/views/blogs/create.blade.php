@@ -107,7 +107,7 @@
                     <label for="title">Title</label>
                     <input id="title" name="title" type="text" class="form-control" required/><br />
                 </div>
-                
+
                 <div class="form-group">
                     <label for="bodyid">Body</label>
                     <textarea id="bodyid" name="body" class="form-control" ></textarea><br />
