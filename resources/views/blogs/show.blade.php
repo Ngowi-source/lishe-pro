@@ -127,7 +127,14 @@
             <h1>{{$posted->title}}</h1>
             <span class="articleTime"><b>{{$posted->user->firstname}} {{$posted->user->lastname}}</b> on {{$posted->created_at->toFormattedDateString()}}</span><br /><br />
 
-            <span class="articleBod">{!! $posted->body !!}</span><br /><br />
+            <span class="articleBod">{!! $posted->body !!}</span><br />
+
+            <h6>Tags</h6>
+            @foreach($posted->pivot['tag_id'] as $id)
+                <li> {{\App\Tag::whereId($id)->get()->name}} </li>
+            @endforeach
+
+            <br><br />
 
             <div class="card w-75" id="blogWriter">
                 <div class="card-body">
