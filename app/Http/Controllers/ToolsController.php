@@ -21,7 +21,13 @@ class ToolsController extends Controller
             'sex' => 'required|in:Female,Male'
         ]);
 
-        $details = $request;
+        $details = [
+            'name'=>$request->name,
+            'height'=>$request->height.' cm',
+            'weight'=>$request->weight.' kgs',
+            'age'=>$request->age.' years',
+            'gender'=>$request->sex
+        ];
 
         return view('tools.bmi', compact('details'));
     }
