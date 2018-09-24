@@ -70,7 +70,7 @@
     <div id="bmrWrapper">
         <div id="BMResults">
 
-            @if($bmr)
+            @if(isset($bmr))
 
                 <h3 class="text-center">Calculation Results</h3><br />
                 <span class="results float-left">The amount of calories required to maintain your current weight is:  </span><span class="bmr">{{$bmr}}</span><br />
