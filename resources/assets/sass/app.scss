@@ -922,12 +922,15 @@ input[name='userid']{
 
   form{
     position: absolute;
-    margin-left: 50vw;
+    margin-left: calc(50vw - 5vh);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+  label{
+    color: $c2;
   }
   input{
     color: $c1;

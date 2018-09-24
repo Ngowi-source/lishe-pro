@@ -11437,9 +11437,13 @@ input[name='userid'] {
 
 #BMRForm form {
   position: absolute;
-  margin-left: 50vw;
+  margin-left: calc(50vw - 5vh);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+#BMRForm label {
+  color: #9BA747;
 }
 
 #BMRForm input {
