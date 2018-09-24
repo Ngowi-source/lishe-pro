@@ -87,7 +87,7 @@
                     {{csrf_field()}}
 
                     <label for="name">Name</label>
-                    <input id="name" type="text" /><br /><br />
+                    <input id="name" type="text" name="name" /><br /><br />
 
                     <label for="height">Height</label>
                     <input id="height" name="height" type="number" placeholder="in centimeters..." required/><br /><br />
