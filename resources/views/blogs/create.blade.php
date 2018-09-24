@@ -103,24 +103,32 @@
             <form method="POST" action="/articles" id="createForm">
                 {{csrf_field()}}
 
-                <label for="title">Title</label>
-                <input id="title" name="title" type="text" class="form-control" required/><br />
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input id="title" name="title" type="text" class="form-control" required/><br />
+                </div>
+                
+                <div class="form-group">
+                    <label for="bodyid">Body</label>
+                    <textarea id="bodyid" name="body" class="form-control" ></textarea><br />
+                </div>
 
-                <label for="bodyid">Body</label>
-                <textarea id="bodyid" name="body" class="form-control" ></textarea><br />
+                <div class="form-group">
+                    <label for="tags">Tags</label>
+                    <select id="tags" name="tags" class="form-control" multiple="multiple">
 
-                <label for="tags">Tags</label>
-                <select id="tags" name="tags" class="form-control" multiple="multiple">
+                        @foreach(\App\Tag::all()->pluck('name') as $name)
+                            <option value="{{$name}}">{{$name}}</option>
+                        @endforeach
 
-                    @foreach(\App\Tag::all()->pluck('name') as $name)
-                        <option value="{{$name}}">{{$name}}</option>
-                    @endforeach
+                    </select>
+                </div><br />
 
-                </select><br />
-
-                <button type="submit" class="form-control createButton" id="createButton">
-                    Post Article
-                </button>
+                <div class="form-group">
+                    <button type="submit" class="form-control createButton" id="createButton">
+                        Post Article
+                    </button>
+                </div>
             </form>
 
 
