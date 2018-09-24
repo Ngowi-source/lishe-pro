@@ -129,11 +129,10 @@
 
             <span class="articleBod">{!! $posted->body !!}</span><br />
 
-            <h6>Tags</h6>
+            <h6><i class="fas fa-tags"></i> Tags</h6>
             @foreach($posted->tags as $tag)
-                <li> {{$tag}} </li>
+                <li><a href="/tags/{{$tag}}"> {{$tag}} </a></li>
             @endforeach
-            {{$posted}}
 
             <br><br />
 

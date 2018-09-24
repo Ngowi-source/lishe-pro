@@ -11683,6 +11683,24 @@ input[name='userid'] {
     padding-right: 5vw;
   }
 
+  #showWrapper #blogBod h6 {
+    color: #9BA747;
+  }
+
+  #showWrapper #blogBod li {
+    list-style-type: none;
+    display: inline;
+    color: #D9DCD8;
+    border: 1px solid #8B281F;
+    padding: 2px;
+    border-radius: 290486px;
+    background: #8B281F;
+  }
+
+  #showWrapper #blogBod li a {
+    text-decoration: none;
+  }
+
   #showWrapper #blogHeadSide {
     display: block;
     padding-right: 5vw;
