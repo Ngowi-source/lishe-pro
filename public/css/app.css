@@ -11452,6 +11452,7 @@ input[name='userid'] {
 
 #BMResults .bmr {
   font-size: x-large;
+  color: #9BA747 !important;
 }
 
 #BMRForm {
@@ -11642,12 +11643,6 @@ input[name='userid'] {
 }
 
 @media screen and (min-width: 800px) {
-  #bmrWrapper .bmr,
-  #bmrWrapper .results,
-  #bmrWrapper .results2 {
-    font-size: larger !important;
-  }
-
   .login:hover {
     background: #8B281F;
     color: #D9DCD8;
@@ -11660,6 +11655,12 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 800px) {
+  #bmrWrapper .bmr,
+  #bmrWrapper .results,
+  #bmrWrapper .results2 {
+    font-size: larger !important;
+  }
+
   #nots sup {
     font-size: small !important;
     top: -2.3em !important;
