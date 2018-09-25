@@ -911,10 +911,13 @@ input[name='userid']{
 
     &:hover{
       color: $c4!important;
+      background-color: $c1!important;
     }
   }
 }
-
+.page-item.active .page-link{
+  background-color: $c1!important;
+}
 #bmrWrapper{
   display: grid;
   grid-template-rows: auto minmax(105vh, auto);

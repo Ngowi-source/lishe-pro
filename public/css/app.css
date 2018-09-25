@@ -11425,6 +11425,11 @@ input[name='userid'] {
 
 .page-item .page-link:hover {
   color: #D57030 !important;
+  background-color: #D9DCD8 !important;
+}
+
+.page-item.active .page-link {
+  background-color: #D9DCD8 !important;
 }
 
 #bmrWrapper {
