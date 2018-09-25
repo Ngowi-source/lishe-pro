@@ -85,6 +85,13 @@
                 @foreach($archives as $stat)
                     <a class="archLink" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
                 @endforeach
+            </div><br class="sideDel"/><br class="sideDel"/>
+
+            <h4 class="archToggle sideInline">Tags</h4>
+            <div class="archLinks">
+                @foreach($tags as $tag)
+                    <a href="/tag/{{$tag}}" class="large">{{$tag}}</a><br />
+                @endforeach
             </div>
 
         </div>

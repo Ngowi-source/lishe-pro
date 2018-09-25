@@ -50,9 +50,11 @@ class ArticleController extends Controller
         $articles = $articles->paginate(4);
 
         //fetch archives on the archives method from the Article model
+        //fetch all tags with posts
         $archives = Article::archives();
+        $tags = Tag::has('articles')->pluck('name');
 
-        return view('blogs.index', compact('articles', 'archives'));
+        return view('blogs.index', compact('articles', 'archives', 'tags'));
     }
 
     public function show($title)
@@ -67,7 +69,9 @@ class ArticleController extends Controller
         }
 
         $archives = Article::archives();
-        return view('blogs.show',compact('posted', 'archives'));
+        $tags = Tag::has('articles')->pluck('name');
+
+        return view('blogs.show',compact('posted', 'archives', 'tags'));
     }
 
     public function create()
@@ -79,7 +83,9 @@ class ArticleController extends Controller
         }
 
         $archives = Article::archives();
-        return view('blogs.create', compact('archives'));
+        $tags = Tag::has('articles')->pluck('name');
+
+        return view('blogs.create', compact('archives', 'tags'));
     }
 
     public function store(Request $request)
