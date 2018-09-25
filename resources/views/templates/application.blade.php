@@ -348,6 +348,26 @@
                 $(".nav-links").toggleClass('showMenu');
             });
 
+            $(".archToggle, .archLinks").hover(function(){
+                $('.archLinks').addClass('display');
+            }, function(){
+                $('.archLinks').removeClass('display');
+            });
+
+            $(".archToggle").click(function(){
+                $('.archLinks').toggleClass('display');
+            });
+
+            $(".archToggle2, .archLinks2").hover(function(){
+                $('.archLinks2').addClass('display');
+            }, function(){
+                $('.archLinks2').removeClass('display');
+            });
+
+            $(".archToggle2").click(function(){
+                $('.archLinks2').toggleClass('display');
+            });
+
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip()
             });

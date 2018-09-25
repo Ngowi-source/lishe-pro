@@ -83,14 +83,14 @@
             <h4 class="archToggle sideInline">Archives</h4>
             <div class="archLinks">
                 @foreach($archives as $stat)
-                    <a class="archLink" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}" class="large">{{$stat['monthname'].' '.$stat['year']}}</a><br />
+                    <a class="archLink large" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}">{{$stat['monthname'].' '.$stat['year']}}</a><br />
                 @endforeach
             </div><br class="sideDel"/><br class="sideDel"/>
 
-            <h4 class="archToggle sideInline">Tags</h4>
+            <h4 class="archToggle2 sideInline">Tags</h4>
             <div class="archLinks">
                 @foreach($tags as $tag)
-                    <a href="/tag/{{$tag}}" class="large">{{$tag}}</a><br />
+                    <a href="/tag/{{$tag}}" class="archLink large">{{$tag}}</a><br />
                 @endforeach
             </div>
 
@@ -180,23 +180,6 @@
         };
 
         tinymce.init(editor_config);
-
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-            $(".archToggle, .archLinks").hover(function(){
-                $('.archLinks').addClass('display');
-            }, function(){
-                $('.archLinks').removeClass('display');
-            });
-
-            $(".archToggle").click(function(){
-                $('.archLinks').toggleClass('display');
-            });
-
-        });
 
     </script>
 

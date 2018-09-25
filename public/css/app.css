@@ -11775,7 +11775,8 @@ input[name='userid'] {
     display: inline-block;
   }
 
-  #blogWrapper #blogSide .archLinks {
+  #blogWrapper #blogSide .archLinks,
+  #blogWrapper #blogSide .archLinks2 {
     display: none;
     z-index: 50;
     overflow: visible;
@@ -11783,18 +11784,21 @@ input[name='userid'] {
     border-radius: 3px;
   }
 
-  #blogWrapper #blogSide .archLinks.display {
+  #blogWrapper #blogSide .archLinks.display,
+  #blogWrapper #blogSide .archLinks2.display {
     display: block;
     z-index: 50;
     padding-left: 1vw;
     margin-top: -0.95vw;
   }
 
-  #blogWrapper #blogSide .archLinks.display .archLink {
+  #blogWrapper #blogSide .archLinks.display .archLink,
+  #blogWrapper #blogSide .archLinks2.display .archLink {
     color: #D9DCD8 !important;
   }
 
-  #blogWrapper #blogSide .archToggle {
+  #blogWrapper #blogSide .archToggle,
+  #blogWrapper #blogSide .archToggle2 {
     cursor: pointer;
     border: 1px solid #8B281F;
     border-radius: 3px;
@@ -11865,7 +11869,8 @@ input[name='userid'] {
     display: inline-block;
   }
 
-  #showWrapper #blogHeadSide .archLinks {
+  #showWrapper #blogHeadSide .archLinks,
+  #showWrapper #blogHeadSide .archLinks2 {
     display: none;
     z-index: 50;
     overflow: visible;
@@ -11873,18 +11878,21 @@ input[name='userid'] {
     border-radius: 3px;
   }
 
-  #showWrapper #blogHeadSide .archLinks.display {
+  #showWrapper #blogHeadSide .archLinks.display,
+  #showWrapper #blogHeadSide .archLinks2.display {
     display: block;
     padding-left: 1vw;
     margin-top: -0.95vw;
     z-index: 50;
   }
 
-  #showWrapper #blogHeadSide .archLinks.display .archLink {
+  #showWrapper #blogHeadSide .archLinks.display .archLink,
+  #showWrapper #blogHeadSide .archLinks2.display .archLink {
     color: #D9DCD8 !important;
   }
 
-  #showWrapper #blogHeadSide .archToggle {
+  #showWrapper #blogHeadSide .archToggle,
+  #showWrapper #blogHeadSide .archToggle2 {
     cursor: pointer;
     color: #8B281F !important;
     border: 1px solid #8B281F;
@@ -11960,9 +11968,11 @@ input[name='userid'] {
 
   #blogWrapper #blogSide a button,
   #blogWrapper .archToggle,
+  #blogWrapper .archToggle2,
   #blogWrapper #blogHeadSide a button,
   #showWrapper #blogSide a button,
   #showWrapper .archToggle,
+  #showWrapper .archToggle2,
   #showWrapper #blogHeadSide a button {
     font-size: medium;
   }
