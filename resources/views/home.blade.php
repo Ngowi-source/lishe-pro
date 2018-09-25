@@ -177,7 +177,7 @@
             </div>
             <div id="bmi">
                 <i class="fas fa-male fa-5x"></i><br /><br />
-                <span class="iconfeatured">Diet Assessment & Body Mass Index</span>
+                <span class="iconfeatured">Diet Assessment & BMR</span>
             </div>
         </div>
         <div id="blog">
