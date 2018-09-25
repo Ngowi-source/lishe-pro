@@ -1143,6 +1143,11 @@ input[name='userid']{
       .bmr, .results, .results2{
         font-size: larger!important;
       }
+      #BMRForm{
+        input, button{
+          width: 70vw!important;
+        }
+      }
     }
     #nots sup{
       font-size: small!important;

@@ -11661,6 +11661,11 @@ input[name='userid'] {
     font-size: larger !important;
   }
 
+  #bmrWrapper #BMRForm input,
+  #bmrWrapper #BMRForm button {
+    width: 70vw !important;
+  }
+
   #nots sup {
     font-size: small !important;
     top: -2.3em !important;
