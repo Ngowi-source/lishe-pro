@@ -10451,7 +10451,7 @@ body {
 
 #header {
   grid-area: 1/1/2/2;
-  z-index: 200;
+  z-index: 999999999999999999;
   background: #D9DCD8;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -10473,6 +10473,7 @@ body {
 
 #content {
   grid-area: 2/1/3/2;
+  z-index: 5000;
 }
 
 #footer {
