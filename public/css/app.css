@@ -11889,6 +11889,7 @@ input[name='userid'] {
   #showWrapper #blogHeadSide .archLinks.display .archLink,
   #showWrapper #blogHeadSide .archLinks2.display .archLink {
     color: #D9DCD8 !important;
+    z-index: 50;
   }
 
   #showWrapper #blogHeadSide .archToggle,
