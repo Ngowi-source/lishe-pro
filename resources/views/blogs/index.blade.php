@@ -88,7 +88,7 @@
             </div><br class="sideDel"/><br class="sideDel"/>
 
             <h4 class="archToggle2 sideInline">Tags</h4>
-            <div class="archLinks">
+            <div class="archLinks2">
                 @foreach($tags as $tag)
                     <a href="/tag/{{$tag}}" class="archLink large">{{$tag}}</a><br />
                 @endforeach
