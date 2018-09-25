@@ -73,17 +73,17 @@
             @if(isset($bmr))
 
                 <h3 class="text-center">Calculation Results</h3><br />
-                <span class="results ">The amount of calories required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span><br />
+                <div class="results ">The amount of calories required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></div><br />
                 <br />
-                <span class="results2 ">If you are sedentary (i.e <i>little or no exercise at all</i>):  <span class="bmr">{{(int)($bmr *1.2)}}</span></span><br />
+                <div class="results2 ">If you are sedentary (i.e <i>little or no exercise at all</i>):  <span class="bmr">{{(int)($bmr *1.2)}}</span></div><br />
                 <br />
-                <span class="results ">If you are lightly active (i.e <i>light exercise/sports, 1-3days/week</i>):  <span class="bmr">{{(int)($bmr *1.375)}}</span></span><br />
+                <div class="results ">If you are lightly active (i.e <i>light exercise/sports, 1-3days/week</i>):  <span class="bmr">{{(int)($bmr *1.375)}}</span></div><br />
                 <br />
-                <span class="results2 ">If you are moderately active (i.e <i>moderate exercise/sports, 3-5days/week</i>):  <span class="bmr">{{(int)($bmr *1.55)}}</span></span><br />
+                <div class="results2 ">If you are moderately active (i.e <i>moderate exercise/sports, 3-5days/week</i>):  <span class="bmr">{{(int)($bmr *1.55)}}</span></div><br />
                 <br />
-                <span class="results">If you are very active (i.e <i>hard exercise/sports, 6-7days/week</i>):  <span class="bmr">{{(int)($bmr *1.725)}}</span></span><br />
+                <div class="results">If you are very active (i.e <i>hard exercise/sports, 6-7days/week</i>):  <span class="bmr">{{(int)($bmr *1.725)}}</span></div><br />
                 <br />
-                <span class="results2 ">If you are extra active (i.e <i>very hard daily exercise/sports,& physical job/2X training</i>):  <span class="bmr">{{(int)($bmr *1.9)}}</span></span><br />
+                <div class="results2 ">If you are extra active (i.e <i>very hard daily exercise/sports,& physical job/2X training</i>):  <span class="bmr">{{(int)($bmr *1.9)}}</span></div><br />
 
             @endif
         </div>
