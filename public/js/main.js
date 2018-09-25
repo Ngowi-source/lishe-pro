@@ -10,8 +10,20 @@ $(function() {
     }, 5000);
 });
 
+var tl = new TimelineMax();
+tl.staggerFrom(".rez", 0.5, {opacity:0, cycle:{x:function(i){return i*40;}, ease:function(i){return Back.easeOut;}}}, 0.2);
+tl.timeScale(0.5);
+
 //scrollmagic animations
 var controller = new ScrollMagic.Controller();
+
+new ScrollMagic.Scene({
+    triggerElement: "#BMResults",
+    triggerHook: "onCenter",
+    reverse: false
+})
+    .setTween(tl)
+    .addTo(controller);
 
 new ScrollMagic.Scene({
     triggerElement: "#whoAreWe h1",
