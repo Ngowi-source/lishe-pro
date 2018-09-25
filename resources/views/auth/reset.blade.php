@@ -49,6 +49,10 @@
         <h1 class="text-center">Reset Your Password ?</h1><br />
 
         <script>
+            Noty.overrideDefaults({
+                layout : 'bottomRight'
+            });
+
             new Noty({
                 text: 'Welcome back <strong>{{$user->firstname}} {{$user->lastname}}</strong>',
                 type: 'info',

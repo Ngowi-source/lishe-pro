@@ -298,6 +298,14 @@
                 </script>
             @endif
 
+            <script>
+
+                Noty.overrideDefaults({
+                    layout : 'bottomRight'
+                });
+
+            </script>
+
             @yield('content')
         </div>
 
