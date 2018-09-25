@@ -90,7 +90,7 @@
             <h4 class="archToggle2 sideInline">Tags</h4>
             <div class="archLinks2">
                 @foreach($tags as $tag)
-                    <a href="/tag/{{$tag}}" class="archLink large">{{$tag}}</a><br />
+                    <a href="/tags/{{$tag}}" class="archLink large">{{$tag}}</a><br />
                 @endforeach
             </div>
 
