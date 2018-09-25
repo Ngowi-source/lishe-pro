@@ -1270,9 +1270,13 @@ input[name='userid']{
           z-index: 50;
           padding-left: 1vw;
           margin-top: -0.95vw;
+          opacity: 1;
+          visibility: visible;
           .archLink{
             color: $c1!important;
             z-index: 50;
+            opacity: 1;
+            visibility: visible;
           }
         }
         .archToggle, .archToggle2{
@@ -1356,9 +1360,13 @@ input[name='userid']{
           padding-left: 1vw;
           margin-top: -0.95vw;
           z-index: 50;
+          opacity: 1;
+          visibility: visible;
           .archLink{
             color: $c1!important;
             z-index: 50;
+            opacity: 1;
+            visibility: visible;
           }
         }
         .archToggle, .archToggle2{

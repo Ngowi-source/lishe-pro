@@ -11790,12 +11790,16 @@ input[name='userid'] {
     z-index: 50;
     padding-left: 1vw;
     margin-top: -0.95vw;
+    opacity: 1;
+    visibility: visible;
   }
 
   #blogWrapper #blogSide .archLinks.display .archLink,
   #blogWrapper #blogSide .archLinks2.display .archLink {
     color: #D9DCD8 !important;
     z-index: 50;
+    opacity: 1;
+    visibility: visible;
   }
 
   #blogWrapper #blogSide .archToggle,
@@ -11885,12 +11889,16 @@ input[name='userid'] {
     padding-left: 1vw;
     margin-top: -0.95vw;
     z-index: 50;
+    opacity: 1;
+    visibility: visible;
   }
 
   #showWrapper #blogHeadSide .archLinks.display .archLink,
   #showWrapper #blogHeadSide .archLinks2.display .archLink {
     color: #D9DCD8 !important;
     z-index: 50;
+    opacity: 1;
+    visibility: visible;
   }
 
   #showWrapper #blogHeadSide .archToggle,
