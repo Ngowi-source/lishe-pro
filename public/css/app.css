@@ -11019,6 +11019,24 @@ body {
   grid-template-columns: 70vw 30vw;
 }
 
+#showWrapper #blogBod h6 {
+  color: #9BA747;
+}
+
+#showWrapper #blogBod .tag {
+  list-style-type: none;
+  display: inline;
+  border: 1px solid #8B281F;
+  padding: 4px;
+  border-radius: 290486px;
+  background: #8B281F;
+}
+
+#showWrapper #blogBod .tag a {
+  text-decoration: none;
+  color: #D9DCD8;
+}
+
 #blogHeadSide {
   display: none;
   grid-area: 1/2/2/3;
@@ -11419,8 +11437,15 @@ input[name='userid'] {
 }
 
 #BMResults .results {
-  border: 1px solid #9BA747;
-  background-color: #9BA747;
+  border: 1px solid #F29D4B;
+  background-color: #F29D4B;
+  font-size: x-large;
+  border-radius: 3px;
+}
+
+#BMResults .results2 {
+  border: 1px solid #D57030;
+  background-color: #D57030;
   font-size: x-large;
   border-radius: 3px;
 }
@@ -11618,7 +11643,8 @@ input[name='userid'] {
 
 @media screen and (min-width: 800px) {
   #bmrWrapper .bmr,
-  #bmrWrapper .results {
+  #bmrWrapper .results,
+  #bmrWrapper .results2 {
     font-size: larger !important;
   }
 
@@ -11795,24 +11821,6 @@ input[name='userid'] {
     grid-area: 2/1/3/3;
     padding-left: 5vw;
     padding-right: 5vw;
-  }
-
-  #showWrapper #blogBod h6 {
-    color: #9BA747;
-  }
-
-  #showWrapper #blogBod .tag {
-    list-style-type: none;
-    display: inline;
-    border: 1px solid #8B281F;
-    padding: 4px;
-    border-radius: 290486px;
-    background: #8B281F;
-  }
-
-  #showWrapper #blogBod .tag a {
-    text-decoration: none;
-    color: #D9DCD8;
   }
 
   #showWrapper #blogHeadSide {

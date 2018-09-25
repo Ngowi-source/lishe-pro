@@ -75,15 +75,15 @@
                 <h3 class="text-center">Calculation Results</h3><br />
                 <span class="results float-left">The amount of calories required to maintain your current weight is:  </span><span class="bmr">{{$bmr}}</span><br />
 
-                <span class="results float-left">If you are sedentary (i.e <i>little /no exercise</i>):  </span><span class="bmr">{{(int)($bmr *1.2)}}</span><br />
+                <span class="results2 float-left">If you are sedentary (i.e <i>little /no exercise</i>):  </span><span class="bmr">{{(int)($bmr *1.2)}}</span><br />
 
                 <span class="results float-left">If you are lightly active (i.e <i>light exercise/sports, 1-3days/week</i>):  </span><span class="bmr">{{(int)($bmr *1.375)}}</span><br />
 
-                <span class="results float-left">If you are moderately active (i.e <i>moderate exercise/sports, 3-5days/week</i>):  </span><span class="bmr">{{(int)($bmr *1.55)}}</span><br />
+                <span class="results2 float-left">If you are moderately active (i.e <i>moderate exercise/sports, 3-5days/week</i>):  </span><span class="bmr">{{(int)($bmr *1.55)}}</span><br />
 
                 <span class="results float-left">If you are very active (i.e <i>hard exercise/sports, 6-7days/week</i>):  </span><span class="bmr">{{(int)($bmr *1.725)}}</span><br />
 
-                <span class="results float-left">If you are extra active (i.e <i>very hard daily exercise/sports,& physical job/2X training</i>):  </span><span class="bmr">{{(int)($bmr *1.9)}}</span><br />
+                <span class="results2 float-left">If you are extra active (i.e <i>very hard daily exercise/sports,& physical job/2X training</i>):  </span><span class="bmr">{{(int)($bmr *1.9)}}</span><br />
 
             @endif
         </div>
@@ -100,7 +100,7 @@
                 </div>
             @endif
 
-            <h3 class="text-center">Calculate Your Daily Caloric Needs</h3>
+            <h3 class="text-center">Calculate Your Daily Caloric Needs</h3><br />
             <form method="POST" action="/BMR-calculator">
                 {{csrf_field()}}
 
