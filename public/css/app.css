@@ -11452,7 +11452,7 @@ input[name='userid'] {
 
 #BMResults .bmr {
   font-size: x-large;
-  color: #9BA747 !important;
+  color: #8B281F !important;
 }
 
 #BMRForm {
@@ -11511,7 +11511,7 @@ input[name='userid'] {
 }
 
 #BMRForm h3 {
-  color: #D9DCD8;
+  color: #9BA747;
 }
 
 #BMRForm input[type="radio"] {
