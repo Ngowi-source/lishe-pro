@@ -11430,7 +11430,6 @@ input[name='userid'] {
   grid-area: 1/1/2/2;
   padding: 5vh;
   color: #D9DCD8;
-  position: relative;
 }
 
 #BMResults h3 {
@@ -11449,14 +11448,6 @@ input[name='userid'] {
   background-color: #D57030;
   font-size: x-large;
   border-radius: 3px;
-}
-
-#BMResults .results,
-#BMResults .results2 {
-  position: absolute;
-  margin-left: calc(50vw - 5vh);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 #BMResults .bmr {

@@ -919,7 +919,6 @@ input[name='userid']{
   grid-area: 1/1/2/2;
   padding: 5vh;
   color: $c1;
-  position: relative;
 
   h3{
     color: $c2;
@@ -935,15 +934,6 @@ input[name='userid']{
     background-color: $c4;
     font-size: x-large;
     border-radius: 3px;
-  }
-  .results, .results2{
-    position: absolute;
-    margin-left: calc(50vw - 5vh);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
   .bmr{
     font-size: x-large;
