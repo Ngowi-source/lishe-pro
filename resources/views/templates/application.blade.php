@@ -49,6 +49,7 @@
                         text: '{{session('loginsuccess')}} {{Auth::user()->firstname}}',
                         type: 'info',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -64,6 +65,7 @@
                         text: '<strong>{{session('regsuccess')}}</strong>. A link is sent to your email, click it to activate your account',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight', // Animate.css class names
@@ -79,6 +81,7 @@
                         text: '{{session('accdel')}}',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -94,6 +97,7 @@
                         text: '{{session('accfail')}}',
                         type: 'error',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight', // Animate.css class names
@@ -109,6 +113,7 @@
                         text: '{{session('outsuccess')}}',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -124,6 +129,7 @@
                         text: '<strong>Disallowed...</strong>{{session('adminerror')}}',
                         type: 'error',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -139,6 +145,7 @@
                         text: '{{session('userdel')}}',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight', // Animate.css class names
@@ -154,6 +161,7 @@
                         text: '<strong>{{session('userfail')}}</strong>',
                         type: 'error',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -169,6 +177,7 @@
                         text: '{{session('postdel')}}',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -184,6 +193,7 @@
                         text: '<strong>{{session('postfail')}}</strong>',
                         type: 'error',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -199,6 +209,7 @@
                         text: '<strong>{{session('commentsuccess')}}</strong>',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight', // Animate.css class names
@@ -214,6 +225,7 @@
                         text: '<strong>{{session('replysuccess')}}</strong>',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -229,6 +241,7 @@
                         text: '{{session('articlesuccess')}}',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight', // Animate.css class names
@@ -244,6 +257,7 @@
                         text: '{{session('socialerror')}} <strong>Please </strong>login or register with a different account.',
                         type: 'error',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -259,6 +273,7 @@
                         text: '{{session('updatesuccess')}}',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight', // Animate.css class names
@@ -274,6 +289,7 @@
                         text: '{{session('mailsuccess')}}',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -289,6 +305,7 @@
                         text: '{{session('verified')}}',
                         type: 'success',
                         theme: 'relax',
+                        layout : 'bottomRight',
                         closeWith: ['click', 'button'],
                         animation: {
                             open: 'animated bounceInRight',
@@ -297,14 +314,6 @@
                     }).show();
                 </script>
             @endif
-
-            <script>
-
-                Noty.overrideDefaults({
-                    layout : 'bottomRight'
-                });
-
-            </script>
 
             @yield('content')
         </div>
