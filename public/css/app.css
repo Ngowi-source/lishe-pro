@@ -11795,6 +11795,7 @@ input[name='userid'] {
   #blogWrapper #blogSide .archLinks.display .archLink,
   #blogWrapper #blogSide .archLinks2.display .archLink {
     color: #D9DCD8 !important;
+    z-index: 50;
   }
 
   #blogWrapper #blogSide .archToggle,
