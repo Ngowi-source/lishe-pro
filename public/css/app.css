@@ -11024,6 +11024,10 @@ body {
   z-index: 5;
 }
 
+#showWrapper #blogBod a {
+  color: #9BA747;
+}
+
 #showWrapper #blogBod h6 {
   color: #9BA747;
 }
