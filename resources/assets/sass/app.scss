@@ -587,9 +587,9 @@ body{
   grid-area: 1/1/2/3;
   align-self: center;
   position: relative;
-  color: $c4;
+  color: $c5;
   
-  h2{
+  h1{
     position: absolute;
     left: 35vw;
     -webkit-transform: translateX(-50%);
@@ -1252,7 +1252,7 @@ input[name='userid']{
       #blogHead{
         grid-area: 1/1/2/2;
 
-        h2{
+        h1{
           left: 50vw;
         }
       }
@@ -1264,6 +1264,17 @@ input[name='userid']{
 
         .sideInline{
           display: inline-block;
+
+          button{
+            font-size: large!important;
+            color: $c5!important;
+            border: 1px solid $c5!important;
+            background-color: #fff!important;
+
+            &:hover {
+              color: #fff!important;
+            }
+          }
         }
         .archLinks, .archLinks2{
           display: none;
@@ -1423,7 +1434,7 @@ input[name='userid']{
       font-size: 1.3rem!important;
     }
     #blogWrapper{
-      #blogHead h2{
+      #blogHead h1{
         font-size: 1.6rem;
       }
     }
@@ -1436,7 +1447,7 @@ input[name='userid']{
         }
       }
       #blogSide a button, .archToggle, .archToggle2, #blogHeadSide a button{
-        font-size: medium;
+        font-size: medium!important;
       }
     }
     #showWrapper{
@@ -1479,7 +1490,7 @@ input[name='userid']{
   @media screen and (max-width: 343px){
     #blogWrapper{
 
-      #blogHead h2{
+      #blogHead h1{
         align-self: start;
       }
     }

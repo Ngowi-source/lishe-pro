@@ -71,7 +71,7 @@
     <div id="blogWrapper">
 
         <div id="blogHead">
-            <h2>Blog Posts</h2>
+            <h1>Articles</h1>
         </div>
 
         <div id="blogSide">
