@@ -1336,13 +1336,13 @@ input[name='userid']{
           text-decoration: none;
         }
         a button{
-          font-size: larger;
-          color: #fff;
-          border: none;
+          font-size: large;
+          color: $c5;
+          border: 1px solid $c5;
           border-radius: 3px;
           -webkit-border-radius: 3px;
           -moz-border-radius: 3px;
-          background: $c4;
+          background: #fff;
           -webkit-transition: background 0.25s ease-out;
           -moz-transition: background 0.25s ease-out;
           -ms-transition: background 0.25s ease-out;
@@ -1351,6 +1351,7 @@ input[name='userid']{
 
           &:hover{
             background: $c5;
+            color: #fff;
           }
           i{
             font-family: FontAwesome;
