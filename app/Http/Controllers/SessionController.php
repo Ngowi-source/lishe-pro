@@ -16,7 +16,7 @@ class SessionController extends Controller
 
     public function __construct()
     {
-        //protect all methods with auth middleware except destroy and verify
+        //protect all methods with guest middleware except destroy and verify
         $this->middleware('guest')->except('destroy', 'verify');
     }
 

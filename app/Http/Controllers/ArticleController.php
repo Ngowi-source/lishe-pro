@@ -84,8 +84,9 @@ class ArticleController extends Controller
 
         $archives = Article::archives();
         $tags = Tag::has('articles')->pluck('name');
+        $tagNames = Tag::all()->pluck('name');
 
-        return view('blogs.create', compact('archives', 'tags'));
+        return view('blogs.create', compact('archives', 'tags', 'tagNames'));
     }
 
     public function store(Request $request)

@@ -35,7 +35,7 @@ class SocialAuthController extends Controller
             //if the social account already exists then login the user
             $user = $account;
             Auth::login($user, true);
-            return redirect('/')->with(['loginsuccess'=> 'Welcome ']);
+            return Redirect::to(Session::get('url.intended'))->with(['loginsuccess'=> 'Welcome ']);
         }
         else
         {
