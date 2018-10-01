@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ResetRequest;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Mail;
@@ -11,15 +12,10 @@ class RecoveryController extends Controller
 {
     public function mailUser(Request $request)
     {
-        //validate input
-        $this->validate($request, [
-            'email' => 'required|email'
-        ]);
         $account = User::where('email', '=', $request['email'])->exists();
 
         //if theres a user with the email, send a password reset email
-        if($account)
-        {
+        if($account) {
             $user = User::whereEmail($request['email'])->first();
             try
             {
@@ -36,8 +32,7 @@ class RecoveryController extends Controller
             }
 
         }
-        else
-        {
+        else {
             return back()->withErrors([
                 'message' => 'Your email is not registered with us!'
             ]);
@@ -53,28 +48,18 @@ class RecoveryController extends Controller
         return view('auth.reset')->with(['user' => $user]);
     }
 
-    public function reset(Request $request)
+    public function reset(ResetRequest $request)
     {
-
-        try
-        {
-            //validate reset input
-            $this->validate($request, [
-                'password' => 'required|confirmed',
-                'invisible' => 'required'
-            ]);
-
+        try {
             //update password
             $newPass = bcrypt($request->password);
-
             User::whereId($request->invisible)->update(['password' => $newPass]);
 
             return redirect('/login')->with([
                 'updatesuccess' => 'Your password has been reset, please login!'
             ]);
         }
-        catch(\Throwable $e)
-        {
+        catch(\Throwable $e) {
             return $e->getMessage();
         }
 

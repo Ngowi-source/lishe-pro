@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\LoginRequest;
 use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -30,25 +31,17 @@ class SessionController extends Controller
     public function destroy()
     {
         auth()->logout();
-
         return redirect('/')->with(['outsuccess'=> 'You have been logged out!']);
     }
 
-    public function create(Request $request)
+    public function create(LoginRequest $request)
     {
-        //validate input
-        $this->validate($request, [
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
+        if (Auth::attempt(['email'=> $request->email, 'password'=> $request->password])) {
 
-        if (Auth::attempt(['email'=> $request->email, 'password'=> $request->password]))
-        {
             //after loggin in redirect to the intended URL
             return Redirect::to(Session::get('url.intended'))->with(['loginsuccess'=> 'Welcome ']);
         }
-        else
-        {
+        else {
             return back()->withErrors([
                 'message' => 'Your login credentials are incorrect'
             ]);

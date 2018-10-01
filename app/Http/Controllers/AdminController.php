@@ -31,18 +31,14 @@ class AdminController extends Controller
 
     public function userdel($id)
     {
-        $idd = base64_decode($id);
-
         //deleting users
-        $res = User::whereId($idd)->delete();
-        if($res)
-        {
+        $res = User::whereId(base64_decode($id))->delete();
+        if($res) {
             return back()->with([
                 'userdel' => 'User deleted successfully!'
             ]);
         }
-        else
-        {
+        else {
             return back()->with([
                 'userfail' => 'User could not be deleted!'
             ]);
@@ -51,18 +47,14 @@ class AdminController extends Controller
 
     public function postdel($id)
     {
-        $idd = base64_decode($id);
-
         //deleting posts
-        $res = Article::whereId($idd)->delete();
-        if($res)
-        {
+        $res = Article::whereId(base64_decode($id))->delete();
+        if($res) {
             return back()->with([
                 'postdel' => 'Article deleted successfully!'
             ]);
         }
-        else
-        {
+        else {
             return back()->with([
                 'postfail' => 'Article could not be deleted!'
             ]);

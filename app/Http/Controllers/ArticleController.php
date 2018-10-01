@@ -91,13 +91,6 @@ class ArticleController extends Controller
 
     public function store(Request $request)
     {
-        //validate input
-        $this->validate($request, [
-            'title'=> 'required|max:50',
-            'body'=> 'required',
-            'tags'=> 'required'
-        ]);
-
         //insert new article
         $article = Article::create([
             'title'=> $request->title,
@@ -115,15 +108,10 @@ class ArticleController extends Controller
         return redirect('/blog')->with(['articlesuccess'=> 'Your article is posted!']);
     }
 
-    public function comment($title)
+    public function comment($title, $request)
     {
         //article object fetched
         $posted = Article::where('title', '=', str_replace('-', ' ', $title))->first();
-
-        //validate comment input
-        $this->validate(request(), [
-            'body'=> 'required|min:2'
-        ]);
 
         //create comment object and reply
         $comment = Comment::create([
@@ -148,12 +136,6 @@ class ArticleController extends Controller
 
     public function reply()
     {
-        //validate reply input
-        $this->validate(request(), [
-            'body'=> 'required|min:2',
-            'cid'=> 'integer'
-        ]);
-
         //create reply object and send reply
         $reply = Reply::create([
             'comment_id' => request('cid'),

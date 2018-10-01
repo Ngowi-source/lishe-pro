@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RegistrationRequest;
 use App\User;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Http\Request;
@@ -24,29 +25,24 @@ class RegistrationController extends Controller
         return view('auth.register');
     }
 
-    public function create(Request $request)
+    public function create(RegistrationRequest $request)
     {
-        //validate input
-        $this->validate($request, [
-            'firstname'=> 'required',
-            'lastname'=> 'required',
-            'email'=> 'required|email',
-            'password'=> 'required|confirmed',
-        ]);
-
         $request['password'] = bcrypt($request->password);
-
         $userEmailExists = User::whereEmail($request->email)->first();
 
         //chack if the registered user email is already existing
-        if ($userEmailExists)
-        {
+        if ($userEmailExists) {
             return redirect('/register')->with(['socialerror'=> 'The email for this account has already been registered with another user!']);
         }
-        else
-        {
+        else {
             //if it doesn't exist, create a new user
-            $user = User::create(['firstname'=>$request->firstname, 'lastname'=>$request->lastname, 'email'=>$request->email, 'password'=>$request->password, 'status'=> 0]);
+            $user = User::create([
+                'firstname'=>$request->firstname,
+                'lastname'=>$request->lastname,
+                'email'=>$request->email,
+                'password'=>$request->password,
+                'status'=> 0
+            ]);
 
             auth()->login($user);
 
@@ -55,13 +51,11 @@ class RegistrationController extends Controller
             $objUser->firstname = $request->firstname;
             $objUser->id = $user->id;
 
-            try
-            {
+            try {
                 Mail::to($request->email)->send(new AccountVerificationMail( $objUser));
                 return Redirect::to(Session::get('url.intended'))->with(['regsuccess'=> 'Welcome to LishePro!']);
             }
-            catch(\Throwable $e)
-            {
+            catch(\Throwable $e) {
                 return $e->getMessage();
             }
 
