@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Social;
-use Illuminate\Http\Request;
-use Laravel\Socialite\Contracts\Provider;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Laravel\Socialite\Facades\Socialite;
 use App\User;
 use Illuminate\Support\Facades\Auth;
@@ -37,8 +36,7 @@ class SocialAuthController extends Controller
             Auth::login($user, true);
             return Redirect::to(Session::get('url.intended'))->with(['loginsuccess'=> 'Welcome ']);
         }
-        else
-        {
+        else {
             //otherwise create a new social account and log the user in
             $fn = strtok($auth_user->name, " ");
             $ln = str_replace($fn, '', $auth_user->name);
