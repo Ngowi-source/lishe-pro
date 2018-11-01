@@ -10599,7 +10599,7 @@ body {
 
 #homeIntro {
   position: relative;
-  background: url("/images/diet.jpg");
+  background-image: url("/images/diet.jpg");
   overflow: hidden;
 }
 
