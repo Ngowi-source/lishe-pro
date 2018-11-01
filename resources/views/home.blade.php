@@ -254,7 +254,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
+    {{--<script>
         particlesJS.load('homeIntro', '/particles.json', function(){
             console.log('Particles Loaded');
         });
@@ -283,6 +283,6 @@
         particlesJS.load('homeIntro', '/particles6.json', function(){
             console.log('Particles6 Loaded');
         });
-    </script>
+    </script>--}}
 
 @endsection
