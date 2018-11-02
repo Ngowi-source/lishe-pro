@@ -17,12 +17,10 @@
 
         <a id="tools"><span class="tools">Dietary Assessment </span>Tools
             <div class="submenu">
+                <a href="/weight-loss-tracker">Weight Loss</a>
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
-                <a href="/weight-loss-tracker">Weight Loss Tracker</a>
-                <a href="/diet-meal-planner">Diet Meal Planner</a>
                 <a href="/online-food-diary">Online Food Diary</a>
-                <a href="/BMR-calculator">BMR Calculator</a>
-                <a href="/lishe-pro24">Lishe Pro-24</a>
+                <a href="/diet-meal-planner">Diet Meal Planner</a>
             </div>
         </a>
         <a href="/blog">Blog</a>

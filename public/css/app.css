@@ -11987,6 +11987,10 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 533px) {
+  #homeIntro {
+    background-position: center right;
+  }
+
   #blogWrapper #blogBod .articleBod,
   #showWrapper #blogBod .articleBod {
     font-size: small !important;

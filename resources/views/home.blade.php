@@ -18,12 +18,10 @@
 
         <a id="tools"><span class="tools">Dietary Assessment </span>Tools
             <div class="submenu">
+                <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Weight Loss</a>
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
-                <a href="/weight-loss-tracker">Weight Loss Tracker</a>
-                <a href="/diet-meal-planner">Diet Meal Planner</a>
                 <a href="/online-food-diary">Online Food Diary</a>
-                <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">BMR Calculator</a>
-                <a href="/lishe-pro24">Lishe Pro-24</a>
+                <a href="/diet-meal-planner">Diet Meal Planner</a>
             </div>
         </a>
         <a href="/blog">Blog</a>
@@ -52,7 +50,7 @@
             </a>
             <a href="/logout">Logout</a>
             <a class="topname" href="/account/{{Auth::user()->id}}">
-                <i class="far fa-user"></i> {{Auth::user()->firstname}} {{strtoupper(substr(Auth::user()->lastname, 0,1))}}.
+                <i class="far fa-user"></i> {{Auth::user()->firstname}}
             </a>
         @else
             <a href="/login" class="login">Login</a>
@@ -254,35 +252,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    {{--<script>
-        particlesJS.load('homeIntro', '/particles.json', function(){
-            console.log('Particles Loaded');
-        });
-    </script>
-    <script>
-        particlesJS.load('homeIntro', '/particles2.json', function(){
-            console.log('Particles2 Loaded');
-        });
-    </script>
-    <script>
-        particlesJS.load('homeIntro', '/particles3.json', function(){
-            console.log('Particles3 Loaded');
-        });
-    </script>
-    <script>
-        particlesJS.load('homeIntro', '/particles4.json', function(){
-            console.log('Particles4 Loaded');
-        });
-    </script>
-    <script>
-        particlesJS.load('homeIntro', '/particles5.json', function(){
-            console.log('Particles5 Loaded');
-        });
-    </script>
-    <script>
-        particlesJS.load('homeIntro', '/particles6.json', function(){
-            console.log('Particles6 Loaded');
-        });
-    </script>--}}
+
 
 @endsection
