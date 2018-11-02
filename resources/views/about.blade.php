@@ -17,7 +17,7 @@
 
         <a id="tools"><span class="tools">Dietary Assessment </span>Tools
             <div class="submenu">
-                <a href="/weight-loss-tracker">Weight Loss</a>
+                <a href="/weight-loss-gain-tracker">Weight Loss</a>
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
                 <a href="/online-food-diary">Online Food Diary</a>
                 <a href="/diet-meal-planner">Diet Meal Planner</a>
@@ -70,7 +70,7 @@
 
         <h1 class="text-center">About Lishe Pro</h1>
 
-        <div class="col-12 large">
+        <div class="col-12 large"><br />
 
             Lishe PRO is a free online diet and exercise journal that allows you to track your nutrient intake and
             determine the calories you burn during exercise with no guess work. Whether you want to lose weight,

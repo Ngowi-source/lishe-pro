@@ -63,5 +63,5 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
 
-Route::get('/BMR-calculator', 'ToolsController@bmr');
-Route::post('/BMR-calculator', 'ToolsController@bmresults');
+Route::get('/weight-loss-gain-tracker', 'ToolsController@bmr');
+Route::post('/weight-loss-gain-tracker', 'ToolsController@bmresults');

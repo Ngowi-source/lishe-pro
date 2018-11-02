@@ -10870,13 +10870,23 @@ body {
   grid-area: 2/1/3/2;
   color: #8B281F;
   padding: 10vw 5vw 10vw 5vw;
-  text-align: center;
   height: auto;
 }
 
-#whoAreWe .whoAreWe {
-  font-size: larger;
-  line-height: 2;
+#whoAreWe .inl1,
+#whoAreWe .inl2 {
+  width: 40%;
+  float: left;
+  background: #D57030;
+  padding: 5%;
+  text-align: center;
+  display: inline;
+}
+
+#whoAreWe .inl1 h5,
+#whoAreWe .inl2 h5 {
+  text-align: left;
+  color: #9BA747;
 }
 
 #whatWeDo {

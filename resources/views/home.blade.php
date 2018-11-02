@@ -81,8 +81,8 @@
                     </div>
                 @endif
 
-                <h3 class="text-center">Free Diet Assesser</h3>
-                <form method="POST" action="/BMR-calculator">
+                <h3 class="text-center">Weight Assesser</h3>
+                <form method="POST" action="/weight-loss-gain-tracker">
                     {{csrf_field()}}
 
                     <label for="name">Name</label>
@@ -149,11 +149,37 @@
 
         </div>
         <div id="whoAreWe">
-            <h1>Why Lishe Pro?</h1><br />
+            <h1>Tools for Your Goals</h1><br />
 
-            <span class="whoAreWe text-center col-sm-10 col-md-6 col-lg-4">
-                Lishe Pro is guided by top-notch professionals’ group with the purpose to safely support those who are looking to improve their health through nutrition. We do this by using interactive dietary assessment tools, whole food supplements, and most importantly dietary changes. Our aim is to help as many people as possible be healthier and happier without the use of unnecessary drugs or surgery.
-            </span>
+            <h4>Are you trying to lose weight, lower your BMI, or living a healthy lifestyle? Lishe PRO give you the right features to hit your goals</h4><br />
+
+            <div class="weightLossTracker inl1">
+                <h5>Weight Tracker</h5><br />
+                <p>
+                    If you've lost a significant amount of weight, increased your exercise or made any significant changes in your lifestyle in regard to eating and exercise, it's time to modify your plan. Simply use the Weight Loss Tracker tool to help you find the appropriate calorie level based on your Basal Metabolic Rate and Physical Activity level.
+                </p>
+            </div>
+
+            <div class="foodDiary inl1">
+                <h5>Food Diary</h5><br />
+                <p>
+                    Keeping a record of your daily food intake will help you stay on track when trying to lose weight or maintain a healthy weight and activity levels. It also will give your nutritionist/dietician a quick way to check your progress.
+                </p>
+            </div>
+
+            <div class="foodCalorieCounter inl2">
+                <h5>Calorie Counter</h5><br />
+                <p>
+                    Powered by the Tanzania Food Composition Database, the Food Calorie Counter allows you to choose from thousands of foods, and see nutrition facts such as calories, fat, protein, carbohydrates, fiber and sugar.
+                </p>
+            </div>
+
+            <div class="mpActivityPlanner inl2">
+                <h5>Meal&Physical Activity Planner</h5><br />
+                <p>
+                    This tool will help you kick-start a healthier lifestyle. Start making plans now about what you’ll eat, what you’ll drink and your physical activity, and then monitor your progress.
+                </p>
+            </div>
 
         </div>
         <div id="whatWeDo">

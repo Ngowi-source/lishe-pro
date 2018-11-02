@@ -433,11 +433,19 @@ body{
   grid-area: 2/1/3/2;
   color: $c5;
   padding: 10vw 5vw 10vw 5vw;
-  text-align: center;
   height: auto;
-  .whoAreWe{
-    font-size: larger;
-    line-height: 2;
+
+  .inl1, .inl2{
+    h5{
+      text-align: left;
+      color: $c2;
+    }
+    width: 40%;
+    float: left;
+    background: $c4;
+    padding: 5%;
+    text-align: center;
+    display: inline;
   }
 }
 #whatWeDo{
