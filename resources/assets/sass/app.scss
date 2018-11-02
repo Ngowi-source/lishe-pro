@@ -435,17 +435,25 @@ body{
   padding: 10vw 5vw 10vw 5vw;
   height: auto;
 
+  h4{
+    color: $c2;
+  }
   .inl1, .inl2{
     h5{
       text-align: left;
       color: $c2;
     }
+    border-radius: 3px;
     width: 40%;
     float: left;
     background: $c4;
     padding: 5%;
     text-align: center;
     display: inline;
+  }
+
+  .foodDiary, .mpActivityPlanner{
+    margin-left: 10%;
   }
 }
 #whatWeDo{

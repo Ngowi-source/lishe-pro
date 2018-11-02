@@ -149,9 +149,9 @@
 
         </div>
         <div id="whoAreWe">
-            <h1>Tools for Your Goals</h1><br />
+            <h1 class="text-center">Tools for Your Goals</h1><br />
 
-            <h4>Are you trying to lose weight, lower your BMI, or living a healthy lifestyle? Lishe PRO give you the right features to hit your goals</h4><br />
+            <h4 class="text-center">Are you trying to lose weight, lower your BMI, or living a healthy lifestyle? Lishe PRO give you the right features to hit your goals</h4><br />
 
             <div class="weightLossTracker inl1">
                 <h5>Weight Tracker</h5><br />
@@ -166,6 +166,8 @@
                     Keeping a record of your daily food intake will help you stay on track when trying to lose weight or maintain a healthy weight and activity levels. It also will give your nutritionist/dietician a quick way to check your progress.
                 </p>
             </div>
+
+            <br /><br />
 
             <div class="foodCalorieCounter inl2">
                 <h5>Calorie Counter</h5><br />

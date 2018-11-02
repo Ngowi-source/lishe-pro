@@ -10873,8 +10873,13 @@ body {
   height: auto;
 }
 
+#whoAreWe h4 {
+  color: #9BA747;
+}
+
 #whoAreWe .inl1,
 #whoAreWe .inl2 {
+  border-radius: 3px;
   width: 40%;
   float: left;
   background: #D57030;
@@ -10887,6 +10892,11 @@ body {
 #whoAreWe .inl2 h5 {
   text-align: left;
   color: #9BA747;
+}
+
+#whoAreWe .foodDiary,
+#whoAreWe .mpActivityPlanner {
+  margin-left: 10%;
 }
 
 #whatWeDo {
