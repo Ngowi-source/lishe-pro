@@ -160,6 +160,7 @@
 
                     If you've lost a significant amount of weight, increased your exercise or made any significant changes in your lifestyle in regard to eating and exercise, it's time to modify your plan. Simply use the Weight Loss Tracker tool to help you find the appropriate calorie level based on your Basal Metabolic Rate and Physical Activity level.
 
+                    <span class="useNow"><a href="/weight-loss-gain-tracker">Use Now</a></span>
                 </div>
 
                 <div class="foodDiary inl1">
@@ -167,6 +168,7 @@
 
                     Keeping a record of your daily food intake will help you stay on track when trying to lose weight or maintain a healthy weight and activity levels. It also will give your nutritionist/dietician a quick way to check your progress.
 
+                    <span class="useNow"><a href="/online-food-diary">Use Now</a></span>
                 </div>
 
                 <div class="foodCalorieCounter inl2">
@@ -174,6 +176,7 @@
 
                     Powered by the Tanzania Food Composition Database, the Food Calorie Counter allows you to choose from thousands of foods, and see nutrition facts such as calories, fat, protein, carbohydrates, fiber and sugar.
 
+                    <span class="useNow"><a href="/food-calorie-counter">Use Now</a></span>
                 </div>
 
                 <div class="mpActivityPlanner inl2">
@@ -181,38 +184,27 @@
 
                     This tool will help you kick-start a healthier lifestyle. Start making plans now about what you’ll eat, what you’ll drink and your physical activity, and then monitor your progress.
 
+                    <span class="useNow"><a href="/diet-meal-planner">Use Now</a></span>
                 </div>
 
             </div>
 
         </div>
         <div id="whatWeDo">
-            <h1>Featured</h1><br />
-            <div id="fcc">
-                <i class="fas fa-calculator fa-5x"></i><br /><br />
-                <span class="iconfeatured">Food Calorie Calculator</span>
-            </div>
-            <div id="wlt">
-                <i class="fas fa-weight fa-5x"></i><br /><br />
-                <span class="iconfeatured">Weight Loss Tracker</span>
-            </div>
-            <div id="dmp">
-                <i class="fas fa-utensils fa-5x"></i><br /><br />
-                <span class="iconfeatured">Diet Meal Planner</span>
-            </div>
-            <div id="ofd">
-                <i class="far fa-address-book fa-5x"></i><br /><br />
-                <span class="iconfeatured">Online Food Diary</span>
-            </div>
-            <div id="bmi">
-                <i class="fas fa-male fa-5x"></i><br /><br />
-                <span class="iconfeatured">Diet Assessment & BMR</span>
-            </div>
+            <h1>Lishe PRO-Well & Recipes</h1><br />
+
+            <p>
+                Get nutritionist-approved recipes and motivational workout tips from Lishe PRO experts. Lishe PRO provides a wellness engaged lifestyle facility. Individuals receive fitness and nutritional assessment and counseling based on their personal goals.
+            </p>
         </div>
         <div id="blog">
-            <h3>Latest Articles From Our Blog</h3><br />
+            <h3>Loose Weight ONCE AND FOR ALL</h3><br />
 
-            @for ($i = 0; $i<3; $i++)
+            <p>
+                Get access to basic tracking free. Or go Premium to get a personalized program and serious results. Lishe PRO believe that healthy weight loss can be positive and transforming i.e. It is not just about losing weight, it is about getting the life-saving and life-altering benefits that come along with it, like lowering blood cholesterol, blood pressure, and blood sugar levels; decreased pain; fewer medications; increased mobility and energy; improved sleep; and better overall quality of life.
+            </p>
+
+            {{--@for ($i = 0; $i<3; $i++)
 
                 @if(count($articles) > $i)
                     <div class="artNumb numb">0{{$i +1}}</div>
@@ -237,11 +229,10 @@
                     </div>
                 @endif
 
-            @endfor
+            @endfor--}}
 
             <br /><br />
 
-            <h6><a href="/blog">More Articles ></a></h6>
 
         </div>
         <div id="contact">
