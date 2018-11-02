@@ -24,6 +24,7 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
+        <a href="/about-us">About Us</a>
 
         @if(Auth::check())
             <a id="nots"><i class="notsIcon far fa-bell"></i>@if(count(Auth::user()->unreadNotifications))<sup>{{count(Auth::user()->unreadNotifications)}}</sup>@endif

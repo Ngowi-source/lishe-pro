@@ -1,7 +1,7 @@
 @extends('templates.application')
 
 @section('title')
-    Lishe Pro | My Account
+    Lishe Pro - About
 @endsection
 
 @section('header')
@@ -66,21 +66,39 @@
 
 @section('content')
 
-    <div class="row">
-        <div class="col-9">
-            <br />
-            <h1 style="margin-left: 5vw;" class="text-center detailsTitle">Account Details</h1>
+    <div id="loginWrapper">
 
-            <ul class="userList">
-                <li class="large">Name: <span class="details">{{$user->firstname}} {{$user->lastname}}</span></li>
-                <li class="large">Email Address: <span class="details">{{$user->email}}</span></li>
-                <li class="large">Verified: <span class="details">@if($user->status) Verified @else Not verified @endif</span></li>
-                <li class="large">Number of articles: <span class="details">{{count($user->article()->get())}}</span></li>
-            </ul>
-            <br />
-            <button style="margin-left: 5vw; border-radius: 3px;" class="createButton" onclick="window.location.href='https://lishep.herokuapp.com/delete-account/{{$user->id}}'">Delete Account</button>
+        <h1 class="text-center">About Lishe Pro</h1>
+
+        <div class="col-12">
+
+            Lishe PRO is a free online diet and exercise journal that allows you to track your nutrient intake and
+            determine the calories you burn during exercise with no guess work. Whether you want to lose weight,
+            gain weight, or simply better manage a healthy lifestyle, Lishe PRO will help you reach and achieve your
+            diet and fitness goals. Lishe Pro is guided by top-notch professionals’ group with the purpose to safely
+            support those who are looking to improve their health through nutrition.<br /><br />
+
+            Lishe PRO is also the comprehensive food search platform on the web. Search from over 1,000’s different
+            food to get instant information on calories, carbs, proteins, sugars, and other nutrients as well as
+            calories burned.<br /><br />
+
+            Lishe PRO is a valuable tool for promoting a healthy lifestyle that any Tanzanian can use. By keeping
+            track of how many calories you’re eating and burning, you will be able to keep your calorie consumption
+            below your calorie usage more accurately and change your eating and lifestyle habits in ways that improve
+            your overall health.<br /><br />
 
         </div>
+
     </div>
+
+@endsection
+
+@section('scripts')
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        });
+    </script>
 
 @endsection

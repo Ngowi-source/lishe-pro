@@ -24,6 +24,7 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
+        <a href="/about-us">About Us</a>
         <a href="/login" class="login">Login</a>
     </div>
 

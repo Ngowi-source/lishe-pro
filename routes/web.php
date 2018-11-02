@@ -35,6 +35,9 @@ Route::get('/privacy', function(){
 Route::get('/terms-of-service', function(){
     return view ('terms');
 });
+Route::get('/about-us', function(){
+    return  view ('about');
+});
 
 Route::get('/login', 'SessionController@show')->name('login');
 Route::post('/login', 'SessionController@create');
