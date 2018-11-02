@@ -74,9 +74,11 @@
 
             Lishe PRO is a free online diet and exercise journal that allows you to track your nutrient intake and
             determine the calories you burn during exercise with no guess work. Whether you want to lose weight,
-            gain weight, or simply better manage a healthy lifestyle, Lishe PRO will help you reach and achieve your
-            diet and fitness goals. Lishe Pro is guided by top-notch professionals’ group with the purpose to safely
-            support those who are looking to improve their health through nutrition.<br /><br />
+            gain weight, or simply better manage a healthy lifestyle.<br /><br />
+
+            It will help you reach and achieve yourdiet and fitness goals. Lishe Pro is guided by top-notch
+            professionals’ group with the purpose to safelysupport those who are looking to improve their health through
+            nutrition.<br /><br />
 
             Lishe PRO is also the comprehensive food search platform on the web. Search from over 1,000’s different
             food to get instant information on calories, carbs, proteins, sugars, and other nutrients as well as
