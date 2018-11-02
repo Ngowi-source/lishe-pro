@@ -10919,6 +10919,11 @@ body {
   color: #fff;
 }
 
+#whoAreWe .hometools .weightLossTracker,
+#whoAreWe .hometools .foodCalorieCounter {
+  padding: 5% 5% 10% 5%;
+}
+
 #whoAreWe .hometools .foodCalorieCounter,
 #whoAreWe .hometools .mpActivityPlanner {
   margin-top: 15%;
@@ -11676,7 +11681,7 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 840px) {
-  .hometools {
+  #whoAreWe .hometools {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
   }
