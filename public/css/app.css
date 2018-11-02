@@ -11969,6 +11969,10 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 610px) {
+  #homeIntro {
+    background-position: center right;
+  }
+
   .pro {
     color: #8B281F !important;
   }
@@ -11987,10 +11991,6 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 533px) {
-  #homeIntro {
-    background-position: center right;
-  }
-
   #blogWrapper #blogBod .articleBod,
   #showWrapper #blogBod .articleBod {
     font-size: small !important;

@@ -1428,6 +1428,9 @@ input[name='userid']{
     }
   }
   @media screen and (max-width: 610px){
+    #homeIntro{
+      background-position: center right;
+    }
     .pro{
       color: $c5!important;
     }
@@ -1444,9 +1447,6 @@ input[name='userid']{
     }
   }
   @media screen and (max-width: 533px){
-    #homeIntro{
-      background-position: center right;
-    }
     #blogWrapper, #showWrapper{
       #blogBod{
         .articleBod{
