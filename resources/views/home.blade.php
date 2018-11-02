@@ -157,30 +157,30 @@
 
                 <div class="weightLossTracker inl1">
                     <h5>Weight Tracker</h5><br />
-                    <p>
-                        If you've lost a significant amount of weight, increased your exercise or made any significant changes in your lifestyle in regard to eating and exercise, it's time to modify your plan. Simply use the Weight Loss Tracker tool to help you find the appropriate calorie level based on your Basal Metabolic Rate and Physical Activity level.
-                    </p>
+
+                    If you've lost a significant amount of weight, increased your exercise or made any significant changes in your lifestyle in regard to eating and exercise, it's time to modify your plan. Simply use the Weight Loss Tracker tool to help you find the appropriate calorie level based on your Basal Metabolic Rate and Physical Activity level.
+
                 </div>
 
                 <div class="foodDiary inl1">
                     <h5>Food Diary</h5><br />
-                    <p>
-                        Keeping a record of your daily food intake will help you stay on track when trying to lose weight or maintain a healthy weight and activity levels. It also will give your nutritionist/dietician a quick way to check your progress.
-                    </p>
+
+                    Keeping a record of your daily food intake will help you stay on track when trying to lose weight or maintain a healthy weight and activity levels. It also will give your nutritionist/dietician a quick way to check your progress.
+
                 </div>
 
                 <div class="foodCalorieCounter inl2">
                     <h5>Calorie Counter</h5><br />
-                    <p>
-                        Powered by the Tanzania Food Composition Database, the Food Calorie Counter allows you to choose from thousands of foods, and see nutrition facts such as calories, fat, protein, carbohydrates, fiber and sugar.
-                    </p>
+
+                    Powered by the Tanzania Food Composition Database, the Food Calorie Counter allows you to choose from thousands of foods, and see nutrition facts such as calories, fat, protein, carbohydrates, fiber and sugar.
+
                 </div>
 
                 <div class="mpActivityPlanner inl2">
                     <h5>Meal & Physical Activity Planner</h5><br />
-                    <p>
-                        This tool will help you kick-start a healthier lifestyle. Start making plans now about what you’ll eat, what you’ll drink and your physical activity, and then monitor your progress.
-                    </p>
+
+                    This tool will help you kick-start a healthier lifestyle. Start making plans now about what you’ll eat, what you’ll drink and your physical activity, and then monitor your progress.
+
                 </div>
 
             </div>
