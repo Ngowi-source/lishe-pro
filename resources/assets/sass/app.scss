@@ -445,15 +445,16 @@ body{
     }
     border-radius: 3px;
     width: 40%;
-    float: left;
+    /*float: left;*/
     background: $c4;
     padding: 5%;
     text-align: center;
-    display: inline;
+    /*display: inline;*/
   }
 
   .foodDiary, .mpActivityPlanner{
     margin-left: 10%;
+    float: right;
   }
 }
 #whatWeDo{

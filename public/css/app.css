@@ -10881,11 +10881,11 @@ body {
 #whoAreWe .inl2 {
   border-radius: 3px;
   width: 40%;
-  float: left;
+  /*float: left;*/
   background: #D57030;
   padding: 5%;
   text-align: center;
-  display: inline;
+  /*display: inline;*/
 }
 
 #whoAreWe .inl1 h5,
@@ -10897,6 +10897,7 @@ body {
 #whoAreWe .foodDiary,
 #whoAreWe .mpActivityPlanner {
   margin-left: 10%;
+  float: right;
 }
 
 #whatWeDo {
