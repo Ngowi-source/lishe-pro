@@ -10593,7 +10593,7 @@ body {
 
 #homeWrapper {
   display: grid;
-  grid-template-rows: 95vh auto 110vh auto 130vh;
+  grid-template-rows: 95vh auto auto auto 130vh;
   grid-template-columns: 100vw;
 }
 
@@ -10905,15 +10905,18 @@ body {
   position: absolute;
   left: 50%;
   bottom: 0;
-  -webkit-transform: translate(-50%, 5%);
-  transform: translate(-50%, 5%);
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
   border: 1px solid #9BA747;
   background: #9BA747;
+  font-size: large;
+  padding: 2%;
 }
 
 #whoAreWe .hometools .inl2 .useNow a,
 #whoAreWe .hometools .inl1 .useNow a {
   text-decoration: none;
+  color: #fff;
 }
 
 #whoAreWe .hometools .foodCalorieCounter,

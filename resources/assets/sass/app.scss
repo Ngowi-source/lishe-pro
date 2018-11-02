@@ -178,7 +178,7 @@ body{
 }
 #homeWrapper{
   display: grid;
-  grid-template-rows: 95vh auto 110vh auto 130vh;
+  grid-template-rows: 95vh auto auto auto 130vh;
   grid-template-columns: 100vw;
 }
 #homeIntro{
@@ -452,15 +452,18 @@ body{
         position: absolute;
         left: 50%;
         bottom: 0;
-        -webkit-transform: translate(-50%, 5%);
-        -moz-transform: translate(-50%, 5%);
-        -ms-transform: translate(-50%, 5%);
-        -o-transform: translate(-50%, 5%);
-        transform: translate(-50%, 5%);
+        -webkit-transform: translate(-50%, 50%);
+        -moz-transform: translate(-50%, 50%);
+        -ms-transform: translate(-50%, 50%);
+        -o-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
         border: 1px solid $c2;
         background: $c2;
+        font-size: large;
+        padding: 2%;
         a{
           text-decoration: none;
+          color: #fff;
         }
       }
       margin-left: 10%;
