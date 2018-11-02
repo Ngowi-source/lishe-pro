@@ -160,7 +160,7 @@
 
                     If you've lost a significant amount of weight, increased your exercise or made any significant changes in your lifestyle in regard to eating and exercise, it's time to modify your plan. Simply use the Weight Loss Tracker tool to help you find the appropriate calorie level based on your Basal Metabolic Rate and Physical Activity level.
 
-                    <span class="useNow"><a href="/weight-loss-gain-tracker">Use Now</a></span>
+                    <span class="useNow"><a href="/weight-loss-gain-tracker">Use&nbsp;Now</a></span>
                 </div>
 
                 <div class="foodDiary inl1">
@@ -168,7 +168,7 @@
 
                     Keeping a record of your daily food intake will help you stay on track when trying to lose weight or maintain a healthy weight and activity levels. It also will give your nutritionist/dietician a quick way to check your progress.
 
-                    <span class="useNow"><a href="/online-food-diary">Use Now</a></span>
+                    <span class="useNow"><a href="/online-food-diary">Use&nbsp;Now</a></span>
                 </div>
 
                 <div class="foodCalorieCounter inl2">
@@ -176,7 +176,7 @@
 
                     Powered by the Tanzania Food Composition Database, the Food Calorie Counter allows you to choose from thousands of foods, and see nutrition facts such as calories, fat, protein, carbohydrates, fiber and sugar.
 
-                    <span class="useNow"><a href="/food-calorie-counter">Use Now</a></span>
+                    <span class="useNow"><a href="/food-calorie-counter">Use&nbsp;Now</a></span>
                 </div>
 
                 <div class="mpActivityPlanner inl2">
@@ -184,7 +184,7 @@
 
                     This tool will help you kick-start a healthier lifestyle. Start making plans now about what you’ll eat, what you’ll drink and your physical activity, and then monitor your progress.
 
-                    <span class="useNow"><a href="/diet-meal-planner">Use Now</a></span>
+                    <span class="useNow"><a href="/diet-meal-planner">Use&nbsp;Now</a></span>
                 </div>
 
             </div>
