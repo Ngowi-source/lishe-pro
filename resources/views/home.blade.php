@@ -25,6 +25,7 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
+        <a href="/shop">Shop</a>
         <a href="/about-us">About Us</a>
 
         @if(Auth::check())
@@ -215,7 +216,7 @@
 
                 <div id="basic">
 
-                    <span class="loseHeader">LOSE IT! Basic</span><br><br>
+                    <span class="loseHeader">LOSE&nbsp;IT!&nbsp;Basic</span><br><br>
                     <div class="frame">
 
                         <ul>
