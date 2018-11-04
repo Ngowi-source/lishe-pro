@@ -10924,7 +10924,7 @@ body {
 #whoAreWe .hometools .inl1 .toolicon {
   color: #8B281F;
   font-family: FontAwesome;
-  position: relative;
+  position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -10932,7 +10932,7 @@ body {
 
 #whoAreWe .hometools .weightLossTracker,
 #whoAreWe .hometools .foodCalorieCounter {
-  padding: 5% 5% 10% 5%;
+  padding: 5% 5% 13% 5%;
 }
 
 #whoAreWe .hometools .foodCalorieCounter,
@@ -10960,7 +10960,7 @@ body {
   grid-area: 3/1/4/2;
   background: #8B281F;
   color: #fff;
-  padding: 5vw;
+  padding: 5% 5% 8% 5%;
   text-align: center;
   position: relative;
 }
@@ -11726,7 +11726,7 @@ input[name='userid'] {
 
   .foodCalorieCounter,
   .mpActivityPlanner {
-    padding: 5% 5% 10% 5% !important;
+    padding: 5% 5% 13% 5% !important;
   }
 
   .foodCalorieCounter {

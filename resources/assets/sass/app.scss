@@ -469,7 +469,7 @@ body{
       .toolicon{
         color: $c5;
         font-family: FontAwesome;
-        position: relative;
+        position: absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
@@ -485,7 +485,7 @@ body{
       border-radius: 5px;
     }
     .weightLossTracker, .foodCalorieCounter{
-      padding: 5% 5% 10% 5%;
+      padding: 5% 5% 13% 5%;
     }
     .foodCalorieCounter, .mpActivityPlanner{
       margin-top: 15%;
@@ -508,7 +508,7 @@ body{
   grid-area: 3/1/4/2;
   background: $c5;
   color: #fff;
-  padding: 5vw;
+  padding: 5% 5% 8% 5%;
   text-align: center;
   position: relative;
   h1{
@@ -1204,7 +1204,7 @@ input[name='userid']{
     margin-top: 15%;
   }
   .foodCalorieCounter, .mpActivityPlanner{
-    padding: 5% 5% 10% 5%!important;
+    padding: 5% 5% 13% 5%!important;
   }
   .foodCalorieCounter{
     grid-area: 3/1/4/2;
