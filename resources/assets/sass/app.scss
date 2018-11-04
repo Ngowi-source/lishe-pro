@@ -444,7 +444,7 @@ body{
     grid-template-rows: auto auto;
     .inl2, .inl1{
       h5{
-        color: $c2;
+        color: #fff;
         text-align: left;
       }
       position: relative;
@@ -459,7 +459,6 @@ body{
         transform: translate(-50%, 50%);
         border: 1px solid $c2;
         background: $c2;
-        font-size: large;
         padding: 2%;
         width: auto;
         a{
@@ -468,7 +467,7 @@ body{
         }
       }
       margin-left: 10%;
-      background: $c4;
+      background: $c3;
       width: 80%;
       padding: 5% ;
       text-align: center;
@@ -503,6 +502,21 @@ body{
   position: relative;
   p{
     font-size: large;
+  }
+  .raed{
+    position: absolute;
+    left: 50%;
+    border: 1px solid #fff;
+
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }
 

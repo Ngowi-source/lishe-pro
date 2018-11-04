@@ -10887,7 +10887,7 @@ body {
 #whoAreWe .hometools .inl1 {
   position: relative;
   margin-left: 10%;
-  background: #D57030;
+  background: #F29D4B;
   width: 80%;
   padding: 5%;
   text-align: center;
@@ -10896,7 +10896,7 @@ body {
 
 #whoAreWe .hometools .inl2 h5,
 #whoAreWe .hometools .inl1 h5 {
-  color: #9BA747;
+  color: #fff;
   text-align: left;
 }
 
@@ -10909,7 +10909,6 @@ body {
   transform: translate(-50%, 50%);
   border: 1px solid #9BA747;
   background: #9BA747;
-  font-size: large;
   padding: 2%;
   width: auto;
 }
@@ -10957,6 +10956,19 @@ body {
 
 #whatWeDo p {
   font-size: large;
+}
+
+#whatWeDo .raed {
+  position: absolute;
+  left: 50%;
+  border: 1px solid #fff;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#whatWeDo .raed a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #blog {
