@@ -1467,7 +1467,7 @@ input[name='userid']{
       font-size: 2.8rem;
     }
   }
-@media screen and (min-width: 650px){
+@media screen and (max-width: 650px){
   #loseIt #weightLoss{
     grid-template-rows: auto auto;
     grid-template-columns: 100%;
