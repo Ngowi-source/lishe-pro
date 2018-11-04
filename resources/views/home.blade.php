@@ -215,36 +215,36 @@
 
                 <div id="basic">
 
-                    <span class="loseHeader">LOSE IT! Basic</span>
+                    <span class="loseHeader">LOSE IT! Basic</span><br>
                     <div class="frame">
 
                         <ul>
-                            <li>  Calorie Tracking</li>
-                            <li>  Exercise Tracking</li>
+                            <li><i class="fas fa-check"></i>  Calorie Tracking</li>
+                            <li><i class="fas fa-check"></i>  Exercise Tracking</li>
                         </ul>
 
-                        <br><span class="text-center getLoseIt"><a href="/basic">GET BASIC, $0/mo</a></span>
+                        <br><span class="getLoseIt"><a href="/basic">GET BASIC, $0/mo</a></span>
                     </div>
 
                 </div>
 
                 <div id="premium">
 
-                    <span class="loseHeader">LOSE IT! Premium</span>
+                    <span class="loseHeader">LOSE IT! Premium</span><br>
                     <div class="frame">
 
                         <ul>
-                            <li>	Calorie Tracking</li>
-                            <li>	Exercise Tracking</li>
-                            <li>	Macronutrient Goal Setting & Tracking</li>
-                            <li>	Nutrition Insight Reporting</li>
-                            <li>	Data Analysis & Recommendations</li>
-                            <li>	Meal Planning</li>
-                            <li>	Meal Plan, Recipe & Workout Library</li>
-                            <li>	Body Fat Percentage and Water Tracking</li>
-
-                            <br><span class="text-center getLoseIt"><a href="/premium">GET PREMIUM, $5/mo</a></span>
+                            <li><i class="fas fa-check"></i>	Calorie Tracking</li>
+                            <li><i class="fas fa-check"></i>	Exercise Tracking</li>
+                            <li><i class="fas fa-check"></i>	Macronutrient Goal Setting & Tracking</li>
+                            <li><i class="fas fa-check"></i>	Nutrition Insight Reporting</li>
+                            <li><i class="fas fa-check"></i>	Data Analysis & Recommendations</li>
+                            <li><i class="fas fa-check"></i>	Meal Planning</li>
+                            <li><i class="fas fa-check"></i>	Meal Plan, Recipe & Workout Library</li>
+                            <li><i class="fas fa-check"></i>	Body Fat Percentage and Water Tracking</li>
                         </ul>
+
+                        <br><span class="getLoseIt"><a href="/premium">GET PREMIUM, $5/mo</a></span>
 
                     </div>
 

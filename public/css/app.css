@@ -11000,17 +11000,21 @@ body {
 
 #loseIt #weightLoss #basic {
   grid-area: 1/1/2/2;
+  justify-self: center;
 }
 
 #loseIt #weightLoss #premium {
   grid-area: 1/2/2/3;
+  justify-self: center;
 }
 
 #loseIt #weightLoss .frame {
   border: 1px solid #D57030;
+  border-radius: 5px;
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 1%;
+  padding: 15px;
+  min-width: 30vw;
 }
 
 #loseIt #weightLoss .frame ul li {
@@ -11021,12 +11025,19 @@ body {
   border: 1px solid #9BA747;
   padding: 2%;
   background: #9BA747;
+  text-align: center;
+}
+
+#loseIt #weightLoss .frame .getLoseIt a {
+  font-size: large;
+  text-decoration: none;
+  color: #fff;
 }
 
 .loseHeader {
   color: #9BA747;
   text-align: center;
-  font-size: large;
+  font-size: larger;
 }
 
 #contact {
