@@ -10873,8 +10873,7 @@ body {
   height: auto;
 }
 
-#whoAreWe h4,
-#whoAreWe h1 {
+#whoAreWe h4 {
   color: #9BA747;
 }
 
@@ -10924,15 +10923,12 @@ body {
 #whoAreWe .hometools .inl1 .toolicon {
   color: #8B281F;
   font-family: FontAwesome;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  text-align: center;
 }
 
 #whoAreWe .hometools .weightLossTracker,
 #whoAreWe .hometools .foodCalorieCounter {
-  padding: 5% 5% 15% 5%;
+  padding: 5% 5% 10% 5%;
 }
 
 #whoAreWe .hometools .foodCalorieCounter,
@@ -10974,12 +10970,9 @@ body {
 }
 
 #whatWeDo .raed {
-  position: absolute;
-  left: 50%;
+  text-align: center;
   border: 1px solid #9BA747;
   padding: 1%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 #whatWeDo .raed a {
@@ -11726,7 +11719,7 @@ input[name='userid'] {
 
   .foodCalorieCounter,
   .mpActivityPlanner {
-    padding: 5% 5% 15% 5% !important;
+    padding: 5% 5% 10% 5% !important;
   }
 
   .foodCalorieCounter {

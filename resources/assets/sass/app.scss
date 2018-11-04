@@ -435,7 +435,7 @@ body{
   padding: 5vw 5vw 10vw 5vw;
   height: auto;
 
-  h4, h1{
+  h4{
     color: $c2;
   }
   .hometools{
@@ -469,13 +469,7 @@ body{
       .toolicon{
         color: $c5;
         font-family: FontAwesome;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%);
+        text-align: center;
       }
       margin-left: 10%;
       background: $c3;
@@ -485,7 +479,7 @@ body{
       border-radius: 5px;
     }
     .weightLossTracker, .foodCalorieCounter{
-      padding: 5% 5% 15% 5%;
+      padding: 5% 5% 10% 5%;
     }
     .foodCalorieCounter, .mpActivityPlanner{
       margin-top: 15%;
@@ -518,16 +512,9 @@ body{
     font-size: large;
   }
   .raed{
-    position: absolute;
-    left: 50%;
+    text-align: center;
     border: 1px solid $c2;
     padding: 1%;
-
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
     a{
       text-decoration: none;
       color: $c2;
@@ -1204,7 +1191,7 @@ input[name='userid']{
     margin-top: 15%;
   }
   .foodCalorieCounter, .mpActivityPlanner{
-    padding: 5% 5% 15% 5%!important;
+    padding: 5% 5% 10% 5%!important;
   }
   .foodCalorieCounter{
     grid-area: 3/1/4/2;
