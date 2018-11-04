@@ -10873,7 +10873,8 @@ body {
   height: auto;
 }
 
-#whoAreWe h4 {
+#whoAreWe h4,
+#whoAreWe h1 {
   color: #9BA747;
 }
 
@@ -10891,7 +10892,7 @@ body {
   width: 80%;
   padding: 5%;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 #whoAreWe .hometools .inl2 h5,
@@ -10917,6 +10918,16 @@ body {
 #whoAreWe .hometools .inl1 .useNow a {
   text-decoration: none;
   color: #fff;
+}
+
+#whoAreWe .hometools .inl2 .toolicon,
+#whoAreWe .hometools .inl1 .toolicon {
+  color: #8B281F;
+  font-family: FontAwesome;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #whoAreWe .hometools .weightLossTracker,
@@ -10954,6 +10965,10 @@ body {
   position: relative;
 }
 
+#whatWeDo h1 {
+  color: #9BA747;
+}
+
 #whatWeDo p {
   font-size: large;
 }
@@ -10961,14 +10976,15 @@ body {
 #whatWeDo .raed {
   position: absolute;
   left: 50%;
-  border: 1px solid #fff;
+  border: 1px solid #9BA747;
+  padding: 1%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 #whatWeDo .raed a {
   text-decoration: none;
-  color: #fff;
+  color: #9BA747;
 }
 
 #blog {
