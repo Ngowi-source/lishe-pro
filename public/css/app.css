@@ -10922,7 +10922,7 @@ body {
 
 #whoAreWe .hometools .inl2 .toolicon,
 #whoAreWe .hometools .inl1 .toolicon {
-  color: #8B281F;
+  color: #fff;
   font-family: FontAwesome;
   text-align: center;
 }
@@ -10980,7 +10980,7 @@ body {
 #loseIt {
   grid-area: 4/1/5/2;
   color: #8B281F;
-  padding: 15vw 5vw 15vw 5vw;
+  padding: 40px 5vw 60px 5vw;
   height: auto;
 }
 
@@ -11031,6 +11031,7 @@ body {
   padding: 10px;
   background: #9BA747;
   text-align: center;
+  display: block;
 }
 
 #loseIt #weightLoss .frame .getLoseIt a {

@@ -468,7 +468,7 @@ body{
         }
       }
       .toolicon{
-        color: $c5;
+        color: #fff;
         font-family: FontAwesome;
         text-align: center;
       }
@@ -524,7 +524,7 @@ body{
 #loseIt{
   grid-area: 4/1/5/2;
   color: $c5;
-  padding: 15vw 5vw 15vw 5vw;
+  padding: 40px 5vw 60px 5vw;
   height: auto;
 
   p{
@@ -563,6 +563,7 @@ body{
         padding: 10px;
         background: $c2;
         text-align: center;
+        display: block;
         a{
           font-size: large;
           text-decoration: none;
