@@ -209,13 +209,13 @@
             <p>
                 Get access to basic tracking for free, or go Premium to get a personalized program and serious results. Lishe PRO believes that weight loss can be positive and transforming as its not just about losing weight, but getting the life-saving and life-altering benefits that come with it.
             </p>
-            <br /><br />
+            <br />
 
             <div id="weightLoss">
 
                 <div id="basic">
 
-                    <span class="loseHeader">LOSE IT! Basic</span><br>
+                    <span class="loseHeader">LOSE IT! Basic</span><br><br>
                     <div class="frame">
 
                         <ul>
@@ -230,7 +230,7 @@
 
                 <div id="premium">
 
-                    <span class="loseHeader">LOSE IT! Premium</span><br>
+                    <span class="loseHeader">LOSE IT! Premium</span><br><br>
                     <div class="frame">
 
                         <ul>

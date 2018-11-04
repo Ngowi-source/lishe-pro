@@ -11013,7 +11013,7 @@ body {
   border-radius: 5px;
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 15px;
+  padding: 20px;
   min-width: 30vw;
 }
 
@@ -11023,7 +11023,7 @@ body {
 
 #loseIt #weightLoss .frame .getLoseIt {
   border: 1px solid #9BA747;
-  padding: 2%;
+  padding: 10px;
   background: #9BA747;
   text-align: center;
 }
@@ -11037,7 +11037,7 @@ body {
 .loseHeader {
   color: #9BA747;
   text-align: center;
-  font-size: larger;
+  font-size: x-large;
 }
 
 #contact {
@@ -12019,6 +12019,24 @@ input[name='userid'] {
 @media screen and (min-width: 657px) {
   #intro {
     font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #loseIt #weightLoss {
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+  }
+
+  #loseIt #weightLoss #basic {
+    grid-area: 1/1/2/2;
+    justify-self: center;
+  }
+
+  #loseIt #weightLoss #premium {
+    grid-area: 2/1/3/2;
+    justify-self: center;
   }
 }
 
