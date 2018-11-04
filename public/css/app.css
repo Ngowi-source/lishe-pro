@@ -10932,7 +10932,7 @@ body {
 
 #whoAreWe .hometools .weightLossTracker,
 #whoAreWe .hometools .foodCalorieCounter {
-  padding: 5% 5% 13% 5%;
+  padding: 5% 5% 15% 5%;
 }
 
 #whoAreWe .hometools .foodCalorieCounter,
@@ -11726,7 +11726,7 @@ input[name='userid'] {
 
   .foodCalorieCounter,
   .mpActivityPlanner {
-    padding: 5% 5% 13% 5% !important;
+    padding: 5% 5% 15% 5% !important;
   }
 
   .foodCalorieCounter {
