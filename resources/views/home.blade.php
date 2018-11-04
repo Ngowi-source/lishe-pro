@@ -160,7 +160,7 @@
 
                     If you've lost a significant amount of weight, increased your exercise or made any significant changes in your lifestyle in regard to eating and exercise, it's time to modify your plan.
 
-                    <br><span class="toolicon"><i class="fas fa-weight fa-2x"></i></span>
+                    <br><span class="toolicon"><i class="fas fa-weight fa-3x"></i></span>
                     <span class="useNow"><a href="/weight-loss-gain-tracker">Use&nbsp;Tracker</a></span>
                 </div>
 
@@ -169,7 +169,7 @@
 
                     If you want to keep a record of your daily food intake and stay on track when trying to lose weight or maintain a healthy weight and activity levels
 
-                    <br><span class="toolicon"><i class="far fa-calendar-alt fa-2x"></i></span>
+                    <br><span class="toolicon"><i class="far fa-calendar-alt fa-3x"></i></span>
                     <span class="useNow"><a href="/online-food-diary">Use&nbsp;Food&nbsp;Diary</a></span>
                 </div>
 
@@ -178,7 +178,7 @@
 
                     Powered by the Tanzania Food Composition Database. Do you want to see nutrition facts such as calories, fat, protein, carbohydrates, fiber and sugar? Use our Food Calories Counter.
 
-                    <br><span class="toolicon"><i class="fas fa-calculator fa-2x"></i></span>
+                    <br><span class="toolicon"><i class="fas fa-calculator fa-3x"></i></span>
                     <span class="useNow"><a href="/food-calorie-counter">Use&nbsp;Calorie&nbsp;Counter</a></span>
                 </div>
 
@@ -187,7 +187,7 @@
 
                     Do you want to kick-start a healthier lifestyle by planningwhat you’ll eat, what you’ll drink and your physical activity, and monitor your progress?
 
-                    <br><span class="toolicon"><i class="far fa-file-alt fa-2x"></i></span>
+                    <br><span class="toolicon"><i class="far fa-file-alt fa-3x"></i></span>
                     <span class="useNow"><a href="/diet-meal-planner">Use&nbsp;Planner</a></span>
                 </div>
 
