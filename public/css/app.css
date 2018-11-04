@@ -10722,38 +10722,34 @@ body {
   font-size: 1.25rem;
   z-index: 3;
   overflow: hidden;
-}
+  /*&::after{
+    -webkit-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    -moz-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    -ms-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    -o-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+  }
+  &::after, &::before{
+    background: $c1;
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+  &:hover{
+    color: $c5;
 
-#introButton::after {
-  -webkit-transition: all 0.15s cubic-bezier(0.17, 0.61, 1, 0.29);
-  transition: all 0.15s cubic-bezier(0.17, 0.61, 1, 0.29);
-  height: 100%;
-  left: -35%;
-  top: 0;
-  -webkit-transform: skew(50deg);
-          transform: skew(50deg);
-  -webkit-transition-duration: 0.6s;
-          transition-duration: 0.6s;
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  width: 0;
-}
-
-#introButton::after,
-#introButton::before {
-  background: #D9DCD8;
-  content: '';
-  position: absolute;
-  z-index: -1;
-}
-
-#introButton:hover {
-  color: #8B281F;
-}
-
-#introButton:hover:after {
-  height: 100%;
-  width: 135%;
+    &:after {
+      height: 100%;
+      width: 135%;
+    }
+  }*/
 }
 
 #dietassessmentmodal {
@@ -10879,6 +10875,7 @@ body {
 
 #whoAreWe .hometools {
   display: grid;
+  grid-row-gap: 70px;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto;
 }

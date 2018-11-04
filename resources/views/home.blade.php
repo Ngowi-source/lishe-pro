@@ -152,7 +152,7 @@
         <div id="whoAreWe">
             <h1 class="text-center">Tools</h1><br />
 
-            <h3 class="text-center">Are you trying to lose weight, lower your BMI, or live a healthy lifestyle? Lishe PRO tools will help to hit your goals</h3><br />
+            <h3 class="text-center">Trying to lose weight, lower your BMI, or live a healthy lifestyle? Lishe PRO tools will help to hit your goals</h3><br />
 
             <div class="hometools">
 
