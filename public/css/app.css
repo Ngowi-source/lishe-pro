@@ -10889,7 +10889,7 @@ body {
   margin-left: 10%;
   background: #F29D4B;
   width: 80%;
-  padding: 5%;
+  padding: 5% 5% 10% 5%;
   text-align: center;
   border-radius: 5px;
 }
@@ -10909,6 +10909,7 @@ body {
   transform: translate(-50%, 50%);
   border: 1px solid #9BA747;
   background: #9BA747;
+  font-size: large;
   padding: 2%;
   width: auto;
 }
@@ -10924,11 +10925,6 @@ body {
   color: #8B281F;
   font-family: FontAwesome;
   text-align: center;
-}
-
-#whoAreWe .hometools .weightLossTracker,
-#whoAreWe .hometools .foodCalorieCounter {
-  padding: 5% 5% 10% 5%;
 }
 
 #whoAreWe .hometools .foodCalorieCounter,
@@ -10980,40 +10976,57 @@ body {
   color: #9BA747;
 }
 
-#blog {
+#loseIt {
   grid-area: 4/1/5/2;
   color: #8B281F;
   padding: 5vw;
   height: auto;
 }
 
-#blog p {
+#loseIt p {
   text-align: center;
 }
 
-#blog .artNumb {
-  display: none;
-}
-
-#blog h3 {
+#loseIt h3 {
   text-align: center;
   color: #8B281F;
 }
 
-#blog h2 a {
-  color: #D57030;
-  text-decoration: none;
+#loseIt #weightLoss {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
 }
 
-#blog h4,
-#blog h6 {
-  text-align: right;
+#loseIt #weightLoss #basic {
+  grid-area: 1/1/2/2;
 }
 
-#blog h4 a,
-#blog h6 a {
-  color: #D57030;
-  text-decoration: none;
+#loseIt #weightLoss #premium {
+  grid-area: 1/2/2/3;
+}
+
+#loseIt #weightLoss .frame {
+  border: 1px solid #D57030;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 1%;
+}
+
+#loseIt #weightLoss .frame ul li {
+  list-style-type: none;
+}
+
+#loseIt #weightLoss .frame .getLoseIt {
+  border: 1px solid #9BA747;
+  padding: 2%;
+  background: #9BA747;
+}
+
+.loseHeader {
+  color: #9BA747;
+  text-align: center;
+  font-size: large;
 }
 
 #contact {
@@ -11229,11 +11242,6 @@ body {
 
 .index a img:hover {
   opacity: 0.5;
-}
-
-#blog .card {
-  width: 30vw;
-  display: inline-block;
 }
 
 #addComment button,
@@ -11613,29 +11621,7 @@ input[name='userid'] {
   }
 }
 
-@media screen and (max-width: 958px) {
-  #blog h2 {
-    font-size: 1.4rem;
-  }
-
-  #blog .card-body .articleTime {
-    font-size: small;
-  }
-
-  #blog .card-body .articleBod {
-    font-size: medium;
-  }
-}
-
 @media screen and (max-width: 907px) {
-  #blog .card {
-    display: block;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    margin-left: 50vw;
-    width: 70vw !important;
-  }
-
   .artNumb.numb {
     display: inline-block !important;
     color: #fff;
@@ -11715,11 +11701,6 @@ input[name='userid'] {
   .foodDiary {
     grid-area: 2/1/3/2;
     margin-top: 15%;
-  }
-
-  .foodCalorieCounter,
-  .mpActivityPlanner {
-    padding: 5% 5% 10% 5% !important;
   }
 
   .foodCalorieCounter {
@@ -12109,10 +12090,6 @@ input[name='userid'] {
 
   #footer {
     font-size: small !important;
-  }
-
-  #blog .card {
-    width: 80vw;
   }
 }
 

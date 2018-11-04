@@ -149,18 +149,18 @@
 
         </div>
         <div id="whoAreWe">
-            <h1 class="text-center">Tools for Your Goals</h1><br />
+            <h1 class="text-center">Tools</h1><br />
 
-            <h4 class="text-center">Are you trying to lose weight, lower your BMI, or living a healthy lifestyle? Lishe PRO give you the right features to hit your goals</h4><br />
+            <h3 class="text-center">Are you trying to lose weight, lower your BMI, or live a healthy lifestyle? Lishe PRO tools will help to hit your goals</h3><br />
 
             <div class="hometools">
 
                 <div class="weightLossTracker inl1">
                     <h5>Weight Loss Tracker</h5>
 
-                    If you've lost a significant amount of weight, increased your exercise or made any significant changes in your lifestyle in regard to eating and exercise, it's time to modify your plan.
+                    If you've lost weight, increased exercising or made any significant changes in your lifestyle through eating and exercise, its time to modify your plan.
 
-                    <br><br><span class="toolicon"><i class="fas fa-weight fa-5x"></i></span>
+                    <br><br><span class="toolicon"><i class="fas fa-weight fa-4x"></i></span>
                     <span class="useNow"><a href="/weight-loss-gain-tracker">Use&nbsp;Tracker</a></span>
                 </div>
 
@@ -169,16 +169,16 @@
 
                     If you want to keep a record of your daily food intake and stay on track when trying to lose weight or maintain a healthy weight and activity levels
 
-                    <br><br><span class="toolicon"><i class="far fa-calendar-alt fa-5x"></i></span>
+                    <br><br><span class="toolicon"><i class="far fa-calendar-alt fa-4x"></i></span>
                     <span class="useNow"><a href="/online-food-diary">Use&nbsp;Food&nbsp;Diary</a></span>
                 </div>
 
                 <div class="foodCalorieCounter inl2">
                     <h5>Food Calorie Counter</h5>
 
-                    Powered by the Tanzania Food Composition Database. Do you want to see nutrition facts such as calories, fat, protein, carbohydrates, fiber and sugar? Use our Food Calories Counter.
+                    Powered by the Tanzania Food Composition Database, do you want to see nutrition facts such as calories, fat, protein and carbohydrates? Use our Counter.
 
-                    <br><br><span class="toolicon"><i class="fas fa-calculator fa-5x"></i></span>
+                    <br><br><span class="toolicon"><i class="fas fa-calculator fa-4x"></i></span>
                     <span class="useNow"><a href="/food-calorie-counter">Use&nbsp;Calorie&nbsp;Counter</a></span>
                 </div>
 
@@ -187,7 +187,7 @@
 
                     Do you want to kick-start a healthier lifestyle by planningwhat you’ll eat, what you’ll drink and your physical activity, and monitor your progress?
 
-                    <br><br><span class="toolicon"><i class="far fa-file-alt fa-5x"></i></span>
+                    <br><br><span class="toolicon"><i class="far fa-file-alt fa-4x"></i></span>
                     <span class="useNow"><a href="/diet-meal-planner">Use&nbsp;Planner</a></span>
                 </div>
 
@@ -203,42 +203,54 @@
             
             <span class="raed"><a href="/blog">READ OUR ARTICLES</a></span>
         </div>
-        <div id="blog">
+        <div id="loseIt">
             <h3>Loose Weight ONCE AND FOR ALL</h3><br />
 
             <p>
-                Get access to basic tracking free. Or go Premium to get a personalized program and serious results. Lishe PRO believe that healthy weight loss can be positive and transforming i.e. It is not just about losing weight, it is about getting the life-saving and life-altering benefits that come along with it, like lowering blood cholesterol, blood pressure, and blood sugar levels; decreased pain; fewer medications; increased mobility and energy; improved sleep; and better overall quality of life.
+                Get access to basic tracking for free, or go Premium to get a personalized program and serious results. Lishe PRO believes that weight loss can be positive and transforming as its not just about losing weight, but getting the life-saving and life-altering benefits that come with it.
             </p>
-
-            {{--@for ($i = 0; $i<3; $i++)
-
-                @if(count($articles) > $i)
-                    <div class="artNumb numb">0{{$i +1}}</div>
-                    <div class="card border-success numb">
-                        <div class="card-body">
-                            <h2><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}">{{$articles[$i]->title}}</a></h2>
-                            <span class="articleTime">{{$articles[$i]->created_at->toFormattedDateString()}} by <b>{{$articles[$i]->user->firstname}} {{$articles[$i]->user->lastname}}</b> </span><br /><br />
-
-                            <span class="articleBod">@if(strlen(preg_replace('/<p><img(.*)>/', '', $articles[$i]))>115) {!! substr(preg_replace('/<p><img(.*)>/', '', $articles[$i]->body),0,115) !!}... <span class="readMore"><a href="/blog/{{str_replace(' ','-',$articles[$i]->title)}}"><i>Read More</i></a></span> @else{!! preg_replace('/<p><img(.*)>/', '', $articles[$i]->body) !!}@endif</span><br />
-                            <span class="articleTime">
-                                <i>
-                                    @if(count($articles[$i]->comments)>1)
-                                        {{count($articles[$i]->comments)}} comments
-                                    @elseif(count($articles[$i]->comments)==1)
-                                        {{count($articles[$i]->comments)}} comment
-                                    @else
-                                        No comments
-                                    @endif
-                                </i>
-                            </span>
-                        </div>
-                    </div>
-                @endif
-
-            @endfor--}}
-
             <br /><br />
 
+            <div id="weightLoss">
+
+                <div id="basic">
+
+                    <span class="loseHeader">LOSE IT! Basic</span>
+                    <div class="frame">
+
+                        <ul>
+                            <li>  Calorie Tracking</li>
+                            <li>  Exercise Tracking</li>
+                        </ul>
+
+                        <br><span class="text-center getLoseIt"><a href="/basic">GET BASIC, $0/mo</a></span>
+                    </div>
+
+                </div>
+
+                <div id="premium">
+
+                    <span class="loseHeader">LOSE IT! Premium</span>
+                    <div class="frame">
+
+                        <ul>
+                            <li>	Calorie Tracking</li>
+                            <li>	Exercise Tracking</li>
+                            <li>	Macronutrient Goal Setting & Tracking</li>
+                            <li>	Nutrition Insight Reporting</li>
+                            <li>	Data Analysis & Recommendations</li>
+                            <li>	Meal Planning</li>
+                            <li>	Meal Plan, Recipe & Workout Library</li>
+                            <li>	Body Fat Percentage and Water Tracking</li>
+
+                            <br><span class="text-center getLoseIt"><a href="/premium">GET PREMIUM, $5/mo</a></span>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
         <div id="contact">
