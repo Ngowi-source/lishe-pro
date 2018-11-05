@@ -162,7 +162,7 @@ body{
   cursor: pointer;
 
   .ndChild{
-    width: 3vh;
+    width: 3vh; /*won't work, not important*/
     margin-left: 1.5vh;
   }
   .menubar{
@@ -1022,6 +1022,14 @@ input[name='userid']{
   padding: 5vh;
   color: $c1;
 
+  .discoverLink{
+    text-decoration: none;
+    color: #fff;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-size: large;
+  }
   h3{
     color: $c1;
   }

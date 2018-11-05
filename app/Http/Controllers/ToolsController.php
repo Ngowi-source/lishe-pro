@@ -21,6 +21,22 @@ class ToolsController extends Controller
             $bmr = (int)(655 + (9.6 * $request->weight) + (1.9 * $request->height) - (4.7 * $request->age));
         }
 
+        if($request->activity == 'sedentary') {
+            $bmr = (int)($bmr *1.2);
+        }
+        else if($request->activity == 'lightly active') {
+            $bmr = (int)($bmr *1.375);
+        }
+        else if($request->activity == 'moderately active') {
+            $bmr = (int)($bmr *1.55);
+        }
+        else if($request->activity == 'very active') {
+            $bmr = (int)($bmr *1.725);
+        }
+        else if($request->activity == 'extra active') {
+            $bmr = (int)($bmr *1.9);
+        }
+
         return view('tools.bmr', compact('bmr'));
     }
 

@@ -82,12 +82,18 @@
                     </div>
                 @endif
 
-                <h3 class="text-center">Weight Assesser</h3>
+                <h3 class="text-center">Weight Loss Assesser</h3>
                 <form method="POST" action="/weight-loss-gain-tracker">
                     {{csrf_field()}}
 
-                    <label for="name">Name</label>
-                    <input id="name" type="text" name="name" /><br /><br />
+                    <label for="activity">Physical Activity</label>
+                    <select id="activity" name="activity">
+                        <option value="sedentary">little or no exercise</option>
+                        <option value="lightly active">light exercise/sports, 1-3days/week</option>
+                        <option value="moderately active">moderate exercise/sports, 3-5days/week</option>
+                        <option value="very active">hard exercise/sports, 6-7days/week</option>
+                        <option value="extra active">very hard daily exercise/sports,& physical job/2X training</option>
+                    </select><br /><br />
 
                     <label for="height">Height</label>
                     <input id="height" name="height" type="number" placeholder="in centimeters..." required/><br /><br />

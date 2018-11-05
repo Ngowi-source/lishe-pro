@@ -10576,6 +10576,7 @@ body {
 
 .menu .ndChild {
   width: 3vh;
+  /*won't work, not important*/
   margin-left: 1.5vh;
 }
 
@@ -11539,6 +11540,15 @@ input[name='userid'] {
   grid-area: 1/1/2/2;
   padding: 5vh;
   color: #D9DCD8;
+}
+
+#BMResults .discoverLink {
+  text-decoration: none;
+  color: #fff;
+  padding: 3%;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-size: large;
 }
 
 #BMResults h3 {

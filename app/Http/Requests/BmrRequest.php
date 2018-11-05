@@ -27,7 +27,8 @@ class BmrRequest extends FormRequest
             'height' => 'required|numeric',
             'weight' => 'required|numeric',
             'age' => 'required|integer',
-            'sex' => 'required|in:Female,Male'
+            'sex' => 'required|in:Female,Male',
+            'activity' => 'required'
         ];
     }
 }

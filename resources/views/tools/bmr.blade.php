@@ -73,18 +73,15 @@
             @if(isset($bmr))
 
                 <h3 class="text-center">Calculation Results</h3><br />
-                <span class="results rez float-left">The amount of calories required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span><br />
-                <br />
-                <span class="results2 rez float-left">If you are sedentary (i.e <i>little or no exercise at all</i>):  <span class="bmr">{{(int)($bmr *1.2)}}</span></span><br />
-                <br />
-                <span class="results rez float-left">If you are lightly active (i.e <i>light exercise/sports, 1-3days/week</i>):  <span class="bmr">{{(int)($bmr *1.375)}}</span></span><br />
-                <br />
-                <span class="results2 rez float-left">If you are moderately active (i.e <i>moderate exercise/sports, 3-5days/week</i>):  <span class="bmr">{{(int)($bmr *1.55)}}</span></span><br />
-                <br />
-                <span class="results rez float-left">If you are very active (i.e <i>hard exercise/sports, 6-7days/week</i>):  <span class="bmr">{{(int)($bmr *1.725)}}</span></span><br />
-                <br />
-                <span class="results2 rez float-left">If you are extra active (i.e <i>very hard daily exercise/sports,& physical job/2X training</i>):  <span class="bmr">{{(int)($bmr *1.9)}}</span></span><br />
+                <span class="results rez float-left">The amount of calories per day required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span><br />
+                <br /><br/>
 
+                In order to lose weight, your daily food intake requires less than {{$bmr}} calories. In order to gain weight, you need to eat daily above {{$bmr}} calories.
+                <br><br/>
+
+                <a href="/weight-discover" class="discoverLink">DISCOVER HOW</a>
+
+                <br>
             @endif
         </div>
 
@@ -104,8 +101,14 @@
             <form method="POST" action="/weight-loss-gain-tracker">
                 {{csrf_field()}}
 
-                <label for="name">Name</label>
-                <input id="name" type="text" name="name" /><br /><br />
+                <label for="activity">Physical Activity</label>
+                <select id="activity" name="activity">
+                    <option value="sedentary">little or no exercise</option>
+                    <option value="lightly active">light exercise/sports, 1-3days/week</option>
+                    <option value="moderately active">moderate exercise/sports, 3-5days/week</option>
+                    <option value="very active">hard exercise/sports, 6-7days/week</option>
+                    <option value="extra active">very hard daily exercise/sports,& physical job/2X training</option>
+                </select><br /><br />
 
                 <label for="height">Height</label>
                 <input id="height" name="height" type="number" placeholder="in centimeters..." required/><br /><br />
