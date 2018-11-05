@@ -1307,7 +1307,7 @@ input[name='userid']{
             transform-origin: 50% 50%;
           }
           &.rdChild{
-            width: 6vh;
+            width: 6vh!important;
             float: none;
             -webkit-transform: rotate(45deg);
             -moz-transform: rotate(45deg);
