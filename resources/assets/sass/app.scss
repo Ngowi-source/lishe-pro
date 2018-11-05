@@ -162,11 +162,8 @@ body{
   cursor: pointer;
 
   .ndChild{
-    width: 4.5vh!important;
-  }
-  .rdChild{
-    float: right;
-    width: 4vh!important;
+    width: 3vh;
+    margin-left: 1.5vh;
   }
   .menubar{
     width: 6vh;
@@ -175,6 +172,9 @@ body{
     border-radius: 1px;
     transition: all 1.5s;
 
+    &:nth-child(1){
+      height: 0.7vh!important;
+    }
     &:last-child{
       width: 1.8vh!important;
       display: none;
@@ -1307,8 +1307,6 @@ input[name='userid']{
             transform-origin: 50% 50%;
           }
           &.rdChild{
-            width: 6vh!important;
-            float: none;
             -webkit-transform: rotate(45deg);
             -moz-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
