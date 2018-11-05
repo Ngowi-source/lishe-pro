@@ -119,7 +119,7 @@
     <div id="homeWrapper">
         <div id="homeIntro">
 
-            <svg class="intro" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            {{--<svg class="intro" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                 <defs>
                     <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -144,9 +144,14 @@
                     EXPERTISE
                 </text>
 
-            </svg>
+            </svg>--}}
+            <span class="heading">Physical fitness starts with what you eat.</span><br>
 
-            <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Try Our Dietary Assessment Tools</button>
+            <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.
+            </span>
+
+
+            <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
 
         </div>
         <div id="whoAreWe">

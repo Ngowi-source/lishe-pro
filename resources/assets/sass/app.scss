@@ -186,8 +186,23 @@ body{
   background-image: url("/images/diet.jpg");
   overflow: hidden;
 
-  .intro{
+  .heading{
+    color: $c4;
     position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 4rem;
+    font-weight: 900;
+    max-width: 70%;
+  }
+  .body{
+    color: $c2;
+    position: absolute;
+    left: 10%;
+    max-width: 60%;
+  }
+  .intro{
+    /*position: absolute;
     top: 0;
     left: 3%;
     width: 100%;
@@ -206,7 +221,7 @@ body{
       font-size: x-small;
       stroke-width: 1px;
       stroke-linejoin: round;
-    }
+    }*/
   }
 }
 #tools, #nots {
@@ -1548,7 +1563,7 @@ input[name='userid']{
   }
   @media screen and (max-width: 480px){
     #homeIntro .intro{
-      top: -12%!important;
+      /*top: -12%!important;*/
     }
     #introButton{
       font-size: 1rem;

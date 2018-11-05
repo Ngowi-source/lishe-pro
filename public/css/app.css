@@ -10603,31 +10603,44 @@ body {
   overflow: hidden;
 }
 
-#homeIntro .intro {
+#homeIntro .heading {
+  color: #D57030;
   position: absolute;
-  top: 0;
-  left: 3%;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-#homeIntro .intro #intro1,
-#homeIntro .intro .and {
-  fill: #D57030;
-  stroke: #D57030;
-  stroke-width: 0.25px;
-  stroke-linejoin: round;
-  font-size: x-small;
-}
-
-#homeIntro .intro #intro2,
-#homeIntro .intro #intro3,
-#homeIntro .intro #intro4 {
+  top: 30%;
+  left: 10%;
+  font-size: 4rem;
   font-weight: 900;
-  font-size: x-small;
-  stroke-width: 1px;
-  stroke-linejoin: round;
+  max-width: 70%;
+}
+
+#homeIntro .body {
+  color: #9BA747;
+  position: absolute;
+  left: 10%;
+  max-width: 60%;
+}
+
+#homeIntro .intro {
+  /*position: absolute;
+    top: 0;
+    left: 3%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    #intro1, .and{
+      fill: $c4;
+      stroke: $c4;
+      stroke-width: 0.25px;
+      stroke-linejoin: round;
+      font-size: x-small;
+    }
+    #intro2, #intro3, #intro4{
+      font-weight: 900;
+      font-size: x-small;
+      stroke-width: 1px;
+      stroke-linejoin: round;
+    }*/
 }
 
 #tools,
@@ -12113,7 +12126,7 @@ input[name='userid'] {
 
 @media screen and (max-width: 480px) {
   #homeIntro .intro {
-    top: -12% !important;
+    /*top: -12%!important;*/
   }
 
   #introButton {
