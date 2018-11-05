@@ -10615,11 +10615,12 @@ body {
 }
 
 #homeIntro .body {
+  font-weight: 600;
   color: #9BA747;
   font-size: 1.2rem;
-  max-width: 70%;
+  max-width: 60%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 10%;
 }
 
