@@ -361,7 +361,7 @@ body{
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     display: grid;
-    grid-template-columns: 50vw;
+    grid-template-columns: 60vw;
     grid-template-rows: 20% 80%;
   }
 }
@@ -1017,6 +1017,11 @@ input[name='userid']{
   grid-template-columns: 100vw;
   background-color: $c5;
 }
+#assessmentForm, #BMRForm{
+  select{
+    border: 2px solid $c3;
+  }
+}
 #BMResults{
   grid-area: 1/1/2/2;
   padding: 5vh;
@@ -1025,7 +1030,8 @@ input[name='userid']{
   .discoverLink{
     text-decoration: none;
     color: #fff;
-    padding: 3%;
+    background: $c3;
+    padding: 1%;
     border-radius: 5px;
     border: 1px solid #fff;
     font-size: large;

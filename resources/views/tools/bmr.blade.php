@@ -101,7 +101,7 @@
             <form method="POST" action="/weight-loss-gain-tracker">
                 {{csrf_field()}}
 
-                <label for="activity">Physical Activity</label>
+                <label for="activity">Physical Activity</label><br>
                 <select id="activity" name="activity">
                     <option value="sedentary">little or no exercise</option>
                     <option value="lightly active">light exercise/sports, 1-3days/week</option>
