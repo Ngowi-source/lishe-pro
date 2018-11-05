@@ -10616,9 +10616,11 @@ body {
 
 #homeIntro .body {
   color: #9BA747;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   max-width: 70%;
-  margin-left: 10vw;
+  position: absolute;
+  top: 50%;
+  left: 10%;
 }
 
 #homeIntro .intro {
