@@ -10578,6 +10578,11 @@ body {
   width: 4.5vh !important;
 }
 
+.menu .rdChild {
+  float: right;
+  width: 4vh !important;
+}
+
 .menu .menubar {
   width: 6vh;
   height: .6vh;
@@ -10589,6 +10594,7 @@ body {
 
 .menu .menubar:last-child {
   width: 1.8vh !important;
+  display: none;
 }
 
 #homeWrapper {
@@ -11841,6 +11847,8 @@ input[name='userid'] {
   }
 
   .nav-links.showMenu .menu .menubar.rdChild {
+    width: 6vh;
+    float: none;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform-origin: 50% 50%;

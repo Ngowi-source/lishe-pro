@@ -164,6 +164,10 @@ body{
   .ndChild{
     width: 4.5vh!important;
   }
+  .rdChild{
+    float: right;
+    width: 4vh!important;
+  }
   .menubar{
     width: 6vh;
     height: .6vh;
@@ -173,6 +177,7 @@ body{
 
     &:last-child{
       width: 1.8vh!important;
+      display: none;
     }
   }
 }
@@ -1302,6 +1307,8 @@ input[name='userid']{
             transform-origin: 50% 50%;
           }
           &.rdChild{
+            width: 6vh;
+            float: none;
             -webkit-transform: rotate(45deg);
             -moz-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
