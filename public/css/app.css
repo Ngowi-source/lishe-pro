@@ -10611,11 +10611,14 @@ body {
   font-size: 4rem;
   font-weight: 900;
   max-width: 70%;
+  line-height: 1;
 }
 
-#homeIntro .heading .body {
+#homeIntro .body {
   color: #9BA747;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  max-width: 70%;
+  margin-left: 10vw;
 }
 
 #homeIntro .intro {

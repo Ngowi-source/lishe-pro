@@ -194,11 +194,13 @@ body{
     font-size: 4rem;
     font-weight: 900;
     max-width: 70%;
-
-    .body{
-      color: $c2;
-      font-size: 1rem;
-    }
+    line-height: 1;
+  }
+  .body{
+    color: $c2;
+    font-size: 1.25rem;
+    max-width: 70%;
+    margin-left: 10vw;
   }
   .intro{
     /*position: absolute;
