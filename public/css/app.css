@@ -11556,7 +11556,7 @@ input[name='userid'] {
 #BMResults .discoverLink {
   text-decoration: none;
   color: #fff;
-  background: #F29D4B;
+  background: #9BA747;
   padding: 1%;
   border-radius: 5px;
   border: 1px solid #fff;
@@ -11564,7 +11564,7 @@ input[name='userid'] {
 }
 
 #BMResults h3 {
-  color: #D9DCD8;
+  color: #9BA747;
 }
 
 #BMResults .results {
