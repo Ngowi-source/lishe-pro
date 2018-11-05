@@ -11656,6 +11656,13 @@ input[name='userid'] {
   }
 }
 
+@media screen and (max-width: 928px) {
+  #homeIntro .body {
+    top: 55%;
+    max-width: 75%;
+  }
+}
+
 @media screen and (max-width: 907px) {
   .artNumb.numb {
     display: inline-block !important;
@@ -12040,6 +12047,12 @@ input[name='userid'] {
   }
 }
 
+@media screen and (max-width: 662px) {
+  #homeIntro .heading {
+    font-size: 3rem;
+  }
+}
+
 @media screen and (min-width: 657px) {
   #intro {
     font-size: 2.8rem;
@@ -12128,6 +12141,12 @@ input[name='userid'] {
   }
 }
 
+@media screen and (max-width: 500px) {
+  #homeIntro .body {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #homeIntro .intro {
     /*top: -12%!important;*/
@@ -12182,6 +12201,18 @@ input[name='userid'] {
 
   .iconfeatured {
     font-size: small !important;
+  }
+}
+
+@media screen and (max-width: 417px) {
+  #homeIntro .heading {
+    font-size: 2.5rem;
+    max-width: 80%;
+  }
+
+  #homeIntro .body {
+    top: 45%;
+    font-size: 0.9rem;
   }
 }
 

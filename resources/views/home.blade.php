@@ -18,7 +18,7 @@
 
         <a id="tools"><span class="tools">Dietary Assessment </span>Tools
             <div class="submenu">
-                <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Weight Loss</a>
+                <a id="dal" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">Weight Loss Tracker</a>
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
                 <a href="/online-food-diary">Online Food Diary</a>
                 <a href="/diet-meal-planner">Diet Meal Planner</a>
@@ -184,7 +184,7 @@
                 <div class="foodCalorieCounter inl2">
                     <h5>Food Calorie Counter</h5>
 
-                    Powered by the Tanzania Food Composition Database, do you want to see nutrition facts such as calories, fat, protein and carbohydrates? Use our Counter.
+                    Powered by the Tanzania Food Composition Database, do you want to see nutrition facts such as calories, fat, protein, carbohydrates, fibre and sugars?
 
                     <br><br><span class="toolicon"><i class="fas fa-calculator fa-4x"></i></span>
                     <span class="useNow"><a href="/food-calorie-counter">Use&nbsp;Calorie&nbsp;Counter</a></span>
