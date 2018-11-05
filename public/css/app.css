@@ -11539,6 +11539,12 @@ input[name='userid'] {
 #assessmentForm select,
 #BMRForm select {
   border: 2px solid #F29D4B;
+  width: 100%;
+  max-width: 100%;
+}
+
+#activity option {
+  font-size: medium;
 }
 
 #BMResults {

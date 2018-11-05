@@ -1020,7 +1020,12 @@ input[name='userid']{
 #assessmentForm, #BMRForm{
   select{
     border: 2px solid $c3;
+    width: 100%;
+    max-width: 100%;
   }
+}
+#activity option{
+  font-size: medium;
 }
 #BMResults{
   grid-area: 1/1/2/2;
