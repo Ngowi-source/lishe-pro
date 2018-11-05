@@ -189,17 +189,16 @@ body{
   .heading{
     color: $c4;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 10%;
     font-size: 4rem;
     font-weight: 900;
     max-width: 70%;
-  }
-  .body{
-    color: $c2;
-    position: absolute;
-    left: 10%;
-    max-width: 60%;
+
+    .body{
+      color: $c2;
+      font-size: 1rem;
+    }
   }
   .intro{
     /*position: absolute;

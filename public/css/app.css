@@ -10606,18 +10606,16 @@ body {
 #homeIntro .heading {
   color: #D57030;
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 10%;
   font-size: 4rem;
   font-weight: 900;
   max-width: 70%;
 }
 
-#homeIntro .body {
+#homeIntro .heading .body {
   color: #9BA747;
-  position: absolute;
-  left: 10%;
-  max-width: 60%;
+  font-size: 1rem;
 }
 
 #homeIntro .intro {

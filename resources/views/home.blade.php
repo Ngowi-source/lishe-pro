@@ -145,9 +145,10 @@
                 </text>
 
             </svg>--}}
-            <span class="heading">Physical fitness starts with what you eat.</span><br>
-
-            <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.
+            <span class="heading">Physical fitness starts with what you eat.
+                <br>
+                <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.
+                </span>
             </span>
 
 
