@@ -101,14 +101,13 @@
             <form method="POST" action="/weight-loss-gain-tracker">
                 {{csrf_field()}}
 
-                <label for="activity">Physical Activity</label><br>
-                <select id="activity" name="activity">
-                    <option value="sedentary">little or no exercise</option>
-                    <option value="lightly active">light exercise/sports, 1-3days/week</option>
-                    <option value="moderately active">moderate exercise/sports, 3-5days/week</option>
-                    <option value="very active">hard exercise/sports, 6-7days/week</option>
-                    <option value="extra active">very hard daily exercise/sports,& physical job/2X training</option>
-                </select><br /><br />
+                Sex:<br>
+                <input type="radio" value="Female" id="female" name="sex"/>
+                <label for="female"><span></span>Female</label>
+
+                <input type="radio" value="Male" id="male" name="sex"/>
+                <label for="male"><span></span>Male</label>
+                <br /><br />
 
                 <label for="height">Height</label>
                 <input id="height" name="height" type="number" placeholder="in centimeters..." required/><br /><br />
@@ -119,12 +118,14 @@
                 <label for="age">Age</label>
                 <input id="age" name="age" type="number" required/><br /><br />
 
-                <input type="radio" value="Female" id="female" name="sex"/>
-                <label for="female"><span></span>Female</label>
-
-                <input type="radio" value="Male" id="male" name="sex"/>
-                <label for="male"><span></span>Male</label>
-                <br /><br />
+                <label for="activity">Physical Activity</label><br>
+                <select id="activity" name="activity">
+                    <option value="sedentary">sedentary</option>
+                    <option value="lightly active">lightly active</option>
+                    <option value="moderately active">moderately active</option>
+                    <option value="very active">very active</option>
+                    <option value="extra active">extra active</option>
+                </select><br /><br />
 
                 <button type="submit">Calculate</button><br /> <br />
             </form>
