@@ -150,7 +150,7 @@
 
             <br><br />
 
-            <div class="card w-75" id="blogWriter" style="display:none;">
+            <div class="card w-75" id="blogWriter">
                 <img class="card-img-left" src="{{'../images/sauli.jpg'}}" alt="Sauli Epimack">
                 <div class="card-body">
                     <h5 class="card-title">Sauli Epimack</h5>

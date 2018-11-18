@@ -1144,7 +1144,7 @@ input[name='userid']{
     background:$c4;
   }
 }
-#showWrapper #blogWriter{
+#blogBod #blogWriter{
   display: none;
 }
   /*media queries*/
@@ -1500,13 +1500,13 @@ input[name='userid']{
           padding: 1vw;
         }
       }
-      #blogWriter{
-        display: block;
-        border: none;
+    }
+    #blogBod #blogWriter{
+      display: block;
+      border: none;
 
-        .card-body h5{
-          color: $c5;
-        }
+      .card-body h5{
+        color: $c5;
       }
     }
   }
