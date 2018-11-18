@@ -151,10 +151,11 @@
             <br><br />
 
             <div class="card w-75" id="blogWriter">
+                <img class="card-img-left" src="{{'../images/sauli.jpg'}}" alt="Sauli Epimack">
                 <div class="card-body">
                     <h5 class="card-title">Sauli Epimack John, MS</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Research Scientist</h6>
-                    <p class="card-text">Sauli is a researcher st the Ifakara University College of Health and Allied Sciences.</p>
+                    <h6 class="card-subtitle mb-2 text-muted">Research Scientist, Ifakara University</h6>
+                    <p class="card-text">A nutritional epidemiologist with more than 5 years of experience as a nutritionist, a respected and trusted voice in the health and wellness industry in Tanzania. An educator, author, speaker.</p>
                 </div>
             </div>
 
