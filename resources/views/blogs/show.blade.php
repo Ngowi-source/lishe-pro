@@ -108,11 +108,11 @@
 
             <div class="card w-100 border-success writer">
 
-                <img class="card-img-top" src="https://c5.rgstatic.net/m/437738464651637/images/template/default/profile/profile_default_l.jpg" alt="Sauli Epimack">
+                <img class="card-img-top" src="{{'/sauli.jpg'}}" alt="Sauli Epimack">
                 <div class="card-body">
                     <h5 class="card-title">Sauli John Epimack, MS</h5>
                     <p class="card-text">
-                        Research Scientist<br />
+                        A nutritional epidemiologist with more than 5 years of experience as a nutritionist, a respected and trusted voice in the health and wellness industry in Tanzania. An educator, author, speaker.<br />
                         <span class="text-muted">Ifakara Health Institute</span>
                     </p>
                 </div>
