@@ -113,7 +113,7 @@
                     <h5 class="card-title">Sauli Epimack</h5>
                     <p class="card-text">
                         A nutritional epidemiologist with more than 5 years of experience as a nutritionist, a respected and trusted voice in the health and wellness industry in Tanzania. An educator, author, speaker.<br />
-                        <span class="text-muted">Ifakara Health Institute</span>
+                        <span class="text-muted">Research Scientist, Ifakara University</span>
                     </p>
                 </div>
             </div>
@@ -153,7 +153,7 @@
             <div class="card w-75" id="blogWriter">
                 <img class="card-img-left" src="{{'../images/sauli.jpg'}}" alt="Sauli Epimack">
                 <div class="card-body">
-                    <h5 class="card-title">Sauli Epimack John, MS</h5>
+                    <h5 class="card-title">Sauli Epimack</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Research Scientist, Ifakara University</h6>
                     <p class="card-text">A nutritional epidemiologist with more than 5 years of experience as a nutritionist, a respected and trusted voice in the health and wellness industry in Tanzania. An educator, author, speaker.</p>
                 </div>

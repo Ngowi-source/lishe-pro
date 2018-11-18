@@ -65,3 +65,5 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
 
 Route::get('/weight-loss-gain-tracker', 'ToolsController@bmr');
 Route::post('/weight-loss-gain-tracker', 'ToolsController@bmresults');
+
+Route::get('/shop', 'ShoppingController@index');

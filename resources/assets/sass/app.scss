@@ -1144,7 +1144,9 @@ input[name='userid']{
     background:$c4;
   }
 }
-
+#blogWriter{
+  display: none;
+}
   /*media queries*/
   @media screen and (min-width: 1110px){
     .whoAreWe{
