@@ -11666,7 +11666,7 @@ input[name='userid'] {
   background: #D57030;
 }
 
-#blogWriter {
+#showWrapper #blogWriter {
   display: none;
 }
 
