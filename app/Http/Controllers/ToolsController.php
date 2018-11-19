@@ -56,6 +56,7 @@ class ToolsController extends Controller
 
         }
 
+        $bmi = number_format($bmi, 2);
         return view('tools.bmr', compact('bmr', 'bmi', 'bmiStatus'));
     }
 

@@ -115,10 +115,10 @@
                 <br /><br />
 
                 <label for="height">Height</label>
-                <input id="height" name="height" type="number" placeholder="in centimeters..." required/><br /><br />
+                <input id="height" name="height" type="number" step="any" placeholder="in centimeters..." required/><br /><br />
 
                 <label for="weight">Weight</label>
-                <input id="weight" name="weight" type="number" placeholder="in kilograms..." required/><br /><br />
+                <input id="weight" name="weight" type="number" step="any" placeholder="in kilograms..." required/><br /><br />
 
                 <label for="age">Age</label>
                 <input id="age" name="age" type="number" required/><br /><br />
