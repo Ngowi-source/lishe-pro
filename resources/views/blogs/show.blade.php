@@ -5,7 +5,7 @@
 @endsection
 
 @section('title')
-    Lishe Pro - Article
+    Lishe Pro - {{$posted->title}}
 @endsection
 
 @section('header')

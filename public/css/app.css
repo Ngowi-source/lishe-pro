@@ -10679,7 +10679,7 @@ body {
 }
 
 .notifications {
-  left: 30% !important;
+  left: 65% !important;
 }
 
 .notifications a {
@@ -11568,7 +11568,7 @@ input[name='userid'] {
 }
 
 #BMResults .results {
-  border: 1px solid #9BA747;
+  border: 1px solid #fff;
   background-color: #9BA747;
   font-size: x-large;
   border-radius: 3px;
@@ -11886,7 +11886,7 @@ input[name='userid'] {
 
   .nav-links.showMenu .notifications,
   .nav-links.showMenu .submenu {
-    top: 20vh;
+    top: 30vh;
     left: 30vw;
     padding: 15px 1% 15px 1%;
   }
