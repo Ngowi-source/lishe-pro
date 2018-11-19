@@ -74,7 +74,7 @@
 
                 <h3 class="text-center">Calculation Results</h3><br />
 
-                Your BMI value is <span class="bmr">{{$bmi}}</span>, which indicates you are {{$bmrStatus}}<br><br><br>
+                Your BMI value is <span class="bmr">{{$bmi}}</span>, which indicates you are {{$bmiStatus}}<br><br><br>
 
                 <span class="results rez float-left">The amount of calories per day required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span>
                 <br ><br><br>
