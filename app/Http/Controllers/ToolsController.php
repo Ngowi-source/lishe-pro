@@ -37,7 +37,7 @@ class ToolsController extends Controller
             $bmr = (int)($bmr *1.9);
         }
 
-        $bmi = (int)($request->weight/((int)($request->height/100)));
+        $bmi = (int)((int)$request->weight/(int)((int)($request->height/100) * (int)($request->height/100)));
         if($bmi < 18){
 
             $bmiStatus = "underweight";
