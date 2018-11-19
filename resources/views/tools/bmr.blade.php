@@ -82,7 +82,7 @@
                 <br ><br><br>
 
                 In order to lose weight, your daily food intake requires less than {{$bmr}} calories. In order to gain weight, you need to eat daily above {{$bmr}} calories.
-                <br><br>
+                <br><br><br>
 
                 <a href="/weight-discover" class="discoverLink">DISCOVER HOW</a>
 
