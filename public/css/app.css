@@ -11564,12 +11564,12 @@ input[name='userid'] {
 }
 
 #BMResults h3 {
-  color: #9BA747;
+  color: #D57030;
 }
 
 #BMResults .results {
-  border: 1px solid #F29D4B;
-  background-color: #F29D4B;
+  border: 1px solid #9BA747;
+  background-color: #9BA747;
   font-size: x-large;
   border-radius: 3px;
 }
@@ -11583,7 +11583,7 @@ input[name='userid'] {
 
 #BMResults .bmr {
   font-size: x-large;
-  color: #8B281F !important;
+  color: #D57030 !important;
 }
 
 #BMRForm {
@@ -11666,7 +11666,7 @@ input[name='userid'] {
   background: #D57030;
 }
 
-#showWrapper #blogWriter {
+#blogBod #blogWriter {
   display: none;
 }
 
@@ -12053,12 +12053,12 @@ input[name='userid'] {
     padding: 1vw;
   }
 
-  #showWrapper #blogWriter {
+  #blogBod #blogWriter {
     display: block;
     border: none;
   }
 
-  #showWrapper #blogWriter .card-body h5 {
+  #blogBod #blogWriter .card-body h5 {
     color: #8B281F;
   }
 }

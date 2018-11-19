@@ -73,8 +73,11 @@
             @if(isset($bmr))
 
                 <h3 class="text-center">Calculation Results</h3><br />
-                <span class="results rez float-left">The amount of calories per day required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span><br />
-                <br /><br/>
+
+                Your BMI value is <span class="bmr">{{$bmi}}</span>, which indicates you are {{$bmrStatus}}<br><br><br>
+
+                <span class="results rez float-left">The amount of calories per day required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span>
+                <br ><br><br>
 
                 In order to lose weight, your daily food intake requires less than {{$bmr}} calories. In order to gain weight, you need to eat daily above {{$bmr}} calories.
                 <br><br/>
@@ -101,7 +104,7 @@
             <form method="POST" action="/weight-loss-gain-tracker">
                 {{csrf_field()}}
 
-                Sex:<br>
+                <label>Sex</label><br>
                 <input type="radio" value="Female" id="female" name="sex"/>
                 <label for="female"><span></span>Female</label>
 

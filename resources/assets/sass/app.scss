@@ -1042,11 +1042,11 @@ input[name='userid']{
     font-size: large;
   }
   h3{
-    color: $c2;
+    color: $c4;
   }
   .results{
-    border: 1px solid $c3;
-    background-color: $c3;
+    border: 1px solid $c2;
+    background-color: $c2;
     font-size: x-large;
     border-radius: 3px;
   }
@@ -1058,7 +1058,7 @@ input[name='userid']{
   }
   .bmr{
     font-size: x-large;
-    color: $c5!important;
+    color: $c4!important;
   }
 }
 #BMRForm{

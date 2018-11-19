@@ -37,7 +37,26 @@ class ToolsController extends Controller
             $bmr = (int)($bmr *1.9);
         }
 
-        return view('tools.bmr', compact('bmr'));
+        $bmi = (int)($request->weight/((int)($request->height/100)));
+        if($bmi < 18){
+
+            $bmrStatus = "underweight";
+
+        }elseif ($bmi>=18 && $bmi<25){
+
+            $bmrStatus = "normal";
+
+        }elseif ($bmi>=25 && $bmi<30){
+
+            $bmrStatus = "overweight";
+
+        }else {
+
+            $bmrStatus = "obese";
+
+        }
+
+        return view('tools.bmr', compact('bmr', 'bmi', 'bmrStatus'));
     }
 
 }
