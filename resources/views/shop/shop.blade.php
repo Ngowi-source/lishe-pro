@@ -75,7 +75,7 @@
     <div id="showWrapper">
 
         <div id="blogHead">
-
+            <h1>Lishe Store</h1>
         </div>
         <div id="blogHeadSide">
 
@@ -88,6 +88,25 @@
         </div>
         <div id="blogBod">
 
+            <img src="https://store.eatingfree.com/images/banner-samples-menus.jpg" alt="Store Home" style="width: 100%;height: auto;">
+            <br><br>
+
+            <h3>Top Sellers</h3><br>
+
+            <img class="sellInl" src="" alt="top 1" style="height: 250px; width: auto;">
+            <img class="sellInl" src="" alt="top 2" style="height: 250px; width: auto;">
+            <img class="sellInl" src="" alt="top 3" style="height: 250px; width: auto;">
+            <img class="sellInl" src="" alt="top 4" style="height: 250px; width: auto;"><br><br>
+
+            <h3>Top Pics</h3><br>
+
+            <img class="sellInline" src="" alt="top 1" style="height: 250px; width: auto;">
+            <img class="sellInline" src="" alt="top 2" style="height: 250px; width: auto;">
+            <img class="sellInline" src="" alt="top 3" style="height: 250px; width: auto;">
+            <img class="sellInline" src="" alt="top 4" style="height: 250px; width: auto;"><br><br>
+
+
+            <img src="https://store.eatingfree.com/images/youth-h2o.jpg" alt="ad" style="width:100%; height:auto;"><br><br>
 
         </div>
 

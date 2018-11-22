@@ -1147,6 +1147,9 @@ input[name='userid']{
 #blogBod #blogWriter{
   display: none;
 }
+.sellInl, .sellInline{
+  display: inline;
+}
   /*media queries*/
   @media screen and (min-width: 1110px){
     .whoAreWe{

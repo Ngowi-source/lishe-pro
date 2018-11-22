@@ -11670,6 +11670,11 @@ input[name='userid'] {
   display: none;
 }
 
+.sellInl,
+.sellInline {
+  display: inline;
+}
+
 /*media queries*/
 
 @media screen and (min-width: 1110px) {
