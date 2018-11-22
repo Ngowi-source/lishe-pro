@@ -88,6 +88,7 @@
         </div>
         <div id="blogBod">
 
+            <br><br>
             <img src="https://store.eatingfree.com/images/banner-samples-menus.jpg" alt="Store Home" style="width: 100%;height: auto;">
             <br><br>
 
