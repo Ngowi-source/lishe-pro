@@ -75,7 +75,7 @@
     <div id="showWrapper">
 
         <div id="blogHead">
-            <h1 class="text-center">Lishe Store</h1><br>
+            <h1 class="text-center">Lishe Store</h1><br><br>
         </div>
         <div id="blogHeadSide">
 
@@ -91,19 +91,19 @@
             <img src="https://store.eatingfree.com/images/banner-samples-menus.jpg" alt="Store Home" style="width: 100%;height: auto;">
             <br><br>
 
-            <h3>Top Sellers</h3><br>
+            <h3 class="text-center">Top Sellers</h3><br>
 
-            <img class="sellInl" src="https://store.eatingfree.com/files/2013/11/13_22824-thumb.jpg" alt="top 1" style="height: 250px; width: auto;">
-            <img class="sellInl" src="https://store.eatingfree.com/files/2015/10/19_15203-thumb.jpg" alt="top 2" style="height: 250px; width: auto;">
-            <img class="sellInl" src="https://store.eatingfree.com/files/2013/11/13_16572-thumb.jpg" alt="top 3" style="height: 250px; width: auto;">
-            <img class="sellInl" src="https://store.eatingfree.com/files/2016/04/14_20590-thumb.jpg" alt="top 4" style="height: 250px; width: auto;"><br><br>
+            <img class="sellInl" src="https://store.eatingfree.com/files/2013/11/13_22824-thumb.jpg" alt="top 1" style="height: 180px; width: auto;">
+            <img class="sellInl" src="https://store.eatingfree.com/files/2015/10/19_15203-thumb.jpg" alt="top 2" style="height: 180px; width: auto;">
+            <img class="sellInl" src="https://store.eatingfree.com/files/2013/11/13_16572-thumb.jpg" alt="top 3" style="height: 180px; width: auto;">
+            <img class="sellInl" src="https://store.eatingfree.com/files/2016/04/14_20590-thumb.jpg" alt="top 4" style="height: 180px; width: auto;"><br><br>
 
-            <h3>Top Pics</h3><br>
+            <h3 class="text-center">Top Pics</h3><br>
 
-            <img class="sellInline" src="https://store.eatingfree.com/files/2016/09/22_32623-thumb.jpg" alt="top 1" style="height: 250px; width: auto;">
-            <img class="sellInline" src="https://store.eatingfree.com/files/2015/12/14_29753-thumb.jpg" alt="top 2" style="height: 250px; width: auto;">
-            <img class="sellInline" src="https://store.eatingfree.com/files/2015/12/08_26708-thumb.jpg" alt="top 3" style="height: 250px; width: auto;">
-            <img class="sellInline" src="https://store.eatingfree.com/files/2013/11/21_6617-thumb.jpg" alt="top 4" style="height: 250px; width: auto;"><br><br>
+            <img class="sellInline" src="https://store.eatingfree.com/files/2016/09/22_32623-thumb.jpg" alt="top 1" style="height: 180px; width: auto;">
+            <img class="sellInline" src="https://store.eatingfree.com/files/2015/12/14_29753-thumb.jpg" alt="top 2" style="height: 180px; width: auto;">
+            <img class="sellInline" src="https://store.eatingfree.com/files/2015/12/08_26708-thumb.jpg" alt="top 3" style="height: 180px; width: auto;">
+            <img class="sellInline" src="https://store.eatingfree.com/files/2013/11/21_6617-thumb.jpg" alt="top 4" style="height: 180px; width: auto;"><br><br>
 
 
             <img src="https://store.eatingfree.com/images/youth-h2o.jpg" alt="ad" style="width:100%; height:auto;"><br><br>
