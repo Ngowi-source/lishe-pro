@@ -106,7 +106,6 @@
             <form method="POST" action="/weight-loss-gain-tracker">
                 {{csrf_field()}}
 
-                <label>Sex</label><br>
                 <input type="radio" value="Female" id="female" name="sex"/>
                 <label for="female"><span></span>Female</label>
 

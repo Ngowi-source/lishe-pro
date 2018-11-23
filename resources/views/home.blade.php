@@ -82,11 +82,10 @@
                     </div>
                 @endif
 
-                <h3 class="text-center">Weight Assesser</h3>
+                {{--<h3 class="text-center">Weight Assesser</h3>--}}
                 <form method="POST" action="/weight-loss-gain-tracker">
                     {{csrf_field()}}
 
-                    <label>Sex</label><br>
                     <input type="radio" value="Female" id="female" name="sex"/>
                     <label for="female"><span></span>Female</label>
 
@@ -164,9 +163,9 @@
 
         </div>
         <div id="whoAreWe">
-            <h1 class="text-center">Tools</h1><br />
+            <h1 class="text-center">Diet Assessment Tools</h1><br />
 
-            <h3 class="text-center">Trying to lose weight, lower your BMI, or live a healthy lifestyle? Lishe PRO tools will help to hit your goals</h3><br />
+            <h3 class="text-center">Trying to lose weight, lower your BMI, or live a healthy lifestyle? Our tools will help to hit your goals</h3><br />
 
             <div class="hometools">
 

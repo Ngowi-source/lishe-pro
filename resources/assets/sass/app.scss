@@ -238,7 +238,7 @@ body{
 }
 .submenu, .notifications{
   display: none;
-  z-index: 100;
+  z-index: 90;
   background: #fff;
   position: absolute;
   top: 100%;
@@ -310,6 +310,10 @@ body{
   z-index: 3;
   overflow: hidden;
 
+  &:hover{
+    border: 1px solid $c1;
+    background: inherit;
+  }
   /*&::after{
     -webkit-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
     -moz-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
@@ -367,7 +371,7 @@ body{
 }
 #x{
   grid-area: 1/1/2/2;
-  align-self: center;
+  align-self: end;
   justify-self: end;
 
   button{
@@ -385,7 +389,7 @@ body{
   border-radius: 3px;
   color: $c2;
   font-size: large;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 25% 5px;
 
   input{
     color: $c1;
@@ -484,9 +488,14 @@ body{
         transform: translate(-50%, 50%);
         border: 1px solid $c2;
         background: $c2;
+        border-radius: 3px;
         font-size: x-large;
         padding: 2%;
         width: auto;
+        &:hover{
+          border: 1px solid $c5;
+          background: $c5;
+        }
         a{
           text-decoration: none;
           color: #fff;
@@ -539,6 +548,13 @@ body{
     border: 1px solid $c2;
     padding: 2%;
     font-size: large;
+    border-radius: 3px;
+    &:hover{
+      background: $c2;
+      a{
+        color: #fff;
+      }
+    }
     a{
       text-decoration: none;
       color: $c2;
@@ -589,6 +605,7 @@ body{
         background: $c2;
         text-align: center;
         display: block;
+        border-radius: 3px;
         a{
           font-size: large;
           text-decoration: none;

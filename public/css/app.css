@@ -10662,7 +10662,7 @@ body {
 .submenu,
 .notifications {
   display: none;
-  z-index: 100;
+  z-index: 90;
   background: #fff;
   position: absolute;
   top: 100%;
@@ -10776,6 +10776,11 @@ body {
   }*/
 }
 
+#introButton:hover {
+  border: 1px solid #D9DCD8;
+  background: inherit;
+}
+
 #dietassessmentmodal {
   position: fixed;
   top: 0;
@@ -10802,8 +10807,8 @@ body {
 
 #x {
   grid-area: 1/1/2/2;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      align-self: end;
   justify-self: end;
 }
 
@@ -10820,7 +10825,7 @@ body {
   border-radius: 3px;
   color: #9BA747;
   font-size: large;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 25% 5px;
 }
 
 #assessmentForm input {
@@ -10930,9 +10935,16 @@ body {
   transform: translate(-50%, 50%);
   border: 1px solid #9BA747;
   background: #9BA747;
+  border-radius: 3px;
   font-size: x-large;
   padding: 2%;
   width: auto;
+}
+
+#whoAreWe .hometools .inl2 .useNow:hover,
+#whoAreWe .hometools .inl1 .useNow:hover {
+  border: 1px solid #8B281F;
+  background: #8B281F;
 }
 
 #whoAreWe .hometools .inl2 .useNow a,
@@ -10991,6 +11003,15 @@ body {
   border: 1px solid #9BA747;
   padding: 2%;
   font-size: large;
+  border-radius: 3px;
+}
+
+#whatWeDo .raed:hover {
+  background: #9BA747;
+}
+
+#whatWeDo .raed:hover a {
+  color: #fff;
 }
 
 #whatWeDo .raed a {
@@ -11053,6 +11074,7 @@ body {
   background: #9BA747;
   text-align: center;
   display: block;
+  border-radius: 3px;
 }
 
 #loseIt #weightLoss .frame .getLoseIt a {
