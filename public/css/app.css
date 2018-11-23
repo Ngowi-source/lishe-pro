@@ -10802,14 +10802,14 @@ body {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 60vw;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 10% 90%;
 }
 
 #x {
   grid-area: 1/1/2/2;
   -ms-flex-item-align: end;
       align-self: end;
-  justify-self: end;
+  justify-self: center;
 }
 
 #x button {
