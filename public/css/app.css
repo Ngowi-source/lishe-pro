@@ -10802,7 +10802,7 @@ body {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 60vw;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 20% 80%;
 }
 
 #x {
@@ -11563,6 +11563,19 @@ input[name='userid'] {
   border: 2px solid #F29D4B;
   width: 100%;
   max-width: 100%;
+  border-radius: 3px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+}
+
+#assessmentForm select {
+  background: #000;
+}
+
+#BMRForm select {
+  background: #8B281F;
 }
 
 #activity option {
