@@ -109,7 +109,7 @@
                         <option value="moderately active">moderately active</option>
                         <option value="very active">very active</option>
                         <option value="extra active">extra active</option>
-                    </select><br />
+                    </select><br><br>
 
                     <button type="submit">Start Now</button><br /> <br />
                 </form>
