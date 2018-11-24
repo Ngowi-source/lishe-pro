@@ -10802,7 +10802,7 @@ body {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 60vw;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 15% 85%;
 }
 
 #x {
