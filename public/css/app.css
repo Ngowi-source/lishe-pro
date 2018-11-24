@@ -10663,7 +10663,7 @@ body {
 .notifications {
   display: none;
   z-index: 90;
-  background: #fff;
+  background: #8B281F;
   position: absolute;
   top: 100%;
   left: 0;
@@ -10705,7 +10705,7 @@ body {
 .submenu a,
 .notifications a {
   z-index: 100;
-  color: #8B281F !important;
+  color: #9BA747 !important;
   text-decoration: none;
   display: block;
   font-size: medium;
@@ -10778,7 +10778,7 @@ body {
 
 #introButton:hover {
   border: 1px solid #D9DCD8;
-  background: inherit;
+  background: unset;
 }
 
 #dietassessmentmodal {

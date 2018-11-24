@@ -239,7 +239,7 @@ body{
 .submenu, .notifications{
   display: none;
   z-index: 90;
-  background: #fff;
+  background: $c5;
   position: absolute;
   top: 100%;
   left: 0;
@@ -275,7 +275,7 @@ body{
 }
 .submenu a, .notifications a{
   z-index: 100;
-  color: $c5!important;
+  color: $c2!important;
   text-decoration: none;
   display: block;
   font-size: medium;
@@ -312,7 +312,7 @@ body{
 
   &:hover{
     border: 1px solid $c1;
-    background: inherit;
+    background: unset;
   }
   /*&::after{
     -webkit-transition: all 0.15s cubic-bezier(.17, .61, 1, .29);
