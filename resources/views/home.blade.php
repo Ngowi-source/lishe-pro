@@ -169,7 +169,7 @@
 
             <div class="hometools">
 
-                <div class="weightLossTracker inl1">
+                <div class="weightLossTracker inl1" onclick="window.location.href='/weight-loss-gain-tracker'">
                     <h5>Weight Loss Tracker</h5>
 
                     If you've lost weight, increased exercising or made any significant changes in your lifestyle through eating and exercise, its time to modify your plan.
@@ -178,7 +178,7 @@
                     <span class="useNow"><a href="/weight-loss-gain-tracker">Use&nbsp;Tracker</a></span>
                 </div>
 
-                <div class="foodDiary inl1">
+                <div class="foodDiary inl1" onclick="window.location.href='/online-food-diary'">
                     <h5>Food Diary</h5>
 
                     If you want to keep a record of your daily food intake and stay on track when trying to lose weight or maintain a healthy weight and activity levels
@@ -187,7 +187,7 @@
                     <span class="useNow"><a href="/online-food-diary">Use&nbsp;Food&nbsp;Diary</a></span>
                 </div>
 
-                <div class="foodCalorieCounter inl2">
+                <div class="foodCalorieCounter inl2" onclick="window.location.href='/food-calorie-counter'">
                     <h5>Food Calorie Counter</h5>
 
                     Powered by the Tanzania Food Composition Database, do you want to see nutrition facts such as calories, fat, protein, carbohydrates, fibre and sugars?
@@ -196,7 +196,7 @@
                     <span class="useNow"><a href="/food-calorie-counter">Use&nbsp;Calorie&nbsp;Counter</a></span>
                 </div>
 
-                <div class="mpActivityPlanner inl2">
+                <div class="mpActivityPlanner inl2" onclick="window.location.href='/diet-meal-planner'">
                     <h5>Meal & Physical Activity Planner</h5>
 
                     Do you want to kick-start a healthier lifestyle by planningwhat you’ll eat, what you’ll drink and your physical activity, and monitor your progress?
