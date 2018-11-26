@@ -10777,7 +10777,8 @@ body {
 }
 
 #introButton:hover {
-  border: 1px solid #D9DCD8;
+  border: 1px solid #9BA747;
+  color: #9BA747;
   background: unset;
 }
 
@@ -10894,8 +10895,10 @@ body {
 #whoAreWe {
   grid-area: 2/1/3/2;
   color: #8B281F;
-  padding: 5vw 5vw 20vw 5vw;
+  padding: 5vw 5vw 10vw 5vw;
   height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D9DCD8), to(#fff));
+  background: linear-gradient(#D9DCD8, #fff);
 }
 
 #whoAreWe h1 {
@@ -10936,7 +10939,7 @@ body {
   border: 1px solid #9BA747;
   background: #9BA747;
   border-radius: 3px;
-  font-size: x-large;
+  font-size: large;
   padding: 2%;
   width: auto;
 }
@@ -10983,7 +10986,8 @@ body {
 
 #whatWeDo {
   grid-area: 3/1/4/2;
-  background: #8B281F;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8B281F), to(#F29D4B));
+  background: linear-gradient(#8B281F, #F29D4B);
   color: #fff;
   padding: 5% 5% 8% 5%;
   text-align: center;
@@ -11004,19 +11008,20 @@ body {
   padding: 2%;
   font-size: large;
   border-radius: 3px;
-}
-
-#whatWeDo .raed:hover {
   background: #9BA747;
 }
 
+#whatWeDo .raed:hover {
+  background: unset;
+}
+
 #whatWeDo .raed:hover a {
-  color: #fff;
+  color: #9BA747;
 }
 
 #whatWeDo .raed a {
   text-decoration: none;
-  color: #9BA747;
+  color: #fff;
 }
 
 #loseIt {
@@ -11078,7 +11083,7 @@ body {
 }
 
 #loseIt #weightLoss .frame .getLoseIt a {
-  font-size: large;
+  font-size: medium;
   text-decoration: none;
   color: #fff;
 }
@@ -11095,7 +11100,6 @@ body {
 
 #contact {
   grid-area: 5/1/6/2;
-  background: #9BA747;
   position: relative;
 }
 
@@ -11108,6 +11112,7 @@ body {
   padding: 3.5vh;
   text-align: center;
   color: #D9DCD8;
+  background: linear-gradient(135deg #D57030, #9BA747);
 }
 
 #contactUs .contactUs {
@@ -11121,6 +11126,7 @@ body {
 }
 
 #contactMap {
+  padding-top: 3.5vh;
   position: absolute;
   top: 55vh;
   left: 5vw;
