@@ -462,7 +462,6 @@ body{
   color: $c5;
   padding: 5vw 5vw 10vw 5vw;
   height: auto;
-  background: linear-gradient($c1, #fff);
 
   h1{
     color: $c2;
@@ -533,7 +532,7 @@ body{
 }
 #whatWeDo{
   grid-area: 3/1/4/2;
-  background: linear-gradient($c5, $c3);
+  background: linear-gradient($c5, $c5, $c3);
   color: #fff;
   padding: 5% 5% 8% 5%;
   text-align: center;
@@ -642,7 +641,7 @@ body{
   padding: 3.5vh;
   text-align: center;
   color: $c1;
-  background: linear-gradient(135deg, $c4, $c2);
+  background: linear-gradient(135deg, $c2, #fff);
 
   .contactUs{
     font-size: x-large;
@@ -655,9 +654,8 @@ body{
   }
 }
 #contactMap{
-  padding-top: 3.5vh;
   position: absolute;
-  top: 55vh;
+  top: 58.5vh;
   left: 5vw;
   width: 90vw;
   height: 65vh;

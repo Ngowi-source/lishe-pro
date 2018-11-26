@@ -10897,8 +10897,6 @@ body {
   color: #8B281F;
   padding: 5vw 5vw 10vw 5vw;
   height: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D9DCD8), to(#fff));
-  background: linear-gradient(#D9DCD8, #fff);
 }
 
 #whoAreWe h1 {
@@ -10986,8 +10984,8 @@ body {
 
 #whatWeDo {
   grid-area: 3/1/4/2;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8B281F), to(#F29D4B));
-  background: linear-gradient(#8B281F, #F29D4B);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8B281F), color-stop(#8B281F), to(#F29D4B));
+  background: linear-gradient(#8B281F, #8B281F, #F29D4B);
   color: #fff;
   padding: 5% 5% 8% 5%;
   text-align: center;
@@ -11112,7 +11110,7 @@ body {
   padding: 3.5vh;
   text-align: center;
   color: #D9DCD8;
-  background: linear-gradient(135deg, #D57030, #9BA747);
+  background: linear-gradient(135deg, #9BA747, #fff);
 }
 
 #contactUs .contactUs {
@@ -11126,9 +11124,8 @@ body {
 }
 
 #contactMap {
-  padding-top: 3.5vh;
   position: absolute;
-  top: 55vh;
+  top: 58.5vh;
   left: 5vw;
   width: 90vw;
   height: 65vh;
