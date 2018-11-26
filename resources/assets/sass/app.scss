@@ -472,11 +472,26 @@ body{
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     .inl2, .inl1{
+      position: relative;
+      margin-left: 10%;
+      background: $c4;
+      color: $c1;
+      width: 80%;
+      padding: 5% 5% 10% 5%;
+      text-align: center;
+      border-radius: 5px;
+
+      &:hover > .useNow:not(:hover){
+        opacity: 0.2;
+        .useNow{
+          bottom: 50%;
+          display: block;
+        }
+      }
       h5{
         color: #fff;
         text-align: left;
       }
-      position: relative;
       .useNow{
         position: absolute;
         left: 50%;
@@ -492,6 +507,8 @@ body{
         font-size: large;
         padding: 2%;
         width: auto;
+        display: none;
+        
         &:hover{
           border: 1px solid $c5;
           background: $c5;
@@ -506,12 +523,6 @@ body{
         font-family: FontAwesome;
         text-align: center;
       }
-      margin-left: 10%;
-      background: $c3;
-      width: 80%;
-      padding: 5% 5% 10% 5%;
-      text-align: center;
-      border-radius: 5px;
     }
     .foodCalorieCounter, .mpActivityPlanner{
       margin-top: 15%;
@@ -608,7 +619,9 @@ body{
         border-radius: 3px;
         &:hover{
           background: $c2;
-          color: #fff;
+          a{
+            color: #fff;
+          }
         }
         a{
           font-size: medium;

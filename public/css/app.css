@@ -10914,11 +10914,23 @@ body {
 #whoAreWe .hometools .inl1 {
   position: relative;
   margin-left: 10%;
-  background: #F29D4B;
+  background: #D57030;
+  color: #D9DCD8;
   width: 80%;
   padding: 5% 5% 10% 5%;
   text-align: center;
   border-radius: 5px;
+}
+
+#whoAreWe .hometools .inl2:hover > .useNow:not(:hover),
+#whoAreWe .hometools .inl1:hover > .useNow:not(:hover) {
+  opacity: 0.2;
+}
+
+#whoAreWe .hometools .inl2:hover > .useNow:not(:hover) .useNow,
+#whoAreWe .hometools .inl1:hover > .useNow:not(:hover) .useNow {
+  bottom: 50%;
+  display: block;
 }
 
 #whoAreWe .hometools .inl2 h5,
@@ -10940,6 +10952,7 @@ body {
   font-size: large;
   padding: 2%;
   width: auto;
+  display: none;
 }
 
 #whoAreWe .hometools .inl2 .useNow:hover,
@@ -11081,6 +11094,9 @@ body {
 
 #loseIt #weightLoss .frame .getLoseIt:hover {
   background: #9BA747;
+}
+
+#loseIt #weightLoss .frame .getLoseIt:hover a {
   color: #fff;
 }
 
