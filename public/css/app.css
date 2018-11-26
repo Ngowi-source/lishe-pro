@@ -11074,16 +11074,20 @@ body {
 #loseIt #weightLoss .frame .getLoseIt {
   border: 1px solid #9BA747;
   padding: 10px;
-  background: #9BA747;
   text-align: center;
   display: block;
   border-radius: 3px;
 }
 
+#loseIt #weightLoss .frame .getLoseIt:hover {
+  background: #9BA747;
+  color: #fff;
+}
+
 #loseIt #weightLoss .frame .getLoseIt a {
   font-size: medium;
   text-decoration: none;
-  color: #fff;
+  color: #9BA747;
 }
 
 .loseHeader {
@@ -11110,7 +11114,7 @@ body {
   padding: 3.5vh;
   text-align: center;
   color: #D9DCD8;
-  background: linear-gradient(135deg, #9BA747, #fff);
+  background: linear-gradient(135deg, #9BA747, #F29D4B);
 }
 
 #contactUs .contactUs {

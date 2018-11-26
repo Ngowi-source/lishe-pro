@@ -603,14 +603,17 @@ body{
       .getLoseIt{
         border: 1px solid $c2;
         padding: 10px;
-        background: $c2;
         text-align: center;
         display: block;
         border-radius: 3px;
+        &:hover{
+          background: $c2;
+          color: #fff;
+        }
         a{
           font-size: medium;
           text-decoration: none;
-          color: #fff;
+          color: $c2;
         }
       }
     }
@@ -641,7 +644,7 @@ body{
   padding: 3.5vh;
   text-align: center;
   color: $c1;
-  background: linear-gradient(135deg, $c2, #fff);
+  background: linear-gradient(135deg, $c2, $c3);
 
   .contactUs{
     font-size: x-large;
