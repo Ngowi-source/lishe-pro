@@ -10515,6 +10515,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  height: 100%;
   padding: 0;
   z-index: 5 !important;
 }

@@ -11,7 +11,7 @@
 @endsection
 
 @section('header')
-    <span class="logo"><a href="/">Lishe <span class="pro">Pro</span></a></span>
+    <div class="logo"><a href="/"><img src="{{'/logo.png'}}" alt="LishePro logo"></a></div>
     <div class="nav-links">
 
         <div class="menu">
