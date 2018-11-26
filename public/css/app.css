@@ -11112,7 +11112,7 @@ body {
   padding: 3.5vh;
   text-align: center;
   color: #D9DCD8;
-  background: linear-gradient(135deg #D57030, #9BA747);
+  background: linear-gradient(135deg, #D57030, #9BA747);
 }
 
 #contactUs .contactUs {
