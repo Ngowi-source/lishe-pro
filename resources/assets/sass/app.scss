@@ -540,7 +540,7 @@ body{
 #whatWeDo{
   grid-area: 3/1/4/2;
   background: linear-gradient($c5, $c5, $c3);
-  color: #fff;
+  color: $c1;
   padding: 5%;
   text-align: center;
   position: relative;
@@ -1305,6 +1305,251 @@ input[name='userid']{
       color: $c5!important;
     }
   }
+/*ipad, tabs and similar device properties*/
+@media screen and (min-width: 700px) and (max-width: 800px) and (min-height: 1000px) and (max-height: 1048px){
+  #homeIntro{
+    .heading{
+      font-size: 5rem;
+    }
+    .body{
+      font-size: 1.6rem;
+    }
+  }
+}
+/*ipad pro and similar device properties*/
+@media screen and (min-width: 1000px) and (max-width: 1048px) and (min-height: 1300px) and (max-height: 1400px){
+  #homeIntro{
+    .heading{
+      font-size: 5.5rem;
+    }
+    #introButton{
+      font-size: 1.8rem;
+    }
+  }
+  .nav-links{
+    a{
+      display: none;
+    }
+  }
+  .menu{
+    display: block;
+  }
+  .nav-links.showMenu{
+    height: 100vh;
+    width: 100vw;
+    background: $c1;
+    position: fixed;
+    right: 0;
+    padding-top: 15vh;
+
+    a{
+      display: block;
+      font-size: 2.5rem;
+      color: $c5!important;
+      margin-left: 10vw;
+    }
+
+    .menu{
+      margin-top: -20px;
+      margin-left: 85vw;
+      .ndChild, .menubar:last-child {opacity: 0; visibility: hidden;}
+
+      .menubar{
+        &:nth-child(1){
+          -webkit-transform: rotate(315deg);
+          -moz-transform: rotate(315deg);
+          -ms-transform: rotate(315deg);
+          -o-transform: rotate(315deg);
+          transform: rotate(315deg);
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+        }
+        &.rdChild{
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          margin-top: -0.9rem;
+        }
+      }
+    }
+    .submenu{
+      a{
+        font-size: large!important;
+      }
+    }
+    .notifications, .submenu{
+      top: 30vh;
+      left: 30vw;
+      padding: 15px 1% 15px 1%;
+    }
+    .notifications{
+      a{
+        font-size: small!important;
+      }
+    }
+  }
+  #blogWrapper{
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 10vh minmax(70vh, auto);
+
+    #blogHead{
+      grid-area: 1/1/2/2;
+
+      h1{
+        left: 50vw;
+      }
+    }
+    #blogSide{
+      grid-area: 2/1/3/2;
+      height: 10vh;
+      justify-self: end;
+      padding-top: 2.5vh;
+
+      .sideInline{
+        display: inline-block;
+
+        button{
+          font-size: large!important;
+          color: $c5!important;
+          border: 1px solid $c5!important;
+          background-color: #fff!important;
+
+          &:hover {
+            color: #fff!important;
+          }
+        }
+      }
+      .archLinks, .archLinks2{
+        display: none;
+        background: $c5;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      }
+      .archLinks.display, .archLinks2.display{
+        display: block;
+        z-index: 50;
+        padding-left: 1vw;
+        margin-top: -0.95vw;
+        .archLink{
+          color: $c1!important;
+        }
+      }
+      .archToggle, .archToggle2{
+        cursor: pointer;
+        border: 1px solid $c5;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 1vw;
+      }
+    }
+    #blogBod{
+      grid-area: 3/1/4/2;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
+  .sideDel{
+    display: none;
+  }
+  #showWrapper{
+    grid-template-columns: 50vw 50vw;
+
+    #blogSide {
+      display: none;
+      .writer{
+        display: none;
+      }
+    }
+    #blogBod{
+      grid-area: 2/1/3/3;
+      padding-left: 5vw;
+      padding-right: 5vw;
+
+    }
+    #blogHeadSide{
+      display: block;
+      padding-right: 5vw;
+      line-height: 2.2;
+      z-index: 9999999999999999;
+
+      a{
+        color: $c2;
+        text-decoration: none;
+      }
+      a button{
+        font-size: large;
+        color: $c5;
+        border: 1px solid $c5;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        background: #fff;
+        -webkit-transition: background 0.25s ease-out;
+        -moz-transition: background 0.25s ease-out;
+        -ms-transition: background 0.25s ease-out;
+        -o-transition: background 0.25s ease-out;
+        transition: background 0.25s ease-out;
+
+        &:hover{
+          background: $c5;
+          color: #fff;
+        }
+        i{
+          font-family: FontAwesome;
+          color: #fff;
+        }
+      }
+      .sideInline{
+        display: inline-block;
+      }
+      .archLinks, .archLinks2{
+        display: none;
+        background: $c5;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+      }
+      .archLinks.display, .archLinks2.display{
+        display: block;
+        padding-left: 1vw;
+        margin-top: -0.95vw;
+        z-index: 50;
+        .archLink{
+          color: $c1!important;
+        }
+      }
+      .archToggle, .archToggle2{
+        cursor: pointer;
+        color: $c5!important;
+        border: 1px solid $c5;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 1vw;
+      }
+    }
+  }
+  #blogBod #blogWriter{
+    display: block;
+    border: none;
+
+    .card-body h5{
+      color: $c5;
+    }
+  }
+}
   @media screen and (max-width: 800px){
     #bmrWrapper{
       .bmr, .results, .results2{
@@ -1327,9 +1572,6 @@ input[name='userid']{
       border: none;
       color: $c5!important;
       background-color: inherit;
-    }
-    .logo{
-      left: 1vw!important;
     }
     .nav-links{
       a{
