@@ -11877,6 +11877,13 @@ input[name='userid'] {
 /*ipad pro and similar device properties*/
 
 @media screen and (min-width: 1000px) and (max-width: 1048px) and (min-height: 1300px) and (max-height: 1400px) {
+  .login,
+  .register {
+    border: none;
+    background: unset;
+    color: #8B281F;
+  }
+
   .submenu,
   .notifications {
     background: #D9DCD8;
@@ -12389,6 +12396,13 @@ input[name='userid'] {
   #blogBod #blogWriter .card-body h5 {
     color: #8B281F;
   }
+
+  .login,
+  .register {
+    border: none;
+    background: unset;
+    color: #8B281F;
+  }
 }
 
 @media screen and (min-width: 757px) {
@@ -12594,6 +12608,13 @@ input[name='userid'] {
   #blogWrapper #blogHead h1 {
     -ms-flex-item-align: start;
         align-self: start;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #homeIntro .heading {
+    top: 5%;
+    font-size: 2.5rem;
   }
 }
 
