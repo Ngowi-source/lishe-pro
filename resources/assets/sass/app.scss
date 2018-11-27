@@ -1318,11 +1318,22 @@ input[name='userid']{
 }
 /*ipad pro and similar device properties*/
 @media screen and (min-width: 1000px) and (max-width: 1048px) and (min-height: 1300px) and (max-height: 1400px){
+  .submenu, .notifications{
+    background: $c1;
+  }
+  #homeIntro{
+    .heading{
+      font-size: 5rem;
+    }
+    .body{
+      font-size: 1.6rem;
+    }
+  }
   #homeIntro{
     .heading{
       font-size: 5.5rem;
     }
-    #introButton{
+    #introButton, .body{
       font-size: 1.8rem;
     }
   }
@@ -1551,6 +1562,9 @@ input[name='userid']{
   }
 }
   @media screen and (max-width: 800px){
+    .submenu, .notifications{
+      background: $c1;
+    }
     #bmrWrapper{
       .bmr, .results, .results2{
         font-size: larger!important;
@@ -1568,11 +1582,7 @@ input[name='userid']{
     .iconfeatured{
       font-size: large;
     }
-    .login, .register{
-      border: none;
-      color: $c5!important;
-      background-color: inherit;
-    }
+    C
     .nav-links{
       a{
         display: none;

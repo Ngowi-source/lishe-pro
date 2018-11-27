@@ -11877,11 +11877,25 @@ input[name='userid'] {
 /*ipad pro and similar device properties*/
 
 @media screen and (min-width: 1000px) and (max-width: 1048px) and (min-height: 1300px) and (max-height: 1400px) {
+  .submenu,
+  .notifications {
+    background: #D9DCD8;
+  }
+
+  #homeIntro .heading {
+    font-size: 5rem;
+  }
+
+  #homeIntro .body {
+    font-size: 1.6rem;
+  }
+
   #homeIntro .heading {
     font-size: 5.5rem;
   }
 
-  #homeIntro #introButton {
+  #homeIntro #introButton,
+  #homeIntro .body {
     font-size: 1.8rem;
   }
 
@@ -12119,6 +12133,11 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 800px) {
+  .submenu,
+  .notifications {
+    background: #D9DCD8;
+  }
+
   #bmrWrapper .bmr,
   #bmrWrapper .results,
   #bmrWrapper .results2 {
@@ -12139,14 +12158,7 @@ input[name='userid'] {
     font-size: large;
   }
 
-  .login,
-  .register {
-    border: none;
-    color: #8B281F !important;
-    background-color: inherit;
-  }
-
-  .nav-links a {
+  C .nav-links a {
     display: none;
   }
 
