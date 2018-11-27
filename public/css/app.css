@@ -10736,7 +10736,7 @@ body {
   cursor: pointer;
   padding: 5px 10px 5px 10px;
   position: relative;
-  top: 70vh;
+  top: 60vh;
   width: 35%;
   left: 32.5%;
   border-radius: 3px;
@@ -10912,6 +10912,7 @@ body {
 
 #whoAreWe .hometools .inl2,
 #whoAreWe .hometools .inl1 {
+  cursor: pointer;
   position: relative;
   margin-left: 10%;
   background: #D57030;
@@ -11752,8 +11753,16 @@ input[name='userid'] {
 
 @media screen and (max-width: 928px) {
   #homeIntro .body {
-    top: 55%;
+    top: 50%;
     max-width: 75%;
+  }
+
+  #homeIntro #introButton {
+    top: 65vh;
+  }
+
+  #homeIntro .heading {
+    top: 10%;
   }
 }
 
@@ -11811,14 +11820,14 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 834px) {
-  #introButton {
+  #homeIntro #introButton {
     width: 50%;
     left: 25%;
   }
 }
 
 @media screen and (min-width: 835px) and (max-width: 1000px) {
-  #introButton {
+  #homeIntro #introButton {
     width: 40%;
     left: 30%;
   }
@@ -12143,7 +12152,7 @@ input[name='userid'] {
 
 @media screen and (max-width: 662px) {
   #homeIntro .heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -12172,10 +12181,6 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 630px) {
-  #introButton {
-    top: 65vh;
-  }
-
   .iconfeatured {
     font-size: medium !important;
   }
@@ -12200,6 +12205,16 @@ input[name='userid'] {
 
   #blogWrapper #blogHead h1 {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  #homeIntro .heading {
+    font-size: 3rem;
+  }
+
+  #homeIntro .body {
+    top: 45%;
   }
 }
 
@@ -12300,13 +12315,17 @@ input[name='userid'] {
 
 @media screen and (max-width: 417px) {
   #homeIntro .heading {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     max-width: 80%;
   }
 
   #homeIntro .body {
-    top: 45%;
+    top: 40%;
     font-size: 0.9rem;
+  }
+
+  #homeIntro #introButton {
+    top: 60vh;
   }
 }
 
