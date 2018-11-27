@@ -182,7 +182,7 @@ body{
 }
 #homeWrapper{
   display: grid;
-  grid-template-rows: 95vh auto auto auto 130vh;
+  grid-template-rows: 95vh auto auto auto auto;
   grid-template-columns: 100vw;
 }
 #homeIntro{
@@ -544,7 +544,7 @@ body{
   grid-area: 3/1/4/2;
   background: linear-gradient($c5, $c5, $c3);
   color: #fff;
-  padding: 5% 5% 8% 5%;
+  padding: 5%;
   text-align: center;
   position: relative;
   h1{
@@ -560,6 +560,8 @@ body{
     font-size: large;
     border-radius: 3px;
     background: $c2;
+    display: block;
+
     &:hover{
       background: unset;
       a{
@@ -645,14 +647,10 @@ body{
 }
 #contact{
   grid-area: 5/1/6/2;
-  position: relative;
 }
 #contactUs{
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 55vh;
+  height: auto;
   padding: 3.5vh;
   text-align: center;
   color: $c1;
@@ -669,8 +667,6 @@ body{
   }
 }
 #contactMap{
-  position: absolute;
-  top: 58.5vh;
   left: 5vw;
   width: 90vw;
   height: 65vh;
@@ -1608,6 +1604,9 @@ input[name='userid']{
   @media screen and (max-width: 630px){
     .iconfeatured{
       font-size: medium!important;
+    }
+    #whatWeDo{
+      padding: 10%;
     }
   }
   @media screen and (max-width: 610px){

@@ -280,6 +280,7 @@
                     <i class="fas fa-phone"></i>&nbsp; +255 767 423 804
                 </span>
             </div>
+            <br>
             <div id="contactMap">
 
             </div>
