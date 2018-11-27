@@ -5,7 +5,7 @@
 @endsection
 
 @section('header')
-    <div class="logo"><a href="/"><img src="{{'/logo.png'}}" alt="LishePro logo"></a></div>
+    <div class="logo"><a href="/"><img src="{{'/logo2.png'}}" alt="LishePro logo"></a></div>
     <div class="nav-links">
 
         <div class="menu">
