@@ -12158,7 +12158,7 @@ input[name='userid'] {
     font-size: large;
   }
 
-  C .nav-links a {
+  .nav-links a {
     display: none;
   }
 
