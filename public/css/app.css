@@ -11607,6 +11607,7 @@ input[name='userid'] {
 }
 
 #BMResults .discoverLink {
+  cursor: pointer;
   text-decoration: none;
   color: #D9DCD8;
   background: #9BA747;
@@ -11633,6 +11634,64 @@ input[name='userid'] {
 #BMResults .bmr {
   font-size: x-large;
   color: #D57030 !important;
+}
+
+#tracker {
+  padding: 5vw;
+  width: 100vw;
+  height: auto;
+}
+
+#tracker form {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#tracker label {
+  color: #9BA747;
+}
+
+#tracker input {
+  color: #D9DCD8;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  border-bottom: 1px solid #D57030;
+  background: transparent;
+}
+
+#tracker input:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#tracker button {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  background: #D57030;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  border: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 50vw;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+#tracker button:hover {
+  background: #9BA747;
+  color: #fff;
+}
+
+#tracker h4 {
+  color: #D57030;
 }
 
 #BMRForm {

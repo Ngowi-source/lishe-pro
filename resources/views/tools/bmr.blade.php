@@ -81,10 +81,62 @@
                 <span class="results rez">The amount of calories per day required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span>
                 <br ><br><br>
 
-                <a href="/weight-track" class="discoverLink">LOSE WEIGHT</a><span class="notransition"></span>
+                <a {{--href="/weight-track"--}} class="discoverLink">LOSE WEIGHT</a>
 
                 <br>
+
+                <div id="tracker">
+
+                    @if(count($errors))
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                    <li>{{$error}}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    <h4 class="text-center">Realistically it is possible to lose <span>3.6kg in 1 month</span></h4><br />
+                    <form method="POST" action="/weight-loss">
+                    {{csrf_field()}}
+
+                        <label for="target">Amount of Weight to Lose</label>
+                        <input id="target" type="number" step="any" placeholder="in kilos..." required>
+                        <br><br>
+
+                        <label for="days">Number of Days</label>
+                        <input type="number" id="days" required>
+                        <br><br>
+
+                        <input type="hidden" value="{{$bmr}}" id="maintain">
+
+                        <button type="submit">Track Me</button>
+                        <br><br>
+
+                    </form>
+
+                </div>
+
             @endif
+
+            @if(isset($deficit))
+
+                    <script>
+                        document.getElementById('tracker').style.display='none'
+                    </script>
+
+                <h3 class="text-center">Weight Tracking Results</h3>
+                <br />
+
+                The amount of calories you need to burn is <span class="bmr">{{$burnStatus}}</span>
+                <br><br>
+
+                <span class="results rez">The calories per day required to reach your goal weight is:  <span class="bmr">{{$deficit}}</span></span>
+                <br ><br><br>
+
+            @endif
+
         </div>
 
         <div id="BMRForm">
@@ -140,19 +192,10 @@
     <script>
         $(function(){
 
-            $('.discoverLink')
-                .on('mouseenter', function(e) {
-                    var parentOffset = $(this).offset(),
-                        relX = e.pageX - parentOffset.left,
-                        relY = e.pageY - parentOffset.top;
-                    $(this).find('span').css({top:relY, left:relX})
-                })
-                .on('mouseout', function(e) {
-                    var parentOffset = $(this).offset(),
-                        relX = e.pageX - parentOffset.left,
-                        relY = e.pageY - parentOffset.top;
-                    $(this).find('span').css({top:relY, left:relX})
-                });
+            $('.discoverLink').click(function(){
+                this.css('display', 'none');
+                $('#tracker').css('display', 'block');
+            });
 
         });
     </script>
