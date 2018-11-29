@@ -190,11 +190,11 @@
 @section('scripts')
 
     <script>
-        $(function(){
+        $(document).ready(function(){
 
             $('.discoverLink').click(function(){
-                this.css('display', 'none');
-                $('#tracker').css('display', 'block');
+                this.css("display", "none");
+                $('#tracker').css("display", "block");
             });
 
         });

@@ -62,10 +62,10 @@ class ToolsController extends Controller
 
     public function track(Request $request)
     {
-        $burnStatus = 7700 * $request->input('target');
+        $burnStatus = 7700 * $request->target;
 
-        $deficit =  $burnStatus / $request->input('days');
-        $deficit -= $request->input('maintain');
+        $deficit =  (int) ($burnStatus / $request->days);
+        $deficit -= $request->maintain;
 
         return view('tools.bmr', compact('deficit', 'burnStatus'));
     }
