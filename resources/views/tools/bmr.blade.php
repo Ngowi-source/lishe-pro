@@ -97,7 +97,7 @@
                         </div>
                     @endif
 
-                    <h4 class="text-center">Realistically it is possible to lose <span>3.6kg in 1 month</span></h4><br />
+                    <h4 class="text-center">Realistically it is possible to lose 3.6kg in 1 month</h4><br />
                     <form method="POST" action="/weight-loss">
                     {{csrf_field()}}
 
@@ -132,7 +132,7 @@
                 The amount of calories you need to burn is <span class="bmr">{{$burnStatus}}</span>
                 <br><br>
 
-                <span class="results rez">The calories per day required to reach your goal weight is:  <span class="bmr">{{$deficit}}</span></span>
+                <span class="results rez">The calories per day required to reach your goal weight is not more than:  <span class="bmr">{{$deficit}}</span></span>
                 <br ><br><br>
 
             @endif
