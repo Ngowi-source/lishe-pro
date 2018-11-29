@@ -1078,6 +1078,7 @@ input[name='userid']{
     background: $c2;
     padding: 1%;
     font-size: large;
+    display: block;
 
   }
   h3{
@@ -1102,6 +1103,7 @@ input[name='userid']{
   padding: 5vw;
   width: 100vw;
   height: auto;
+  display: none;
 
   form{
     margin-left: 50%;

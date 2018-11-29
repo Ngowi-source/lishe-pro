@@ -81,7 +81,7 @@
                 <span class="results rez">The amount of calories per day required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span>
                 <br ><br><br>
 
-                <a {{--href="/weight-track"--}} class="discoverLink">LOSE WEIGHT</a>
+                <span class="discoverLink">LOSE WEIGHT</span>
 
                 <br>
 

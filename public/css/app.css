@@ -11613,6 +11613,7 @@ input[name='userid'] {
   background: #9BA747;
   padding: 1%;
   font-size: large;
+  display: block;
 }
 
 #BMResults h3 {
@@ -11640,6 +11641,7 @@ input[name='userid'] {
   padding: 5vw;
   width: 100vw;
   height: auto;
+  display: none;
 }
 
 #tracker form {
