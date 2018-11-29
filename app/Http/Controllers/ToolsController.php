@@ -62,6 +62,12 @@ class ToolsController extends Controller
 
     public function track(Request $request)
     {
+        $this->validate($request, [
+           'target' => 'required|number',
+            'days' => 'required|integer',
+            'maintain' => 'required|integer'
+        ]);
+
         $burnStatus = 7700 * $request->target;
 
         $deficit =  (int) ($burnStatus / $request->days);
