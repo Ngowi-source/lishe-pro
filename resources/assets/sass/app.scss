@@ -1074,17 +1074,14 @@ input[name='userid']{
     background: $c2;
     padding: 1%;
     border-radius: 5px;
-    border: 1px solid $c1;
     font-size: large;
   }
   h3{
-    color: $c4;
+    color: $c5;
   }
   .results{
-    border: 1px solid $c1;
     padding: 1%;
     font-size: x-large;
-    border-radius: 3px;
   }
   .results2{
     border: 1px solid $c4;
@@ -1886,6 +1883,9 @@ input[name='userid']{
     }
   }
 @media screen and (max-width: 578px){
+  #BMResults{
+    .discoverLink{padding: 2%;}
+  }
   #homeIntro{
     .heading{
       font-size: 3rem;

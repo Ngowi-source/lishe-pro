@@ -11612,19 +11612,16 @@ input[name='userid'] {
   background: #9BA747;
   padding: 1%;
   border-radius: 5px;
-  border: 1px solid #D9DCD8;
   font-size: large;
 }
 
 #BMResults h3 {
-  color: #D57030;
+  color: #8B281F;
 }
 
 #BMResults .results {
-  border: 1px solid #D9DCD8;
   padding: 1%;
   font-size: x-large;
-  border-radius: 3px;
 }
 
 #BMResults .results2 {
@@ -12486,6 +12483,10 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 578px) {
+  #BMResults .discoverLink {
+    padding: 2%;
+  }
+
   #homeIntro .heading {
     font-size: 3rem;
   }
