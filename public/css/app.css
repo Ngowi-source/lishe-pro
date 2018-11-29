@@ -11611,7 +11611,6 @@ input[name='userid'] {
   color: #D9DCD8;
   background: #9BA747;
   padding: 1%;
-  border-radius: 5px;
   font-size: large;
 }
 
@@ -11640,6 +11639,8 @@ input[name='userid'] {
   grid-area: 2/1/3/2;
   padding: 5vh;
   position: relative;
+  -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
 
 #BMRForm form {
@@ -11853,11 +11854,6 @@ input[name='userid'] {
   .login:hover {
     background: #8B281F;
     color: #D9DCD8;
-  }
-
-  .register:hover {
-    background: #D9DCD8;
-    color: #8B281F !important;
   }
 }
 
