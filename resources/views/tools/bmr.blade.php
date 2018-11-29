@@ -193,7 +193,7 @@
         $(document).ready(function(){
 
             $('.discoverLink').click(function(){
-                this.css("display", "none");
+                $('.discoverLink').css("display", "none");
                 $('#tracker').css("display", "block");
             });
 
