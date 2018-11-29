@@ -89,6 +89,10 @@
 
         <div id="BMRForm">
 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 5" preserveAspectRatio="none">
+                <path fill="white" stroke="white" stroke-width="0" d=" M0,3.75 C0,1.25 90,6.25 100,3.75 L100,0 L0,0 Z "></path>
+            </svg>
+
             @if(count($errors))
                 <div class="alert alert-danger">
                     <ul>
