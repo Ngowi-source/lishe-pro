@@ -11603,6 +11603,7 @@ input[name='userid'] {
   padding: 5vh;
   color: #9BA747;
   background: #fff;
+  text-align: center;
 }
 
 #BMResults .discoverLink {
