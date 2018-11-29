@@ -102,14 +102,14 @@
                     {{csrf_field()}}
 
                         <label for="target">Amount of Weight to Lose</label>
-                        <input id="target" type="number" step="any" placeholder="in kilos..." required>
+                        <input id="target" name="target" type="number" step="any" placeholder="in kilos..." required>
                         <br><br>
 
                         <label for="days">Number of Days</label>
-                        <input type="number" id="days" required>
+                        <input type="number" name="days" id="days" required>
                         <br><br>
 
-                        <input type="hidden" value="{{$bmr}}" id="maintain">
+                        <input type="hidden" value="{{$bmr}}" name="maintain">
 
                         <button type="submit">Track Me</button>
                         <br><br>

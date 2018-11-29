@@ -11643,7 +11643,7 @@ input[name='userid'] {
 }
 
 #tracker form {
-  margin-left: 50%;
+  margin-left: calc(50% - 5vh);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
