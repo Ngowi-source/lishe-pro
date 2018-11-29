@@ -11601,16 +11601,17 @@ input[name='userid'] {
 #BMResults {
   grid-area: 1/1/2/2;
   padding: 5vh;
-  color: #D9DCD8;
+  color: #9BA747;
+  background: #fff;
 }
 
 #BMResults .discoverLink {
   text-decoration: none;
-  color: #fff;
+  color: #D9DCD8;
   background: #9BA747;
   padding: 1%;
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid #D9DCD8;
   font-size: large;
 }
 
@@ -11619,8 +11620,8 @@ input[name='userid'] {
 }
 
 #BMResults .results {
-  border: 1px solid #fff;
-  background-color: #9BA747;
+  border: 1px solid #D9DCD8;
+  padding: 1%;
   font-size: x-large;
   border-radius: 3px;
 }

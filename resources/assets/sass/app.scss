@@ -1064,23 +1064,24 @@ input[name='userid']{
 #BMResults{
   grid-area: 1/1/2/2;
   padding: 5vh;
-  color: $c1;
+  color: $c2;
+  background: #fff;
 
   .discoverLink{
     text-decoration: none;
-    color: #fff;
+    color: $c1;
     background: $c2;
     padding: 1%;
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid $c1;
     font-size: large;
   }
   h3{
     color: $c4;
   }
   .results{
-    border: 1px solid #fff;
-    background-color: $c2;
+    border: 1px solid $c1;
+    padding: 1%;
     font-size: x-large;
     border-radius: 3px;
   }
