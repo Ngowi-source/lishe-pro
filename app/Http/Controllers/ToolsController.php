@@ -64,7 +64,7 @@ class ToolsController extends Controller
     {
         $burnStatus = (int)(7700 * $request->input('target'));
 
-        $deficit = (int) ($burnStatus/$request->input('days') );
+        $deficit =  $burnStatus / $request->input('days') ;
         $deficit -= $request->input('maintain');
 
         return view('tools.bmr', compact('deficit', 'burnStatus'));
