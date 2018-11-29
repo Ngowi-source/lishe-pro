@@ -81,17 +81,13 @@
                 <span class="results rez">The amount of calories per day required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span>
                 <br ><br><br>
 
-                <a href="/weight-track" class="discoverLink">LOSE WEIGHT</a>
+                <a href="/weight-track" class="discoverLink">LOSE WEIGHT</a><span class="notransition"></span>
 
                 <br>
             @endif
         </div>
 
         <div id="BMRForm">
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 5" preserveAspectRatio="none">
-                <path fill="white" stroke="white" stroke-width="0" d=" M0,3.75 C0,1.25 90,6.25 100,3.75 L100,0 L0,0 Z "></path>
-            </svg>
 
             @if(count($errors))
                 <div class="alert alert-danger">
@@ -136,5 +132,29 @@
             </form>
         </div>
     </div>
+
+@endsection
+
+@section('scripts')
+
+    <script>
+        $(function(){
+
+            $('.discoverLink')
+                .on('mouseenter', function(e) {
+                    var parentOffset = $(this).offset(),
+                        relX = e.pageX - parentOffset.left,
+                        relY = e.pageY - parentOffset.top;
+                    $(this).find('span').css({top:relY, left:relX})
+                })
+                .on('mouseout', function(e) {
+                    var parentOffset = $(this).offset(),
+                        relX = e.pageX - parentOffset.left,
+                        relY = e.pageY - parentOffset.top;
+                    $(this).find('span').css({top:relY, left:relX})
+                });
+
+        });
+    </script>
 
 @endsection

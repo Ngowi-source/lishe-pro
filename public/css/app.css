@@ -11641,15 +11641,6 @@ input[name='userid'] {
   position: relative;
 }
 
-#BMRForm svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5vh;
-  border: none;
-}
-
 #BMRForm form {
   position: absolute;
   margin-left: calc(50vw - 5vh);
