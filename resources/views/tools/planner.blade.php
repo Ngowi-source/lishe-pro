@@ -1,7 +1,7 @@
 @extends('templates.application')
 
 @section('title')
-    Lishe Pro - Privacy Policy
+    Lishe Pro - Meal Planner
 @endsection
 
 @section('header')
@@ -67,42 +67,10 @@
 
 @section('content')
 
-    <div id="loginWrapper">
-
-        <h1 class="text-center">Privacy Policy</h1>
-
-        <div class="col-12">
-            Lishe Pro respects the privacy rights of our users and is strongly committed to protecting your privacy.
-            This Privacy Policy applies to this website, information collected and provided to Lishe Pro when you
-            are registered to Lishe-Pro.co.tz or at third-party websites and applications.<br /><br />
-
-            <h3>Collection and Use of Your Personal Information</h3>
-
-            This website makes use of a login and registration functionality partly based on popular social accounts
-            such as Google Plus, Facebook and Twitter. Lishe Pro may only store user information such as the user names
-            used on these social accounts, email addresses and IDs.<br />
-
-            The information collected will only be used for login and registration purposes and nothing more. In no way
-            will Lishe Pro publish, use the content posted by the user, or make a post on behalf of the users. Lishe Pro
-            will not keep track of any other detail of the user other than collection the basic profile information
-            aforementioned.<br /><br />
-
-            <h3>Modification to This Privacy Policy</h3>
-
-            Lishe Pro reserves the right to change this Privacy Policy at any time by posting revisions on this Web
-            page. Such changes will be effective upon posting.<br /><br />
-        </div>
-
-    </div>
+    <img class="uc" src="{{'/images/under_construction.png'}}" alt="Under Construction">
 
 @endsection
 
 @section('scripts')
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-
-        });
-    </script>
 
 @endsection

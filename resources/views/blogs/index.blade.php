@@ -20,8 +20,8 @@
             <div class="submenu">
                 <a href="/weight-loss-gain-tracker">Weight Loss Tracker</a>
                 <a href="/food-calorie-counter">Food Calorie Counter</a>
-                <a href="/online-food-diary">Online Food Diary</a>
-                <a href="/diet-meal-planner">Diet Meal Planner</a>
+                {{--<a href="/online-food-diary">Online Food Diary</a>
+                <a href="/diet-meal-planner">Diet Meal Planner</a>--}}
             </div>
         </a>
         <a href="/blog">Blog</a>

@@ -76,4 +76,19 @@ class ToolsController extends Controller
         return view('tools.bmr', compact('deficit', 'burnStatus'));
     }
 
+    public function diary()
+    {
+        return view ('tools.diary');
+    }
+
+    public function planner()
+    {
+        return view ('tools.planner');
+    }
+
+    public function counter()
+    {
+        return view ('tools.counter');
+    }
+
 }

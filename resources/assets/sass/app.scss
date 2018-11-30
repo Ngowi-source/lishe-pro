@@ -65,6 +65,7 @@ body{
 #content{
   grid-area: 2/1/3/2;
   z-index: 5000;
+  position: relative;
 }
 #footer{
   grid-area: 3/1/4/2;
@@ -184,7 +185,7 @@ body{
 }
 #homeIntro{
   position: relative;
-  background-image: url("/images/diet.jpg");
+  /*background-image: url("/images/diet.jpg");*/
   overflow: hidden;
 
   .heading{
@@ -1249,6 +1250,15 @@ input[name='userid']{
 }
 .sellInl, .sellInline{
   display: inline;
+}
+
+.uc{
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
   /*media queries*/
   @media screen and (min-width: 1110px){
