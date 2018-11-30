@@ -159,7 +159,8 @@ body{
   cursor: pointer;
 
   .ndChild{
-    width: 3vh; /*won't work, not important*/
+    width: 3vh!important;
+    margin-top: .1vh;
     margin-left: 1.5vh;
   }
   .menubar{
@@ -1107,7 +1108,7 @@ input[name='userid']{
 
 
   form{
-    margin-left: calc(50vw - 5vh);
+    margin-left: calc(50% - 5vh);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -1143,9 +1144,6 @@ input[name='userid']{
     -moz-border-radius: 3px;
     border-radius: 3px;
     border: none;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
     width: 50vw;
 
     -webkit-transition: background 0.3s ease-in;

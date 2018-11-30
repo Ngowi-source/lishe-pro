@@ -10578,8 +10578,8 @@ body {
 }
 
 .menu .ndChild {
-  width: 3vh;
-  /*won't work, not important*/
+  width: 3vh !important;
+  margin-top: .1vh;
   margin-left: 1.5vh;
 }
 
@@ -11645,7 +11645,7 @@ input[name='userid'] {
 }
 
 #tracker form {
-  margin-left: calc(50vw - 5vh);
+  margin-left: calc(50% - 5vh);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -11679,9 +11679,6 @@ input[name='userid'] {
   font-size: 1.3rem;
   border-radius: 3px;
   border: none;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
   width: 50vw;
   -webkit-transition: background 0.3s ease-in;
   transition: background 0.3s ease-in;
