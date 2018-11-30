@@ -1076,13 +1076,14 @@ input[name='userid']{
     cursor: pointer;
     text-decoration: none;
     color: $c1;
+    border-radius: 3px;
     background: $c2;
     padding: 1%;
     font-size: large;
 
   }
   h3{
-    color: $c5;
+    color: $c4;
   }
   .results{
     padding: 1%;
@@ -1106,7 +1107,7 @@ input[name='userid']{
 
 
   form{
-    margin-left: calc(50% - 5vh);
+    margin-left: calc(50vw - 5vh);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -1117,7 +1118,7 @@ input[name='userid']{
     color: $c2;
   }
   input{
-    color: $c1;
+    color: darken($c1, 50%);
     border-top: none;
     border-right: none;
     border-left: none;
@@ -1646,7 +1647,7 @@ input[name='userid']{
       .bmr, .results, .results2{
         font-size: larger!important;
       }
-      #BMRForm{
+      #BMRForm, #tracker{
         input, button{
           width: 70vw!important;
         }
@@ -1957,7 +1958,7 @@ input[name='userid']{
   }
 @media screen and (max-width: 578px){
   #BMResults{
-    .discoverLink{padding: 2%;}
+    .discoverLink{padding: 4%;}
   }
   #homeIntro{
     .heading{

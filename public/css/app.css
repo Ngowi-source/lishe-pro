@@ -11611,13 +11611,14 @@ input[name='userid'] {
   cursor: pointer;
   text-decoration: none;
   color: #D9DCD8;
+  border-radius: 3px;
   background: #9BA747;
   padding: 1%;
   font-size: large;
 }
 
 #BMResults h3 {
-  color: #8B281F;
+  color: #D57030;
 }
 
 #BMResults .results {
@@ -11644,7 +11645,7 @@ input[name='userid'] {
 }
 
 #tracker form {
-  margin-left: calc(50% - 5vh);
+  margin-left: calc(50vw - 5vh);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -11654,7 +11655,7 @@ input[name='userid'] {
 }
 
 #tracker input {
-  color: #D9DCD8;
+  color: #585f56;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -12214,7 +12215,9 @@ input[name='userid'] {
   }
 
   #bmrWrapper #BMRForm input,
-  #bmrWrapper #BMRForm button {
+  #bmrWrapper #BMRForm button,
+  #bmrWrapper #tracker input,
+  #bmrWrapper #tracker button {
     width: 70vw !important;
   }
 
@@ -12547,7 +12550,7 @@ input[name='userid'] {
 
 @media screen and (max-width: 578px) {
   #BMResults .discoverLink {
-    padding: 2%;
+    padding: 4%;
   }
 
   #homeIntro .heading {

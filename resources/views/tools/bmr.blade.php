@@ -97,12 +97,12 @@
                         </div>
                     @endif
 
-                    <h4 class="text-center">Realistically it is possible to lose 3.6kg in 1 month</h4><br />
+                    <h4 class="text-center">A reduction of 500kcal daily results to a weight loss of about 05.kg a week.</h4><br />
                     <form method="POST" action="/weight-loss">
                     {{csrf_field()}}
 
                         <label for="target">Amount of Weight to Lose</label>
-                        <input id="target" name="target" type="number" step="any" placeholder="in kilos..." required>
+                        <input id="target" name="target" type="number" step="any" placeholder="in kilograms..." required>
                         <br><br>
 
                         <label for="days">Number of Days</label>
