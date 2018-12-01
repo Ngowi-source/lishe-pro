@@ -194,27 +194,45 @@ body{
     height: 100%;
     width: 100%;
 
-      .carousel-cell{
-        padding:0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
+    .carousel-cell{
+      padding:0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
 
+    }
+    .is-selected{
+      .heading{
+        top: 15%;
+        opacity: 1;
+      }
+      .body{
+        opacity: 1;
+        display: block;
       }
     }
+  }
 
   .heading{
     color: $c4;
     position: absolute;
-    top: 15%;
+    top: -50%;
+    opacity: 0;
     left: 10%;
     font-size: 4rem;
     font-weight: 900;
     max-width: 70%;
     line-height: 1;
     z-index: 2;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
   }
   .body{
+    display: none;
+    opacity: 0;
     font-weight: 600;
     color: $c2;
     font-size: 1.2rem;
@@ -223,6 +241,11 @@ body{
     top: 40%;
     left: 10%;
     z-index: 2;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
   }
 }
 #tools, #nots {
