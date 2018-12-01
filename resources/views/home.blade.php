@@ -150,7 +150,7 @@
                 </li>
 
                 <li>
-                    <div class="bgIntro" style="background-image:url(https://i.imgur.com/i7VlkGV.png?2)">
+                    <div class="bgIntro" style="background-image:url('/images/bgsmall.jpg')">
                         <span class="heading">Physical fitness starts with what you eat.</span><br>
 
                         <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
@@ -160,7 +160,7 @@
                 </li>
 
                 <li>
-                    <div class="bgIntro" style="background-image:url(https://i.imgur.com/i7VlkGV.png?2)">
+                    <div class="bgIntro" style="background-image:url('/images/antioxidant.jpg')">
                         <span class="heading">Physical fitness starts with what you eat.</span><br>
 
                         <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
