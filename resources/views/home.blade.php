@@ -133,7 +133,7 @@
 
                     <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
 
-                    <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
+                    <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE</button>
 
                 </div>
 
@@ -143,7 +143,7 @@
 
                     <span class="body">With our tools you can track your BMI status, obtain your calorie intake, then begin your weight loss programme.</span>
 
-                    <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
+                    <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE</button>
 
                 </div>
 
@@ -153,7 +153,7 @@
 
                     <span class="body">To effectively make your weight loss process a success, you need to know how many calories you eat daily.</span>
 
-                    <button id="introButton" onclick="window.location.href='/food-calorie-counter'">START FOR FREE!</button>
+                    <button id="introButton" onclick="window.location.href='/food-calorie-counter'">EXPLORE</button>
 
                 </div>
             </div>

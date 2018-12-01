@@ -10738,7 +10738,7 @@ body {
   border: 1px solid #8B281F;
   color: #D9DCD8;
   background: #8B281F;
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   z-index: 3;
   overflow: hidden;
 }
@@ -12571,7 +12571,7 @@ input[name='userid'] {
   }
 
   #introButton {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   #intro {
