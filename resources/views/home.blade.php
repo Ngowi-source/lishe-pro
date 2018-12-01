@@ -318,16 +318,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function(){
+        var flkty = new Flickity( '.main-carousel', {
 
-            $('.main-carousel').flickity({
-
-                cellAlign: 'left',
-                contain: true,
-                autoPlay: true,
-                prevNextButtons: false,
-                pageDots: false
-            });
+            cellAlign: 'left',
+            contain: true,
+            autoPlay: true,
+            prevNextButtons: false,
+            pageDots: false
 
         });
     </script>
