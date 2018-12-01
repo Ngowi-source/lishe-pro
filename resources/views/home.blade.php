@@ -322,7 +322,7 @@
 
             cellAlign: 'left',
             contain: true,
-            autoPlay: true,
+            autoPlay: 5000,
             prevNextButtons: false,
             pageDots: false
 
