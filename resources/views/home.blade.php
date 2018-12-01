@@ -138,37 +138,37 @@
 
         <div id="homeIntro">
 
-            <ul class="homeIntro">
-                <li>
-                    <div class="bgIntro" style="background-image: url('/images/diet.jpg');">
-                        <span class="heading">Physical fitness starts with what you eat.</span><br>
+            <div class="main-carousel">
+                <div class="carousel-cell" style="background-image: url('/images/diet.jpg')">
 
-                        <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+                    <span class="heading">Physical fitness starts with what you eat.</span><br>
 
-                        <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
-                    </div>
-                </li>
+                    <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
 
-                <li>
-                    <div class="bgIntro" style="background-image:url('/images/bgsmall.jpg')">
-                        <span class="heading">Physical fitness starts with what you eat.</span><br>
+                    <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
 
-                        <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+                </div>
 
-                        <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
-                    </div>
-                </li>
+                <div  class="carousel-cell" style="background-image: url('/images/antioxidant.jpg')">
 
-                <li>
-                    <div class="bgIntro" style="background-image:url('/images/antioxidant.jpg')">
-                        <span class="heading">Physical fitness starts with what you eat.</span><br>
+                    <span class="heading">Physical fitness starts with what you eat.</span><br>
 
-                        <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+                    <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
 
-                        <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
-                    </div>
-                </li>
-            </ul>
+                    <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
+
+                </div>
+
+                <div class="carousel-cell" style="background-image: url('/images/bgsmall.jpg')">
+
+                    <span class="heading">Physical fitness starts with what you eat.</span><br>
+
+                    <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+
+                    <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
+
+                </div>
+            </div>
 
         </div>
 
@@ -316,43 +316,18 @@
     </script>
 
     <script>
+        $(document).load(function(){
 
-        (function() {
+            $('.main-carousel').flickity({
 
-            var autoUpdate = true,
-                timeTrans = 4000;
+                cellAlign: 'left',
+                contain: true,
+                autoPlay: true,
+                prevNextButtons: false,
+                pageDots: false
+            });
 
-            var cdSlider = document.querySelector('#homeIntro'),
-                item = cdSlider.querySelectorAll("li");
-
-            item[0].className = "current_slide";
-
-            for (var i = 0, len = item.length; i < len; i++) {
-                var color = item[i].getAttribute("data-color");
-                item[i].style.backgroundColor=color;
-            }
-
-
-            function nextSlide() {
-                var currentSlide = cdSlider.querySelector("li.current_slide"),
-                    nextElement = currentSlide.nextElementSibling,
-                    nextSlide = ( nextElement !== null ) ? nextElement : item[0];
-
-                currentSlide.className = "";
-                nextSlide.className = "current_slide";
-
-            }
-
-            //autoUpdate
-            setInterval(function() {
-                if (autoUpdate) {
-                    nextSlide();
-                    updateNavColor();
-                }
-            },timeTrans);
-
-        })();
-
+        });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -188,77 +188,20 @@ body{
   position: relative;
   overflow: hidden;
 
-  .homeIntro{
+  .main-carousel{
     padding:0;
     margin: 0;
     height: 100%;
     width: 100%;
 
-    li{
-      padding:0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-      list-style-type: none;
-      visibility: hidden;
-      -webkit-transition: visibility 0s .6s;
-      -moz-transition: visibility 0s .6s;
-      -ms-transition: visibility 0s .6s;
-      -o-transition: visibility 0s .6s;
-      transition: visibility 0s .6s;
-
-      &::before{
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        border-radius: 100%;
-        width: 135vh;
-        height: 135vh;
-        border: solid $c1;
-        border-width: 0;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-        -webkit-transition: border-width .4s .6s;
-        -moz-transition: border-width .4s .6s;
-        -ms-transition: border-width .4s .6s;
-        -o-transition: border-width .4s .6s;
-        transition: border-width .4s .6s;
-      }
-      &.current_slide{
-        visibility: visible;
-        &::before{
-          border-width: 16rem;
-        }
-        .bgIntro{
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-      .bgIntro{
+      .carousel-cell{
         padding:0;
         margin: 0;
         height: 100%;
         width: 100%;
-        overflow: hidden;
-        background-position: 50% 100%;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        mix-blend-mode: lighten;
-        opacity: 0;
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
-        transition: opacity .4s .6s, transform .4s .6s;
+
       }
     }
-  }
 
   .heading{
     color: $c4;
