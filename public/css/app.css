@@ -12623,6 +12623,10 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 417px) {
+  #whoAreWe h3 {
+    display: none;
+  }
+
   #homeIntro .heading {
     font-size: 2.7rem;
     max-width: 80%;
