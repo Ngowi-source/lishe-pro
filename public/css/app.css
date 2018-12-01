@@ -10633,7 +10633,7 @@ body {
 
 #homeIntro .main-carousel .is-selected .body {
   opacity: 1;
-  display: block;
+  top: 40%;
 }
 
 #homeIntro .heading {
@@ -10652,18 +10652,17 @@ body {
 }
 
 #homeIntro .body {
-  display: none;
-  opacity: 0;
   font-weight: 600;
   color: #9BA747;
   font-size: 1.2rem;
   max-width: 60%;
   position: absolute;
-  top: 40%;
+  opacity: 0;
+  top: 100%;
   left: 10%;
   z-index: 2;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
 
 #tools,
@@ -11791,7 +11790,7 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 928px) {
-  #homeIntro .body {
+  #homeIntro .is-selected .body {
     top: 50%;
     max-width: 75%;
   }
@@ -11800,7 +11799,7 @@ input[name='userid'] {
     top: 65vh;
   }
 
-  #homeIntro .heading {
+  #homeIntro .is-selected .heading {
     top: 10%;
   }
 }
@@ -12535,7 +12534,7 @@ input[name='userid'] {
     font-size: 3rem;
   }
 
-  #homeIntro .body {
+  #homeIntro .is-selected .body {
     top: 45%;
   }
 }
@@ -12649,7 +12648,7 @@ input[name='userid'] {
     max-width: 80%;
   }
 
-  #homeIntro .body {
+  #homeIntro .is-selected .body {
     top: 40%;
     font-size: 0.9rem;
   }
@@ -12667,7 +12666,7 @@ input[name='userid'] {
 }
 
 @media screen and (max-width: 340px) {
-  #homeIntro .heading {
+  #homeIntro .is-selected .heading {
     top: 5%;
     font-size: 2.5rem;
   }

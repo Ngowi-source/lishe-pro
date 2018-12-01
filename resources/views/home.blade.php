@@ -310,7 +310,7 @@
 
             cellAlign: 'left',
             contain: true,
-            autoPlay: 5000,
+            autoPlay: 6500,
             prevNextButtons: false,
             pageDots: false
 
