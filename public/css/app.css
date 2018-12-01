@@ -11771,6 +11771,17 @@ input[name='userid'] {
   left: 0;
 }
 
+.counterContain {
+  padding: 5%;
+  height: 100%;
+  width: 100%;
+  color: #9BA747;
+}
+
+.counterContain h1 {
+  color: #8B281F;
+}
+
 /*media queries*/
 
 @media screen and (min-width: 1110px) {
@@ -11791,8 +11802,8 @@ input[name='userid'] {
 
 @media screen and (max-width: 928px) {
   #homeIntro .is-selected .body {
-    top: 50%;
-    max-width: 75%;
+    top: 50% !important;
+    max-width: 75% !important;
   }
 
   #homeIntro #introButton {
@@ -11800,7 +11811,7 @@ input[name='userid'] {
   }
 
   #homeIntro .is-selected .heading {
-    top: 10%;
+    top: 10% !important;
   }
 }
 
@@ -12535,7 +12546,7 @@ input[name='userid'] {
   }
 
   #homeIntro .is-selected .body {
-    top: 45%;
+    top: 45% !important;
   }
 }
 
@@ -12649,8 +12660,8 @@ input[name='userid'] {
   }
 
   #homeIntro .is-selected .body {
-    top: 40%;
-    font-size: 0.9rem;
+    top: 40% !important;
+    font-size: 0.9rem !important;
   }
 
   #homeIntro #introButton {
@@ -12667,8 +12678,8 @@ input[name='userid'] {
 
 @media screen and (max-width: 340px) {
   #homeIntro .is-selected .heading {
-    top: 5%;
-    font-size: 2.5rem;
+    top: 5% !important;
+    font-size: 2.5rem !important;
   }
 }
 

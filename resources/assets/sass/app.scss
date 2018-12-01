@@ -1247,6 +1247,16 @@ input[name='userid']{
   top: 0;
   left: 0;
 }
+.counterContain{
+  padding: 5%;
+  height: 100%;
+  width: 100%;
+  color: $c2;
+
+  h1{
+    color: $c5;
+  }
+}
   /*media queries*/
   @media screen and (min-width: 1110px){
     .whoAreWe{
@@ -1266,14 +1276,14 @@ input[name='userid']{
   @media screen and (max-width: 928px){
     #homeIntro {
       .is-selected .body{
-        top: 50%;
-        max-width: 75%;
+        top: 50%!important;
+        max-width: 75%!important;
       }
       #introButton{
         top: 65vh;
       }
       .is-selected .heading{
-        top: 10%;
+        top: 10%!important;
       }
     }
   }
@@ -1951,7 +1961,7 @@ input[name='userid']{
       font-size: 3rem;
     }
     .is-selected .body{
-      top: 45%;
+      top: 45%!important;
     }
   }
 }
@@ -2021,8 +2031,8 @@ input[name='userid']{
         max-width: 80%;
     }
     .is-selected .body{
-      top: 40%;
-      font-size: 0.9rem;
+      top: 40%!important;
+      font-size: 0.9rem!important;
     }
     #introButton{
       top: 60vh;
@@ -2040,8 +2050,8 @@ input[name='userid']{
 @media screen and (max-width: 340px){
   #homeIntro{
     .is-selected .heading{
-      top: 5%;
-      font-size: 2.5rem;
+      top: 5%!important;
+      font-size: 2.5rem!important;
     }
   }
 }

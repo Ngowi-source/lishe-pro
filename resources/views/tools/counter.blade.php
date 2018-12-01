@@ -67,7 +67,14 @@
 
 @section('content')
 
-    <h1 class="text-center">Food Calorie Counter</h1>
+    <div class="counterContain">
+        <h1 class="text-center">Food Calorie Counter</h1>
+        <br>
+
+        <p>
+            To perfectly monitor your weight, you have got to watch what you eat, and we're going to help you do just that.
+        </p>
+    </div>
 
 @endsection
 
