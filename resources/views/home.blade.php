@@ -24,6 +24,7 @@
                 <a href="/diet-meal-planner">Diet Meal Planner</a>--}}
             </div>
         </a>
+        <a href="/blog">Blog</a>
         <a href="/shop">Shop</a>
         <a href="/about-us">About Us</a>
 
@@ -122,24 +123,11 @@
 @section('content')
 
     <div id="homeWrapper">
-        {{--<div id="homeIntro">
-
-            <span class="heading">Physical fitness starts with what you eat.
-            </span>
-            <br>
-
-            <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.
-            </span>
-
-
-            <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
-
-        </div>--}}
 
         <div id="homeIntro">
 
             <div class="main-carousel">
-                <div class="carousel-cell" style="background-image: url('/images/diet.jpg')">
+                <div class="carousel-cell" style="background-image: url('/images/diet.jpg');background-position: center top;">
 
                     <span class="heading">Physical fitness starts with what you eat.</span><br>
 
@@ -149,7 +137,7 @@
 
                 </div>
 
-                <div  class="carousel-cell" style="background-image: url('/images/antioxidant.jpg');background-position: center;">
+                <div  class="carousel-cell" style="background-image: url('/images/antioxidant.jpg');background-position: center top;">
 
                     <span class="heading">Monitor your daily caloric requirements.</span><br>
 
@@ -159,13 +147,13 @@
 
                 </div>
 
-                <div class="carousel-cell" style="background-image: url('/images/bgsmall.jpg');background-position: left;">
+                <div class="carousel-cell cell-3" style="background-image: url('/images/bgsmall.jpg');background-position: left;">
 
                     <span class="heading">Calculate calories for almost any food.</span><br>
 
                     <span class="body">To effectively make your weight loss process a success, you need to know how many calories you eat daily.</span>
 
-                    <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
+                    <button id="introButton" onclick="window.location.href='/food-calorie-counter'">START FOR FREE!</button>
 
                 </div>
             </div>
