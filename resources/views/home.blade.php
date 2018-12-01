@@ -149,21 +149,21 @@
 
                 </div>
 
-                <div  class="carousel-cell" style="background-image: url('/images/antioxidant.jpg')">
+                <div  class="carousel-cell" style="background-image: url('/images/antioxidant.jpg');background-position: center;">
 
-                    <span class="heading">Physical fitness starts with what you eat.</span><br>
+                    <span class="heading">Monitor your daily caloric requirements.</span><br>
 
-                    <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+                    <span class="body">With our tools you can track your BMI status, obtain your calorie intake, then begin your weight loss programme.</span>
 
                     <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
 
                 </div>
 
-                <div class="carousel-cell" style="background-image: url('/images/bgsmall.jpg')">
+                <div class="carousel-cell" style="background-image: url('/images/bgsmall.jpg');background-position: left;">
 
-                    <span class="heading">Physical fitness starts with what you eat.</span><br>
+                    <span class="heading">Calculate calories for almost any food.</span><br>
 
-                    <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+                    <span class="body">To effectively make your weight loss process a success, you need to know how many calories you eat daily.</span>
 
                     <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
 

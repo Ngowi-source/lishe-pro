@@ -67,7 +67,7 @@
 
 @section('content')
 
-
+    <h1 class="text-center">Food Calorie Counter</h1>
 
 @endsection
 
