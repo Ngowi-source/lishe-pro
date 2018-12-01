@@ -149,7 +149,7 @@
                     </div>
                 </li>
 
-                {{--<li>
+                <li>
                     <div class="bgIntro" style="background-image:url(https://i.imgur.com/i7VlkGV.png?2)">
                         <span class="heading">Physical fitness starts with what you eat.</span><br>
 
@@ -167,7 +167,7 @@
 
                         <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
                     </div>
-                </li>--}}
+                </li>
             </ul>
 
         </div>
@@ -312,6 +312,46 @@
 
         var marker = L.marker([-6.781610, 39.234919]).addTo(mymap);
         marker.bindPopup("Lishe Pro").openPopup();
+
+    </script>
+
+    <script>
+
+        (function() {
+
+            var autoUpdate = true,
+                timeTrans = 4000;
+
+            var cdSlider = document.querySelector('#homeIntro'),
+                item = cdSlider.querySelectorAll("li");
+
+            item[0].className = "current_slide";
+
+            for (var i = 0, len = item.length; i < len; i++) {
+                var color = item[i].getAttribute("data-color");
+                item[i].style.backgroundColor=color;
+            }
+
+
+            function nextSlide() {
+                var currentSlide = cdSlider.querySelector("li.current_slide"),
+                    nextElement = currentSlide.nextElementSibling,
+                    nextSlide = ( nextElement !== null ) ? nextElement : item[0];
+
+                currentSlide.className = "";
+                nextSlide.className = "current_slide";
+
+            }
+
+            //autoUpdate
+            setInterval(function() {
+                if (autoUpdate) {
+                    nextSlide();
+                    updateNavColor();
+                }
+            },timeTrans);
+
+        })();
 
     </script>
 
