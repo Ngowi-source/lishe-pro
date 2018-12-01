@@ -122,7 +122,7 @@
 @section('content')
 
     <div id="homeWrapper">
-        <div id="homeIntro">
+        {{--<div id="homeIntro">
 
             <span class="heading">Physical fitness starts with what you eat.
             </span>
@@ -134,7 +134,44 @@
 
             <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
 
+        </div>--}}
+
+        <div id="homeIntro">
+
+            <ul class="homeIntro">
+                <li>
+                    <div class="bgIntro" style="background-image: url('/images/diet.jpg');">
+                        <span class="heading">Physical fitness starts with what you eat.</span><br>
+
+                        <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+
+                        <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
+                    </div>
+                </li>
+
+                {{--<li>
+                    <div class="bgIntro" style="background-image:url(https://i.imgur.com/i7VlkGV.png?2)">
+                        <span class="heading">Physical fitness starts with what you eat.</span><br>
+
+                        <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+
+                        <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="bgIntro" style="background-image:url(https://i.imgur.com/i7VlkGV.png?2)">
+                        <span class="heading">Physical fitness starts with what you eat.</span><br>
+
+                        <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
+
+                        <button id="introButton" onclick="document.getElementById('dietassessmentmodal').style.display = 'block'">START FOR FREE!</button>
+                    </div>
+                </li>--}}
+            </ul>
+
         </div>
+
         <div id="whoAreWe">
             <h1 class="text-center">Diet Assessment Tools</h1><br />
 
@@ -278,92 +315,6 @@
 
     </script>
 
-    <script type="text/javascript">
-
-
-        var slide_data = [
-            {
-                'src':'https://images.unsplash.com/photo-1506765336936-bb05e7e06295?ixlib=rb-0.3.5&s=d40582dbbbb66c7e0812854374194c2e&auto=format&fit=crop&w=1050&q=80',
-                'title':'Slide 1',
-                'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
-            },
-            {
-                'src':'https://images.unsplash.com/photo-1496309732348-3627f3f040ee?ixlib=rb-0.3.5&s=4d04f3d5a488db4031d90f5a1fbba42d&auto=format&fit=crop&w=1050&q=80',
-                'title':'Slide 2',
-                'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
-            },
-            {
-                'src':'https://images.unsplash.com/photo-1504271863819-d279190bf871?ixlib=rb-0.3.5&s=7a2b986d405a04b3f9be2e56b2be40dc&auto=format&fit=crop&w=334&q=80',
-                'title':'Slide 3',
-                'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
-            },
-            {
-                'src':'https://images.unsplash.com/photo-1478728073286-db190d3d8ce6?ixlib=rb-0.3.5&s=87131a6b538ed72b25d9e0fc4bf8df5b&auto=format&fit=crop&w=1050&q=80',
-                'title':'Slide 4',
-                'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
-            }
-
-        ];
-        var slides = [];
-
-        var autoplay = setInterval(function(){
-            nextSlide();
-        },5000);
-        var container = document.getElementById('homeIntro');
-        /*var leftSlider = document.getElementById('left-col');*/
-        // console.log(leftSlider);
-        var down_button = document.getElementById('down_button');
-        // let caption = document.getElementById('slider-caption');
-        // let caption_heading = caption.querySelector('caption-heading');
-
-        down_button.addEventListener('click',function(e){
-            e.preventDefault();
-            clearInterval(autoplay);
-            nextSlide();
-            setInterval(function(){
-                nextSlide();
-            },5000);
-        });
-
-        for (var i = 0; i< slide_data.length; i++){
-            var slide = document.createElement('div')
-
-            slide.classList.add('slide');
-            slide.setAttribute('style','background:url('+slide_data[i].src+')');
-
-            switch(i){
-                case 0:
-                    slide.classList.add('current');
-                    break;
-                case 1:
-                    slide.classList.add('next');
-                    break;
-                case slide_data.length -1:
-                    slide.classList.add('previous');
-                    break;
-                default:
-                    break;
-            }
-            slides.push(slide);
-        }
-        // console.log(slides);
-
-        function nextSlide() {
-            // caption.classList.add('offscreen');
-
-            slides[0].classList.remove('current');
-            slides[0].classList.add('previous', 'change');
-            slides[1].classList.remove('next');
-            slides[1].classList.add('current');
-            slides[2].classList.add('next');
-            var last = slides.length - 1;
-            slides[last].classList.remove('previous');
-
-
-        }
-
-
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
