@@ -1963,7 +1963,7 @@ input[name='userid']{
 }
   @media screen and (max-width: 480px){
     .cell-3{
-      background-position: center 30%;
+      background-position: center 30%!important;
     }
     #homeIntro .intro{
       /*top: -12%!important;*/

@@ -17,6 +17,13 @@ tl.timeScale(0.5);
 //scrollmagic animations
 var controller = new ScrollMagic.Controller();
 
+new Scrollmagic.Scene({
+   triggerElement: ".is-selected",
+   triggerHook: "onCenter" 
+})
+    .setTween(TweenMax.from(".is-selected .heading", 1, {y: -400, autoAlpha: 0.0, ease: Power1.easeIn}))
+    .addTo(controller);
+
 new ScrollMagic.Scene({
     triggerElement: "#BMResults",
     triggerHook: "onCenter",
