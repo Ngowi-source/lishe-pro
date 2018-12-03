@@ -19,7 +19,8 @@ var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
     triggerElement: "#header",
-    triggerHook: "onLeave"
+    triggerHook: "onLeave",
+    offset: -150
 })
     .setPin("#header")
     .addTo(controller);
