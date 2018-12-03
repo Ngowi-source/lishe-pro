@@ -287,7 +287,7 @@
                     <input type="text" name="name" id="name" required><br><br>
 
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required><br><br>
 
                     <label for="msg">Your Message</label><br><br>
                     <textarea name="msg" id="msg" cols="30" rows="10" required></textarea><br><br>
