@@ -111,3 +111,19 @@ new ScrollMagic.Scene({
 })
     .setTween(TweenMax.from(".inl2", 0.8, {x: 400, scale: 0.6, autoAlpha: 0.0, ease: Power2.easeOut}))
     .addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: ".basic",
+    triggerHook: "onEnter",
+    reverse: false
+})
+    .setTween(TweenMax.from(".basic", 0.8, {x: -400, autoAlpha: 0.0, ease: Power2.easeOut}))
+    .addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: ".premium",
+    triggerHook: "onEnter",
+    reverse: false
+})
+    .setTween(TweenMax.from(".premium", 0.8, {x: 400, autoAlpha: 0.0, ease: Power2.easeOut}))
+    .addTo(controller);

@@ -653,12 +653,12 @@ body{
     width: 100%;
 
     h3{
-      color: $c2;
+      color: #fff;
     }
     textarea{
       background: transparent;
-      color: $c1;
-      border: 1px solid $c1;
+      color: #fff;
+      border: 1px solid #fff;
       width: 100%;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
@@ -666,15 +666,15 @@ body{
       height: 30vh;
     }
     label{
-      color: $c2;
+      color: #fff;
     }
     input{
-      color: $c1;
+      color: #fff;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
       width: 100%;
-      border-bottom: 1px solid $c1;
+      border-bottom: 1px solid #fff;
       background: transparent;
       &:focus{
         border-color: inherit;
