@@ -32,7 +32,7 @@ class HomeController extends Controller
         $objClient->msg = $request['msg'];
 
         try {
-            Mail::to('bryceandy@rocketmail.com')->send(new ContactMessageMail($objClient));
+            Mail::to('lishepro2018@gmail.com')->send(new ContactMessageMail($objClient));
             return Redirect::to('/')->with(['outsuccess'=> 'Your message was sent!']);
         }
         catch(\Throwable $e) {
