@@ -281,14 +281,16 @@
                 <form id="msgForm" action="/msg" method="POST">
                     {{csrf_field()}}
 
+                    <h3>Or Send a Quick Message</h3><br>
+
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required><br><br>
 
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required>
 
-                    <label for="msg">Your Message</label>
-                    <textarea name="msg" id="msg" cols="30" rows="30" required></textarea><br><br>
+                    <label for="msg">Your Message</label><br><br>
+                    <textarea name="msg" id="msg" cols="30" rows="10" required></textarea><br><br>
 
                     <button type="submit">Send Message</button>
 

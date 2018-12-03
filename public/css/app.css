@@ -11124,11 +11124,26 @@ body {
   width: 100%;
 }
 
+#contactUs #msgForm h3 {
+  color: #9BA747;
+}
+
+#contactUs #msgForm textarea {
+  background: transparent;
+  color: #D9DCD8;
+  border: 1px solid #D9DCD8;
+  width: 100%;
+  border-radius: 3px;
+  height: 30vh;
+}
+
+#contactUs #msgForm label {
+  color: #9BA747;
+}
+
 #contactUs #msgForm input {
   color: #D9DCD8;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  border-radius: 3px;
   width: 100%;
   border-bottom: 1px solid #D9DCD8;
   background: transparent;

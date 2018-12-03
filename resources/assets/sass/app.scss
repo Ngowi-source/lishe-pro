@@ -652,11 +652,27 @@ body{
   #msgForm{
     width: 100%;
 
+    h3{
+      color: $c2;
+    }
+    textarea{
+      background: transparent;
+      color: $c1;
+      border: 1px solid $c1;
+      width: 100%;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      height: 30vh;
+    }
+    label{
+      color: $c2;
+    }
     input{
       color: $c1;
-      border-top: none;
-      border-right: none;
-      border-left: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
       width: 100%;
       border-bottom: 1px solid $c1;
       background: transparent;
