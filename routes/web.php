@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::post('/msg', 'HomeController@sendMsg');
 
 Route::get('/blog', 'ArticleController@index');
 Route::get('/tags/{tag}', 'ArticleController@index');

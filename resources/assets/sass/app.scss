@@ -49,6 +49,9 @@ body{
   padding-right: 5vw;
   position: relative;
 
+  .shopLink{
+    pointer-events: none;
+  }
   .head{
     z-index: 1!important;
     position: absolute;
@@ -271,7 +274,7 @@ body{
   left: 0;
 }
 .notifications{
-  left: 65%;
+  left: 40%;
   a{
     font-size: small!important;
   }
@@ -645,6 +648,53 @@ body{
   text-align: center;
   color: $c1;
   background: linear-gradient(135deg, $c2, $c3);
+
+  #msgForm{
+    width: 100%;
+
+    input{
+      color: $c1;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      width: 100%;
+      border-bottom: 1px solid $c1;
+      background: transparent;
+      &:focus{
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+    button{
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #fff;
+      background: $c2;
+      font-size: 1.3rem;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      border: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      width: 50vw;
+
+      -webkit-transition: background 0.3s ease-in;
+      -moz-transition: background 0.3s ease-in;
+      -ms-transition: background 0.3s ease-in;
+      -o-transition: background 0.3s ease-in;
+      transition: background 0.3s ease-in;
+
+      &:hover{
+        background: $c5;
+        color: #fff;
+      }
+    }
+  }
 
   .contactUs{
     font-size: x-large;
@@ -1480,7 +1530,7 @@ input[name='userid']{
       }
     }
     .notifications, .submenu{
-      left: 15vw;
+      left: 20vw;
       padding: 15px 1% 15px 1%;
     }
     .notifications{
@@ -1720,16 +1770,17 @@ input[name='userid']{
         }
       }
       .submenu{
+        top: 25vh;
         a{
           font-size: large!important;
         }
       }
       .notifications, .submenu{
-        top: 30vh;
-        left: 30vw;
+        left: 20vw;
         padding: 15px 1% 15px 1%;
       }
       .notifications{
+        top: 50vh;
         a{
           font-size: small!important;
         }

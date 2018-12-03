@@ -10459,6 +10459,10 @@ body {
   position: relative;
 }
 
+#header .shopLink {
+  pointer-events: none;
+}
+
 #header .head {
   z-index: 1 !important;
   position: absolute;
@@ -10694,7 +10698,7 @@ body {
 }
 
 .notifications {
-  left: 65%;
+  left: 40%;
 }
 
 .notifications a {
@@ -11114,6 +11118,48 @@ body {
   text-align: center;
   color: #D9DCD8;
   background: linear-gradient(135deg, #9BA747, #F29D4B);
+}
+
+#contactUs #msgForm {
+  width: 100%;
+}
+
+#contactUs #msgForm input {
+  color: #D9DCD8;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  border-bottom: 1px solid #D9DCD8;
+  background: transparent;
+}
+
+#contactUs #msgForm input:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#contactUs #msgForm button {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  background: #9BA747;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  border: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 50vw;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+#contactUs #msgForm button:hover {
+  background: #8B281F;
+  color: #fff;
 }
 
 #contactUs .contactUs {
@@ -12024,7 +12070,7 @@ input[name='userid'] {
 
   .nav-links.showMenu .notifications,
   .nav-links.showMenu .submenu {
-    left: 15vw;
+    left: 20vw;
     padding: 15px 1% 15px 1%;
   }
 
@@ -12282,15 +12328,22 @@ input[name='userid'] {
     margin-top: -0.9rem;
   }
 
+  .nav-links.showMenu .submenu {
+    top: 25vh;
+  }
+
   .nav-links.showMenu .submenu a {
     font-size: large !important;
   }
 
   .nav-links.showMenu .notifications,
   .nav-links.showMenu .submenu {
-    top: 30vh;
-    left: 30vw;
+    left: 20vw;
     padding: 15px 1% 15px 1%;
+  }
+
+  .nav-links.showMenu .notifications {
+    top: 50vh;
   }
 
   .nav-links.showMenu .notifications a {

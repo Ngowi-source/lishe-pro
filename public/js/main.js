@@ -97,9 +97,17 @@ new ScrollMagic.Scene({
     .addTo(controller);
 
 new ScrollMagic.Scene({
-    triggerElement: "#blog .card",
+    triggerElement: ".inl1",
     triggerHook: "onEnter",
     reverse: false
 })
-    .setTween(TweenMax.from("#blog .card", 0.8, {x: 400, scale: 0.6, autoAlpha: 0.0, ease: Power2.easeOut}))
+    .setTween(TweenMax.from(".inl1", 0.8, {x: 400, scale: 0.6, autoAlpha: 0.0, ease: Power2.easeOut}))
+    .addTo(controller);
+
+new ScrollMagic.Scene({
+    triggerElement: ".inl2",
+    triggerHook: "onEnter",
+    reverse: false
+})
+    .setTween(TweenMax.from(".inl2", 0.8, {x: 400, scale: 0.6, autoAlpha: 0.0, ease: Power2.easeOut}))
     .addTo(controller);

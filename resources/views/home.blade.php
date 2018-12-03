@@ -161,7 +161,7 @@
         </div>
 
         <div id="whoAreWe">
-            <h1 class="text-center">Diet Assessment Tools</h1><br />
+            <h1 class="text-center">Dietary Assessment Tools</h1><br />
 
             <h3 class="text-center">Trying to lose weight, lower your BMI, or live a healthy lifestyle? Our tools will help to hit your goals</h3><br />
 
@@ -276,7 +276,25 @@
                     Dar Es Salaam.<br />
                     <i class="far fa-envelope-open"></i>&nbsp;info@lishepro.com<br />
                     <i class="fas fa-phone"></i>&nbsp; +255 767 423 804
-                </span>
+                </span><br><br>
+
+                <form id="msgForm" action="/msg" method="POST">
+                    {{csrf_field()}}
+
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required><br><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="msg">Your Message</label>
+                    <textarea name="msg" id="msg" cols="30" rows="30" required></textarea><br><br>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+                <br>
+
             </div>
             <br>
             <div id="contactMap">
