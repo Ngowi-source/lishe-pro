@@ -43,7 +43,8 @@ body{
 #header{
   grid-area: 1/1/2/2;
   z-index: 999999999999999999;
-  /*background: #D9DCD8;*/
+  height: 15vh;
+  background: #fff;
   padding-left: 5vw;
   padding-right: 5vw;
   position: relative;
