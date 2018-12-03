@@ -30,7 +30,7 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
-        <a href="/shop">Shop</a>
+        <a href="/shop" class="shopLink">Shop</a>
         <a href="/about-us">About Us</a>
 
         @if(Auth::check())

@@ -18,6 +18,13 @@ tl.timeScale(0.5);
 var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
+    triggerElement: "#header",
+    triggerHook: "onLeave"
+})
+    .setPin("#header")
+    .addTo(controller);
+
+new ScrollMagic.Scene({
     triggerElement: "#BMResults",
     triggerHook: "onCenter",
     reverse: false

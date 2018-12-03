@@ -24,7 +24,7 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
-        <a href="/shop">Shop</a>
+        <a href="/shop" class="shopLink">Shop</a>
         <a href="/about-us">About Us</a>
 
         @if(Auth::check())
@@ -74,7 +74,7 @@
         <div class="col-12">
             Lishe Pro respects the privacy rights of our users and is strongly committed to protecting your privacy.
             This Privacy Policy applies to this website, information collected and provided to Lishe Pro when you
-            are registered to Lishe-Pro.co.tz or at third-party websites and applications.<br /><br />
+            are registered to LishePro.com or at third-party websites and applications.<br /><br />
 
             <h3>Collection and Use of Your Personal Information</h3>
 

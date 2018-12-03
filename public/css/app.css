@@ -10677,7 +10677,6 @@ body {
   background: #8B281F;
   position: absolute;
   top: 100%;
-  left: 0;
   padding: 20px 1% 15px 1%;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -10689,8 +10688,12 @@ body {
   display: block;
 }
 
+.submenu {
+  left: 0;
+}
+
 .notifications {
-  left: 65% !important;
+  left: 65%;
 }
 
 .notifications a {
@@ -10968,6 +10971,7 @@ body {
 
 .foodDiary {
   grid-area: 1/2/2/3;
+  pointer-events: none;
 }
 
 .foodCalorieCounter {
@@ -10976,6 +10980,7 @@ body {
 
 .mpActivityPlanner {
   grid-area: 2/2/3/3;
+  pointer-events: none;
 }
 
 #whatWeDo {
@@ -11065,6 +11070,7 @@ body {
 }
 
 #loseIt #weightLoss .frame .getLoseIt {
+  pointer-events: none;
   border: 1px solid #9BA747;
   padding: 10px;
   text-align: center;
@@ -12007,15 +12013,22 @@ input[name='userid'] {
     margin-top: -0.9rem;
   }
 
+  .nav-links.showMenu .submenu {
+    top: 25vh;
+  }
+
   .nav-links.showMenu .submenu a {
     font-size: large !important;
   }
 
   .nav-links.showMenu .notifications,
   .nav-links.showMenu .submenu {
-    top: 30vh;
-    left: 30vw;
+    left: 15vw;
     padding: 15px 1% 15px 1%;
+  }
+
+  .nav-links.showMenu .notifications {
+    top: 50%;
   }
 
   .nav-links.showMenu .notifications a {

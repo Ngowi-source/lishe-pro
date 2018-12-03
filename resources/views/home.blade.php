@@ -25,7 +25,7 @@
             </div>
         </a>
         <a href="/blog">Blog</a>
-        <a href="/shop">Shop</a>
+        <a href="/shop" class="shopLink">Shop</a>
         <a href="/about-us">About Us</a>
 
         @if(Auth::check())
@@ -197,7 +197,7 @@
                 <div class="mpActivityPlanner inl2" onclick="window.location.href='/diet-meal-planner'">
                     <h5>Meal & Physical Activity Planner</h5>
 
-                    Do you want to kick-start a healthier lifestyle by planningwhat you’ll eat, what you’ll drink and your physical activity, and monitor your progress?
+                    Do you want to kick-start a healthier lifestyle by planning what you’ll eat, what you’ll drink and your physical activity, and monitor your progress?
 
                     <br><br><span class="toolicon"><i class="far fa-file-alt fa-4x"></i></span>
                     <span class="useNow"><a href="/diet-meal-planner">Use&nbsp;Planner</a></span>
@@ -274,7 +274,7 @@
                     Lishe Pro<br />
                     Kijitonyama Mabatini, PLOT NO. 755, BLOCK 47<br />
                     Dar Es Salaam.<br />
-                    <i class="far fa-envelope-open"></i>&nbsp;info@lishepro.co.tz<br />
+                    <i class="far fa-envelope-open"></i>&nbsp;info@lishepro.com<br />
                     <i class="fas fa-phone"></i>&nbsp; +255 767 423 804
                 </span>
             </div>
