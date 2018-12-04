@@ -6,7 +6,7 @@
 
 @section('header')
 
-    <div class="logo"><a href="/"><img src="{{'/logo2.png'}}" alt="LishePro logo"></a></div>
+    <div class="logo"><a href="/"><img src="https://s3.us-east-2.amazonaws.com/lishepro/logo2.png" alt="LishePro logo"></a></div>
     <div class="nav-links">
 
         <div class="menu">
@@ -127,7 +127,7 @@
         <div id="homeIntro">
 
             <div class="main-carousel">
-                <div class="carousel-cell" style="background-image: url('/images/diet.jpg');background-position: center top;">
+                <div class="carousel-cell" style="background-image: url('https://s3.us-east-2.amazonaws.com/lishepro/diet.jpg');background-position: center top;">
 
                     <span class="heading">Physical fitness starts with what you eat.</span><br>
 
@@ -137,7 +137,7 @@
 
                 </div>
 
-                <div  class="carousel-cell" style="background-image: url('/images/antioxidant.jpg');background-position: center top;">
+                <div  class="carousel-cell" style="background-image: url('https://s3.us-east-2.amazonaws.com/lishepro/antioxidant.jpg');background-position: center top;">
 
                     <span class="heading">Monitor your daily caloric requirements.</span><br>
 
@@ -147,7 +147,7 @@
 
                 </div>
 
-                <div class="carousel-cell cell-3" style="background-image: url('/images/bgsmall.jpg');background-position: left;">
+                <div class="carousel-cell cell-3" style="background-image: url('https://s3.us-east-2.amazonaws.com/lishepro/bgsmall.jpg');background-position: left;">
 
                     <span class="heading">Calculate calories for almost any food.</span><br>
 
@@ -289,10 +289,14 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required><br><br>
 
+                    <label for="num">Phone Number</label>
+                    <input type="text" name="num" id="num" required><br><br>
+
                     <label for="msg">Your Message</label><br><br>
                     <textarea name="msg" id="msg" cols="30" rows="10" required></textarea><br><br>
 
                     <button type="submit">Send Message</button>
+                    <br><br>
 
                 </form>
                 <br>

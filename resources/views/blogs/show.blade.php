@@ -10,7 +10,7 @@
 
 @section('header')
 
-    <div class="logo"><a href="/"><img src="{{'/logo2.png'}}" alt="LishePro logo"></a></div>
+    <div class="logo"><a href="/"><img src="https://s3.us-east-2.amazonaws.com/lishepro/logo2.png" alt="LishePro logo"></a></div>
     <div class="nav-links">
 
         <div class="menu">
@@ -108,7 +108,7 @@
 
             <div class="card w-100 border-success writer">
 
-                <img class="card-img-top" src="{{'../images/sauli.jpg'}}" alt="Sauli Epimack">
+                <img class="card-img-top" src="https://s3.us-east-2.amazonaws.com/lishepro/sauli.jpg" alt="Sauli Epimack">
                 <div class="card-body">
                     <h5 class="card-title">Sauli Epimack</h5>
                     <p class="card-text">
@@ -151,7 +151,7 @@
             <br><br />
 
             <div class="card w-75" id="blogWriter">
-                <img class="card-img-left" src="{{'../images/sauli.jpg'}}" alt="Sauli Epimack">
+                <img class="card-img-left" src="https://s3.us-east-2.amazonaws.com/lishepro/sauli.jpg" alt="Sauli Epimack">
                 <div class="card-body">
                     <h5 class="card-title">Sauli Epimack</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Research Scientist, Ifakara University</h6>

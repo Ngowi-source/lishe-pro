@@ -5,7 +5,7 @@
 @endsection
 
 @section('header')
-    <div class="logo"><a href="/"><img src="{{'/logo2.png'}}" alt="LishePro logo"></a></div>
+    <div class="logo"><a href="/"><img src="https://s3.us-east-2.amazonaws.com/lishepro/logo2.png" alt="LishePro logo"></a></div>
     <div class="nav-links">
 
         <div class="menu">
@@ -67,7 +67,7 @@
 
 @section('content')
 
-    <img class="uc" src="{{'/images/under_construction.png'}}" alt="Under Construction">
+    <img class="uc" src="https://s3.us-east-2.amazonaws.com/lishepro/under_construction.png" alt="Under Construction">
 
 @endsection
 

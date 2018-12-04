@@ -23,12 +23,14 @@ class HomeController extends Controller
         $this->validate(request(), [
             'name' => 'required',
             'email' => 'required|email',
+            'num' => 'required',
             'msg' => 'required'
         ]);
 
         $objClient = new \stdClass();
         $objClient->name = $request['name'];
         $objClient->email = $request['email'];
+        $objClient->num = $request['num'];
         $objClient->msg = $request['msg'];
 
         try {

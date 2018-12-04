@@ -78,7 +78,7 @@
                 Your BMI value is <span class="bmr">{{$bmi}}</span>, your weight indicates you are <span class="bmr">{{$bmiStatus}}</span>
                 <br><br>
 
-                <img src="{{'/images/bmi.png'}}" alt="BMI Scale" style="display:block;width: 60%; height: auto;margin-left:20%"><br><br>
+                <img src="https://s3.us-east-2.amazonaws.com/lishepro/bmi.png" alt="BMI Scale" style="display:block;width: 60%; height: auto;margin-left:20%"><br><br>
 
                 <span class="results rez">The amount of calories per day required to maintain your current weight is:  <span class="bmr">{{$bmr}}</span></span>
                 <br ><br><br>
