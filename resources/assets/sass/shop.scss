@@ -16,19 +16,17 @@
 
 #shopWrapper{
   display: grid;
-  grid-template-rows: 20vh auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 100%;
 }
 
 #shopNav{
   grid-area: 1/1/2/2;
-  position: relative;
+  height: auto;
   padding: 10px 5% 10px 5%;
 
   ul {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    float: left;
 
     li{
       list-style-type: none;
@@ -41,10 +39,11 @@
     }
   }
 
+  .navInl{
+    display: inline;
+  }
   #searchBox{
-    position: absolute;
-    top: 0;
-    right: 5%;
+    float: right;
     input, button{
       border: 1px solid $c4;
     }

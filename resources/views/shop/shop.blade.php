@@ -75,7 +75,7 @@
     <div id="shopWrapper">
 
         <div id="shopNav">
-            <ul>
+            <ul class="navInl">
                 <li><a href="#">SUPER FOODS</a></li>
                 <li><a href="#">SAMPLE MENUS</a></li>
                 <li><a href="#">COACHING SERVICES</a></li>
@@ -83,7 +83,7 @@
                 <li><a href="#">SUPLEMENTS</a></li>
             </ul>
 
-            <div id="searchBox">
+            <div id="searchBox" class="navInl">
                 <form action="/shop" method="POST">
                     {{csrf_field()}}
 
