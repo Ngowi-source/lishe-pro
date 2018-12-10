@@ -16,7 +16,7 @@
 
 #shopWrapper{
   display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: 20vh auto auto auto;
   grid-template-columns: 100%;
 }
 
@@ -27,7 +27,7 @@
 
   ul {
     position: absolute;
-    top: 100%;
+    bottom: 0;
     left: 0;
 
     li{
@@ -44,9 +44,16 @@
   #searchBox{
     position: absolute;
     top: 0;
-    right: 10%;
-    input{
+    right: 5%;
+    input, button{
       border: 1px solid $c4;
+    }
+    input, button{
+      @include brad(3px)
+    }
+    button{
+      background: #fff;
+      color: $c2;
     }
   }
 }
