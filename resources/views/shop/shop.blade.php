@@ -74,7 +74,24 @@
 
     <div id="shopWrapper">
 
+        <div id="shopNav">
+            <ul>
+                <li><a href="#">SUPER FOODS</a></li>
+                <li><a href="#">SAMPLE MENUS</a></li>
+                <li><a href="#">COACHING SERVICES</a></li>
+                <li><a href="#">BOOKS & EBOOKS</a></li>
+                <li><a href="#">SUPLEMENTS</a></li>
+            </ul>
 
+            <div id="searchBox">
+                <form action="/shop" method="POST">
+                    {{csrf_field()}}
+
+                    <input type="text" name="search" required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
 
     </div>
 

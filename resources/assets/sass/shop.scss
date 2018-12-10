@@ -1,0 +1,45 @@
+@mixin transform($property){
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+
+@mixin brad($value){
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+#shopWrapper{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 100%;
+}
+
+#shopNav{
+  grid-area: 1/1/2/2;
+  position: relative;
+  padding: 10px 5% 10px 5%;
+
+  ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    li{
+      list-style-type: none;
+      display: inline;
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+
+  #searchBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
