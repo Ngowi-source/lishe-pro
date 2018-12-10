@@ -12,6 +12,8 @@
   border-radius: $value;
 }
 
+@import "variables";
+
 #shopWrapper{
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -25,14 +27,16 @@
 
   ul {
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
 
     li{
       list-style-type: none;
       display: inline;
+      margin-left: 20px;
       a{
         text-decoration: none;
+        color: $c2;
       }
     }
   }
@@ -40,6 +44,9 @@
   #searchBox{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10%;
+    input{
+      border: 1px solid $c4;
+    }
   }
 }
