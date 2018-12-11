@@ -69,9 +69,9 @@
 
 @media screen and (max-width: 890px){
   .dropdown.navInl{
-    display: inline;
+    display: inline!important;
   }
   #shopNav ul{
-    display: none;
+    display: none!important;
   }
 }

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{'css/app.min.css'}}">
     <link rel="stylesheet" href="{{'/css/app.min.css'}}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.js"></script>
