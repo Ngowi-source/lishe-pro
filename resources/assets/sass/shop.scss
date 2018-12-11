@@ -50,11 +50,12 @@
     margin-right: 5%;
     max-width: 35%;
     float: right;
-    input, button{
-      border: 1px solid $c4;
+    input{
+      max-width: 100%;
     }
     input, button{
-      @include brad(3px)
+      @include brad(3px);
+      border: 1px solid $c4;
     }
     button{
       background: #fff;
@@ -81,8 +82,7 @@
 }
 
 @media screen and (max-width: 500px){
-  #searchBox {
-    margin-right: 15%;
-    max-width: 30%;
+  #searchBox form input{
+    max-width: 100%;
   }
 }

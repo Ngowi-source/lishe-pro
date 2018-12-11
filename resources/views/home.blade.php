@@ -129,7 +129,7 @@
             <div class="main-carousel">
                 <div class="carousel-cell" style="background-image: url('https://s3.us-east-2.amazonaws.com/lishepro/diet.jpg');background-position: center top;">
 
-                    <span class="heading">Physical fitness starts with what you eat.</span><br>
+                    <span class="heading">Fitness starts with what you eat.</span><br>
 
                     <span class="body">Take control of your goals, track your weights, calories, breakdown ingredients, and log activities with Lishe PRO.</span>
 
