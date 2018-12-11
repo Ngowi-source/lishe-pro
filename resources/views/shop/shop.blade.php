@@ -83,7 +83,7 @@
             </ul>
 
             <div class="dropdown navInl">
-                <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categories
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
