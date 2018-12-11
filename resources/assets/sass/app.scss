@@ -1,6 +1,6 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 // Variables
 @import "variables";
@@ -8,17 +8,14 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-//noty
-/*@import "~noty/src/noty.scss";
-@import "~noty/src/themes/mint.scss";*/
-
 .navbar-laravel {
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  @include bshad(0 2px 4px rgba(0, 0, 0, 0.04));
 }
 
 //code
 body{
+  font-family: $font-family-sans-serif;
   overflow-x: hidden;
   background: #fff;
 }
@@ -30,7 +27,7 @@ body{
 }
 ::-webkit-scrollbar-thumb{
   background: $c1;
-  border-radius: 5px;
+  @include brad(5px)
 }
 ::-webkit-scrollbar-button{
   display: none;
@@ -143,12 +140,12 @@ body{
 }
 .login{
   border: 1px solid $c5;
-  border-radius: 3px;
+  @include brad(3px);
   padding: 0.3vw 2vw 0.3vw 2vw;
 }
 .register{
   border: 1px solid $c5;
-  border-radius: 3px;
+  @include brad(3px);
   padding: 0.3vw 2vw 0.3vw 2vw;
   color: $c1!important;
   background-color: $c5;
@@ -171,7 +168,7 @@ body{
     width: 6vh;
     height: .6vh;
     background-color: $c5;
-    border-radius: 1px;
+    @include brad(1px);
     transition: all 1.5s;
 
     &:nth-child(1){
@@ -261,9 +258,7 @@ body{
   position: absolute;
   top: 100%;
   padding: 20px 1% 15px 1%;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+  @include brad(3px);
 
   &.display{
     display: block;
@@ -280,14 +275,14 @@ body{
   }
   .list-group-item{
     border: 1px solid $c2!important;
-    border-radius: 3px!important;
+    @include brad(3px!important);
   }
 }
 #nots sup{
   color: $c1;
   background: $c5;
   border: 1px solid $c5;
-  border-radius: 290486px;
+  @include brad(290486px);
   padding: 3px;
   padding-top: 0;
   font-size: x-small!important;
@@ -322,7 +317,7 @@ body{
   top: 60vh;
   width: 35%;
   left: 32.5%;
-  border-radius: 3px;
+  @include brad(3px);
   border: 1px solid $c5;
   color: $c1;
   background: $c5;
@@ -376,9 +371,7 @@ body{
 }
 #assessmentForm{
   grid-area: 2/1/3/2;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  @include brad(3px);
   color: $c2;
   font-size: large;
   padding: 5px 5px 15% 5px;
@@ -393,9 +386,7 @@ body{
     background: transparent;
     &:focus{
       border-color: inherit;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
+      @include bshad(none);
     }
   }
   button{
@@ -405,20 +396,12 @@ body{
     color: #fff;
     background: $c4;
     font-size: 1.3rem;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    @include brad(3px);
     border: none;
     margin-left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    @include transform(translateX(-50%));
     width: 50vw;
-
-    -webkit-transition: background 0.3s ease-in;
-    -moz-transition: background 0.3s ease-in;
-    -ms-transition: background 0.3s ease-in;
-    -o-transition: background 0.3s ease-in;
-    transition: background 0.3s ease-in;
+    @include transition(background 0.3s ease-in);
 
     &:hover{
       background: $c2;
@@ -440,9 +423,7 @@ body{
     vertical-align:middle;
     background:$c1;
     cursor:pointer;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
+    @include brad(50%);
   }
 
   input[type="radio"]:checked + label span {
@@ -472,7 +453,7 @@ body{
       width: 80%;
       padding: 5% 5% 10% 5%;
       text-align: center;
-      border-radius: 5px;
+      @include brad(5px);
 
       &:hover > .useNow:not(:hover){
         opacity: 0.2;
@@ -488,14 +469,10 @@ body{
         position: absolute;
         left: 50%;
         bottom: 50%;
-        -webkit-transform: translate(-50%, 50%);
-        -moz-transform: translate(-50%, 50%);
-        -ms-transform: translate(-50%, 50%);
-        -o-transform: translate(-50%, 50%);
-        transform: translate(-50%, 50%);
+        @include transform(translate(-50%, 50%));
         border: 1px solid $c2;
         background: $c2;
-        border-radius: 3px;
+        @include brad(3px);
         font-size: large;
         padding: 2%;
         width: auto;
@@ -553,7 +530,7 @@ body{
     border: 1px solid $c2;
     padding: 2%;
     font-size: large;
-    border-radius: 3px;
+    @include brad(3px);
     background: $c2;
     display: block;
 
@@ -597,7 +574,7 @@ body{
     }
     .frame{
       border: 1px solid $c4;
-      border-radius: 5px;
+      @include brad(5px);
       align-self: center;
       padding: 20px;
       min-width: 30vw;
@@ -610,7 +587,7 @@ body{
         padding: 10px;
         text-align: center;
         display: block;
-        border-radius: 3px;
+        @include brad(3px);
         &:hover{
           background: $c2;
           a{
@@ -660,9 +637,7 @@ body{
       color: #fff;
       border: 1px solid #fff;
       width: 100%;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
+      @include brad(3px);
       height: 30vh;
     }
     label{
@@ -670,17 +645,13 @@ body{
     }
     input{
       color: #fff;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
+      @include brad(3px);
       width: 100%;
       border: 1px solid #fff;
       background: transparent;
       &:focus{
         border-color: inherit;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
+        @include bshad(none);
       }
     }
     button{
@@ -690,20 +661,13 @@ body{
       color: #fff;
       background: $c2;
       font-size: 1.3rem;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
+      @include brad(3px);
       border: none;
       margin-left: 50%;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       width: 50vw;
-
-      -webkit-transition: background 0.3s ease-in;
-      -moz-transition: background 0.3s ease-in;
-      -ms-transition: background 0.3s ease-in;
-      -o-transition: background 0.3s ease-in;
-      transition: background 0.3s ease-in;
+      @include transition(background 0.3s ease-in);
 
       &:hover{
         background: $c5;
@@ -751,7 +715,7 @@ body{
       display: inline;
       border: 1px solid $c5;
       padding: 4px;
-      border-radius: 290486px;
+      @include brad(290486px);
       background: $c5;
       a{
         text-decoration: none;
@@ -801,15 +765,9 @@ body{
   font-size: larger;
   color: #fff;
   border: none;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+  @include brad(3px);
   background: $c4;
-  -webkit-transition: background 0.25s ease-out;
-  -moz-transition: background 0.25s ease-out;
-  -ms-transition: background 0.25s ease-out;
-  -o-transition: background 0.25s ease-out;
-  transition: background 0.25s ease-out;
+  @include transition(background 0.25s ease-out);
 
   &:hover{
     background: $c5;
@@ -879,19 +837,11 @@ body{
   }
 }
 .index a img{
-  -webkit-transition: all 0.6s ease-in-out ;
-  -moz-transition: all 0.6s ease-in-out ;
-  -ms-transition: all 0.6s ease-in-out ;
-  -o-transition: all 0.6s ease-in-out ;
-  transition: all 0.6s ease-in-out ;
+  @include transition(all .6s ease-in-out);
   border: 15px solid $c3;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include bszn(border-box);
   cursor: pointer;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  @include brad(3px);
 
   &:hover{
     opacity: 0.5;
@@ -903,15 +853,9 @@ body{
     font-size: larger;
     background: $c2;
     color: #fff;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
+    @include brad(3px);
     border: none;
-    -webkit-transition: background 0.2s ease-out;
-    -moz-transition: background 0.2s ease-out ;
-    -ms-transition: background 0.2s ease-out ;
-    -o-transition: background 0.2s ease-out ;
-    transition: background 0.2s ease-out ;
+    @include transition(background .2s ease-out);
 
     &:hover{
       background: $c4;
@@ -963,9 +907,8 @@ body{
     border: none;
     font-size: larger;
     margin-left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transition: all 0.2s cubic-bezier(.17, .61, 1, .29);
+    @include transform(translateX(-50%));
+    @include transition(all .2s cubic-bezier(.17, .61, 1, .29));
 
     &:hover{
       background: #fff;
@@ -975,14 +918,12 @@ body{
   }
   .form-control:focus{
     border-color: #cccccc;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    @include bshad(none);
   }
   .btn{
     display: inline-block;
     margin-left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    @include transform(translateX(-50%));
 
   }
 }
@@ -1057,7 +998,7 @@ input[name='userid']{
 .listArticles, .listUsers{
   color: $c5;
   border: 1px solid $c5;
-  border-radius: 3px;
+  @include brad(3px);
   font-size: large;
   width: 100%;
 
@@ -1107,7 +1048,7 @@ input[name='userid']{
     border: 2px solid $c3;
     width: 100%;
     max-width: 100%;
-    border-radius: 3px;
+    @include brad(3px);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -1137,7 +1078,7 @@ input[name='userid']{
     cursor: pointer;
     text-decoration: none;
     color: $c1;
-    border-radius: 3px;
+    @include brad(3px);
     background: $c2;
     padding: 1%;
     font-size: large;
@@ -1154,7 +1095,7 @@ input[name='userid']{
     border: 1px solid $c4;
     background-color: $c4;
     font-size: x-large;
-    border-radius: 3px;
+    @include brad(3px);
   }
   .bmr{
     font-size: x-large;
@@ -1188,9 +1129,7 @@ input[name='userid']{
     background: transparent;
     &:focus{
       border-color: inherit;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
+      @include bshad(none);
     }
   }
   button{
@@ -1200,17 +1139,10 @@ input[name='userid']{
     color: #fff;
     background: $c4;
     font-size: 1.3rem;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    @include brad(3px);
     border: none;
     width: 50vw;
-
-    -webkit-transition: background 0.3s ease-in;
-    -moz-transition: background 0.3s ease-in;
-    -ms-transition: background 0.3s ease-in;
-    -o-transition: background 0.3s ease-in;
-    transition: background 0.3s ease-in;
+    @include transition(background .3s ease-in);
 
     &:hover{
       background: $c2;
@@ -1248,9 +1180,7 @@ input[name='userid']{
     background: transparent;
     &:focus{
       border-color: inherit;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
+      @include bshad(none);
     }
   }
   button{
@@ -1260,20 +1190,12 @@ input[name='userid']{
     color: #fff;
     background: $c4;
     font-size: 1.3rem;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    @include brad(3px);
     border: none;
     margin-left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    @include transform(translateX(-50%));
     width: 50vw;
-
-    -webkit-transition: background 0.3s ease-in;
-    -moz-transition: background 0.3s ease-in;
-    -ms-transition: background 0.3s ease-in;
-    -o-transition: background 0.3s ease-in;
-    transition: background 0.3s ease-in;
+    @include transition(background .3s ease-in);
 
     &:hover{
       background: $c2;
@@ -1295,9 +1217,7 @@ input[name='userid']{
     vertical-align:middle;
     background:$c1;
     cursor:pointer;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
+    @include brad(50%);
   }
 
   input[type="radio"]:checked + label span {
@@ -1590,9 +1510,7 @@ input[name='userid']{
       .archLinks, .archLinks2{
         display: none;
         background: $c5;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
+        @include brad(3px);
       }
       .archLinks.display, .archLinks2.display{
         display: block;
@@ -1606,9 +1524,7 @@ input[name='userid']{
       .archToggle, .archToggle2{
         cursor: pointer;
         border: 1px solid $c5;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
+        @include brad(3px);
         padding: 1vw;
       }
     }
@@ -1650,15 +1566,9 @@ input[name='userid']{
         font-size: large;
         color: $c5;
         border: 1px solid $c5;
-        border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
+        @include brad(3px);
         background: #fff;
-        -webkit-transition: background 0.25s ease-out;
-        -moz-transition: background 0.25s ease-out;
-        -ms-transition: background 0.25s ease-out;
-        -o-transition: background 0.25s ease-out;
-        transition: background 0.25s ease-out;
+        @include transition(background 0.25s ease-out);
 
         &:hover{
           background: $c5;
@@ -1675,9 +1585,7 @@ input[name='userid']{
       .archLinks, .archLinks2{
         display: none;
         background: $c5;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
+        @include brad(3px)
       }
       .archLinks.display, .archLinks2.display{
         display: block;
@@ -1692,9 +1600,7 @@ input[name='userid']{
         cursor: pointer;
         color: $c5!important;
         border: 1px solid $c5;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
+        @include brad(3px);
         padding: 1vw;
       }
     }
@@ -1836,9 +1742,7 @@ input[name='userid']{
         .archLinks, .archLinks2{
           display: none;
           background: $c5;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
+          @include brad(3px);
         }
         .archLinks.display, .archLinks2.display{
           display: block;
@@ -1852,9 +1756,7 @@ input[name='userid']{
         .archToggle, .archToggle2{
           cursor: pointer;
           border: 1px solid $c5;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
+          @include brad(3px);
           padding: 1vw;
         }
       }
@@ -1896,15 +1798,9 @@ input[name='userid']{
           font-size: large;
           color: $c5;
           border: 1px solid $c5;
-          border-radius: 3px;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
+          @include brad(3px);
           background: #fff;
-          -webkit-transition: background 0.25s ease-out;
-          -moz-transition: background 0.25s ease-out;
-          -ms-transition: background 0.25s ease-out;
-          -o-transition: background 0.25s ease-out;
-          transition: background 0.25s ease-out;
+          @include transition(background .25s ease-out);
 
           &:hover{
             background: $c5;
@@ -1921,9 +1817,7 @@ input[name='userid']{
         .archLinks, .archLinks2{
           display: none;
           background: $c5;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
+          @include brad(3px);
         }
         .archLinks.display, .archLinks2.display{
           display: block;
@@ -1938,9 +1832,7 @@ input[name='userid']{
           cursor: pointer;
           color: $c5!important;
           border: 1px solid $c5;
-          -webkit-border-radius: 3px;
-          -moz-border-radius: 3px;
-          border-radius: 3px;
+          @include brad(3px);
           padding: 1vw;
         }
       }

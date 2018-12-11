@@ -1,17 +1,3 @@
-@mixin transform($property){
-  -webkit-transform: $property;
-  -moz-transform: $property;
-  -ms-transform: $property;
-  -o-transform: $property;
-  transform: $property;
-}
-
-@mixin brad($value){
-  -webkit-border-radius: $value;
-  -moz-border-radius: $value;
-  border-radius: $value;
-}
-
 @import "variables";
 
 #shopWrapper{
@@ -41,6 +27,23 @@
 
   .navInl{
     display: inline;
+
+    &.dropdown{
+      display: none;
+      float: left;
+
+      .dropdown-item{
+        text-decoration: none;
+        color: $c2!important;
+      }
+
+      button{
+        background: #fff;
+        border: 1px solid $c4;
+        @include brad(3px);
+        color: $c2;
+      }
+    }
   }
   #searchBox{
     float: right;
@@ -54,5 +57,21 @@
       background: #fff;
       color: $c2;
     }
+  }
+}
+
+#shopIntro{
+  grid-area: 2/1/3/2;
+  height: 60vh;
+  background-position: center;
+  background-image: url('https://store.eatingfree.com/images/banner-samples-menus.jpg');
+}
+
+@media screen and (max-width: 890px){
+  .dropdown.navInl{
+    display: inline;
+  }
+  #shopNav ul{
+    display: none;
   }
 }

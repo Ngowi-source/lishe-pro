@@ -82,6 +82,18 @@
                 <li><a href="#">SUPPLEMENTS</a></li>
             </ul>
 
+            <div class="dropdown navInl">
+                <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">SUPER FOODS</a>
+                    <a class="dropdown-item" href="#">SAMPLE MENUS</a>
+                    <a class="dropdown-item" href="#">BOOKS & EBOOKS</a>
+                    <a class="dropdown-item" href="#">SUPPLEMENTS</a>
+                </div>
+            </div>
+
             <div id="searchBox" class="navInl">
                 <form action="/shop" method="POST">
                     {{csrf_field()}}
@@ -90,6 +102,10 @@
                     <button type="submit">Search</button>
                 </form>
             </div>
+        </div>
+
+        <div id="shopIntro">
+
         </div>
 
     </div>
