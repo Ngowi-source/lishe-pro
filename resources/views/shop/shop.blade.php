@@ -78,9 +78,8 @@
             <ul class="navInl">
                 <li><a href="#">SUPER FOODS</a></li>
                 <li><a href="#">SAMPLE MENUS</a></li>
-                <li><a href="#">COACHING SERVICES</a></li>
                 <li><a href="#">BOOKS & EBOOKS</a></li>
-                <li><a href="#">SUPLEMENTS</a></li>
+                <li><a href="#">SUPPLEMENTS</a></li>
             </ul>
 
             <div id="searchBox" class="navInl">
