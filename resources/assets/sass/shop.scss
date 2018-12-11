@@ -79,3 +79,10 @@
     display: none!important;
   }
 }
+
+@media screen and (max-width: 500px){
+  #searchBox {
+    margin-right: 15%;
+    max-width: 30%;
+  }
+}
