@@ -98,7 +98,7 @@
                 <form action="/shop" method="POST">
                     {{csrf_field()}}
 
-                    <input type="text" name="search" required>&nbsp;<button type="submit"><i class="fas fa-search"></i></button>
+                    <input class="input-lg" type="text" name="search" placeholder="Search..." required>&nbsp;<button type="submit"><i class="fas fa-2x fa-search"></i></button>
                 </form>
             </div>
         </div>

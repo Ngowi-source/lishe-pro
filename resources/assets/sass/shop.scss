@@ -58,6 +58,7 @@
       background: #fff;
       color: $c2;
       font-family: FontAwesome;
+      border: none;
     }
   }
 }
@@ -80,7 +81,12 @@
 }
 
 @media screen and (max-width: 500px){
-  #searchBox form input{
+  #searchBox form {
+    input{
     max-width: 100%;
+    }
+    button{
+      display: none;
+    }
   }
 }
