@@ -47,19 +47,17 @@
     }
   }
   #searchBox{
-    margin-right: 5%;
-    max-width: 35%;
+    max-width: 45%;
     float: right;
     input{
       max-width: 100%;
-    }
-    input, button{
       @include brad(3px);
       border: 1px solid $c4;
     }
     button{
       background: #fff;
       color: $c2;
+      font-family: FontAwesome;
     }
   }
 }
