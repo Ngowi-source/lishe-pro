@@ -43,7 +43,7 @@
         border: 1px solid $c4;
         @include brad(3px);
         color: $c2;
-        font-size: x-large;
+        font-size: .8rem;
       }
     }
   }
@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 500px){
   #searchBox form {
-    font-size: x-large;
+    font-size: 1.2rem;
     input{
     max-width: 100%;
     }
