@@ -47,8 +47,8 @@
     }
   }
   #searchBox{
-    margin-left: 5%;
-    max-width: 40%;
+    margin-right: 5%;
+    max-width: 35%;
     float: right;
     input, button{
       border: 1px solid $c4;
@@ -67,6 +67,7 @@
   grid-area: 2/1/3/2;
   height: 60vh;
   background-position: top left;
+  background-repeat: no-repeat;
   background-image: url('https://store.eatingfree.com/images/banner-samples-menus.jpg');
 }
 
