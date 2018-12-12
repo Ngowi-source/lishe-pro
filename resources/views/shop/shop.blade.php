@@ -98,7 +98,7 @@
                 <form action="/shop" method="POST">
                     {{csrf_field()}}
 
-                    <input class="input-" type="text" name="search" placeholder="Search..." required>&nbsp;<button type="submit"><i class="fas fa-search"></i></button>
+                    <input class="input-" type="text" name="search" placeholder="Search..." required>&nbsp;<button type="submit"><i class="fas fa-2x fa-search"></i></button>
                 </form>
             </div>
         </div>
@@ -113,37 +113,37 @@
 
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.checkers.com%2Fwp-content%2Fuploads%2F2017%2F04%2FNew-Menu-Items_Featured-Image_1000x1000-600x600.jpg&imgrefurl=https%3A%2F%2Fwww.checkers.com%2Ffood%2F&docid=1nguxhcCnHpyxM&tbnid=n3kzITK6H_aAFM%3A&vet=10ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwihASgrMCs..i&w=600&h=600&bih=569&biw=1242&q=food&ved=0ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwihASgrMCs&iact=mrc&uact=8" style="width: 200px;height:300px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a class="text-muted">Tsh 3999</a></p>
+                        <p class="card-text"><a href="#">Tsh 3999</a></p>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.checkers.com%2Fwp-content%2Fuploads%2F2017%2F04%2FNew-Menu-Items_Featured-Image_1000x1000-600x600.jpg&imgrefurl=https%3A%2F%2Fwww.checkers.com%2Ffood%2F&docid=1nguxhcCnHpyxM&tbnid=n3kzITK6H_aAFM%3A&vet=10ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwihASgrMCs..i&w=600&h=600&bih=569&biw=1242&q=food&ved=0ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwihASgrMCs&iact=mrc&uact=8" style="width: 200px;height:300px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a class="text-muted">Tsh 3999</a></p>
+                        <p class="card-text"><a href="#">Tsh 3999</a></p>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.checkers.com%2Fwp-content%2Fuploads%2F2017%2F04%2FNew-Menu-Items_Featured-Image_1000x1000-600x600.jpg&imgrefurl=https%3A%2F%2Fwww.checkers.com%2Ffood%2F&docid=1nguxhcCnHpyxM&tbnid=n3kzITK6H_aAFM%3A&vet=10ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwihASgrMCs..i&w=600&h=600&bih=569&biw=1242&q=food&ved=0ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwihASgrMCs&iact=mrc&uact=8" style="width: 200px;height:300px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a class="text-muted">Tsh 3999</a></p>
+                        <p class="card-text"><a href="#">Tsh 3999</a></p>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.checkers.com%2Fwp-content%2Fuploads%2F2017%2F04%2FNew-Menu-Items_Featured-Image_1000x1000-600x600.jpg&imgrefurl=https%3A%2F%2Fwww.checkers.com%2Ffood%2F&docid=1nguxhcCnHpyxM&tbnid=n3kzITK6H_aAFM%3A&vet=10ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwihASgrMCs..i&w=600&h=600&bih=569&biw=1242&q=food&ved=0ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwihASgrMCs&iact=mrc&uact=8" style="width: 200px;height:300px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a class="text-muted">Tsh 3999</a></p>
+                        <p class="card-text"><a href="#">Tsh 3999</a></p>
                     </div>
                 </div>
             </div>
@@ -156,37 +156,37 @@
 
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fnews.berkeley.edu%2Fwp-content%2Fuploads%2F2013%2F08%2Fhamburgers300.jpg&imgrefurl=https%3A%2F%2Fnews.berkeley.edu%2F2013%2F08%2F06%2Fpoor-sleep-junk-food%2F&docid=zRnbkbCI63BMcM&tbnid=lXSEYYSxxoZSIM%3A&vet=10ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwjQAShYMFg..i&w=300&h=400&bih=569&biw=1242&q=food&ved=0ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwjQAShYMFg&iact=mrc&uact=8" style="width: 200px;height:300px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a class="text-muted">Tsh 3999</a></p>
+                        <h5 class="card-title">Gelato</h5>
+                        <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fnews.berkeley.edu%2Fwp-content%2Fuploads%2F2013%2F08%2Fhamburgers300.jpg&imgrefurl=https%3A%2F%2Fnews.berkeley.edu%2F2013%2F08%2F06%2Fpoor-sleep-junk-food%2F&docid=zRnbkbCI63BMcM&tbnid=lXSEYYSxxoZSIM%3A&vet=10ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwjQAShYMFg..i&w=300&h=400&bih=569&biw=1242&q=food&ved=0ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwjQAShYMFg&iact=mrc&uact=8" style="width: 200px;height:300px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a class="text-muted">Tsh 3999</a></p>
+                        <h5 class="card-title">Gelato</h5>
+                        <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fnews.berkeley.edu%2Fwp-content%2Fuploads%2F2013%2F08%2Fhamburgers300.jpg&imgrefurl=https%3A%2F%2Fnews.berkeley.edu%2F2013%2F08%2F06%2Fpoor-sleep-junk-food%2F&docid=zRnbkbCI63BMcM&tbnid=lXSEYYSxxoZSIM%3A&vet=10ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwjQAShYMFg..i&w=300&h=400&bih=569&biw=1242&q=food&ved=0ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwjQAShYMFg&iact=mrc&uact=8" style="width: 200px;height:300px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a class="text-muted">Tsh 3999</a></p>
+                        <h5 class="card-title">Gelato</h5>
+                        <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fnews.berkeley.edu%2Fwp-content%2Fuploads%2F2013%2F08%2Fhamburgers300.jpg&imgrefurl=https%3A%2F%2Fnews.berkeley.edu%2F2013%2F08%2F06%2Fpoor-sleep-junk-food%2F&docid=zRnbkbCI63BMcM&tbnid=lXSEYYSxxoZSIM%3A&vet=10ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwjQAShYMFg..i&w=300&h=400&bih=569&biw=1242&q=food&ved=0ahUKEwjsx8Gs2ZrfAhVxu3EKHWfyCPAQMwjQAShYMFg&iact=mrc&uact=8" style="width: 200px;height:300px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a class="text-muted">Tsh 3999</a></p>
+                        <h5 class="card-title">Gelato</h5>
+                        <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
                 </div>
             </div>
