@@ -26,6 +26,14 @@ new ScrollMagic.Scene({
     .addTo(controller);
 
 new ScrollMagic.Scene({
+    triggerElement: "#header",
+    triggerHook: "onLeave",
+    offset: 5
+})
+    .setPin("#shopNav")
+    .addTo(controller);
+
+new ScrollMagic.Scene({
     triggerElement: "#BMResults",
     triggerHook: "onCenter",
     reverse: false
