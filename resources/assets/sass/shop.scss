@@ -112,6 +112,14 @@
     .card{
       border: none!important;
     }
+    .card-body{
+      text-align: center;
+      p a{
+        text-decoration: none;
+        color: $c4;
+      }
+      h5{color: $c5;}
+    }
   }
 }
 
@@ -129,6 +137,17 @@
   #searchBox form {
     input{
     max-width: 100%;
+    }
+  }
+  #topSellr, #topPicks{
+    h2{
+      color: $c5;
+    }
+    .item{
+      margin-right: 10px;
+      .card img{
+        width: 150px!important;
+      }
     }
   }
 }
