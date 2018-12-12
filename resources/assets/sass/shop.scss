@@ -2,7 +2,7 @@
 
 %navBorder{
   @include bszn(border-box);
-  height: 2rem;
+  height: 2.3rem;
 }
 
 #shopWrapper{
@@ -46,8 +46,8 @@
       button{
         background: #fff;
         border: 1px solid $c4;
-        @include brad(3px);
         color: $c2;
+        @include brad(3px);
         @extend %navBorder;
       }
     }
@@ -55,18 +55,24 @@
   #searchBox{
     max-width: 45%;
     float: right;
+    form{
+      position: relative;
+    }
     input{
       max-width: 100%;
-      @include brad(3px);
       border: 1px solid $c4;
+      padding-left: .7rem;
+      @include brad(3px);
       @extend %navBorder;
     }
     button{
-      background: #fff;
+      position: absolute;
+      top: .3rem;
+      right: 0;
+      background: unset;
       color: $c2;
       font-family: FontAwesome;
       border: none;
-      display: none;
     }
   }
 }
