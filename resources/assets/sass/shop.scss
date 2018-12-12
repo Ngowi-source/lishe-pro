@@ -16,7 +16,7 @@
   height: auto;
   padding: 10px 5% 10px 0;
   z-index: 500;
-  background: $c5;
+  background: #fff;
 
   ul {
     float: left;
@@ -82,10 +82,11 @@
 #shopIntro{
   grid-area: 2/1/3/2;
   height: 45vh;
+  width: 80vw;
   background-position: top left;
   background-repeat: no-repeat;
   background-image: url('https://store.eatingfree.com/images/banner-samples-menus.jpg');
-  padding-left: 10%;
+  margin-left: 10%;
 }
 
 #topSellr{
