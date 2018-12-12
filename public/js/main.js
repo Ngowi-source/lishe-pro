@@ -27,8 +27,7 @@ new ScrollMagic.Scene({
 
 new ScrollMagic.Scene({
     triggerElement: "#header",
-    triggerHook: "onLeave",
-    offset: 5
+    triggerHook: "onLeave"
 })
     .setPin("#shopNav")
     .addTo(controller);
