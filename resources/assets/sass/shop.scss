@@ -1,5 +1,10 @@
 @import "variables";
 
+%navBorder{
+  @include bszn(border-box);
+  height: 2rem;
+}
+
 #shopWrapper{
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -43,7 +48,7 @@
         border: 1px solid $c4;
         @include brad(3px);
         color: $c2;
-        font-size: .8rem;
+        @extend %navBorder;
       }
     }
   }
@@ -54,6 +59,7 @@
       max-width: 100%;
       @include brad(3px);
       border: 1px solid $c4;
+      @extend %navBorder;
     }
     button{
       background: #fff;
@@ -84,7 +90,6 @@
 
 @media screen and (max-width: 500px){
   #searchBox form {
-    font-size: 1.2rem;
     input{
     max-width: 100%;
     }
