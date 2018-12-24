@@ -94,11 +94,8 @@
                 </div>
             </div>
 
-            <i class="fas fa-shopping-cart navInl" style="font-family: 'FontAwesome'; color: #9BA747;text-decoration: none">
-                <a href="/cart"></a>
-            </i>
-
             <div id="searchBox" class="navInl">
+                <i class="fas fa-2x fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;margin-top:.3rem"></i>&nbsp;
                 <form action="/shop" method="POST">
                     {{csrf_field()}}
 
