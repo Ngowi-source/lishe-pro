@@ -112,6 +112,7 @@
     margin-right: 40px;
     .card{
       border: none!important;
+      text-decoration: none;
     }
     .img{
       width: 250px;height:150px;
@@ -122,7 +123,7 @@
         text-decoration: none;
         color: $c4;
       }
-      h5 a{color: $c5;text-decoration: none;}
+      h5 {color: $c5;}
     }
   }
 }
