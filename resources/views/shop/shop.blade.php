@@ -95,10 +95,11 @@
             </div>
 
             <div id="searchBox" class="navInl">
-                <i class="fas fa-2x fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;margin-top:.3rem"></i>&nbsp;
+
                 <form action="/shop" method="POST">
                     {{csrf_field()}}
 
+                    <a href="/cart"><i class="fas fa-2x fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;margin-top:.3rem"></i></a>
                     <input class="input-" type="text" name="search" placeholder="Search..." required>
                     <button type="submit"><i class="fas fa-2x fa-search"></i></button>
                 </form>
