@@ -54,11 +54,13 @@
                     @endif
                 </div>
             </a>
+            <a href="/cart"><i class="fas fa-2x fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;"></i></a>
             <a href="/logout">Logout</a>
             <a class="topname" href="/account/{{Auth::user()->id}}">
                 <i class="far fa-user"></i> {{Auth::user()->firstname}}
             </a>
         @else
+            <a href="/cart"><i class="fas fa-2x fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;"></i></a>
             <a href="/login" class="login">Login</a>
             <a href="/register" class="register">Register</a>
         @endif
@@ -99,7 +101,6 @@
                 <form action="/shop" method="POST">
                     {{csrf_field()}}
 
-                    <a href="/cart"><i class="fas fa-2x fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;margin-top:.3rem"></i></a>
                     <input class="input-" type="text" name="search" placeholder="Search..." required>
                     <button type="submit"><i class="fas fa-2x fa-search"></i></button>
                 </form>
