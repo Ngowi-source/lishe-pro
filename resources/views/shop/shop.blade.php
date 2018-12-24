@@ -94,6 +94,10 @@
                 </div>
             </div>
 
+            <i class="fas fa-shopping-cart navInl" style="font-family: 'FontAwesome'; color: #9BA747;text-decoration: none">
+                <a href="/cart"></a>
+            </i>
+
             <div id="searchBox" class="navInl">
                 <form action="/shop" method="POST">
                     {{csrf_field()}}
@@ -114,7 +118,7 @@
 
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
                         <p class="card-text"><a href="#">Tsh 3999</a></p>
@@ -123,7 +127,7 @@
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
                         <p class="card-text"><a href="#">Tsh 3999</a></p>
@@ -132,7 +136,7 @@
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
                         <p class="card-text"><a href="#">Tsh 3999</a></p>
@@ -141,7 +145,7 @@
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
                         <p class="card-text"><a href="#">Tsh 3999</a></p>
@@ -150,7 +154,16 @@
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wings</h5>
+                        <p class="card-text"><a href="#">Tsh 3999</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
                         <p class="card-text"><a href="#">Tsh 3999</a></p>
@@ -166,7 +179,7 @@
 
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
@@ -175,7 +188,7 @@
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
@@ -184,7 +197,7 @@
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
@@ -193,7 +206,7 @@
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
@@ -202,7 +215,16 @@
             </div>
             <div class="item">
                 <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" style="width: 250px;height:150px;" alt="Card image cap">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Gelato</h5>
+                        <p class="card-text"><a href="#">Tsh 5999</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
