@@ -54,13 +54,13 @@
                     @endif
                 </div>
             </a>
-            <a href="/cart"><i class="fas fa-2x fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;"></i></a>
+            <a href="/cart"><i class="fas fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;"></i></a>
             <a href="/logout">Logout</a>
             <a class="topname" href="/account/{{Auth::user()->id}}">
                 <i class="far fa-user"></i> {{Auth::user()->firstname}}
             </a>
         @else
-            <a href="/cart"><i class="fas fa-2x fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;"></i></a>
+            <a href="/cart"><i class="fas fa-shopping-cart" style="font-family: 'FontAwesome'; color: #9BA747;"></i></a>
             <a href="/login" class="login">Login</a>
             <a href="/register" class="register">Register</a>
         @endif
@@ -116,58 +116,49 @@
             <h2>Top Sellers</h2>
 
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a href="#">Tsh 3999</a></p>
+                        <p class="card-text"><a href="/add_">Tsh 3999</a></p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a href="#">Tsh 3999</a></p>
+                        <p class="card-text"><a href="/add_">Tsh 3999</a></p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a href="#">Tsh 3999</a></p>
+                        <p class="card-text"><a href="/add_">Tsh 3999</a></p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a href="#">Tsh 3999</a></p>
+                        <p class="card-text"><a href="/add_">Tsh 3999</a></p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a href="#">Tsh 3999</a></p>
+                        <p class="card-text"><a href="/add_">Tsh 3999</a></p>
                     </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2013/11/13_29339-thumb.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Wings</h5>
-                        <p class="card-text"><a href="#">Tsh 3999</a></p>
-                    </div>
-                </div>
+                </a>
             </div>
 
         </div>
@@ -177,58 +168,49 @@
             <h2>Top Picks</h2>
 
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="item">
-                <div class="card mb-3">
+                <a href="/item_name" class="card mb-3">
                     <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Gelato</h5>
                         <p class="card-text"><a href="#">Tsh 5999</a></p>
                     </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card mb-3">
-                    <img class="card-img-top" src="https://store.eatingfree.com/files/2014/09/15_6472-thumb.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Gelato</h5>
-                        <p class="card-text"><a href="#">Tsh 5999</a></p>
-                    </div>
-                </div>
+                </a>
             </div>
 
         </div>
