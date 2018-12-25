@@ -99,16 +99,20 @@
                 </td>
             </tr>
             <tr>
-                <td>Shopper's First Name:</td>
+                <td>First Name:</td>
                 <td><input type="text" name="first_name" value="John" /></td>
             </tr>
             <tr>
-                <td>Shopper's Last Name:</td>
+                <td>Last Name:</td>
                 <td><input type="text" name="last_name" value="Doe" /></td>
             </tr>
             <tr>
-                <td>Shopper's Email Address:</td>
+                <td>Email Address:</td>
                 <td><input type="text" name="email" value="john@yahoo.com" /></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="number" name="phone" value="0753820520" /></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" value="Make Payment" /></td>
