@@ -18,7 +18,7 @@ class ShoppingController extends Controller
 
     public function iframe(Request $request)
     {
-        include(app_path() . '\Pesapal\OAuth.php');
+        include(app_path('Pesapal/OAuth.php'));
 
         //pesapal params
         $token = $params = NULL;
