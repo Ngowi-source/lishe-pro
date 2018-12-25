@@ -75,6 +75,8 @@
 @section('content')
 
     <form action="iframe" method="post">
+        {{csrf_field()}}
+        
         <table>
             <tr>
                 <td>Amount:</td>
