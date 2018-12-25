@@ -74,7 +74,7 @@
 
 @section('content')
 
-    <form action="iframe" method="post">
+    <form action="/resources/views/shop/iframe.blade.php" method="post">
         <table>
             <tr>
                 <td>Amount:</td>
