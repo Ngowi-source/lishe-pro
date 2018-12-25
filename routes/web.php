@@ -72,3 +72,10 @@ Route::get('/diet-meal-planner', 'ToolsController@planner');
 Route::get('/food-calorie-counter', 'ToolsController@counter');
 
 Route::get('/shop', 'ShoppingController@index');
+Route::get('/cart', 'ShoppingController@cart');
+Route::post('/iframe', function(){
+    return view('shop.iframe');
+});
+Route::post('/pay_status', function(){
+    return view('shop.status');
+});
