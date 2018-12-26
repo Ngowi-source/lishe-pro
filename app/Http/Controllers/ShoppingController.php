@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pesapal\OAuthSignatureMethod_HMAC_SHA1;
+use App\Pesapal\OAuthConsumer;
+use App\Pesapal\OAuthRequest;
 
 class ShoppingController extends Controller
 {
@@ -19,7 +22,6 @@ class ShoppingController extends Controller
 
     public function iframe(Request $request)
     {
-        include_once(app_path() . '/Pesapal_OAuth.php');
 
         //pesapal params
         $token = $params = NULL;
