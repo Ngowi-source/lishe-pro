@@ -25,14 +25,14 @@ class ShoppingController extends Controller
 
         //pesapal params
         $token = $params = NULL;
-        $consumer_key = env('PESA_KEY');
-        $consumer_secret = env('PESA_SECRET');
+        $consumer_key = 't2zptdhOPAFK4+b0kw6sLOtonSuHe1Jn';//env('PESA_KEY');
+        $consumer_secret = 'biRknbwdrpn4b71/dS1c3VQXdEw=';//env('PESA_SECRET');
         $signature_method = new OAuthSignatureMethod_HMAC_SHA1();
         $iframelink = 'https://demo.pesapal.com/api/PostPesapalDirectOrderV4';
 
         //get form details
         $amount = $request->amount;
-        $amount = number_format($amount, 2);//format amount to 2 decimal places
+        $amount = number_format($amount, 0);//format amount to 0 decimal places
 
         $desc = $request->description;
         $type = $request->type; //default value = MERCHANT
