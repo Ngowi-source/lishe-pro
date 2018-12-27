@@ -78,6 +78,7 @@
         <p>Browser unable to load iFrame</p>
     </iframe>
 
+    {{$post_xml}}
 @endsection
 
 @section('scripts')

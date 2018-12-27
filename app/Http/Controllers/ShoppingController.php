@@ -55,6 +55,6 @@ class ShoppingController extends Controller
         $iframe_src->set_parameter("pesapal_request_data", $post_xml);
         $iframe_src->sign_request($signature_method, $consumer, $token);
 
-        return view ('shop.iframe', compact('iframe_src'));
+        return view ('shop.iframe', compact('iframe_src', 'post_xml'));
     }
 }
