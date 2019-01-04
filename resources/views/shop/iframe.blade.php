@@ -78,8 +78,11 @@
         <p>Browser unable to load iFrame</p>
     </iframe>
 
-    {{$post_xml}}
-    {{$iframe_src}}
+    <div>
+        <h1>Payment Options</h1>
+        {{$post_xml}}
+        {{$iframe_src}}
+    </div>
 @endsection
 
 @section('scripts')
