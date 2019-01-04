@@ -79,8 +79,11 @@
     </iframe>
 
     <div>
+        {{$currency}}
+        {{$amount}}
         <h1>Payment Options</h1>
         {!! $iframe_src !!}
+
     </div>
 @endsection
 

@@ -34,8 +34,7 @@ class ShoppingController extends Controller
         $iframelink = 'https://www.pesapal.com/api/PostPesapalDirectOrderV4';
 
         //get form details
-        $amount = $request->amount;
-        $amount = number_format($amount, 2);
+        $amount = number_format($request->amount, 2);
         $currency = $request->currency;
         $desc = $request->description;
         $type = $request->type;
@@ -72,7 +71,7 @@ class ShoppingController extends Controller
         $iframe_src->set_parameter("pesapal_request_data", $post_xml);
         $iframe_src->sign_request($signature_method, $consumer, $token);
 
-        return view ('shop.iframe', compact('iframe_src', 'post_xml'));
+        return view ('shop.iframe', compact('iframe_src', 'amount', 'currency'));
     }
 
     public function status()
