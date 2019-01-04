@@ -45,7 +45,7 @@ class ShoppingController extends Controller
         $email = $request->email;
         $phonenumber = $request->phone;
 
-        $callback_url = 'https://lishep.herokuapp.com/status'; //redirect url, the page that will handle the response from pesapal.
+        $callback_url = 'https://chakula-pro.herokuapp.com/status'; //redirect url, the page that will handle the response from pesapal.
 
         //storing into the database
         Transaction::make($first_name, $last_name, $email, $amount, $currency, $desc, $reference, $phonenumber);
