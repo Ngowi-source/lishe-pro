@@ -78,12 +78,12 @@
         <p>Browser unable to load iFrame</p>
     </iframe>
 
-    <div>
+    {{--<div>
         {!! $post_xml !!}
         <h1>Payment Options</h1>
         {!! $iframe_src !!}
 
-    </div>
+    </div>--}}
 @endsection
 
 @section('scripts')
