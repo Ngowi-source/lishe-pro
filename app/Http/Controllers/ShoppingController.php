@@ -28,8 +28,8 @@ class ShoppingController extends Controller
 
         //pesapal params
         $token = $params = NULL;
-        $consumer_key = 'OqRlyTZa2IAyZOUXYOGeoi9CF+7xfK+0';
-        $consumer_secret = 'fCZU/NBbxsBJco8GSJTkGFDH8CE=';
+        $consumer_key = 'rAQiLjhchqCrs0I0zr3xiOz2yk5Ou86W';
+        $consumer_secret = 'z30fMSVahgQ55DUpCuUJXAsdZrs=';
         $signature_method = new OAuthSignatureMethod_HMAC_SHA1();
         $iframelink = 'https://www.pesapal.com/api/PostPesapalDirectOrderV4';
 
