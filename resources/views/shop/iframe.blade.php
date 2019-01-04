@@ -79,8 +79,7 @@
     </iframe>
 
     <div>
-        {{$currency}}
-        {{$amount}}
+        {!! $post_xml !!}
         <h1>Payment Options</h1>
         {!! $iframe_src !!}
 
