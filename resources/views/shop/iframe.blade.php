@@ -74,14 +74,13 @@
 
 @section('content')
 
-    <iframe src="{{$iframe_src}}" width="100%" height="900px"  scrolling="no" frameBorder="0">
+    <iframe src="{!! $iframe_src !!}" width="100%" height="900px"  scrolling="no" frameBorder="0">
         <p>Browser unable to load iFrame</p>
     </iframe>
 
     <div>
         <h1>Payment Options</h1>
-        {{$post_xml}}
-        {{$iframe_src}}
+        {!! $iframe_src !!}
     </div>
 @endsection
 
