@@ -74,6 +74,4 @@ Route::get('/food-calorie-counter', 'ToolsController@counter');
 Route::get('/shop', 'ShoppingController@index');
 Route::get('/cart', 'ShoppingController@cart');
 Route::post('/iframe', 'ShoppingController@iframe');
-Route::post('/pay_status', function(){
-    return view('shop.status');
-});
+Route::get('/status', 'ShoppingController@status');

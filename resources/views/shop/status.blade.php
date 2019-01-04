@@ -74,12 +74,15 @@
 
 @section('content')
 
-    Your payment is being processed...
+
+    <h1>Transaction Details</h1>
+            <h3>PAYMENT RECEIVED</h3>
+            <blockquote>
+                <b>Merchant reference: </b> {{$pesapalMerchantReference}}<br />
+                <b>Pesapal Tracking ID: </b> {{$pesapalTrackingId}}<br />
+                <b>Status: </b> {{$status}}<br />
+            </blockquote>
+
 
 @endsection
 
-@section('scripts')
-
-
-
-@endsection

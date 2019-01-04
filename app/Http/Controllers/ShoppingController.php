@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Pesapal\pesapalCheckStatus;
 use Illuminate\Http\Request;
 use App\Pesapal\OAuthSignatureMethod_HMAC_SHA1;
 use App\Pesapal\OAuthConsumer;
@@ -32,7 +33,7 @@ class ShoppingController extends Controller
 
         //get form details
         $amount = $request->amount;
-        //$amount = number_format($amount, 2);//format amount to 2 decimal places
+        $amount = number_format($amount, 2);//format amount to 2 decimal places
 
         $desc = $request->description;
         $type = $request->type; //default value = MERCHANT
@@ -40,11 +41,25 @@ class ShoppingController extends Controller
         $first_name = $request->first_name;
         $last_name = $request->last_name;
         $email = $request->email;
+        $currency = $request->currency;
         $phonenumber = $request->phone;//ONE of email or phonenumber is required
 
-        $callback_url = 'https://lishep.herokuapp.com/pay_status'; //redirect url, the page that will handle the response from pesapal.
+        $callback_url = 'https://lishep.herokuapp.com/status'; //redirect url, the page that will handle the response from pesapal.
 
-        $post_xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?><PesapalDirectOrderInfo xmlns:xsi=\"https://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"https://www.w3.org/2001/XMLSchema\" Amount=\"".$amount."\" Description=\"".$desc."\" Type=\"".$type."\" Reference=\"".$reference."\" FirstName=\"".$first_name."\" LastName=\"".$last_name."\" Email=\"".$email."\" PhoneNumber=\"".$phonenumber."\" xmlns=\"https://www.pesapal.com\" />";
+        //storing into the database
+
+        $post_xml =
+            "<?xml version=\"1.0\" encoding=\"utf-8\"?>
+            <PesapalDirectOrderInfo 
+            xmlns:xsi=\"https://www.w3.org/2001/XMLSchema-instance\" 
+            xmlns:xsd=\"https://www.w3.org/2001/XMLSchema\" 
+            Amount=\"".$amount."\" 
+            Currency=\"".$currency."\"
+            Description=\"".$desc."\" 
+            Type=\"".$type."\" 
+            Reference=\"".$reference."\" FirstName=\"".$first_name."\" LastName=\"".$last_name."\" 
+            Email=\"".$email."\" PhoneNumber=\"".$phonenumber."\" 
+            xmlns=\"https://www.pesapal.com\" />";
         $post_xml = htmlentities($post_xml);
 
         $consumer = new OAuthConsumer($consumer_key, $consumer_secret);
@@ -56,5 +71,27 @@ class ShoppingController extends Controller
         $iframe_src->sign_request($signature_method, $consumer, $token);
 
         return view ('shop.iframe', compact('iframe_src', 'post_xml'));
+    }
+
+    public function status()
+    {
+        $pesapalMerchantReference	= null;
+        $pesapalTrackingId 		    = null;
+        $checkStatus 				= new pesapalCheckStatus();
+
+        if(isset($_GET['pesapal_merchant_reference']))
+            $pesapalMerchantReference = $_GET['pesapal_merchant_reference'];
+
+        if(isset($_GET['pesapal_transaction_tracking_id']))
+            $pesapalTrackingId = $_GET['pesapal_transaction_tracking_id'];
+
+        $status = $checkStatus->checkStatusUsingTrackingIdandMerchantRef($pesapalMerchantReference,$pesapalTrackingId);
+
+        return view ('shop.status', compact('pesapalMerchantReference', 'pesapalTrackingId', 'status'));
+    }
+
+    public function ipn()
+    {
+
     }
 }

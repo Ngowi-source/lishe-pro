@@ -79,9 +79,27 @@
 
         <table>
             <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="first_name" value="John" /></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="last_name" value="Doe" /></td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="text" name="email" value="john@yahoo.com" /></td>
+            </tr>
+            <tr>
                 <td>Amount:</td>
-                <td><input type="text" name="amount" value="5000" />
-                    (in Tshs)
+                <td>
+                    <select name="currency" id="currency">
+                        <option value="TZS">Tanzanian shillings</option>
+                        <option value="KES">Kenyan shillings</option>
+                        <option value="UGX">Ugandan Shillings</option>
+                        <option value="USD">US Dollars</option>
+                    </select>
+                    <input type="text" name="amount" value="" />
                 </td>
             </tr>
             <tr>
@@ -96,21 +114,9 @@
             </tr>
             <tr>
                 <td>Reference:</td>
-                <td><input type="text" name="reference" value="001" />
+                <td><input type="text" name="reference" value="002" />
                     (the Order ID )
                 </td>
-            </tr>
-            <tr>
-                <td>First Name:</td>
-                <td><input type="text" name="first_name" value="John" /></td>
-            </tr>
-            <tr>
-                <td>Last Name:</td>
-                <td><input type="text" name="last_name" value="Doe" /></td>
-            </tr>
-            <tr>
-                <td>Email Address:</td>
-                <td><input type="text" name="email" value="john@yahoo.com" /></td>
             </tr>
             <tr>
                 <td>Phone Number:</td>
