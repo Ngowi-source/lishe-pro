@@ -79,6 +79,7 @@
     </iframe>
 
     {{$post_xml}}
+    {{$iframe_src}}
 @endsection
 
 @section('scripts')
