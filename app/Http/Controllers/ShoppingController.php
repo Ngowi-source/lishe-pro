@@ -31,7 +31,7 @@ class ShoppingController extends Controller
         $consumer_key = env('PESA_KEY');
         $consumer_secret = env('PESA_SECRET');
         $signature_method = new OAuthSignatureMethod_HMAC_SHA1();
-        $iframelink = 'https://demo.pesapal.com/api/PostPesapalDirectOrderV4';
+        $iframelink = 'https://www.pesapal.com/api/PostPesapalDirectOrderV4';
 
         //get form details
         $amount = $request->amount;
