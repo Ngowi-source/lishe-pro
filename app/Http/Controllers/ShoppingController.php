@@ -28,8 +28,9 @@ class ShoppingController extends Controller
 
         //pesapal params
         $token = $params = NULL;
-        $consumer_key = 'rAQiLjhchqCrs0I0zr3xiOz2yk5Ou86W';
-        $consumer_secret = 'z30fMSVahgQ55DUpCuUJXAsdZrs=';
+        $consumer_key 		= "OqRlyTZa2IAyZOUXYOGeoi9CF+7xfK+0";
+        $consumer_secret 	= "fCZU/NBbxsBJco8GSJTkGFDH8CE=";
+
         $signature_method = new OAuthSignatureMethod_HMAC_SHA1();
         $iframelink = 'https://www.pesapal.com/api/PostPesapalDirectOrderV4';
 
@@ -48,7 +49,7 @@ class ShoppingController extends Controller
 
         //storing into the database
         Transaction::make($first_name, $last_name, $email, $amount, $currency, $desc, $reference, $phonenumber);
-        
+
         $post_xml	= "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 				   <PesapalDirectOrderInfo 
 						xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" 
