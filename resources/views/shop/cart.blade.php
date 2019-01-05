@@ -103,8 +103,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Type:</td>
-                <td><input type="text" name="type" value="MERCHANT" readonly="readonly" />
+                <td><input type="hidden" name="type" value="MERCHANT" readonly="readonly" />
                     (leave as default - MERCHANT)
                 </td>
             </tr>

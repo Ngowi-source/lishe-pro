@@ -21,7 +21,7 @@ class CreateTransactionsTable extends Migration
             $table->string('phone');
             $table->float('amount');
             $table->text('currency');
-            $table->text('status')->nullable()->default(null);
+            $table->text('status')->nullable()->default('PLACED');
             $table->string('reference');
             $table->string('description');
             $table->string('tracking_id')->nullable()->default(null);

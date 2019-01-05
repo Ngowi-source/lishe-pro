@@ -15,8 +15,8 @@ class pesapalCheckStatus {
 
         $this->token = $this->params	= NULL;
         //Kenyan Merchant
-        $consumer_key 		= "OqRlyTZa2IAyZOUXYOGeoi9CF+7xfK+0";
-        $consumer_secret 	= "fCZU/NBbxsBJco8GSJTkGFDH8CE=";
+        $consumer_key 		= env('PESA_KEY');
+        $consumer_secret 	= env('PESA_SECRET');
 
         $this->signature_method			= new OAuthSignatureMethod_HMAC_SHA1();
         $this->consumer 				= new OAuthConsumer($consumer_key, $consumer_secret);

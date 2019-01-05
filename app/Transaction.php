@@ -35,10 +35,10 @@ class Transaction extends Model
         else
         {
             $user = User::create([
-                'firstname'=>$first_name,
-                'lastname'=>$last_name,
-                'email'=>$email,
-                'status'=> 0
+                'firstname' =>$first_name,
+                'lastname' =>$last_name,
+                'email' =>$email,
+                'status' => 0
             ]);
 
             $user_id = $user->id;
@@ -52,5 +52,20 @@ class Transaction extends Model
             ]);
         }
 
+    }
+
+    public static function modify($transaction)
+    {
+        $status 					= $transaction['status'];
+        $payment_method 			= $transaction['payment_method'];
+        $pesapalMerchantReference	= $transaction['pesapal_merchant_reference'];
+        $pesapalTrackingId 			= $transaction['pesapal_transaction_tracking_id'];
+
+        $update = Transaction::whereReference($pesapalMerchantReference)->first();
+        $update->update([
+            'status' => $status,
+            'payment_method' => $payment_method,
+            'tracking_id' => $pesapalTrackingId
+        ]);
     }
 }

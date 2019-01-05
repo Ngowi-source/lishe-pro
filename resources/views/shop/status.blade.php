@@ -78,6 +78,7 @@
     <h1>Transaction Details</h1>
             <h3>PAYMENT RECEIVED</h3>
             <blockquote>
+                Reload this page if the status is still on PENDING
                 <b>Merchant reference: </b> {{$pesapalMerchantReference}}<br />
                 <b>Pesapal Tracking ID: </b> {{$pesapalTrackingId}}<br />
                 <b>Status: </b> {{$status}}<br />
