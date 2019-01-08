@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://lishep.herokuapp.com'),
+    'url' => env('APP_URL', 'https://chakula-pro.herokuapp.com'),
 
     /*
     |--------------------------------------------------------------------------
