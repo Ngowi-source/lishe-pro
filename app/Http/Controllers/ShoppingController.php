@@ -93,9 +93,4 @@ class ShoppingController extends Controller
 
         return view ('shop.status', compact('pesapalMerchantReference', 'pesapalTrackingId', 'status'));
     }
-
-    public function ipn()
-    {
-
-    }
 }
