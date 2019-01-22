@@ -4,7 +4,7 @@ A dietary clinic with tools, products and nutritional help to help you reach you
 
 # Link
 
-The link to this project is currently at https://lishep.herokuapp.com
+The link to this project is currently at https://lishep.herokuapp.com or https://chakula-pro.herokuapp.com
 
 ## License
 
