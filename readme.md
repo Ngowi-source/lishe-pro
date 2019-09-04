@@ -21,14 +21,14 @@ git clone https://github.com/bryceandy/lishe-pro.git
 
 After downloading the project now we install PHP and Node dependencies with the following commands:
 ```bash
-composer install && node install
+cd lishe-pro && composer install && npm install
 ```
 
 ## 3. Complete required configurations
 
-There are som configurations that are needed to be fixed prior launching the project.
+There are some configurations that are needed to be fixed prior launching the project.
 
-- First of all copy the content of the file .env.example to .env file. Create a .env file in the root if it doesnt exist, or use the following:
+- Copy the content of the file .env.example to .env file. Create a .env file in the root if it doesnt exist, or use the following:
 ```bash
 mv .env.example .env
 ```
@@ -53,7 +53,13 @@ After completing this stage make sure to update the .env variables 'MAIL_USERNAM
 
 ## 4. Migrate the database
 
-Run the command
+Make sure your app server is running by running by running:
+```bash
+php -S localhost:8000 -t public
+```
+Or you can choose other server options you want
+
+Then create your local database and migrate the tables by running the command
 ```bash
 php artisan migrate
 ``` 
@@ -64,5 +70,10 @@ All image assets are contained in an AWS account that Sauli has access to, that'
 ```html
 <img src="https://s3.us-east-2.amazonaws.com/lishepro/someImage.jpg" alt="image">
 ```
-Incase you want to to store images in a directory such as **app/public/images**, it is your own choice.
-   
+In case you want to to store images in a directory such as **app/public/images**, it is your own choice.
+  
+## 6. Compiling scss
+
+After writing your styles in scss files, run **npm run prod** to compile to css as it is not proper to modify the compiled app.css or app.min.css.
+
+Otherwise if you do not prefer scss then write your own css files in the public folder.
