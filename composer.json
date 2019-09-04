@@ -6,8 +6,8 @@
     "type": "project",
     "require": {
         "php": "^7.1.3",
-        "ext-gd": "*",
         "ext-curl": "*",
+        "ext-gd": "*",
         "doctrine/dbal": "^2.8",
         "fideloper/proxy": "^4.0",
         "google/apiclient": "^2.2",
