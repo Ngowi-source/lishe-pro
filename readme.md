@@ -57,4 +57,12 @@ Run the command
 ```bash
 php artisan migrate
 ``` 
+
+## 5. Image assets
+
+All image assets are contained in an AWS account that Sauli has access to, that's why in most images you will find a src attribute in the following format
+```html
+<img src="https://s3.us-east-2.amazonaws.com/lishepro/someImage.jpg" alt="image">
+```
+Incase you want to to store images in a directory such as **app/public/images**, it is your own choice.
    
