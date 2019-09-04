@@ -35,6 +35,5 @@ class AuthServiceProvider extends ServiceProvider
             return $user->type == 'user';
         });
 
-        Passport::routes();
     }
 }
