@@ -5,9 +5,6 @@
 // Variables
 @import "variables";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
-
 .navbar-laravel {
   background-color: #fff;
   @include bshad(0 2px 4px rgba(0, 0, 0, 0.04));
@@ -47,7 +44,7 @@ body{
   position: relative;
 
   .shopLink{
-    pointer-events: none;
+
   }
   .head{
     z-index: 1!important;
