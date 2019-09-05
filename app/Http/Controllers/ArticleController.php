@@ -68,10 +68,10 @@ class ArticleController extends Controller
             DB::table('notifications')->where('id', '=', $_GET['nots'])->delete();
         }
 
-        $archives = Article::archives();
+        //$archives = Article::archives();
         $tags = Tag::has('articles')->pluck('name');
 
-        return view('blogs.show',compact('posted', 'archives', 'tags'));
+        return view('blogs.show',compact('posted', /*'archives',*/ 'tags'));
     }
 
     public function create()
@@ -82,11 +82,11 @@ class ArticleController extends Controller
             abort(404, 'Sorry, you are not authorized!');
         }
 
-        $archives = Article::archives();
+        //$archives = Article::archives();
         $tags = Tag::has('articles')->pluck('name');
         $tagNames = Tag::all()->pluck('name');
 
-        return view('blogs.create', compact('archives', 'tags', 'tagNames'));
+        return view('blogs.create', compact(/*'archives',*/ 'tags', 'tagNames'));
     }
 
     public function store(Request $request)

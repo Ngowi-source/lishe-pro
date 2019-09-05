@@ -80,12 +80,12 @@
         </div>
         <div id="blogSide">
 
-            <h4 class="archToggle sideInline">Archives</h4>
-            <div class="archLinks">
-                @foreach($archives as $stat)
-                    <a class="archLink large" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}">{{$stat['monthname'].' '.$stat['year']}}</a><br />
-                @endforeach
-            </div><br class="sideDel"/><br class="sideDel"/>
+            {{--<h4 class="archToggle sideInline">Archives</h4>--}}
+            {{--<div class="archLinks">--}}
+                {{--@foreach($archives as $stat)--}}
+                    {{--<a class="archLink large" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}">{{$stat['monthname'].' '.$stat['year']}}</a><br />--}}
+                {{--@endforeach--}}
+            {{--</div><br class="sideDel"/><br class="sideDel"/>--}}
 
             <h4 class="archToggle2 sideInline">Tags</h4>
             <div class="archLinks2">
