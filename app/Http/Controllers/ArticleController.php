@@ -51,10 +51,10 @@ class ArticleController extends Controller
 
         //fetch archives on the archives method from the Article model
         //fetch all tags with posts
-        $archives = Article::archives();
+        //$archives = Article::archives();
         $tags = Tag::has('articles')->pluck('name');
 
-        return view('blogs.index', compact('articles', 'archives', 'tags'));
+        return view('blogs.index', compact('articles', /*'archives',*/ 'tags'));
     }
 
     public function show($title)
@@ -62,7 +62,7 @@ class ArticleController extends Controller
         //get article object
         $posted = Article::with('tags')->where('title', '=', str_replace('-', ' ', $title))->first();
 
-        //delete notificationif found on the query string
+        //delete notification if found on the query string
         if(isset($_GET['nots']))
         {
             DB::table('notifications')->where('id', '=', $_GET['nots'])->delete();

@@ -80,19 +80,21 @@
             <a class="sideInline" href="/article/create"><button> New Article&nbsp;</button></a>
             @endcan<br class="sideDel"/><br class="sideDel"/>
 
-            <h4 class="archToggle sideInline">Archives</h4>
-            <div class="archLinks">
-                @foreach($archives as $stat)
-                    <a class="archLink large" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}">{{$stat['monthname'].' '.$stat['year']}}</a><br />
-                @endforeach
-            </div><br class="sideDel"/><br class="sideDel"/>
+            {{--<h4 class="archToggle sideInline">Archives</h4>--}}
+            {{--<div class="archLinks">--}}
+                {{--@foreach($archives as $stat)--}}
+                    {{--<a class="archLink large" href="/blog/?month={{$stat['month']}}&year={{$stat['year']}}">{{$stat['monthname'].' '.$stat['year']}}</a><br />--}}
+                {{--@endforeach--}}
+            {{--</div><br class="sideDel"/><br class="sideDel"/>--}}
 
-            <h4 class="archToggle2 sideInline">Tags</h4>
-            <div class="archLinks2">
-                @foreach($tags as $tag)
-                    <a href="/tags/{{$tag}}" class="archLink large">{{$tag}}</a><br />
-                @endforeach
-            </div>
+            @if(count($tags))
+                <h4 class="archToggle2 sideInline">Tags</h4>
+                <div class="archLinks2">
+                    @foreach($tags as $tag)
+                        <a href="/tags/{{$tag}}" class="archLink large">{{$tag}}</a><br />
+                    @endforeach
+                </div>
+            @endif
 
         </div>
 
